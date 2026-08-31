@@ -19,60 +19,6 @@ ROOT_TEXT_FILES = [
     "FIGURE_PLAN.md",
 ]
 
-SRC_PY_FILES = [
-    "audit_aacr_by_cancer.py",
-    "audit_datasets.py",
-    "audit_experiment_figures.py",
-    "audit_publication_single_figures.py",
-    "build_event_matrix.py",
-    "build_experiment_ready_datasets.py",
-    "build_manuscript_master_plan.py",
-    "build_panel_reassembly_index.py",
-    "build_public_release_package.py",
-    "build_state_table.py",
-    "extract_aacr_oncotree_datasets.py",
-    "figure_style.py",
-    "render_palette_options.py",
-    "render_publication_single_figures.py",
-    "run_experiments_01_02.py",
-    "run_experiment_03.py",
-    "run_experiment_04.py",
-    "run_experiment_05.py",
-    "run_experiment_06.py",
-    "run_experiment_06_dwell_gradient.py",
-    "run_experiment_06_enhanced.py",
-    "run_experiment_07.py",
-    "run_experiment_08.py",
-    "run_experiment_09.py",
-    "run_experiment_10.py",
-    "run_experiment_11.py",
-    "run_experiment_12.py",
-    "run_experiment_13.py",
-    "run_experiment_14.py",
-    "run_experiment_15.py",
-    "run_experiment_16.py",
-    "run_experiment_17_longitudinal_extension.py",
-    "run_experiment_17_longitudinal_public.py",
-    "run_experiment_17_new_four_cohorts.py",
-    "validate_experiments_01_02.py",
-    "validate_experiment_03.py",
-    "validate_experiment_04.py",
-    "validate_experiment_05.py",
-    "validate_experiment_06.py",
-    "validate_experiment_06_enhanced.py",
-    "validate_experiment_07.py",
-    "validate_experiment_09.py",
-    "validate_experiment_10.py",
-    "validate_experiment_11.py",
-    "validate_experiment_12.py",
-    "validate_experiment_13.py",
-    "validate_experiment_14.py",
-    "validate_experiment_15.py",
-    "validate_experiment_16.py",
-    "validate_experiment_ready.py",
-]
-
-
 def ensure_clean_target() -> None:
     target = TARGET.resolve()
     allowed_root = (ROOT / "public_release").resolve()
@@ -130,6 +76,9 @@ def sha256(path: Path) -> str:
 def build_manifest() -> None:
     rows = ["path\tsize_bytes\tsha256"]
     for path in sorted(TARGET.rglob("*")):
+        rel_path = path.relative_to(TARGET).as_posix()
+        if ".git/" in rel_path or rel_path == "RELEASE_MANIFEST.tsv":
+            continue
         if path.is_file():
             rows.append(f"{path.relative_to(TARGET).as_posix()}\t{path.stat().st_size}\t{sha256(path)}")
     write_text("RELEASE_MANIFEST.tsv", "\n".join(rows))
@@ -269,9 +218,13 @@ def main() -> None:
         copy_file(file, f"docs/audit/{Path(file).name}" if file.endswith(".md") and file != "README_RUN.md" else file)
 
     copy_tree("src/relobstq_mhn")
-    for file in SRC_PY_FILES:
-        copy_file(f"src/{file}")
+    for file in sorted((ROOT / "src").glob("*.py")):
+        copy_file(f"src/{file.name}")
     copy_tree("configs")
+    # Some late-stage experiment configs live in the method package first.
+    # Mirror them at top-level because run_experiment_*.py uses configs/*.yaml.
+    for file in sorted((ROOT / "src" / "relobstq_mhn" / "configs").glob("*.yaml")):
+        copy_file(f"src/relobstq_mhn/configs/{file.name}", f"configs/{file.name}")
     copy_tree("tests")
     copy_tree("docs")
     copy_file("external/mhn/MHN_SOURCE.md")

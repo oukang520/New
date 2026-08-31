@@ -1,0 +1,70 @@
+experiment_name: longitudinal_public_e17_supplementary_four_cohort_screen
+result_root: results/experiment_17_longitudinal_public/supplementary_four_cohort_screen
+data_root: Data/longitudinal_public/cbioportal
+plot_style_config: configs/figure_style.yaml
+random_seed: 20260828
+
+studies:
+  aml_target_2018_pub:
+    short_name: AML-TARGET
+    display_name: TARGET acute myeloid leukemia
+    disease_context: pediatric AML; mutation table mainly diagnostic blood/bone-marrow samples
+    temporal_rule: target_aml_sample_code_audit
+    analysis_overrides:
+      max_events: 10
+      min_state_count: 2
+      high_confidence_state_count: 3
+  lipo_msk_2026:
+    short_name: LIPO-MSK
+    display_name: MSK liposarcoma longitudinal samples
+    disease_context: well-differentiated/dedifferentiated liposarcoma
+    temporal_rule: years_post_diagnosis_tumor_samples
+    analysis_overrides:
+      max_events: 10
+      min_state_count: 1
+      high_confidence_state_count: 2
+  breast_msk_2018:
+    short_name: BRCA-MSK
+    display_name: MSK breast cancer primary/metastatic cohort
+    disease_context: breast primary/metastatic progression
+    temporal_rule: ngs_collection_time
+    analysis_overrides:
+      max_events: 12
+      min_event_support: 3
+      min_state_count: 2
+      high_confidence_state_count: 4
+  mnm_washu_2016:
+    short_name: MNM-WashU
+    display_name: WashU myeloid neoplasm paired samples
+    disease_context: paired myeloid neoplasm evolution
+    temporal_rule: paired_sample_suffix
+    analysis_overrides:
+      max_events: 10
+      min_state_count: 1
+      high_confidence_state_count: 2
+
+analysis:
+  max_events: 12
+  min_events_for_mhn: 5
+  min_event_frequency: 0.003
+  min_event_support: 2
+  min_state_count: 1
+  minimum_inflow: 1.0e-8
+  high_confidence_state_count: 3
+  top_states_per_study: 8
+  bootstrap_replicates: 1000
+  pair_qc:
+    exclude_event_loss: true
+    rationale: remove adjacent pairs with apparent selected-driver loss because the validation targets monotone progression-compatible dwell persistence.
+
+mhn:
+  enabled: true
+  fixed_lambda_multiplier: 1.0
+  max_iterations: 1500
+  relative_tolerance: 1.0e-6
+  fallback: frequency_cooccurrence_backbone
+
+plot:
+  dpi: 600
+  output_formats: [pdf, png]
+  summary_figure_size: [8.4, 6.2]

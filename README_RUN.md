@@ -1,92 +1,62 @@
-# Rel-ObsTQ-MHN Data Audit Pipeline
+# Rel-ObsTQ-MHN Reproduction Guide
 
-This project prepares cross-sectional tumor datasets for later Rel-ObsTQ-MHN analysis.
-The current pipeline does not train MHN, does not compute R*, does not run survival
-models, and does not download external data.
+This guide describes the current reproducible analysis chain for the
+Rel-ObsTQ-MHN project. It supersedes earlier first-pass data-audit notes.
 
-## Directory Contract
+## Scope
 
-- Raw downloaded data stay under `data/`.
-- Generated reports are written to `reports/`.
-- Generated model inputs are written to `processed/`.
-- Reusable scripts live under `src/`.
-- Logs are written to `logs/`.
+The current main cross-sectional experiment chain uses three AACR Project GENIE
+v18.0-public-derived cancer-type cohorts:
 
-## Run The Full First-Pass Pipeline
+- `AACR_LUAD`
+- `AACR_COAD`
+- `AACR_IDC`
 
-Use a Python environment with pandas, numpy, and pyyaml installed.
+`PACA-CA` and other previously screened datasets are excluded from the current
+main experiment chain because their usable state/sample scale or progression
+state diversity is insufficient for stable Rel-ObsTQ-MHN real-cohort analysis.
 
-```powershell
-python src/audit_datasets.py --data-dir data --output-dir .
-python src/build_event_matrix.py --input processed/standardized_mutations.csv --clinical processed/standardized_clinical.csv --id-level patient --min-frequency 0.03 --top-k-events 15 --include-cna no --output-dir .
-python src/build_state_table.py --event-matrix processed/event_matrix.csv --metadata processed/sample_metadata.csv --id-level patient --min-state-count 5 --output-dir .
-```
+## Environment
 
-On this machine, `python` may be a Windows Store placeholder. The working command is:
+Use Python 3.11 or 3.12 for the full MHN-backed workflow.
 
 ```powershell
-& 'D:\ai\Scripts\conda.exe' run python src/audit_datasets.py --data-dir data --output-dir .
-& 'D:\ai\Scripts\conda.exe' run python src/build_event_matrix.py --input processed/standardized_mutations.csv --clinical processed/standardized_clinical.csv --id-level patient --min-frequency 0.03 --top-k-events 15 --include-cna no --output-dir .
-& 'D:\ai\Scripts\conda.exe' run python src/build_state_table.py --event-matrix processed/event_matrix.csv --metadata processed/sample_metadata.csv --id-level patient --min-state-count 5 --output-dir .
+python -m venv .venv
+.\.venv\Scripts\Activate.ps1
+python -m pip install --upgrade pip
+python -m pip install -r requirements.txt
 ```
 
-## Outputs
+The official MHN dependency is:
 
-Required audit outputs:
-
-- `reports/file_inventory.csv`
-- `reports/dataset_feasibility_table.csv`
-- `reports/dataset_feasibility_report.md`
-- `reports/column_mapping_report.csv`
-- `reports/final_feasibility_summary.md`
-- `processed/data_dictionary.csv`
-
-Required model-prep outputs:
-
-- `processed/event_matrix.csv`
-- `processed/event_frequency.csv`
-- `processed/sample_metadata.csv`
-- `processed/state_table.csv`
-- `processed/state_occupancy.csv`
-- `reports/event_matrix_qc.md`
-- `reports/state_table_qc.md`
-
-Additional reproducibility outputs:
-
-- `processed/standardized_mutations.csv`
-- `processed/standardized_clinical.csv`
-- `logs/*.log`
-
-## Smoke Test
-
-```powershell
-python -m pytest tests/test_pipeline_smoke.py
+```text
+mhn==1.2.3; python_version < "3.13"
 ```
 
-If pytest is unavailable, install the requirements first.
+Current local Python 3.13 can run the light package tests, but it is not the
+recommended environment for reproducing the full official `mhn` fitting path.
 
-## MHN Official Component
+## Data Contract
 
-The official `mhn` Python package source snapshot has been downloaded under:
+Raw downloaded datasets should be placed under `Data/` or the paths specified in
+the experiment configuration files. Raw patient-level tables and generated
+outputs are not redistributed in the public code release.
 
-- `external/mhn/pypi/mhn-1.2.3.tar.gz`
-- `external/mhn/github/LearnMHN-v1.2.3/LearnMHN-1.2.3/`
+Generated files are written to:
 
-See `external/mhn/MHN_SOURCE.md` for source URLs, SHA256 hashes, license, and compatibility notes.
-`mhn==1.2.3` requires Python `>=3.8,<3.13`, so create a Python 3.12 or 3.11 environment before
-the later MHN training step.
+- `processed/`
+- `reports/`
+- `results/`
+- `logs/`
 
 ## Build Experiment-Ready Datasets
 
-This prepares the three AACR fine cancer-type subsets plus the five ICGC datasets into one
-uniform schema for MHN and Rel-ObsTQ-MHN experiments:
-
 ```powershell
-& 'D:\ai\Scripts\conda.exe' run python src/build_experiment_ready_datasets.py --data-dir data --processed-dir processed --output-dir processed\experiment_ready --min-frequency 0.03 --top-k 0 --min-state-count 5 --chunksize 250000
-& 'D:\ai\Scripts\conda.exe' run python src/validate_experiment_ready.py --input-dir processed\experiment_ready
+python src/build_experiment_ready_datasets.py
+python src/validate_experiment_ready.py
 ```
 
-Per-dataset outputs live under `processed/experiment_ready/{DATASET}/`:
+Expected per-dataset outputs under `processed/experiment_ready/{DATASET}/`:
 
 - `analysis_metadata.csv`
 - `mutations_long.csv`
@@ -99,31 +69,81 @@ Per-dataset outputs live under `processed/experiment_ready/{DATASET}/`:
 - `dataset_manifest.json`
 - `qc_report.md`
 
-`mhn_training_matrix.csv` is the file to pass to `mhn.optimizers.Optimizer.load_data_from_csv()`.
-It intentionally contains only binary event columns and no ID or clinical fields.
+## Minimal Tests
 
-## Active Experiment Cohorts
-
-The active cohort selection is stored in:
-
-- `configs/selected_experiment_datasets.yaml`
-- `reports/selected_experiment_datasets.md`
-
-Selected datasets are `AACR_LUAD`, `AACR_COAD`, `AACR_IDC`, and `PACA-CA`.
-The remaining processed datasets are retained for reproducibility but are excluded from the active experiments.
-Each selected dataset is an independent full experiment: it receives its own MHN fit, transition
-outputs, Rel-ObsTQ calculations, validation analyses, figures, metrics, and result directory.
-
-## Run Experiments 1 And 2
-
-Experiments 1 and 2 are run independently for `AACR_LUAD`, `AACR_COAD`, `AACR_IDC`,
-and `PACA-CA`:
+Run these two commands separately because the root and package test directories
+contain similarly named test modules.
 
 ```powershell
-& 'D:\ai\Scripts\conda.exe' run python src/run_experiments_01_02.py --experiment-config configs/experiments_01_02.yaml --dataset-config configs/selected_experiment_datasets.yaml
-& 'D:\ai\Scripts\conda.exe' run python src/validate_experiments_01_02.py --experiment-config configs/experiments_01_02.yaml --dataset-config configs/selected_experiment_datasets.yaml
+python -m pytest tests/test_relobstq_core.py tests/test_pipeline_smoke.py -q
+python -m pytest src/relobstq_mhn/tests/test_relobstq_core.py -q
 ```
 
-Results are written to `results/experiments_01_02/{DATASET}/`, with separate
-`experiment_01_data_preparation` and `experiment_02_stage_sensitivity` directories.
-Figures are exported as editable PDF and 600 dpi PNG.
+## Main Experiment Chain
+
+Run from the repository root after the required public datasets have been placed
+under their configured paths.
+
+```powershell
+python src/run_experiments_01_02.py
+python src/validate_experiments_01_02.py
+
+python src/run_experiment_03.py
+python src/run_experiment_04.py
+python src/run_experiment_05.py
+python src/run_experiment_06_enhanced.py
+python src/run_experiment_06_dwell_gradient.py
+python src/run_experiment_07.py
+python src/run_experiment_08.py
+python src/run_experiment_09.py
+python src/run_experiment_10.py
+python src/run_experiment_11.py
+python src/run_experiment_12.py
+python src/run_experiment_13.py
+python src/run_experiment_14.py
+python src/run_experiment_15.py
+python src/run_experiment_16.py
+python src/run_experiment_17_longitudinal_public.py
+python src/run_experiment_17_longitudinal_extension.py
+```
+
+## Method Package
+
+Reusable method code is under `src/relobstq_mhn/`:
+
+- `core/states.py`
+- `core/transitions.py`
+- `core/scoring.py`
+- `core/bootstrap.py`
+- `core/topology.py`
+- `core/pipeline.py`
+- `data/processing.py`
+- `simulation/generator.py`
+
+## Manuscript Planning Artifacts
+
+The following files summarize the current code-result-claim chain:
+
+- `MANUSCRIPT_MASTER_PLAN.md`
+- `RESULTS_MASTER_TABLE.md`
+- `CLAIM_EVIDENCE_MATRIX.md`
+- `METHOD_CODE_MAPPING.md`
+- `FIGURE_PLAN.md`
+- `MANUSCRIPT_TODO.md`
+
+Regenerate them with:
+
+```powershell
+python src/build_manuscript_master_plan.py
+```
+
+## Public Release Package
+
+Build the clean public-code folder with:
+
+```powershell
+python src/build_public_release_package.py
+```
+
+The generated folder excludes raw data, processed data, result directories,
+figures, logs, caches and binary documents.
