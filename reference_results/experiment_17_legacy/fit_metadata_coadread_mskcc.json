@@ -1,0 +1,6 @@
+{
+  "backend": "frequency_cooccurrence_backbone",
+  "lambda": NaN,
+  "lambda_multiplier": NaN,
+  "fit_status": "fallback_or_not_evaluable_for_cmhN"
+}

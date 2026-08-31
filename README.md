@@ -31,16 +31,20 @@ src/relobstq_mhn/
   evaluation/    shared metrics and bootstrap intervals
   workflows/     integrated, plotting-free scientific workflows
   io/            configuration and hashed result persistence
-experiments/     thin commands; no duplicated method implementation
-configs/         five workflow-level configurations
+experiments/     core commands plus the exact legacy E17 longitudinal runner
+configs/         workflow and shared figure-style configurations
 examples/        optional plotting from completed TSV results only
 tests/           method and workflow tests
 docs/            schemas, experiment mapping, data/code availability
 ```
 
-The historical `run_experiment_01...17.py` development scripts are deliberately
-not included. Their repeated IO, statistics and plotting were consolidated into
-the modules above. The E1-E17 evidence mapping is preserved in
+Repeated method code from the historical development scripts was consolidated
+into the modules above. By explicit project decision, the exact legacy E17
+runner is retained as `experiments/run_longitudinal.py` because its original
+selection, scoring, bootstrap and reporting contract is the selected primary
+longitudinal analysis. Its configuration explicitly freezes the realized
+historical frequency/co-occurrence fallback backend so installing optional MHN
+cannot silently change the selected result. The E1-E17 evidence mapping is preserved in
 `docs/EXPERIMENT_MAPPING.md`.
 
 ## Environment
@@ -51,7 +55,7 @@ Use Python 3.11 or 3.12 for the official `mhn==1.2.3` backend.
 python -m venv .venv
 .venv\Scripts\Activate.ps1
 python -m pip install --upgrade pip
-python -m pip install -e ".[mhn,test]"
+python -m pip install -e ".[all]"
 ```
 
 ## Reproduction
@@ -64,12 +68,15 @@ python experiments/prepare_cross_sectional.py
 python experiments/run_cross_sectional.py
 python experiments/run_secondary.py
 python experiments/run_simulation.py
-python experiments/prepare_longitudinal.py
 python experiments/run_longitudinal.py
 ```
 
-All scientific outputs are TSV/JSON files under `outputs/`; every output folder
-contains SHA-256 hashes. Plotting is optional and separated:
+Core refactored workflows write hashed TSV/JSON outputs under `outputs/`.
+The selected legacy E17 runner writes its original tables and figures under
+`results/experiment_17_longitudinal_public/`; aggregate reference outputs are
+also frozen under `reference_results/experiment_17_legacy/`.
+
+Optional plotting for the refactored workflows remains separated:
 
 ```powershell
 python -m pip install -e ".[figures]"
@@ -89,6 +96,7 @@ Raw patient-level data and generated results are not redistributed.
 The original frozen audit commit `e4215608...` omitted the declared
 `relobstq_mhn.data` package. The Phase-0 successor restores the exact
 manifest-matching files and adds hashed input/runtime metadata. Historical
-E1-E17 results are not automatically results of this refactored package; see
+E1-E16 results are not automatically results of this refactored package. E17
+uses the explicitly restored legacy implementation and result contract; see
 `RESULT_PROVENANCE_MATRIX.tsv` and `FINAL_REPRODUCIBILITY_REPORT.md` before
 using a numerical value in a manuscript.

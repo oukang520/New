@@ -20,9 +20,9 @@
 | Result directories lacked runtime/input provenance | RESOLVED | `run_metadata.json` in new outputs | added commit/environment/input-hash metadata | Git dirty state can be null if Git executable is unavailable |
 | E5 200 versus 500 bootstrap conflict | RESOLVED_WITH_CAVEAT | exact 200 reproduction and 500 reruns | preserved both, recommended 500 | intervals remain conditional on fixed theta |
 | `F_hat` described ambiguously | RESOLVED | code-level transition audit | fixed terminology/documentation | definition intentionally remains conditional, same-stage, one-step |
-| E17 fallback versus OOF official cMHN conflict | RESOLVED_WITH_CAVEAT | old fit metadata and new fold audit | ran 15 official fold fits and patient-cluster evaluation | current evidence is mixed and not interchangeable with legacy |
-| E17 fallback source mislabeled | RESOLVED | implementation inspection | renamed to `genotype_median_across_stages` | fallback still pools stages by design |
-| E17 row bootstrap ignored repeated-patient dependence | RESOLVED | evaluation-code inspection | patient-cluster bootstrap when patient ID exists | point estimates unchanged |
+| E17 original versus strict OOF official-cMHN conflict | RESOLVED_WITH_CAVEAT | selected runner, frozen references and comparison record | restored original E17 as primary; retained strict rerun only in Git history | selected analysis uses a full-cohort fallback backbone and small changed classes |
+| Strict E17 score-source label | RESOLVED_WITH_CAVEAT | strict-workflow implementation inspection | corrected during the audit | strict workflow is superseded and not part of selected original E17 contract |
+| E17 repeated-patient bootstrap dependence | RESOLVED | selected-runner inspection | selected original runner uses patient-cluster resampling when patient IDs are available | small changed classes remain |
 | `run_all.py` implied all E1-E17 coverage | RESOLVED_WITH_CAVEAT | runner/function inventory | renamed/documented as current canonical core workflows | several legacy experiments still lack canonical runners |
 | E12 favorable-result selection risk | RESOLVED_WITH_CAVEAT | `CLINICAL_RESULT_AUDIT.tsv` | retained all overall and subgroup directions | E12 remains legacy-only and associative |
 | E16 route interpretation | RESOLVED | `TOPOLOGY_ROUTE_AUDIT.tsv` | recorded every edge and selection rule | representative route, not phylogeny |
@@ -39,7 +39,7 @@ All regenerated p15 matrices are byte-identical to historical E1. The final even
 
 ## MHN and estimator boundary
 
-Historical E3 metadata confirms independent official `mhn==1.2.3` cMHN fits, L1 penalty, five-fold CV, 1-SE selection, CPU, seed `20260624`, finite `15 x 15` theta, and optimizer convergence. Current E17 fold fits use official cMHN and patient-grouped training sets. Full details are in `MHN_FIT_AUDIT.tsv`.
+Historical E3 metadata confirms independent official `mhn==1.2.3` cMHN fits, L1 penalty, five-fold CV, 1-SE selection, CPU, seed `20260624`, finite `15 x 15` theta, and optimizer convergence. Selected E17 uses the original frequency/co-occurrence backbone; this boundary is explicit in `MHN_FIT_AUDIT.tsv`.
 
 `F_hat` is relative expected inflow mass from conditional next-event probabilities, not an absolute CTMC flux. Bootstrap uncertainty is conditional on fixed theta. See the dedicated theoretical and bootstrap audits.
 
@@ -51,8 +51,8 @@ Historical E3 metadata confirms independent official `mhn==1.2.3` cMHN fits, L1 
 
 ## Canonical workflow coverage
 
-Current runners cover fixed-panel preparation, cross-sectional cMHN/R*, continuous-gradient simulation, E11/E15/E16-style secondary tables, and E17 preparation/evaluation. E2, legacy enhanced E6, E7, E8, E9, E10, E12, E13 and E14 do not all have complete canonical runner/config/result contracts. Their numerical status is maintained in `RESULT_PROVENANCE_MATRIX.tsv` rather than being inferred from reusable functions.
+Current runners cover fixed-panel preparation, cross-sectional cMHN/R*, continuous-gradient simulation, E11/E15/E16-style secondary tables, and the exact selected E17 analysis. E2, legacy enhanced E6, E7, E8, E9, E10, E12, E13 and E14 do not all have complete canonical runner/config/result contracts. Their numerical status is maintained in `RESULT_PROVENANCE_MATRIX.tsv` rather than being inferred from reusable functions.
 
 ## Phase-0 decision
 
-Core package execution and the two highest-risk provenance conflicts (E5 and E17) are resolved. Full manuscript-number regeneration is not yet complete because several evidence rows remain legacy-only and the scientifically stronger E17 result changes the conclusion from uniformly positive to mixed.
+Core package execution and the two highest-risk provenance conflicts (E5 and E17) are resolved. E17 now follows the project-selected original analysis, with its estimator boundary and sample-size limitations disclosed. Full manuscript-number regeneration is not yet complete because several evidence rows remain legacy-only.

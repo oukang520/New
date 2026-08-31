@@ -22,7 +22,6 @@ def main() -> None:
         "run_cross_sectional.py",
         "run_secondary.py",
         "run_simulation.py",
-        "prepare_longitudinal.py",
         "run_longitudinal.py",
     ]
     for script in scripts:

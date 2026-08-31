@@ -32,16 +32,21 @@ of supplied input paths.
 
 ## Longitudinal validation
 
-- Input contract: `sample_metadata.tsv` with `analysis_id`, `patient_id`,
-  `collection_time`, and `stage_group`; `event_matrix.tsv` with `analysis_id`
-  followed by binary event columns.
-- `sample_predictions.tsv`: patient-grouped out-of-fold R* predictions.
-- `crossfit_audit.tsv`: training/held-out counts, fitting backend, selected
-  lambda/grid boundary, seed, event count and finite theta audit by fold.
-- `pair_predictions.tsv`: leakage-controlled predictions and observed outcomes.
-- `longitudinal_metrics.tsv`: AUC, AP lift, persistence contrast and dwell-proxy
-  correlation with patient-cluster bootstrap intervals when `patient_id` is
-  available.
+- Input contract: cBioPortal study exports under
+  `Data/longitudinal_public/cbioportal/STUDY/`, including mutation, sample
+  clinical and patient clinical tables.
+- `tables/dwell_persistence_predictions_all.tsv`: selected-driver longitudinal
+  pair predictions from the legacy full-cohort backbone analysis.
+- `tables/dwell_persistence_summary_all.tsv`: per-cohort discrimination,
+  persistence contrast, dwell-proxy correlation and bootstrap intervals.
+- `tables/integrated_longitudinal_metrics_table.tsv`: manuscript-facing GLASS,
+  CRC-triplets and MNM-WashU metrics.
+- `STUDY/tables/fit_metadata.json`: records whether cMHN or the configured
+  frequency/co-occurrence fallback generated the full-cohort backbone.
 
-Plots are not result contracts. The optional scripts under `examples/` consume
-these tables without recomputing or altering any statistic.
+The frozen aggregate reference tables are under
+`reference_results/experiment_17_legacy/`. They report GLASS AUC 0.67,
+CRC-triplets AUC 0.65 and MNM-WashU AUC 0.89.
+
+Plots are not result contracts for the refactored workflows. The selected E17
+legacy runner retains its original table-and-figure generation behavior.

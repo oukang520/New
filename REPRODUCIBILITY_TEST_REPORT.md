@@ -25,6 +25,13 @@ The first `mhn` build attempt in each environment selected an incomplete MSVC 14
 | Python 3.11.16 compatibility | `python -m pytest -q` | 11 passed | 9.04 s | same small-sample warning |
 | Final publication tree, Python 3.12.13 | `python -m pytest -q` | 11 passed | 2.31 s | same small-sample warning |
 | Final publication tree, Python 3.11.16 | `python -m pytest -q` | 11 passed | 2.27 s | same small-sample warning |
+| Selected E17 restoration and frozen-result contract | `python -m pytest -q` | 14 passed | 1.99 s | same small-sample warning |
+| Selected E17 restoration, Python 3.11.16 | `python -m pytest -q` | 14 passed | 3.52 s | same small-sample warning |
+
+The restored E17 command also passed byte-code compilation and
+`python experiments/run_longitudinal.py --help` after installing the declared
+`seaborn>=0.13` figure dependency. Regression tests freeze the selected cohort
+counts, AUCs and fallback-backend metadata.
 
 Imports resolved to the audited source tree under `src/relobstq_mhn` in both environments. Official-backend smoke fits on the same 120-sample, 3-event binary matrix returned finite `3 x 3` theta matrices and selected lambda `0.025`; three-fold CV completed in 0.64 s on Python 3.12 and 1.716 s on Python 3.11. The optimizer warned in both runs that the selected lambda was at the search-grid boundary.
 

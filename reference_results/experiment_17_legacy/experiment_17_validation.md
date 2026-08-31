@@ -1,0 +1,9 @@
+# Experiment 17 Validation
+
+| check | status | detail |
+| --- | --- | --- |
+| processed_studies | PASS | 3/3 |
+| selected_events_available | PASS | min_events=8 |
+| ordered_pair_signal | PASS | pairs=105 |
+| primary_metric_direction | PASS | all primary dwell-focused metrics support R* in configured primary validation cohorts |
+| Figure_E17_real_longitudinal_topology_routes.png | PASS | single_panels=3; base=results\experiment_17_longitudinal_public\figures\Figure_E17_real_longitudinal_topology_routes |

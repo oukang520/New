@@ -1,0 +1,4 @@
+study_id	cohort	evidence_role	n_P_C	auc_95ci	ap_lift	tertile_delta_persistence_95ci	tertile_rho_minimum_dwell_95ci	quartile_delta_persistence	quartile_delta_similarity	quartile_delta_minimum_dwell_scaled	spearman_persistence	spearman_persistence_p	spearman_similarity	spearman_similarity_p	spearman_minimum_dwell_proxy	spearman_minimum_dwell_proxy_p
+difg_glass	GLASS	primary	72 (51/21)	0.67 [0.53, 0.79]	1.19	0.28 [-0.04, 0.47]	0.19 [-0.03, 0.42]	0.28	0.13	0.04	0.26	0.026	0.24	0.044	0.19	0.117
+coadread_mskcc	CRC-triplets	primary	23 (20/3)	0.65 [0.35, 0.91]	1.08	0.12 [-0.21, 0.45]	0.18 [-0.18, 0.50]	0.17	0.06	0.17	0.18	0.411	0.18	0.419	0.18	0.411
+mnm_washu_2016	MNM-WashU	supplementary	10 (9/1)	0.89 [0.75, 1.00]	1.1	0.33 [0.00, 0.75]	0.42 [0.31, 0.81]	0.33	0.17	0.33	0.42	0.228	0.42	0.228	0.42	0.228

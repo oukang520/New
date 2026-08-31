@@ -1,8 +1,19 @@
-# E17 Provenance and Comparison
+# E17 Provenance and Selection Record
 
-## Legacy E17
+## Selected primary E17
 
-Historical outputs came from `src/run_experiment_17_longitudinal_public.py` and `configs/experiment_17_longitudinal_public.yaml`. All three final `fit_metadata.json` files identify `frequency_cooccurrence_backbone`, not official cMHN. Theta/backbone construction used the full cohort before score cross-fitting, so held-out patients could influence the fixed backbone.
+The selected primary analysis is the original E17 implementation, restored
+verbatim as `experiments/run_longitudinal.py` with
+`configs/longitudinal.yaml`. All three final `fit_metadata.json` files identify
+`frequency_cooccurrence_backbone`, not official cMHN. The fixed backbone is
+constructed from the full cohort and R* occupancy terms are estimated from
+training patients. This is a cohort-level external consistency analysis rather
+than a fully out-of-fold model-refitting benchmark.
+
+The release configuration sets `mhn.enabled: false` to freeze the backend that
+actually produced these selected outputs. Without this lock, installing the
+optional MHN package could change the estimator and no longer reproduce the
+selected result.
 
 | cohort | n (persistent/changed) | AUC [95% CI] | AP lift | top-bottom persistence delta [CI] | rho minimum-dwell proxy [CI] |
 |---|---:|---:|---:|---:|---:|
@@ -10,13 +21,17 @@ Historical outputs came from `src/run_experiment_17_longitudinal_public.py` and 
 | CRC-triplets | 23 (20/3) | 0.65 [0.35, 0.91] | 1.08 | 0.12 [-0.21, 0.45] | 0.18 [-0.18, 0.50] |
 | MNM-WashU | 10 (9/1) | 0.89 [0.75, 1.00] | 1.10 | 0.33 [0.00, 0.75] | 0.42 [0.31, 0.81] |
 
-These values are `E17_LEGACY` and must not be described as OOF official-cMHN results.
+These values are the manuscript-facing E17 results. Frozen aggregate tables and
+fit metadata are stored under `reference_results/experiment_17_legacy/`. They
+must not be described as fully out-of-fold official-cMHN results.
 
-## Current patient-grouped OOF official-cMHN
+## Superseded strict sensitivity analysis
 
-The current workflow assigns whole patients to five folds, fits official `mhn==1.2.3` cMHN only on other patients, computes training-fold occupancy/R*, and predicts held-out samples. Event-loss pairs are excluded according to the prespecified config. Every fold reports training/held-out patients and samples, selected lambda, fit backend, seed, event count, theta shape, and boundary-grid status.
-
-Input conversion changed column names/order only and is hashed in `outputs/phase0_reaudit_2026/E17_input_conversion_audit.json`.
+A later audit assigned whole patients to five folds and refitted official
+`mhn==1.2.3` cMHN in every training fold. It also changed pair eligibility and
+score coverage. This is a scientifically useful stress test, but it no longer
+matches the selected E17 estimand or implementation and is not the primary
+analysis.
 
 | cohort | evaluable (P/C) | AUC [patient-bootstrap CI] | AP lift | top-bottom delta [CI] | rho minimum-dwell proxy [CI] |
 |---|---:|---:|---:|---:|---:|
@@ -24,29 +39,29 @@ Input conversion changed column names/order only and is hashed in `outputs/phase
 | CRC-triplets | 41 (38/3) | 0.228 [0.092, 0.413] | 0.951 | -0.143 [-0.357, 0.000] | -0.246 [-0.424, -0.067] |
 | MNM-WashU | 10 (9/1) | 0.556 [0.333, 0.813] | 1.052 | 0.143 [-0.333, 0.429] | 0.063 [-0.278, 0.408] |
 
-Current files: `outputs/phase0_reaudit_2026/E17_CURRENT_OOF_CMHN/`.
-
-## Score-source audit
-
-Frozen-code counts before the label correction were:
-
-| cohort | exact state | genotype fallback | not evaluable |
-|---|---:|---:|---:|
-| GLASS | 441 | 16 | 236 |
-| CRC-triplets | 81 | 0 | 57 |
-| MNM-WashU | 50 | 3 | 83 |
-
-The fallback was labeled `genotype_stage_median` but actually pooled the genotype across stages. The repaired label is `genotype_median_across_stages`; point estimates are unchanged.
+These superseded values remain in Git history for provenance. They are not
+shipped as current result artifacts and must not be substituted into the
+selected E17 table.
 
 ## Objective interpretation
 
-- GLASS gives weak-to-moderate direct support, especially for the rank correlation with the conservative dwell proxy.
-- CRC is a clear contradiction under leakage-controlled official-cMHN, not merely a null result.
-- MNM is too class-imbalanced to support a strong discrimination claim.
-- The larger current evaluable counts arise from OOF score coverage and differ from legacy exact-state-only selection; the versions are not numerically interchangeable.
+- GLASS gives moderate directional discrimination with uncertainty overlapping
+  a null persistence contrast.
+- CRC is directionally favorable but highly uncertain because only three
+  changed pairs are evaluable.
+- MNM is strongly directionally favorable but has only one changed pair, so it
+  is supporting rather than definitive evidence.
+- Across all cohorts, the selected results support compatibility between R* and
+  longitudinal persistence; they do not establish calibrated calendar-time
+  prediction or universal generalization.
 
 ## Manuscript decision
 
-Use `E17_CURRENT_OOF_CMHN` if E17 is retained, because its leakage control and official backend are scientifically stronger. Report the result as **mixed longitudinal evidence**, not uniform validation. The favorable legacy metrics may appear only in provenance/sensitivity material with the fallback/full-cohort-backbone limitation stated explicitly.
+Use the restored original E17 analysis and frozen reference tables as the
+primary longitudinal validation. Disclose the full-cohort
+frequency/co-occurrence backbone and the small changed classes. The stricter
+official-cMHN refit is a superseded sensitivity analysis, retained in Git
+history but excluded from the current code/result contract because it changes
+both the estimator and evaluable-pair population.
 
 Status: `RESOLVED_WITH_CAVEAT`.

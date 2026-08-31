@@ -5,3 +5,6 @@
 *.docx binary
 *.zip binary
 *.whl binary
+
+# Preserve byte-identical frozen reference outputs, including original line endings.
+reference_results/** -text whitespace=cr-at-eol

@@ -38,10 +38,15 @@ construct the two tables above. This boundary is `REQUIRES_DATA`, not silently
 claimed as reproduced by the public package.
 
 Longitudinal validation uses GLASS, colorectal primary-metastasis triplets, and
-MNM-WashU. Provider-specific raw parsing must produce `sample_metadata.tsv` and
-`event_matrix.tsv`; the included patient-grouped cross-fitting workflow then
-generates leakage-controlled pair predictions. See `docs/RESULT_CONTRACTS.md`.
-Raw patient-level records are not redistributed.
+MNM-WashU. Place their cBioPortal exports under
+`Data/longitudinal_public/cbioportal/difg_glass/`,
+`Data/longitudinal_public/cbioportal/coadread_mskcc/`, and
+`Data/longitudinal_public/cbioportal/mnm_washu_2016/`. Each directory must at
+least provide `data_mutations.txt`, `data_clinical_sample.txt`, and
+`data_clinical_patient.txt`; study-specific timeline or panel files are used
+when present. The selected legacy runner constructs its event matrices and
+ordered pairs from these files. Raw patient-level records are not
+redistributed.
 
 The screening preprocessing retained 25, 25, and 17 events for LUAD, COAD,
 and IDC respectively. The final independently fitted cMHN models use a

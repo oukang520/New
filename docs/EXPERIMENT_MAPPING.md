@@ -18,12 +18,12 @@ formula is implemented once.
 | E14 | `workflows/controls.py::backbone_ablation`; not called by current runner | function available, historical result legacy-only |
 | E15 | `experiments/run_secondary.py` | matched-decoy and inflow-pairing falsification tables |
 | E16 | `workflows/topology.py::topology_route_table` | six table-form evolutionary routes with R* values |
-| E17 | `experiments/prepare_longitudinal.py`, then `experiments/run_longitudinal.py` | patient-grouped out-of-fold predictions and cohort metric table |
+| E17 | `experiments/run_longitudinal.py` | selected legacy full-cohort frequency/co-occurrence backbone, training-patient occupancy scoring, pair-level predictions and aggregate longitudinal metrics |
 
-The old plotting-heavy `run_experiment_*.py` scripts are intentionally absent
-from the public package. They were development scripts and duplicated data IO,
-statistics, validation and rendering. This refactor retains the numerical
-method implementation. It does **not** make every historical E1-E17 number a
-reproduced output of v0.2.0. Exact status is maintained in
+The plotting-heavy historical scripts are absent except for E17, whose exact
+legacy runner is intentionally restored by project decision. Other historical
+experiments retain the refactored numerical method implementation. This does
+**not** make every historical E1-E16 number a reproduced output of v0.2.0.
+Exact status is maintained in
 `RESULT_PROVENANCE_MATRIX.tsv`; missing canonical runners are explicit rather
 than represented by callable functions alone.

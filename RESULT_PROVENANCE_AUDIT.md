@@ -40,7 +40,7 @@ backend.
 | Frozen package omits declared preprocessing module | UNRESOLVED | Git tree versus `RELEASE_MANIFEST.tsv` |
 | No canonical raw GENIE to experiment-ready command | UNRESOLVED | `experiments/` inventory |
 | E5 legacy uses 200 bootstrap replicates while frozen config requests 500 | UNRESOLVED | `RESULTS_MASTER_TABLE.md`; `configs/cross_sectional.yaml` |
-| E17 legacy backbone versus current patient-grouped cross-fit provenance | UNRESOLVED | manuscript-control files versus frozen longitudinal workflow |
+| E17 original versus strict patient-grouped cross-fit provenance | RESOLVED_WITH_CAVEAT | selected implementation, frozen references and comparison record |
 | `run_all.py` does not generate every E3-E17 manuscript evidence contract | UNRESOLVED | runner inventory and `docs/EXPERIMENT_MAPPING.md` |
 | Frozen code has not yet been tested in Python 3.11/3.12 with official `mhn==1.2.3` | UNRESOLVED | Phase-0 environment pending |
 
@@ -52,10 +52,12 @@ backend.
   `mhn==1.2.3` cMHN smoke fit after selecting the MSVC 14.44 x64 toolchain.
 - Historical E5 200-replicate stability metrics reproduced to floating-point
   precision. The 500-replicate refinement was run separately.
-- E17 legacy fallback/full-cohort-backbone results and current patient-grouped
-  OOF official-cMHN results are now physically and semantically separated.
-- E17 current evidence is mixed: GLASS positive, CRC contradictory, MNM
-  underpowered. No unfavorable result was removed.
+- The exact original E17 runner, configuration, aggregate result tables and fit
+  metadata are restored as the selected primary contract.
+- The strict patient-grouped official-cMHN audit is explicitly superseded rather
+  than relabeled as equivalent evidence; its values remain in Git history.
+- E17 is interpreted as supportive external longitudinal consistency with a
+  disclosed full-cohort fallback backbone and limited changed classes.
 - Clinical subgroup directions and all E16 route edges are retained in dedicated
   TSV audits.
 
@@ -64,4 +66,7 @@ matrix. A callable function is not counted as reproduced experiment evidence.
 
 ## Non-Overwrite Rule
 
-Historical `results/experiment_*` directories will not be modified. New validation outputs will be written under an isolated `outputs/phase0_reaudit_2026/` hierarchy. Legacy and current values will remain separately labeled in every comparison.
+Historical `results/experiment_*` directories remain unchanged. The selected
+E17 aggregates are frozen under `reference_results/experiment_17_legacy/`.
+Superseded strict-audit artifacts are removed from the current release tree but
+remain recoverable from Git history.
