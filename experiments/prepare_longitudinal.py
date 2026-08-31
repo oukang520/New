@@ -53,6 +53,7 @@ def main() -> None:
             study_id=study,
             output_dir=Path(raw["preparation_root"]) / study,
             config=config,
+            input_files=[source / "sample_metadata.tsv", source / "event_matrix.tsv"],
         )
         print(f"completed longitudinal cross-fitting: {study}")
 

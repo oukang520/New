@@ -4,12 +4,19 @@ from __future__ import annotations
 
 from dataclasses import asdict, dataclass
 from pathlib import Path
+from typing import Sequence
 
 import numpy as np
 import pandas as pd
 
 from ..core.validation import require_columns
-from ..evaluation.metrics import average_precision, binary_auc, bootstrap_interval, safe_rank_correlation
+from ..evaluation.metrics import (
+    average_precision,
+    binary_auc,
+    bootstrap_interval,
+    cluster_bootstrap_interval,
+    safe_rank_correlation,
+)
 from ..io.results import ResultWriter
 
 
@@ -25,6 +32,7 @@ class LongitudinalConfig:
     lower_quantile: float = 1.0 / 3.0
     bootstrap_replicates: int = 1000
     random_seed: int = 20260630
+    bootstrap_group_column: str = "patient_id"
 
 
 def _study_metrics(frame: pd.DataFrame, config: LongitudinalConfig, seed: int) -> dict[str, float | int | str]:
@@ -50,7 +58,13 @@ def _study_metrics(frame: pd.DataFrame, config: LongitudinalConfig, seed: int) -
         dwell[config.score_column].to_numpy(dtype=float),
         np.log1p(dwell[config.dwell_proxy_column].to_numpy(dtype=float)),
     )
-    auc_ci = bootstrap_interval(
+    bootstrap = cluster_bootstrap_interval if config.bootstrap_group_column in evaluable else bootstrap_interval
+    bootstrap_kwargs = (
+        {"group_column": config.bootstrap_group_column}
+        if bootstrap is cluster_bootstrap_interval
+        else {}
+    )
+    auc_ci = bootstrap(
         evaluable,
         lambda sample: binary_auc(
             sample[config.persistence_column].astype(int).to_numpy(),
@@ -58,8 +72,15 @@ def _study_metrics(frame: pd.DataFrame, config: LongitudinalConfig, seed: int) -
         ),
         replicates=config.bootstrap_replicates,
         seed=seed,
+        **bootstrap_kwargs,
     )
-    rho_ci = bootstrap_interval(
+    rho_bootstrap = cluster_bootstrap_interval if config.bootstrap_group_column in dwell else bootstrap_interval
+    rho_kwargs = (
+        {"group_column": config.bootstrap_group_column}
+        if rho_bootstrap is cluster_bootstrap_interval
+        else {}
+    )
+    rho_ci = rho_bootstrap(
         dwell,
         lambda sample: safe_rank_correlation(
             sample[config.score_column].to_numpy(dtype=float),
@@ -67,6 +88,26 @@ def _study_metrics(frame: pd.DataFrame, config: LongitudinalConfig, seed: int) -
         )[0],
         replicates=config.bootstrap_replicates,
         seed=seed + 1,
+        **rho_kwargs,
+    )
+    def persistence_contrast(sample: pd.DataFrame) -> float:
+        lower = sample[config.score_column].quantile(config.lower_quantile)
+        upper = sample[config.score_column].quantile(config.upper_quantile)
+        low_sample = sample[sample[config.score_column].le(lower)]
+        high_sample = sample[sample[config.score_column].ge(upper)]
+        if low_sample.empty or high_sample.empty:
+            return np.nan
+        return float(
+            high_sample[config.persistence_column].mean()
+            - low_sample[config.persistence_column].mean()
+        )
+
+    delta_ci = bootstrap(
+        evaluable,
+        persistence_contrast,
+        replicates=config.bootstrap_replicates,
+        seed=seed + 2,
+        **bootstrap_kwargs,
     )
     return {
         "evaluable_pairs": len(evaluable),
@@ -81,10 +122,13 @@ def _study_metrics(frame: pd.DataFrame, config: LongitudinalConfig, seed: int) -
         "high_rstar_persistence_rate": high_rate,
         "low_rstar_persistence_rate": low_rate,
         "delta_persistence_rate_high_minus_low": high_rate - low_rate,
+        "delta_persistence_ci_low": delta_ci[0],
+        "delta_persistence_ci_high": delta_ci[1],
         "spearman_r_minimum_dwell_interval": rho,
         "spearman_p_minimum_dwell_interval": rho_p,
         "spearman_r_minimum_dwell_ci_low": rho_ci[0],
         "spearman_r_minimum_dwell_ci_high": rho_ci[1],
+        "bootstrap_unit": config.bootstrap_group_column if bootstrap is cluster_bootstrap_interval else "row",
     }
 
 
@@ -93,6 +137,7 @@ def evaluate_longitudinal_pairs(
     *,
     output_dir: str | Path | None = None,
     config: LongitudinalConfig | None = None,
+    input_files: Sequence[str | Path] = (),
 ) -> dict[str, pd.DataFrame]:
     """Evaluate R* against persistence and minimum observed dwell proxies.
 
@@ -118,7 +163,16 @@ def evaluate_longitudinal_pairs(
     summary = summary[columns]
     outputs = {"pair_predictions": pairs.copy(), "longitudinal_metrics": summary}
     if output_dir is not None:
-        writer = ResultWriter(output_dir)
+        writer = ResultWriter(
+            output_dir,
+            input_files=list(input_files),
+            metadata={
+                "workflow": "evaluate_longitudinal_pairs",
+                "random_seed": config.random_seed,
+                "bootstrap_replicates": config.bootstrap_replicates,
+                "bootstrap_group_column": config.bootstrap_group_column,
+            },
+        )
         writer.table("pair_predictions", outputs["pair_predictions"])
         writer.table("longitudinal_metrics", summary)
         writer.json("resolved_config", asdict(config))

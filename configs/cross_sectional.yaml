@@ -1,4 +1,4 @@
-data_root: processed/experiment_ready
+data_root: outputs/prepared_cross_sectional
 output_root: outputs/cross_sectional
 cohorts:
   - AACR_LUAD

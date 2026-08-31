@@ -32,7 +32,7 @@ src/relobstq_mhn/
   workflows/     integrated, plotting-free scientific workflows
   io/            configuration and hashed result persistence
 experiments/     thin commands; no duplicated method implementation
-configs/         four workflow-level configurations
+configs/         five workflow-level configurations
 examples/        optional plotting from completed TSV results only
 tests/           method and workflow tests
 docs/            schemas, experiment mapping, data/code availability
@@ -60,6 +60,7 @@ Place provider-authorized data under the paths described in
 `docs/DATA_AVAILABILITY.md`, then run:
 
 ```powershell
+python experiments/prepare_cross_sectional.py
 python experiments/run_cross_sectional.py
 python experiments/run_secondary.py
 python experiments/run_simulation.py
@@ -82,3 +83,12 @@ python -m pytest -q
 ```
 
 Raw patient-level data and generated results are not redistributed.
+
+## Provenance boundary
+
+The original frozen audit commit `e4215608...` omitted the declared
+`relobstq_mhn.data` package. The Phase-0 successor restores the exact
+manifest-matching files and adds hashed input/runtime metadata. Historical
+E1-E17 results are not automatically results of this refactored package; see
+`RESULT_PROVENANCE_MATRIX.tsv` and `FINAL_REPRODUCIBILITY_REPORT.md` before
+using a numerical value in a manuscript.

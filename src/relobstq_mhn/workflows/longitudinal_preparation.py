@@ -4,6 +4,7 @@ from __future__ import annotations
 
 from dataclasses import asdict, dataclass, field
 from pathlib import Path
+from typing import Sequence
 
 import numpy as np
 import pandas as pd
@@ -60,6 +61,7 @@ def prepare_longitudinal_pairs(
     output_dir: str | Path | None = None,
     config: LongitudinalPreparationConfig | None = None,
     theta_by_fold: dict[int, np.ndarray] | None = None,
+    input_files: Sequence[str | Path] = (),
 ) -> dict[str, pd.DataFrame]:
     """Create out-of-fold sample scores and adjacent longitudinal pairs.
 
@@ -120,7 +122,9 @@ def prepare_longitudinal_pairs(
         fallback = test["genotype"].map(genotype_fallback)
         use_fallback = test["predicted_log2_R"].isna() & fallback.notna()
         test.loc[use_fallback, "predicted_log2_R"] = fallback[use_fallback]
-        test.loc[use_fallback, "score_source"] = "genotype_stage_median"
+        # This fallback intentionally pools the same genotype across stages;
+        # the former label incorrectly implied stage-specific matching.
+        test.loc[use_fallback, "score_source"] = "genotype_median_across_stages"
         predictions.append(test)
         fold_audit.append(
             {
@@ -133,6 +137,26 @@ def prepare_longitudinal_pairs(
                 "scored_samples": int(test["predicted_log2_R"].notna().sum()),
                 "fit_backend": backend,
                 "selected_lambda": selected_lambda,
+                "selected_lambda_multiplier": (
+                    float(selected_lambda) * len(train) if np.isfinite(selected_lambda) else np.nan
+                ),
+                "lambda_candidates": "+".join(str(value) for value in config.mhn.lambda_multipliers),
+                "lambda_at_grid_boundary": (
+                    bool(
+                        np.isclose(float(selected_lambda) * len(train), min(config.mhn.lambda_multipliers))
+                        or np.isclose(float(selected_lambda) * len(train), max(config.mhn.lambda_multipliers))
+                    )
+                    if np.isfinite(selected_lambda)
+                    else pd.NA
+                ),
+                "cv_folds": config.mhn.cv_folds,
+                "pick_1se": config.mhn.pick_1se,
+                "max_iterations": config.mhn.max_iterations,
+                "relative_tolerance": config.mhn.relative_tolerance,
+                "fit_seed": config.random_seed + int(fold),
+                "event_count": len(events),
+                "theta_shape": f"{len(events)}x{len(events)}",
+                "finite_theta": bool(np.isfinite(theta).all()),
             }
         )
     sample_predictions = pd.concat(predictions, ignore_index=True)
@@ -177,7 +201,17 @@ def prepare_longitudinal_pairs(
         "crossfit_audit": pd.DataFrame(fold_audit),
     }
     if output_dir is not None:
-        writer = ResultWriter(output_dir)
+        writer = ResultWriter(
+            output_dir,
+            input_files=list(input_files),
+            metadata={
+                "workflow": "prepare_longitudinal_pairs",
+                "study_id": study_id,
+                "fit_backend": "official_mhn_cMHN" if theta_by_fold is None else "supplied_theta",
+                "random_seed": config.random_seed,
+                "leakage_control": "patient_grouped_out_of_fold",
+            },
+        )
         for name, frame in outputs.items():
             writer.table(name, frame)
         writer.json("resolved_config", asdict(config))

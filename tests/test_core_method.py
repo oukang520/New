@@ -26,6 +26,11 @@ from relobstq_mhn import (  # noqa: E402
     simulate_cohort_with_audit,
     standardize_stage_group,
 )
+from relobstq_mhn.workflows import (  # noqa: E402
+    CrossSectionalPreparationConfig,
+    prepare_cross_sectional_cohort,
+)
+from relobstq_mhn.evaluation import cluster_bootstrap_interval  # noqa: E402
 
 
 def synthetic_occupancy() -> pd.DataFrame:
@@ -134,6 +139,60 @@ def test_data_processing_core_tables() -> None:
     assert tables["event_matrix"].shape == (4, 4)
     assert "state_id" in tables["state_table"]
     assert standardize_stage_group("AJCC stage IV") == "metastatic"
+
+
+def test_fixed_panel_preparation_contract(tmp_path: Path) -> None:
+    metadata = pd.DataFrame(
+        {
+            "analysis_id": ["S1", "S2", "S3"],
+            "patient_id": ["P1", "P2", "P3"],
+            "sample_id": ["S1", "S2", "S3"],
+            "stage_group": ["primary", "metastatic", "primary"],
+        }
+    )
+    mutations = pd.DataFrame(
+        {
+            "analysis_id": ["S1", "S2", "S2", "S3"],
+            "gene": ["A", "A", "B", "B"],
+            "consequence": ["Missense_Mutation"] * 4,
+        }
+    )
+    metadata_path = tmp_path / "metadata.csv"
+    mutations_path = tmp_path / "mutations.csv"
+    output = tmp_path / "prepared"
+    metadata.to_csv(metadata_path, index=False)
+    mutations.to_csv(mutations_path, index=False)
+    prepare_cross_sectional_cohort(
+        metadata_path,
+        mutations_path,
+        output_dir=output,
+        config=CrossSectionalPreparationConfig(events=("A", "B"), minimum_state_count=1),
+    )
+    assert (output / "mhn_training_matrix.csv").is_file()
+    assert (output / "mhn_row_index_map.csv").is_file()
+    assert (output / "state_table.csv").is_file()
+    assert (output / "run_metadata.json").is_file()
+    assert (output / "result_manifest.tsv").is_file()
+    assert pd.read_csv(output / "mhn_training_matrix.csv").columns.tolist() == ["A", "B"]
+
+
+def test_cluster_bootstrap_preserves_complete_patients() -> None:
+    frame = pd.DataFrame(
+        {
+            "patient_id": ["P1", "P1", "P2", "P2", "P3", "P3"],
+            "value": [1.0, 2.0, 4.0, 5.0, 8.0, 9.0],
+        }
+    )
+    low, high = cluster_bootstrap_interval(
+        frame,
+        lambda sampled: float(sampled["value"].mean()),
+        group_column="patient_id",
+        replicates=100,
+        seed=17,
+    )
+    assert np.isfinite(low)
+    assert np.isfinite(high)
+    assert low <= frame["value"].mean() <= high
 
 
 def test_simulation_core_outputs() -> None:

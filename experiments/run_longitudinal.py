@@ -33,7 +33,12 @@ def main() -> None:
         bootstrap_replicates=int(analysis["bootstrap_replicates"]),
         random_seed=int(analysis["random_seed"]),
     )
-    evaluate_longitudinal_pairs(pairs, output_dir=raw["output_root"], config=config)
+    evaluate_longitudinal_pairs(
+        pairs,
+        output_dir=raw["output_root"],
+        config=config,
+        input_files=[Path(path) for path in raw["pair_tables"]],
+    )
     print(f"completed longitudinal workflow: {raw['output_root']}")
 
 

@@ -1,4 +1,8 @@
-"""Run the core evidence chain in publication order."""
+"""Run the currently canonical core workflows in dependency order.
+
+This command does not claim to regenerate every historical E1-E17 table. See
+RESULT_PROVENANCE_MATRIX.tsv for experiment-level coverage.
+"""
 
 from __future__ import annotations
 
@@ -14,6 +18,7 @@ def main() -> None:
     args = parser.parse_args()
     root = Path(__file__).resolve().parents[1]
     scripts = [
+        "prepare_cross_sectional.py",
         "run_cross_sectional.py",
         "run_secondary.py",
         "run_simulation.py",

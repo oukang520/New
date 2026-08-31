@@ -90,3 +90,37 @@ def bootstrap_interval(
     if not values:
         return np.nan, np.nan
     return tuple(float(value) for value in np.quantile(values, quantiles))
+
+
+def cluster_bootstrap_interval(
+    frame: pd.DataFrame,
+    metric: Callable[[pd.DataFrame], float],
+    *,
+    group_column: str,
+    replicates: int = 1000,
+    seed: int = 20260630,
+    quantiles: tuple[float, float] = (0.025, 0.975),
+) -> tuple[float, float]:
+    """Non-parametric cluster bootstrap confidence interval.
+
+    Complete clusters are sampled with replacement, preserving dependence
+    between multiple adjacent pairs contributed by the same patient.
+    """
+
+    if frame.empty or replicates <= 0 or group_column not in frame:
+        return np.nan, np.nan
+    groups = frame[group_column].dropna().unique()
+    if len(groups) < 2:
+        return np.nan, np.nan
+    grouped = {group: frame[frame[group_column].eq(group)] for group in groups}
+    rng = np.random.default_rng(seed)
+    values = []
+    for _ in range(replicates):
+        selected = rng.choice(groups, size=len(groups), replace=True)
+        sampled = pd.concat([grouped[group] for group in selected], ignore_index=True)
+        value = metric(sampled)
+        if np.isfinite(value):
+            values.append(float(value))
+    if not values:
+        return np.nan, np.nan
+    return tuple(float(value) for value in np.quantile(values, quantiles))

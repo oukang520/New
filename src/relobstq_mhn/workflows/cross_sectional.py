@@ -152,7 +152,21 @@ def run_cross_sectional_cohort(
         "fit_metadata": fit_metadata,
     }
     if output_dir is not None:
-        writer = ResultWriter(output_dir)
+        input_root = Path(input_dir)
+        writer = ResultWriter(
+            output_dir,
+            input_files=[
+                input_root / "mhn_training_matrix.csv",
+                input_root / "mhn_row_index_map.csv",
+                input_root / "state_table.csv",
+            ],
+            metadata={
+                "workflow": "run_cross_sectional_cohort",
+                "backend": fit_metadata["backend"],
+                "random_seed": config.mhn.random_seed,
+                "bootstrap_replicates": config.bootstrap_replicates,
+            },
+        )
         for name, value in tables.items():
             if isinstance(value, pd.DataFrame):
                 writer.table(name, value)

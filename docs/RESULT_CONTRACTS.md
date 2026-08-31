@@ -1,7 +1,18 @@
 # Result contracts
 
 Every workflow writes tab-separated tables under `OUTPUT/tables/`, a resolved
-JSON configuration, and `result_manifest.tsv` containing file hashes.
+JSON configuration, `run_metadata.json`, and `result_manifest.tsv` containing
+file hashes. Run metadata records the command, UTC timestamp, Git commit when
+resolvable, Python/package versions, workflow seed/backend fields, and hashes
+of supplied input paths.
+
+## Cross-sectional preparation
+
+- `mhn_training_matrix.csv`: pure binary p15 event matrix in fixed event order.
+- `mhn_row_index_map.csv`: row-to-analysis-unit mapping and state fields.
+- `state_table.csv`: sample-level p15 state assignments.
+- `tables/event_panel.tsv`: prespecified model events and selection rule.
+- `tables/preparation_qc.tsv`: sample/patient/event counts and contract checks.
 
 ## Cross-sectional
 
@@ -25,9 +36,12 @@ JSON configuration, and `result_manifest.tsv` containing file hashes.
   `collection_time`, and `stage_group`; `event_matrix.tsv` with `analysis_id`
   followed by binary event columns.
 - `sample_predictions.tsv`: patient-grouped out-of-fold R* predictions.
-- `crossfit_audit.tsv`: training/held-out counts and fitting backend by fold.
+- `crossfit_audit.tsv`: training/held-out counts, fitting backend, selected
+  lambda/grid boundary, seed, event count and finite theta audit by fold.
 - `pair_predictions.tsv`: leakage-controlled predictions and observed outcomes.
-- `longitudinal_metrics.tsv`: AUC, AP lift, persistence contrast and dwell-proxy correlation with bootstrap intervals.
+- `longitudinal_metrics.tsv`: AUC, AP lift, persistence contrast and dwell-proxy
+  correlation with patient-cluster bootstrap intervals when `patient_id` is
+  available.
 
 Plots are not result contracts. The optional scripts under `examples/` consume
 these tables without recomputing or altering any statistic.
