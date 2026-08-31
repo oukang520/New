@@ -1,0 +1,14 @@
+
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "relobstq-mhn"
+version = "0.1.0"
+description = "Relative observed-state topology quantification with MHN-derived inflow"
+requires-python = ">=3.11,<3.13"
+readme = "README.md"
+
+[tool.setuptools.packages.find]
+where = ["src"]

@@ -1,0 +1,37 @@
+experiment_name: clinical_association_validation
+result_root: results/experiment_12_clinical_validation
+plot_style_config: configs/figure_style.yaml
+experiment_ready_root: processed/experiment_ready
+experiment_05_root: results/experiment_05_state_scores
+
+analysis:
+  minimum_followup_days: 30
+  minimum_events_for_cox: 20
+  minimum_subgroup_patients: 80
+  minimum_subgroup_events: 20
+  high_low_split: median
+  aacr_time_origin: sequencing_report_age
+  rmst_horizon_years: 3
+  landmark_years: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+  bootstrap_replicates: 120
+  cindex_models:
+    clinical_only: [age_num, sex_male, stage_metastatic, event_count]
+    mhn_only: [age_num, sex_male, stage_metastatic, event_count, log_F_hat]
+    occupancy_only: [age_num, sex_male, stage_metastatic, event_count, log_L_v]
+    rstar_augmented: [age_num, sex_male, stage_metastatic, event_count, log_R_star]
+
+datasets:
+  AACR_LUAD:
+    display_name: Lung adenocarcinoma
+    short_name: LUAD
+  AACR_COAD:
+    display_name: Colon adenocarcinoma
+    short_name: COAD
+  AACR_IDC:
+    display_name: Breast invasive ductal carcinoma
+    short_name: IDC
+
+plot:
+  font_family: Arial
+  base_font_size: 8
+  dpi: 600

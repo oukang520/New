@@ -1,0 +1,44 @@
+experiment_name: real_cohort_main_results
+result_root: results/experiment_10_real_cohort_main
+plot_style_config: configs/figure_style.yaml
+experiment_05_root: results/experiment_05_state_scores
+experiment_08_root: results/experiment_08_biological_convergence
+
+analysis:
+  top_states_per_cohort: 6
+  forest_states_per_cohort: 4
+  top_observation_states_per_cohort: 5
+  ci_reference: 1.0
+  o_star_reference: 1.0
+  max_scatter_states_per_cohort: 450
+
+datasets:
+  AACR_LUAD:
+    display_name: Lung adenocarcinoma
+    short_name: LUAD
+    expected_modules: [RTK-MAPK, p53/genome integrity, chromatin, DNA repair]
+  AACR_COAD:
+    display_name: Colon adenocarcinoma
+    short_name: COAD
+    expected_modules: [WNT, RTK-MAPK, p53/genome integrity, TGF-beta]
+  AACR_IDC:
+    display_name: Breast invasive ductal carcinoma
+    short_name: IDC
+    expected_modules: [hormone/luminal, PI3K-AKT, DNA repair, p53/genome integrity]
+
+modules:
+  - RTK-MAPK
+  - p53/genome integrity
+  - WNT
+  - TGF-beta
+  - PI3K-AKT
+  - hormone/luminal
+  - DNA repair
+  - cell cycle
+  - chromatin
+  - stress/metabolism
+
+plot:
+  font_family: Arial
+  base_font_size: 8
+  dpi: 600

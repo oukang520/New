@@ -1,0 +1,64 @@
+experiment_name: topology_multipath_robustness
+result_root: results/experiment_07_topology_robustness
+plot_style_config: configs/figure_style.yaml
+random_seed: 20260626
+
+simulation:
+  samples_per_repeat: 1000
+  events: 15
+  repeats: 50
+  pilot_samples: 15000
+  maximum_events: 8
+  maximum_time: 10.0
+  topologies: [linear, branching, mutual_exclusivity, mixed]
+  sparsities: [0.05, 0.10, 0.20]
+  bottleneck_placements: [early_stage, middle_stage, late_stage, pathway_specific]
+  bottleneck_states: 3
+  fast_states: 3
+  bottleneck_dwell: 3.0
+  fast_dwell: 0.3
+  neutral_dwell: 1.0
+  observation_weight: 1.0
+  false_positive_rate: 0.0
+  false_negative_rate: 0.0
+  stage_missing_rate: 0.0
+
+truth_selection:
+  mode: topology_specific_positive_control
+  bottleneck_pilot_count_min: 30
+  bottleneck_pilot_count_max: 260
+  bottleneck_target_pilot_count: 85
+  fast_event_count_min: 1
+  fast_event_count_max: 2
+  fast_pilot_count_min: 180
+
+lambda_calibration:
+  fixed_lambda_multiplier: 10.0
+  rationale: fixed_from_successful_experiment_06_enhanced_to_isolate_topology_effects
+
+mhn:
+  lambda_multipliers: [10.0]
+  cv_folds: 3
+  pick_1se: true
+  max_iterations: 5000
+  relative_tolerance: 1.0e-7
+
+state_scoring:
+  minimum_state_count: 5
+  minimum_inflow: 1.0e-8
+  epsilon: 1.0e-8
+  top_k: 5
+
+descriptive_reference:
+  note: Optional historical cut points retained only for descriptive sensitivity summaries, not for pass/fail validation.
+  global_median_spearman_reference: 0.35
+  global_median_bottleneck_auc_reference: 0.65
+  global_median_top5_precision_reference: 0.30
+  combo_auc_reference: 0.60
+
+plot:
+  font_family: Arial
+  base_font_size: 8
+  dpi: 600
+  heatmap_vmin: 0.0
+  heatmap_vmax: 1.0

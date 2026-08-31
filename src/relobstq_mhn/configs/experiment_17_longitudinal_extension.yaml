@@ -1,0 +1,38 @@
+experiment_name: experiment_17_longitudinal_rstar_calibration_extension
+result_root: results/experiment_17_longitudinal_public/extension_calibration
+source_result_root: results/experiment_17_longitudinal_public
+plot_style_config: configs/figure_style.yaml
+random_seed: 20260902
+
+included_studies:
+  difg_glass:
+    short_name: GLASS
+    display_name: Diffuse glioma longitudinal cohort
+  coadread_mskcc:
+    short_name: CRC-triplets
+    display_name: Colorectal primary-metastasis triplets
+  mnm_washu_2016:
+    short_name: MNM-WashU
+    display_name: WashU myeloid neoplasm paired samples
+
+analysis:
+  rstar_quantile_bins: 4
+  bootstrap_replicates: 2000
+  min_evaluable_pairs_per_study: 15
+  primary_score_column: predicted_log2_R
+  filters:
+    require_pair_qc_pass: true
+    require_exact_heldout_state_score: true
+
+success:
+  require_positive_top_bottom_persistence_delta: true
+  require_positive_spearman_persistence_all_studies: true
+  require_positive_spearman_similarity_all_studies: true
+  require_positive_spearman_minimum_dwell_proxy_all_studies: true
+
+plot:
+  dpi: 600
+  output_formats: [pdf, png]
+  write_standalone_extension_figure: false
+  figure_size: [8.2, 8.2]
+  integrated_figure_size: [8.4, 8.4]

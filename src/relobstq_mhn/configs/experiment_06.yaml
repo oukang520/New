@@ -1,0 +1,48 @@
+experiment_name: foundational_bottleneck_recovery
+result_root: results/experiment_06_bottleneck_recovery
+plot_style_config: configs/figure_style.yaml
+random_seed: 20260625
+
+simulation:
+  samples_per_repeat: 1000
+  events: 15
+  repeats: 100
+  pilot_samples: 30000
+  maximum_events: 8
+  maximum_time: 10.0
+  interaction_sparsity: 0.10
+  bottleneck_states: 3
+  fast_states: 3
+  bottleneck_dwell: 3.0
+  fast_dwell: 0.3
+  neutral_dwell: 1.0
+  observation_weight: 1.0
+  false_positive_rate: 0.0
+  false_negative_rate: 0.0
+  stage_missing_rate: 0.0
+
+mhn:
+  lambda_multipliers: [0.1, 0.31622777, 1.0, 3.16227766, 10.0]
+  cv_folds: 3
+  pick_1se: true
+  max_iterations: 5000
+  relative_tolerance: 1.0e-7
+
+state_scoring:
+  minimum_state_count: 5
+  minimum_inflow: 1.0e-8
+  epsilon: 1.0e-8
+  top_k: 5
+
+success:
+  median_spearman_minimum: 0.50
+  median_spearman_ideal: 0.70
+  median_bottleneck_auc_minimum: 0.75
+  median_top5_precision_minimum: 0.40
+  paired_test_alpha: 0.05
+
+plot:
+  font_family: Arial
+  base_font_size: 8
+  dpi: 600
+  representative_neutral_states: 10

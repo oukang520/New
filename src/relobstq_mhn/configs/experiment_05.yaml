@@ -1,0 +1,42 @@
+experiment_name: relative_dwell_and_observation_enrichment
+result_root: results/experiment_05_state_scores
+plot_style_config: configs/figure_style.yaml
+experiment_03_root: results/experiment_03_mhn_interface
+experiment_04_root: results/experiment_04_relative_inflow
+random_seed: 20260625
+
+thresholds:
+  minimum_state_count: 5
+  high_confidence_state_count: 10
+  minimum_inflow: 1.0e-6
+  epsilon: 1.0e-6
+  top_k: 10
+  bottleneck_display: 8
+  fast_display: 5
+  heatmap_genotypes: 14
+
+bootstrap:
+  replicates: 200
+  confidence_level: 0.95
+  minimum_valid_fraction: 0.45
+  refit_mhn: false
+
+progression_only:
+  simulations: 100000
+  stage_transition_mass: 0.25
+  stage_transition_mass_sensitivity: [0.10, 0.25, 0.50]
+  observation_step_sampling: empirical_event_burden
+  dirichlet_alpha: 0.5
+
+plot:
+  font_family: Arial
+  base_font_size: 8
+  dpi: 600
+
+datasets:
+  AACR_LUAD:
+    display_name: Lung adenocarcinoma
+  AACR_COAD:
+    display_name: Colon adenocarcinoma
+  AACR_IDC:
+    display_name: Breast invasive ductal carcinoma

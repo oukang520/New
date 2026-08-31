@@ -1,0 +1,50 @@
+experiment_name: observation_enrichment_O_star_simulation
+result_root: results/experiment_09_observation_enrichment
+plot_style_config: configs/figure_style.yaml
+random_seed: 20260627
+
+simulation:
+  events: 15
+  repeats: 100
+  samples_per_repeat: 1500
+  expected_samples_per_repeat: 20000
+  pilot_samples: 30000
+  maximum_events: 8
+  maximum_time: 10.0
+  interaction_sparsity: 0.10
+  high_observation_states: 3
+  low_observation_states: 3
+  high_omega: 3.0
+  low_omega: 0.5
+  neutral_omega: 1.0
+  neutral_dwell: 1.0
+  contrast_bottleneck_dwell: 3.0
+
+truth_selection:
+  mode: moderate_frequency_state_enrichment
+  event_count_min: 1
+  event_count_max: 4
+  min_pilot_frequency: 0.0018
+  max_pilot_frequency: 0.080
+  target_pilot_frequency: 0.018
+  stage_stratified: true
+
+state_scoring:
+  minimum_state_count: 5
+  minimum_expected_count: 5
+  epsilon: 1.0e-8
+  top_k: 3
+
+smoothing:
+  dirichlet_alpha: 0.5
+
+success:
+  median_auc_minimum: 0.80
+  median_spearman_minimum: 0.50
+  median_top3_precision_minimum: 0.50
+
+plot:
+  font_family: Arial
+  base_font_size: 8
+  dpi: 600
+  neutral_display_states: 90

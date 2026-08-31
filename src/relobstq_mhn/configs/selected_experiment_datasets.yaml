@@ -1,0 +1,54 @@
+selection_name: primary_relobstq_mhn_cohorts
+analysis_unit: sample
+input_root: processed/experiment_ready
+
+included_datasets:
+  - dataset_name: AACR_LUAD
+    role: independent_full_experiment
+    input_dir: processed/experiment_ready/AACR_LUAD
+    mhn_matrix: mhn_training_matrix.csv
+    row_map: mhn_row_index_map.csv
+    metadata: analysis_metadata.csv
+    state_table: state_table.csv
+    events: 25
+
+  - dataset_name: AACR_COAD
+    role: independent_full_experiment
+    input_dir: processed/experiment_ready/AACR_COAD
+    mhn_matrix: mhn_training_matrix.csv
+    row_map: mhn_row_index_map.csv
+    metadata: analysis_metadata.csv
+    state_table: state_table.csv
+    events: 25
+
+  - dataset_name: AACR_IDC
+    role: independent_full_experiment
+    input_dir: processed/experiment_ready/AACR_IDC
+    mhn_matrix: mhn_training_matrix.csv
+    row_map: mhn_row_index_map.csv
+    metadata: analysis_metadata.csv
+    state_table: state_table.csv
+    events: 17
+
+excluded_datasets:
+  - dataset_name: PACA-CA
+    reason: Removed from the main experiment chain because the usable state/sample scale is too small for stable Rel-ObsTQ-MHN real-cohort experiments.
+  - dataset_name: PBCA-US
+    reason: Insufficient progression-state diversity and high zero-event fraction.
+  - dataset_name: PEME-CA
+    reason: Sample size below the primary MHN threshold and insufficient progression-state diversity.
+  - dataset_name: PRAD-CA
+    reason: Insufficient progression-state diversity and high zero-event fraction.
+  - dataset_name: PRAD-UK
+    reason: Sample size below the primary MHN threshold and high zero-event fraction.
+
+experiment_policy:
+  train_mhn_separately_per_dataset: true
+  combine_cancer_types_for_training: false
+  calculate_relobstq_separately_per_dataset: true
+  run_complete_experiment_pipeline_per_dataset: true
+  share_fitted_parameters_across_datasets: false
+  compare_results_only_after_independent_analysis: true
+  include_cna_in_primary_analysis: false
+  use_survival_as_time_anchor: false
+  minimum_state_count: 5

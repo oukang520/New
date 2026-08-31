@@ -1,0 +1,182 @@
+project: Rel-ObsTQ-MHN
+default_plot_style: configs/figure_style.yaml
+
+experiments:
+  experiment_01_02:
+    config: configs/experiments_01_02.yaml
+    result_root: results/experiments_01_02
+    plot_style_config: configs/figure_style.yaml
+    role: data preparation and stage-sensitivity QC
+  experiment_03:
+    config: configs/experiment_03.yaml
+    result_root: results/experiment_03_mhn_interface
+    plot_style_config: configs/figure_style.yaml
+    role: MHN interface and transition backbone validation
+  experiment_04:
+    config: configs/experiment_04.yaml
+    result_root: results/experiment_04_relative_inflow
+    plot_style_config: configs/figure_style.yaml
+    role: relative inflow construction and rule sensitivity
+  experiment_05:
+    config: configs/experiment_05.yaml
+    result_root: results/experiment_05_state_scores
+    plot_style_config: configs/figure_style.yaml
+    role: state-level R* and O* score analysis
+  experiment_06:
+    config: configs/experiment_06_enhanced.yaml
+    result_root: results/experiment_06_bottleneck_recovery_enhanced
+    plot_style_config: configs/figure_style.yaml
+    role: controlled relative dwell-time recovery positive control
+  experiment_07_strict:
+    config: configs/experiment_07.yaml
+    result_root: results/experiment_07_topology_robustness
+    plot_style_config: configs/figure_style.yaml
+    role: strict topology robustness boundary
+  experiment_07_balanced:
+    config: configs/experiment_07_balanced.yaml
+    result_root: results/experiment_07_topology_robustness_balanced
+    plot_style_config: configs/figure_style.yaml
+    role: balanced relative dwell-time topology robustness
+  experiment_08:
+    config: configs/experiment_08.yaml
+    result_root: results/experiment_08_biological_convergence
+    plot_style_config: configs/figure_style.yaml
+    role: real-cohort biological convergence of relative dwell-state signals
+  experiment_09:
+    config: configs/experiment_09.yaml
+    result_root: results/experiment_09_observation_enrichment
+    plot_style_config: configs/figure_style.yaml
+    role: controlled O* observation-enrichment recovery simulation
+  experiment_10:
+    config: configs/experiment_10.yaml
+    result_root: results/experiment_10_real_cohort_main
+    plot_style_config: configs/figure_style.yaml
+    role: real-cohort main R*/O* state result synthesis
+  experiment_11:
+    config: configs/experiment_11.yaml
+    result_root: results/experiment_11_information_gain
+    plot_style_config: configs/figure_style.yaml
+    role: information gain over MHN-only and occupancy-only state views
+  experiment_12:
+    config: configs/experiment_12.yaml
+    result_root: results/experiment_12_clinical_validation
+    plot_style_config: configs/figure_style.yaml
+    role: patient-level clinical endpoint validation of R*
+  experiment_13:
+    config: configs/experiment_13.yaml
+    result_root: results/experiment_13_cross_cohort_replication
+    plot_style_config: configs/figure_style.yaml
+    role: split-cohort replication of top R* state signals
+  experiment_14:
+    config: configs/experiment_14.yaml
+    result_root: results/experiment_14_ablation_backbone
+    plot_style_config: configs/figure_style.yaml
+    role: ablation and backbone replacement for the MHN-derived inflow denominator
+  experiment_15:
+    config: configs/experiment_15.yaml
+    result_root: results/experiment_15_uncertainty_negative_controls
+    plot_style_config: configs/figure_style.yaml
+    role: innovation-specific falsification controls for relative dwell-time signals
+  experiment_16:
+    config: configs/experiment_16.yaml
+    result_root: results/experiment_16_real_topology
+    plot_style_config: configs/figure_style.yaml
+    role: real-cohort gene-evolution topology with relative dwell-time node overlay
+
+future_experiment_defaults:
+  plot_style_config: configs/figure_style.yaml
+  required_outputs:
+    - vector_pdf
+    - dpi_600_png
+    - figure_design_review
+    - boundary_check
+  figure_policy:
+    - choose one primary scientific question per main figure
+    - prefer compact annotated matrices for factorial robustness results
+    - keep auxiliary diagnostics outside the main figure unless needed for interpretation
+
+main_figures:
+  - id: E1_QC_overview
+    experiment: experiment_01_02
+    base_path: results/experiments_01_02/combined_figures/Figure_E1_QC_overview_three_cohorts
+    role: three-cohort data quality and input completeness overview
+  - id: E1_state_sparsity
+    experiment: experiment_01_02
+    base_path: results/experiments_01_02/combined_figures/Figure_E1_state_sparsity_three_cohorts
+    role: three-cohort state sparsity and panel-event structure
+  - id: E3_MHN_interface
+    experiment: experiment_03
+    base_path: results/experiment_03_mhn_interface/combined_figures/Figure_E3_MHN_interface_three_cohorts
+    role: MHN interface and transition-backbone compatibility
+  - id: E4_relative_inflow
+    experiment: experiment_04
+    base_path: results/experiment_04_relative_inflow/combined_figures/Figure_E4_relative_inflow_three_cohorts
+    role: relative inflow construction across three cohorts
+  - id: E4_inflow_rule_sensitivity
+    experiment: experiment_04
+    base_path: results/experiment_04_relative_inflow/combined_figures/Figure_E4_inflow_rule_sensitivity_three_cohorts
+    role: inflow-rule sensitivity table across three cohorts
+  - id: E4_dominant_inflow_edges
+    experiment: experiment_04
+    base_path: results/experiment_04_relative_inflow/combined_figures/Figure_E4_dominant_inflow_edges_three_cohorts
+    role: dominant inflow edges across three cohorts
+  - id: E5_core_results
+    experiment: experiment_05
+    base_path: results/experiment_05_state_scores/combined_figures/Figure_E5_core_results_three_cohorts
+    role: R* and O* core state-score behavior
+  - id: E6_bottleneck_recovery
+    experiment: experiment_06
+    base_path: results/experiment_06_bottleneck_recovery_enhanced/figures/Figure_E6_enhanced_bottleneck_recovery
+    role: controlled relative dwell-time recovery
+  - id: E7_topology_robustness
+    experiment: experiment_07_balanced
+    base_path: results/experiment_07_topology_robustness_balanced/figures/Figure_E7_topology_robustness
+    role: balanced topology robustness focused on relative dwell-time order
+  - id: E8_top_state_profiles
+    experiment: experiment_08
+    base_path: results/experiment_08_biological_convergence/figures/Figure_E8_top_state_profiles
+    role: biological profiles of top relative dwell states
+  - id: E8_module_convergence
+    experiment: experiment_08
+    base_path: results/experiment_08_biological_convergence/figures/Figure_E8_module_convergence_summary
+    role: a priori module convergence of top relative dwell states
+  - id: E9_observation_enrichment
+    experiment: experiment_09
+    base_path: results/experiment_09_observation_enrichment/figures/Figure_E9_observation_enrichment
+    role: O* observation-enrichment positive control
+  - id: E10_real_cohort_main
+    experiment: experiment_10
+    base_path: results/experiment_10_real_cohort_main/figures/Figure_E10_real_cohort_main_results
+    role: real-cohort synthesis of R* and O*
+  - id: E11_information_gain
+    experiment: experiment_11
+    base_path: results/experiment_11_information_gain/figures/Figure_E11_information_gain_controls
+    role: information gain of R* over occupancy-only views
+  - id: E12_clinical_validation
+    experiment: experiment_12
+    base_path: results/experiment_12_clinical_validation/figures/Figure_E12_clinical_validation
+    role: clinical association of relative dwell-state burden
+  - id: E13_cross_cohort_replication
+    experiment: experiment_13
+    base_path: results/experiment_13_cross_cohort_replication/figures/Figure_E13_split_replication
+    role: split-cohort replication of R* state signals
+  - id: E14_ablation_backbone
+    experiment: experiment_14
+    base_path: results/experiment_14_ablation_backbone/figures/Figure_E14_ablation_backbone
+    role: innovation-focused ablation of the inflow denominator
+  - id: E15_falsification_controls
+    experiment: experiment_15
+    base_path: results/experiment_15_uncertainty_negative_controls/figures/Figure_E15_innovation_falsification_controls
+    role: innovation-specific falsification and uncertainty controls
+  - id: E16_real_topology
+    experiment: experiment_16
+    base_path: results/experiment_16_real_topology/figures/Figure_E16_real_relative_dwell_topology
+    role: real-cohort evolutionary topology with R* node overlay
+  - id: E17_integrated_longitudinal_validation
+    experiment: experiment_17
+    base_path: results/experiment_17_longitudinal_public/figures/Figure_E17_integrated_longitudinal_validation
+    role: integrated public longitudinal validation of predicted relative dwell-time order
+  - id: E17_real_longitudinal_topology_routes
+    experiment: experiment_17
+    base_path: results/experiment_17_longitudinal_public/figures/Figure_E17_real_longitudinal_topology_routes
+    role: longitudinal topology routes with R* support

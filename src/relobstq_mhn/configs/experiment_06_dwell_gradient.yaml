@@ -1,0 +1,43 @@
+experiment_name: experiment_06_continuous_dwell_gradient
+result_root: results/experiment_06_dwell_gradient
+plot_style_config: configs/figure_style.yaml
+random_seed: 20260901
+
+simulation:
+  samples_per_repeat: 2000
+  repeats: 60
+  pilot_samples: 30000
+  maximum_events: 8
+  maximum_time: 10.0
+  random_interaction_sparsity_before_scaffold: 0.10
+  scoring_transition_backbone: true_theta_positive_control
+  rationale: continuous graded dwell recovery supplement to avoid binary AUC ceiling interpretation
+
+truth_selection:
+  dwell_levels: [0.25, 0.5, 1.0, 2.0, 4.0]
+  states_per_level: 5
+  event_count_1_states: 8
+  event_count_2_states: 12
+  event_count_3_4_states: 5
+  event_count_1_min_pilot_count: 80
+  event_count_2_min_pilot_count: 45
+  event_count_3_4_min_pilot_count: 25
+  support_block_balanced_assignment: true
+  exclude_terminal_event_counts_above: 4
+
+state_scoring:
+  minimum_state_count: 5
+  minimum_inflow: 1.0e-8
+  epsilon: 1.0e-8
+
+success:
+  median_spearman_R_star_minimum: 0.50
+  median_spearman_delta_minimum: 0.20
+  median_pairwise_concordance_R_star_minimum: 0.70
+  median_calibration_slope_R_star_minimum: 0.35
+  adjacent_ordered_levels_minimum: 3
+
+plot:
+  dpi: 600
+  output_formats: [pdf, png]
+  figure_size: [8.2, 8.2]

@@ -1,0 +1,55 @@
+experiment_name: relative_inflow_estimation
+result_root: results/experiment_04_relative_inflow
+plot_style_config: configs/figure_style.yaml
+experiment_03_root: results/experiment_03_mhn_interface
+experiments_01_02_root: results/experiments_01_02
+panel_size: 15
+random_seed: 20260625
+
+main_rule:
+  name: rule_a_one_step
+  description: Same-stage, one-event genotype predecessors
+  occupancy_alpha: 0.0
+
+sensitivity_rules:
+  stage_bridge:
+    name: rule_b_stage_bridge
+    stage_mass: 0.25
+  two_step:
+    name: rule_a_two_step
+    two_step_mass: 0.25
+  smoothed:
+    name: rule_a_smoothed
+    occupancy_alpha: 0.5
+
+thresholds:
+  minimum_state_count: 5
+  minimum_inflow: 1.0e-6
+  top_k: 10
+
+plot:
+  font_family: Arial
+  base_font_size: 8
+  dpi: 600
+  top_states: 14
+  top_edges: 10
+
+datasets:
+  AACR_LUAD:
+    display_name: Lung adenocarcinoma
+    stage_order: [primary, metastatic]
+    stage_colors:
+      primary: "#4477AA"
+      metastatic: "#CC6677"
+  AACR_COAD:
+    display_name: Colon adenocarcinoma
+    stage_order: [primary, metastatic]
+    stage_colors:
+      primary: "#4477AA"
+      metastatic: "#CC6677"
+  AACR_IDC:
+    display_name: Breast invasive ductal carcinoma
+    stage_order: [primary, metastatic]
+    stage_colors:
+      primary: "#4477AA"
+      metastatic: "#CC6677"
