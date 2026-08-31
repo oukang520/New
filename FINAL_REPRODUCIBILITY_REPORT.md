@@ -4,6 +4,7 @@
 
 - Original frozen audit commit: `e4215608dd394581da19e1ae0d8a0206c4d33798`.
 - Phase-0 repaired code/audit baseline commit: `f430286c8a9c7175dbb0191705531c9eaf09c34f`.
+- Selected original E17 restoration commit: `1a03c8183719286d5f822963d8653cd71e230814`.
 - Audit environments: Python 3.11.16 and 3.12.13, official `mhn==1.2.3`, Windows x86-64.
 - Final selected-E17 rollback tests: 14 passed, one expected small-sample Wilcoxon warning.
 - Original frozen commit self-contained: **NO**.

@@ -6,6 +6,7 @@ Audit started: 2026-08-31
 
 - Frozen Git repository: `public_release/RelObsTQ_MHN_reproducible_code`.
 - Frozen commit and initial HEAD: `e4215608dd394581da19e1ae0d8a0206c4d33798`.
+- Selected original E17 restoration commit: `1a03c8183719286d5f822963d8653cd71e230814`.
 - Initial Git state: clean; `main` synchronized with `origin/main`.
 - Historical development workspace: `D:/project/Rel_ObsHN`; this directory is not a Git repository.
 - Historical `results/`, `processed/`, `configs/`, and plotting-heavy scripts therefore have no locally verifiable commit identity. They are treated as legacy evidence until another immutable source is found.
