@@ -3,7 +3,7 @@
 ## A. Repository state
 
 - Original frozen audit commit: `e4215608dd394581da19e1ae0d8a0206c4d33798`.
-- Repaired commit: recorded after the Phase-0 commit is created.
+- Phase-0 repaired code/audit baseline commit: `f430286c8a9c7175dbb0191705531c9eaf09c34f`.
 - Audit environments: Python 3.11.16 and 3.12.13, official `mhn==1.2.3`, Windows x86-64.
 - Final pre-commit tests: 11 passed, one expected small-sample Wilcoxon warning.
 - Original frozen commit self-contained: **NO**.
