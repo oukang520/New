@@ -79,8 +79,8 @@ def mask_to_state(mask: int, events: Sequence[str], *, stage: str = "S1") -> str
     return f"{stage}::{mask_to_genotype(mask, events)}"
 
 
-def event_probabilities_from_mask(mask: int, theta: np.ndarray) -> tuple[np.ndarray, np.ndarray]:
-    """Return absent event indices and normalized addition probabilities."""
+def event_rates_from_mask(mask: int, theta: np.ndarray) -> tuple[np.ndarray, np.ndarray]:
+    """Return absent event indices and their cMHN-like addition rates."""
 
     p = theta.shape[0]
     present = np.array([bool(mask & (1 << index)) for index in range(p)])
@@ -88,7 +88,13 @@ def event_probabilities_from_mask(mask: int, theta: np.ndarray) -> tuple[np.ndar
     if absent.size == 0:
         return absent, np.array([], dtype=float)
     logits = np.array([theta[event, event] + theta[event, present].sum() for event in absent], dtype=float)
-    rates = np.exp(np.clip(logits, -50, 50))
+    return absent, np.exp(np.clip(logits, -50, 50))
+
+
+def event_probabilities_from_mask(mask: int, theta: np.ndarray) -> tuple[np.ndarray, np.ndarray]:
+    """Return absent event indices and normalized addition probabilities."""
+
+    absent, rates = event_rates_from_mask(mask, theta)
     if rates.sum() <= 0:
         return absent, np.zeros_like(rates)
     return absent, rates / rates.sum()
@@ -116,21 +122,21 @@ def simulate_patient_trajectory(
     while current_time < config.maximum_time:
         if mask_event_count(mask) >= config.maximum_events:
             break
-        absent, probabilities = event_probabilities_from_mask(mask, theta)
+        absent, rates = event_rates_from_mask(mask, theta)
         dwell = float(dwell_by_mask.get(mask, config.neutral_dwell))
-        if absent.size == 0 or probabilities.sum() <= 0:
+        if absent.size == 0 or rates.sum() <= 0:
             end = config.maximum_time
             added = "STOP_NO_EVENT"
             next_mask = mask
         else:
-            total_rate = float(probabilities.sum()) / max(dwell, 1.0e-12)
+            total_rate = float(rates.sum()) / max(dwell, 1.0e-12)
             wait = float(rng.exponential(1.0 / total_rate))
             end = min(current_time + wait, config.maximum_time)
             if end >= config.maximum_time:
                 added = "CENSORED_AT_HORIZON"
                 next_mask = mask
             else:
-                chosen = int(rng.choice(absent, p=probabilities / probabilities.sum()))
+                chosen = int(rng.choice(absent, p=rates / rates.sum()))
                 added = str(events[chosen])
                 next_mask = mask | (1 << chosen)
         rows.append(

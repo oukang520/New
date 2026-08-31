@@ -3,6 +3,7 @@
 from .generator import (
     SimulationConfig,
     create_sparse_theta,
+    event_rates_from_mask,
     implant_dwell_truth,
     simulate_cohort_with_audit,
     simulate_patient_trajectory,
@@ -12,6 +13,7 @@ from .generator import (
 __all__ = [
     "SimulationConfig",
     "create_sparse_theta",
+    "event_rates_from_mask",
     "implant_dwell_truth",
     "simulate_cohort_with_audit",
     "simulate_patient_trajectory",

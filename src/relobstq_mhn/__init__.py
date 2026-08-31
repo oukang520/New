@@ -31,6 +31,7 @@ from .core.scoring import (
     compute_relative_dwell,
 )
 from .core.bootstrap import BootstrapConfig, bootstrap_relative_dwell
+from .core.mhn import MhnFitConfig, MhnFitResult, fit_cmh
 from .data.processing import (
     build_event_matrix,
     build_experiment_ready_tables,
@@ -43,6 +44,7 @@ from .data.processing import (
 from .simulation.generator import (
     SimulationConfig,
     create_sparse_theta,
+    event_rates_from_mask,
     implant_dwell_truth,
     simulate_cohort_with_audit,
     simulate_patient_trajectory,
@@ -56,6 +58,8 @@ from .core.topology import (
 
 __all__ = [
     "BootstrapConfig",
+    "MhnFitConfig",
+    "MhnFitResult",
     "ScoreThresholds",
     "SimulationConfig",
     "State",
@@ -74,6 +78,8 @@ __all__ = [
     "create_sparse_theta",
     "event_added",
     "event_count",
+    "event_rates_from_mask",
+    "fit_cmh",
     "genotype_events",
     "genotype_signature",
     "genotype_vector",

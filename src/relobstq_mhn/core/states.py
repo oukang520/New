@@ -90,7 +90,7 @@ def event_count(genotype_or_state: object) -> int:
 def genotype_signature(vector: Iterable[int | bool | float], events: Sequence[str]) -> str:
     """Convert a binary event vector to a canonical genotype string."""
 
-    present = [str(events[i]).upper() for i, value in enumerate(vector) if int(value) == 1]
+    present = sorted({str(events[i]).upper() for i, value in enumerate(vector) if int(value) == 1})
     return "+".join(present) if present else "WT"
 
 

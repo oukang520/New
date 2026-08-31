@@ -1,0 +1,15 @@
+cross_sectional_root: outputs/cross_sectional
+prepared_data_root: processed/experiment_ready
+output_root: outputs/secondary_validation
+cohorts:
+  - AACR_LUAD
+  - AACR_COAD
+  - AACR_IDC
+
+analysis:
+  top_k: 10
+  matched_decoy_quantile_bins: 4
+  minimum_decoys: 5
+  inflow_shuffle_replicates: 400
+  random_seed: 20260630
+  topology_routes: 6

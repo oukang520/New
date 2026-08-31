@@ -1,6 +1,7 @@
 """Core scoring, transition and topology methods."""
 
 from .bootstrap import BootstrapConfig, bootstrap_relative_dwell
+from .mhn import MhnFitConfig, MhnFitResult, fit_cmh
 from .pipeline import score_states_from_mhn
 from .scoring import (
     ScoreThresholds,
@@ -29,6 +30,8 @@ from .transitions import (
 
 __all__ = [
     "BootstrapConfig",
+    "MhnFitConfig",
+    "MhnFitResult",
     "ScoreThresholds",
     "State",
     "aggregate_inflow",
@@ -42,6 +45,7 @@ __all__ = [
     "compute_relative_dwell",
     "event_added",
     "event_count",
+    "fit_cmh",
     "genotype_events",
     "genotype_signature",
     "genotype_vector",

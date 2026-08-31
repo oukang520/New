@@ -5,10 +5,26 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "relobstq-mhn"
-version = "0.1.0"
-description = "Relative observed-state topology quantification with MHN-derived inflow"
-requires-python = ">=3.11,<3.13"
+version = "0.2.0"
+description = "Relative observed-state dwell quantification with MHN-derived inflow"
 readme = "README.md"
+requires-python = ">=3.11,<3.13"
+dependencies = [
+  "numpy>=1.24",
+  "pandas>=2.0",
+  "PyYAML>=6.0",
+  "scipy>=1.11",
+  "statsmodels>=0.14",
+]
+
+[project.optional-dependencies]
+mhn = ["mhn==1.2.3"]
+figures = ["matplotlib>=3.8"]
+test = ["pytest>=7.0"]
+all = ["mhn==1.2.3", "matplotlib>=3.8", "pytest>=7.0"]
 
 [tool.setuptools.packages.find]
 where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]

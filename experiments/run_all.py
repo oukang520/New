@@ -1,0 +1,31 @@
+"""Run the core evidence chain in publication order."""
+
+from __future__ import annotations
+
+import argparse
+import subprocess
+import sys
+from pathlib import Path
+
+
+def main() -> None:
+    parser = argparse.ArgumentParser(description=__doc__)
+    parser.add_argument("--dry-run", action="store_true", help="Print commands without executing them.")
+    args = parser.parse_args()
+    root = Path(__file__).resolve().parents[1]
+    scripts = [
+        "run_cross_sectional.py",
+        "run_secondary.py",
+        "run_simulation.py",
+        "prepare_longitudinal.py",
+        "run_longitudinal.py",
+    ]
+    for script in scripts:
+        if args.dry_run:
+            print(f"{sys.executable} experiments/{script}")
+            continue
+        subprocess.run([sys.executable, str(root / "experiments" / script)], cwd=root, check=True)
+
+
+if __name__ == "__main__":
+    main()

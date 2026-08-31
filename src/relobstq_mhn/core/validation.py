@@ -28,7 +28,10 @@ def audit_score_table(scores: pd.DataFrame) -> pd.DataFrame:
     """Return a compact audit table for a scored state table."""
 
     require_columns(scores, ["state", "N_v", "L_v", "F_hat", "R_star"], "scores")
-    stable = scores[(scores["N_v"] > 0) & (scores["F_hat"] > 0)]
+    if "eligible_relobstq" in scores:
+        stable = scores[scores["eligible_relobstq"].astype(bool)]
+    else:
+        stable = scores[(scores["N_v"] > 0) & (scores["F_hat"] > 0)]
     return pd.DataFrame(
         [
             {

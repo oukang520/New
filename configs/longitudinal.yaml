@@ -1,0 +1,34 @@
+output_root: outputs/longitudinal_validation
+preparation_root: outputs/longitudinal_preparation
+prepared_inputs:
+  GLASS: data/longitudinal/GLASS
+  CRC-triplets: data/longitudinal/CRC-triplets
+  MNM-WashU: data/longitudinal/MNM-WashU
+pair_tables:
+  - outputs/longitudinal_preparation/GLASS/tables/pair_predictions.tsv
+  - outputs/longitudinal_preparation/CRC-triplets/tables/pair_predictions.tsv
+  - outputs/longitudinal_preparation/MNM-WashU/tables/pair_predictions.tsv
+
+crossfit:
+  folds: 5
+  exclude_event_loss_pairs: true
+  minimum_state_count: 2
+  minimum_inflow: 1.0e-8
+  high_confidence_state_count: 4
+  lambda_multipliers: [0.3, 1.0, 3.0]
+  cv_folds: 3
+  max_iterations: 1500
+  relative_tolerance: 1.0e-6
+  random_seed: 20260827
+
+columns:
+  study: study_id
+  score: predicted_log2_R
+  persistence: empirical_persistent
+  minimum_dwell: minimum_observed_dwell_interval
+
+analysis:
+  lower_quantile: 0.3333333333
+  upper_quantile: 0.6666666667
+  bootstrap_replicates: 1000
+  random_seed: 20260827
