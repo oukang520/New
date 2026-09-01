@@ -1,0 +1,27 @@
+{
+  "created_utc": "2026-09-01T11:38:47.164696+00:00",
+  "command": [
+    "D:\\project\\Rel_ObsHN\\public_release\\RelObsTQ_MHN_reproducible_code\\.venv_reaudit\\Scripts\\python.exe",
+    "experiments/run_simulation.py"
+  ],
+  "working_directory": "D:\\project\\Rel_ObsHN\\public_release\\RelObsTQ_MHN_reproducible_code",
+  "python": {
+    "version": "3.12.13",
+    "executable": "D:\\project\\Rel_ObsHN\\public_release\\RelObsTQ_MHN_reproducible_code\\.venv_reaudit\\Scripts\\python.exe"
+  },
+  "platform": "Windows-11-10.0.26200-SP0",
+  "packages": {
+    "relobstq-mhn": "0.2.0",
+    "mhn": "1.2.3",
+    "numpy": "1.26.4",
+    "pandas": "3.0.5",
+    "scipy": "1.14.1",
+    "statsmodels": "0.15.0"
+  },
+  "git": {
+    "repository_root": "D:/project/Rel_ObsHN/public_release/RelObsTQ_MHN_reproducible_code",
+    "commit": "48799b2f93a176a7e39792480c37ed41bb4f4ae9",
+    "dirty": false
+  },
+  "inputs": []
+}

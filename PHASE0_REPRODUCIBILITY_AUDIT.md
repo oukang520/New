@@ -1,5 +1,8 @@
 # Phase-0 Reproducibility Audit
 
+> Historical repair audit. Final evidence-generation status and the binary
+> decision are in `PHASE0_V3_FINAL_AUDIT.md`.
+
 ## Scope and repository state
 
 - Historical workspace: `D:/project/Rel_ObsHN` (not a Git repository).

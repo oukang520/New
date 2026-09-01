@@ -37,8 +37,9 @@ units, preserve patient/sample identifiers, normalize clinical stage, and
 construct the two tables above. This boundary is `REQUIRES_DATA`, not silently
 claimed as reproduced by the public package.
 
-Longitudinal validation uses GLASS, colorectal primary-metastasis triplets, and
-MNM-WashU. Place their cBioPortal exports under
+The selected external longitudinal consistency analysis uses GLASS,
+colorectal primary-metastasis triplets, and MNM-WashU. Place their cBioPortal
+exports under
 `Data/longitudinal_public/cbioportal/difg_glass/`,
 `Data/longitudinal_public/cbioportal/coadread_mskcc/`, and
 `Data/longitudinal_public/cbioportal/mnm_washu_2016/`. Each directory must at

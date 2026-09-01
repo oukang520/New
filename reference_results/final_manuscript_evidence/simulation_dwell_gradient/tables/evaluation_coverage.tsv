@@ -1,0 +1,6 @@
+D_true	truth_level	evaluated_state_repeats	repeats_with_evaluable_state	distinct_truth_states_evaluated	possible_state_repeats	evaluation_coverage_fraction
+0.25	D=0.25	163	60	5	300	0.5433333333333333
+0.5	D=0.5	234	60	5	300	0.78
+1.0	D=1	299	60	5	300	0.9966666666666667
+2.0	D=2	299	60	5	300	0.9966666666666667
+4.0	D=4	300	60	5	300	1.0

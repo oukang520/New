@@ -1,0 +1,2 @@
+observed_states	count_eligible_states	positive_inflow_states	rstar_eligible_states	finite_eligible_states	finite_eligible_fraction	one_step_edges	total_conditional_inflow	median_positive_inflow
+2036	285	1729	282	282	1.0	4399	0.8035597724812071	7.72842442780909e-05

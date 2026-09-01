@@ -1,0 +1,72 @@
+{
+  "created_utc": "2026-09-01T11:07:03.484821+00:00",
+  "command": [
+    "D:\\project\\Rel_ObsHN\\public_release\\RelObsTQ_MHN_reproducible_code\\.venv_reaudit\\Scripts\\python.exe",
+    "experiments/run_secondary.py"
+  ],
+  "working_directory": "D:\\project\\Rel_ObsHN\\public_release\\RelObsTQ_MHN_reproducible_code",
+  "python": {
+    "version": "3.12.13",
+    "executable": "D:\\project\\Rel_ObsHN\\public_release\\RelObsTQ_MHN_reproducible_code\\.venv_reaudit\\Scripts\\python.exe"
+  },
+  "platform": "Windows-11-10.0.26200-SP0",
+  "packages": {
+    "relobstq-mhn": "0.2.0",
+    "mhn": "1.2.3",
+    "numpy": "1.26.4",
+    "pandas": "3.0.5",
+    "scipy": "1.14.1",
+    "statsmodels": "0.15.0"
+  },
+  "git": {
+    "repository_root": "D:/project/Rel_ObsHN/public_release/RelObsTQ_MHN_reproducible_code",
+    "commit": "c208e4fcf16a409dec97c0e680e5c8cfdc5ade86",
+    "dirty": false
+  },
+  "inputs": [
+    {
+      "path": "D:\\project\\Rel_ObsHN\\public_release\\RelObsTQ_MHN_reproducible_code\\outputs\\final_manuscript_evidence\\cross_sectional\\AACR_IDC\\tables\\state_scores.tsv",
+      "exists": true,
+      "size_bytes": 284583,
+      "sha256": "2fbde1e74505bbebaf0664e0752ce6fe1898cf04d148bf587d97f72d65957bc6"
+    },
+    {
+      "path": "D:\\project\\Rel_ObsHN\\public_release\\RelObsTQ_MHN_reproducible_code\\outputs\\final_manuscript_evidence\\cross_sectional\\AACR_IDC\\tables\\state_edges.tsv",
+      "exists": true,
+      "size_bytes": 272889,
+      "sha256": "99508a76c30f00c3c54cca89a86d1fc7f0f2c27441b21758f345b7304949280d"
+    },
+    {
+      "path": "D:\\project\\Rel_ObsHN\\public_release\\RelObsTQ_MHN_reproducible_code\\outputs\\final_manuscript_evidence\\cross_sectional\\AACR_IDC\\tables\\state_occupancy.tsv",
+      "exists": true,
+      "size_bytes": 61808,
+      "sha256": "c09fcf5a77abc4745e166a0ab395efc63c216f00d64f09068dc8db154c174d3a"
+    },
+    {
+      "path": "D:\\project\\Rel_ObsHN\\public_release\\RelObsTQ_MHN_reproducible_code\\outputs\\final_manuscript_evidence\\cross_sectional\\AACR_IDC\\tables\\theta.tsv",
+      "exists": true,
+      "size_bytes": 4911,
+      "sha256": "5b0714c0cd9dc0c6034764e48f628c5e0db38583a138def6ac34d840674c96bf"
+    },
+    {
+      "path": "D:\\project\\Rel_ObsHN\\public_release\\RelObsTQ_MHN_reproducible_code\\outputs\\phase0_reaudit_2026\\prepared_cross_sectional\\AACR_IDC\\mhn_training_matrix.csv",
+      "exists": true,
+      "size_bytes": 339967,
+      "sha256": "455f45f59a149072ad163c70fc860962a661ed57b6d407bdc461986927c88b7c"
+    }
+  ],
+  "workflow": {
+    "workflow": "run_secondary",
+    "cohort": "AACR_IDC",
+    "evidence_units": [
+      "E4",
+      "E10",
+      "E11",
+      "E14",
+      "E15A",
+      "E15B",
+      "E16"
+    ],
+    "random_seed": 20260632
+  }
+}

@@ -26,8 +26,29 @@ The current core bootstrap was run against the historical E4 inputs with the his
 
 All detailed outputs are isolated under `outputs/phase0_reaudit_2026/E5_legacy_vs_current/`. The exact comparison is `e5_comparison.tsv`.
 
+## Final current full-pipeline result
+
+The final manuscript pipeline was subsequently rerun from the exact p15 inputs
+through a new official-cMHN fit and 500 conditional count bootstraps. Because
+this run uses the final fitted theta and final eligibility set, it supersedes
+the earlier isolated v0.2.0-threshold refinement above for manuscript use.
+
+| cohort | eligible states | high-confidence states | observed top-10 high-confidence stability |
+|---|---:|---:|---:|
+| AACR_LUAD | 416 | 233 | 0.6704 |
+| AACR_COAD | 282 | 147 | 0.6758 |
+| AACR_IDC | 167 | 111 | 0.7192 |
+
+The aggregate stability is the mean
+`high_confidence_top_bootstrap_stability` among the ten highest observed `R*`
+states that satisfy the high-confidence count threshold. Per-state values are
+frozen under `reference_results/final_manuscript_evidence/cross_sectional/`.
+
 ## Decision
 
-The historical E5 is reproducible. Increasing bootstrap replicates does not change the qualitative conclusion. For a new manuscript table, use the 500-replicate conditional-bootstrap results and disclose that theta is fixed. Preserve the 200-replicate values as legacy provenance.
+The historical 200-replicate E5 is exactly reproducible and is retained only
+for provenance. The final manuscript uses the current full-pipeline,
+500-replicate values immediately above and discloses that theta and edge
+probabilities are fixed during bootstrap.
 
-Status: `RESOLVED_WITH_CAVEAT`.
+Status: `RESOLVED_CURRENT_WITH_CONDITIONAL_UNCERTAINTY`.

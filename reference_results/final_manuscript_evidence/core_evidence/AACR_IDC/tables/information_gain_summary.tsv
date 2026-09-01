@@ -1,0 +1,2 @@
+states	top_k	spearman_R_vs_occupancy	spearman_R_vs_occupancy_p	spearman_R_vs_inflow	spearman_R_vs_inflow_p	top_k_overlap_R_occupancy	top_k_overlap_R_inflow
+167	10	0.22178955982296314	0.003969316706669995	-0.41350861100518416	2.7890207725129018e-08	5	2

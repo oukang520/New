@@ -1,0 +1,5 @@
+variant	states_compared	spearman_vs_full_mhn	top_k	top_k_overlap	top_k_retention_fraction	top_k_jaccard
+full_mhn	167	1.0	10	10	1.0	1.0
+uniform_inflow	167	0.40868471279600205	10	5	0.5	0.3333333333333333
+frequency_inflow	167	0.6680537376194255	10	3	0.3	0.17647058823529413
+occupancy_only	167	0.22178955982296314	10	4	0.4	0.25

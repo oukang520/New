@@ -1,0 +1,8 @@
+evidence_unit	result
+E4	inflow_computability_summary.tsv
+E10	rstar_landscape_states.tsv; rstar_landscape_summary.tsv
+E11	information_gain_summary.tsv
+E14	denominator_ablation_details.tsv; denominator_ablation_summary.tsv
+E15A	matched_decoy_details.tsv; matched_decoy_summary.tsv
+E15B	inflow_shuffle_replicates.tsv; inflow_shuffle_summary.tsv
+E16	topology_routes.tsv

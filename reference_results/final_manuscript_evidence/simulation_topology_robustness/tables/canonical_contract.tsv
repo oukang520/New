@@ -1,0 +1,2 @@
+evidence_unit	scope	backbone_source	includes_cMHN_refit_error	varied_factors	primary_metric	reference_metric
+E7	supplementary oracle-backbone topology robustness	generating theta	False	topology;sparsity;dwell_placement	spearman_R_star	spearman_occupancy

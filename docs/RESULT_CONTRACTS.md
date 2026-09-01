@@ -48,7 +48,7 @@ of supplied input paths.
 - `topology_routes.tsv`: E16 representative dominant-predecessor routes.
 - `evidence_contract.tsv`: evidence-unit to output mapping.
 
-## Longitudinal validation
+## External longitudinal consistency
 
 - Input contract: cBioPortal study exports under
   `Data/longitudinal_public/cbioportal/STUDY/`, including mutation, sample

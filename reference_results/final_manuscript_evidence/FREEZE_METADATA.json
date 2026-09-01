@@ -1,0 +1,16 @@
+{
+  "created_utc": "2026-09-01T15:44:33.781291+00:00",
+  "source_root": "D:\\project\\Rel_ObsHN\\public_release\\RelObsTQ_MHN_reproducible_code\\outputs\\final_manuscript_evidence",
+  "destination_root": "D:\\project\\Rel_ObsHN\\public_release\\RelObsTQ_MHN_reproducible_code\\reference_results\\final_manuscript_evidence",
+  "units": [
+    "cross_sectional_AACR_LUAD",
+    "core_evidence_AACR_LUAD",
+    "cross_sectional_AACR_COAD",
+    "core_evidence_AACR_COAD",
+    "cross_sectional_AACR_IDC",
+    "core_evidence_AACR_IDC",
+    "simulation_dwell_gradient",
+    "simulation_topology_robustness"
+  ],
+  "note": "All source manifests were verified before copying; source runs had git dirty=false."
+}

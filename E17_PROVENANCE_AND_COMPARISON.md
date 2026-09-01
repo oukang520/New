@@ -58,10 +58,12 @@ selected E17 table.
 ## Manuscript decision
 
 Use the restored original E17 analysis and frozen reference tables as the
-primary longitudinal validation. Disclose the full-cohort
-frequency/co-occurrence backbone and the small changed classes. The stricter
-official-cMHN refit is a superseded sensitivity analysis, retained in Git
-history but excluded from the current code/result contract because it changes
-both the estimator and evaluable-pair population.
+selected **external longitudinal consistency analysis**. Disclose the
+full-cohort frequency/co-occurrence backbone and the small changed classes.
+The stricter patient-grouped official-cMHN refit changes both the estimator and
+evaluable-pair population, but it is scientifically relevant sensitivity
+evidence and is retained under `reference_results/experiment_17_sensitivity/`.
+The eligible weak BRCA-MSK challenge cohort and negative ALP-breast design
+pilot are retained under `reference_results/experiment_17_supplement/`.
 
-Status: `RESOLVED_WITH_CAVEAT`.
+Status: `RESOLVED_WITH_CAVEAT_AND_TRANSPARENT_SENSITIVITY`.

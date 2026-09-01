@@ -1,79 +1,95 @@
-# Final Reproducibility Report
+# Final Reproducibility Report v3
 
-## A. Repository state
+Audit date: 2026-09-02
 
-- Original frozen audit commit: `e4215608dd394581da19e1ae0d8a0206c4d33798`.
-- Phase-0 repaired code/audit baseline commit: `f430286c8a9c7175dbb0191705531c9eaf09c34f`.
-- Selected original E17 restoration commit: `1a03c8183719286d5f822963d8653cd71e230814`.
-- Audit environments: Python 3.11.16 and 3.12.13, official `mhn==1.2.3`, Windows x86-64.
-- Final selected-E17 rollback tests: 14 passed, one expected small-sample Wilcoxon warning.
-- Original frozen commit self-contained: **NO**.
-- Repaired package self-contained excluding restricted data: **YES**.
+## Decision
 
-## B. P0 issues
+**PASS - READY FOR MANUSCRIPT WRITING**
 
-The missing preprocessing package, canonical p15 preparation, environment verification, result metadata, E5 bootstrap conflict, theoretical quantity naming, E17 backend/leakage conflict, E17 bootstrap unit, clinical result retention, and topology route definition were addressed. Exact evidence and caveats are listed in `PHASE0_REPRODUCIBILITY_AUDIT.md`.
+The Phase-0 blockers identified in the v2 audit are closed. The final
+cross-sectional evidence was regenerated from the exact p15 inputs through
+official `mhn==1.2.3`, fitted theta, conditional evolutionary inflow, and
+`R*`. The core current-code experiments and two simulation contracts were
+then regenerated and frozen with file-level hashes.
 
-## C. Result provenance
+This decision approves manuscript writing from the frozen evidence. It does
+not remove the interpretation limits below.
 
-- **Reproduced or restored exactly:** E1 p15 matrices; E5 historical bootstrap metrics; selected original E17 code and aggregate outputs.
-- **Legacy with strengthened provenance:** E3-E4, E6, E7-E16 historical numbers as classified row-by-row in the matrix.
-- **Superseded sensitivity:** the later fold-specific official-cMHN E17 audit changed the estimator and evaluation population and is retained only in Git history.
-- **Not claimed reproduced:** any historical experiment for which the current package has only a reusable function or no canonical runner/config.
+## Frozen evidence
 
-## D. Changed numerical results
+- Evidence root: `reference_results/final_manuscript_evidence/`
+- Index: `FINAL_EVIDENCE_INDEX.tsv` (99 verified files)
+- Source runs: all record `git dirty=false`
+- Runtime: Python 3.12.13, `mhn==1.2.3`, NumPy 1.26.4, pandas 3.0.5
+- Cohorts: AACR_LUAD, AACR_COAD, AACR_IDC
+- Event panels: 15 events per cohort
+- Model selection: five-fold cross-validation with the one-standard-error rule
+- Bootstrap: 500 multinomial count resamples conditional on fitted theta
 
-| experiment | selected result | sensitivity result | disposition |
-|---|---|---|---|
-| E5 | 200 bootstrap replicates | 500-replicate stability in `E5_LEGACY_VS_CURRENT.md` | retain both with labels |
-| E17 GLASS AUC | 0.67 | 0.547 | selected original restored; strict audit superseded |
-| E17 CRC AUC | 0.65 | 0.228 | selected original restored; strict audit superseded |
-| E17 MNM AUC | 0.89 | 0.556 | selected original restored; strict audit superseded |
+## Current cross-sectional closure
 
-No result was adjusted to match a desired conclusion.
+| cohort | samples | observed states | eligible `R*` states | selected lambda | multiplier | boundary |
+|---|---:|---:|---:|---:|---:|---|
+| AACR_LUAD | 27,148 | 2,270 | 416 | 0.0003683513 | 10 | yes |
+| AACR_COAD | 12,693 | 2,036 | 282 | 0.0007878358 | 10 | yes |
+| AACR_IDC | 10,964 | 752 | 167 | 0.0002736228 | 3 | no |
 
-## E. E17 decision
+All theta matrices were finite, all genotype alignments had zero mismatches,
+and the three p15 matrices matched their frozen SHA-256 values. The LUAD and
+COAD selected penalties lie at the tested search-grid boundary; this is
+reported as a model-selection sensitivity limitation, not hidden.
 
-The project selected the original E17 estimand and implementation as primary.
-It uses a full-cohort frequency/co-occurrence backbone with training-patient
-occupancy scoring and gives directionally favorable AUCs in GLASS (0.67), CRC
-(0.65) and MNM (0.89). The manuscript may describe this as supportive external
-longitudinal consistency, while explicitly disclosing the fixed full-cohort
-backbone and small changed classes. It must not call E17 an out-of-fold official
-cMHN refit or a calibrated calendar-time prediction test.
+## Regenerated manuscript evidence
 
-## F. Reproducibility layers
+The freeze contains current-code outputs for inflow computability (E4),
+conditional-bootstrap stability (E5), the real-cohort `R*` landscape (E10),
+component distinctness (E11), denominator ablation (E14), matched-decoy and
+inflow-shuffle controls (E15A/B), and six representative dominant-predecessor
+routes per cohort (E16). Continuous dwell-gradient simulation (E6-gradient)
+and topology/sparsity/placement robustness (E7) have canonical configs,
+runners, contracts, metadata, and manifests.
 
-| layer | status | note |
-|---|---|---|
-| authorized provider raw to harmonized cohort tables | REQUIRES_DATA | provider-specific extraction not distributable |
-| harmonized cross-sectional tables to exact p15 input | RESOLVED | exact SHA-256 match for all three cohorts |
-| p15 input to official cMHN | RESOLVED_WITH_CAVEAT | code/backend verified; full costly E3 refit not repeated in Phase-0 |
-| theta/occupancy to F-hat/R* | RESOLVED | tested canonical implementation |
-| conditional bootstrap | RESOLVED_WITH_CAVEAT | fixed-backbone uncertainty only |
-| continuous simulation | RESOLVED_WITH_CAVEAT | current oracle-backbone runner exists; end-to-end refit extension remains recommended |
-| selected longitudinal evaluation | RESOLVED_WITH_CAVEAT | exact legacy runner and aggregate results restored; fixed full-cohort fallback backbone and small changed classes disclosed |
-| all historical E1-E17 manuscript tables | UNRESOLVED | several remain legacy-only without canonical runners |
+E6-gradient supports the intended continuous target: median Spearman
+correlation was 0.765 for `R*` versus 0.530 for occupancy, with better pairwise
+ordering, calibration, and absolute error in paired analyses. E7 was favorable
+but deliberately graded as supplementary: `R*` exceeded occupancy in 235/360
+repeats and 25/36 condition medians, so the advantage is modest and
+condition-dependent rather than universal.
 
-## G. Manuscript caveats that must remain
+## E17 disposition
 
-1. `R*` is cohort-relative and not absolute calendar dwell time.
-2. `F_hat` uses conditional next-event probabilities and excludes absolute exit rates and stage transitions.
-3. E5 bootstrap intervals are conditional on fitted theta.
-4. E8 supports plausibility, not significant pathway enrichment.
-5. E12 is association, is directionally heterogeneous, and adds little C-index.
-6. E13-fixed-backbone is internal sampling stability, not independent full-pipeline replication.
-7. E16 routes are representative dominant-predecessor routes, not phylogenies.
-8. E17 provides directionally supportive but sample-size-limited longitudinal consistency evidence using a fixed full-cohort fallback backbone.
+Experiment 17 is named **external longitudinal consistency analysis**. Its
+selected three-cohort estimator uses a frozen full-cohort
+frequency/co-occurrence fallback backbone and training-patient occupancy; it
+is not a patient-grouped out-of-fold official-cMHN validation and does not
+estimate calendar time.
 
-## H. Readiness decision
+Outcome-independent eligibility rules are frozen in
+`reference_results/experiment_17_supplement/cohort_eligibility_contract.tsv`.
+The eligible but weak BRCA-MSK challenge cohort and the negative ALP-breast
+design pilot are reported transparently. The stricter patient-grouped
+official-cMHN sensitivity is also retained and is mixed/negative for some
+cohorts. The selected favorable analysis must therefore be presented as
+supportive consistency evidence, not decisive external validation.
 
-**NOT READY FOR MANUSCRIPT WRITING**
+## Permanent interpretation limits
 
-Minimum remaining blockers:
+1. `R*` is a cohort-relative dwell/stasis proxy, not absolute dwell time.
+2. `F_hat` is conditional relative evolutionary inflow; it excludes absolute
+   exit rates and stage transitions.
+3. The predecessor graph contains observed, same-stage, one-event additions.
+4. E5 quantifies sampling uncertainty conditional on fixed fitted theta.
+5. E6-gradient and E7 use an oracle generating-theta backbone and do not include
+   cMHN refit error.
+6. E8 is biological plausibility, not significant pathway enrichment.
+7. E12 is a context-dependent association, not causal evidence or dwell truth.
+8. E13 is fixed-backbone internal sampling stability, not independent replication.
+9. E16 routes are representative dominant-predecessor routes, not phylogenies.
+10. E17 is sample-size-limited external consistency evidence with a fallback,
+    full-cohort backbone; all weak and strict sensitivity results remain visible.
 
-1. Keep E17 wording within external consistency and disclose its fallback/full-cohort backbone; do not present it as fully OOF official-cMHN validation.
-2. Decide which legacy-only experiments are truly manuscript-critical, then provide canonical runner/config/result contracts for those retained rows or explicitly move them to provenance-labeled historical supplements.
-3. Perform one clean end-to-end current cross-sectional run, especially the costly COAD official-cMHN fit, and freeze its manifests before using v0.2.0-generated E3-E16 numbers.
+## Final status
 
-The package is now suitable for continued reproducibility work, but declaring all manuscript evidence regenerated would be inaccurate.
+The method, code, current cross-sectional evidence, simulation truth evidence,
+longitudinal disclosure, and manuscript control documents now form one
+traceable evidence chain. No unresolved Phase-0 evidence blocker remains.

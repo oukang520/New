@@ -1,5 +1,9 @@
 # Result Provenance Audit
 
+> Historical Phase-0 v1 audit. Its initial `UNRESOLVED` classifications are
+> superseded by `PHASE0_V3_FINAL_AUDIT.md` and the current
+> `RESULT_PROVENANCE_MATRIX.tsv`; this file is retained as an audit trail.
+
 Audit started: 2026-08-31
 
 ## Repository Boundary

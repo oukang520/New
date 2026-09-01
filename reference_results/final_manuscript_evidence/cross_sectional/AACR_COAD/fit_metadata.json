@@ -1,0 +1,25 @@
+{
+  "backend": "official_mhn_cMHN",
+  "selected_lambda": 0.0007878358150161507,
+  "event_count": 15,
+  "sample_count": 12693,
+  "theta_shape": [
+    15,
+    15
+  ],
+  "finite_theta": true,
+  "lambda_multipliers": [
+    0.1,
+    0.3,
+    1.0,
+    3.0,
+    10.0
+  ],
+  "cv_folds": 5,
+  "pick_1se": true,
+  "max_iterations": 5000,
+  "relative_tolerance": 1e-07,
+  "random_seed": 20260630,
+  "device": "CPU",
+  "penalty": "L1"
+}

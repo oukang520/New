@@ -1,0 +1,42 @@
+{
+  "thresholds": {
+    "minimum_state_count": 5,
+    "minimum_inflow": 1e-08,
+    "high_confidence_state_count": 10,
+    "epsilon": 1e-12
+  },
+  "mhn": {
+    "lambda_multipliers": [
+      0.1,
+      0.3,
+      1.0,
+      3.0,
+      10.0
+    ],
+    "cv_folds": 5,
+    "pick_1se": true,
+    "max_iterations": 5000,
+    "relative_tolerance": 1e-07,
+    "random_seed": 20260630
+  },
+  "bootstrap_replicates": 500,
+  "bootstrap_top_k": 10,
+  "top_state_count": 25,
+  "events": [
+    "TP53",
+    "PIK3CA",
+    "GATA3",
+    "MAP3K1",
+    "PTEN",
+    "ESR1",
+    "AKT1",
+    "NF1",
+    "BRCA1",
+    "BRCA2",
+    "RB1",
+    "MAP2K4",
+    "CBFB",
+    "RUNX1",
+    "ATM"
+  ]
+}

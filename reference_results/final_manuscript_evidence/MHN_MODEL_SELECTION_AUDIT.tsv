@@ -1,0 +1,4 @@
+cohort	backend	samples	events	selected_lambda	selected_lambda_multiplier	best_mean_cv_multiplier	selected_at_search_boundary	selection_rule	theta_finite
+AACR_LUAD	official_mhn_cMHN	27148	15	0.0003683512597613084	10.0	0.1	True	five-fold CV, one-standard-error rule	True
+AACR_COAD	official_mhn_cMHN	12693	15	0.0007878358150161507	10.0	0.3	True	five-fold CV, one-standard-error rule	True
+AACR_IDC	official_mhn_cMHN	10964	15	0.00027362276541408243	3.0	1.0	False	five-fold CV, one-standard-error rule	True

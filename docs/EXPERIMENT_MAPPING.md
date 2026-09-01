@@ -17,7 +17,7 @@ formula is implemented once.
 | E13 | `workflows/replication.py::compare_score_tables`; no split/refit runner | comparison function only |
 | E14 | `experiments/run_secondary.py` | full-MHN, uniform-inflow, frequency-inflow and occupancy-only denominator ablation |
 | E15 | `experiments/run_secondary.py` | matched-decoy and inflow-pairing falsification tables |
-| E16 | `workflows/topology.py::topology_route_table` | six table-form evolutionary routes with R* values |
+| E16 | `experiments/run_secondary.py` via `workflows/topology.py::topology_route_table` | six table-form evolutionary routes with R* values |
 | E17 | `experiments/run_longitudinal.py` | selected external longitudinal consistency analysis using the legacy full-cohort frequency/co-occurrence backbone; weak eligible challenge-cohort and strict official-cMHN sensitivity tables are frozen under `reference_results/` |
 
 The plotting-heavy historical scripts are absent except for E17, whose exact
@@ -25,5 +25,6 @@ legacy runner is intentionally restored by project decision. Other historical
 experiments retain the refactored numerical method implementation. This does
 **not** make every historical E1-E16 number a reproduced output of v0.2.0.
 Exact status is maintained in
-`RESULT_PROVENANCE_MATRIX.tsv`; missing canonical runners are explicit rather
-than represented by callable functions alone.
+`RESULT_PROVENANCE_MATRIX.tsv`. The manuscript-critical current evidence is
+frozen under `reference_results/final_manuscript_evidence/`; E8, E9, E12 and
+E13 remain explicitly secondary historical analyses.

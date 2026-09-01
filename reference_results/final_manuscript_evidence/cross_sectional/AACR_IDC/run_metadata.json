@@ -1,0 +1,54 @@
+{
+  "created_utc": "2026-09-01T11:04:57.394797+00:00",
+  "command": [
+    "D:\\project\\Rel_ObsHN\\public_release\\RelObsTQ_MHN_reproducible_code\\.venv_reaudit\\Scripts\\python.exe",
+    "experiments/run_cross_sectional.py",
+    "--cohort",
+    "AACR_IDC"
+  ],
+  "working_directory": "D:\\project\\Rel_ObsHN\\public_release\\RelObsTQ_MHN_reproducible_code",
+  "python": {
+    "version": "3.12.13",
+    "executable": "D:\\project\\Rel_ObsHN\\public_release\\RelObsTQ_MHN_reproducible_code\\.venv_reaudit\\Scripts\\python.exe"
+  },
+  "platform": "Windows-11-10.0.26200-SP0",
+  "packages": {
+    "relobstq-mhn": "0.2.0",
+    "mhn": "1.2.3",
+    "numpy": "1.26.4",
+    "pandas": "3.0.5",
+    "scipy": "1.14.1",
+    "statsmodels": "0.15.0"
+  },
+  "git": {
+    "repository_root": "D:/project/Rel_ObsHN/public_release/RelObsTQ_MHN_reproducible_code",
+    "commit": "2a6c3845893f4167bf0a06a546720448f1226b90",
+    "dirty": false
+  },
+  "inputs": [
+    {
+      "path": "D:\\project\\Rel_ObsHN\\public_release\\RelObsTQ_MHN_reproducible_code\\outputs\\phase0_reaudit_2026\\prepared_cross_sectional\\AACR_IDC\\mhn_training_matrix.csv",
+      "exists": true,
+      "size_bytes": 339967,
+      "sha256": "455f45f59a149072ad163c70fc860962a661ed57b6d407bdc461986927c88b7c"
+    },
+    {
+      "path": "D:\\project\\Rel_ObsHN\\public_release\\RelObsTQ_MHN_reproducible_code\\outputs\\phase0_reaudit_2026\\prepared_cross_sectional\\AACR_IDC\\mhn_row_index_map.csv",
+      "exists": true,
+      "size_bytes": 1463667,
+      "sha256": "2de1de3ab810b226376ae57f5b12fa006958cb3f68b89b86327c2922c7b98098"
+    },
+    {
+      "path": "D:\\project\\Rel_ObsHN\\public_release\\RelObsTQ_MHN_reproducible_code\\outputs\\phase0_reaudit_2026\\prepared_cross_sectional\\AACR_IDC\\state_table.csv",
+      "exists": true,
+      "size_bytes": 3350520,
+      "sha256": "d2475c6c763929025d8c276d7e1d0678c9bf15d455c67d33bb1224f6317d3dce"
+    }
+  ],
+  "workflow": {
+    "workflow": "run_cross_sectional_cohort",
+    "backend": "official_mhn_cMHN",
+    "random_seed": 20260630,
+    "bootstrap_replicates": 500
+  }
+}

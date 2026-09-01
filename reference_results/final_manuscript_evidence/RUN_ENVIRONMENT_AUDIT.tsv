@@ -1,0 +1,9 @@
+unit	git_commit	git_dirty	python	mhn	numpy	pandas	manifest_entries_verified
+cross_sectional_AACR_LUAD	2a6c3845893f4167bf0a06a546720448f1226b90	False	3.12.13	1.2.3	1.26.4	3.0.5	11
+core_evidence_AACR_LUAD	c208e4fcf16a409dec97c0e680e5c8cfdc5ade86	False	3.12.13	1.2.3	1.26.4	3.0.5	13
+cross_sectional_AACR_COAD	2a6c3845893f4167bf0a06a546720448f1226b90	False	3.12.13	1.2.3	1.26.4	3.0.5	11
+core_evidence_AACR_COAD	c208e4fcf16a409dec97c0e680e5c8cfdc5ade86	False	3.12.13	1.2.3	1.26.4	3.0.5	13
+cross_sectional_AACR_IDC	2a6c3845893f4167bf0a06a546720448f1226b90	False	3.12.13	1.2.3	1.26.4	3.0.5	11
+core_evidence_AACR_IDC	c208e4fcf16a409dec97c0e680e5c8cfdc5ade86	False	3.12.13	1.2.3	1.26.4	3.0.5	13
+simulation_dwell_gradient	48799b2f93a176a7e39792480c37ed41bb4f4ae9	False	3.12.13	1.2.3	1.26.4	3.0.5	9
+simulation_topology_robustness	9bc5f0082cb3fe69401a983513673e8004b18e8d	False	3.12.13	1.2.3	1.26.4	3.0.5	6

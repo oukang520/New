@@ -5,7 +5,7 @@ Reproducible code for estimating a state-level **relative dwell/stasis proxy**
 from cross-sectional genomic cohorts using observed occupancy and an
 MHN-derived evolutionary inflow backbone.
 
-Prepared for scientific code release on 2026-08-31.
+Final manuscript evidence release audited on 2026-09-02.
 
 ## Method
 
@@ -74,6 +74,9 @@ python experiments/freeze_final_evidence.py
 ```
 
 Core refactored workflows write hashed TSV/JSON outputs under `outputs/`.
+The verified final current-code evidence is committed under
+`reference_results/final_manuscript_evidence/`; its 99 files are indexed by
+`FINAL_EVIDENCE_INDEX.tsv`.
 The selected legacy E17 runner writes its original tables and figures under
 `results/experiment_17_longitudinal_public/`; aggregate reference outputs are
 also frozen under `reference_results/experiment_17_legacy/`.
@@ -102,7 +105,12 @@ Raw patient-level data and generated results are not redistributed.
 The original frozen audit commit `e4215608...` omitted the declared
 `relobstq_mhn.data` package. The Phase-0 successor restores the exact
 manifest-matching files and adds hashed input/runtime metadata. Historical
-E1-E16 results are not automatically results of this refactored package. E17
-uses the explicitly restored legacy implementation and result contract; see
-`RESULT_PROVENANCE_MATRIX.tsv` and `FINAL_REPRODUCIBILITY_REPORT.md` before
-using a numerical value in a manuscript.
+E1-E16 outputs are not automatically results of this refactored package. The
+manuscript-critical E3-E7 and E10-E16 evidence has now been regenerated and
+classified explicitly; E17 uses the restored selected implementation plus
+transparent challenge and strict sensitivity analyses. Use
+`RESULTS_MASTER_TABLE.md`, `RESULT_PROVENANCE_MATRIX.tsv`, and
+`FINAL_REPRODUCIBILITY_REPORT.md` as the sole manuscript evidence controls.
+
+Phase-0 v3 status: **PASS - ready for manuscript writing**, subject to the
+permanent interpretation limits in `PHASE0_V3_FINAL_AUDIT.md`.
