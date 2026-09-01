@@ -30,6 +30,23 @@ of supplied input paths.
 - `repeat_metrics.tsv`: rank recovery, gain, concordance and error.
 - `performance_summary.tsv`: median and interquartile range per metric.
 
+## Topology robustness simulation
+
+- `canonical_contract.tsv`: labels E7 as a supplementary oracle-backbone test.
+- `truth_states.tsv`: implanted continuous dwell levels by condition.
+- `condition_metrics.tsv`: repeat-level recovery by topology, sparsity and dwell placement.
+- `condition_summary.tsv`: condition-level median and interquartile recovery metrics.
+
+## Cross-sectional core evidence
+
+- `inflow_computability_summary.tsv`: E4 finite-inflow and finite-R* audit.
+- `rstar_landscape_states.tsv`, `rstar_landscape_summary.tsv`: E10 state landscape.
+- `information_gain_summary.tsv`: E11 occupancy/inflow non-equivalence.
+- `denominator_ablation_*.tsv`: E14 denominator specificity.
+- `matched_decoy_*.tsv`, `inflow_shuffle_*.tsv`: E15 controls.
+- `topology_routes.tsv`: E16 representative dominant-predecessor routes.
+- `evidence_contract.tsv`: evidence-unit to output mapping.
+
 ## Longitudinal validation
 
 - Input contract: cBioPortal study exports under
@@ -47,6 +64,11 @@ of supplied input paths.
 The frozen aggregate reference tables are under
 `reference_results/experiment_17_legacy/`. They report GLASS AUC 0.67,
 CRC-triplets AUC 0.65 and MNM-WashU AUC 0.89.
+
+Outcome-independent cohort rules and all analyzed weak/negative non-primary
+cohorts are under `reference_results/experiment_17_supplement/`. The
+patient-grouped official-cMHN sensitivity, including the negative CRC result,
+is frozen under `reference_results/experiment_17_sensitivity/`.
 
 Plots are not result contracts for the refactored workflows. The selected E17
 legacy runner retains its original table-and-figure generation behavior.

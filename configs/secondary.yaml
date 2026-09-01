@@ -1,6 +1,6 @@
-cross_sectional_root: outputs/cross_sectional
-prepared_data_root: processed/experiment_ready
-output_root: outputs/secondary_validation
+cross_sectional_root: outputs/final_manuscript_evidence/cross_sectional
+prepared_data_root: outputs/phase0_reaudit_2026/prepared_cross_sectional
+output_root: outputs/final_manuscript_evidence/core_evidence
 cohorts:
   - AACR_LUAD
   - AACR_COAD
@@ -13,3 +13,5 @@ analysis:
   inflow_shuffle_replicates: 400
   random_seed: 20260630
   topology_routes: 6
+  minimum_state_count: 5
+  minimum_inflow: 1.0e-8

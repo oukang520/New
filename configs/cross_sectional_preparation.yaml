@@ -1,5 +1,5 @@
 source_root: data/cross_sectional_harmonized
-output_root: outputs/prepared_cross_sectional
+output_root: outputs/phase0_reaudit_2026/prepared_cross_sectional
 dataset_version: AACR Project GENIE v18.0-public
 minimum_state_count: 5
 selection_rule: legacy_curated_driver_priority_p15_frozen_before_model_fit

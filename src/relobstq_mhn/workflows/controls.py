@@ -196,3 +196,89 @@ def backbone_ablation(
         ]
     )
     return details, summary
+
+
+def denominator_ablation(
+    occupancy: pd.DataFrame,
+    events: list[str],
+    learned_probabilities,
+    event_frequencies: dict[str, float],
+    *,
+    thresholds: ScoreThresholds | None = None,
+    top_k: int = 10,
+) -> tuple[pd.DataFrame, pd.DataFrame]:
+    """Compare the MHN inflow denominator with objective alternatives.
+
+    The variants retain the same observed states and one-step predecessor rule.
+    Only the denominator-generating next-event probabilities are changed.
+    ``occupancy_only`` removes the inflow denominator entirely.
+    """
+
+    thresholds = thresholds or ScoreThresholds()
+    frequencies = {str(event): max(float(event_frequencies.get(str(event), 0.0)), 0.0) for event in events}
+
+    def uniform(genotype: str) -> dict[str, float]:
+        present = set() if genotype == "WT" else set(str(genotype).split("+"))
+        absent = [event for event in events if event not in present]
+        return {event: 1.0 / len(absent) for event in absent} if absent else {}
+
+    def frequency(genotype: str) -> dict[str, float]:
+        present = set() if genotype == "WT" else set(str(genotype).split("+"))
+        absent = [event for event in events if event not in present]
+        total = sum(frequencies[event] for event in absent)
+        if not absent:
+            return {}
+        if total <= 0:
+            return {event: 1.0 / len(absent) for event in absent}
+        return {event: frequencies[event] / total for event in absent}
+
+    variants = []
+    for name, provider in [
+        ("full_mhn", learned_probabilities),
+        ("uniform_inflow", uniform),
+        ("frequency_inflow", frequency),
+    ]:
+        edges = same_stage_one_step_edges(occupancy, events, provider, rule=name)
+        inflow = aggregate_inflow(
+            occupancy,
+            edges,
+            rule=name,
+            minimum_state_count=thresholds.minimum_state_count,
+            minimum_inflow=thresholds.minimum_inflow,
+        )
+        scores, _ = compute_relative_dwell(inflow, thresholds)
+        variants.append(scores[["state", "N_v", "L_v", "F_hat", "R_star", "eligible_relobstq"]].assign(variant=name))
+
+    occupancy_only = occupancy[["state", "N_v", "L_v"]].copy()
+    occupancy_only["F_hat"] = np.nan
+    occupancy_only["eligible_relobstq"] = occupancy_only["N_v"].ge(thresholds.minimum_state_count)
+    normalizer = occupancy_only.loc[occupancy_only["eligible_relobstq"], "L_v"].median()
+    occupancy_only["R_star"] = occupancy_only["L_v"] / normalizer
+    occupancy_only["variant"] = "occupancy_only"
+    variants.append(occupancy_only)
+
+    details = pd.concat(variants, ignore_index=True)
+    reference = details[
+        details["variant"].eq("full_mhn") & details["eligible_relobstq"].astype(bool)
+    ].set_index("state")["R_star"]
+    reference_top = set(reference.nlargest(min(top_k, len(reference))).index)
+    rows = []
+    for variant, frame in details.groupby("variant", sort=False):
+        values = frame[frame["eligible_relobstq"].astype(bool)].set_index("state")["R_star"]
+        paired = pd.concat([reference.rename("full"), values.rename("variant")], axis=1).dropna()
+        rho = spearmanr(paired["full"], paired["variant"]).statistic if len(paired) >= 3 else np.nan
+        variant_top = set(values.nlargest(min(top_k, len(values))).index)
+        overlap = len(reference_top & variant_top)
+        union = len(reference_top | variant_top)
+        rows.append(
+            {
+                "variant": variant,
+                "states_compared": len(paired),
+                "spearman_vs_full_mhn": rho,
+                "top_k": min(top_k, len(reference_top)),
+                "top_k_overlap": overlap,
+                "top_k_retention_fraction": overlap / max(len(reference_top), 1),
+                "top_k_jaccard": overlap / max(union, 1),
+            }
+        )
+    return details, pd.DataFrame(rows)

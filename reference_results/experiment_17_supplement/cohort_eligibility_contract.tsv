@@ -1,0 +1,3 @@
+tier	minimum_evaluable_pairs	minimum_persistent_pairs	minimum_changed_pairs	minimum_exact_state_score_fraction	requires_same_patient_ordering	requires_interpretable_biological_order	requires_comparable_specimen_assay	outcome_metrics_allowed_for_selection
+main	20	3	3	0.80	true	true	true	false
+small_cohort_supplement	8	1	1		true	true	true	false

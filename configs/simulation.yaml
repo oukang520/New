@@ -1,4 +1,4 @@
-output_root: outputs/simulation_dwell_gradient
+output_root: outputs/final_manuscript_evidence/simulation_dwell_gradient
 event_count: 15
 pilot_samples: 30000
 samples_per_repeat: 2000

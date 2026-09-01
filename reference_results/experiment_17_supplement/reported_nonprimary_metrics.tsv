@@ -1,0 +1,3 @@
+study_id	short_name	disposition	evaluable_pairs	persistent_pairs	changed_pairs	auc	auc_ci_low	auc_ci_high	average_precision_lift	delta_persistence_rate_high_minus_low	delta_persistence_ci_low	delta_persistence_ci_high	spearman_r_minimum_dwell_interval	spearman_r_minimum_dwell_ci_low	spearman_r_minimum_dwell_ci_high	exact_state_score_fraction	selection_used_outcome
+breast_msk_2018	BRCA-MSK	eligible_challenge_supplement	47	31	16	0.49	0.33	0.69	1.01	0.06	-0.29	0.42	0.08	-0.18	0.32	0.98	false
+breast_alpelisib_2020	ALP-breast	ineligible_design_pilot_reported_for_transparency	13	8	5	0.225			0.9491511093	-0.4			-0.4266409168			0.9230769231	false

@@ -68,6 +68,7 @@ python experiments/prepare_cross_sectional.py
 python experiments/run_cross_sectional.py
 python experiments/run_secondary.py
 python experiments/run_simulation.py
+python experiments/run_topology_robustness.py
 python experiments/run_longitudinal.py
 ```
 
@@ -75,6 +76,10 @@ Core refactored workflows write hashed TSV/JSON outputs under `outputs/`.
 The selected legacy E17 runner writes its original tables and figures under
 `results/experiment_17_longitudinal_public/`; aggregate reference outputs are
 also frozen under `reference_results/experiment_17_legacy/`.
+The selected E17 output is an external longitudinal consistency analysis, not
+a fully out-of-fold official-cMHN validation. Outcome-independent cohort rules,
+weak/non-primary cohort results and the strict official-cMHN sensitivity are
+retained in the adjacent Experiment 17 reference-result directories.
 
 Optional plotting for the refactored workflows remains separated:
 

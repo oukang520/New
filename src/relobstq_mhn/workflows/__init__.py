@@ -9,6 +9,7 @@ from .longitudinal import LongitudinalConfig, evaluate_longitudinal_pairs
 from .longitudinal_preparation import LongitudinalPreparationConfig, prepare_longitudinal_pairs
 from .preparation import CrossSectionalPreparationConfig, prepare_cross_sectional_cohort
 from .simulation import DwellGradientConfig, run_dwell_gradient
+from .topology_robustness import TopologyRobustnessConfig, run_topology_robustness
 
 __all__ = [
     "CrossSectionalConfig",
@@ -16,9 +17,11 @@ __all__ = [
     "DwellGradientConfig",
     "LongitudinalConfig",
     "LongitudinalPreparationConfig",
+    "TopologyRobustnessConfig",
     "evaluate_longitudinal_pairs",
     "prepare_longitudinal_pairs",
     "prepare_cross_sectional_cohort",
     "run_cross_sectional_cohort",
     "run_dwell_gradient",
+    "run_topology_robustness",
 ]

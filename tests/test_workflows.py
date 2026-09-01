@@ -9,7 +9,8 @@ import pandas as pd
 sys.path.insert(0, str(Path(__file__).resolve().parents[1] / "src"))
 
 from relobstq_mhn.core.scoring import ScoreThresholds
-from relobstq_mhn.workflows.controls import inflow_pairing_falsification, matched_decoy_test
+from relobstq_mhn.core.transitions import probability_provider_from_theta
+from relobstq_mhn.workflows.controls import denominator_ablation, inflow_pairing_falsification, matched_decoy_test
 from relobstq_mhn.workflows.cross_sectional import CrossSectionalConfig, run_cross_sectional_cohort
 from relobstq_mhn.workflows.longitudinal import LongitudinalConfig, evaluate_longitudinal_pairs
 from relobstq_mhn.workflows.longitudinal_preparation import (
@@ -17,6 +18,8 @@ from relobstq_mhn.workflows.longitudinal_preparation import (
     prepare_longitudinal_pairs,
 )
 from relobstq_mhn.workflows.simulation import DwellGradientConfig, run_dwell_gradient
+from relobstq_mhn.workflows.secondary import inflow_computability_summary, rstar_landscape_summary
+from relobstq_mhn.workflows.topology_robustness import TopologyRobustnessConfig, run_topology_robustness
 
 
 def _toy_prepared(root: Path) -> None:
@@ -53,6 +56,20 @@ def test_cross_sectional_with_supplied_theta(tmp_path: Path) -> None:
     )
     assert not result["state_scores"].empty
     assert result["quality_control"]["genotype_alignment_mismatches"].iloc[0] == 0
+    computability = inflow_computability_summary(result["state_scores"], result["state_edges"])
+    landscape, summary = rstar_landscape_summary(result["state_scores"])
+    details, ablation = denominator_ablation(
+        result["state_occupancy"],
+        ["A", "B"],
+        probability_provider_from_theta(np.zeros((2, 2)), ["A", "B"]),
+        {"A": 0.5, "B": 1.0 / 3.0},
+        thresholds=ScoreThresholds(minimum_state_count=1, minimum_inflow=1.0e-12),
+        top_k=2,
+    )
+    assert computability.loc[0, "finite_eligible_fraction"] == 1.0
+    assert len(landscape) == summary.loc[0, "eligible_states"]
+    assert set(details["variant"]) == {"full_mhn", "uniform_inflow", "frequency_inflow", "occupancy_only"}
+    assert set(ablation["variant"]) == set(details["variant"])
 
 
 def test_continuous_gradient_smoke() -> None:
@@ -70,6 +87,26 @@ def test_continuous_gradient_smoke() -> None:
     )
     assert len(result["repeat_metrics"]) == 2
     assert set(result["truth_states"]["D_true"]) == {0.25, 0.5, 1.0, 2.0, 4.0}
+
+
+def test_topology_robustness_contract_smoke() -> None:
+    result = run_topology_robustness(
+        config=TopologyRobustnessConfig(
+            event_count=6,
+            topologies=("branching",),
+            sparsities=(0.10,),
+            placements=("middle",),
+            states_per_level=1,
+            pilot_samples=600,
+            samples_per_repeat=250,
+            repeats=1,
+            maximum_events=5,
+            minimum_pilot_count=1,
+            thresholds=ScoreThresholds(minimum_state_count=1, minimum_inflow=1.0e-12),
+        )
+    )
+    assert result["canonical_contract"].loc[0, "includes_cMHN_refit_error"] == False  # noqa: E712
+    assert len(result["condition_metrics"]) == 1
 
 
 def test_longitudinal_and_controls() -> None:

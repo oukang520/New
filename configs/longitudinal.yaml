@@ -27,6 +27,39 @@ studies:
       min_state_count: 1
       high_confidence_state_count: 2
 
+# Cohort disposition is determined without inspecting AUC, correlation,
+# persistence contrast, or any other model-performance result.
+cohort_eligibility_contract:
+  main:
+    minimum_evaluable_pairs: 20
+    minimum_persistent_pairs: 3
+    minimum_changed_pairs: 3
+    minimum_exact_state_score_fraction: 0.80
+    requires_same_patient_ordering: true
+    requires_interpretable_biological_order: true
+    requires_comparable_specimen_assay: true
+  small_cohort_supplement:
+    minimum_evaluable_pairs: 8
+    requires_both_outcome_classes: true
+  prohibited_selection_variables:
+    - auc
+    - average_precision_lift
+    - delta_persistence_rate_high_minus_low
+    - spearman_r_minimum_dwell_interval
+    - any_model_performance_metric
+
+reported_sensitivity_studies:
+  breast_msk_2018:
+    short_name: BRCA-MSK
+    disposition: eligible_challenge_supplement
+    reason: 47 evaluable same-patient ordered pairs, 31 persistent and 16 changed pairs, and 0.98 exact-state coverage satisfy the numerical eligibility rule; treatment and metastatic-context heterogeneity preclude pooling with the two core disease-specific cohorts.
+    frozen_result: reference_results/experiment_17_supplement/reported_nonprimary_metrics.tsv
+  breast_alpelisib_2020:
+    short_name: ALP-breast
+    disposition: ineligible_design_pilot_reported_for_transparency
+    reason: pre/on/post-treatment cfDNA profiles mix specimen modality and an active treatment perturbation, so they do not satisfy the comparable observational dwell-target contract; pilot metrics remain reported irrespective of direction.
+    frozen_result: reference_results/experiment_17_supplement/reported_nonprimary_metrics.tsv
+
 excluded_studies:
   nsclc_tracerx_2017:
     short_name: TRACERx
@@ -45,10 +78,10 @@ excluded_studies:
     reason: downloaded through the cBioPortal API and audited; primary-metastatic design is strong, but held-out R* scoring leaves only 4 evaluable retained pairs under the full driver-state model.
   breast_alpelisib_2020:
     short_name: ALP-breast
-    reason: downloaded and audited; longitudinal samples are dominated by cfDNA pre/on/post-treatment profiles, and strict held-out R* validation is directionally negative.
+    reason: longitudinal samples are dominated by pre/on/post-treatment cfDNA profiles, mixing specimen modality with an active treatment perturbation and violating the comparable observational dwell-target contract.
   brca_mbcproject_2022:
     short_name: MBCProject
-    reason: downloaded and audited; serial biopsy days are available, but tissue/liquid biopsy mixture and sparse held-out state coverage produce no reliable support for R* dwell validation.
+    reason: serial biopsy days are available, but tissue/liquid biopsy mixture leaves only 11 evaluable pairs and 3 changed pairs under the common state contract.
   brca_dldccc_2022:
     short_name: TNBC-DLDCCC
     reason: downloaded and audited; only 11 monotone-QC retained adjacent pairs and only 1 changed genotype pair, so it cannot support dwell-discrimination metrics.
@@ -79,10 +112,6 @@ excluded_studies:
   lipo_msk_2026:
     short_name: LIPO-MSK
     reason: downloaded and audited; strict monotone longitudinal scoring retained only 3 evaluable pairs and all belonged to the persistent class.
-  breast_msk_2018:
-    short_name: BRCA-MSK
-    reason: downloaded and audited; 47 evaluable pairs were available, but core metrics were mixed rather than clearly supportive, so it is retained as extension evidence rather than a main Experiment 17 cohort.
-
 analysis:
   max_events: 12
   min_events_for_mhn: 5
@@ -101,6 +130,9 @@ analysis:
     coadread_mskcc: 20260827
     mnm_washu_2016: 20260828
   route_studies: [difg_glass, coadread_mskcc, mnm_washu_2016]
+  cohort_selection_uses_outcomes: false
+  reported_challenge_supplement: [breast_msk_2018]
+  reported_ineligible_pilots: [breast_alpelisib_2020]
   pair_qc:
     exclude_event_loss: true
     rationale: remove adjacent pairs with apparent selected-driver loss because this violates the monotone progression assumption used by MHN-style state topology.

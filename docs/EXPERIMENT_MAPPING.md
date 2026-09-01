@@ -8,17 +8,17 @@ formula is implemented once.
 |---|---|---|
 | E1 preparation, E3-E5 core | `experiments/prepare_cross_sectional.py`, `experiments/run_cross_sectional.py` | fixed p15 input QC, theta, one-step edges, occupancy, inflow, R* and top states |
 | E6 and continuous-gradient supplement | `experiments/run_simulation.py` | truth states, repeat scores, ordering/calibration metrics |
-| E7 | reusable simulation functions only; no frozen canonical E7 runner/config | legacy robustness tables only |
+| E7 | `experiments/run_topology_robustness.py` | supplementary oracle-backbone topology/sparsity/dwell-placement robustness tables; explicitly excludes cMHN refit error |
 | E8 | `workflows/secondary.py::module_enrichment`; not called by the current runner | function available, historical result legacy-only |
-| E10 | no current canonical cohort-summary contract | historical result legacy-only |
+| E10 | `experiments/run_secondary.py` | eligible-state R* landscape and cohort summary |
 | E11 | `experiments/run_secondary.py` | information-gain summary |
 | E9 | `core/scoring.py::compute_observation_enrichment`; no current experiment contract | function available, historical result legacy-only |
 | E12 | `workflows/secondary.py::clinical_association`; no current runner | function available, historical result legacy-only |
 | E13 | `workflows/replication.py::compare_score_tables`; no split/refit runner | comparison function only |
-| E14 | `workflows/controls.py::backbone_ablation`; not called by current runner | function available, historical result legacy-only |
+| E14 | `experiments/run_secondary.py` | full-MHN, uniform-inflow, frequency-inflow and occupancy-only denominator ablation |
 | E15 | `experiments/run_secondary.py` | matched-decoy and inflow-pairing falsification tables |
 | E16 | `workflows/topology.py::topology_route_table` | six table-form evolutionary routes with R* values |
-| E17 | `experiments/run_longitudinal.py` | selected legacy full-cohort frequency/co-occurrence backbone, training-patient occupancy scoring, pair-level predictions and aggregate longitudinal metrics |
+| E17 | `experiments/run_longitudinal.py` | selected external longitudinal consistency analysis using the legacy full-cohort frequency/co-occurrence backbone; weak eligible challenge-cohort and strict official-cMHN sensitivity tables are frozen under `reference_results/` |
 
 The plotting-heavy historical scripts are absent except for E17, whose exact
 legacy runner is intentionally restored by project decision. Other historical

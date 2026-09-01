@@ -94,6 +94,16 @@ def run_cross_sectional_cohort(
             "selected_lambda": fit.selected_lambda,
             "event_count": len(events),
             "sample_count": len(matrix),
+            "theta_shape": list(theta.shape),
+            "finite_theta": bool(np.isfinite(theta).all()),
+            "lambda_multipliers": list(config.mhn.lambda_multipliers),
+            "cv_folds": config.mhn.cv_folds,
+            "pick_1se": config.mhn.pick_1se,
+            "max_iterations": config.mhn.max_iterations,
+            "relative_tolerance": config.mhn.relative_tolerance,
+            "random_seed": config.mhn.random_seed,
+            "device": "CPU",
+            "penalty": "L1",
         }
     else:
         theta = np.asarray(theta, dtype=float)

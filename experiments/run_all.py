@@ -22,6 +22,7 @@ def main() -> None:
         "run_cross_sectional.py",
         "run_secondary.py",
         "run_simulation.py",
+        "run_topology_robustness.py",
         "run_longitudinal.py",
     ]
     for script in scripts:

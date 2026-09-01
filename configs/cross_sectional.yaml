@@ -1,5 +1,5 @@
-data_root: outputs/prepared_cross_sectional
-output_root: outputs/cross_sectional
+data_root: outputs/phase0_reaudit_2026/prepared_cross_sectional
+output_root: outputs/final_manuscript_evidence/cross_sectional
 cohorts:
   - AACR_LUAD
   - AACR_COAD
