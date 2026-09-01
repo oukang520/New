@@ -130,17 +130,21 @@ def information_gain_summary(scores: pd.DataFrame, *, top_k: int = 10) -> pd.Dat
     """Quantify how R* reorders states relative to occupancy and inflow alone."""
 
     require_columns(scores, ["state", "L_v", "F_hat", "R_star"], "scores")
-    work = scores.replace([np.inf, -np.inf], np.nan).dropna(subset=["L_v", "F_hat", "R_star"])
+    work = scores.copy()
+    if "eligible_relobstq" in work:
+        work = work[work["eligible_relobstq"].astype(bool)]
+    work = work.replace([np.inf, -np.inf], np.nan).dropna(subset=["L_v", "F_hat", "R_star"])
+    selected_k = min(top_k, len(work))
     rho_l, p_l = safe_rank_correlation(work["R_star"], work["L_v"])
     rho_f, p_f = safe_rank_correlation(work["R_star"], work["F_hat"])
-    top_r = set(work.nlargest(min(top_k, len(work)), "R_star")["state"].astype(str))
-    top_l = set(work.nlargest(min(top_k, len(work)), "L_v")["state"].astype(str))
-    top_f = set(work.nlargest(min(top_k, len(work)), "F_hat")["state"].astype(str))
+    top_r = set(work.nlargest(selected_k, "R_star")["state"].astype(str))
+    top_l = set(work.nlargest(selected_k, "L_v")["state"].astype(str))
+    top_f = set(work.nlargest(selected_k, "F_hat")["state"].astype(str))
     return pd.DataFrame(
         [
             {
                 "states": len(work),
-                "top_k": top_k,
+                "top_k": selected_k,
                 "spearman_R_vs_occupancy": rho_l,
                 "spearman_R_vs_occupancy_p": p_l,
                 "spearman_R_vs_inflow": rho_f,

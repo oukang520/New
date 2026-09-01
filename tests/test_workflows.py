@@ -18,7 +18,11 @@ from relobstq_mhn.workflows.longitudinal_preparation import (
     prepare_longitudinal_pairs,
 )
 from relobstq_mhn.workflows.simulation import DwellGradientConfig, run_dwell_gradient
-from relobstq_mhn.workflows.secondary import inflow_computability_summary, rstar_landscape_summary
+from relobstq_mhn.workflows.secondary import (
+    inflow_computability_summary,
+    information_gain_summary,
+    rstar_landscape_summary,
+)
 from relobstq_mhn.workflows.topology_robustness import TopologyRobustnessConfig, run_topology_robustness
 
 
@@ -70,6 +74,21 @@ def test_cross_sectional_with_supplied_theta(tmp_path: Path) -> None:
     assert len(landscape) == summary.loc[0, "eligible_states"]
     assert set(details["variant"]) == {"full_mhn", "uniform_inflow", "frequency_inflow", "occupancy_only"}
     assert set(ablation["variant"]) == set(details["variant"])
+
+
+def test_information_gain_excludes_ineligible_states() -> None:
+    scores = pd.DataFrame(
+        {
+            "state": ["s1::A", "s1::B", "s1::C", "s1::D"],
+            "L_v": [0.1, 0.2, 0.3, 0.9],
+            "F_hat": [0.4, 0.3, 0.2, 0.001],
+            "R_star": [0.5, 1.0, 2.0, 900.0],
+            "eligible_relobstq": [True, True, True, False],
+        }
+    )
+    summary = information_gain_summary(scores, top_k=10)
+    assert summary.loc[0, "states"] == 3
+    assert summary.loc[0, "top_k"] == 3
 
 
 def test_continuous_gradient_smoke() -> None:
