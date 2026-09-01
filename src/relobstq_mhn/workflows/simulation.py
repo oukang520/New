@@ -290,15 +290,25 @@ def run_dwell_gradient(
         .sort_values("D_true")
     )
     possible_per_level = config.repeats * config.states_per_level
-    coverage_summary = (
+    observed_coverage = (
         state_scores.groupby(["D_true", "truth_level"], as_index=False)
         .agg(
             evaluated_state_repeats=("state", "size"),
             repeats_with_evaluable_state=("repeat", "nunique"),
             distinct_truth_states_evaluated=("state", "nunique"),
         )
-        .sort_values("D_true")
     )
+    coverage_summary = pd.DataFrame({"D_true": config.dwell_levels})
+    coverage_summary["truth_level"] = coverage_summary["D_true"].map(lambda value: f"D={value:g}")
+    coverage_summary = coverage_summary.merge(
+        observed_coverage, on=["D_true", "truth_level"], how="left", validate="one_to_one"
+    ).sort_values("D_true")
+    count_columns = [
+        "evaluated_state_repeats",
+        "repeats_with_evaluable_state",
+        "distinct_truth_states_evaluated",
+    ]
+    coverage_summary[count_columns] = coverage_summary[count_columns].fillna(0).astype(int)
     coverage_summary["possible_state_repeats"] = possible_per_level
     coverage_summary["evaluation_coverage_fraction"] = (
         coverage_summary["evaluated_state_repeats"] / possible_per_level
