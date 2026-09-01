@@ -128,6 +128,7 @@ def test_topology_robustness_contract_smoke() -> None:
     )
     assert result["canonical_contract"].loc[0, "includes_cMHN_refit_error"] == False  # noqa: E712
     assert len(result["condition_metrics"]) == 1
+    assert result["condition_metrics"].loc[0, "evaluable_fraction"] <= 1.0
 
 
 def test_longitudinal_and_controls() -> None:

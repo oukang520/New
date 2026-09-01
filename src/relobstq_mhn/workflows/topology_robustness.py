@@ -200,6 +200,8 @@ def run_topology_robustness(
                             "placement": placement,
                             "repeat": repeat,
                             "truth_states_evaluable": len(evaluated),
+                            "truth_states_implanted": len(truth),
+                            "evaluable_fraction": len(evaluated) / len(truth),
                             "spearman_R_star": rho_r,
                             "spearman_occupancy": rho_l,
                             "spearman_gain": rho_r - rho_l,
@@ -217,6 +219,8 @@ def run_topology_robustness(
         .agg(
             repeats=("repeat", "count"),
             median_evaluable_states=("truth_states_evaluable", "median"),
+            median_evaluable_fraction=("evaluable_fraction", "median"),
+            minimum_evaluable_fraction=("evaluable_fraction", "min"),
             median_spearman_R_star=("spearman_R_star", "median"),
             q1_spearman_R_star=("spearman_R_star", lambda values: values.quantile(0.25)),
             q3_spearman_R_star=("spearman_R_star", lambda values: values.quantile(0.75)),
