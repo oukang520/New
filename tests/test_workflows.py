@@ -106,6 +106,8 @@ def test_continuous_gradient_smoke() -> None:
     )
     assert len(result["repeat_metrics"]) == 2
     assert set(result["truth_states"]["D_true"]) == {0.25, 0.5, 1.0, 2.0, 4.0}
+    assert set(result["evaluation_coverage"]["D_true"]) == {0.25, 0.5, 1.0, 2.0, 4.0}
+    assert result["evaluation_coverage"]["evaluation_coverage_fraction"].between(0, 1).all()
 
 
 def test_topology_robustness_contract_smoke() -> None:

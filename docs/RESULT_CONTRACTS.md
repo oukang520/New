@@ -29,6 +29,7 @@ of supplied input paths.
 - `repeat_state_scores.tsv`: recovered R* for every truth state/repeat.
 - `repeat_metrics.tsv`: rank recovery, gain, concordance and error.
 - `performance_summary.tsv`: median and interquartile range per metric.
+- `evaluation_coverage.tsv`: evaluable truth-state coverage for every dwell level.
 
 ## Topology robustness simulation
 

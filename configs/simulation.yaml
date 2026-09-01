@@ -1,7 +1,7 @@
 output_root: outputs/final_manuscript_evidence/simulation_dwell_gradient
 event_count: 15
 pilot_samples: 30000
-samples_per_repeat: 2000
+samples_per_repeat: 5000
 repeats: 60
 dwell_levels: [0.25, 0.5, 1.0, 2.0, 4.0]
 states_per_level: 5

@@ -289,6 +289,20 @@ def run_dwell_gradient(
         )
         .sort_values("D_true")
     )
+    possible_per_level = config.repeats * config.states_per_level
+    coverage_summary = (
+        state_scores.groupby(["D_true", "truth_level"], as_index=False)
+        .agg(
+            evaluated_state_repeats=("state", "size"),
+            repeats_with_evaluable_state=("repeat", "nunique"),
+            distinct_truth_states_evaluated=("state", "nunique"),
+        )
+        .sort_values("D_true")
+    )
+    coverage_summary["possible_state_repeats"] = possible_per_level
+    coverage_summary["evaluation_coverage_fraction"] = (
+        coverage_summary["evaluated_state_repeats"] / possible_per_level
+    )
     outputs = {
         "truth_states": truth,
         "repeat_state_scores": state_scores,
@@ -296,6 +310,7 @@ def run_dwell_gradient(
         "performance_summary": summary,
         "paired_comparison_summary": comparison_summary,
         "level_summary": level_summary,
+        "evaluation_coverage": coverage_summary,
     }
     if output_dir is not None:
         writer = ResultWriter(output_dir)
