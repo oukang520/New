@@ -73,3 +73,10 @@ is frozen under `reference_results/experiment_17_sensitivity/`.
 
 Plots are not result contracts for the refactored workflows. The selected E17
 legacy runner retains its original table-and-figure generation behavior.
+
+## Final evidence freeze
+
+`experiments/freeze_final_evidence.py` verifies every source manifest and clean
+Git run, then copies manuscript-facing outputs under
+`reference_results/final_manuscript_evidence/`. It also creates p15-input,
+runtime/environment, MHN-model-selection and all-file SHA-256 audit tables.

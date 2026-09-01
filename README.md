@@ -70,6 +70,7 @@ python experiments/run_secondary.py
 python experiments/run_simulation.py
 python experiments/run_topology_robustness.py
 python experiments/run_longitudinal.py
+python experiments/freeze_final_evidence.py
 ```
 
 Core refactored workflows write hashed TSV/JSON outputs under `outputs/`.
