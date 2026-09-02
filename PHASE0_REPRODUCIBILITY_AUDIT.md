@@ -27,7 +27,6 @@
 | Strict E17 score-source label | RESOLVED_WITH_CAVEAT | strict-workflow implementation inspection | corrected during the audit | strict workflow is superseded and not part of selected original E17 contract |
 | E17 repeated-patient bootstrap dependence | RESOLVED | selected-runner inspection | selected original runner uses patient-cluster resampling when patient IDs are available | small changed classes remain |
 | `run_all.py` implied all E1-E17 coverage | RESOLVED_WITH_CAVEAT | runner/function inventory | renamed/documented as current canonical core workflows | several legacy experiments still lack canonical runners |
-| E12 favorable-result selection risk | RESOLVED_WITH_CAVEAT | `CLINICAL_RESULT_AUDIT.tsv` | retained all overall and subgroup directions | E12 remains legacy-only and associative |
 | E16 route interpretation | RESOLVED | `TOPOLOGY_ROUTE_AUDIT.tsv` | recorded every edge and selection rule | representative route, not phylogeny |
 
 ## Cross-sectional preparation and event panels
@@ -46,15 +45,13 @@ Historical E3 metadata confirms independent official `mhn==1.2.3` cMHN fits, L1 
 
 `F_hat` is relative expected inflow mass from conditional next-event probabilities, not an absolute CTMC flux. Bootstrap uncertainty is conditional on fixed theta. See the dedicated theoretical and bootstrap audits.
 
-## Biological and clinical boundaries
+## Interpretation boundaries
 
-- E8 module-level q-values are all 1.0 in the historical table. Biological coherence may be described as plausibility, not statistically significant enrichment.
-- E12 shows mixed subgroup directions and tiny incremental C-index gains; it is secondary association evidence, not dwell truth or causality.
 - E16 paths trace maximum-inflow dominant predecessors among observed same-stage states and are not complete phylogenetic trees.
 
 ## Canonical workflow coverage
 
-Current runners cover fixed-panel preparation, cross-sectional cMHN/R*, continuous-gradient simulation, E11/E15/E16-style secondary tables, and the exact selected E17 analysis. E2, legacy enhanced E6, E7, E8, E9, E10, E12, E13 and E14 do not all have complete canonical runner/config/result contracts. Their numerical status is maintained in `RESULT_PROVENANCE_MATRIX.tsv` rather than being inferred from reusable functions.
+Current runners cover fixed-panel preparation, cross-sectional cMHN/R*, continuous-gradient simulation, E11/E15/E16-style secondary tables, and the exact selected E17 analysis. E2, legacy enhanced E6, E7, E9, E10, E13 and E14 do not all have complete canonical runner/config/result contracts. Their numerical status is maintained in `RESULT_PROVENANCE_MATRIX.tsv` rather than being inferred from reusable functions.
 
 ## Phase-0 decision
 

@@ -90,8 +90,7 @@ Weak, negative, and strict sensitivity results remain part of the evidence.
 
 ## Secondary historical analyses
 
-E8 biological plausibility, E9 O-star, E12 clinical association, and E13
-fixed-backbone split stability may be used only as supplementary context under
+E9 O-star and E13 fixed-backbone split stability may be used only as
+supplementary context under
 their provenance labels. They do not establish dwell-time truth and are not
 needed for the primary method claim.
-

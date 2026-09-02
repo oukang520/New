@@ -3,5 +3,4 @@ numpy>=1.24
 pandas>=2.0
 PyYAML>=6.0
 scipy>=1.11
-statsmodels>=0.14
 mhn==1.2.3; python_version < "3.13"

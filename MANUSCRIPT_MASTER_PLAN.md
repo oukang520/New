@@ -64,6 +64,5 @@ Use the seven-step story above. Every numerical statement must be copied from
 ## Evidence policy
 
 Primary claims require grade A/A- evidence or a clearly qualified B result.
-E8, E9, E12, and E13 are supplementary and cannot carry the central claim.
+E9 and E13 are supplementary and cannot carry the central claim.
 Weak and negative sensitivity evidence is reported rather than selected away.
-

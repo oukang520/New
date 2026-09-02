@@ -9,11 +9,9 @@ formula is implemented once.
 | E1 preparation, E3-E5 core | `experiments/prepare_cross_sectional.py`, `experiments/run_cross_sectional.py` | fixed p15 input QC, theta, one-step edges, occupancy, inflow, R* and top states |
 | E6 and continuous-gradient supplement | `experiments/run_simulation.py` | truth states, repeat scores, ordering/calibration metrics |
 | E7 | `experiments/run_topology_robustness.py` | supplementary oracle-backbone topology/sparsity/dwell-placement robustness tables; explicitly excludes cMHN refit error |
-| E8 | `workflows/secondary.py::module_enrichment`; not called by the current runner | function available, historical result legacy-only |
 | E10 | `experiments/run_secondary.py` | eligible-state R* landscape and cohort summary |
 | E11 | `experiments/run_secondary.py` | information-gain summary |
 | E9 | `core/scoring.py::compute_observation_enrichment`; no current experiment contract | function available, historical result legacy-only |
-| E12 | `workflows/secondary.py::clinical_association`; no current runner | function available, historical result legacy-only |
 | E13 | `workflows/replication.py::compare_score_tables`; no split/refit runner | comparison function only |
 | E14 | `experiments/run_secondary.py` | full-MHN, uniform-inflow, frequency-inflow and occupancy-only denominator ablation |
 | E15 | `experiments/run_secondary.py` | matched-decoy and inflow-pairing falsification tables |
@@ -26,5 +24,5 @@ experiments retain the refactored numerical method implementation. This does
 **not** make every historical E1-E16 number a reproduced output of v0.2.0.
 Exact status is maintained in
 `RESULT_PROVENANCE_MATRIX.tsv`. The manuscript-critical current evidence is
-frozen under `reference_results/final_manuscript_evidence/`; E8, E9, E12 and
-E13 remain explicitly secondary historical analyses.
+frozen under `reference_results/final_manuscript_evidence/`; E9 and E13 remain
+explicitly secondary historical analyses.

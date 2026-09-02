@@ -81,11 +81,9 @@ supportive consistency evidence, not decisive external validation.
 4. E5 quantifies sampling uncertainty conditional on fixed fitted theta.
 5. E6-gradient and E7 use an oracle generating-theta backbone and do not include
    cMHN refit error.
-6. E8 is biological plausibility, not significant pathway enrichment.
-7. E12 is a context-dependent association, not causal evidence or dwell truth.
-8. E13 is fixed-backbone internal sampling stability, not independent replication.
-9. E16 routes are representative dominant-predecessor routes, not phylogenies.
-10. E17 is sample-size-limited external consistency evidence with a fallback,
+6. E13 is fixed-backbone internal sampling stability, not independent replication.
+7. E16 routes are representative dominant-predecessor routes, not phylogenies.
+8. E17 is sample-size-limited external consistency evidence with a fallback,
     full-cohort backbone; all weak and strict sensitivity results remain visible.
 
 ## Final status

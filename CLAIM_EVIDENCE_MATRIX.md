@@ -17,8 +17,6 @@
 |---|---|---|---|
 | high and low relative-dwell states coexist in real cohorts | E10 | A- | descriptive cohort-relative landscape |
 | representative routes can contextualize state-level `R*` | E16 | B+ | dominant-predecessor routes, not phylogenies |
-| high `R*` contexts can be biologically recognizable | E8 | C+ | plausibility only; enrichment p-values are not significant |
-| `R*` can show clinical association | E12 | C | context-dependent, heterogeneous, noncausal |
 | rankings are internally stable under patient splits with a fixed backbone | E13 | B | not an independent pipeline refit |
 
 ## Counterevidence and uncertainty
@@ -39,4 +37,3 @@ The full evidence chain supports the method's central innovation as a
 occupancy alone. Evidence is sufficient for a methods manuscript when the
 limits above are preserved. It does not support absolute time estimation or a
 claim of uniformly strong longitudinal prediction.
-

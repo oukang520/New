@@ -21,9 +21,8 @@ recomputing methods inside plotting code.
 |---|---|---|
 | Supplementary Figure S1 | E3/E4/E5 QC and bootstrap | implementation and sampling stability |
 | Supplementary Figure S2 | E7 | robustness is important but modest/heterogeneous |
-| Supplementary Figure S3 | E8 | biological plausibility without significant enrichment |
-| Supplementary Figure S4 | E12/E13 | secondary clinical and internal stability evidence |
-| Supplementary Figure S5 | E17 strict sensitivity | mandatory estimator sensitivity disclosure |
+| Supplementary Figure S3 | E13 | internal stability evidence |
+| Supplementary Figure S4 | E17 strict sensitivity | mandatory estimator sensitivity disclosure |
 | Supplementary Table S1 | panels, hashes, CV and theta metadata | reproducibility |
 | Supplementary Table S2 | E17 eligibility and all screened cohorts | selection transparency |
 
@@ -37,4 +36,3 @@ recomputing methods inside plotting code.
 - Do not encode a numeric quantity only by area or color.
 - Check clipping, overlap, empty cohorts, legend duplication, and axis consistency
   at final assembled size.
-

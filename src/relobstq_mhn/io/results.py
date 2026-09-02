@@ -84,7 +84,7 @@ def runtime_metadata(
     """Build submission-facing environment and input provenance metadata."""
 
     packages = {}
-    for package in ("relobstq-mhn", "mhn", "numpy", "pandas", "scipy", "statsmodels"):
+    for package in ("relobstq-mhn", "mhn", "numpy", "pandas", "scipy"):
         try:
             packages[package] = importlib.metadata.version(package)
         except importlib.metadata.PackageNotFoundError:
