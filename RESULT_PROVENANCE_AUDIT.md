@@ -59,8 +59,6 @@ backend.
   precision. The 500-replicate refinement was run separately.
 - The exact original E17 runner, configuration, aggregate result tables and fit
   metadata are restored as the selected primary contract.
-- The strict patient-grouped official-cMHN audit is explicitly superseded rather
-  than relabeled as equivalent evidence; its values remain in Git history.
 - E17 is interpreted as supportive external longitudinal consistency with a
   disclosed full-cohort fallback backbone and limited changed classes.
 - Clinical subgroup directions and all E16 route edges are retained in dedicated

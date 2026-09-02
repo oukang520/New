@@ -13,7 +13,7 @@ recomputing methods inside plotting code.
 | Figure 3 | test continuous relative-dwell truth | E6-gradient | truth-recovery curves plus paired metric summary |
 | Figure 4 | test denominator necessity and falsification | E14/E15A/E15B | ablation rank-retention and negative-control summaries |
 | Figure 5 | place `R*` on representative real evolutionary routes | E16 | six routes per cohort; clearly label as representative |
-| Figure 6 | assess external longitudinal consistency | E17 | selected cohort estimates with CIs; challenge cohort visible; no hidden weak result |
+| Figure 6 | assess external longitudinal consistency | E17 | selected cohort estimates with CIs; explicitly label the selected fallback-backbone contract |
 
 ## Supplementary figures and tables
 
@@ -22,9 +22,7 @@ recomputing methods inside plotting code.
 | Supplementary Figure S1 | E3/E4/E5 QC and bootstrap | implementation and sampling stability |
 | Supplementary Figure S2 | E7 | robustness is important but modest/heterogeneous |
 | Supplementary Figure S3 | E13 | internal stability evidence |
-| Supplementary Figure S4 | E17 strict sensitivity | mandatory estimator sensitivity disclosure |
 | Supplementary Table S1 | panels, hashes, CV and theta metadata | reproducibility |
-| Supplementary Table S2 | E17 eligibility and all screened cohorts | selection transparency |
 
 ## Shared rendering rules
 

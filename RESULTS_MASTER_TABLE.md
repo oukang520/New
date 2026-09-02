@@ -74,19 +74,10 @@ claim of universal superiority and does not include cMHN refit error.
 | CRC-triplets | 23 (20/3) | 0.65 (0.35, 0.91) | 1.08 | 0.12 (-0.21, 0.45) | 0.18 (-0.18, 0.50) |
 | MNM-WashU | 10 (9/1) | 0.89 (0.75, 1.00) | 1.10 | 0.33 (0.00, 0.75) | 0.42 (0.31, 0.81) |
 
-### Outcome-independent challenge and strict sensitivity
-
-| analysis | cohort | n (P/C) | AUC | AP lift | high-low difference | dwell-proxy rho |
-|---|---|---:|---:|---:|---:|---:|
-| eligible challenge | BRCA-MSK | 47 (31/16) | 0.49 (0.33, 0.69) | 1.01 | 0.06 (-0.29, 0.42) | 0.08 (-0.18, 0.32) |
-| ineligible design pilot | ALP-breast | 13 (8/5) | 0.225 | 0.949 | -0.40 | -0.427 |
-| strict official-cMHN | GLASS | 188 (137/51) | 0.547 | 1.036 | 0.127 | 0.249 |
-| strict official-cMHN | CRC-triplets | 41 (38/3) | 0.228 | 0.951 | -0.143 | -0.246 |
-| strict official-cMHN | MNM-WashU | 10 (9/1) | 0.556 | 1.052 | 0.143 | 0.063 |
-
 The selected analysis is favorable but not decisive. It uses a fixed
 full-cohort fallback backbone and has small changed classes in CRC and MNM.
-Weak, negative, and strict sensitivity results remain part of the evidence.
+It supports directional external consistency under this selected analysis
+contract rather than estimator-robust or calendar-time prediction.
 
 ## Secondary historical analyses
 

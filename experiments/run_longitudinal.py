@@ -294,20 +294,6 @@ STUDY_PRIORITY_GENES = {
         "KMT2D",
         "APC",
     ],
-    "breast_alpelisib_2020": [
-        "PIK3CA",
-        "ESR1",
-        "TP53",
-        "PTEN",
-        "ERBB2",
-        "AKT1",
-        "GATA3",
-        "MAP3K1",
-        "CDH1",
-        "NF1",
-        "RB1",
-        "BRCA2",
-    ],
     "brca_dldccc_2022": [
         "TP53",
         "PIK3CA",
@@ -635,17 +621,6 @@ def infer_temporal_metadata(study_id: str, study_dir: Path, sample_df: pd.DataFr
         work["sample_role"] = np.where(progressed, "metastatic_site", np.where(baseline, "prostate_site", "unknown"))
         work["time_rank"] = age
         work["order_evaluable"] = work["time_rank"].notna() & work["stage"].ne("unknown")
-
-    elif study_id == "breast_alpelisib_2020":
-        timepoint = work.get("SAMPLE_COLLECTION_TIMEPOINT", "").fillna("").astype(str).str.lower()
-        time_rank = timepoint.map({"pre-treatment": 0.0, "on-treatment": 0.5, "post-treatment": 1.0})
-        baseline = timepoint.eq("pre-treatment")
-        progressed = timepoint.isin(["on-treatment", "post-treatment"])
-        work["time_rank"] = time_rank
-        work["stage"] = np.where(progressed, "progressed", np.where(baseline, "baseline", "unknown"))
-        work["sample_role"] = timepoint.str.replace("-", "_", regex=False)
-        work.loc[work["sample_role"].eq(""), "sample_role"] = "unknown"
-        work["order_evaluable"] = work["time_rank"].notna()
 
     elif study_id == "brca_dldccc_2022":
         event = work.get("COLLECTION_EVENT", "").fillna("").astype(str).str.lower()

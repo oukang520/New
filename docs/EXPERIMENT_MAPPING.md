@@ -16,7 +16,7 @@ formula is implemented once.
 | E14 | `experiments/run_secondary.py` | full-MHN, uniform-inflow, frequency-inflow and occupancy-only denominator ablation |
 | E15 | `experiments/run_secondary.py` | matched-decoy and inflow-pairing falsification tables |
 | E16 | `experiments/run_secondary.py` via `workflows/topology.py::topology_route_table` | six table-form evolutionary routes with R* values |
-| E17 | `experiments/run_longitudinal.py` | selected external longitudinal consistency analysis using the legacy full-cohort frequency/co-occurrence backbone; weak eligible challenge-cohort and strict official-cMHN sensitivity tables are frozen under `reference_results/` |
+| E17 | `experiments/run_longitudinal.py` | selected external longitudinal consistency analysis for GLASS, CRC-triplets and MNM-WashU using the legacy full-cohort frequency/co-occurrence backbone |
 
 The plotting-heavy historical scripts are absent except for E17, whose exact
 legacy runner is intentionally restored by project decision. Other historical

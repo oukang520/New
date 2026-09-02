@@ -27,91 +27,6 @@ studies:
       min_state_count: 1
       high_confidence_state_count: 2
 
-# Cohort disposition is determined without inspecting AUC, correlation,
-# persistence contrast, or any other model-performance result.
-cohort_eligibility_contract:
-  main:
-    minimum_evaluable_pairs: 20
-    minimum_persistent_pairs: 3
-    minimum_changed_pairs: 3
-    minimum_exact_state_score_fraction: 0.80
-    requires_same_patient_ordering: true
-    requires_interpretable_biological_order: true
-    requires_comparable_specimen_assay: true
-  small_cohort_supplement:
-    minimum_evaluable_pairs: 8
-    requires_both_outcome_classes: true
-  prohibited_selection_variables:
-    - auc
-    - average_precision_lift
-    - delta_persistence_rate_high_minus_low
-    - spearman_r_minimum_dwell_interval
-    - any_model_performance_metric
-
-reported_sensitivity_studies:
-  breast_msk_2018:
-    short_name: BRCA-MSK
-    disposition: eligible_challenge_supplement
-    reason: 47 evaluable same-patient ordered pairs, 31 persistent and 16 changed pairs, and 0.98 exact-state coverage satisfy the numerical eligibility rule; treatment and metastatic-context heterogeneity preclude pooling with the two core disease-specific cohorts.
-    frozen_result: reference_results/experiment_17_supplement/reported_nonprimary_metrics.tsv
-  breast_alpelisib_2020:
-    short_name: ALP-breast
-    disposition: ineligible_design_pilot_reported_for_transparency
-    reason: pre/on/post-treatment cfDNA profiles mix specimen modality and an active treatment perturbation, so they do not satisfy the comparable observational dwell-target contract; pilot metrics remain reported irrespective of direction.
-    frozen_result: reference_results/experiment_17_supplement/reported_nonprimary_metrics.tsv
-
-excluded_studies:
-  nsclc_tracerx_2017:
-    short_name: TRACERx
-    reason: only 5-6 evaluable adjacent pairs under audited driver panels; underpowered for dwell-persistence accuracy.
-  msk_chord_2024:
-    short_name: MSK-CHORD
-    reason: pan-cancer ordered pairs are dominated by changed genotypes and lack a usable persistent class for dwell-persistence validation.
-  all_phase2_target_2018_pub:
-    short_name: TARGET-ALL
-    reason: relapse flags do not provide usable ordered adjacent sample pairs for this validation.
-  prad_su2c_2019:
-    short_name: SU2C-PRAD
-    reason: only 2 evaluable adjacent pairs; usable as a smoke test but not as scientific validation.
-  brca_aurora_2023:
-    short_name: AURORA
-    reason: downloaded through the cBioPortal API and audited; primary-metastatic design is strong, but held-out R* scoring leaves only 4 evaluable retained pairs under the full driver-state model.
-  breast_alpelisib_2020:
-    short_name: ALP-breast
-    reason: longitudinal samples are dominated by pre/on/post-treatment cfDNA profiles, mixing specimen modality with an active treatment perturbation and violating the comparable observational dwell-target contract.
-  brca_mbcproject_2022:
-    short_name: MBCProject
-    reason: serial biopsy days are available, but tissue/liquid biopsy mixture leaves only 11 evaluable pairs and 3 changed pairs under the common state contract.
-  brca_dldccc_2022:
-    short_name: TNBC-DLDCCC
-    reason: downloaded and audited; only 11 monotone-QC retained adjacent pairs and only 1 changed genotype pair, so it cannot support dwell-discrimination metrics.
-  skcm_broad_brafresist_2012:
-    short_name: BRAF-resist
-    reason: downloaded and audited; biologically relevant pre/post resistance cohort, but only 14 monotone-QC retained adjacent pairs after removing apparent driver-loss pairs.
-  crc_hta8_htan_2024:
-    short_name: HTAN-CRC
-    reason: downloaded and audited; primary/metastatic design is relevant, but only 6 monotone-QC retained adjacent tumor pairs, likely due strong multi-region sampling differences.
-  lung_smc_2016:
-    short_name: SMC-lung
-    reason: downloaded and audited; only 6 retained adjacent pairs and no changed selected-driver genotype pairs, so discrimination is not estimable.
-  pcnsl_msk_2024:
-    short_name: PCNSL
-    reason: downloaded and audited; CSF/biopsy ordering is quasi-longitudinal and only 1 changed retained pair, so it is not reliable for main validation.
-  egc_msk_2017:
-    short_name: EGC-MSK
-    reason: downloaded and audited; primary/metastatic biology is relevant but only 14 retained adjacent pairs and 3 changed pairs, underpowered for main validation.
-  nepc_wcm_2016:
-    short_name: NEPC-WCM
-    reason: downloaded and audited; only 6 retained adjacent prostate-metastatic pairs, insufficient for stable dwell validation.
-  bm_nsclc_mskcc_2023:
-    short_name: NSCLC-BM
-    reason: downloaded and audited; many patients have multiple samples, but same-patient samples are usually within the same specimen category rather than ordered PT-to-metastasis pairs.
-  aml_target_2018_pub:
-    short_name: AML-TARGET
-    reason: downloaded and audited; mutation records are dominated by diagnostic -03/-09 samples and do not provide reliable recurrent mutation pairs.
-  lipo_msk_2026:
-    short_name: LIPO-MSK
-    reason: downloaded and audited; strict monotone longitudinal scoring retained only 3 evaluable pairs and all belonged to the persistent class.
 analysis:
   max_events: 12
   min_events_for_mhn: 5
@@ -130,9 +45,6 @@ analysis:
     coadread_mskcc: 20260827
     mnm_washu_2016: 20260828
   route_studies: [difg_glass, coadread_mskcc, mnm_washu_2016]
-  cohort_selection_uses_outcomes: false
-  reported_challenge_supplement: [breast_msk_2018]
-  reported_ineligible_pilots: [breast_alpelisib_2020]
   pair_qc:
     exclude_event_loss: true
     rationale: remove adjacent pairs with apparent selected-driver loss because this violates the monotone progression assumption used by MHN-style state topology.

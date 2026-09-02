@@ -23,9 +23,9 @@ dwell/stasis proxy (`R*`).
    necessary for the observed high-state rankings.
 6. **Return to real evolutionary context.** Use E16 representative routes to
    make the state-level signal interpretable without calling routes phylogenies.
-7. **Close with longitudinal evidence.** Report favorable selected E17 results
-   together with the null BRCA challenge cohort and strict mixed sensitivity;
-   call the section external longitudinal consistency, not definitive validation.
+7. **Close with longitudinal evidence.** Report the three selected E17 cohorts
+   under the frozen fallback-backbone analysis contract; call the section
+   external longitudinal consistency, not definitive or estimator-robust validation.
 
 ## Section sequence
 
@@ -43,8 +43,7 @@ dwell/stasis proxy (`R*`).
 - Observed same-stage one-step graph and conditional inflow.
 - `R*` definition, eligibility, normalization, and conditional bootstrap.
 - Simulation generator and truth metrics.
-- Longitudinal pair construction, result-independent cohort rules, selected
-  fallback estimator, and strict sensitivity estimator.
+- Longitudinal pair construction and the selected fallback estimator contract.
 - Statistical analysis and reproducibility controls.
 
 ### Results

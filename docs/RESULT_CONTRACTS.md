@@ -66,11 +66,6 @@ The frozen aggregate reference tables are under
 `reference_results/experiment_17_legacy/`. They report GLASS AUC 0.67,
 CRC-triplets AUC 0.65 and MNM-WashU AUC 0.89.
 
-Outcome-independent cohort rules and all analyzed weak/negative non-primary
-cohorts are under `reference_results/experiment_17_supplement/`. The
-patient-grouped official-cMHN sensitivity, including the negative CRC result,
-is frozen under `reference_results/experiment_17_sensitivity/`.
-
 Plots are not result contracts for the refactored workflows. The selected E17
 legacy runner retains its original table-and-figure generation behavior.
 

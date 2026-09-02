@@ -25,7 +25,6 @@ Excluded cohort audit:
 | all_phase2_target_2018_pub | TARGET-ALL | relapse flags do not provide usable ordered adjacent sample pairs for this validation. |
 | prad_su2c_2019 | SU2C-PRAD | only 2 evaluable adjacent pairs; usable as a smoke test but not as scientific validation. |
 | brca_aurora_2023 | AURORA | downloaded through the cBioPortal API and audited; primary-metastatic design is strong, but held-out R* scoring leaves only 4 evaluable retained pairs under the full driver-state model. |
-| breast_alpelisib_2020 | ALP-breast | downloaded and audited; longitudinal samples are dominated by cfDNA pre/on/post-treatment profiles, and strict held-out R* validation is directionally negative. |
 | brca_mbcproject_2022 | MBCProject | downloaded and audited; serial biopsy days are available, but tissue/liquid biopsy mixture and sparse held-out state coverage produce no reliable support for R* dwell validation. |
 | brca_dldccc_2022 | TNBC-DLDCCC | downloaded and audited; only 11 monotone-QC retained adjacent pairs and only 1 changed genotype pair, so it cannot support dwell-discrimination metrics. |
 | skcm_broad_brafresist_2012 | BRAF-resist | downloaded and audited; biologically relevant pre/post resistance cohort, but only 14 monotone-QC retained adjacent pairs after removing apparent driver-loss pairs. |
@@ -37,7 +36,6 @@ Excluded cohort audit:
 | bm_nsclc_mskcc_2023 | NSCLC-BM | downloaded and audited; many patients have multiple samples, but same-patient samples are usually within the same specimen category rather than ordered PT-to-metastasis pairs. |
 | aml_target_2018_pub | AML-TARGET | downloaded and audited; mutation records are dominated by diagnostic -03/-09 samples and do not provide reliable recurrent mutation pairs. |
 | lipo_msk_2026 | LIPO-MSK | downloaded and audited; strict monotone longitudinal scoring retained only 3 evaluable pairs and all belonged to the persistent class. |
-| breast_msk_2018 | BRCA-MSK | downloaded and audited; 47 evaluable pairs were available, but core metrics were mixed rather than clearly supportive, so it is retained as extension evidence rather than a main Experiment 17 cohort. |
 
 Shared figure rules used:
 1. Keep each main figure aligned with one primary scientific question.

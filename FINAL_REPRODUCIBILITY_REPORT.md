@@ -64,13 +64,10 @@ frequency/co-occurrence fallback backbone and training-patient occupancy; it
 is not a patient-grouped out-of-fold official-cMHN validation and does not
 estimate calendar time.
 
-Outcome-independent eligibility rules are frozen in
-`reference_results/experiment_17_supplement/cohort_eligibility_contract.tsv`.
-The eligible but weak BRCA-MSK challenge cohort and the negative ALP-breast
-design pilot are reported transparently. The stricter patient-grouped
-official-cMHN sensitivity is also retained and is mixed/negative for some
-cohorts. The selected favorable analysis must therefore be presented as
-supportive consistency evidence, not decisive external validation.
+The frozen E17 reference result contains only GLASS, CRC-triplets and
+MNM-WashU under this selected analysis contract. These results must be
+presented as supportive consistency evidence, not decisive external validation
+or evidence of estimator robustness.
 
 ## Permanent interpretation limits
 
@@ -83,11 +80,11 @@ supportive consistency evidence, not decisive external validation.
    cMHN refit error.
 6. E13 is fixed-backbone internal sampling stability, not independent replication.
 7. E16 routes are representative dominant-predecessor routes, not phylogenies.
-8. E17 is sample-size-limited external consistency evidence with a fallback,
-    full-cohort backbone; all weak and strict sensitivity results remain visible.
+8. E17 is sample-size-limited external consistency evidence under a fallback,
+   full-cohort backbone and does not establish estimator-robust validation.
 
 ## Final status
 
 The method, code, current cross-sectional evidence, simulation truth evidence,
-longitudinal disclosure, and manuscript control documents now form one
+selected longitudinal evidence, and manuscript control documents now form one
 traceable evidence chain. No unresolved Phase-0 evidence blocker remains.

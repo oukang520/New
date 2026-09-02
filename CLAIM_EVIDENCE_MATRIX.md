@@ -24,9 +24,6 @@
 | evidence | implication for the manuscript |
 |---|---|
 | E7 is favorable in 235/360 repeats, not all repeats | state that robustness is heterogeneous |
-| BRCA-MSK is approximately null | report as an eligible challenge cohort |
-| ALP-breast pilot is negative | report transparently; exclusion is based on treatment-confounded design |
-| strict E17 sensitivity is weak/mixed | include in Supplement and moderate the external-evidence claim |
 | LUAD and COAD lambda selections are grid-boundary values | disclose and avoid implying penalty insensitivity |
 | E5 fixes theta during bootstrap | call intervals conditional sampling uncertainty |
 

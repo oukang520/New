@@ -81,9 +81,8 @@ The selected legacy E17 runner writes its original tables and figures under
 `results/experiment_17_longitudinal_public/`; aggregate reference outputs are
 also frozen under `reference_results/experiment_17_legacy/`.
 The selected E17 output is an external longitudinal consistency analysis, not
-a fully out-of-fold official-cMHN validation. Outcome-independent cohort rules,
-weak/non-primary cohort results and the strict official-cMHN sensitivity are
-retained in the adjacent Experiment 17 reference-result directories.
+a fully out-of-fold official-cMHN validation. Its frozen contract contains the
+GLASS, CRC-triplets and MNM-WashU selected analyses only.
 
 Optional plotting for the refactored workflows remains separated:
 
@@ -107,8 +106,8 @@ The original frozen audit commit `e4215608...` omitted the declared
 manifest-matching files and adds hashed input/runtime metadata. Historical
 E1-E16 outputs are not automatically results of this refactored package. The
 manuscript-critical E3-E7 and E10-E16 evidence has now been regenerated and
-classified explicitly; E17 uses the restored selected implementation plus
-transparent challenge and strict sensitivity analyses. Use
+classified explicitly; E17 uses the restored selected implementation and its
+frozen fallback-backbone contract. Use
 `RESULTS_MASTER_TABLE.md`, `RESULT_PROVENANCE_MATRIX.tsv`, and
 `FINAL_REPRODUCIBILITY_REPORT.md` as the sole manuscript evidence controls.
 

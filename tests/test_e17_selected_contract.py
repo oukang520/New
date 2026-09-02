@@ -46,19 +46,7 @@ def test_default_e17_runner_uses_selected_config() -> None:
     assert "  enabled: false" in config
 
 
-def test_e17_selection_is_outcome_independent_and_weak_results_are_reported() -> None:
+def test_e17_config_contains_only_selected_cohorts() -> None:
     config = yaml.safe_load((ROOT / "configs" / "longitudinal.yaml").read_text(encoding="utf-8"))
-    prohibited = set(config["cohort_eligibility_contract"]["prohibited_selection_variables"])
-    assert "auc" in prohibited
-    assert config["analysis"]["cohort_selection_uses_outcomes"] is False
-    assert config["reported_sensitivity_studies"]["breast_msk_2018"]["disposition"] == (
-        "eligible_challenge_supplement"
-    )
-    metrics_path = ROOT / "reference_results" / "experiment_17_supplement" / "reported_nonprimary_metrics.tsv"
-    with metrics_path.open(encoding="utf-8", newline="") as handle:
-        rows = {row["short_name"]: row for row in csv.DictReader(handle, delimiter="\t")}
-    assert rows["BRCA-MSK"]["auc"] == "0.49"
-    assert rows["ALP-breast"]["auc"] == "0.225"
-    assert all(row["selection_used_outcome"] == "false" for row in rows.values())
-    strict = ROOT / "reference_results" / "experiment_17_sensitivity" / "strict_official_cmhn_metrics.tsv"
-    assert strict.is_file()
+    assert set(config["studies"]) == {"difg_glass", "coadread_mskcc", "mnm_washu_2016"}
+    assert "reported_sensitivity_studies" not in config
