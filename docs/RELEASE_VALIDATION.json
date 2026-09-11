@@ -1,0 +1,10 @@
+{
+  "unit_tests": {
+    "passed": 23
+  },
+  "numerical_replay_report": "NUMERICAL_REPLAY_CHECKS.json",
+  "wheel_build": "PASS",
+  "bundled_parameter_files": 9,
+  "rendering_import_block": "PASS for all extracted experiment modules",
+  "full_model_refit_performed": false
+}

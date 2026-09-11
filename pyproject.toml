@@ -5,7 +5,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "relobstq-mhn"
-version = "0.2.0"
+version = "0.3.0"
 description = "Relative observed-state dwell quantification with MHN-derived inflow"
 readme = "README.md"
 requires-python = ">=3.11,<3.13"
@@ -18,12 +18,14 @@ dependencies = [
 
 [project.optional-dependencies]
 mhn = ["mhn==1.2.3"]
-figures = ["matplotlib>=3.8", "seaborn>=0.13"]
 test = ["pytest>=7.0"]
-all = ["mhn==1.2.3", "matplotlib>=3.8", "seaborn>=0.13", "pytest>=7.0"]
+all = ["mhn==1.2.3", "pytest>=7.0"]
 
 [tool.setuptools.packages.find]
 where = ["src"]
 
 [tool.pytest.ini_options]
 testpaths = ["tests"]
+
+[tool.setuptools.package-data]
+sirdwell_experiments = ["parameters/*.yaml"]

@@ -63,10 +63,15 @@
       "E10",
       "E11",
       "E14",
-      "E15A",
       "E15B",
       "E16"
     ],
     "random_seed": 20260631
+  },
+  "scope_amendment": {
+    "date": "2026-09-06",
+    "retired_unit": "E15A",
+    "numeric_retained_results_unchanged": true,
+    "previous_metadata_sha256": "cc1589ef55eb2f5a941c03a71f3cbaeb1c52b4dc6cf9f9afa1245909ff61cccf"
   }
 }

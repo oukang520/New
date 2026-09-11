@@ -36,14 +36,16 @@ def test_selected_e17_backend_is_disclosed_as_fallback() -> None:
 
 
 def test_default_e17_runner_uses_selected_config() -> None:
-    runner = (ROOT / "experiments" / "run_longitudinal.py").read_text(encoding="utf-8")
+    from sirdwell_experiments.e17 import CONFIG_PATH
+
     run_all = (ROOT / "experiments" / "run_all.py").read_text(encoding="utf-8")
-    config = (ROOT / "configs" / "longitudinal.yaml").read_text(encoding="utf-8")
-    assert 'CONFIG_PATH = Path("configs/longitudinal.yaml")' in runner
+    config = yaml.safe_load(CONFIG_PATH.read_text(encoding="utf-8"))
+    external = yaml.safe_load((ROOT / "configs/longitudinal.yaml").read_text(encoding="utf-8"))
+    assert config == external
     assert '"run_longitudinal.py"' in run_all
     assert '"prepare_longitudinal.py"' not in run_all
-    assert "mhn:\n  # Freeze the backend" in config
-    assert "  enabled: false" in config
+    assert config["mhn"]["enabled"] is False
+    assert config["mhn"]["fallback"] == "frequency_cooccurrence_backbone"
 
 
 def test_e17_config_contains_only_selected_cohorts() -> None:

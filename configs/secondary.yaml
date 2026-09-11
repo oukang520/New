@@ -8,8 +8,6 @@ cohorts:
 
 analysis:
   top_k: 10
-  matched_decoy_quantile_bins: 4
-  minimum_decoys: 5
   inflow_shuffle_replicates: 400
   random_seed: 20260630
   topology_routes: 6

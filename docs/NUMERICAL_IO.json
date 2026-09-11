@@ -1,0 +1,862 @@
+[
+  {
+    "module": "src/relobstq_mhn/io/config.py",
+    "operation": "read_text",
+    "expression": "source.read_text(encoding='utf-8')"
+  },
+  {
+    "module": "src/relobstq_mhn/io/results.py",
+    "operation": "to_csv",
+    "expression": "frame.to_csv(path, sep='\\t', index=False)"
+  },
+  {
+    "module": "src/relobstq_mhn/io/results.py",
+    "operation": "write_text",
+    "expression": "path.write_text(json.dumps(value, indent=2, ensure_ascii=False, default=str) + '\\n', encoding='utf-8')"
+  },
+  {
+    "module": "src/relobstq_mhn/io/results.py",
+    "operation": "to_csv",
+    "expression": "pd.DataFrame(rows, columns=['path', 'size_bytes', 'sha256']).to_csv(path, sep='\\t', index=False)"
+  },
+  {
+    "module": "src/relobstq_mhn/io/results.py",
+    "operation": "read_text",
+    "expression": "(git_dir / 'HEAD').read_text(encoding='utf-8')"
+  },
+  {
+    "module": "src/relobstq_mhn/io/results.py",
+    "operation": "read_text",
+    "expression": "loose_ref.read_text(encoding='utf-8')"
+  },
+  {
+    "module": "src/relobstq_mhn/io/results.py",
+    "operation": "read_text",
+    "expression": "(git_dir / 'packed-refs').read_text(encoding='utf-8')"
+  },
+  {
+    "module": "src/relobstq_mhn/workflows/cross_sectional.py",
+    "operation": "read_csv",
+    "expression": "pd.read_csv(root / 'mhn_training_matrix.csv')"
+  },
+  {
+    "module": "src/relobstq_mhn/workflows/cross_sectional.py",
+    "operation": "read_csv",
+    "expression": "pd.read_csv(root / 'mhn_row_index_map.csv')"
+  },
+  {
+    "module": "src/relobstq_mhn/workflows/cross_sectional.py",
+    "operation": "read_csv",
+    "expression": "pd.read_csv(root / 'state_table.csv')"
+  },
+  {
+    "module": "src/relobstq_mhn/workflows/preparation.py",
+    "operation": "read_csv",
+    "expression": "pd.read_csv(metadata_path)"
+  },
+  {
+    "module": "src/relobstq_mhn/workflows/preparation.py",
+    "operation": "read_csv",
+    "expression": "pd.read_csv(mutations_path)"
+  },
+  {
+    "module": "src/relobstq_mhn/workflows/preparation.py",
+    "operation": "to_csv",
+    "expression": "matrix.to_csv(Path(output_dir) / 'mhn_training_matrix.csv', index=False)"
+  },
+  {
+    "module": "src/relobstq_mhn/workflows/preparation.py",
+    "operation": "to_csv",
+    "expression": "row_map.to_csv(Path(output_dir) / 'mhn_row_index_map.csv', index=False)"
+  },
+  {
+    "module": "src/relobstq_mhn/workflows/preparation.py",
+    "operation": "to_csv",
+    "expression": "state_table.to_csv(Path(output_dir) / 'state_table.csv', index=False)"
+  },
+  {
+    "module": "src/sirdwell_experiments/e01_02.py",
+    "operation": "read_csv",
+    "expression": "pd.read_csv(input_dir / 'analysis_metadata.csv', dtype=str, low_memory=False)"
+  },
+  {
+    "module": "src/sirdwell_experiments/e01_02.py",
+    "operation": "read_csv",
+    "expression": "pd.read_csv(input_dir / 'mutations_long.csv', dtype=str, low_memory=False)"
+  },
+  {
+    "module": "src/sirdwell_experiments/e01_02.py",
+    "operation": "to_csv",
+    "expression": "panel_table.to_csv(exp1_tables / 'event_panel_candidates.csv', index=False)"
+  },
+  {
+    "module": "src/sirdwell_experiments/e01_02.py",
+    "operation": "to_csv",
+    "expression": "panel_metrics_df.to_csv(exp1_tables / 'panel_sensitivity_metrics.csv', index=False)"
+  },
+  {
+    "module": "src/sirdwell_experiments/e01_02.py",
+    "operation": "to_csv",
+    "expression": "clinical_clean.to_csv(exp1_tables / 'clinical_clean.csv', index=False)"
+  },
+  {
+    "module": "src/sirdwell_experiments/e01_02.py",
+    "operation": "to_csv",
+    "expression": "row_map.to_csv(exp1_tables / 'mhn_row_index_map_p15.csv', index=False)"
+  },
+  {
+    "module": "src/sirdwell_experiments/e01_02.py",
+    "operation": "to_csv",
+    "expression": "stage_freq.to_csv(exp1_tables / 'stage_event_frequency_p15.csv')"
+  },
+  {
+    "module": "src/sirdwell_experiments/e01_02.py",
+    "operation": "to_csv",
+    "expression": "sample_event_counts.to_csv(exp1_tables / 'sample_event_counts_p15.csv', index=False)"
+  },
+  {
+    "module": "src/sirdwell_experiments/e01_02.py",
+    "operation": "to_csv",
+    "expression": "inclusion.to_csv(exp1_tables / 'sample_inclusion_summary.csv', index=False)"
+  },
+  {
+    "module": "src/sirdwell_experiments/e01_02.py",
+    "operation": "to_csv",
+    "expression": "selected_panel.to_csv(exp1_tables / 'main_event_panel_p15.csv', index=False)"
+  },
+  {
+    "module": "src/sirdwell_experiments/e01_02.py",
+    "operation": "to_csv",
+    "expression": "pd.DataFrame([exp1_metrics]).to_csv(exp1_tables / 'experiment_01_metrics.csv', index=False)"
+  },
+  {
+    "module": "src/sirdwell_experiments/e01_02.py",
+    "operation": "to_csv",
+    "expression": "assignments.to_csv(exp2_tables / 'stage_scheme_assignments.csv', index=False)"
+  },
+  {
+    "module": "src/sirdwell_experiments/e01_02.py",
+    "operation": "to_csv",
+    "expression": "scheme_summary.to_csv(exp2_tables / 'stage_scheme_summary.csv', index=False)"
+  },
+  {
+    "module": "src/sirdwell_experiments/e01_02.py",
+    "operation": "to_csv",
+    "expression": "state_metrics.to_csv(exp2_tables / 'stage_scheme_state_metrics.csv', index=False)"
+  },
+  {
+    "module": "src/sirdwell_experiments/e01_02.py",
+    "operation": "to_csv",
+    "expression": "agreement.to_csv(exp2_tables / 'stage_scheme_pairwise_agreement.csv', index=False)"
+  },
+  {
+    "module": "src/sirdwell_experiments/e01_02.py",
+    "operation": "to_csv",
+    "expression": "pd.DataFrame(pending_rows).to_csv(exp2_tables / 'rstar_stage_sensitivity_pending.csv', index=False)"
+  },
+  {
+    "module": "src/sirdwell_experiments/e01_02.py",
+    "operation": "to_csv",
+    "expression": "pd.DataFrame(results).to_csv(result_root / 'experiments_01_02_summary.csv', index=False)"
+  },
+  {
+    "module": "src/sirdwell_experiments/e01_02.py",
+    "operation": "to_csv",
+    "expression": "matrix.to_csv(exp1_tables / f'event_matrix_p{size}.csv', index=False)"
+  },
+  {
+    "module": "src/sirdwell_experiments/e01_02.py",
+    "operation": "to_csv",
+    "expression": "matrix[events].to_csv(exp1_tables / f'mhn_training_matrix_p{size}.csv', index=False)"
+  },
+  {
+    "module": "src/sirdwell_experiments/e01_02.py",
+    "operation": "to_csv",
+    "expression": "pd.DataFrame({'panel_rank': range(1, len(events) + 1), 'event': events}).to_csv(exp1_tables / f'event_panel_p{size}.csv', index=False)"
+  },
+  {
+    "module": "src/sirdwell_experiments/e01_02.py",
+    "operation": "to_csv",
+    "expression": "state_table.to_csv(exp1_tables / f'state_table_p{size}.csv', index=False)"
+  },
+  {
+    "module": "src/sirdwell_experiments/e01_02.py",
+    "operation": "to_csv",
+    "expression": "occupancy.to_csv(exp1_tables / f'state_occupancy_p{size}.csv', index=False)"
+  },
+  {
+    "module": "src/sirdwell_experiments/e01_02.py",
+    "operation": "to_csv",
+    "expression": "state_table.to_csv(exp2_tables / f'state_table_{scheme}.csv', index=False)"
+  },
+  {
+    "module": "src/sirdwell_experiments/e01_02.py",
+    "operation": "to_csv",
+    "expression": "occupancy.to_csv(exp2_tables / f'state_occupancy_{scheme}.csv', index=False)"
+  },
+  {
+    "module": "src/sirdwell_experiments/e01_02.py",
+    "operation": "to_csv",
+    "expression": "event_heatmaps[scheme].to_csv(exp2_tables / f'event_frequency_{scheme}.csv')"
+  },
+  {
+    "module": "src/sirdwell_experiments/e03.py",
+    "operation": "read_csv",
+    "expression": "pd.read_csv(source_root / f'mhn_training_matrix_p{panel_size}.csv')"
+  },
+  {
+    "module": "src/sirdwell_experiments/e03.py",
+    "operation": "read_csv",
+    "expression": "pd.read_csv(source_root / f'event_panel_p{panel_size}.csv')"
+  },
+  {
+    "module": "src/sirdwell_experiments/e03.py",
+    "operation": "read_csv",
+    "expression": "pd.read_csv(source_root / f'state_table_p{panel_size}.csv')"
+  },
+  {
+    "module": "src/sirdwell_experiments/e03.py",
+    "operation": "to_csv",
+    "expression": "cv_scores.to_csv(tables / 'cv_likelihood.tsv', sep='\\t', index=False)"
+  },
+  {
+    "module": "src/sirdwell_experiments/e03.py",
+    "operation": "to_csv",
+    "expression": "theta.to_csv(tables / 'theta.tsv', sep='\\t')"
+  },
+  {
+    "module": "src/sirdwell_experiments/e03.py",
+    "operation": "to_csv",
+    "expression": "np.exp(np.clip(theta, -700, 700)).to_csv(tables / 'theta_hazard_ratio.tsv', sep='\\t')"
+  },
+  {
+    "module": "src/sirdwell_experiments/e03.py",
+    "operation": "to_csv",
+    "expression": "event_baseline.to_csv(tables / 'event_baseline_hazard.tsv', sep='\\t', index=False)"
+  },
+  {
+    "module": "src/sirdwell_experiments/e03.py",
+    "operation": "to_csv",
+    "expression": "genotype_summary.to_csv(tables / 'genotype_summary.tsv', sep='\\t', index=False)"
+  },
+  {
+    "module": "src/sirdwell_experiments/e03.py",
+    "operation": "to_csv",
+    "expression": "genotype_transitions.to_csv(tables / 'genotype_transition.tsv', sep='\\t', index=False)"
+  },
+  {
+    "module": "src/sirdwell_experiments/e03.py",
+    "operation": "to_csv",
+    "expression": "genotype_transitions[['source_genotype', 'event_added', 'log_hazard', 'hazard', 'source_sample_count']].to_csv(tables / 'event_hazard.tsv', sep='\\t', index=False)"
+  },
+  {
+    "module": "src/sirdwell_experiments/e03.py",
+    "operation": "to_csv",
+    "expression": "genotype_transitions[['source_genotype', 'target_genotype', 'event_added', 'probability', 'source_sample_count']].to_csv(tables / 'next_event_probability.tsv', sep='\\t', index=False)"
+  },
+  {
+    "module": "src/sirdwell_experiments/e03.py",
+    "operation": "to_csv",
+    "expression": "state_transitions.to_csv(tables / 'transition_prob.tsv', sep='\\t', index=False)"
+  },
+  {
+    "module": "src/sirdwell_experiments/e03.py",
+    "operation": "to_csv",
+    "expression": "biology.to_csv(tables / 'biological_sanity_checks.tsv', sep='\\t', index=False)"
+  },
+  {
+    "module": "src/sirdwell_experiments/e03.py",
+    "operation": "write_text",
+    "expression": "metadata_path.write_text(json.dumps(metadata, indent=2), encoding='utf-8')"
+  },
+  {
+    "module": "src/sirdwell_experiments/e03.py",
+    "operation": "read_text",
+    "expression": "config_path.read_text(encoding='utf-8')"
+  },
+  {
+    "module": "src/sirdwell_experiments/e03.py",
+    "operation": "read_text",
+    "expression": "Path(args.dataset_config).read_text(encoding='utf-8')"
+  },
+  {
+    "module": "src/sirdwell_experiments/e03.py",
+    "operation": "read_text",
+    "expression": "bundled_config_path('experiments_01_02.yaml').read_text(encoding='utf-8')"
+  },
+  {
+    "module": "src/sirdwell_experiments/e03.py",
+    "operation": "to_csv",
+    "expression": "pd.DataFrame(all_records).to_csv(result_root / 'experiment_03_summary.csv', index=False)"
+  },
+  {
+    "module": "src/sirdwell_experiments/e03.py",
+    "operation": "read_text",
+    "expression": "metadata_path.read_text(encoding='utf-8')"
+  },
+  {
+    "module": "src/sirdwell_experiments/e03.py",
+    "operation": "read_csv",
+    "expression": "pd.read_csv(tables / 'cv_likelihood.tsv', sep='\\t')"
+  },
+  {
+    "module": "src/sirdwell_experiments/e03.py",
+    "operation": "read_csv",
+    "expression": "pd.read_csv(tables / 'theta.tsv', sep='\\t', index_col=0)"
+  },
+  {
+    "module": "src/sirdwell_experiments/e03.py",
+    "operation": "read_csv",
+    "expression": "pd.read_csv(tables / 'genotype_summary.tsv', sep='\\t')"
+  },
+  {
+    "module": "src/sirdwell_experiments/e03.py",
+    "operation": "read_csv",
+    "expression": "pd.read_csv(tables / 'genotype_transition.tsv', sep='\\t')"
+  },
+  {
+    "module": "src/sirdwell_experiments/e03.py",
+    "operation": "read_text",
+    "expression": "(result_root / dataset / 'model_metadata.json').read_text(encoding='utf-8')"
+  },
+  {
+    "module": "src/sirdwell_experiments/e04.py",
+    "operation": "read_csv",
+    "expression": "pd.read_csv(source / f'mhn_training_matrix_p{panel_size}.csv')"
+  },
+  {
+    "module": "src/sirdwell_experiments/e04.py",
+    "operation": "read_csv",
+    "expression": "pd.read_csv(source / f'event_panel_p{panel_size}.csv')"
+  },
+  {
+    "module": "src/sirdwell_experiments/e04.py",
+    "operation": "read_csv",
+    "expression": "pd.read_csv(source / f'state_table_p{panel_size}.csv')"
+  },
+  {
+    "module": "src/sirdwell_experiments/e04.py",
+    "operation": "read_csv",
+    "expression": "pd.read_csv(exp3_tables / 'genotype_transition.tsv', sep='\\t')"
+  },
+  {
+    "module": "src/sirdwell_experiments/e04.py",
+    "operation": "read_csv",
+    "expression": "pd.read_csv(exp3_tables / 'theta.tsv', sep='\\t', index_col=0)"
+  },
+  {
+    "module": "src/sirdwell_experiments/e04.py",
+    "operation": "to_csv",
+    "expression": "occupancy.to_csv(tables / 'state_occupancy_experiment4.tsv', sep='\\t', index=False)"
+  },
+  {
+    "module": "src/sirdwell_experiments/e04.py",
+    "operation": "to_csv",
+    "expression": "stage_qc.to_csv(tables / 'stage_inclusion_qc.tsv', sep='\\t', index=False)"
+  },
+  {
+    "module": "src/sirdwell_experiments/e04.py",
+    "operation": "to_csv",
+    "expression": "sensitivity.to_csv(tables / 'inflow_rule_sensitivity.tsv', sep='\\t', index=False)"
+  },
+  {
+    "module": "src/sirdwell_experiments/e04.py",
+    "operation": "to_csv",
+    "expression": "summary.to_csv(tables / 'experiment_04_metrics.tsv', sep='\\t', index=False)"
+  },
+  {
+    "module": "src/sirdwell_experiments/e04.py",
+    "operation": "to_csv",
+    "expression": "pd.DataFrame(records).to_csv(result_root / 'experiment_04_summary.csv', index=False)"
+  },
+  {
+    "module": "src/sirdwell_experiments/e04.py",
+    "operation": "to_csv",
+    "expression": "table.to_csv(tables / f'inflow_table_{rule}.tsv', sep='\\t', index=False)"
+  },
+  {
+    "module": "src/sirdwell_experiments/e04.py",
+    "operation": "to_csv",
+    "expression": "edges.to_csv(tables / f'predecessor_edges_{rule}.tsv', sep='\\t', index=False)"
+  },
+  {
+    "module": "src/sirdwell_experiments/e04.py",
+    "operation": "read_text",
+    "expression": "Path(args.config).read_text(encoding='utf-8')"
+  },
+  {
+    "module": "src/sirdwell_experiments/e04.py",
+    "operation": "read_text",
+    "expression": "Path(args.dataset_config).read_text(encoding='utf-8')"
+  },
+  {
+    "module": "src/sirdwell_experiments/e04.py",
+    "operation": "read_csv",
+    "expression": "pd.read_csv(root / f'inflow_table_{main_rule}.tsv', sep='\\t')"
+  },
+  {
+    "module": "src/sirdwell_experiments/e04.py",
+    "operation": "read_csv",
+    "expression": "pd.read_csv(root / f'inflow_table_{stage_rule}.tsv', sep='\\t')"
+  },
+  {
+    "module": "src/sirdwell_experiments/e04.py",
+    "operation": "read_csv",
+    "expression": "pd.read_csv(root / f'predecessor_edges_{main_rule}.tsv', sep='\\t')"
+  },
+  {
+    "module": "src/sirdwell_experiments/e04.py",
+    "operation": "read_csv",
+    "expression": "pd.read_csv(root / 'inflow_rule_sensitivity.tsv', sep='\\t')"
+  },
+  {
+    "module": "src/sirdwell_experiments/e05_split_input.py",
+    "operation": "read_csv",
+    "expression": "pd.read_csv(exp4 / 'inflow_table_rule_a_one_step.tsv', sep='\\t')"
+  },
+  {
+    "module": "src/sirdwell_experiments/e05_split_input.py",
+    "operation": "read_csv",
+    "expression": "pd.read_csv(exp4 / 'predecessor_edges_rule_a_one_step.tsv', sep='\\t')"
+  },
+  {
+    "module": "src/sirdwell_experiments/e05_split_input.py",
+    "operation": "read_csv",
+    "expression": "pd.read_csv(exp4 / 'state_occupancy_experiment4.tsv', sep='\\t')"
+  },
+  {
+    "module": "src/sirdwell_experiments/e05_split_input.py",
+    "operation": "read_csv",
+    "expression": "pd.read_csv(exp3 / 'theta.tsv', sep='\\t', index_col=0)"
+  },
+  {
+    "module": "src/sirdwell_experiments/e05_split_input.py",
+    "operation": "to_csv",
+    "expression": "pd.DataFrame(sensitivity_rows).to_csv(tables / 'progression_only_sensitivity.tsv', sep='\\t', index=False)"
+  },
+  {
+    "module": "src/sirdwell_experiments/e05_split_input.py",
+    "operation": "to_csv",
+    "expression": "inflow.to_csv(tables / 'state_scores.tsv', sep='\\t', index=False)"
+  },
+  {
+    "module": "src/sirdwell_experiments/e05_split_input.py",
+    "operation": "to_csv",
+    "expression": "bootstrap_long.to_csv(tables / 'bootstrap_R_star.tsv', sep='\\t', index=False)"
+  },
+  {
+    "module": "src/sirdwell_experiments/e05_split_input.py",
+    "operation": "to_csv",
+    "expression": "bottleneck[['rank', 'state', 'R_star', 'R_star_ci_low', 'R_star_ci_high', 'stability', 'stability_high_confidence', 'N_v', 'dominant_predecessor', 'clinical_annotation']].to_csv(tables / 'top_bottleneck_states.tsv', sep='\\t', index=False)"
+  },
+  {
+    "module": "src/sirdwell_experiments/e05_split_input.py",
+    "operation": "to_csv",
+    "expression": "high_confidence_bottleneck[['rank', 'state', 'R_star', 'R_star_ci_low', 'R_star_ci_high', 'stability', 'stability_high_confidence', 'N_v', 'dominant_predecessor', 'clinical_annotation']].to_csv(tables / 'top_bottleneck_states_high_confidence.tsv', sep='\\t', index=False)"
+  },
+  {
+    "module": "src/sirdwell_experiments/e05_split_input.py",
+    "operation": "to_csv",
+    "expression": "fast[['rank', 'state', 'R_star', 'R_star_ci_low', 'R_star_ci_high', 'stability', 'stability_high_confidence', 'N_v', 'possible_next_states']].to_csv(tables / 'fast_passing_states.tsv', sep='\\t', index=False)"
+  },
+  {
+    "module": "src/sirdwell_experiments/e05_split_input.py",
+    "operation": "to_csv",
+    "expression": "enriched[['rank', 'state', 'O_star', 'R_star', 'stability', 'N_v', 'interpretation_flag']].to_csv(tables / 'high_observation_enrichment.tsv', sep='\\t', index=False)"
+  },
+  {
+    "module": "src/sirdwell_experiments/e05_split_input.py",
+    "operation": "to_csv",
+    "expression": "pd.DataFrame([metrics]).to_csv(tables / 'experiment_05_metrics.tsv', sep='\\t', index=False)"
+  },
+  {
+    "module": "src/sirdwell_experiments/e05_split_input.py",
+    "operation": "to_csv",
+    "expression": "pd.DataFrame(records).to_csv(result_root / 'experiment_05_summary.csv', index=False)"
+  },
+  {
+    "module": "src/sirdwell_experiments/e05_split_input.py",
+    "operation": "read_csv",
+    "expression": "pd.read_csv(result_root / dataset / 'tables' / 'state_scores.tsv', sep='\\t')"
+  },
+  {
+    "module": "src/sirdwell_experiments/e05_split_input.py",
+    "operation": "read_text",
+    "expression": "Path(args.config).read_text(encoding='utf-8')"
+  },
+  {
+    "module": "src/sirdwell_experiments/e05_split_input.py",
+    "operation": "read_text",
+    "expression": "Path(args.dataset_config).read_text(encoding='utf-8')"
+  },
+  {
+    "module": "src/sirdwell_experiments/e09.py",
+    "operation": "write_text",
+    "expression": "(root / 'resolved_config.json').write_text(json.dumps(config, indent=2), encoding='utf-8')"
+  },
+  {
+    "module": "src/sirdwell_experiments/e09.py",
+    "operation": "to_csv",
+    "expression": "true_theta_table(theta).to_csv(tables / 'true_theta.tsv', sep='\\t')"
+  },
+  {
+    "module": "src/sirdwell_experiments/e09.py",
+    "operation": "to_csv",
+    "expression": "edge_list(theta).to_csv(tables / 'true_edge_list.tsv', sep='\\t', index=False)"
+  },
+  {
+    "module": "src/sirdwell_experiments/e09.py",
+    "operation": "to_csv",
+    "expression": "pilot.to_csv(tables / 'progression_pilot_distribution.tsv', sep='\\t', index=False)"
+  },
+  {
+    "module": "src/sirdwell_experiments/e09.py",
+    "operation": "to_csv",
+    "expression": "truth.to_csv(tables / 'truth_states.tsv', sep='\\t', index=False)"
+  },
+  {
+    "module": "src/sirdwell_experiments/e09.py",
+    "operation": "to_csv",
+    "expression": "candidate_audit.to_csv(tables / 'truth_selection_candidate_audit.tsv', sep='\\t', index=False)"
+  },
+  {
+    "module": "src/sirdwell_experiments/e09.py",
+    "operation": "to_csv",
+    "expression": "contrast_pilot.to_csv(tables / 'contrast_dwell_pilot_distribution.tsv', sep='\\t', index=False)"
+  },
+  {
+    "module": "src/sirdwell_experiments/e09.py",
+    "operation": "to_csv",
+    "expression": "states.to_csv(tables / 'state_recovery_long.tsv', sep='\\t', index=False)"
+  },
+  {
+    "module": "src/sirdwell_experiments/e09.py",
+    "operation": "to_csv",
+    "expression": "metrics_table.to_csv(tables / 'repeat_metrics.tsv', sep='\\t', index=False)"
+  },
+  {
+    "module": "src/sirdwell_experiments/e09.py",
+    "operation": "to_csv",
+    "expression": "curves.to_csv(tables / 'repeat_curves.tsv', sep='\\t', index=False)"
+  },
+  {
+    "module": "src/sirdwell_experiments/e09.py",
+    "operation": "to_csv",
+    "expression": "representative_table.to_csv(tables / 'representative_state_scores.tsv', sep='\\t', index=False)"
+  },
+  {
+    "module": "src/sirdwell_experiments/e09.py",
+    "operation": "to_csv",
+    "expression": "summary.to_csv(tables / 'experiment_09_summary.tsv', sep='\\t', index=False)"
+  },
+  {
+    "module": "src/sirdwell_experiments/e09.py",
+    "operation": "write_text",
+    "expression": "(root / 'experiment_09_run_metadata.json').write_text(json.dumps(metadata, indent=2), encoding='utf-8')"
+  },
+  {
+    "module": "src/sirdwell_experiments/e09.py",
+    "operation": "read_text",
+    "expression": "Path(args.config).read_text(encoding='utf-8')"
+  },
+  {
+    "module": "src/sirdwell_experiments/e13.py",
+    "operation": "read_csv",
+    "expression": "pd.read_csv(path, sep='\\t')"
+  },
+  {
+    "module": "src/sirdwell_experiments/e13.py",
+    "operation": "read_csv",
+    "expression": "pd.read_csv(path)"
+  },
+  {
+    "module": "src/sirdwell_experiments/e13.py",
+    "operation": "write_text",
+    "expression": "(root / 'resolved_config.json').write_text(json.dumps(config, indent=2), encoding='utf-8')"
+  },
+  {
+    "module": "src/sirdwell_experiments/e13.py",
+    "operation": "to_csv",
+    "expression": "metrics.to_csv(tables / 'split_replication_metrics.tsv', sep='\\t', index=False)"
+  },
+  {
+    "module": "src/sirdwell_experiments/e13.py",
+    "operation": "to_csv",
+    "expression": "representative.to_csv(tables / 'representative_split_state_scores.tsv', sep='\\t', index=False)"
+  },
+  {
+    "module": "src/sirdwell_experiments/e13.py",
+    "operation": "to_csv",
+    "expression": "audit.to_csv(tables / 'split_replication_audit.tsv', sep='\\t', index=False)"
+  },
+  {
+    "module": "src/sirdwell_experiments/e13.py",
+    "operation": "to_csv",
+    "expression": "summary.to_csv(tables / 'experiment_13_summary.tsv', sep='\\t', index=False)"
+  },
+  {
+    "module": "src/sirdwell_experiments/e13.py",
+    "operation": "read_text",
+    "expression": "Path(args.config).read_text(encoding='utf-8')"
+  },
+  {
+    "module": "src/sirdwell_experiments/e17.py",
+    "operation": "read_csv",
+    "expression": "pd.read_csv(path, sep='\\t', comment='#', dtype=str, low_memory=False)"
+  },
+  {
+    "module": "src/sirdwell_experiments/e17.py",
+    "operation": "read_csv",
+    "expression": "pd.read_csv(path, sep='\\t', comment='#', dtype=str, usecols=usecols, chunksize=250000, low_memory=False)"
+  },
+  {
+    "module": "src/sirdwell_experiments/e17.py",
+    "operation": "to_csv",
+    "expression": "metadata.to_csv(tables_dir / 'sample_metadata.tsv', sep='\\t', index=False)"
+  },
+  {
+    "module": "src/sirdwell_experiments/e17.py",
+    "operation": "to_csv",
+    "expression": "mutations.to_csv(tables_dir / 'driver_mutations_long.tsv', sep='\\t', index=False)"
+  },
+  {
+    "module": "src/sirdwell_experiments/e17.py",
+    "operation": "to_csv",
+    "expression": "event_support.to_csv(tables_dir / 'event_support.tsv', sep='\\t', index=False)"
+  },
+  {
+    "module": "src/sirdwell_experiments/e17.py",
+    "operation": "to_csv",
+    "expression": "matrix.to_csv(tables_dir / 'event_matrix.tsv', sep='\\t', index=False)"
+  },
+  {
+    "module": "src/sirdwell_experiments/e17.py",
+    "operation": "to_csv",
+    "expression": "occupancy.to_csv(tables_dir / 'state_occupancy.tsv', sep='\\t', index=False)"
+  },
+  {
+    "module": "src/sirdwell_experiments/e17.py",
+    "operation": "to_csv",
+    "expression": "pd.DataFrame(theta, index=events, columns=events).rename_axis('target_event').to_csv(tables_dir / 'theta.tsv', sep='\\t')"
+  },
+  {
+    "module": "src/sirdwell_experiments/e17.py",
+    "operation": "to_csv",
+    "expression": "scores.to_csv(tables_dir / 'state_scores.tsv', sep='\\t', index=False)"
+  },
+  {
+    "module": "src/sirdwell_experiments/e17.py",
+    "operation": "to_csv",
+    "expression": "edges.to_csv(tables_dir / 'state_edges.tsv', sep='\\t', index=False)"
+  },
+  {
+    "module": "src/sirdwell_experiments/e17.py",
+    "operation": "to_csv",
+    "expression": "timepoints.to_csv(tables_dir / 'ordered_timepoint_states.tsv', sep='\\t', index=False)"
+  },
+  {
+    "module": "src/sirdwell_experiments/e17.py",
+    "operation": "to_csv",
+    "expression": "dwell_predictions.to_csv(tables_dir / 'dwell_persistence_predictions.tsv', sep='\\t', index=False)"
+  },
+  {
+    "module": "src/sirdwell_experiments/e17.py",
+    "operation": "to_csv",
+    "expression": "dwell_persistence.to_csv(tables_dir / 'dwell_persistence_summary.tsv', sep='\\t', index=False)"
+  },
+  {
+    "module": "src/sirdwell_experiments/e17.py",
+    "operation": "to_csv",
+    "expression": "dwell.to_csv(tables_dir / 'dwell_stage_contrast.tsv', sep='\\t', index=False)"
+  },
+  {
+    "module": "src/sirdwell_experiments/e17.py",
+    "operation": "to_csv",
+    "expression": "paired_dwell.to_csv(tables_dir / 'paired_dwell_delta.tsv', sep='\\t', index=False)"
+  },
+  {
+    "module": "src/sirdwell_experiments/e17.py",
+    "operation": "write_text",
+    "expression": "(tables_dir / 'fit_metadata.json').write_text(json.dumps(fit_meta, indent=2), encoding='utf-8')"
+  },
+  {
+    "module": "src/sirdwell_experiments/e17.py",
+    "operation": "to_csv",
+    "expression": "cohort_qc.to_csv(result_root / 'tables' / 'cohort_qc.tsv', sep='\\t', index=False)"
+  },
+  {
+    "module": "src/sirdwell_experiments/e17.py",
+    "operation": "to_csv",
+    "expression": "scores_all.to_csv(result_root / 'tables' / 'state_scores_all.tsv', sep='\\t', index=False)"
+  },
+  {
+    "module": "src/sirdwell_experiments/e17.py",
+    "operation": "to_csv",
+    "expression": "top_states.to_csv(result_root / 'tables' / 'top_external_rstar_states.tsv', sep='\\t', index=False)"
+  },
+  {
+    "module": "src/sirdwell_experiments/e17.py",
+    "operation": "to_csv",
+    "expression": "dwell.to_csv(result_root / 'tables' / 'dwell_stage_contrast_all.tsv', sep='\\t', index=False)"
+  },
+  {
+    "module": "src/sirdwell_experiments/e17.py",
+    "operation": "to_csv",
+    "expression": "paired_dwell.to_csv(result_root / 'tables' / 'paired_dwell_delta_all.tsv', sep='\\t', index=False)"
+  },
+  {
+    "module": "src/sirdwell_experiments/e17.py",
+    "operation": "to_csv",
+    "expression": "dwell_predictions.to_csv(result_root / 'tables' / 'dwell_persistence_predictions_all.tsv', sep='\\t', index=False)"
+  },
+  {
+    "module": "src/sirdwell_experiments/e17.py",
+    "operation": "to_csv",
+    "expression": "dwell_persistence.to_csv(result_root / 'tables' / 'dwell_persistence_summary_all.tsv', sep='\\t', index=False)"
+  },
+  {
+    "module": "src/sirdwell_experiments/e17.py",
+    "operation": "to_csv",
+    "expression": "core_metric_table.to_csv(result_root / 'tables' / 'core_metric_table.tsv', sep='\\t', index=False)"
+  },
+  {
+    "module": "src/sirdwell_experiments/e17.py",
+    "operation": "to_csv",
+    "expression": "metric_audit_all.to_csv(result_root / 'tables' / 'metric_audit_all_integrated.tsv', sep='\\t', index=False)"
+  },
+  {
+    "module": "src/sirdwell_experiments/e17.py",
+    "operation": "to_csv",
+    "expression": "metric_audit.to_csv(result_root / 'tables' / 'metric_audit.tsv', sep='\\t', index=False)"
+  },
+  {
+    "module": "src/sirdwell_experiments/e17.py",
+    "operation": "read_text",
+    "expression": "path.read_text(encoding='utf-8')"
+  },
+  {
+    "module": "src/sirdwell_experiments/e17_tables.py",
+    "operation": "read_csv",
+    "expression": "pd.read_csv(source, sep='\\t')"
+  },
+  {
+    "module": "src/sirdwell_experiments/e17_tables.py",
+    "operation": "read_csv",
+    "expression": "pd.read_csv(source_root / 'tables' / 'core_metric_table.tsv', sep='\\t')"
+  },
+  {
+    "module": "src/sirdwell_experiments/e17_tables.py",
+    "operation": "read_csv",
+    "expression": "pd.read_csv(root / 'tables' / 'rstar_calibration_metrics.tsv', sep='\\t')"
+  },
+  {
+    "module": "src/sirdwell_experiments/e17_tables.py",
+    "operation": "to_csv",
+    "expression": "table_df.to_csv(table_path, sep='\\t', index=False)"
+  },
+  {
+    "module": "src/sirdwell_experiments/e17_tables.py",
+    "operation": "to_csv",
+    "expression": "data.to_csv(tables / 'rstar_calibration_pair_level.tsv', sep='\\t', index=False)"
+  },
+  {
+    "module": "src/sirdwell_experiments/e17_tables.py",
+    "operation": "to_csv",
+    "expression": "bins.to_csv(tables / 'rstar_calibration_bins.tsv', sep='\\t', index=False)"
+  },
+  {
+    "module": "src/sirdwell_experiments/e17_tables.py",
+    "operation": "to_csv",
+    "expression": "metrics.to_csv(tables / 'rstar_calibration_metrics.tsv', sep='\\t', index=False)"
+  },
+  {
+    "module": "src/sirdwell_experiments/e17_tables.py",
+    "operation": "read_text",
+    "expression": "Path(args.config).read_text(encoding='utf-8')"
+  },
+  {
+    "module": "src/sirdwell_experiments/e17_tables.py",
+    "operation": "to_csv",
+    "expression": "routes.to_csv(tables / f'topology_routes_{study}.tsv', sep='\\t', index=False)"
+  },
+  {
+    "module": "src/sirdwell_experiments/e17_tables.py",
+    "operation": "read_csv",
+    "expression": "pd.read_csv(source, sep='\\t')"
+  },
+  {
+    "module": "experiments/build_release_manifest.py",
+    "operation": "write_text",
+    "expression": "OUTPUT.write_text('\\n'.join(rows) + '\\n', encoding='utf-8', newline='\\n')"
+  },
+  {
+    "module": "experiments/freeze_final_evidence.py",
+    "operation": "read_csv",
+    "expression": "pd.read_csv(manifest_path, sep='\\t')"
+  },
+  {
+    "module": "experiments/freeze_final_evidence.py",
+    "operation": "to_csv",
+    "expression": "pd.DataFrame(run_rows).to_csv(destination_root / 'RUN_ENVIRONMENT_AUDIT.tsv', sep='\\t', index=False)"
+  },
+  {
+    "module": "experiments/freeze_final_evidence.py",
+    "operation": "to_csv",
+    "expression": "pd.DataFrame(input_rows).to_csv(destination_root / 'P15_INPUT_AUDIT.tsv', sep='\\t', index=False)"
+  },
+  {
+    "module": "experiments/freeze_final_evidence.py",
+    "operation": "to_csv",
+    "expression": "pd.DataFrame(model_rows).to_csv(destination_root / 'MHN_MODEL_SELECTION_AUDIT.tsv', sep='\\t', index=False)"
+  },
+  {
+    "module": "experiments/freeze_final_evidence.py",
+    "operation": "write_text",
+    "expression": "(destination_root / 'FREEZE_METADATA.json').write_text(json.dumps(freeze_metadata, indent=2) + '\\n', encoding='utf-8')"
+  },
+  {
+    "module": "experiments/freeze_final_evidence.py",
+    "operation": "to_csv",
+    "expression": "pd.DataFrame(rows).to_csv(destination_root / 'FINAL_EVIDENCE_INDEX.tsv', sep='\\t', index=False)"
+  },
+  {
+    "module": "experiments/freeze_final_evidence.py",
+    "operation": "read_text",
+    "expression": "metadata_path.read_text(encoding='utf-8')"
+  },
+  {
+    "module": "experiments/freeze_final_evidence.py",
+    "operation": "read_csv",
+    "expression": "pd.read_csv(source / 'tables' / 'cv_scores.tsv', sep='\\t')"
+  },
+  {
+    "module": "experiments/freeze_final_evidence.py",
+    "operation": "read_text",
+    "expression": "(source / 'fit_metadata.json').read_text(encoding='utf-8')"
+  },
+  {
+    "module": "experiments/run_secondary.py",
+    "operation": "read_csv",
+    "expression": "pd.read_csv(source_files['scores'], sep='\\t')"
+  },
+  {
+    "module": "experiments/run_secondary.py",
+    "operation": "read_csv",
+    "expression": "pd.read_csv(source_files['edges'], sep='\\t')"
+  },
+  {
+    "module": "experiments/run_secondary.py",
+    "operation": "read_csv",
+    "expression": "pd.read_csv(source_files['occupancy'], sep='\\t')"
+  },
+  {
+    "module": "experiments/run_secondary.py",
+    "operation": "read_csv",
+    "expression": "pd.read_csv(source_files['theta'], sep='\\t')"
+  },
+  {
+    "module": "experiments/run_secondary.py",
+    "operation": "read_csv",
+    "expression": "pd.read_csv(source_files['matrix'])"
+  }
+]

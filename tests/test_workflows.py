@@ -10,7 +10,7 @@ sys.path.insert(0, str(Path(__file__).resolve().parents[1] / "src"))
 
 from relobstq_mhn.core.scoring import ScoreThresholds
 from relobstq_mhn.core.transitions import probability_provider_from_theta
-from relobstq_mhn.workflows.controls import denominator_ablation, inflow_pairing_falsification, matched_decoy_test
+from relobstq_mhn.workflows.controls import denominator_ablation, inflow_pairing_falsification
 from relobstq_mhn.workflows.cross_sectional import CrossSectionalConfig, run_cross_sectional_cohort
 from relobstq_mhn.workflows.longitudinal import LongitudinalConfig, evaluate_longitudinal_pairs
 from relobstq_mhn.workflows.longitudinal_preparation import (
@@ -156,9 +156,7 @@ def test_longitudinal_and_controls() -> None:
             "eligible_relobstq": [True] * 20,
         }
     )
-    details, _ = matched_decoy_test(scores, top_k=3, minimum_decoys=2)
     replicates, _ = inflow_pairing_falsification(scores, top_k=3, replicates=5)
-    assert len(details) == 3
     assert len(replicates) == 5
 
 

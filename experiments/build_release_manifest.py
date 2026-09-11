@@ -36,7 +36,7 @@ def included_files() -> list[Path]:
         relative = path.relative_to(ROOT)
         if relative.parts[0] in EXCLUDED_TOP_LEVEL:
             continue
-        if "__pycache__" in relative.parts or path.suffix in {".pyc", ".pyo"}:
+        if "__pycache__" in relative.parts or any(part.endswith(".egg-info") for part in relative.parts) or path.suffix in {".pyc", ".pyo"}:
             continue
         files.append(path)
     return sorted(files, key=lambda item: item.relative_to(ROOT).as_posix())

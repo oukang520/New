@@ -12,5 +12,6 @@
     "simulation_dwell_gradient",
     "simulation_topology_robustness"
   ],
-  "note": "All source manifests were verified before copying; source runs had git dirty=false."
+  "note": "All source manifests were verified before copying; source runs had git dirty=false.",
+  "revision_note": "Retired E15A entries removed; selected retained numerical tables unchanged. Index regenerated for plotting-free manuscript release."
 }

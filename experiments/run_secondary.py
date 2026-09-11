@@ -14,7 +14,6 @@ from relobstq_mhn.io import ResultWriter, load_yaml
 from relobstq_mhn.workflows.controls import (
     denominator_ablation,
     inflow_pairing_falsification,
-    matched_decoy_test,
 )
 from relobstq_mhn.workflows.secondary import (
     inflow_computability_summary,
@@ -63,7 +62,7 @@ def main() -> None:
             metadata={
                 "workflow": "run_secondary",
                 "cohort": cohort,
-                "evidence_units": ["E4", "E10", "E11", "E14", "E15A", "E15B", "E16"],
+                "evidence_units": ["E4", "E10", "E11", "E14", "E15B", "E16"],
                 "random_seed": int(analysis["random_seed"]) + cohort_index,
             },
         )
@@ -77,12 +76,6 @@ def main() -> None:
             thresholds=thresholds,
             top_k=int(analysis["top_k"]),
         )
-        details, decoy_summary = matched_decoy_test(
-            scores,
-            top_k=int(analysis["top_k"]),
-            quantile_bins=int(analysis["matched_decoy_quantile_bins"]),
-            minimum_decoys=int(analysis["minimum_decoys"]),
-        )
         shuffled, shuffle_summary = inflow_pairing_falsification(
             scores,
             top_k=int(analysis["top_k"]),
@@ -95,7 +88,6 @@ def main() -> None:
                 {"evidence_unit": "E10", "result": "rstar_landscape_states.tsv; rstar_landscape_summary.tsv"},
                 {"evidence_unit": "E11", "result": "information_gain_summary.tsv"},
                 {"evidence_unit": "E14", "result": "denominator_ablation_details.tsv; denominator_ablation_summary.tsv"},
-                {"evidence_unit": "E15A", "result": "matched_decoy_details.tsv; matched_decoy_summary.tsv"},
                 {"evidence_unit": "E15B", "result": "inflow_shuffle_replicates.tsv; inflow_shuffle_summary.tsv"},
                 {"evidence_unit": "E16", "result": "topology_routes.tsv"},
             ]
@@ -105,8 +97,6 @@ def main() -> None:
         writer.table("rstar_landscape_summary", landscape_summary)
         writer.table("denominator_ablation_details", ablation_details)
         writer.table("denominator_ablation_summary", ablation_summary)
-        writer.table("matched_decoy_details", details)
-        writer.table("matched_decoy_summary", decoy_summary)
         writer.table("inflow_shuffle_replicates", shuffled)
         writer.table("inflow_shuffle_summary", shuffle_summary)
         writer.table("information_gain_summary", information_gain_summary(scores, top_k=int(analysis["top_k"])))

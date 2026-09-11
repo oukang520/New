@@ -1,0 +1,55 @@
+{
+  "scope": "Read-only replay against selected existing tables; no full cMHN refit or raw-cohort rerun was performed.",
+  "checks": [
+    {
+      "check": "E3 genotype transitions AACR_LUAD",
+      "status": "PASS",
+      "rows": 16001
+    },
+    {
+      "check": "E3 genotype transitions AACR_COAD",
+      "status": "PASS",
+      "rows": 15912
+    },
+    {
+      "check": "E3 genotype transitions AACR_IDC",
+      "status": "PASS",
+      "rows": 6053
+    },
+    {
+      "check": "E9 all-repeat recovery metrics",
+      "status": "PASS",
+      "rows": 200
+    },
+    {
+      "check": "E13 all patient splits",
+      "status": "PASS",
+      "rows": 150
+    },
+    {
+      "check": "E15B all frozen shuffles",
+      "status": "PASS",
+      "rows": 1200
+    },
+    {
+      "check": "E17 longitudinal calibration",
+      "status": "PASS",
+      "rows": 3
+    },
+    {
+      "check": "E4 inflow sensitivity AACR_LUAD",
+      "status": "PASS",
+      "rows": 7976
+    },
+    {
+      "check": "E4 inflow sensitivity AACR_COAD",
+      "status": "PASS",
+      "rows": 7860
+    },
+    {
+      "check": "E4 inflow sensitivity AACR_IDC",
+      "status": "PASS",
+      "rows": 2844
+    }
+  ]
+}

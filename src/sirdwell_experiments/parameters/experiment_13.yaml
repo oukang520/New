@@ -1,0 +1,31 @@
+experiment_name: cross_cohort_replication
+result_root: results/experiment_13_cross_cohort_replication
+experiment_ready_root: processed/experiment_ready
+experiment_05_root: results/experiment_05_state_scores
+analysis:
+  split_fraction: 0.5
+  split_repeats: 50
+  top_k: 10
+  minimum_state_count: 5
+  minimum_inflow: 1.0e-06
+  epsilon: 1.0e-06
+  minimum_common_states: 10
+  random_seed: 20260628
+  discovery_label: split_A
+  validation_label: split_B
+  locked_inflow_backbone: true
+success_criteria:
+  spearman_acceptable: 0.3
+  spearman_good: 0.5
+  top10_overlap_acceptable: 3
+  top10_overlap_good: 5
+datasets:
+  AACR_LUAD:
+    display_name: Lung adenocarcinoma
+    short_name: LUAD
+  AACR_COAD:
+    display_name: Colon adenocarcinoma
+    short_name: COAD
+  AACR_IDC:
+    display_name: Breast invasive ductal carcinoma
+    short_name: IDC
