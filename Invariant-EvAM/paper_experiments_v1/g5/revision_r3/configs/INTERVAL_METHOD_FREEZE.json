@@ -1,0 +1,26 @@
+{
+  "cutoff": 10.15721525622115,
+  "development": [
+    {
+      "scenario": 0,
+      "total": 100,
+      "valid": 100,
+      "q975": 4.508475568355038
+    },
+    {
+      "scenario": 1,
+      "total": 100,
+      "valid": 100,
+      "q975": 10.15721525622115
+    },
+    {
+      "scenario": 2,
+      "total": 100,
+      "valid": 100,
+      "q975": 6.745668810083487
+    }
+  ],
+  "budget": 74,
+  "selection": "Common maximum 97.5% development LR quantile across three prespecified scenarios; not tuned on final evaluation",
+  "code_sha256": "4b5e93bc253dbcce9ab3c10c8388b3ccd615e71d3c863cb196389e682a64bd75"
+}

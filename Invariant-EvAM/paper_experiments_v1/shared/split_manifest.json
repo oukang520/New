@@ -1,0 +1,20 @@
+{
+  "source": "GENIE18.0-public",
+  "source_status": "PREVIOUSLY_EXPLORED",
+  "roles": {
+    "LUAD": {
+      "train": 1345,
+      "calibration": 448,
+      "evaluation": 449,
+      "patient_key_manifest_sha256": "899953379e3fb3379c5533f987dc9ec7683616015b13ba2ac1a57a6ba8ec9137"
+    },
+    "COAD": {
+      "train": 857,
+      "calibration": 285,
+      "evaluation": 287,
+      "patient_key_manifest_sha256": "a605b8db2640263c291bcec9a386258d12552ccc1941dc4dbd77be037dd001bd"
+    }
+  },
+  "cross_cancer_overlap": 2,
+  "full_records": "PRIVATE_NOT_EXPORTED"
+}

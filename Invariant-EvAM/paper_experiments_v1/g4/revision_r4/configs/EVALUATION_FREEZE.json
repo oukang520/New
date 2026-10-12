@@ -1,0 +1,32 @@
+{
+  "protocol": "R4",
+  "primary_calibration": "AUDIT_CELL_16",
+  "calibration_candidates": [
+    [
+      "CELL",
+      16.0
+    ],
+    [
+      "DIRECT",
+      1.0
+    ],
+    [
+      "MARGINAL",
+      1.0
+    ]
+  ],
+  "calibration_selection": "Minimum development log score averaged equally over both cancers and all three original designs; failed-capacity cells retained separately",
+  "primary_B": "MORE_CTMC minus BRIDGE_CTMC hidden log score; all6cells, fixed638 assays. Same-model allocation comparison, not superiority claim over every estimator.",
+  "primary_C": "BASE_CTMC versus frozen paid AUDIT calibration: Brier+log score and 5binECE. Compare to MORE_CTMC and BRIDGE_CTMC, direct cell and marginal estimators.",
+  "secondary_C": "Finite evaluation-reference expected calibration under known scorer-only perturbation; estimator never sees probabilities or weights.",
+  "bootstrap": "200 patient-role resamples per cancer/design; refit CTMC and pooled for all arms and frozen calibrators. Seeds do not multiply patient sample size.",
+  "evaluation_seeds": 50,
+  "bootstrap_replicates": 200,
+  "score_6_5": "Both cancers show average proper-score improvement over all three designs, supporting a scoped paid-information claim; report every failing cell and bootstrap uncertainty. Original stronger algorithm/oldmask claim keeps its old score.",
+  "score_8": "Broad agreement across all six cells, meaningful paired uncertainty support and strong-baseline evidence; no claims of natural-parameter recovery.",
+  "code_sha256": "937bd04cd2c2945dd52f795a062af8169acffdb31c22d76a72f61c5fb56a1066",
+  "development_raw_sha256": "5d4145f7b1b354d6848d7795d37fe5171c9f24c38aa715eeb0bcb66a8af74705",
+  "patient_source_status": "PREVIOUSLY_EXPLORED",
+  "evaluation_used_for_decisions": false,
+  "bugfix_before_confirm_results": "Shuffled-label control uses big-endian state code (3-h), not h. First launch failed with negative bincount; no completed scientific evaluation result. Original failure log retained."
+}

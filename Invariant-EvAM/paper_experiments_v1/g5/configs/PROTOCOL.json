@@ -1,0 +1,143 @@
+{
+  "version": "G5_v1.0",
+  "status": "FROZEN_BEFORE_EVALUATION",
+  "master_seed": 20260923,
+  "reference": "MSK-IMPACT468",
+  "panels": [
+    "MSK-IMPACT468",
+    "MSK-IMPACT410",
+    "MSK-IMPACT505"
+  ],
+  "natural_specs": [
+    {
+      "id": "IDENTITY_SHARED",
+      "family": "identity"
+    },
+    {
+      "id": "BURDEN_SELECTION_SHARED",
+      "family": "burden"
+    },
+    {
+      "id": "PRESPECIFIED_GENE_SELECTION",
+      "family": "genes"
+    },
+    {
+      "id": "BOUNDED_BIOLOGY",
+      "family": "burden",
+      "epsilon": 0.2
+    },
+    {
+      "id": "HIERARCHICAL",
+      "family": "burden",
+      "penalty": 1.0
+    },
+    {
+      "id": "TWO_STEP_FUSION",
+      "family": "burden",
+      "mode": "fusion"
+    },
+    {
+      "id": "INDEPENDENT",
+      "family": "identity",
+      "independent": true
+    }
+  ],
+  "natural_bootstrap_specs": [
+    "IDENTITY_SHARED",
+    "BURDEN_SELECTION_SHARED",
+    "PRESPECIFIED_GENE_SELECTION",
+    "BOUNDED_BIOLOGY"
+  ],
+  "natural_bootstrap_replicates": 200,
+  "random_partitions": 100,
+  "compatibility_parametric_replicates": 200,
+  "heldout_nuisance_fraction": 0.2,
+  "theta_bound": 3,
+  "phi_bound": 2,
+  "natural_reference_contract": "Conditional468recordCTMC; reference selection fixedzero is a strong anchor assumption, NOT proof of zero clinical selection; allow common reference bias in sensitivity",
+  "natural_main_training": "G4train4681345 + complete410/505; leaveout excludes entire heldout panel before nuisance calibration; all choices frozen before any main fit",
+  "sensitivity_epsilon": [
+    0,
+    0.2,
+    0.5
+  ],
+  "sensitivity_eta_reference_gene_selection": [
+    0,
+    0.5,
+    1.0
+  ],
+  "sensitivity_no_addition_different_units": true,
+  "target_families": [
+    "D4_SPARSE10",
+    "D4_FULL16"
+  ],
+  "competition_specs": [
+    "IDENTITY_SHARED",
+    "BURDEN_SELECTION_SHARED"
+  ],
+  "family_error_control": "Bonferroni .05/7 sparse and .05/13 full local LR; exploratory, not formal familywise validation",
+  "design": {
+    "base_enrolled": 100,
+    "per_env": 50,
+    "base_cost": 300,
+    "budget_fractions": [
+      0.1,
+      0.25,
+      0.5
+    ],
+    "budgets": [
+      30,
+      75,
+      150
+    ],
+    "outer_replicates": 200,
+    "direct_replicates": 50,
+    "strategies": [
+      "RANDOM_FEASIBLE",
+      "COUNT_ONLY",
+      "MAX_PANEL",
+      "D_OPT",
+      "C_OPT",
+      "INVARIANT_ROBUST"
+    ],
+    "cost": {
+      "new_same_panel": 3,
+      "reveal_one_hidden_event": 1,
+      "calibration_XS": 5
+    },
+    "unit": "Paired environments: one patient/action in each environment; unused integer budget reported",
+    "initial_operator": "G1_D21_CROSSVIEW_FAILURE",
+    "calibration_initial": 0,
+    "theta_bound": 3,
+    "phi_bound": 1,
+    "selection_alpha": -2.2,
+    "ridge": 1e-08,
+    "ridge_sensitivity": [
+      1e-10,
+      1e-08,
+      1e-06
+    ],
+    "robust_representatives": "Two predefined optimization starts within local LR cutoff; finite set, no global minimax claim",
+    "robust_rule": "First require target in information range for every representative, then minimize worst target variance; no pseudoinverse finite claim outside range",
+    "strategy_novelty": "C-opt instantiated on audited observation/measurement model; robust extension finite representative set; exact aliases are reported",
+    "future_direct_pool": "G4 LUAD calibration448 only; evaluation449 separate; baseline selected fromtrain1345; source previously explored",
+    "future_response_access": "Only evaluator reveals chosen action after decisions fixed; public capacities/counts only",
+    "outer_truth_contract": "Independent frozen G1-like parameter draws, all retained; sparseD4 plus declared observation/biology stresses",
+    "outer_scenarios": [
+      "CORRECT_K1",
+      "COMMON_OMITTED_PAIR_SELECTION",
+      "BIOLOGY_SHIFT_0.2"
+    ],
+    "outer_target": "D4_SPARSE10__interaction_0_to_1",
+    "truth_magnitudes": [
+      0.0,
+      0.15,
+      0.5,
+      1.0
+    ],
+    "development_replicates": 2
+  },
+  "interval_scope": "Local constrained LR; touched target boundary extends endpoint infinity; fit failure distinct from UNKNOWN",
+  "biological_claim_allowed": false,
+  "evaluation_selection_forbidden": true
+}

@@ -1,0 +1,144 @@
+{
+  "primary_R8": {
+    "seed": 202609288,
+    "code": {
+      "run_g5.py": "fd1d8e4f51516a81e40f6a2867b1612b398a2d7c62d6503bdad4ab677e84bfc4",
+      "exact_target.py": "08882ae098da483f9109b49d94176eb933850efbad4fd18da59da5cca43aa9d0",
+      "acquisition.py": "94fd88fdf985597f30831c956fab6e53b6faca0446506722e49f50eef291d253"
+    },
+    "cases": [
+      "SAMPLE_LIMITED",
+      "JOINT_VIEW_MISSING",
+      "ASCERTAINMENT_MARGIN",
+      "RARE_STRATA"
+    ],
+    "budget": 6000,
+    "evaluation_per_case": 60,
+    "rule": "classical target c-opt at pilot-only fit, lexicographic estimability then variance",
+    "inference": "conditional CP polytope; confirmation independent of pilot including retained base records",
+    "costs": {
+      "new_selected_full": 2,
+      "random_source_full_including_recruitment": 6,
+      "reference_single_bit": 1,
+      "reveal_missing_bit": 1
+    },
+    "width_metric": "intersection with [-4,4] used only as bounded scoring window; actual intervals remain unbounded where appropriate",
+    "primary": "gap-dependent action switching, narrower independent target intervals with valid coverage; no novel-algorithm superiority requirement",
+    "scope": "closed sparse parent-child subsystem, declared sampling families, artificial cost menu"
+  },
+  "fixed_comparator": {
+    "best_fixed_common_action": "NEW_SOURCE",
+    "development_mean_restricted_width": {
+      "MORE_SAME": 5.056248993632504,
+      "NEW_SOURCE": 3.713587091955328,
+      "REFERENCE_MARGIN": 3.9588043093855383
+    },
+    "comparison": "same action across all four scenarios; random-feasible policy is exact expectation over all feasible actions",
+    "scope": "secondary benchmark, no change to acquisition or confirmation rules"
+  },
+  "matched_size": {
+    "code": "bcc87c3a135150e63eaf3f633675644723946f8cf0a5c0687cd24a048df4e2a2",
+    "replicates": [
+      1002,
+      1003,
+      1004,
+      1005,
+      1006,
+      1007,
+      1008,
+      1009,
+      1010,
+      1011,
+      1012,
+      1013,
+      1014,
+      1015,
+      1016,
+      1017,
+      1018,
+      1019,
+      1020,
+      1021,
+      1022,
+      1023,
+      1024,
+      1025,
+      1026,
+      1027,
+      1028,
+      1029,
+      1030,
+      1031
+    ],
+    "cases": [
+      0,
+      3
+    ],
+    "baseline_per_environment": 2000,
+    "pilot_per_environment": 500,
+    "budget": 6000,
+    "reason": "separate the effect of strong ascertainment from differences in initial sample size; independent sensitivity, not a replacement for primary"
+  },
+  "supporting_D4": {
+    "cutoff": 4.13197343515094,
+    "fixed_action": "COMPLETE_B",
+    "calibration_datasets": 240,
+    "code_sha256": {
+      "g5_diagnostic_value.py": "2c4bf4c6ac8be5c22a4f3d5f7b6c1eabfbecdfb4d6b8660c44e11adfdbdc4aaa",
+      "g5_explore.py": "6d5bb94441bef12c4db9b29c74f111384730756b59a9fec89b7a670bf950515f"
+    },
+    "evaluation_per_case": 150,
+    "cases": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7
+    ],
+    "core_cases": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "family_outside": [
+      6,
+      7
+    ],
+    "seed": 202609276,
+    "cutoff_rule": "maximum action-wise pooled equal-case calibration q95, lower bounded chi-square95",
+    "fixed_rule": "minimum mean development squared error; no evaluation selection",
+    "target": "original sparse D4 CTMC theta[4], one source reference population",
+    "scope": "Two partial source panels, unknown selected-source bias; 600 extra assays, known public measurement operators. C-opt is an identical framework module, not a competing end-to-end solution.",
+    "score8_requirements": [
+      "at least two actions each used>=20% core",
+      "pooled core coverage>=.93 and each case>=.90; wrong<=.05 pooled; failures<=.02",
+      "paired core MSE gain over frozen best-fixed, random, shuffled diagnosis all lower95>0",
+      "correct-answer gain over best-fixed and random positive"
+    ],
+    "score8plus_requirements": [
+      "correct-answer paired lower95>0 vs best-fixed and shuffled diagnosis",
+      "paired MSE gain vs every fixed action positive after Holm adjustment; include source-only and no-action",
+      "out-of-family controls and largest-panel/c-opt/D-opt outcomes shown without omission"
+    ]
+  },
+  "reproduction": "../../closure_r8/reports/REPRODUCE_COMMANDS.md",
+  "biological_closure_20261009": {
+    "protocol_path": "experiment_data/BIO/configs/PROTOCOL.json",
+    "protocol_sha256": "93bbb65ae6a09dfdd242b33d3b0fab07124c196f25804aa247c768f38fc1bbca",
+    "ctDNA_assay_sha256": "ee3f7e77b8ea3db96ab238f6c0422a1d3e7240b9dd84b964f2a3ea56b1927ce5",
+    "source_status": "previously explored TRACERx family; newly frozen endpoints and runs; overlapping patients",
+    "independent_evaluation": "hash patient development/confirmation split; no method/action selection on confirmation",
+    "inference_scope": "later-tissue multimarker support and processed UMI count replay; no natural theta truth or clinical intervention",
+    "full_report": "../../biological_closure_20261009/REPORT_CN.md",
+    "plotting_code": "biological_closure_20261009/src/plot_biological.py",
+    "code_sha256": "e4148c6bca335bb3ea9af5cac4109e778f9c895c84d82e0f2b8c9a52e50257a3",
+    "acquisition": "BEST_FIXED RANDOM CTMC_BRIDGE EMPIRICAL_BRIDGE DIRECT_RIDGE; all frozen comparisons retained",
+    "ctDNA": "CLONAL_ONLY BRANCH_DIVERSE RANDOM_MARKERS INFORMATION_ADAPTIVE; wholePSP extra-information reference"
+  }
+}

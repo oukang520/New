@@ -1,0 +1,7 @@
+{
+  "reason": "Nine ctDNA patients are outside the tissue421 eligibility release; same hash split applied without outcomes or model results.",
+  "native_overlap": 188,
+  "additional_plasma_patients": 9,
+  "ctdna_split_sha256": "63c268cb4afdace7b830d270542b8c265506e47b19123ab14a7c1cf27626e424",
+  "protocol_unchanged": true
+}

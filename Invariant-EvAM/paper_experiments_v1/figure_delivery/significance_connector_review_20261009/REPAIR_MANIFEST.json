@@ -1,0 +1,92 @@
+[
+  {
+    "panel": "G4_R4_B_gain_LUAD",
+    "scalar_null_labels": 12,
+    "pdf_path_copies_corrected": 36,
+    "non_annotation_pdf_operations_unchanged": true,
+    "rendering": "straight leader; centered horizontal label",
+    "before": {
+      "pdf": "22124d49b95303a30fafe22f8f460b512c1c6463f2e88619c19f1e551b09acaf",
+      "svg": "6c50bebc01ed8ff1003bd8d8a162b08d35cf338e0dbc13f9790ff899fad974e1"
+    },
+    "after": {
+      "pdf": "87e9a0ca0aae6043c072bd5de1cfeeb25218527bb6673ae725cae39d05d8542d",
+      "svg": "9ad6d0a7d3f617fe65106da3e4e5f29f9a2aec7d69f9a6923b4a8ae551e248c4"
+    }
+  },
+  {
+    "panel": "G4_R4_B_gain_COAD",
+    "scalar_null_labels": 12,
+    "pdf_path_copies_corrected": 36,
+    "non_annotation_pdf_operations_unchanged": true,
+    "rendering": "straight leader; centered horizontal label",
+    "before": {
+      "pdf": "63924dfd9d87866408495cb2a12f38e6574c232d5d0599823649e0e083cd3762",
+      "svg": "7c60d3822702cdfe549214c2dfa591faa112022b6c76450dab693751ab343451"
+    },
+    "after": {
+      "pdf": "2cb36a5a76a6728673642176eb6abf2955d777859c0fd22d97b3c904581d8d90",
+      "svg": "ecfa658ddaaaaebfbf02ca48ef4eaeb75aa99b254f7633925bba8c61ada73050"
+    }
+  },
+  {
+    "panel": "G4_R4_C_proper_score_controls",
+    "scalar_null_labels": 10,
+    "pdf_path_copies_corrected": 20,
+    "non_annotation_pdf_operations_unchanged": true,
+    "rendering": "straight leader; centered horizontal label",
+    "before": {
+      "pdf": "78efccca8220f86dbd8dbfa2d7da51f1e989296fcb6dde068424ce16798ed449",
+      "svg": "6201aac2dfa40479bff4a319422a80bcddd3b81bdd79c979c2adbb6fa26edae6"
+    },
+    "after": {
+      "pdf": "74d0cf23b362a3b271ef3172d298dd064644ec1f915a5f53d5d1eb4ba7984f3a",
+      "svg": "5617e5da10a1bbd05796220c0a3058713a278efe3c0934d31f3d5b3c9946ebf9"
+    }
+  },
+  {
+    "panel": "G4_finite_calibration_ablation",
+    "scalar_null_labels": 6,
+    "pdf_path_copies_corrected": 12,
+    "non_annotation_pdf_operations_unchanged": true,
+    "rendering": "straight leader; centered horizontal label",
+    "before": {
+      "pdf": "fdebf5e6685f2060f2d1fc35053bb7ffb622c9389aae3c17d88f08ecea608e29",
+      "svg": "e48e4240933004dead1994c67a69370881b41f3e043b44b32b148c00c9c88263"
+    },
+    "after": {
+      "pdf": "308657722c33749e850df8ae72e73f8021fb5fca2411193d55dd1fe1901af03a",
+      "svg": "3a7c027fdaf09616941205ab01a5219b75e59990d25a5c75fd212053dbd46df5"
+    }
+  },
+  {
+    "panel": "G5_R3_natural_transfer",
+    "scalar_null_labels": 10,
+    "pdf_path_copies_corrected": 20,
+    "non_annotation_pdf_operations_unchanged": true,
+    "rendering": "straight leader; centered horizontal label",
+    "before": {
+      "pdf": "d5663923a285165936103cc4ff609d6926e8068c9784e6ebbe99a28c06b9694d",
+      "svg": "43b1720647e2f512470290e671ebae5bbf3048c4bd8c768a7ad992da6c71c7cc"
+    },
+    "after": {
+      "pdf": "f109c74017737898f581045582ee24e57552c8df361d6b9802140d0f0e8c78f4",
+      "svg": "a8b93c52b3739d68e1abc98fa26bdb03fc026d71337dd1ecaa7955c10da9c98e"
+    }
+  },
+  {
+    "panel": "G4_R6_attribution",
+    "scalar_null_labels": 20,
+    "pdf_path_copies_corrected": 20,
+    "non_annotation_pdf_operations_unchanged": true,
+    "rendering": "straight leader; centered horizontal label",
+    "before": {
+      "pdf": "e9c947000d97e09a6a7c027368e06334699e2b41e99a1020f406165c55a855aa",
+      "svg": "bd1588303df20ba8e3772d679986ae5a0bf137c8808a61aafd2adf51ef46b3eb"
+    },
+    "after": {
+      "pdf": "0783a5271f02f6b8159752f5f9d1b5bcb5aa197d7170b3481078c724840b59f6",
+      "svg": "e6e40b4f9fa2a844fb37620c3975ecb39f452a7ce61d72efa9370214067decec"
+    }
+  }
+]

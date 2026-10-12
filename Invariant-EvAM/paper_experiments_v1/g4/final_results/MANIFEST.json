@@ -1,0 +1,545 @@
+{
+  "group": "g4",
+  "panels": [
+    {
+      "panel": "G4_01",
+      "pdf": "../final_figures/G4_01.pdf",
+      "svg": "../final_figures/G4_01.svg",
+      "plot_data": "plot_data/G4_01.tsv",
+      "data_sha256": "9726775c3a7c8ee714538c67add67a71b26cfdc79f05be412c2f902de58d276a",
+      "pdf_sha256": "9e3a6e67bfe702664f9fc676429463ff8d8c30ca01725c72fb10e70440724f2e",
+      "svg_sha256": "88089d4b4c1e69b6c0ac018d4cabdd41daaa90e4011d247eb032f5ee0b782616",
+      "font": "Arial",
+      "dpi": 600,
+      "size_mm": [
+        161.572,
+        90.664
+      ],
+      "figure_legend": "FIGURE_LEGENDS_CN.md#g4_01"
+    },
+    {
+      "panel": "G4_07",
+      "pdf": "../final_figures/G4_07.pdf",
+      "svg": "../final_figures/G4_07.svg",
+      "plot_data": "plot_data/G4_07.tsv",
+      "data_sha256": "2103cc98a8e4668706178e3367f5b326ef172789555bd86bef22073028f12b86",
+      "pdf_sha256": "140355ff2b2fa39f314c9e0ab3d903b6ce7e381ce3f182cd3365fda71cb4ac5e",
+      "svg_sha256": "61c8f2659cde67827e6572d34367a3ff207c17c80f4fa9e87fb59226c641c343",
+      "font": "Arial",
+      "dpi": 600,
+      "size_mm": [
+        132.997,
+        84.49
+      ],
+      "figure_legend": "FIGURE_LEGENDS_CN.md#g4_07"
+    },
+    {
+      "panel": "G4_R2_joint_audit_COAD",
+      "pdf": "../final_figures/G4_R2_joint_audit_COAD.pdf",
+      "svg": "../final_figures/G4_R2_joint_audit_COAD.svg",
+      "plot_data": "plot_data/G4_R2_joint_audit_COAD.tsv",
+      "data_sha256": "e51f189b16deae49b91bbf246e1739fc4ef9fd89578fb2ab6ca63b2e394da9d7",
+      "pdf_sha256": "a7a743ff8c3a6b31f218fb4b259b46f300884c122bf1c429ed2a10f48d23e81f",
+      "svg_sha256": "c456a977e66cc8d38f002fd1fad1a099ac6edd3ef733ee0cdec5561b38ce2067",
+      "font": "Arial",
+      "dpi": 600,
+      "size_mm": [
+        135.996,
+        97.896
+      ],
+      "figure_legend": "FIGURE_LEGENDS_CN.md#g4_r2_joint_audit_coad"
+    },
+    {
+      "panel": "G4_R2_joint_audit_LUAD",
+      "pdf": "../final_figures/G4_R2_joint_audit_LUAD.pdf",
+      "svg": "../final_figures/G4_R2_joint_audit_LUAD.svg",
+      "plot_data": "plot_data/G4_R2_joint_audit_LUAD.tsv",
+      "data_sha256": "1f8391e321169b9fdba293b93333ba334e24e21dac7247074c99463964fe51a9",
+      "pdf_sha256": "224c19d334833966eb58675e764681e6937eddd4b37f2d74024318d54fa3dcbe",
+      "svg_sha256": "aaea1fcbfa007324bf39b644c33f39f481a2d9f5a0fae07133ded38ed00b91dd",
+      "font": "Arial",
+      "dpi": 600,
+      "size_mm": [
+        137.407,
+        97.896
+      ],
+      "figure_legend": "FIGURE_LEGENDS_CN.md#g4_r2_joint_audit_luad"
+    },
+    {
+      "panel": "G4_R4_BC_patient_bootstrap",
+      "pdf": "../final_figures/G4_R4_BC_patient_bootstrap.pdf",
+      "svg": "../final_figures/G4_R4_BC_patient_bootstrap.svg",
+      "plot_data": "plot_data/G4_R4_BC_patient_bootstrap.tsv",
+      "data_sha256": "7702fa3ffd84a7c6ee31f99de0360774fb0b0fbf0f10250b119ecb21dae577da",
+      "pdf_sha256": "569da0e8e75bed611c689003904c52352ebde668f44e50ca4c17866aedbac415",
+      "svg_sha256": "f3e30a9e5d165e755de9b4192b374e5812b405e31c67d63729af11c098f90b23",
+      "font": "Arial",
+      "dpi": 600,
+      "size_mm": [
+        136.878,
+        80.257
+      ],
+      "figure_legend": "FIGURE_LEGENDS_CN.md#g4_r4_bc_patient_bootstrap"
+    },
+    {
+      "panel": "G4_R4_B_gain_COAD",
+      "pdf": "../final_figures/G4_R4_B_gain_COAD.pdf",
+      "svg": "../final_figures/G4_R4_B_gain_COAD.svg",
+      "plot_data": "plot_data/G4_R4_B_gain_COAD.tsv",
+      "data_sha256": "5472492996510bdc2fdb735fbcf088a8d8d6244f434beb619aab4e4e0bbe2373",
+      "pdf_sha256": "2cb36a5a76a6728673642176eb6abf2955d777859c0fd22d97b3c904581d8d90",
+      "svg_sha256": "ecfa658ddaaaaebfbf02ca48ef4eaeb75aa99b254f7633925bba8c61ada73050",
+      "font": "Arial",
+      "dpi": 600,
+      "size_mm": [
+        147.8138888888889,
+        80.60972222222222
+      ],
+      "figure_legend": "FIGURE_LEGENDS_CN.md#g4_r4_b_gain_coad",
+      "annotation_review": "figure_delivery/significance_connector_review_20261009"
+    },
+    {
+      "panel": "G4_R4_B_gain_LUAD",
+      "pdf": "../final_figures/G4_R4_B_gain_LUAD.pdf",
+      "svg": "../final_figures/G4_R4_B_gain_LUAD.svg",
+      "plot_data": "plot_data/G4_R4_B_gain_LUAD.tsv",
+      "data_sha256": "9268daba5553eea378025ea5a8d2b841a03ec70c4e9ee528f279cc85c0c86343",
+      "pdf_sha256": "87e9a0ca0aae6043c072bd5de1cfeeb25218527bb6673ae725cae39d05d8542d",
+      "svg_sha256": "9ad6d0a7d3f617fe65106da3e4e5f29f9a2aec7d69f9a6923b4a8ae551e248c4",
+      "font": "Arial",
+      "dpi": 600,
+      "size_mm": [
+        147.8138888888889,
+        80.7861111111111
+      ],
+      "figure_legend": "FIGURE_LEGENDS_CN.md#g4_r4_b_gain_luad",
+      "annotation_review": "figure_delivery/significance_connector_review_20261009"
+    },
+    {
+      "panel": "G4_R4_C_calibration_COAD",
+      "pdf": "../final_figures/G4_R4_C_calibration_COAD.pdf",
+      "svg": "../final_figures/G4_R4_C_calibration_COAD.svg",
+      "plot_data": "plot_data/G4_R4_C_calibration_COAD.tsv",
+      "data_sha256": "16a25882961cff0692d3894ccb48a3989bb52d87cf1dcc7393c4e2c4a89a4a0c",
+      "pdf_sha256": "3d2eda69b5001ad4064dd16dcf18bed0b7b7b4ed275c0fe57566feddb0f3c393",
+      "svg_sha256": "38f299eb65f0655840a70ba5ca613c49568105486cb9a2fc91e46a9e10f17144",
+      "font": "Arial",
+      "dpi": 600,
+      "size_mm": [
+        146.05,
+        95.426
+      ],
+      "figure_legend": "FIGURE_LEGENDS_CN.md#g4_r4_c_calibration_coad"
+    },
+    {
+      "panel": "G4_R4_C_calibration_LUAD",
+      "pdf": "../final_figures/G4_R4_C_calibration_LUAD.pdf",
+      "svg": "../final_figures/G4_R4_C_calibration_LUAD.svg",
+      "plot_data": "plot_data/G4_R4_C_calibration_LUAD.tsv",
+      "data_sha256": "779b2d04e105babb90e361439554efb63298e3a898ec87c497e317206ab7df08",
+      "pdf_sha256": "5d3c149b0bfaf9e7754b1593dc2bad5372602db815e72cec220b5498fdece854",
+      "svg_sha256": "fd38abd5de3926582bfe9c0e98fb35affc12bbe3389d9a10d577f7cb1a2245e5",
+      "font": "Arial",
+      "dpi": 600,
+      "size_mm": [
+        146.05,
+        95.426
+      ],
+      "figure_legend": "FIGURE_LEGENDS_CN.md#g4_r4_c_calibration_luad"
+    },
+    {
+      "panel": "G4_R4_C_proper_score_controls",
+      "pdf": "../final_figures/G4_R4_C_proper_score_controls.pdf",
+      "svg": "../final_figures/G4_R4_C_proper_score_controls.svg",
+      "plot_data": "plot_data/G4_R4_C_proper_score_controls.tsv",
+      "data_sha256": "3acd477dcca579dd80705c9962088ba03f0a5f055e4f61dbeb31645be3c62b54",
+      "pdf_sha256": "74d0cf23b362a3b271ef3172d298dd064644ec1f915a5f53d5d1eb4ba7984f3a",
+      "svg_sha256": "5617e5da10a1bbd05796220c0a3058713a278efe3c0934d31f3d5b3c9946ebf9",
+      "font": "Arial",
+      "dpi": 600,
+      "size_mm": [
+        147.8138888888889,
+        75.84722222222221
+      ],
+      "figure_legend": "FIGURE_LEGENDS_CN.md#g4_r4_c_proper_score_controls",
+      "annotation_review": "figure_delivery/significance_connector_review_20261009"
+    },
+    {
+      "panel": "G4_R5_external_transfer",
+      "pdf": "../final_figures/G4_R5_external_transfer.pdf",
+      "svg": "../final_figures/G4_R5_external_transfer.svg",
+      "plot_data": "plot_data/G4_R5_external_transfer.tsv",
+      "data_sha256": "79c71f9ed40190834b1e0064b76c2020f6971ebd13ddb743634ef7c696cb11df",
+      "pdf_sha256": "2ec243bb1c3cacef292ab03ac05bee0e4efda90d4f058c55cbf72472c23dc2d4",
+      "svg_sha256": "6efd02bc5a79db655f56b048538fb1e18c34eab07ef490e97fe7e74de625f552",
+      "font": "Arial",
+      "dpi": 600,
+      "size_mm": [
+        154.517,
+        78.493
+      ],
+      "figure_legend": "FIGURE_LEGENDS_CN.md#g4_r5_external_transfer"
+    },
+    {
+      "panel": "G4_R5_nested_patient_means",
+      "pdf": "../final_figures/G4_R5_nested_patient_means.pdf",
+      "svg": "../final_figures/G4_R5_nested_patient_means.svg",
+      "plot_data": "plot_data/G4_R5_nested_patient_means.tsv",
+      "data_sha256": "eaa67efb84c7f74b87f08d4c95dde5f3fad69aecd9fa7e3906a73781155d4d34",
+      "pdf_sha256": "3e3f99ea272e4b801a4cbc16fa5077680b15af1f6f5fbda2998e394e4fba3a74",
+      "svg_sha256": "9dc89b18fa50108e88df433fbb0f0aed992235193ca0cf50dba0d99a4aaf77fa",
+      "font": "Arial",
+      "dpi": 600,
+      "size_mm": [
+        134.938,
+        79.728
+      ],
+      "figure_legend": "FIGURE_LEGENDS_CN.md#g4_r5_nested_patient_means"
+    },
+    {
+      "panel": "G4_finite_calibration_ablation",
+      "pdf": "../final_figures/G4_finite_calibration_ablation.pdf",
+      "svg": "../final_figures/G4_finite_calibration_ablation.svg",
+      "plot_data": "plot_data/G4_finite_calibration_ablation.tsv",
+      "data_sha256": "515f0c33a41a6a307a4b22b694baeef5bf7f0acb3246c82f12391a5694536678",
+      "pdf_sha256": "308657722c33749e850df8ae72e73f8021fb5fca2411193d55dd1fe1901af03a",
+      "svg_sha256": "3a7c027fdaf09616941205ab01a5219b75e59990d25a5c75fd212053dbd46df5",
+      "font": "Arial",
+      "dpi": 600,
+      "size_mm": [
+        138.81805555555553,
+        73.02499999999999
+      ],
+      "figure_legend": "FIGURE_LEGENDS_CN.md#g4_finite_calibration_ablation",
+      "annotation_review": "figure_delivery/significance_connector_review_20261009"
+    },
+    {
+      "panel": "G4_R6_attribution",
+      "pdf": "../final_figures/G4_R6_attribution.pdf",
+      "svg": "../final_figures/G4_R6_attribution.svg",
+      "plot_data": "plot_data/G4_R6_attribution.tsv",
+      "data_sha256": "4fbaa9fdf3891e45d9b897930c6acfd4d82b7047274c29e90124089b7dafbb86",
+      "pdf_sha256": "0783a5271f02f6b8159752f5f9d1b5bcb5aa197d7170b3481078c724840b59f6",
+      "svg_sha256": "e6e40b4f9fa2a844fb37620c3975ecb39f452a7ce61d72efa9370214067decec",
+      "supplementary_plot_data": [
+        {
+          "path": "plot_data/G4_R6_attribution_design_points.tsv",
+          "sha256": "60a5d2897e5d22ef9063f4b332cd82b0c55ec1035d3bc4ba8e993dc5e2a86d63"
+        }
+      ],
+      "font": "Arial",
+      "dpi": 600,
+      "size_mm": [
+        173.91944444444445,
+        90.4875
+      ],
+      "figure_legend": "FIGURE_LEGENDS_CN.md#g4_r6_attribution",
+      "annotation_review": "figure_delivery/significance_connector_review_20261009"
+    },
+    {
+      "panel": "G4_E1_multicohort_value",
+      "pdf": "../final_figures/G4_E1_multicohort_value.pdf",
+      "svg": "../final_figures/G4_E1_multicohort_value.svg",
+      "plot_data": "plot_data/G4_E1_multicohort_value.tsv",
+      "data_sha256": "a14842c47a43bdc4ab41aa37beac65868b8fc34f78fe072ab3a3ff948b9d3071",
+      "pdf_sha256": "f9a0071e6934a6bb8e250d912c2361257ce765f04b9caeced64c5e18bbae3cdc",
+      "svg_sha256": "08a2b10327b5640673523b8f85a412d5f67cd181878508bcc471afccff1b3cab",
+      "font": "Arial",
+      "dpi": 600,
+      "size_mm": [
+        170.5546519809299,
+        74.56080203586154
+      ],
+      "figure_legend": "FIGURE_LEGENDS_CN.md#g4_e1_multicohort_value"
+    },
+    {
+      "panel": "G4_E1_attribution_LUAD",
+      "pdf": "../final_figures/G4_E1_attribution_LUAD.pdf",
+      "svg": "../final_figures/G4_E1_attribution_LUAD.svg",
+      "plot_data": "plot_data/G4_E1_attribution_LUAD.tsv",
+      "data_sha256": "38dbaa81fd253b4e7fcdc46294a37ab40f094e63c2d7018ba1ddd4adb8e2497a",
+      "pdf_sha256": "f982e320493e4b7099f3137e0f12ca8b5c953ca05d135363313220aa382aca00",
+      "svg_sha256": "02eea9d2558c991d24a1bfda7eb3b5b41defd90543aa7d47a8c05e3603f52531",
+      "font": "Arial",
+      "dpi": 600,
+      "size_mm": [
+        172.98035447862412,
+        69.87116580539279
+      ],
+      "figure_legend": "FIGURE_LEGENDS_CN.md#g4_e1_attribution_luad"
+    },
+    {
+      "panel": "G4_E1_attribution_COAD",
+      "pdf": "../final_figures/G4_E1_attribution_COAD.pdf",
+      "svg": "../final_figures/G4_E1_attribution_COAD.svg",
+      "plot_data": "plot_data/G4_E1_attribution_COAD.tsv",
+      "data_sha256": "931dc0f9b9aed5283dff0ebbebdf5d4f185730a42d90728cdffcaeeacbbe0975",
+      "pdf_sha256": "fb6b00a869adc72130bf93398959e7dadb8fd882ddbd9171f1c73b8246655995",
+      "svg_sha256": "a5c674558238d394aa2b225493016e01ec1f9ff612d211dbbe90597fdd5c3f7e",
+      "font": "Arial",
+      "dpi": 600,
+      "size_mm": [
+        172.98035447862412,
+        69.87116580539279
+      ],
+      "figure_legend": "FIGURE_LEGENDS_CN.md#g4_e1_attribution_coad"
+    },
+    {
+      "panel": "G4_BIO_01_later_lineage",
+      "pdf": "../final_figures/G4_BIO_01_later_lineage.pdf",
+      "svg": "../final_figures/G4_BIO_01_later_lineage.svg",
+      "plot_data": "plot_data/G4_BIO_01_later_lineage.tsv",
+      "data_sha256": "481d169ed1da0120254b57ca4682caf7f3b6178af9ab5d804e3c90481d81c45e",
+      "pdf_sha256": "63e384a1c7355a1ed2b0bca869e01002cb057840a756ea5ad5b661553c767c99",
+      "svg_sha256": "d70262c81d8b5bb9b78ef48de682db5a86d5e9efa15867ae9abe37da5fcddfee",
+      "font": "Arial",
+      "dpi": 600,
+      "size_mm": [
+        75.47177847222223,
+        73.43021819444444
+      ],
+      "figure_legend": "FIGURE_LEGENDS_CN.md#g4_bio_01_later_lineage"
+    }
+  ],
+  "experiment_data": [
+    {
+      "path": "experiment_data/attribution_summary.tsv",
+      "sha256": "73c2ce7061a47387ac81ecee32aeeb32b727b5a74fcde982c37189a44fed4e44"
+    },
+    {
+      "path": "experiment_data/attribution_by_design.tsv",
+      "sha256": "9c84b95fc08bb77e88b18ebb8929d88a2c738a32ee006b2f2554f2344d9a4906"
+    },
+    {
+      "path": "experiment_data/internal_patient_summary.tsv",
+      "sha256": "fec93ed7d4c4c326c7ce3bf2220a14a4d402c5e842ac00bd35edc9247e3005da"
+    },
+    {
+      "path": "experiment_data/transport_interaction.tsv",
+      "sha256": "f06b7d4bc50edbf83ac84dc0477fd7ed1d4977e7aa3725878c76c6ca458684fa"
+    },
+    {
+      "path": "experiment_data/new_fit_raw.tsv",
+      "sha256": "ab8b403248ee9a4072f061c6a08e72c4ecb290193f3f8237b9ed5b762f4212be"
+    },
+    {
+      "path": "experiment_data/figure_tests.tsv",
+      "sha256": "4fbaa9fdf3891e45d9b897930c6acfd4d82b7047274c29e90124089b7dafbb86"
+    },
+    {
+      "path": "experiment_data/E1_confirmation_by_design.tsv",
+      "sha256": "f08fe8b4a252d9541f9d8df05ee624c6a8607c73dca84eff318398e340bceeb4"
+    },
+    {
+      "path": "experiment_data/E1_confirmation_records.tsv",
+      "sha256": "3befb17fd5a95d634170acaad93340b7dd1f933cd41d14b590146653bc2679d0"
+    },
+    {
+      "path": "experiment_data/E1_confirmation_transport.tsv",
+      "sha256": "7d7d85788d239e54d0a2e1a910b91e13e451c02cb115ca927bfc3473a725bd71"
+    },
+    {
+      "path": "experiment_data/E1_significance.tsv",
+      "sha256": "2e2eaa19e0e756238ba3388f97b8815a132a2854153722a115df73e040363f66"
+    },
+    {
+      "path": "experiment_data/E1_state_losses/confirmation_coad_silu_2022_CROSSVIEW_FAILURE_patient_losses.npz",
+      "sha256": "b9f87dbf035742402dd66de2d82b4ac355866dd163e13c99bc050079ea583e8d"
+    },
+    {
+      "path": "experiment_data/E1_state_losses/confirmation_coad_silu_2022_HETEROGENEOUS_patient_losses.npz",
+      "sha256": "921f8b25670708a672069f14d2501178efd66e47afd5ba77fc9945236db53b25"
+    },
+    {
+      "path": "experiment_data/E1_state_losses/confirmation_coad_silu_2022_REDUNDANT_patient_losses.npz",
+      "sha256": "e0e659eee557bb5b38f98b1c6b4a00cf02ac40f4068e57595420ea88fa1fc635"
+    },
+    {
+      "path": "experiment_data/E1_state_losses/confirmation_coadread_cass_2020_CROSSVIEW_FAILURE_patient_losses.npz",
+      "sha256": "2d3170d9ef028dde074f25229a3dfa0f504353a10ec513695fb6b20d631d39a2"
+    },
+    {
+      "path": "experiment_data/E1_state_losses/confirmation_coadread_cass_2020_HETEROGENEOUS_patient_losses.npz",
+      "sha256": "0fbf98ff60b55523dcfa3f78a01d6446d6e7276ab12b38f105e83183776658ea"
+    },
+    {
+      "path": "experiment_data/E1_state_losses/confirmation_coadread_cass_2020_REDUNDANT_patient_losses.npz",
+      "sha256": "da39520c5604de4998864c8885e1b57dc96f1742a2e8bf1d6e3a5f1cc7df0298"
+    },
+    {
+      "path": "experiment_data/E1_state_losses/confirmation_coadread_dfci_2016_CROSSVIEW_FAILURE_patient_losses.npz",
+      "sha256": "071de941e044cb1fff2ee3a5ce94b33fad8f72bebdc415ef913701dd77c64688"
+    },
+    {
+      "path": "experiment_data/E1_state_losses/confirmation_coadread_dfci_2016_HETEROGENEOUS_patient_losses.npz",
+      "sha256": "45a09093d763f42728986f3b7cdd640a583ba4c7e2cb1bc491a92b9cdc52293c"
+    },
+    {
+      "path": "experiment_data/E1_state_losses/confirmation_coadread_dfci_2016_REDUNDANT_patient_losses.npz",
+      "sha256": "e8fe1e61b36562406fe0ca3b7da4c45648580f05717dd971820879fdfe1c0ef0"
+    },
+    {
+      "path": "experiment_data/E1_state_losses/confirmation_coadread_genentech_CROSSVIEW_FAILURE_patient_losses.npz",
+      "sha256": "53904cf38cd79cfbe76c4992f168dbf989147c2fcc7c2677ec26344315a483fd"
+    },
+    {
+      "path": "experiment_data/E1_state_losses/confirmation_coadread_genentech_HETEROGENEOUS_patient_losses.npz",
+      "sha256": "5efdc0093fb2803dfadaa14acc5f97b0ab90853c21da5d45012775239ef1b16c"
+    },
+    {
+      "path": "experiment_data/E1_state_losses/confirmation_coadread_genentech_REDUNDANT_patient_losses.npz",
+      "sha256": "67587eba79460fade8043ad3de7e8eab0904a33b4a4f79607bcdd832e57939d6"
+    },
+    {
+      "path": "experiment_data/E1_state_losses/confirmation_luad_broad_CROSSVIEW_FAILURE_patient_losses.npz",
+      "sha256": "12a51c47c9453d8e446a01dc638632d59a8e00585771501cbad8b3ba9d66489b"
+    },
+    {
+      "path": "experiment_data/E1_state_losses/confirmation_luad_broad_HETEROGENEOUS_patient_losses.npz",
+      "sha256": "ecb5c9c2e8e44442fd7a5f6872a32e8fb73ac3197d48dc736933057d03f471eb"
+    },
+    {
+      "path": "experiment_data/E1_state_losses/confirmation_luad_broad_REDUNDANT_patient_losses.npz",
+      "sha256": "f34b18c694df06c91b4ca33d7496696b74388bf0e4c34a319300407430e126d1"
+    },
+    {
+      "path": "experiment_data/E1_state_losses/confirmation_luad_cas_2020_CROSSVIEW_FAILURE_patient_losses.npz",
+      "sha256": "ea93545c5605ca44c397a71701c9c35efbbcebcab5f59c4a7341c960ef4008bd"
+    },
+    {
+      "path": "experiment_data/E1_state_losses/confirmation_luad_cas_2020_HETEROGENEOUS_patient_losses.npz",
+      "sha256": "732fadc4d26f796b8ed4512ea3880faff48bf04be1b7d6bf8f4b62a09521e605"
+    },
+    {
+      "path": "experiment_data/E1_state_losses/confirmation_luad_cas_2020_REDUNDANT_patient_losses.npz",
+      "sha256": "00c7f021eb91920a3fe6e864698002c3572daa994b40388172a483a442d098ab"
+    },
+    {
+      "path": "experiment_data/E1_state_losses/confirmation_luad_cptac_2020_CROSSVIEW_FAILURE_patient_losses.npz",
+      "sha256": "7bd7928b89c1f0588eeb3e54d89c8d084ea36fe1e46fbec81c900f16cd002826"
+    },
+    {
+      "path": "experiment_data/E1_state_losses/confirmation_luad_cptac_2020_HETEROGENEOUS_patient_losses.npz",
+      "sha256": "b9dceebaf5f852ac58e6610a4d690af96cd9f12253f5be6bef8d92374b02222b"
+    },
+    {
+      "path": "experiment_data/E1_state_losses/confirmation_luad_cptac_2020_REDUNDANT_patient_losses.npz",
+      "sha256": "d521b86154ba6459ef53d38b94fde1dc930550abfd4703f59fb85c8c26bcb7ac"
+    },
+    {
+      "path": "experiment_data/E1_state_losses/confirmation_luad_oncosg_2020_CROSSVIEW_FAILURE_patient_losses.npz",
+      "sha256": "e512562c9cc2bec6f6602abd397255242c3ce4c1682c7d3a7427dd4f89960d44"
+    },
+    {
+      "path": "experiment_data/E1_state_losses/confirmation_luad_oncosg_2020_HETEROGENEOUS_patient_losses.npz",
+      "sha256": "ec94fe1f69cfcaa53a13a1b99b68b18d59df18a14fb0397363f84fd24fae5bfc"
+    },
+    {
+      "path": "experiment_data/E1_state_losses/confirmation_luad_oncosg_2020_REDUNDANT_patient_losses.npz",
+      "sha256": "39b43749e091e15627786ad19ddbcd90e3eb1ef5ab370abde0f190e3ac42d192"
+    },
+    {
+      "path": "experiment_data/E1_state_losses/confirmation_lung_nci_2022_CROSSVIEW_FAILURE_patient_losses.npz",
+      "sha256": "75903cea86253ff54e089d5ec610328378771cddfab5960d53317555fe47c0d0"
+    },
+    {
+      "path": "experiment_data/E1_state_losses/confirmation_lung_nci_2022_HETEROGENEOUS_patient_losses.npz",
+      "sha256": "75b1edd6d694c272d58f3141cae7d02a5ca95221787e008edc4eb81ef190d9a3"
+    },
+    {
+      "path": "experiment_data/E1_state_losses/confirmation_lung_nci_2022_REDUNDANT_patient_losses.npz",
+      "sha256": "89e588dcafee7ca27dd616360dab37a22388097bc1ae01fe2aa8a8818200b7d0"
+    },
+    {
+      "path": "experiment_data/BIO/configs/CTDNA_ASSAY_FREEZE.json",
+      "sha256": "ee3f7e77b8ea3db96ab238f6c0422a1d3e7240b9dd84b964f2a3ea56b1927ce5"
+    },
+    {
+      "path": "experiment_data/BIO/configs/CTDNA_FUTURE_SCORER_FREEZE.json",
+      "sha256": "875562e92ce73855502b191c38997cefd4813cbc439b689280fddbafc9426af8"
+    },
+    {
+      "path": "experiment_data/BIO/configs/CTDNA_PATIENT_SPLIT.tsv",
+      "sha256": "63c268cb4afdace7b830d270542b8c265506e47b19123ab14a7c1cf27626e424"
+    },
+    {
+      "path": "experiment_data/BIO/configs/CTDNA_SPLIT_EXTENSION.json",
+      "sha256": "49e435a83ad8d481d84b368ae419779e7d7f0a133ea8892cf1bfa861422044b2"
+    },
+    {
+      "path": "experiment_data/BIO/configs/DERIVED_INPUT_FREEZE.json",
+      "sha256": "65071af7b8e2f30020f6ca2920f8fd9f7c408daf85859aa79671f25a8647b0d6"
+    },
+    {
+      "path": "experiment_data/BIO/configs/PATIENT_SPLIT.tsv",
+      "sha256": "7342aa0dc54aea63614003d1ccace2f5c1e9842a79e0506f8e6293b8be803f22"
+    },
+    {
+      "path": "experiment_data/BIO/configs/PROTOCOL.json",
+      "sha256": "93bbb65ae6a09dfdd242b33d3b0fab07124c196f25804aa247c768f38fc1bbca"
+    },
+    {
+      "path": "experiment_data/BIO/configs/PROTOCOL_FREEZE.json",
+      "sha256": "19e0b91eba7f7b168632ecd2333a723b39d716986e22eeb884ddea1879b2a000"
+    },
+    {
+      "path": "experiment_data/BIO/configs/SOFTWARE_FREEZE.txt",
+      "sha256": "7c64ca6d211522868b3d57b8e4ef23edb015aa226af057ea247acc13be9d23fe"
+    },
+    {
+      "path": "experiment_data/BIO/metastasis/ASSESSMENT.json",
+      "sha256": "b482cf20a8f1a6d814cb742258e44201ff3245d2bee4230d582df64f6b63a210"
+    },
+    {
+      "path": "experiment_data/BIO/metastasis/SCORING_FREEZE.json",
+      "sha256": "388dd91a599c897ebf0f58cc63a8e0ce92f0aff4feecdef4b60983ed407b41b5"
+    },
+    {
+      "path": "experiment_data/BIO/metastasis/SUMMARY.tsv",
+      "sha256": "b08a51b72b1197f87112641b6dfb000c066a4a8b352e662565dfe2b6ed541f7f"
+    },
+    {
+      "path": "experiment_data/BIO/metastasis/confirmation_patients.tsv",
+      "sha256": "f18b921d8fd6fd2219ca5d0d2c7b0414701458bbda7d1f0ee663848e68a331bd"
+    },
+    {
+      "path": "experiment_data/BIO/metastasis/confirmation_raw.tsv.gz",
+      "sha256": "4e7163d508fafae1bc034d2a2adee2af00ca39d220cae641b407a5d2bd42e92c"
+    },
+    {
+      "path": "experiment_data/BIO/native_cluster_future_marker_support.tsv",
+      "sha256": "781d9f836a140c6014e74d0f3379e9579dd9a9a917bfec368a1ad18e8aae2e04"
+    }
+  ],
+  "method": {
+    "path": "METHOD.json",
+    "sha256": "7f1fea49f528e7d2abfe128cf125580a9d8dfa5d4d8cc99d4e87b11bad3c697e"
+  },
+  "figure_legends": {
+    "path": "FIGURE_LEGENDS_CN.md",
+    "sha256": "03f079f281c0e9a48c5a0438b722c1124a895fc446dbaf8c6cfd50d85af83222"
+  },
+  "figure_style": {
+    "font": "Arial",
+    "dpi": 600,
+    "format": [
+      "PDF",
+      "SVG"
+    ],
+    "vector": true
+  },
+  "current_documents": [
+    {
+      "path": "REPORT_CN.md",
+      "sha256": "7a1f383b4a5da5c5be13e8c6d42d48d108f08cce87fc58a297b78ff820c2a8b5"
+    },
+    {
+      "path": "EXPERIMENT_RESULTS.tsv",
+      "sha256": "3d797240de095d81bab2f6d7a09f4b8ca070f949359a56eb74b2e1aa4a9c259b"
+    },
+    {
+      "path": "BIOLOGICAL_VALIDATION_CN.md",
+      "sha256": "fcd7d3f697f7fdc5934a38e8a01386a01d7bcdff3ecabaa1e6cc91244aa162ad"
+    }
+  ]
+}

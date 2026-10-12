@@ -1,0 +1,27 @@
+{
+  "time": "2026-09-24T17:30:31.899881",
+  "frozen_before_new_audit_draws": true,
+  "reason": "Prediction mixture failed. New G4 direct-record experiment isolates same-patient joint-information contribution at equal actual assay cost, with an observable finite-cohort target; not replacement of natural theta truth.",
+  "cancers": [
+    "LUAD",
+    "COAD"
+  ],
+  "budgets": [
+    200,
+    400,
+    800
+  ],
+  "replicates": 500,
+  "target": "Event0/event1 joint frequency in the entire existing finite cancer-specific record cohort",
+  "cost": "one assay per event; separate2npatients oneeventeach vsjoint n patients twoeventseach",
+  "methods": [
+    "SEPARATE_SHARP",
+    "JOINT_EXACT",
+    "INDEPENDENCE_IMPUTATION"
+  ],
+  "alpha": 0.05,
+  "components": "Finite-population hypergeometric inversion; Bonferroni marginal bounds plus Frechet; existing statistics not a new estimator",
+  "source_history": "Previously explored, retrospective controlled revelation. Independent sampling seeds do not create an external cohort.",
+  "truth_visibility": "Only scorer sees population joint count; estimator input k,n,N only.",
+  "code_sha256": "268b85cf9ce04371f9135d8ba399ee77b9ce71adc177328781bc4ef921e45025"
+}

@@ -1,0 +1,65 @@
+{
+  "version": "R3",
+  "created": "2026-09-24T19:06:34.851781",
+  "seed": 2026092503,
+  "development_replicates": 100,
+  "evaluation_replicates": 500,
+  "g3": {
+    "effects": [
+      -0.8,
+      0,
+      0.8
+    ],
+    "biases": [
+      0,
+      0.5,
+      1
+    ],
+    "fractions": [
+      0.1,
+      0.25,
+      0.5
+    ],
+    "budgets": [
+      1000,
+      4000
+    ],
+    "methods": [
+      "XS_SOURCE",
+      "XS_JOINT",
+      "RANDOM_X",
+      "NO_CAL_NAIVE",
+      "NO_CAL_BOUND1"
+    ],
+    "interval": "Joint stratified MLE delta intervals; development-frozen global error multiplier; exact random-X sign baseline",
+    "sensitivity_unit": "source log odds ratio, not generator coefficient"
+  },
+  "g4": {
+    "designs": [
+      "REDUNDANT",
+      "HETEROGENEOUS",
+      "CROSSVIEW_FAILURE"
+    ],
+    "cancers": [
+      "LUAD",
+      "COAD"
+    ],
+    "development_replicates": 5,
+    "evaluation_replicates": 50,
+    "candidate_pseudocounts": [
+      1,
+      4,
+      16,
+      64
+    ],
+    "method": "Penalized saturated fusion with source independence shrinkage; selected using training/calibration only"
+  },
+  "g5": {
+    "natural": "Leave-panel-out predictive Dirichlet transfer shrinkage, hyperparameters trained on training-panel counts; original heldout roles retained",
+    "reliability": "Separate likelihood-ratio calibration from final simulator evaluation; original target and misspecification scenarios retained"
+  },
+  "exclusions": "No effect-based data exclusions; both cancers, all scenarios and failures retained",
+  "evaluation_scope": "New simulation streams; real patients previously explored, not external replication",
+  "stopping": "One bounded development/evaluation cycle; no score-triggered optional sampling",
+  "figure": "PDF SVG 600dpi six requested colors; actual reference review before drawing"
+}

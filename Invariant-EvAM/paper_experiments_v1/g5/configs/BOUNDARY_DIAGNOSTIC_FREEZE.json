@@ -1,0 +1,17 @@
+{
+  "bounds": [
+    4.5,
+    6.0
+  ],
+  "specs": [
+    "IDENTITY_SHARED",
+    "BURDEN_SELECTION_SHARED",
+    "PRESPECIFIED_GENE_SELECTION",
+    "BOUNDED_BIOLOGY"
+  ],
+  "reason": "Test whether constrained natural incompatibility / finite target signs depend on G2 prespecified search bounds; diagnosis after primary results, no replacement or tuning",
+  "time": "2026-09-24T13:37:46.104478",
+  "files": {
+    "paper_experiments_v1/g5/src/g5_boundary_audit.py": "727725c2a82e09565a9205756715e557e95a5cdd6970ccf7c106aa8d85f8da50"
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "protocol_version": "1.2",
+  "status": "FROZEN",
+  "frozen_before_stress_outcomes": true,
+  "rule": "two rare and two high-frequency draws per core model; no performance screening",
+  "file": "paper_experiments_v1/shared/parameter_library_stress_v1_2.tsv",
+  "sha256": "462ba3850544161eaee04825bcf68cdf0bd5d032b017f909ec6e2d2075751ffb",
+  "bytes": 3646
+}

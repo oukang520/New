@@ -1,0 +1,10 @@
+panel	study	n_patients	p_raw	gain	test	family_size	unit	p_holm	label
+G4_E1_multicohort_value	luad_oncosg_2020	207	2e-05	0.0076342502617134	two-sided paired mean sign-flip; symmetric-null assumption	9	independent confirmation patient; frozen ensemble averaged first	0.00018	***
+G4_E1_multicohort_value	luad_cas_2020	76	2e-05	0.0125110686943921	two-sided paired mean sign-flip; symmetric-null assumption	9	independent confirmation patient; frozen ensemble averaged first	0.00018	***
+G4_E1_multicohort_value	luad_cptac_2020	78	4e-05	0.0146808148522865	two-sided paired mean sign-flip; symmetric-null assumption	9	independent confirmation patient; frozen ensemble averaged first	0.0002	***
+G4_E1_multicohort_value	luad_broad	124	2e-05	0.0124469593675569	two-sided paired mean sign-flip; symmetric-null assumption	9	independent confirmation patient; frozen ensemble averaged first	0.00018	***
+G4_E1_multicohort_value	lung_nci_2022	129	0.12762	0.0018760583944053	two-sided paired mean sign-flip; symmetric-null assumption	9	independent confirmation patient; frozen ensemble averaged first	0.25524	ns
+G4_E1_multicohort_value	coad_silu_2022	195	0.00144	0.0099019611665689	two-sided paired mean sign-flip; symmetric-null assumption	9	independent confirmation patient; frozen ensemble averaged first	0.00432	**
+G4_E1_multicohort_value	coadread_dfci_2016	427	2e-05	0.0170822214146494	two-sided paired mean sign-flip; symmetric-null assumption	9	independent confirmation patient; frozen ensemble averaged first	0.00018	***
+G4_E1_multicohort_value	coadread_genentech	54	0.0003	0.0256915226280755	two-sided paired mean sign-flip; symmetric-null assumption	9	independent confirmation patient; frozen ensemble averaged first	0.0012	**
+G4_E1_multicohort_value	coadread_cass_2020	93	0.64974	0.00166977101191	two-sided paired mean sign-flip; symmetric-null assumption	9	independent confirmation patient; frozen ensemble averaged first	0.64974	ns

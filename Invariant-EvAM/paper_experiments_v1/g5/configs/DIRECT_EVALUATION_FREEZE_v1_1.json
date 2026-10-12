@@ -1,0 +1,12 @@
+{
+  "version": "1.1",
+  "time": "2026-09-24T13:30:50.526054",
+  "rationale": "Avoid conditioning source calibration by excluding selected future additions; disjoint outcome-independent pools",
+  "change": "Direct evaluation only, purpose622; equal random source pool split before conditioning on S",
+  "core_original_files_unchanged": true,
+  "direct_results_seen": 0,
+  "development_checks": "Disjoint patient indices, base100; no strategy scores",
+  "files": {
+    "paper_experiments_v1/g5/src/g5_direct_evaluator_v1_1.py": "8968847e6acec7ceaff3b2ebf73ed79c3a882b1735bdd3d39e9ea13feedbb202"
+  }
+}

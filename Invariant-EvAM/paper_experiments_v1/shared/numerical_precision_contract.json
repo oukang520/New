@@ -1,0 +1,20 @@
+{
+  "protocol_version": "1.0",
+  "status": "FROZEN",
+  "dtype": "float64",
+  "rank_rtol": 1e-08,
+  "rank_rtol_sensitivity": [
+    1e-06,
+    1e-07,
+    1e-09,
+    1e-10
+  ],
+  "probability_floor": 1e-12,
+  "finite_difference_steps": [
+    1e-05,
+    1e-06,
+    1e-07
+  ],
+  "rank_interpretation": "numerical diagnostic, not theorem",
+  "zero_count_rule": "retain model-positive cells"
+}

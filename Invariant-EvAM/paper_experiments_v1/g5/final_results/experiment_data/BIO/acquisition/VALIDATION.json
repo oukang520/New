@@ -1,0 +1,34 @@
+{
+  "status": "PASS",
+  "confirmation_rows": 36675,
+  "all_cost_cells": 9,
+  "methods_per_case": 5,
+  "perturbations_per_patient": 5,
+  "paired_confirmation_patients": {
+    "ALL_NSCLC": 106,
+    "LUAD": 57
+  },
+  "zero_branch_reference_patients": {
+    "ALL_NSCLC": 4,
+    "LUAD": 2
+  },
+  "source_code_unchanged_from_predevelopment_freeze": true,
+  "confirmation_action_hash_matches": true,
+  "no_confirmation_fit_patients": true,
+  "no_reselection": true,
+  "primary_tests": "TWO_SIDED_PATIENT_PAIRED_SIGN_FLIP;EXACT_WHEN_NONZERO_PATIENT_N_LE_18_ELSE100000;HOLM3",
+  "primary_ci": "2000_PATIENT_BOOTSTRAP;CONDITIONAL_ON_FROZEN_DEVELOPMENT_FITS",
+  "native_source_hashes_match_protocol": {
+    "field_missingness.tsv.gz": true,
+    "mutations.tsv.gz": true,
+    "tree_edges.tsv.gz": true,
+    "tree_mutation_clusters.tsv.gz": true,
+    "region_mutations.tsv.gz": true,
+    "tree_inventory.tsv.gz": true,
+    "patients.tsv.gz": true,
+    "tumours.tsv.gz": true
+  },
+  "all_fixed_plan_rows_verified": 91280,
+  "all_fixed_plan_patient_rotations": 5,
+  "development_confirmation_patient_overlap": 0
+}

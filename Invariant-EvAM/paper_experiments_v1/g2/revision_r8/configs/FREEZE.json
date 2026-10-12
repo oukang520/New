@@ -1,0 +1,28 @@
+{
+  "seed": 202609288,
+  "code": {
+    "run_g2.py": "9339ba97973a28ae570328f4539cc11f1c80edefb114e65e2c9e473e8002fb42",
+    "exact_target.py": "08882ae098da483f9109b49d94176eb933850efbad4fd18da59da5cca43aa9d0"
+  },
+  "designs": [
+    "strong",
+    "weak",
+    "nonidentifying"
+  ],
+  "n": [
+    1000,
+    4000,
+    16000
+  ],
+  "effects": [
+    -0.8,
+    0,
+    0.15,
+    0.8
+  ],
+  "evaluation_per_cell": 50,
+  "confidence": 0.95,
+  "subdivisions": 96,
+  "scope": "original sparse D3 topology and public selection families; closed A-B subsystem, global probability-set projection with floating-point geometry checks",
+  "primary": "coverage + finite fraction + correct/wrong answers; separate structural refusal and numerical failures; no requirement to beat classical profile in interval length"
+}

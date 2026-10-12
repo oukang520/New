@@ -1,0 +1,143 @@
+{
+  "status": "FROZEN_BEFORE_METHOD_DEVELOPMENT",
+  "source": "GENIE18.0-public",
+  "source_files": {
+    "/Users/oukang/Downloads/project/Rel_ObsHN/Data/AACR/AACR/data_clinical_patient.txt": {
+      "sha256": "7ff5d3ba943035a738d883cc1daa8557088d5debe1f4e3b3512b28b720af8904",
+      "bytes": 20077302
+    },
+    "/Users/oukang/Downloads/project/Rel_ObsHN/Data/AACR/AACR/data_clinical_sample.txt": {
+      "sha256": "2d59c34eb7ffd89465558f5682067948d3949b1d0f74a069f4fc4d0e04a86cd0",
+      "bytes": 37343800
+    },
+    "/Users/oukang/Downloads/project/Rel_ObsHN/Data/AACR/AACR/data_gene_matrix.txt": {
+      "sha256": "567cf00cc29985e163cf928743cb856a76eccdfb720764a79c26c62a8cde9e78",
+      "bytes": 13216493
+    },
+    "/Users/oukang/Downloads/project/Rel_ObsHN/Data/AACR/AACR/assay_information.txt": {
+      "sha256": "bc992cfacd463dbb739969079430c5f49ca1806e6d35435f37dcd189c3ca289f",
+      "bytes": 29000
+    },
+    "/Users/oukang/Downloads/project/Rel_ObsHN/Data/AACR/AACR/genomic_information.txt": {
+      "sha256": "4f9d609b355a0287fc230aae344c46f69e083513a2ad8feba041e3f08fc28354",
+      "bytes": 57658647
+    },
+    "/Users/oukang/Downloads/project/Rel_ObsHN/Data/AACR/AACR/manifest.csv": {
+      "sha256": "f4c89e9e81dd912ec044dce8b084042d277c384330781d62a7496638e69fa8dc",
+      "bytes": 4949
+    },
+    "/Users/oukang/Downloads/project/Rel_ObsHN/Data/AACR/AACR/meta_study.txt": {
+      "sha256": "6489dfa2efcc39a0ee601d434682a8512911e4a2b7a99416e60c501e4ddb5a7e",
+      "bytes": 172
+    },
+    "/Users/oukang/Downloads/project/Rel_ObsHN/Data/AACR/AACR/meta_mutations_extended.txt": {
+      "sha256": "a1866a86a91a17a72d39cda9dd15f03d1da8d7f2b32a9134c62f6ce209e161bc",
+      "bytes": 291
+    },
+    "/Users/oukang/Downloads/project/Rel_ObsHN/Data/AACR/data_mutations_extended.txt": {
+      "sha256": "f85c1ab8ce4b1ca45edc820052ace4ee5889e94a9cad7212dcbcaa9defdb657a",
+      "bytes": 877861971
+    }
+  },
+  "patient_manifest_n": 211526,
+  "sample_manifest_n": 250018,
+  "modules": {
+    "LUAD": [
+      "TP53",
+      "KRAS",
+      "STK11",
+      "KEAP1"
+    ],
+    "COAD": [
+      "APC",
+      "TP53",
+      "KRAS",
+      "PIK3CA"
+    ],
+    "IDC": [
+      "PIK3CA",
+      "TP53",
+      "GATA3",
+      "CDH1"
+    ],
+    "PAAD": [
+      "KRAS",
+      "TP53",
+      "SMAD4",
+      "CDKN2A"
+    ]
+  },
+  "event_definition": "Reported nonsynonymous mutation row; SNV/indel only; no CNA/SV; no driver inference",
+  "variant_classes": [
+    "Missense_Mutation",
+    "Nonsense_Mutation",
+    "Frame_Shift_Del",
+    "Frame_Shift_Ins",
+    "In_Frame_Del",
+    "In_Frame_Ins",
+    "Splice_Site",
+    "Translation_Start_Site",
+    "Nonstop_Mutation"
+  ],
+  "observed_build_counts": {
+    "GRCh37": 54956
+  },
+  "observed_variant_classes": {
+    "Missense_Mutation": 36847,
+    "Frame_Shift_Del": 6484,
+    "Nonsense_Mutation": 5129,
+    "Splice_Site": 1959,
+    "Frame_Shift_Ins": 2476,
+    "In_Frame_Del": 1100,
+    "In_Frame_Ins": 269,
+    "3'Flank": 123,
+    "5'Flank": 213,
+    "Nonstop_Mutation": 39,
+    "Translation_Start_Site": 62,
+    "Splice_Region": 96,
+    "5'UTR": 25,
+    "3'UTR": 14,
+    "Intron": 110,
+    "Silent": 10
+  },
+  "observed_variant_types": {
+    "SNP": 43449,
+    "DEL": 8141,
+    "INS": 2855,
+    "DNP": 424,
+    "TNP": 56,
+    "ONP": 31
+  },
+  "n_selected_mutation_rows": 54956,
+  "negative_contract": "PANEL_ONLY_PROXY_NEGATIVE_NOT_VERIFIED",
+  "eligibility": {
+    "min_n": 700,
+    "min_prevalence": 0.02,
+    "max_prevalence": 0.85,
+    "min_states": 8
+  },
+  "split": {
+    "LUAD": {
+      "train": 1345,
+      "calibration": 448,
+      "evaluation": 449,
+      "patient_key_manifest_sha256": "899953379e3fb3379c5533f987dc9ec7683616015b13ba2ac1a57a6ba8ec9137"
+    },
+    "COAD": {
+      "train": 857,
+      "calibration": 285,
+      "evaluation": 287,
+      "patient_key_manifest_sha256": "a605b8db2640263c291bcec9a386258d12552ccc1941dc4dbd77be037dd001bd"
+    }
+  },
+  "private_records_sha256": {
+    "LUAD": "0a1247c48cd53695fcb6a611482986311ae0675f135384e8c29ffebea8141cbb",
+    "COAD": "91b0019f8c4ee8712bd360336779119c4d70f368cf4a5a06252c7c7ad0e19663"
+  },
+  "selection_rules": "Primary + IMPACT468 + lexicographic sample per patient; include no-mutation-record samples; exclude only unknown assay/reference",
+  "changed_from_legacy": [
+    "retain no-mutation-row samples",
+    "nonsynonymous definition explicit rather than any reported gene row"
+  ],
+  "evaluation_use": "Only qualification summaries; no fitting, tuning or scoring"
+}

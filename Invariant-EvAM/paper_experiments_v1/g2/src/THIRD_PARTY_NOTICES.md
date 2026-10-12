@@ -1,0 +1,3 @@
+`lbfgsb_direct.py` is a reduced analytic-gradient adapter derived from the installed SciPy1.13.1 `_minimize_lbfgsb` wrapper and invokes the same underlying L-BFGS-B kernel. SciPy's bundled license and third-party notices are retained in `SCIPY_LICENSE_FOR_LBFGSB_ADAPTER.txt`.
+
+The official mhn1.2.3 distribution and LearnMHN source snapshot are retained in g2/vendor with their MIT license. The checkpointed source commit and isolated package versions are documented in the fairness audit and EXECUTION_ENVIRONMENT.json. The new CTMC/absorption C kernels are local implementations, verified against the reference Python/official probabilities and derivatives.

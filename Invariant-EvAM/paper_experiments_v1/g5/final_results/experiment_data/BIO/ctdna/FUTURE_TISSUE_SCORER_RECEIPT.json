@@ -1,0 +1,24 @@
+{
+  "status": "DESCRIPTIVE_SCORER_EXECUTED",
+  "code_sha256": "c0e7cad131c993422cb36ac7148e9487749e8c656600585a8e889bdb04cbe8b7",
+  "scorer_freeze_sha256": "875562e92ce73855502b191c38997cefd4813cbc439b689280fddbafc9426af8",
+  "assay_marker_choices_changed": false,
+  "primary_family_changed": false,
+  "scope": "Root-authorized secondary descriptive tissue-supported lineage scorer; no change to primary family or marker choices",
+  "source_hashes": {
+    "data/metastasis_audit/native_cluster_future_marker_support.tsv": "781d9f836a140c6014e74d0f3379e9579dd9a9a917bfec368a1ad18e8aae2e04",
+    "data/metastasis_audit/metastasis_regions.tsv": "a93c619684262ef5eead2b73b337894c860249cdc8955332e6535adb5240803c",
+    "data/native_audit/branch_reference.tsv": "28c1abad7dee6c026dbdff79726850cf6d50bf51598e710889a2b3038a5a1c49",
+    "data/native_audit/patient_primary_tumour.tsv": "c81d1dfe73a76674282e9c80f2e5ac309760bf2c651ef73f8f1aa058a61718aa",
+    "results/ctdna/PATIENT_RECALL.tsv": "81fb70dbf5b7fed46813be0991171ebdb8cd0b4b982343b0742f02b4320df77a",
+    "results/ctdna/SAMPLE_DETECTIONS.tsv.gz": "d1667673d014e0a3c57a7a48147d44f482738799f917f7550ea2b601ba4c0419",
+    "results/ctdna/CLONE_DETECTIONS.tsv.gz": "c4e59250371d141c022f13feef7e300ac9fd8b4226448e6ae675981ae73ea585",
+    "results/ctdna/SURGERY_ONLY_MARKER_LIBRARY.tsv.gz": "b9940150863a43526aeb1bebb64fbff4de68bf3ce140a119586b5ff06a7e4b1e"
+  },
+  "outputs": {
+    "FUTURE_TISSUE_SUMMARY.tsv": "8d431cc2b103d4c71fdc3703d0d2ae86cfe859665194b749f277eb549cedd775",
+    "FUTURE_TISSUE_PATIENT_SCORES.tsv": "ee3f694ece8e29739feb7da30930da8ccfc88b5114aa78bdc920428c0a4d6839",
+    "FUTURE_TISSUE_TARGETS.tsv": "c40c415f66b79c4599a9f4d4b8a235d5ccb992c483eb63cca5eb038b794fc7eb",
+    "FUTURE_TISSUE_TARGET_SUPPORT.tsv": "833948c49b442008d27ff7a77b096c377f58d499db8a502975f273aa5466112e"
+  }
+}

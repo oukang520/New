@@ -1,0 +1,8 @@
+method_id	method	information	interval_type	comparison_role
+B1	Panel-aware pooled	selection omitted; masks marginalized	WALD_EXPLORATORY	INFORMATION_ABLATION
+B2	Per-environment fit + meta	same public operators; refuse meta when target null leakage	WALD_EXPLORATORY	SAME_INFORMATION
+B3	Hierarchical shared model	same operators; penalized environment deviation lambda=1	PENALIZED_APPROXIMATION	REGULARIZED
+B4	Biased-distribution fusion -> CTMC	nonparametric joint likelihood + KL projection; propagated compatible-set profile	LOCAL_PROFILE_EXPLORATORY	SAME_INFORMATION
+B5	Same-likelihood joint estimator	exactly same joint fit object as M	WALD_EXPLORATORY	SAME_INFORMATION
+M	Invariant-EvAM	joint fit + profile grid + boundary and sign decision	LOCAL_PROFILE_EXPLORATORY	SAME_INFORMATION
+B6	Official oMHN matched observation-event substudy	separate clinical-observation endpoint	PENDING_SUBSTUDY	NO_CROSS_ENDPOINT_RANKING

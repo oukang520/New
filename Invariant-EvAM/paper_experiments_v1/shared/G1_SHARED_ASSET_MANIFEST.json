@@ -1,0 +1,44 @@
+{
+  "protocol_version": "1.0",
+  "status": "FROZEN",
+  "frozen_at": "2026-09-23",
+  "files": {
+    "paper_experiments_v1/shared/MODEL_CONTRACT.json": {
+      "sha256": "dbd05a53d4839458753d46cee5d2d59d95d0083bcdfc7d63286f4dd708ed59c0",
+      "bytes": 2016
+    },
+    "paper_experiments_v1/shared/event_dictionary.tsv": {
+      "sha256": "b33eeb03ccafb84ee054b3eca07e166c0f800b8c226abc5b440d5c7693e719af",
+      "bytes": 1345
+    },
+    "paper_experiments_v1/shared/parameter_dictionary.tsv": {
+      "sha256": "55ad007b246d56e66cb57af2406aeade0e3196217a7f067456edd3b6fd6c739a",
+      "bytes": 3883
+    },
+    "paper_experiments_v1/shared/target_registry.tsv": {
+      "sha256": "931fabccb56ef15cb5d8ee4c7a3fa564ea644b4d8f677cbd6d860a9d30bda3cc",
+      "bytes": 5966
+    },
+    "paper_experiments_v1/shared/parameter_library.tsv": {
+      "sha256": "ade544532b904f52e60a2b3028cea0c767947723d28ba696ed125b07dd7d7db6",
+      "bytes": 65267
+    },
+    "paper_experiments_v1/shared/operator_library.json": {
+      "sha256": "72d0cec3d9f01378d48b4d623de11e973fde1041ad0ba96f11cbb762825dc01a",
+      "bytes": 43855
+    },
+    "paper_experiments_v1/shared/design_registry.tsv": {
+      "sha256": "8cd7361a2fa2fa8ff7486c254ce51f0e47f4b76044b3b30b7b8b9c9ffefad5f3",
+      "bytes": 16327
+    },
+    "paper_experiments_v1/shared/numerical_precision_contract.json": {
+      "sha256": "87a5bede542b45466aef9e633fab7003196386e5b55613355dfb82ec55a547ac",
+      "bytes": 387
+    },
+    "paper_experiments_v1/g1/configs/g1_protocol_v1.json": {
+      "sha256": "fd7ebce9ec0f570601408e894d1981deec2ec98e0450bc652a8dc33497c6e5ab",
+      "bytes": 2778
+    }
+  },
+  "freeze_rule": "confirmation outcomes were not computed before this manifest"
+}

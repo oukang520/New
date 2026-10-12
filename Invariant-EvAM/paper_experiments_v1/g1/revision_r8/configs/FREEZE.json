@@ -1,0 +1,26 @@
+{
+  "seed": 202609288,
+  "code": {
+    "run_g1.py": "5a9641192d65a17fd3849213abc13c1dccfe1705c64db69f974ccffa1dd96751",
+    "complex_geometry.py": "db47a4ac0bdfd560112a3a4226065e8d28e220aa03295b48a689304390f8797d"
+  },
+  "dimensions": [
+    3,
+    4,
+    6,
+    8
+  ],
+  "topologies": [
+    "CHAIN",
+    "DENSE_DAG",
+    "FULL"
+  ],
+  "regimes": [
+    "ordinary",
+    "rare",
+    "strong"
+  ],
+  "evaluation_draws": 10,
+  "scope": "regular-local population geometry, not global uniqueness or finite-sample coverage",
+  "all_designs_retained": true
+}

@@ -1,0 +1,4 @@
+environment	n_samples_before_dedup	n_patients	complete_proxy_n	no_mutation_rows	supported_states	natural_training_n	heldout_calibration_n	heldout_evaluation_n	strict_callable_negative_n	heldout_split_used	g4_train_n	g4_calibration_n	g4_evaluation_n
+MSK-IMPACT468	2506	2242	2242	77	16	1345			0	False	1345.0	448.0	449.0
+MSK-IMPACT410	762	685	685	24	16	685	137.0	548.0	0	True			
+MSK-IMPACT505	2485	1993	1993	79	16	1993	398.0	1595.0	0	True			

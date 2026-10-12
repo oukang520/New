@@ -1,0 +1,21 @@
+{
+  "version": "CTDNA_FUTURE_TISSUE_SCORER_V1",
+  "created_utc": "2026-10-09T14:56:39.422275+00:00",
+  "status": "FROZEN_AFTER_ASSAY_REPLAY_BEFORE_FUTURE_TARGET_COMPARISON",
+  "scope": "Root-authorized secondary descriptive tissue-supported lineage scorer; no change to primary family or marker choices",
+  "source_hashes": {
+    "data/metastasis_audit/native_cluster_future_marker_support.tsv": "781d9f836a140c6014e74d0f3379e9579dd9a9a917bfec368a1ad18e8aae2e04",
+    "data/metastasis_audit/metastasis_regions.tsv": "a93c619684262ef5eead2b73b337894c860249cdc8955332e6535adb5240803c",
+    "data/native_audit/branch_reference.tsv": "28c1abad7dee6c026dbdff79726850cf6d50bf51598e710889a2b3038a5a1c49",
+    "data/native_audit/patient_primary_tumour.tsv": "c81d1dfe73a76674282e9c80f2e5ac309760bf2c651ef73f8f1aa058a61718aa",
+    "results/ctdna/PATIENT_RECALL.tsv": "81fb70dbf5b7fed46813be0991171ebdb8cd0b4b982343b0742f02b4320df77a",
+    "results/ctdna/SAMPLE_DETECTIONS.tsv.gz": "d1667673d014e0a3c57a7a48147d44f482738799f917f7550ea2b601ba4c0419",
+    "results/ctdna/CLONE_DETECTIONS.tsv.gz": "c4e59250371d141c022f13feef7e300ac9fd8b4226448e6ae675981ae73ea585",
+    "results/ctdna/SURGERY_ONLY_MARKER_LIBRARY.tsv.gz": "b9940150863a43526aeb1bebb64fbff4de68bf3ce140a119586b5ff06a7e4b1e"
+  },
+  "truth": "Exact patient/tumour primary-only native cluster mapping via owned variant coordinates to future corrected tree; require nontrunk, eligible native reference>=3, metachronousMet tissue, and audited multimarker_future_lineage_support=True (same future region >=3 shared own positive markers with depth>=20,alt>=3). Author multimarker seeding support is an additional separately labeled target endpoint, not lineage-theta equivalence.",
+  "plasma_detection": "Already frozen >=2 positive owned markers from saved CLONE_DETECTIONS; no new threshold or plasma rerun; selected-only if supported by independent future tissue may count for this descriptive endpoint, primary whole-reference recall unchanged.",
+  "capacity": "Future targets with >=2 valid surgical PSP markers count as plasma-measurable; targets below2 remain denominator/capacity table, not removed. Patients with no paired future tissue or no eligible target remain explicit NA, not biological negative or zero success.",
+  "time": "All postoperative detection union plus secondary before true Table8 recurrence only. Never invent dates for patients with future tissue but no explicit Table8 recurrence date.",
+  "statistics": "Patient-level descriptive means only; report dev/confirmation and sourcepair/target/capacity/available plasma counts; no new confirmatory family, no tuning."
+}

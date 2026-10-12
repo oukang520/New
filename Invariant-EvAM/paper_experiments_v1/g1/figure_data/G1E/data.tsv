@@ -1,0 +1,5 @@
+model_id	parameter_count	source_rank	source_nullity	primary_identified_fraction	n_draws
+D3_FULL9	9	7.0	2.0	0.0	60
+D3_SPARSE5	5	5.0	0.0	1.0	60
+D4_FULL16	16	15.0	1.0	0.0	60
+D4_SPARSE10	10	10.0	0.0	1.0	60

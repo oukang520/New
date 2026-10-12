@@ -1,0 +1,14 @@
+{
+  "status": "FROZEN_BEFORE_DEVELOPMENT_OUTCOME_FIT",
+  "code_sha256": "6a243d444f34fe4cafd63b60cf6911d22aa9039f47398145cf4d470fb8f514ec",
+  "protocol_sha256": "93bbb65ae6a09dfdd242b33d3b0fab07124c196f25804aa247c768f38fc1bbca",
+  "ridge_alpha": 10.0,
+  "prior_pseudocount": 0.5,
+  "kernel_total_row_pseudocount": 0.5,
+  "primary_branch_scoring": "AT_LEAST_THREE_BRANCH_OWNED_POSITIVE_MARKERS_CO_DETECTED_IN_AN_EXPOSED_REGION;RECALL_ADDITIONAL_OVER_ALL_SUPPORTED_PRIMARY_NONTRUNK_BRANCHES",
+  "populations": [
+    "LUAD",
+    "ALL_NSCLC"
+  ],
+  "method_selection": "FIXED_BEFORE_CONFIRMATION;NO_TUNING_FROM_CONFIRMATION"
+}

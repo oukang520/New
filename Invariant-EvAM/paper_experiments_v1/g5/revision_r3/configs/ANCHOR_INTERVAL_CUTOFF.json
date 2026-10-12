@@ -1,0 +1,25 @@
+{
+  "cutoff": 5.358333052348826,
+  "development": [
+    {
+      "scenario": 0,
+      "n": 100,
+      "valid": 100,
+      "q95": 3.8795845436907257
+    },
+    {
+      "scenario": 1,
+      "n": 100,
+      "valid": 100,
+      "q95": 5.358333052348826
+    },
+    {
+      "scenario": 2,
+      "n": 100,
+      "valid": 100,
+      "q95": 4.0702420172438
+    }
+  ],
+  "rule": "Maximum 95% development LR quantile, at least chi-square 95% cutoff; empirical validation required",
+  "code_sha256": "e6755811c113461e53d65fde66f66c5c471624dbd66026a435312aba19803245"
+}

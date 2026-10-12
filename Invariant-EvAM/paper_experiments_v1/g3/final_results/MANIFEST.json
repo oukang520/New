@@ -1,0 +1,184 @@
+{
+  "group": "g3",
+  "panels": [
+    {
+      "panel": "G3_01",
+      "pdf": "../final_figures/G3_01.pdf",
+      "svg": "../final_figures/G3_01.svg",
+      "plot_data": "plot_data/G3_01.tsv",
+      "data_sha256": "9fdf66decd5abeff714832a2b08874da4709d87f361f825f18300719b1f5aea8",
+      "pdf_sha256": "523adec7669f090dabad86a9aae711925d4e820019e685de19b38a2ce5f3e84a",
+      "svg_sha256": "1898c4f6dc03c155ea5c0baab02517d218be120f53c1b49dff736205ba25e992",
+      "font": "Arial",
+      "dpi": 600,
+      "size_mm": [
+        163.865,
+        82.374
+      ],
+      "figure_legend": "FIGURE_LEGENDS_CN.md#g3_01"
+    },
+    {
+      "panel": "G3_05",
+      "pdf": "../final_figures/G3_05.pdf",
+      "svg": "../final_figures/G3_05.svg",
+      "plot_data": "plot_data/G3_05.tsv",
+      "data_sha256": "1fccd97a082a259f8392effa0701b3845cdc32356093d950b40ffb25fb78ec41",
+      "pdf_sha256": "fd26f35affb1a2035159719b85b27626c4cbedcec0a7a5d205f812fa0a3f6706",
+      "svg_sha256": "ffb95c72201a9f0bce05055b205f22b954060d010275f437390ad535d09ac84f",
+      "font": "Arial",
+      "dpi": 600,
+      "size_mm": [
+        103.717,
+        107.774
+      ],
+      "figure_legend": "FIGURE_LEGENDS_CN.md#g3_05"
+    },
+    {
+      "panel": "G3_06",
+      "pdf": "../final_figures/G3_06.pdf",
+      "svg": "../final_figures/G3_06.svg",
+      "plot_data": "plot_data/G3_06.tsv",
+      "data_sha256": "04ea13b9bbebb581e0b7b6cfbbeee9970177cee6208454f0d34329587feba605",
+      "pdf_sha256": "8d7fa566d7ad24962200d64ab28c9d1deaa331a95a75e6efaf319205c37b53e6",
+      "svg_sha256": "e33471ff54c4dc47371ead7b0e7bae387a81130c0d652f4f4fc8cf70cf7f4e52",
+      "supplementary_plot_data": [
+        {
+          "path": "plot_data/G3_06_density.tsv",
+          "sha256": "76216f208c804c3d7e3cf6f3e7d17a05711ce01ee59c87d0ecc05ed20c9c4cc5"
+        }
+      ],
+      "font": "Arial",
+      "dpi": 600,
+      "size_mm": [
+        120.121,
+        118.886
+      ],
+      "figure_legend": "FIGURE_LEGENDS_CN.md#g3_06"
+    },
+    {
+      "panel": "G3_07",
+      "pdf": "../final_figures/G3_07.pdf",
+      "svg": "../final_figures/G3_07.svg",
+      "plot_data": "plot_data/G3_07.tsv",
+      "data_sha256": "a9084998c2cce5a1a6cd8842c278605b2d88367f8e687c4833a0725595659be4",
+      "pdf_sha256": "aeac8dc754398488d4da9124f84c7ac7b3b52ccd5085a8da8a930b2f8127d84e",
+      "svg_sha256": "284ec60c7cf1c9ce15628a629956c0e622597e9d7dace16e391087f90f569644",
+      "font": "Arial",
+      "dpi": 600,
+      "size_mm": [
+        113.947,
+        90.84
+      ],
+      "figure_legend": "FIGURE_LEGENDS_CN.md#g3_07"
+    },
+    {
+      "panel": "G3_R2_bias_0",
+      "pdf": "../final_figures/G3_R2_bias_0.pdf",
+      "svg": "../final_figures/G3_R2_bias_0.svg",
+      "plot_data": "plot_data/G3_R2_bias_0.tsv",
+      "data_sha256": "85b8d73e7b68391197776529e2c094e1fcceaa1689f9925ad46e0a3a747913f7",
+      "pdf_sha256": "ca954d1e4fde51faad7cc6c350462150140aba8cdc5609ec0dbb75a6b7391382",
+      "svg_sha256": "79ea5fbaf4334473413ba5a2408085abc6cbf375d271d1290a89ea86939e9d65",
+      "font": "Arial",
+      "dpi": 600,
+      "size_mm": [
+        136.525,
+        98.249
+      ],
+      "figure_legend": "FIGURE_LEGENDS_CN.md#g3_r2_bias_0"
+    },
+    {
+      "panel": "G3_R2_bias_0p8",
+      "pdf": "../final_figures/G3_R2_bias_0p8.pdf",
+      "svg": "../final_figures/G3_R2_bias_0p8.svg",
+      "plot_data": "plot_data/G3_R2_bias_0p8.tsv",
+      "data_sha256": "d4c3db0464aceeee84a0881708efb9cacd78dd190c3f8873f35a274cd6063fca",
+      "pdf_sha256": "44b35ee7326e0136619ec79debf5fab1b01fd410f48e731c3ea6b8b03fafb63d",
+      "svg_sha256": "7161d93a5c83be4d91b342182ce172e0b2c12be22e4833d7b3de236161fd63e0",
+      "font": "Arial",
+      "dpi": 600,
+      "size_mm": [
+        136.525,
+        98.249
+      ],
+      "figure_legend": "FIGURE_LEGENDS_CN.md#g3_r2_bias_0p8"
+    },
+    {
+      "panel": "G3_R2_bias_neg0p8",
+      "pdf": "../final_figures/G3_R2_bias_neg0p8.pdf",
+      "svg": "../final_figures/G3_R2_bias_neg0p8.svg",
+      "plot_data": "plot_data/G3_R2_bias_neg0p8.tsv",
+      "data_sha256": "622d1227d0df228bcdc9a2028979f06a8b18283fa0e4cfee496ebec4ca75f873",
+      "pdf_sha256": "1dc24d5472743b89f3d0c279e0bc1aa5848e8e23651ba1c5308dfb90143b7241",
+      "svg_sha256": "f2898b20e21196df09f15780a6bdb6240d0fe468308b8afe684eaf53d1d2f98d",
+      "font": "Arial",
+      "dpi": 600,
+      "size_mm": [
+        136.525,
+        98.249
+      ],
+      "figure_legend": "FIGURE_LEGENDS_CN.md#g3_r2_bias_neg0p8"
+    },
+    {
+      "panel": "G3_R3_joint_cost1000",
+      "pdf": "../final_figures/G3_R3_joint_cost1000.pdf",
+      "svg": "../final_figures/G3_R3_joint_cost1000.svg",
+      "plot_data": "plot_data/G3_R3_joint_cost1000.tsv",
+      "data_sha256": "7ec4b875db225a714e2b1eba82a1d24c9a2d59af5781b3d98be8a7944fce9309",
+      "pdf_sha256": "04a408ade8c4a98f6b8aa7378dbe32553ebdcca2f4da6042f6e087e01d8274b5",
+      "svg_sha256": "55216ad5836e62ddea1c5a57c2d785c7e39c856c3b0d71345ba7bef13c763138",
+      "font": "Arial",
+      "dpi": 600,
+      "size_mm": [
+        135.114,
+        92.604
+      ],
+      "figure_legend": "FIGURE_LEGENDS_CN.md#g3_r3_joint_cost1000"
+    },
+    {
+      "panel": "G3_R3_joint_cost4000",
+      "pdf": "../final_figures/G3_R3_joint_cost4000.pdf",
+      "svg": "../final_figures/G3_R3_joint_cost4000.svg",
+      "plot_data": "plot_data/G3_R3_joint_cost4000.tsv",
+      "data_sha256": "6344e1d9a68e107525f97ea93285fa026cad8c69a65f917c5a9c3f2279de209d",
+      "pdf_sha256": "1138cbd2250bb01344e5711c5f71a074563517884750245c2be7d3d2e90e875d",
+      "svg_sha256": "ed46e027cf98e78ba5a8007a5cb29b170dbb2ee390600ee2b5d1f6c5cee2e4e0",
+      "font": "Arial",
+      "dpi": 600,
+      "size_mm": [
+        135.114,
+        92.604
+      ],
+      "figure_legend": "FIGURE_LEGENDS_CN.md#g3_r3_joint_cost4000"
+    },
+    {
+      "panel": "G3_R3_reference_anchor",
+      "pdf": "../final_figures/G3_R3_reference_anchor.pdf",
+      "svg": "../final_figures/G3_R3_reference_anchor.svg",
+      "plot_data": "plot_data/G3_R3_reference_anchor.tsv",
+      "data_sha256": "c4073c548fb6851465e0a009046e9d33f5a99e41f1e33ddb7292bcb90c56ac71",
+      "pdf_sha256": "deeb2fae268cd64c1bc97c9b49f93f5eaf37282215072c39e586eacffd0bfea1",
+      "svg_sha256": "b1010c04d7d29d1097243d64ff3dc895146a5578915257f35cc45c149c8d6b47",
+      "font": "Arial",
+      "dpi": 600,
+      "size_mm": [
+        135.819,
+        81.492
+      ],
+      "figure_legend": "FIGURE_LEGENDS_CN.md#g3_r3_reference_anchor"
+    }
+  ],
+  "figure_legends": {
+    "path": "FIGURE_LEGENDS_CN.md",
+    "sha256": "1a502d808ee09b89e2655439e4c02a65ba8975b6b627d5d7cda9d4ecec48fc95"
+  },
+  "figure_style": {
+    "font": "Arial",
+    "dpi": 600,
+    "format": [
+      "PDF",
+      "SVG"
+    ],
+    "vector": true
+  }
+}

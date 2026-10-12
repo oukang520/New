@@ -1,0 +1,919 @@
+[
+  {
+    "panel_id": "G2A_strong_correct_call_fraction",
+    "primary_reference_id": "R04",
+    "endpoint": "Correct sign calls / all replicates",
+    "source_data": "/Users/oukang/Desktop/投稿资料/fangxiang2/Invariant-EvAM/paper_experiments_v1/g2/figure_data/G2A_strong_correct_call_fraction.tsv",
+    "output_pdf": "/Users/oukang/Desktop/投稿资料/fangxiang2/Invariant-EvAM/paper_experiments_v1/g2/figures/G2A_strong_correct_call_fraction.pdf",
+    "output_svg": "/Users/oukang/Desktop/投稿资料/fangxiang2/Invariant-EvAM/paper_experiments_v1/g2/figures/G2A_strong_correct_call_fraction.svg",
+    "dpi": 600,
+    "size_mm": [
+      100,
+      82
+    ],
+    "palette": {
+      "M": "#0072B2",
+      "B5": "#56B4E9",
+      "B4": "#009E73",
+      "B3": "#E69F00",
+      "B2": "#D55E00",
+      "B1": "#CC79A7"
+    },
+    "adaptations": "Thin connected estimates, hollow markers, capped intervals and white space from R04. Discrete condition axis with disclosed small category offsets; no smoothing. Correct-call utility uses full probability range; wrong-call rates use a zero-based axis spanning all Monte Carlo intervals; coverage axis spans every displayed interval and the nominal line, no broken axes. Wilson 95% Monte Carlo intervals.",
+    "statistical_unit": "independent paired simulation replicate; fixed conditions",
+    "review_status": "awaiting_visual_review",
+    "data_sha256": "a1a73cb6862670111d5d2e7824f9bc7d8a6829453a1d199747cfe777ca750177",
+    "N": {
+      "observations_per_replicate": 1000,
+      "replicates_per_cell": 500
+    },
+    "uncertainty_definition": "Wilson 95% Monte Carlo intervals; endpoint denominator explicitly in data/caption",
+    "failure_handling": "All planned tasks retained; failures separate from scientific UNKNOWN; conditional and end-to-end coverage both exported"
+  },
+  {
+    "panel_id": "G2A_strong_wrong_call_fraction",
+    "primary_reference_id": "R04",
+    "endpoint": "Wrong sign calls / all replicates",
+    "source_data": "/Users/oukang/Desktop/投稿资料/fangxiang2/Invariant-EvAM/paper_experiments_v1/g2/figure_data/G2A_strong_wrong_call_fraction.tsv",
+    "output_pdf": "/Users/oukang/Desktop/投稿资料/fangxiang2/Invariant-EvAM/paper_experiments_v1/g2/figures/G2A_strong_wrong_call_fraction.pdf",
+    "output_svg": "/Users/oukang/Desktop/投稿资料/fangxiang2/Invariant-EvAM/paper_experiments_v1/g2/figures/G2A_strong_wrong_call_fraction.svg",
+    "dpi": 600,
+    "size_mm": [
+      100,
+      82
+    ],
+    "palette": {
+      "M": "#0072B2",
+      "B5": "#56B4E9",
+      "B4": "#009E73",
+      "B3": "#E69F00",
+      "B2": "#D55E00",
+      "B1": "#CC79A7"
+    },
+    "adaptations": "Thin connected estimates, hollow markers, capped intervals and white space from R04. Discrete condition axis with disclosed small category offsets; no smoothing. Correct-call utility uses full probability range; wrong-call rates use a zero-based axis spanning all Monte Carlo intervals; coverage axis spans every displayed interval and the nominal line, no broken axes. Wilson 95% Monte Carlo intervals.",
+    "statistical_unit": "independent paired simulation replicate; fixed conditions",
+    "review_status": "awaiting_visual_review",
+    "data_sha256": "3555981ed129bb7369e271ea0d0e325bbde33788e889bafa410ffc15a624bc5e",
+    "N": {
+      "observations_per_replicate": 1000,
+      "replicates_per_cell": 500
+    },
+    "uncertainty_definition": "Wilson 95% Monte Carlo intervals; endpoint denominator explicitly in data/caption",
+    "failure_handling": "All planned tasks retained; failures separate from scientific UNKNOWN; conditional and end-to-end coverage both exported"
+  },
+  {
+    "panel_id": "G2B_strong_conditional_coverage",
+    "primary_reference_id": "R04",
+    "endpoint": "Coverage / completed intervals",
+    "source_data": "/Users/oukang/Desktop/投稿资料/fangxiang2/Invariant-EvAM/paper_experiments_v1/g2/figure_data/G2B_strong_conditional_coverage.tsv",
+    "output_pdf": "/Users/oukang/Desktop/投稿资料/fangxiang2/Invariant-EvAM/paper_experiments_v1/g2/figures/G2B_strong_conditional_coverage.pdf",
+    "output_svg": "/Users/oukang/Desktop/投稿资料/fangxiang2/Invariant-EvAM/paper_experiments_v1/g2/figures/G2B_strong_conditional_coverage.svg",
+    "dpi": 600,
+    "size_mm": [
+      100,
+      82
+    ],
+    "palette": {
+      "M": "#0072B2",
+      "B5": "#56B4E9",
+      "B4": "#009E73",
+      "B3": "#E69F00",
+      "B2": "#D55E00",
+      "B1": "#CC79A7"
+    },
+    "adaptations": "Thin connected estimates, hollow markers, capped intervals and white space from R04. Discrete condition axis with disclosed small category offsets; no smoothing. Correct-call utility uses full probability range; wrong-call rates use a zero-based axis spanning all Monte Carlo intervals; coverage axis spans every displayed interval and the nominal line, no broken axes. Wilson 95% Monte Carlo intervals.",
+    "statistical_unit": "independent paired simulation replicate; fixed conditions",
+    "review_status": "awaiting_visual_review",
+    "data_sha256": "b4b4cb7ca1655b46c2909b3bcdf952beefb929df9b3f137f659d3240bc2ceffe",
+    "N": {
+      "observations_per_replicate": 1000,
+      "replicates_per_cell": 500
+    },
+    "uncertainty_definition": "Wilson 95% Monte Carlo intervals; endpoint denominator explicitly in data/caption",
+    "failure_handling": "All planned tasks retained; failures separate from scientific UNKNOWN; conditional and end-to-end coverage both exported"
+  },
+  {
+    "panel_id": "G2B_strong_end_to_end_covered_fraction",
+    "primary_reference_id": "R04",
+    "endpoint": "Covered intervals / all replicates",
+    "source_data": "/Users/oukang/Desktop/投稿资料/fangxiang2/Invariant-EvAM/paper_experiments_v1/g2/figure_data/G2B_strong_end_to_end_covered_fraction.tsv",
+    "output_pdf": "/Users/oukang/Desktop/投稿资料/fangxiang2/Invariant-EvAM/paper_experiments_v1/g2/figures/G2B_strong_end_to_end_covered_fraction.pdf",
+    "output_svg": "/Users/oukang/Desktop/投稿资料/fangxiang2/Invariant-EvAM/paper_experiments_v1/g2/figures/G2B_strong_end_to_end_covered_fraction.svg",
+    "dpi": 600,
+    "size_mm": [
+      100,
+      82
+    ],
+    "palette": {
+      "M": "#0072B2",
+      "B5": "#56B4E9",
+      "B4": "#009E73",
+      "B3": "#E69F00",
+      "B2": "#D55E00",
+      "B1": "#CC79A7"
+    },
+    "adaptations": "Thin connected estimates, hollow markers, capped intervals and white space from R04. Discrete condition axis with disclosed small category offsets; no smoothing. Correct-call utility uses full probability range; wrong-call rates use a zero-based axis spanning all Monte Carlo intervals; coverage axis spans every displayed interval and the nominal line, no broken axes. Wilson 95% Monte Carlo intervals.",
+    "statistical_unit": "independent paired simulation replicate; fixed conditions",
+    "review_status": "awaiting_visual_review",
+    "data_sha256": "ecf0be36bebbbaead70a0dde1d03c7aac93a96cc70ddbbd6669d4019650489b6",
+    "N": {
+      "observations_per_replicate": 1000,
+      "replicates_per_cell": 500
+    },
+    "uncertainty_definition": "Wilson 95% Monte Carlo intervals; endpoint denominator explicitly in data/caption",
+    "failure_handling": "All planned tasks retained; failures separate from scientific UNKNOWN; conditional and end-to-end coverage both exported"
+  },
+  {
+    "panel_id": "G2A_weak_correct_call_fraction",
+    "primary_reference_id": "R04",
+    "endpoint": "Correct sign calls / all replicates",
+    "source_data": "/Users/oukang/Desktop/投稿资料/fangxiang2/Invariant-EvAM/paper_experiments_v1/g2/figure_data/G2A_weak_correct_call_fraction.tsv",
+    "output_pdf": "/Users/oukang/Desktop/投稿资料/fangxiang2/Invariant-EvAM/paper_experiments_v1/g2/figures/G2A_weak_correct_call_fraction.pdf",
+    "output_svg": "/Users/oukang/Desktop/投稿资料/fangxiang2/Invariant-EvAM/paper_experiments_v1/g2/figures/G2A_weak_correct_call_fraction.svg",
+    "dpi": 600,
+    "size_mm": [
+      100,
+      82
+    ],
+    "palette": {
+      "M": "#0072B2",
+      "B5": "#56B4E9",
+      "B4": "#009E73",
+      "B3": "#E69F00",
+      "B2": "#D55E00",
+      "B1": "#CC79A7"
+    },
+    "adaptations": "Thin connected estimates, hollow markers, capped intervals and white space from R04. Discrete condition axis with disclosed small category offsets; no smoothing. Correct-call utility uses full probability range; wrong-call rates use a zero-based axis spanning all Monte Carlo intervals; coverage axis spans every displayed interval and the nominal line, no broken axes. Wilson 95% Monte Carlo intervals.",
+    "statistical_unit": "independent paired simulation replicate; fixed conditions",
+    "review_status": "awaiting_visual_review",
+    "data_sha256": "0b99394e696ad6ba431e9d101731b674cdd0d5798204d34be34ebba0f528612b",
+    "N": {
+      "observations_per_replicate": 1000,
+      "replicates_per_cell": 500
+    },
+    "uncertainty_definition": "Wilson 95% Monte Carlo intervals; endpoint denominator explicitly in data/caption",
+    "failure_handling": "All planned tasks retained; failures separate from scientific UNKNOWN; conditional and end-to-end coverage both exported"
+  },
+  {
+    "panel_id": "G2A_weak_wrong_call_fraction",
+    "primary_reference_id": "R04",
+    "endpoint": "Wrong sign calls / all replicates",
+    "source_data": "/Users/oukang/Desktop/投稿资料/fangxiang2/Invariant-EvAM/paper_experiments_v1/g2/figure_data/G2A_weak_wrong_call_fraction.tsv",
+    "output_pdf": "/Users/oukang/Desktop/投稿资料/fangxiang2/Invariant-EvAM/paper_experiments_v1/g2/figures/G2A_weak_wrong_call_fraction.pdf",
+    "output_svg": "/Users/oukang/Desktop/投稿资料/fangxiang2/Invariant-EvAM/paper_experiments_v1/g2/figures/G2A_weak_wrong_call_fraction.svg",
+    "dpi": 600,
+    "size_mm": [
+      100,
+      82
+    ],
+    "palette": {
+      "M": "#0072B2",
+      "B5": "#56B4E9",
+      "B4": "#009E73",
+      "B3": "#E69F00",
+      "B2": "#D55E00",
+      "B1": "#CC79A7"
+    },
+    "adaptations": "Thin connected estimates, hollow markers, capped intervals and white space from R04. Discrete condition axis with disclosed small category offsets; no smoothing. Correct-call utility uses full probability range; wrong-call rates use a zero-based axis spanning all Monte Carlo intervals; coverage axis spans every displayed interval and the nominal line, no broken axes. Wilson 95% Monte Carlo intervals.",
+    "statistical_unit": "independent paired simulation replicate; fixed conditions",
+    "review_status": "awaiting_visual_review",
+    "data_sha256": "cbcea5f81251e5cf14e74166b5fd0f471f7bca0aeae843b8d39786391d604817",
+    "N": {
+      "observations_per_replicate": 1000,
+      "replicates_per_cell": 500
+    },
+    "uncertainty_definition": "Wilson 95% Monte Carlo intervals; endpoint denominator explicitly in data/caption",
+    "failure_handling": "All planned tasks retained; failures separate from scientific UNKNOWN; conditional and end-to-end coverage both exported"
+  },
+  {
+    "panel_id": "G2B_weak_conditional_coverage",
+    "primary_reference_id": "R04",
+    "endpoint": "Coverage / completed intervals",
+    "source_data": "/Users/oukang/Desktop/投稿资料/fangxiang2/Invariant-EvAM/paper_experiments_v1/g2/figure_data/G2B_weak_conditional_coverage.tsv",
+    "output_pdf": "/Users/oukang/Desktop/投稿资料/fangxiang2/Invariant-EvAM/paper_experiments_v1/g2/figures/G2B_weak_conditional_coverage.pdf",
+    "output_svg": "/Users/oukang/Desktop/投稿资料/fangxiang2/Invariant-EvAM/paper_experiments_v1/g2/figures/G2B_weak_conditional_coverage.svg",
+    "dpi": 600,
+    "size_mm": [
+      100,
+      82
+    ],
+    "palette": {
+      "M": "#0072B2",
+      "B5": "#56B4E9",
+      "B4": "#009E73",
+      "B3": "#E69F00",
+      "B2": "#D55E00",
+      "B1": "#CC79A7"
+    },
+    "adaptations": "Thin connected estimates, hollow markers, capped intervals and white space from R04. Discrete condition axis with disclosed small category offsets; no smoothing. Correct-call utility uses full probability range; wrong-call rates use a zero-based axis spanning all Monte Carlo intervals; coverage axis spans every displayed interval and the nominal line, no broken axes. Wilson 95% Monte Carlo intervals.",
+    "statistical_unit": "independent paired simulation replicate; fixed conditions",
+    "review_status": "awaiting_visual_review",
+    "data_sha256": "ea128ecbcba5e7470f80bf5baa939f3f33bcc1bd299ba1d3431bd76db3135e43",
+    "N": {
+      "observations_per_replicate": 1000,
+      "replicates_per_cell": 500
+    },
+    "uncertainty_definition": "Wilson 95% Monte Carlo intervals; endpoint denominator explicitly in data/caption",
+    "failure_handling": "All planned tasks retained; failures separate from scientific UNKNOWN; conditional and end-to-end coverage both exported"
+  },
+  {
+    "panel_id": "G2B_weak_end_to_end_covered_fraction",
+    "primary_reference_id": "R04",
+    "endpoint": "Covered intervals / all replicates",
+    "source_data": "/Users/oukang/Desktop/投稿资料/fangxiang2/Invariant-EvAM/paper_experiments_v1/g2/figure_data/G2B_weak_end_to_end_covered_fraction.tsv",
+    "output_pdf": "/Users/oukang/Desktop/投稿资料/fangxiang2/Invariant-EvAM/paper_experiments_v1/g2/figures/G2B_weak_end_to_end_covered_fraction.pdf",
+    "output_svg": "/Users/oukang/Desktop/投稿资料/fangxiang2/Invariant-EvAM/paper_experiments_v1/g2/figures/G2B_weak_end_to_end_covered_fraction.svg",
+    "dpi": 600,
+    "size_mm": [
+      100,
+      82
+    ],
+    "palette": {
+      "M": "#0072B2",
+      "B5": "#56B4E9",
+      "B4": "#009E73",
+      "B3": "#E69F00",
+      "B2": "#D55E00",
+      "B1": "#CC79A7"
+    },
+    "adaptations": "Thin connected estimates, hollow markers, capped intervals and white space from R04. Discrete condition axis with disclosed small category offsets; no smoothing. Correct-call utility uses full probability range; wrong-call rates use a zero-based axis spanning all Monte Carlo intervals; coverage axis spans every displayed interval and the nominal line, no broken axes. Wilson 95% Monte Carlo intervals.",
+    "statistical_unit": "independent paired simulation replicate; fixed conditions",
+    "review_status": "awaiting_visual_review",
+    "data_sha256": "dbf4a1e7d36cf545b41b5ff82e1f483ef52d6bd732845509443c511cf353ef09",
+    "N": {
+      "observations_per_replicate": 1000,
+      "replicates_per_cell": 500
+    },
+    "uncertainty_definition": "Wilson 95% Monte Carlo intervals; endpoint denominator explicitly in data/caption",
+    "failure_handling": "All planned tasks retained; failures separate from scientific UNKNOWN; conditional and end-to-end coverage both exported"
+  },
+  {
+    "panel_id": "G2A_nonidentifying_correct_call_fraction",
+    "primary_reference_id": "R04",
+    "endpoint": "Correct sign calls / all replicates",
+    "source_data": "/Users/oukang/Desktop/投稿资料/fangxiang2/Invariant-EvAM/paper_experiments_v1/g2/figure_data/G2A_nonidentifying_correct_call_fraction.tsv",
+    "output_pdf": "/Users/oukang/Desktop/投稿资料/fangxiang2/Invariant-EvAM/paper_experiments_v1/g2/figures/G2A_nonidentifying_correct_call_fraction.pdf",
+    "output_svg": "/Users/oukang/Desktop/投稿资料/fangxiang2/Invariant-EvAM/paper_experiments_v1/g2/figures/G2A_nonidentifying_correct_call_fraction.svg",
+    "dpi": 600,
+    "size_mm": [
+      100,
+      82
+    ],
+    "palette": {
+      "M": "#0072B2",
+      "B5": "#56B4E9",
+      "B4": "#009E73",
+      "B3": "#E69F00",
+      "B2": "#D55E00",
+      "B1": "#CC79A7"
+    },
+    "adaptations": "Thin connected estimates, hollow markers, capped intervals and white space from R04. Discrete condition axis with disclosed small category offsets; no smoothing. Correct-call utility uses full probability range; wrong-call rates use a zero-based axis spanning all Monte Carlo intervals; coverage axis spans every displayed interval and the nominal line, no broken axes. Wilson 95% Monte Carlo intervals.",
+    "statistical_unit": "independent paired simulation replicate; fixed conditions",
+    "review_status": "awaiting_visual_review",
+    "data_sha256": "2089c8e38ebe51b5e6ebdc51b19da1c21c49b7358dc822e2d9793a74b2703504",
+    "N": {
+      "observations_per_replicate": 1000,
+      "replicates_per_cell": 500
+    },
+    "uncertainty_definition": "Wilson 95% Monte Carlo intervals; endpoint denominator explicitly in data/caption",
+    "failure_handling": "All planned tasks retained; failures separate from scientific UNKNOWN; conditional and end-to-end coverage both exported"
+  },
+  {
+    "panel_id": "G2A_nonidentifying_wrong_call_fraction",
+    "primary_reference_id": "R04",
+    "endpoint": "Wrong sign calls / all replicates",
+    "source_data": "/Users/oukang/Desktop/投稿资料/fangxiang2/Invariant-EvAM/paper_experiments_v1/g2/figure_data/G2A_nonidentifying_wrong_call_fraction.tsv",
+    "output_pdf": "/Users/oukang/Desktop/投稿资料/fangxiang2/Invariant-EvAM/paper_experiments_v1/g2/figures/G2A_nonidentifying_wrong_call_fraction.pdf",
+    "output_svg": "/Users/oukang/Desktop/投稿资料/fangxiang2/Invariant-EvAM/paper_experiments_v1/g2/figures/G2A_nonidentifying_wrong_call_fraction.svg",
+    "dpi": 600,
+    "size_mm": [
+      100,
+      82
+    ],
+    "palette": {
+      "M": "#0072B2",
+      "B5": "#56B4E9",
+      "B4": "#009E73",
+      "B3": "#E69F00",
+      "B2": "#D55E00",
+      "B1": "#CC79A7"
+    },
+    "adaptations": "Thin connected estimates, hollow markers, capped intervals and white space from R04. Discrete condition axis with disclosed small category offsets; no smoothing. Correct-call utility uses full probability range; wrong-call rates use a zero-based axis spanning all Monte Carlo intervals; coverage axis spans every displayed interval and the nominal line, no broken axes. Wilson 95% Monte Carlo intervals.",
+    "statistical_unit": "independent paired simulation replicate; fixed conditions",
+    "review_status": "awaiting_visual_review",
+    "data_sha256": "c1020970e225ada6ed1f31644b13702f5b18558c3968f7ee5ce8ea7bfe6975c4",
+    "N": {
+      "observations_per_replicate": 1000,
+      "replicates_per_cell": 500
+    },
+    "uncertainty_definition": "Wilson 95% Monte Carlo intervals; endpoint denominator explicitly in data/caption",
+    "failure_handling": "All planned tasks retained; failures separate from scientific UNKNOWN; conditional and end-to-end coverage both exported"
+  },
+  {
+    "panel_id": "G2B_nonidentifying_conditional_coverage",
+    "primary_reference_id": "R04",
+    "endpoint": "Coverage / completed intervals",
+    "source_data": "/Users/oukang/Desktop/投稿资料/fangxiang2/Invariant-EvAM/paper_experiments_v1/g2/figure_data/G2B_nonidentifying_conditional_coverage.tsv",
+    "output_pdf": "/Users/oukang/Desktop/投稿资料/fangxiang2/Invariant-EvAM/paper_experiments_v1/g2/figures/G2B_nonidentifying_conditional_coverage.pdf",
+    "output_svg": "/Users/oukang/Desktop/投稿资料/fangxiang2/Invariant-EvAM/paper_experiments_v1/g2/figures/G2B_nonidentifying_conditional_coverage.svg",
+    "dpi": 600,
+    "size_mm": [
+      100,
+      82
+    ],
+    "palette": {
+      "M": "#0072B2",
+      "B5": "#56B4E9",
+      "B4": "#009E73",
+      "B3": "#E69F00",
+      "B2": "#D55E00",
+      "B1": "#CC79A7"
+    },
+    "adaptations": "Thin connected estimates, hollow markers, capped intervals and white space from R04. Discrete condition axis with disclosed small category offsets; no smoothing. Correct-call utility uses full probability range; wrong-call rates use a zero-based axis spanning all Monte Carlo intervals; coverage axis spans every displayed interval and the nominal line, no broken axes. Wilson 95% Monte Carlo intervals.",
+    "statistical_unit": "independent paired simulation replicate; fixed conditions",
+    "review_status": "awaiting_visual_review",
+    "data_sha256": "8e196e9b7494275f295342d5bac0a03fc45baf2b34ffb640c246e75a4d555375",
+    "N": {
+      "observations_per_replicate": 1000,
+      "replicates_per_cell": 500
+    },
+    "uncertainty_definition": "Wilson 95% Monte Carlo intervals; endpoint denominator explicitly in data/caption",
+    "failure_handling": "All planned tasks retained; failures separate from scientific UNKNOWN; conditional and end-to-end coverage both exported"
+  },
+  {
+    "panel_id": "G2B_nonidentifying_end_to_end_covered_fraction",
+    "primary_reference_id": "R04",
+    "endpoint": "Covered intervals / all replicates",
+    "source_data": "/Users/oukang/Desktop/投稿资料/fangxiang2/Invariant-EvAM/paper_experiments_v1/g2/figure_data/G2B_nonidentifying_end_to_end_covered_fraction.tsv",
+    "output_pdf": "/Users/oukang/Desktop/投稿资料/fangxiang2/Invariant-EvAM/paper_experiments_v1/g2/figures/G2B_nonidentifying_end_to_end_covered_fraction.pdf",
+    "output_svg": "/Users/oukang/Desktop/投稿资料/fangxiang2/Invariant-EvAM/paper_experiments_v1/g2/figures/G2B_nonidentifying_end_to_end_covered_fraction.svg",
+    "dpi": 600,
+    "size_mm": [
+      100,
+      82
+    ],
+    "palette": {
+      "M": "#0072B2",
+      "B5": "#56B4E9",
+      "B4": "#009E73",
+      "B3": "#E69F00",
+      "B2": "#D55E00",
+      "B1": "#CC79A7"
+    },
+    "adaptations": "Thin connected estimates, hollow markers, capped intervals and white space from R04. Discrete condition axis with disclosed small category offsets; no smoothing. Correct-call utility uses full probability range; wrong-call rates use a zero-based axis spanning all Monte Carlo intervals; coverage axis spans every displayed interval and the nominal line, no broken axes. Wilson 95% Monte Carlo intervals.",
+    "statistical_unit": "independent paired simulation replicate; fixed conditions",
+    "review_status": "awaiting_visual_review",
+    "data_sha256": "870cd67387c101869e654c6d8c6b0b8451679c5353dbd4cb1c2dea93d7d50f3a",
+    "N": {
+      "observations_per_replicate": 1000,
+      "replicates_per_cell": 500
+    },
+    "uncertainty_definition": "Wilson 95% Monte Carlo intervals; endpoint denominator explicitly in data/caption",
+    "failure_handling": "All planned tasks retained; failures separate from scientific UNKNOWN; conditional and end-to-end coverage both exported"
+  },
+  {
+    "panel_id": "G2C_strong",
+    "primary_reference_id": "R04",
+    "endpoint": "Risk versus answerability",
+    "source_data": "/Users/oukang/Desktop/投稿资料/fangxiang2/Invariant-EvAM/paper_experiments_v1/g2/figure_data/G2C_strong.tsv",
+    "output_pdf": "/Users/oukang/Desktop/投稿资料/fangxiang2/Invariant-EvAM/paper_experiments_v1/g2/figures/G2C_strong.pdf",
+    "output_svg": "/Users/oukang/Desktop/投稿资料/fangxiang2/Invariant-EvAM/paper_experiments_v1/g2/figures/G2C_strong.svg",
+    "dpi": 600,
+    "size_mm": [
+      100,
+      82
+    ],
+    "palette": {
+      "M": "#0072B2",
+      "B5": "#56B4E9",
+      "B4": "#009E73",
+      "B3": "#E69F00",
+      "B2": "#D55E00",
+      "B1": "#CC79A7"
+    },
+    "adaptations": "All five frozen confidence levels, piecewise joining only; risk is undefined at zero calls; Wilson conditional risk bars. Filled marker marks 95%, no test-set threshold choice.",
+    "statistical_unit": "independent paired simulation replicate; fixed conditions",
+    "review_status": "awaiting_visual_review",
+    "data_sha256": "c6e781baffc27c163d700593be29d55bb1f4c99e9d684a7c6201fbeafcbc3247",
+    "N": {
+      "observations_per_replicate": 1000,
+      "replicates_per_cell": 500,
+      "replicates_in_fixed_effect_mixture": 2000
+    },
+    "uncertainty_definition": "Wilson 95% conditional error interval; zero-call risk undefined",
+    "failure_handling": "All planned tasks retained; failures separate from scientific UNKNOWN; conditional and end-to-end coverage both exported"
+  },
+  {
+    "panel_id": "G2C_weak",
+    "primary_reference_id": "R04",
+    "endpoint": "Risk versus answerability",
+    "source_data": "/Users/oukang/Desktop/投稿资料/fangxiang2/Invariant-EvAM/paper_experiments_v1/g2/figure_data/G2C_weak.tsv",
+    "output_pdf": "/Users/oukang/Desktop/投稿资料/fangxiang2/Invariant-EvAM/paper_experiments_v1/g2/figures/G2C_weak.pdf",
+    "output_svg": "/Users/oukang/Desktop/投稿资料/fangxiang2/Invariant-EvAM/paper_experiments_v1/g2/figures/G2C_weak.svg",
+    "dpi": 600,
+    "size_mm": [
+      100,
+      82
+    ],
+    "palette": {
+      "M": "#0072B2",
+      "B5": "#56B4E9",
+      "B4": "#009E73",
+      "B3": "#E69F00",
+      "B2": "#D55E00",
+      "B1": "#CC79A7"
+    },
+    "adaptations": "All five frozen confidence levels, piecewise joining only; risk is undefined at zero calls; Wilson conditional risk bars. Filled marker marks 95%, no test-set threshold choice.",
+    "statistical_unit": "independent paired simulation replicate; fixed conditions",
+    "review_status": "awaiting_visual_review",
+    "data_sha256": "2bd70886a7e7e0c76bca716b88c40186d311a8cdf505c4aec19ec8aebf9e9887",
+    "N": {
+      "observations_per_replicate": 1000,
+      "replicates_per_cell": 500,
+      "replicates_in_fixed_effect_mixture": 2000
+    },
+    "uncertainty_definition": "Wilson 95% conditional error interval; zero-call risk undefined",
+    "failure_handling": "All planned tasks retained; failures separate from scientific UNKNOWN; conditional and end-to-end coverage both exported"
+  },
+  {
+    "panel_id": "G2C_nonidentifying",
+    "primary_reference_id": "R04",
+    "endpoint": "Risk versus answerability",
+    "source_data": "/Users/oukang/Desktop/投稿资料/fangxiang2/Invariant-EvAM/paper_experiments_v1/g2/figure_data/G2C_nonidentifying.tsv",
+    "output_pdf": "/Users/oukang/Desktop/投稿资料/fangxiang2/Invariant-EvAM/paper_experiments_v1/g2/figures/G2C_nonidentifying.pdf",
+    "output_svg": "/Users/oukang/Desktop/投稿资料/fangxiang2/Invariant-EvAM/paper_experiments_v1/g2/figures/G2C_nonidentifying.svg",
+    "dpi": 600,
+    "size_mm": [
+      100,
+      82
+    ],
+    "palette": {
+      "M": "#0072B2",
+      "B5": "#56B4E9",
+      "B4": "#009E73",
+      "B3": "#E69F00",
+      "B2": "#D55E00",
+      "B1": "#CC79A7"
+    },
+    "adaptations": "All five frozen confidence levels, piecewise joining only; risk is undefined at zero calls; Wilson conditional risk bars. Filled marker marks 95%, no test-set threshold choice.",
+    "statistical_unit": "independent paired simulation replicate; fixed conditions",
+    "review_status": "awaiting_visual_review",
+    "data_sha256": "280d51ec379595722809a3a91650ba903641af4243d6adcf1d5a11ee7c618e60",
+    "N": {
+      "observations_per_replicate": 1000,
+      "replicates_per_cell": 500,
+      "replicates_in_fixed_effect_mixture": 2000
+    },
+    "uncertainty_definition": "Wilson 95% conditional error interval; zero-call risk undefined",
+    "failure_handling": "All planned tasks retained; failures separate from scientific UNKNOWN; conditional and end-to-end coverage both exported"
+  },
+  {
+    "panel_id": "G2D_strong_full_range",
+    "primary_reference_id": "R06",
+    "endpoint": "Full search-bound profile",
+    "source_data": "/Users/oukang/Desktop/投稿资料/fangxiang2/Invariant-EvAM/paper_experiments_v1/g2/figure_data/G2D_strong_full_range.tsv",
+    "output_pdf": "/Users/oukang/Desktop/投稿资料/fangxiang2/Invariant-EvAM/paper_experiments_v1/g2/figures/G2D_strong_full_range.pdf",
+    "output_svg": "/Users/oukang/Desktop/投稿资料/fangxiang2/Invariant-EvAM/paper_experiments_v1/g2/figures/G2D_strong_full_range.svg",
+    "dpi": 600,
+    "size_mm": [
+      100,
+      82
+    ],
+    "palette": {
+      "bound3": "#0072B2",
+      "bound4.5": "#E69F00",
+      "bound6": "#009E73",
+      "failed_grid_point": "#D55E00"
+    },
+    "adaptations": "Exact profile coordinates; full search range and common LR display window. Failed optimizer points remain in data. No smoothing.",
+    "statistical_unit": "independent paired simulation replicate; fixed conditions",
+    "review_status": "awaiting_visual_review",
+    "data_sha256": "5b351ce0c07ddf697af7f8a67dbcbd26890f39eac2ad95db86fb4f793a665e80",
+    "N": {
+      "observations": 1000,
+      "independent_replicates": 1,
+      "paired_search_bounds": 3
+    },
+    "uncertainty_definition": "Likelihood profile and chi-square1 candidate threshold; not a Monte Carlo interval",
+    "failure_handling": "All planned tasks retained; failures separate from scientific UNKNOWN; conditional and end-to-end coverage both exported"
+  },
+  {
+    "panel_id": "G2D_strong",
+    "primary_reference_id": "R06",
+    "endpoint": "Finite or boundary-limited profile confidence set",
+    "source_data": "/Users/oukang/Desktop/投稿资料/fangxiang2/Invariant-EvAM/paper_experiments_v1/g2/figure_data/G2D_strong.tsv",
+    "output_pdf": "/Users/oukang/Desktop/投稿资料/fangxiang2/Invariant-EvAM/paper_experiments_v1/g2/figures/G2D_strong.pdf",
+    "output_svg": "/Users/oukang/Desktop/投稿资料/fangxiang2/Invariant-EvAM/paper_experiments_v1/g2/figures/G2D_strong.svg",
+    "dpi": 600,
+    "size_mm": [
+      100,
+      82
+    ],
+    "palette": {
+      "bound3": "#0072B2",
+      "bound4.5": "#E69F00",
+      "bound6": "#009E73",
+      "failed_grid_point": "#D55E00"
+    },
+    "adaptations": "R06 open-circle exact coordinates with thin connecting lines; three prespecified search bounds, no smoothing. Common vertical window [−0.2, 8] centers the 3.84 decision threshold; all full LR values exported, curves beyond window clipped explicitly. Main x-window is union of LR≤8 points plus15% margin; full search-range companion exported. Independent purpose207 replicate0, effect+0.8.",
+    "statistical_unit": "independent paired simulation replicate; fixed conditions",
+    "review_status": "awaiting_visual_review",
+    "data_sha256": "5b351ce0c07ddf697af7f8a67dbcbd26890f39eac2ad95db86fb4f793a665e80",
+    "N": {
+      "observations": 1000,
+      "independent_replicates": 1,
+      "paired_search_bounds": 3
+    },
+    "uncertainty_definition": "Likelihood profile and chi-square1 candidate threshold; not a Monte Carlo interval",
+    "failure_handling": "All planned tasks retained; failures separate from scientific UNKNOWN; conditional and end-to-end coverage both exported"
+  },
+  {
+    "panel_id": "G2D_weak_full_range",
+    "primary_reference_id": "R06",
+    "endpoint": "Full search-bound profile",
+    "source_data": "/Users/oukang/Desktop/投稿资料/fangxiang2/Invariant-EvAM/paper_experiments_v1/g2/figure_data/G2D_weak_full_range.tsv",
+    "output_pdf": "/Users/oukang/Desktop/投稿资料/fangxiang2/Invariant-EvAM/paper_experiments_v1/g2/figures/G2D_weak_full_range.pdf",
+    "output_svg": "/Users/oukang/Desktop/投稿资料/fangxiang2/Invariant-EvAM/paper_experiments_v1/g2/figures/G2D_weak_full_range.svg",
+    "dpi": 600,
+    "size_mm": [
+      100,
+      82
+    ],
+    "palette": {
+      "bound3": "#0072B2",
+      "bound4.5": "#E69F00",
+      "bound6": "#009E73",
+      "failed_grid_point": "#D55E00"
+    },
+    "adaptations": "Exact profile coordinates; full search range and common LR display window. Failed optimizer points remain in data. No smoothing.",
+    "statistical_unit": "independent paired simulation replicate; fixed conditions",
+    "review_status": "awaiting_visual_review",
+    "data_sha256": "edf3f267b35004e6ee62ecc2133150bd8c958d8d220c27c580331edfe1499e66",
+    "N": {
+      "observations": 1000,
+      "independent_replicates": 1,
+      "paired_search_bounds": 3
+    },
+    "uncertainty_definition": "Likelihood profile and chi-square1 candidate threshold; not a Monte Carlo interval",
+    "failure_handling": "All planned tasks retained; failures separate from scientific UNKNOWN; conditional and end-to-end coverage both exported"
+  },
+  {
+    "panel_id": "G2D_weak",
+    "primary_reference_id": "R06",
+    "endpoint": "Finite or boundary-limited profile confidence set",
+    "source_data": "/Users/oukang/Desktop/投稿资料/fangxiang2/Invariant-EvAM/paper_experiments_v1/g2/figure_data/G2D_weak.tsv",
+    "output_pdf": "/Users/oukang/Desktop/投稿资料/fangxiang2/Invariant-EvAM/paper_experiments_v1/g2/figures/G2D_weak.pdf",
+    "output_svg": "/Users/oukang/Desktop/投稿资料/fangxiang2/Invariant-EvAM/paper_experiments_v1/g2/figures/G2D_weak.svg",
+    "dpi": 600,
+    "size_mm": [
+      100,
+      82
+    ],
+    "palette": {
+      "bound3": "#0072B2",
+      "bound4.5": "#E69F00",
+      "bound6": "#009E73",
+      "failed_grid_point": "#D55E00"
+    },
+    "adaptations": "R06 open-circle exact coordinates with thin connecting lines; three prespecified search bounds, no smoothing. Common vertical window [−0.2, 8] centers the 3.84 decision threshold; all full LR values exported, curves beyond window clipped explicitly. Main x-window is union of LR≤8 points plus15% margin; full search-range companion exported. Independent purpose207 replicate0, effect+0.8.",
+    "statistical_unit": "independent paired simulation replicate; fixed conditions",
+    "review_status": "awaiting_visual_review",
+    "data_sha256": "edf3f267b35004e6ee62ecc2133150bd8c958d8d220c27c580331edfe1499e66",
+    "N": {
+      "observations": 1000,
+      "independent_replicates": 1,
+      "paired_search_bounds": 3
+    },
+    "uncertainty_definition": "Likelihood profile and chi-square1 candidate threshold; not a Monte Carlo interval",
+    "failure_handling": "All planned tasks retained; failures separate from scientific UNKNOWN; conditional and end-to-end coverage both exported"
+  },
+  {
+    "panel_id": "G2D_nonidentifying_full_range",
+    "primary_reference_id": "R06",
+    "endpoint": "Full search-bound profile",
+    "source_data": "/Users/oukang/Desktop/投稿资料/fangxiang2/Invariant-EvAM/paper_experiments_v1/g2/figure_data/G2D_nonidentifying_full_range.tsv",
+    "output_pdf": "/Users/oukang/Desktop/投稿资料/fangxiang2/Invariant-EvAM/paper_experiments_v1/g2/figures/G2D_nonidentifying_full_range.pdf",
+    "output_svg": "/Users/oukang/Desktop/投稿资料/fangxiang2/Invariant-EvAM/paper_experiments_v1/g2/figures/G2D_nonidentifying_full_range.svg",
+    "dpi": 600,
+    "size_mm": [
+      100,
+      82
+    ],
+    "palette": {
+      "bound3": "#0072B2",
+      "bound4.5": "#E69F00",
+      "bound6": "#009E73",
+      "failed_grid_point": "#D55E00"
+    },
+    "adaptations": "Exact profile coordinates; full search range and common LR display window. Failed optimizer points remain in data. No smoothing.",
+    "statistical_unit": "independent paired simulation replicate; fixed conditions",
+    "review_status": "awaiting_visual_review",
+    "data_sha256": "a7f5add65a1d71725acfd0d78885cbfb3864641c45cbf96fb7581f11a19920b8",
+    "N": {
+      "observations": 1000,
+      "independent_replicates": 1,
+      "paired_search_bounds": 3
+    },
+    "uncertainty_definition": "Likelihood profile and chi-square1 candidate threshold; not a Monte Carlo interval",
+    "failure_handling": "All planned tasks retained; failures separate from scientific UNKNOWN; conditional and end-to-end coverage both exported"
+  },
+  {
+    "panel_id": "G2D_nonidentifying",
+    "primary_reference_id": "R06",
+    "endpoint": "Finite or boundary-limited profile confidence set",
+    "source_data": "/Users/oukang/Desktop/投稿资料/fangxiang2/Invariant-EvAM/paper_experiments_v1/g2/figure_data/G2D_nonidentifying.tsv",
+    "output_pdf": "/Users/oukang/Desktop/投稿资料/fangxiang2/Invariant-EvAM/paper_experiments_v1/g2/figures/G2D_nonidentifying.pdf",
+    "output_svg": "/Users/oukang/Desktop/投稿资料/fangxiang2/Invariant-EvAM/paper_experiments_v1/g2/figures/G2D_nonidentifying.svg",
+    "dpi": 600,
+    "size_mm": [
+      100,
+      82
+    ],
+    "palette": {
+      "bound3": "#0072B2",
+      "bound4.5": "#E69F00",
+      "bound6": "#009E73",
+      "failed_grid_point": "#D55E00"
+    },
+    "adaptations": "R06 open-circle exact coordinates with thin connecting lines; three prespecified search bounds, no smoothing. Common vertical window [−0.2, 8] centers the 3.84 decision threshold; all full LR values exported, curves beyond window clipped explicitly. Main x-window is union of LR≤8 points plus15% margin; full search-range companion exported. Independent purpose207 replicate0, effect+0.8.",
+    "statistical_unit": "independent paired simulation replicate; fixed conditions",
+    "review_status": "awaiting_visual_review",
+    "data_sha256": "a7f5add65a1d71725acfd0d78885cbfb3864641c45cbf96fb7581f11a19920b8",
+    "N": {
+      "observations": 1000,
+      "independent_replicates": 1,
+      "paired_search_bounds": 3
+    },
+    "uncertainty_definition": "Likelihood profile and chi-square1 candidate threshold; not a Monte Carlo interval",
+    "failure_handling": "All planned tasks retained; failures separate from scientific UNKNOWN; conditional and end-to-end coverage both exported"
+  },
+  {
+    "panel_id": "G2E_coverage",
+    "primary_reference_id": "R04",
+    "endpoint": "Coverage / completed intervals",
+    "source_data": "/Users/oukang/Desktop/投稿资料/fangxiang2/Invariant-EvAM/paper_experiments_v1/g2/figure_data/G2E_coverage.tsv",
+    "output_pdf": "/Users/oukang/Desktop/投稿资料/fangxiang2/Invariant-EvAM/paper_experiments_v1/g2/figures/G2E_coverage.pdf",
+    "output_svg": "/Users/oukang/Desktop/投稿资料/fangxiang2/Invariant-EvAM/paper_experiments_v1/g2/figures/G2E_coverage.svg",
+    "dpi": 600,
+    "size_mm": [
+      100,
+      82
+    ],
+    "palette": {
+      "B6_OFFICIAL": "#56B4E9",
+      "M_MATCHED": "#0072B2"
+    },
+    "adaptations": "Official matched endpoint only. Open versus filled markers and Wilson intervals, no artificially magnified point-estimate differences. All four effect conditions retained.",
+    "statistical_unit": "independent paired simulation replicate; fixed conditions",
+    "review_status": "awaiting_visual_review",
+    "data_sha256": "6732c69450a485fa910b607eb4a42717f8443fbe138799c348f3fb35742e1efc",
+    "N": {
+      "observations_per_replicate": 1000,
+      "replicates_per_cell": 200
+    },
+    "uncertainty_definition": "Wilson 95% Monte Carlo intervals; endpoint denominator explicitly in data/caption",
+    "failure_handling": "All planned tasks retained; failures separate from scientific UNKNOWN; conditional and end-to-end coverage both exported"
+  },
+  {
+    "panel_id": "G2E_correct_calls",
+    "primary_reference_id": "R04",
+    "endpoint": "Correct sign calls / all replicates",
+    "source_data": "/Users/oukang/Desktop/投稿资料/fangxiang2/Invariant-EvAM/paper_experiments_v1/g2/figure_data/G2E_correct_calls.tsv",
+    "output_pdf": "/Users/oukang/Desktop/投稿资料/fangxiang2/Invariant-EvAM/paper_experiments_v1/g2/figures/G2E_correct_calls.pdf",
+    "output_svg": "/Users/oukang/Desktop/投稿资料/fangxiang2/Invariant-EvAM/paper_experiments_v1/g2/figures/G2E_correct_calls.svg",
+    "dpi": 600,
+    "size_mm": [
+      100,
+      82
+    ],
+    "palette": {
+      "B6_OFFICIAL": "#56B4E9",
+      "M_MATCHED": "#0072B2"
+    },
+    "adaptations": "Official matched endpoint only. Open versus filled markers and Wilson intervals, no artificially magnified point-estimate differences. All four effect conditions retained.",
+    "statistical_unit": "independent paired simulation replicate; fixed conditions",
+    "review_status": "awaiting_visual_review",
+    "data_sha256": "cba8a14f4275bfd0a3699d67c45e45440d2b2c9387053cce9aaa9d51e98b954e",
+    "N": {
+      "observations_per_replicate": 1000,
+      "replicates_per_cell": 200
+    },
+    "uncertainty_definition": "Wilson 95% Monte Carlo intervals; endpoint denominator explicitly in data/caption",
+    "failure_handling": "All planned tasks retained; failures separate from scientific UNKNOWN; conditional and end-to-end coverage both exported"
+  },
+  {
+    "panel_id": "G2A_paired_strong_M_vs_B4",
+    "primary_reference_id": "R25",
+    "endpoint": "Paired gain in correct sign calls",
+    "source_data": "/Users/oukang/Desktop/投稿资料/fangxiang2/Invariant-EvAM/paper_experiments_v1/g2/figure_data/G2A_paired_strong_M_vs_B4.tsv",
+    "output_pdf": "/Users/oukang/Desktop/投稿资料/fangxiang2/Invariant-EvAM/paper_experiments_v1/g2/figures/G2A_paired_strong_M_vs_B4.pdf",
+    "output_svg": "/Users/oukang/Desktop/投稿资料/fangxiang2/Invariant-EvAM/paper_experiments_v1/g2/figures/G2A_paired_strong_M_vs_B4.svg",
+    "dpi": 600,
+    "size_mm": [
+      100,
+      82
+    ],
+    "palette": {
+      "M": "#0072B2",
+      "B5": "#56B4E9",
+      "B4": "#009E73",
+      "B3": "#E69F00",
+      "B2": "#D55E00",
+      "B1": "#CC79A7"
+    },
+    "adaptations": "R25 paired row connectors and a distinct right-hand quantitative column. Identical endpoints intentionally overlap; right column reports actual difference and paired Monte Carlo interval. Light-gray band is the M Wilson 95% Monte Carlo interval, not raw-data density. Full 0–1 rate scale; no seed or effect filtering. Interval for difference is paired normal Monte Carlo CI, not biological uncertainty.",
+    "statistical_unit": "independent paired simulation replicate; fixed conditions",
+    "review_status": "awaiting_visual_review",
+    "data_sha256": "b1246de31f152c3f767d85030b2650cf3ee34563463aa88ad1947d3267d2c664",
+    "N": {
+      "observations_per_replicate": 1000,
+      "replicates_per_cell": 500
+    },
+    "uncertainty_definition": "Paired normal Monte Carlo interval for difference; M rate Wilson band; zero discordance labeled without exact-equality claim",
+    "failure_handling": "All planned tasks retained; failures separate from scientific UNKNOWN; conditional and end-to-end coverage both exported"
+  },
+  {
+    "panel_id": "G2A_paired_strong_M_vs_B5",
+    "primary_reference_id": "R25",
+    "endpoint": "Paired gain in correct sign calls",
+    "source_data": "/Users/oukang/Desktop/投稿资料/fangxiang2/Invariant-EvAM/paper_experiments_v1/g2/figure_data/G2A_paired_strong_M_vs_B5.tsv",
+    "output_pdf": "/Users/oukang/Desktop/投稿资料/fangxiang2/Invariant-EvAM/paper_experiments_v1/g2/figures/G2A_paired_strong_M_vs_B5.pdf",
+    "output_svg": "/Users/oukang/Desktop/投稿资料/fangxiang2/Invariant-EvAM/paper_experiments_v1/g2/figures/G2A_paired_strong_M_vs_B5.svg",
+    "dpi": 600,
+    "size_mm": [
+      100,
+      82
+    ],
+    "palette": {
+      "M": "#0072B2",
+      "B5": "#56B4E9",
+      "B4": "#009E73",
+      "B3": "#E69F00",
+      "B2": "#D55E00",
+      "B1": "#CC79A7"
+    },
+    "adaptations": "R25 paired row connectors and a distinct right-hand quantitative column. Identical endpoints intentionally overlap; right column reports actual difference and paired Monte Carlo interval. Light-gray band is the M Wilson 95% Monte Carlo interval, not raw-data density. Full 0–1 rate scale; no seed or effect filtering. Interval for difference is paired normal Monte Carlo CI, not biological uncertainty.",
+    "statistical_unit": "independent paired simulation replicate; fixed conditions",
+    "review_status": "awaiting_visual_review",
+    "data_sha256": "66a8f3a4f9111dca870fc69821f2de540b137d57cba9239917adeeaa44e6bd3d",
+    "N": {
+      "observations_per_replicate": 1000,
+      "replicates_per_cell": 500
+    },
+    "uncertainty_definition": "Paired normal Monte Carlo interval for difference; M rate Wilson band; zero discordance labeled without exact-equality claim",
+    "failure_handling": "All planned tasks retained; failures separate from scientific UNKNOWN; conditional and end-to-end coverage both exported"
+  },
+  {
+    "panel_id": "G2A_paired_weak_M_vs_B4",
+    "primary_reference_id": "R25",
+    "endpoint": "Paired gain in correct sign calls",
+    "source_data": "/Users/oukang/Desktop/投稿资料/fangxiang2/Invariant-EvAM/paper_experiments_v1/g2/figure_data/G2A_paired_weak_M_vs_B4.tsv",
+    "output_pdf": "/Users/oukang/Desktop/投稿资料/fangxiang2/Invariant-EvAM/paper_experiments_v1/g2/figures/G2A_paired_weak_M_vs_B4.pdf",
+    "output_svg": "/Users/oukang/Desktop/投稿资料/fangxiang2/Invariant-EvAM/paper_experiments_v1/g2/figures/G2A_paired_weak_M_vs_B4.svg",
+    "dpi": 600,
+    "size_mm": [
+      100,
+      82
+    ],
+    "palette": {
+      "M": "#0072B2",
+      "B5": "#56B4E9",
+      "B4": "#009E73",
+      "B3": "#E69F00",
+      "B2": "#D55E00",
+      "B1": "#CC79A7"
+    },
+    "adaptations": "R25 paired row connectors and a distinct right-hand quantitative column. Identical endpoints intentionally overlap; right column reports actual difference and paired Monte Carlo interval. Light-gray band is the M Wilson 95% Monte Carlo interval, not raw-data density. Full 0–1 rate scale; no seed or effect filtering. Interval for difference is paired normal Monte Carlo CI, not biological uncertainty.",
+    "statistical_unit": "independent paired simulation replicate; fixed conditions",
+    "review_status": "awaiting_visual_review",
+    "data_sha256": "c027f99da29a9d9acb010cf27d309e09ba662713577f5d18018ccf07b4fe403e",
+    "N": {
+      "observations_per_replicate": 1000,
+      "replicates_per_cell": 500
+    },
+    "uncertainty_definition": "Paired normal Monte Carlo interval for difference; M rate Wilson band; zero discordance labeled without exact-equality claim",
+    "failure_handling": "All planned tasks retained; failures separate from scientific UNKNOWN; conditional and end-to-end coverage both exported"
+  },
+  {
+    "panel_id": "G2A_paired_weak_M_vs_B5",
+    "primary_reference_id": "R25",
+    "endpoint": "Paired gain in correct sign calls",
+    "source_data": "/Users/oukang/Desktop/投稿资料/fangxiang2/Invariant-EvAM/paper_experiments_v1/g2/figure_data/G2A_paired_weak_M_vs_B5.tsv",
+    "output_pdf": "/Users/oukang/Desktop/投稿资料/fangxiang2/Invariant-EvAM/paper_experiments_v1/g2/figures/G2A_paired_weak_M_vs_B5.pdf",
+    "output_svg": "/Users/oukang/Desktop/投稿资料/fangxiang2/Invariant-EvAM/paper_experiments_v1/g2/figures/G2A_paired_weak_M_vs_B5.svg",
+    "dpi": 600,
+    "size_mm": [
+      100,
+      82
+    ],
+    "palette": {
+      "M": "#0072B2",
+      "B5": "#56B4E9",
+      "B4": "#009E73",
+      "B3": "#E69F00",
+      "B2": "#D55E00",
+      "B1": "#CC79A7"
+    },
+    "adaptations": "R25 paired row connectors and a distinct right-hand quantitative column. Identical endpoints intentionally overlap; right column reports actual difference and paired Monte Carlo interval. Light-gray band is the M Wilson 95% Monte Carlo interval, not raw-data density. Full 0–1 rate scale; no seed or effect filtering. Interval for difference is paired normal Monte Carlo CI, not biological uncertainty.",
+    "statistical_unit": "independent paired simulation replicate; fixed conditions",
+    "review_status": "awaiting_visual_review",
+    "data_sha256": "5bc90121f0a7edd181a5fe11008ee8ab252ec8cb1298d8fcfe20c87a4ce0c503",
+    "N": {
+      "observations_per_replicate": 1000,
+      "replicates_per_cell": 500
+    },
+    "uncertainty_definition": "Paired normal Monte Carlo interval for difference; M rate Wilson band; zero discordance labeled without exact-equality claim",
+    "failure_handling": "All planned tasks retained; failures separate from scientific UNKNOWN; conditional and end-to-end coverage both exported"
+  },
+  {
+    "panel_id": "G2A_paired_nonidentifying_M_vs_B4",
+    "primary_reference_id": "R25",
+    "endpoint": "Paired gain in correct sign calls",
+    "source_data": "/Users/oukang/Desktop/投稿资料/fangxiang2/Invariant-EvAM/paper_experiments_v1/g2/figure_data/G2A_paired_nonidentifying_M_vs_B4.tsv",
+    "output_pdf": "/Users/oukang/Desktop/投稿资料/fangxiang2/Invariant-EvAM/paper_experiments_v1/g2/figures/G2A_paired_nonidentifying_M_vs_B4.pdf",
+    "output_svg": "/Users/oukang/Desktop/投稿资料/fangxiang2/Invariant-EvAM/paper_experiments_v1/g2/figures/G2A_paired_nonidentifying_M_vs_B4.svg",
+    "dpi": 600,
+    "size_mm": [
+      100,
+      82
+    ],
+    "palette": {
+      "M": "#0072B2",
+      "B5": "#56B4E9",
+      "B4": "#009E73",
+      "B3": "#E69F00",
+      "B2": "#D55E00",
+      "B1": "#CC79A7"
+    },
+    "adaptations": "R25 paired row connectors and a distinct right-hand quantitative column. Identical endpoints intentionally overlap; right column reports actual difference and paired Monte Carlo interval. Light-gray band is the M Wilson 95% Monte Carlo interval, not raw-data density. Full 0–1 rate scale; no seed or effect filtering. Interval for difference is paired normal Monte Carlo CI, not biological uncertainty.",
+    "statistical_unit": "independent paired simulation replicate; fixed conditions",
+    "review_status": "awaiting_visual_review",
+    "data_sha256": "aec93ab6fdd787a710742c14dbbe889f4740d393c1d464ccecac21cdc0bde3f7",
+    "N": {
+      "observations_per_replicate": 1000,
+      "replicates_per_cell": 500
+    },
+    "uncertainty_definition": "Paired normal Monte Carlo interval for difference; M rate Wilson band; zero discordance labeled without exact-equality claim",
+    "failure_handling": "All planned tasks retained; failures separate from scientific UNKNOWN; conditional and end-to-end coverage both exported"
+  },
+  {
+    "panel_id": "G2A_paired_nonidentifying_M_vs_B5",
+    "primary_reference_id": "R25",
+    "endpoint": "Paired gain in correct sign calls",
+    "source_data": "/Users/oukang/Desktop/投稿资料/fangxiang2/Invariant-EvAM/paper_experiments_v1/g2/figure_data/G2A_paired_nonidentifying_M_vs_B5.tsv",
+    "output_pdf": "/Users/oukang/Desktop/投稿资料/fangxiang2/Invariant-EvAM/paper_experiments_v1/g2/figures/G2A_paired_nonidentifying_M_vs_B5.pdf",
+    "output_svg": "/Users/oukang/Desktop/投稿资料/fangxiang2/Invariant-EvAM/paper_experiments_v1/g2/figures/G2A_paired_nonidentifying_M_vs_B5.svg",
+    "dpi": 600,
+    "size_mm": [
+      100,
+      82
+    ],
+    "palette": {
+      "M": "#0072B2",
+      "B5": "#56B4E9",
+      "B4": "#009E73",
+      "B3": "#E69F00",
+      "B2": "#D55E00",
+      "B1": "#CC79A7"
+    },
+    "adaptations": "R25 paired row connectors and a distinct right-hand quantitative column. Identical endpoints intentionally overlap; right column reports actual difference and paired Monte Carlo interval. Light-gray band is the M Wilson 95% Monte Carlo interval, not raw-data density. Full 0–1 rate scale; no seed or effect filtering. Interval for difference is paired normal Monte Carlo CI, not biological uncertainty.",
+    "statistical_unit": "independent paired simulation replicate; fixed conditions",
+    "review_status": "awaiting_visual_review",
+    "data_sha256": "64a84cefb535e59890a985d2cd7654f54b174c7fb639e34540e0085a29f685a4",
+    "N": {
+      "observations_per_replicate": 1000,
+      "replicates_per_cell": 500
+    },
+    "uncertainty_definition": "Paired normal Monte Carlo interval for difference; M rate Wilson band; zero discordance labeled without exact-equality claim",
+    "failure_handling": "All planned tasks retained; failures separate from scientific UNKNOWN; conditional and end-to-end coverage both exported"
+  },
+  {
+    "panel_id": "G2D_certified_sign_independent",
+    "primary_reference_id": "R04",
+    "endpoint": "Nonvacuous certified sign outer set: answerability",
+    "source_data": "/Users/oukang/Desktop/投稿资料/fangxiang2/Invariant-EvAM/paper_experiments_v1/g2/figure_data/G2D_certified_sign_independent.tsv",
+    "output_pdf": "/Users/oukang/Desktop/投稿资料/fangxiang2/Invariant-EvAM/paper_experiments_v1/g2/figures/G2D_certified_sign_independent.pdf",
+    "output_svg": "/Users/oukang/Desktop/投稿资料/fangxiang2/Invariant-EvAM/paper_experiments_v1/g2/figures/G2D_certified_sign_independent.svg",
+    "dpi": 600,
+    "size_mm": [
+      100,
+      82
+    ],
+    "palette": {
+      "strong": "#0072B2",
+      "weak": "#E69F00",
+      "nonidentifying": "#CC79A7"
+    },
+    "adaptations": "All12 independent purpose208 cells;500replicates/cell. Wilson Monte Carlo intervals around call rate, separate design series. No paired comparison with purpose201. Magnitude endpoints remain uncertified; theoretical bound is on coverage/unconditional wrong-call probability.",
+    "statistical_unit": "independent paired simulation replicate; fixed conditions",
+    "review_status": "awaiting_visual_review",
+    "data_sha256": "3d015b4698467b616ef8e611da20345be384df42f959e1c44d761c383e58e503",
+    "N": {
+      "observations_per_replicate": 1000,
+      "replicates_per_cell": 500,
+      "independent_replicates_total": 6000
+    },
+    "uncertainty_definition": "Wilson 95% Monte Carlo intervals; endpoint denominator explicitly in data/caption",
+    "failure_handling": "All planned tasks retained; failures separate from scientific UNKNOWN; conditional and end-to-end coverage both exported"
+  }
+]

@@ -1,0 +1,1 @@
+{"cutoff": 6.882953163727052, "rule": "max(chi2_95, worst cell-action development 95% LR higher quantile); only scenarios 0-2; no evaluation tuning", "code_sha256": "6c4b6e9ff6e920c3e39113ebde54da2c76c57686d7a9bb1e6c2c43926ca61b34", "development_files": 160, "invalid": 0}

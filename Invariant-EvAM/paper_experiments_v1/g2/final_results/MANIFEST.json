@@ -1,0 +1,188 @@
+{
+  "group": "g2",
+  "panels": [
+    {
+      "panel": "G2_01",
+      "pdf": "../final_figures/G2_01.pdf",
+      "svg": "../final_figures/G2_01.svg",
+      "plot_data": "plot_data/G2_01.tsv",
+      "data_sha256": "ec3bc5819b0a74b1b104a7445c47325f5be6e84dd88e61bbe447d7a4e88bb8e9",
+      "pdf_sha256": "75874c6f42dcd5b47565a982d28d3c4efed72ba5068002c05248921368b3577b",
+      "svg_sha256": "73a23e96045133e00ff264667c7ef249b3ef4ce1416aa52fc7c207954ab12590",
+      "font": "Arial",
+      "dpi": 600,
+      "size_mm": [
+        109.361,
+        133.703
+      ],
+      "figure_legend": "FIGURE_LEGENDS_CN.md#g2_01"
+    },
+    {
+      "panel": "G2_02",
+      "pdf": "../final_figures/G2_02.pdf",
+      "svg": "../final_figures/G2_02.svg",
+      "plot_data": "plot_data/G2_02.tsv",
+      "data_sha256": "a5c6537e8d4e7959fda6f378f558eb9a0d7a4bd4dcd667bb742b14b964069e40",
+      "pdf_sha256": "3abee588531e75aaa7fc1112e9cd98e8e7529f332486d4ee8f74fdab4be9fd7d",
+      "svg_sha256": "f7a65046d552d7e7c0173c3fdc77a040b19d93be2ab5e2912b49126ac1c5263d",
+      "font": "Arial",
+      "dpi": 600,
+      "size_mm": [
+        171.66689029269747,
+        116.8322420756022
+      ],
+      "figure_legend": "FIGURE_LEGENDS_CN.md#g2_02",
+      "supplementary_plot_data": [
+        {
+          "path": "plot_data/G2_02_raw.tsv",
+          "sha256": "c80685a0d0e1e88e37bf41bf27b1df55917caae6f2c1472b2d9c42305642bb5a"
+        }
+      ]
+    },
+    {
+      "panel": "G2_03",
+      "pdf": "../final_figures/G2_03.pdf",
+      "svg": "../final_figures/G2_03.svg",
+      "plot_data": "plot_data/G2_03.tsv",
+      "data_sha256": "2b8c0d42e7906033096706740bcc13d5754ae0d4b5c3613917affcfc9dd9ddc4",
+      "pdf_sha256": "bb14a1a6571c988ca6fd5ac491bb38e39c26da8d76a5bd821a64e788b562de7e",
+      "svg_sha256": "ff28b8c53587b56fccca199250530069e80ab328b2098f839ac5662194f673f8",
+      "font": "Arial",
+      "dpi": 600,
+      "size_mm": [
+        115.711,
+        128.411
+      ],
+      "figure_legend": "FIGURE_LEGENDS_CN.md#g2_03"
+    },
+    {
+      "panel": "G2_04",
+      "pdf": "../final_figures/G2_04.pdf",
+      "svg": "../final_figures/G2_04.svg",
+      "plot_data": "plot_data/G2_04.tsv",
+      "data_sha256": "feedc549da766f01e47929655cbd42be89c29d5527db2b412fb2d4085234259b",
+      "pdf_sha256": "c763571388e04c97e887ab658d5cd9cccda87ef4f319ce27cc5c67a04fdd57c8",
+      "svg_sha256": "6c0b1c07f7c53b02c703a6f68eaeae402114d76197e6c93e06e4a8a5743a7b1b",
+      "font": "Arial",
+      "dpi": 600,
+      "size_mm": [
+        159.279,
+        87.842
+      ],
+      "figure_legend": "FIGURE_LEGENDS_CN.md#g2_04"
+    },
+    {
+      "panel": "G2_05",
+      "pdf": "../final_figures/G2_05.pdf",
+      "svg": "../final_figures/G2_05.svg",
+      "plot_data": "plot_data/G2_05.tsv",
+      "data_sha256": "a35d64cbabf68b48a83d017369c0fd137e81f32235d8d83d08fb1f9062b4968b",
+      "pdf_sha256": "e58489f0e3cffd7d8a2f66323132ec5d033f96598ed2fd9d37c6e699e4045632",
+      "svg_sha256": "da342caba49d3d5e0c275ac70e2b0d023f495d5742ff5b42ede92f99951802c2",
+      "font": "Arial",
+      "dpi": 600,
+      "size_mm": [
+        119.592,
+        87.312
+      ],
+      "figure_legend": "FIGURE_LEGENDS_CN.md#g2_05"
+    },
+    {
+      "panel": "G2_06",
+      "pdf": "../final_figures/G2_06.pdf",
+      "svg": "../final_figures/G2_06.svg",
+      "plot_data": "plot_data/G2_06.tsv",
+      "data_sha256": "d724b1a8a59ce1496642099b32170bc4c52d53da541a264544630fc7f4f239a3",
+      "pdf_sha256": "5f93dec0d7a118d6d8688e9092c10094f5817c3b87fb1a3d5b91021e91d57314",
+      "svg_sha256": "a07904aa5dd94d982ac93c156b0feb3d9c49eddb51b7a2a13148f33b9b9e6e4b",
+      "font": "Arial",
+      "dpi": 600,
+      "size_mm": [
+        123.649,
+        83.256
+      ],
+      "figure_legend": "FIGURE_LEGENDS_CN.md#g2_06"
+    },
+    {
+      "panel": "G2_07",
+      "pdf": "../final_figures/G2_07.pdf",
+      "svg": "../final_figures/G2_07.svg",
+      "plot_data": "plot_data/G2_07.tsv",
+      "data_sha256": "66805e5c7837d3d5039f0d70b7766d5084590aedcc5d21c54695359c8d41995f",
+      "pdf_sha256": "7db5b37b103316a143e66a3e148eab7aa76eaa592e85c5f30bdbf62f1598c891",
+      "svg_sha256": "12c9a1f8235a14934187e925579a03d64f24050a53d5e53e1878692e8ec051b7",
+      "font": "Arial",
+      "dpi": 600,
+      "size_mm": [
+        89.606,
+        89.076
+      ],
+      "figure_legend": "FIGURE_LEGENDS_CN.md#g2_07"
+    },
+    {
+      "panel": "G2_R2_sign_strong",
+      "pdf": "../final_figures/G2_R2_sign_strong.pdf",
+      "svg": "../final_figures/G2_R2_sign_strong.svg",
+      "plot_data": "plot_data/G2_R2_sign_strong.tsv",
+      "data_sha256": "2e8c6b7e26d7f963ee9ef831582a15b2aa0869c4728c69490d4cbe0df249ab29",
+      "pdf_sha256": "2fd562b24efbcabda1c891fb17e534ed5bc40cf264afbe872704e081abca3495",
+      "svg_sha256": "628f5e23d95c10babd11963ba2bc339b5fdf693e872a46a095f4e1c16ff3a090",
+      "font": "Arial",
+      "dpi": 600,
+      "size_mm": [
+        142.169,
+        97.543
+      ],
+      "figure_legend": "FIGURE_LEGENDS_CN.md#g2_r2_sign_strong"
+    },
+    {
+      "panel": "G2_R2_sign_weak",
+      "pdf": "../final_figures/G2_R2_sign_weak.pdf",
+      "svg": "../final_figures/G2_R2_sign_weak.svg",
+      "plot_data": "plot_data/G2_R2_sign_weak.tsv",
+      "data_sha256": "100ef6feb9c4029503e01964afd3afab7a24ee4a695751fad956bf1714b52498",
+      "pdf_sha256": "a0a710ea254fdef5c016a328c52a4369f6739293cd52c135a082bd0effea8abf",
+      "svg_sha256": "4fcab0263308611b06b0deadb58aa1c1234ec51b09fc8ed119379f4f762da63d",
+      "font": "Arial",
+      "dpi": 600,
+      "size_mm": [
+        142.169,
+        97.014
+      ],
+      "figure_legend": "FIGURE_LEGENDS_CN.md#g2_r2_sign_weak"
+    }
+  ],
+  "figure_legends": {
+    "path": "FIGURE_LEGENDS_CN.md",
+    "sha256": "2ac3a8e8053df79c11e82a22eb53179432fc5523bc2cd9ed469a9835d554e7da"
+  },
+  "figure_style": {
+    "font": "Arial",
+    "dpi": 600,
+    "format": [
+      "PDF",
+      "SVG"
+    ],
+    "vector": true
+  },
+  "experiment_data": [
+    {
+      "path": "experiment_data/R8_summary.tsv",
+      "sha256": "f0dc32d1d9c0db0cc7cd823ef016bfe5bc13ccdbf74a5cceee20aab9a104a961"
+    }
+  ],
+  "method": {
+    "path": "METHOD.json",
+    "sha256": "7a4829ef012f1b583a3931cfbb1f8187d5b6e1cf596024f3343d139be9294ec0"
+  },
+  "current_documents": [
+    {
+      "path": "REPORT_CN.md",
+      "sha256": "d2baae06531fd621ea339f858e47826f3061cb2f3da7036f123848f7abb75cc0"
+    },
+    {
+      "path": "EXPERIMENT_RESULTS.tsv",
+      "sha256": "c8ebb1ffe50da8aa068cb002dfc5b2a6218320bafdf35fed9a5ebc021f12c259"
+    }
+  ]
+}

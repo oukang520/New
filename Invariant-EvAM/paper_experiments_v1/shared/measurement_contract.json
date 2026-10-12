@@ -1,0 +1,33 @@
+{
+  "event_definition": "Reported nonsynonymous mutation row; SNV/indel only; no CNA/SV; no driver inference",
+  "variant_classes": [
+    "Missense_Mutation",
+    "Nonsense_Mutation",
+    "Frame_Shift_Del",
+    "Frame_Shift_Ins",
+    "In_Frame_Del",
+    "In_Frame_Ins",
+    "Splice_Site",
+    "Translation_Start_Site",
+    "Nonstop_Mutation"
+  ],
+  "genome": "GRCh37",
+  "negative": "PANEL_ONLY_PROXY_NEGATIVE_NOT_VERIFIED",
+  "verified_negative_n": 0,
+  "missing_code": -1,
+  "missing_likelihood": "marginalize",
+  "modules": {
+    "LUAD": [
+      "TP53",
+      "KRAS",
+      "STK11",
+      "KEAP1"
+    ],
+    "COAD": [
+      "APC",
+      "TP53",
+      "KRAS",
+      "PIK3CA"
+    ]
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "rule": "lowest6SHA256(figure_id+'|display|'+patient_id)",
+  "all_patient_ids": [
+    "CRUK0074",
+    "CRUK0286",
+    "CRUK0299",
+    "CRUK0344",
+    "CRUK0361",
+    "CRUK0484",
+    "CRUK0552",
+    "CRUK0557",
+    "CRUK0730",
+    "CRUK0769"
+  ],
+  "display_patient_ids": [
+    "CRUK0769",
+    "CRUK0299",
+    "CRUK0074",
+    "CRUK0552",
+    "CRUK0286",
+    "CRUK0730"
+  ],
+  "outcome_used": false,
+  "all_patients_in_statistics": true
+}

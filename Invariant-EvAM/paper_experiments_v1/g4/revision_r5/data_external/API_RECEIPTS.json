@@ -1,0 +1,30 @@
+[
+  {
+    "url": "https://www.cbioportal.org/api/molecular-profiles/luad_tcga_pan_can_atlas_2018_mutations/mutations/fetch?projection=DETAILED",
+    "body": {
+      "sampleListId": "luad_tcga_pan_can_atlas_2018_sequenced",
+      "entrezGeneIds": [
+        7157,
+        3845,
+        6794,
+        9817
+      ]
+    },
+    "status": 200,
+    "sha256": "91c560afe3fc14386a8f2fbdb87f7663fd433407530ecd3a8c15c959dc600737"
+  },
+  {
+    "url": "https://www.cbioportal.org/api/molecular-profiles/coadread_tcga_pan_can_atlas_2018_mutations/mutations/fetch?projection=DETAILED",
+    "body": {
+      "sampleListId": "coadread_tcga_pan_can_atlas_2018_sequenced",
+      "entrezGeneIds": [
+        324,
+        7157,
+        3845,
+        5290
+      ]
+    },
+    "status": 200,
+    "sha256": "b5f23dacc921659241399df8ac352cfe1b84af0c7edb217465ca66ea17105d77"
+  }
+]

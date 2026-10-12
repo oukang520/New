@@ -1,0 +1,74 @@
+{
+  "protocol_version": "1.0",
+  "group": "G1",
+  "namespace": "paper_experiments_v1",
+  "seed_master": 20260923,
+  "scientific_scope": "information and complementarity only",
+  "models_core": {
+    "D3_SPARSE5": {"d": 3, "edges": [[1, 0], [2, 1]], "topology_assumed": true},
+    "D3_FULL9": {"d": 3, "edges": [[0, 1], [0, 2], [1, 0], [1, 2], [2, 0], [2, 1]], "topology_assumed": false},
+    "D4_SPARSE10": {"d": 4, "edges": [[1, 0], [2, 1], [3, 2], [3, 0], [2, 0], [3, 1]], "topology_assumed": true},
+    "D4_FULL16": {"d": 4, "edges": [[0, 1], [0, 2], [0, 3], [1, 0], [1, 2], [1, 3], [2, 0], [2, 1], [2, 3], [3, 0], [3, 1], [3, 2]], "topology_assumed": false}
+  },
+  "models_extension": {
+    "D5_SPARSE10": {"d": 5, "edges": [[1, 0], [2, 1], [3, 2], [4, 3], [4, 0]], "status": "extension_not_required_for_core"}
+  },
+  "time_contract": {"type": "fixed_horizon", "t": 1.0, "initial_state": "all_zero"},
+  "parameter_design": {
+    "baseline_range": [-1.8, -0.2],
+    "interaction_magnitudes": [0.0, 0.15, 0.5, 1.0],
+    "development_draws": 20,
+    "confirmation_draws": 60,
+    "development_and_confirmation_rng_independent": true,
+    "performance_based_screening": false
+  },
+  "operator_design": {
+    "candidate_designs_per_model": 24,
+    "selection_strengths": [0.0, 0.5, 1.0, 1.5],
+    "knowledge": ["K0_KNOWN", "K1_STRUCTURED"],
+    "exact_shift_in_candidate_yield": false,
+    "selection_rule_uses_confirmation_truth": false
+  },
+  "population_geometry": {
+    "n_total": [400, 1000, 4000],
+    "environment_counts": [1, 2, 4],
+    "allocations": ["balanced"],
+    "budget_analyses": ["fixed_enrolled_patients", "fixed_measurement_proxy"],
+    "measurement_proxy_budget": "1000_times_d_event_measurements"
+  },
+  "finite_sample_illustrations": {
+    "model": "D3_SPARSE5",
+    "replicates": 100,
+    "n_total": [400, 1000, 4000],
+    "coverage_claim_allowed": false,
+    "sentinel_selection_uses_confirmation_outcome": false
+  },
+  "numerical": {
+    "dtype": "float64",
+    "rank_rtol": 1e-8,
+    "rank_rtol_sensitivity": [1e-6, 1e-7, 1e-9, 1e-10],
+    "probability_floor": 1e-12,
+    "finite_difference_steps": [1e-5, 1e-6, 1e-7]
+  },
+  "alias_diagnostic": {
+    "models": ["D3_FULL9", "D4_FULL16"],
+    "draws_per_model": 10,
+    "fixed_target_delta": 0.4,
+    "parameter_bounds": [-3.0, 3.0],
+    "global_theorem_claim_allowed": false
+  },
+  "figures": {
+    "format": ["pdf", "svg"],
+    "dpi": 600,
+    "separate_panels_only": true,
+    "palette": ["#0072B2", "#56B4E9", "#009E73", "#E69F00", "#D55E00", "#CC79A7"],
+    "reference_policy": "reports/FIGURE_STYLE_LIBRARY_CN.md",
+    "panel_references": {
+      "G1A": ["R06", "R25"],
+      "G1B": ["R25", "R23"],
+      "G1C": ["R27", "R20"],
+      "G1D": ["R28", "R24"],
+      "G1E": ["R20", "R23"]
+    }
+  }
+}

@@ -1,0 +1,57 @@
+{
+  "new_run": true,
+  "independent_unit": "patient after averaging five initial-region perturbations",
+  "primary": [
+    {
+      "population": "LUAD",
+      "budget": 10,
+      "overhead": 2,
+      "method": "CTMC_BRIDGE",
+      "comparator": "BEST_FIXED",
+      "metric": "branch_recall",
+      "n_patients": 57,
+      "gain": 0.0032452166177927926,
+      "lo": -0.0043713972431077665,
+      "hi": 0.010666960079009908,
+      "p_raw": 0.44206,
+      "p_holm": 1.0,
+      "family_size": 3.0
+    },
+    {
+      "population": "LUAD",
+      "budget": 10,
+      "overhead": 2,
+      "method": "EMPIRICAL_BRIDGE",
+      "comparator": "BEST_FIXED",
+      "metric": "branch_recall",
+      "n_patients": 57,
+      "gain": 0.0032452166177927926,
+      "lo": -0.004556509145671201,
+      "hi": 0.011022893772893772,
+      "p_raw": 0.4396,
+      "p_holm": 1.0,
+      "family_size": 3.0
+    },
+    {
+      "population": "LUAD",
+      "budget": 10,
+      "overhead": 2,
+      "method": "DIRECT_RIDGE",
+      "comparator": "BEST_FIXED",
+      "metric": "branch_recall",
+      "n_patients": 57,
+      "gain": 0.0034123009954034876,
+      "lo": -0.004443674976915975,
+      "hi": 0.011396751198170862,
+      "p_raw": 0.41734,
+      "p_holm": 1.0,
+      "family_size": 3.0
+    }
+  ],
+  "g5_diagnostic_value_supported": false,
+  "CTMC_specific_improvement_supported": false,
+  "inference": "Paired patient bootstrap conditional on frozen development model; two-sided paired mean sign-flip with symmetric-null assumption and Holm3.",
+  "new_theta_truth_claim": false,
+  "monetary_cost_claim": false,
+  "patient_source": "Previously explored TRACERx, current development/confirmation disjoint."
+}

@@ -1,0 +1,207 @@
+{
+  "PATIENT_RECALL.tsv": {
+    "columns": [
+      "patient_id",
+      "split",
+      "reference_scope",
+      "primary_LUAD_GE3",
+      "scenario",
+      "method",
+      "nominal_K",
+      "selected_markers",
+      "capacity_shortfall",
+      "postoperative_samples",
+      "whole_reference_branches_detected",
+      "selected_branches_detected",
+      "confirmed_recovered_branches",
+      "unconfirmed_discordant_union",
+      "unconfirmed_discordant_sample_union",
+      "zero_reference_denominator",
+      "reference_recall",
+      "sample_recall_mean",
+      "panel_MRD_ever",
+      "first_MRD_day",
+      "whole_panel_MRD_ever",
+      "event_status",
+      "confirmed_recurrence_day",
+      "MRD_before_recurrence",
+      "recurrence_lead_days"
+    ]
+  },
+  "SAMPLE_DETECTIONS.tsv.gz": {
+    "columns": [
+      "patient_id",
+      "sample_id",
+      "days_post_surgery",
+      "split",
+      "scenario",
+      "method",
+      "nominal_K",
+      "selected_markers",
+      "recorded_markers",
+      "positive_markers",
+      "panel_MRD",
+      "nontrunk_detected",
+      "reference_detected",
+      "sample_reference_recall"
+    ]
+  },
+  "CLONE_DETECTIONS.tsv.gz": {
+    "columns": [
+      "patient_id",
+      "sample_id",
+      "scenario",
+      "method",
+      "nominal_K",
+      "branch",
+      "confirmed_by_whole_PSP"
+    ]
+  },
+  "MARKER_SELECTION_FREEZE.tsv.gz": {
+    "columns": [
+      "patient_id",
+      "method",
+      "nominal_K",
+      "rank",
+      "marker_key"
+    ]
+  },
+  "NORMAL_CONTROL_RECORDS.tsv": {
+    "columns": [
+      "PublicationID",
+      "control_id",
+      "source_group",
+      "split",
+      "scenario",
+      "method",
+      "nominal_K",
+      "selected_markers",
+      "recorded_markers",
+      "positive_markers",
+      "panel_MRD_false_positive"
+    ]
+  },
+  "POPULATION_SUMMARY.tsv": {
+    "columns": [
+      "population",
+      "scenario",
+      "split",
+      "nominal_K",
+      "method",
+      "patient_n",
+      "branch_score_available_n",
+      "recall_mean",
+      "whole_reference_positive_patient_n",
+      "postoperative_sample_available_n",
+      "capacity_shortfall_n",
+      "MRD_ever_rate",
+      "whole_MRD_ever_rate",
+      "true_recurrence_n",
+      "MRD_before_recurrence_rate",
+      "median_lead_days_detected_only"
+    ]
+  },
+  "PAIRED_COMPARISONS.tsv": {
+    "columns": [
+      "population",
+      "scenario",
+      "nominal_K",
+      "method",
+      "comparator",
+      "n",
+      "difference",
+      "ci_lower",
+      "ci_upper",
+      "p_value",
+      "holm_primary_p"
+    ]
+  },
+  "NORMAL_FPR_SUMMARY.tsv": {
+    "columns": [
+      "split",
+      "scenario",
+      "method",
+      "nominal_K",
+      "normal_source_n",
+      "false_positive_rate"
+    ]
+  },
+  "FUTURE_TISSUE_TARGET_SUPPORT.tsv": {
+    "columns": [
+      "patient_id",
+      "tumour_id",
+      "native_cluster",
+      "future_cluster",
+      "RegionID",
+      "shared_own_markers",
+      "markers_evaluable",
+      "markers_positive",
+      "seeding_markers_positive",
+      "native_is_trunk",
+      "multimarker_future_lineage_support",
+      "multimarker_author_seeding_support",
+      "sampleTypeDetail",
+      "reference_markers",
+      "eligible_multimarker_reference",
+      "branch"
+    ]
+  },
+  "FUTURE_TISSUE_TARGETS.tsv": {
+    "columns": [
+      "patient_id",
+      "tumour_id",
+      "branch",
+      "native_cluster",
+      "future_region_n",
+      "max_shared_positive_markers",
+      "author_seeding_supported",
+      "available_surgical_PSP_markers",
+      "plasma_multimarker_measurable"
+    ]
+  },
+  "FUTURE_TISSUE_PATIENT_SCORES.tsv": {
+    "columns": [
+      "patient_id",
+      "split",
+      "reference_scope",
+      "primary_LUAD_GE3",
+      "source_pair_status",
+      "postoperative_samples",
+      "scenario",
+      "method",
+      "nominal_K",
+      "future_nontrunk_targets",
+      "future_targets_PSP_measurable",
+      "future_targets_below_PSP_capacity",
+      "future_targets_recovered",
+      "future_target_recall",
+      "author_seeding_targets",
+      "author_seeding_targets_recovered",
+      "author_seeding_target_recall",
+      "confirmed_recurrence_day",
+      "future_targets_before_recurrence",
+      "future_target_recall_before_recurrence"
+    ]
+  },
+  "FUTURE_TISSUE_SUMMARY.tsv": {
+    "columns": [
+      "population",
+      "split",
+      "scenario",
+      "method",
+      "nominal_K",
+      "availability_patient_n",
+      "paired_future_tissue_patient_n",
+      "future_target_patient_n",
+      "future_target_plasma_available_patient_n",
+      "future_target_n",
+      "below_PSP_capacity_target_n",
+      "future_target_recall_mean",
+      "future_target_recall_measured_only_mean",
+      "author_seeding_target_patient_n",
+      "author_seeding_target_recall_mean",
+      "true_recurrence_date_target_patient_n",
+      "future_target_recall_before_recurrence_mean"
+    ]
+  }
+}

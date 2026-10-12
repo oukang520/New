@@ -1,0 +1,112 @@
+{
+  "protocol": "G3_1.0",
+  "source_attribution_allowed": false,
+  "evidence_scope": "ARTIFICIAL_STRESS_SIMULATION_NOT_ESTIMATED_PATIENT_ERROR_RATES",
+  "mechanisms": [
+    {
+      "cell": 0,
+      "kind": "same_same",
+      "model": "D3",
+      "reference_target_defined": true
+    },
+    {
+      "cell": 1,
+      "kind": "same_different",
+      "model": "D3",
+      "reference_target_defined": true
+    },
+    {
+      "cell": 2,
+      "kind": "different_same",
+      "model": "D3",
+      "reference_target_defined": true
+    },
+    {
+      "cell": 3,
+      "kind": "different_different",
+      "model": "D3",
+      "reference_target_defined": true
+    },
+    {
+      "cell": 4,
+      "kind": "local_aligned",
+      "model": "D4",
+      "reference_target_defined": true
+    },
+    {
+      "cell": 5,
+      "kind": "outside_nuisance",
+      "model": "D4",
+      "reference_target_defined": true
+    },
+    {
+      "cell": 6,
+      "kind": "calibration",
+      "model": "D3",
+      "reference_target_defined": true
+    },
+    {
+      "cell": 7,
+      "kind": "calibration",
+      "model": "D4",
+      "reference_target_defined": true
+    },
+    {
+      "cell": 8,
+      "kind": "common_zero",
+      "model": "D3",
+      "reference_target_defined": true
+    },
+    {
+      "cell": 9,
+      "kind": "common_mild",
+      "model": "D3",
+      "reference_target_defined": true
+    },
+    {
+      "cell": 10,
+      "kind": "common_moderate",
+      "model": "D3",
+      "reference_target_defined": true
+    },
+    {
+      "cell": 11,
+      "kind": "common_exact",
+      "model": "D3",
+      "reference_target_defined": true
+    },
+    {
+      "cell": 12,
+      "kind": "time",
+      "model": "D3",
+      "reference_target_defined": true
+    },
+    {
+      "cell": 13,
+      "kind": "higher_order",
+      "model": "D4",
+      "reference_target_defined": false
+    },
+    {
+      "cell": 14,
+      "kind": "mixture",
+      "model": "D4",
+      "reference_target_defined": false
+    },
+    {
+      "cell": 15,
+      "kind": "measurement",
+      "model": "D3",
+      "reference_target_defined": true
+    }
+  ],
+  "time": "Gamma mean1 CV0/0.5/1; clinical-termination endpoint remains separately verified G2 evidence",
+  "population_grids": [
+    "G3_population_nonseparability.tsv",
+    "G3_population_strength_grid.tsv",
+    "G3_population_common_bias.tsv",
+    "G3_population_misspecification.tsv"
+  ],
+  "mixture": "No automatic shared CTMC truth; subgroup0 target only with true subgroup labels",
+  "exact_common_U": "log(p_theta_alt)-log(p_theta_reference); explicit controlled counterexample, not realistic known operator assumption"
+}

@@ -1,0 +1,10 @@
+{
+  "best_fixed_common_action": "NEW_SOURCE",
+  "development_mean_restricted_width": {
+    "MORE_SAME": 5.056248993632504,
+    "NEW_SOURCE": 3.713587091955328,
+    "REFERENCE_MARGIN": 3.9588043093855383
+  },
+  "comparison": "same action across all four scenarios; random-feasible policy is exact expectation over all feasible actions",
+  "scope": "secondary benchmark, no change to acquisition or confirmation rules"
+}

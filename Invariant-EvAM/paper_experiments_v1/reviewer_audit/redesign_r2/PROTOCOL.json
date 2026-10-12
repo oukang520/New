@@ -1,0 +1,132 @@
+{
+  "version": "R2_20260924",
+  "created": "2026-09-24T17:01:42.940345",
+  "status": "DESIGN_FROZEN_BEFORE_NEW_EVALUATION",
+  "master_seed": 2026092402,
+  "score_target": [
+    6.5,
+    8
+  ],
+  "score_is_stopping_rule": false,
+  "iterations": "One prespecified method revision and independent evaluation; no repeated confirmation until favorable. Implementation corrections require documented reason and scope. New scientific revisions require a new version.",
+  "old_evidence": "Retained; no replacement by favorable subsets. Existing natural cohorts remain previously explored.",
+  "g1": {
+    "new_test": "multi-draw geometry replication across rare/ordinary/frequent rates and sparse/full topology; same four design sentinels; fixed measurement budget",
+    "draws_per_model": 90,
+    "rate_regimes": [
+      [
+        -4,
+        -3
+      ],
+      [
+        -1.8,
+        -0.2
+      ],
+      [
+        0.2,
+        0.8
+      ]
+    ],
+    "effect_magnitudes": [
+      0,
+      0.15,
+      0.5,
+      1
+    ],
+    "knowledge": [
+      "K0_KNOWN",
+      "K1_STRUCTURED"
+    ],
+    "n_env": 2
+  },
+  "g2": {
+    "new_test": "Exact conditional stratified sign inference vs original probability-band certificate, per-environment exact Bonferroni test, log-OR Wald; existing CTMC profile results remain separate",
+    "replicates_per_cell": 500,
+    "designs": [
+      "strong",
+      "weak",
+      "nonidentifying"
+    ],
+    "effects": [
+      -0.8,
+      0,
+      0.15,
+      0.8
+    ],
+    "n_total": 1000,
+    "alpha": 0.05,
+    "claim": "Finite-sample sign safety under existing D3 proof; no finite magnitude interval guarantee and no claim that Fisher testing is novel"
+  },
+  "g3": {
+    "new_test": "Bounded selection bias sensitivity and fixed-cost unbiased calibration sign validation",
+    "replicates_per_cell": 500,
+    "effects": [
+      -0.8,
+      0,
+      0.8
+    ],
+    "pair_biases": [
+      0,
+      0.5,
+      1.0
+    ],
+    "eta_grid": [
+      0,
+      0.5,
+      1.0
+    ],
+    "budget": 1000,
+    "calibration_fractions": [
+      0,
+      0.1,
+      0.25
+    ],
+    "calibration_cost": 3,
+    "claim": "Sign guarantee only inside the declared log-OR bias class; outside-class failures retained; X and XS separated"
+  },
+  "g4": {
+    "new_test": "Train-only predictive mixing of CTMC and unprojected saturated fusion; all baselines get identical data; direct original-record masking on both cancers",
+    "cancers": [
+      "LUAD",
+      "COAD"
+    ],
+    "designs": [
+      "HETEROGENEOUS",
+      "REDUNDANT",
+      "CROSSVIEW_FAILURE"
+    ],
+    "replicates_per_cell": 50,
+    "bootstrap_replicates": 200,
+    "mixing_weights": [
+      0,
+      0.25,
+      0.5,
+      0.75,
+      1
+    ],
+    "training_validation_fraction": 0.2,
+    "claim": "Prediction only; saturated mixture is not a recovered evolution generator; independent external replication remains absent"
+  },
+  "g5": {
+    "new_test": "Actual-spend matched acquisition comparisons on two cancers, with common feasible cost decided before reveal; all six original strategies retained",
+    "cancers": [
+      "LUAD",
+      "COAD"
+    ],
+    "replicates": 50,
+    "budget_caps": [
+      12,
+      24,
+      36
+    ],
+    "base_per_environment": 50,
+    "claim": "Predictive value and target-information acquisition; strategy aliases reported, no forced novelty; old natural incompatibility retained"
+  },
+  "acceptance": {
+    "safety": "Report all conditional cells, numerators/denominators and Wilson MC intervals; no overall average hides violations",
+    "benefit": "Paired effect and uncertainty from all fixed replicates; material positive effect needed, not just favorable mean",
+    "novelty": "Existing exact tests, fusion and CV are components, not newly invented methods",
+    "unavailable_truth": "Natural parameter coverage not scored; no external cohort is labeled NOT_TESTED, not failed efficacy"
+  },
+  "outputs": "Each original g*/revision_r2 folder; old current delivery not overwritten before new review; physical PDF+SVG600dpi and user palette"
+}

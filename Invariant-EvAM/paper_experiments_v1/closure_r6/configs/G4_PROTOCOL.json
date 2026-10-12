@@ -1,0 +1,13 @@
+{
+ "stage":"FROZEN_BEFORE_NEW_INTERVENTION_EVALUATION","seed":2026092764,
+ "question":"Decompose fixed-cost bridge benefit into hidden-margin information and within-patient association; distinguish information acquisition from optimizer effects",
+ "cancers":["LUAD","COAD"],"designs":["REDUNDANT","HETEROGENEOUS","CROSSVIEW_FAILURE"],"replicates":50,
+ "association_doses":[0,0.5,1],"intervention":"For each actual bridge contingency table, replace it by dose*original+(1-dose)*product of observed triple and hidden-bit empirical margins. Both margins, patient mass, source calibration and cost unchanged. Fractional tables represent averaged controlled label permutation, not additional patients.",
+ "fixed_model":"Original CTMC joint estimator, no new tuning; aligned dose1 is existing frozen R4 fit; pooled and two-step retained",
+ "primary":"TCGA paired hidden log score, equal design weighting; GENIE conditional integrated score secondary. Existing patients already explored, this is new intervention analysis, not new independent cohort confirmation.",
+ "contrasts":{"total":"MORE-ALIGNED","margin":"MORE-DEASSOCIATED","pairing":"DEASSOCIATED-ALIGNED","optimizer":"TWO_STEP-ALIGNED","model":"POOLED-ALIGNED"},
+ "uncertainty":"2000 paired TCGA patient+fit-seed bootstrap, shared patient draws across designs. Each decomposition uses identical draws. No patient count inflation by seeds.",
+ "score8":"Both cancers total and margin contributions positive with interval excluding zero; exact additive decomposition and marginal preservation; disclose all pairing and strong-baseline outcomes",
+ "score8plus":"Additionally positive pairing contribution intervals in both cancers and coherent dose trend; no need to beat two-step, since optimizer attribution is tested rather than presumed",
+ "no_success_guarantee":true
+}

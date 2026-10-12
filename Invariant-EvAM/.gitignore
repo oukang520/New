@@ -1,0 +1,25 @@
+# Local environments and caches
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+*.egg-info/
+build/
+dist/
+.DS_Store
+.env
+.env.*
+!.env.example
+# Downloaded external inputs and recomputation outputs
+external_data/
+scratch/
+recomputed/
+*.log
+*.zip
+*.tar.gz
+# Keep the small original frozen native backends intentionally shipped here.
+
+# Keep the formal publication artifacts inside this isolated project.
+!*.pdf
+!*.docx

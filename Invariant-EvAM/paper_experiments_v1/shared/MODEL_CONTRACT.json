@@ -1,0 +1,143 @@
+{
+  "protocol_version": "1.0",
+  "status": "FROZEN",
+  "frozen_at": "2026-09-23",
+  "time_contract": {
+    "type": "fixed_horizon",
+    "t": 1.0,
+    "initial_state": "all_zero"
+  },
+  "models": {
+    "D3_SPARSE5": {
+      "d": 3,
+      "edges": [
+        [
+          1,
+          0
+        ],
+        [
+          2,
+          1
+        ]
+      ],
+      "topology_assumed": true
+    },
+    "D3_FULL9": {
+      "d": 3,
+      "edges": [
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          2
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          2,
+          0
+        ],
+        [
+          2,
+          1
+        ]
+      ],
+      "topology_assumed": false
+    },
+    "D4_SPARSE10": {
+      "d": 4,
+      "edges": [
+        [
+          1,
+          0
+        ],
+        [
+          2,
+          1
+        ],
+        [
+          3,
+          2
+        ],
+        [
+          3,
+          0
+        ],
+        [
+          2,
+          0
+        ],
+        [
+          3,
+          1
+        ]
+      ],
+      "topology_assumed": true
+    },
+    "D4_FULL16": {
+      "d": 4,
+      "edges": [
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          2
+        ],
+        [
+          0,
+          3
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          1,
+          3
+        ],
+        [
+          2,
+          0
+        ],
+        [
+          2,
+          1
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          3,
+          0
+        ],
+        [
+          3,
+          1
+        ],
+        [
+          3,
+          2
+        ]
+      ],
+      "topology_assumed": false
+    }
+  },
+  "state_order": "itertools.product([0,1], repeat=d); event_0 is most significant bit",
+  "generator_convention": "Q[row=current_state,column=next_state]; distribution=expm(Q.T*t)@initial",
+  "evidence_label": "NEW_RUN_CONTRACT"
+}

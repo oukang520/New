@@ -1,0 +1,9 @@
+panel	case	comparator	n	effect	p_raw	test	unit	family_size	p_holm	label
+G5_R8_diagnostic_value	0	MORE_SAME	60	0.0	1.0	two-sided paired mean sign-flip; symmetric null	independent confirmation replicate	8	1.0	ns
+G5_R8_diagnostic_value	0	DEVELOPMENT_BEST_FIXED	60	2.62995664363001	2e-05	two-sided paired mean sign-flip; symmetric null	independent confirmation replicate	8	0.00016	***
+G5_R8_diagnostic_value	1	MORE_SAME	60	4.520613921579153	2e-05	two-sided paired mean sign-flip; symmetric null	independent confirmation replicate	8	0.00016	***
+G5_R8_diagnostic_value	1	DEVELOPMENT_BEST_FIXED	60	2.055533930567259	2e-05	two-sided paired mean sign-flip; symmetric null	independent confirmation replicate	8	0.00016	***
+G5_R8_diagnostic_value	2	MORE_SAME	60	6.413214931422782	2e-05	two-sided paired mean sign-flip; symmetric null	independent confirmation replicate	8	0.00016	***
+G5_R8_diagnostic_value	2	DEVELOPMENT_BEST_FIXED	60	0.4473978054147324	2e-05	two-sided paired mean sign-flip; symmetric null	independent confirmation replicate	8	0.00016	***
+G5_R8_diagnostic_value	3	MORE_SAME	60	0.4873251424214596	2e-05	two-sided paired mean sign-flip; symmetric null	independent confirmation replicate	8	0.00016	***
+G5_R8_diagnostic_value	3	DEVELOPMENT_BEST_FIXED	60	0.037764906531481506	0.01168	two-sided paired mean sign-flip; symmetric null	independent confirmation replicate	8	0.02336	*

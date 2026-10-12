@@ -1,0 +1,119 @@
+{
+  "scope": "Real later tissue marker-supported lineage reference, not true theta or causal metastasis mechanism.",
+  "all_future_source_patients": 48,
+  "all_future_source_confirmation_patients": 18,
+  "primary_cost_cell": [
+    {
+      "population": "ALL_NSCLC",
+      "budget": 10,
+      "overhead": 2,
+      "method": "BEST_FIXED",
+      "n_future_patients": 14,
+      "n_evaluable_patients": 9,
+      "mean": 0.5444444444444444,
+      "lo": 0.3888888888888889,
+      "hi": 0.7111111111111111
+    },
+    {
+      "population": "ALL_NSCLC",
+      "budget": 10,
+      "overhead": 2,
+      "method": "CTMC_BRIDGE",
+      "n_future_patients": 14,
+      "n_evaluable_patients": 9,
+      "mean": 0.47777777777777775,
+      "lo": 0.3111111111111111,
+      "hi": 0.6666666666666666
+    },
+    {
+      "population": "ALL_NSCLC",
+      "budget": 10,
+      "overhead": 2,
+      "method": "DIRECT_RIDGE",
+      "n_future_patients": 14,
+      "n_evaluable_patients": 9,
+      "mean": 0.47777777777777775,
+      "lo": 0.3111111111111111,
+      "hi": 0.6666666666666666
+    },
+    {
+      "population": "ALL_NSCLC",
+      "budget": 10,
+      "overhead": 2,
+      "method": "EMPIRICAL_BRIDGE",
+      "n_future_patients": 14,
+      "n_evaluable_patients": 9,
+      "mean": 0.47777777777777775,
+      "lo": 0.30000000000000004,
+      "hi": 0.6666666666666666
+    },
+    {
+      "population": "ALL_NSCLC",
+      "budget": 10,
+      "overhead": 2,
+      "method": "RANDOM",
+      "n_future_patients": 14,
+      "n_evaluable_patients": 9,
+      "mean": 0.2814814814814815,
+      "lo": 0.12574074074074074,
+      "hi": 0.43703703703703706
+    },
+    {
+      "population": "LUAD",
+      "budget": 10,
+      "overhead": 2,
+      "method": "BEST_FIXED",
+      "n_future_patients": 5,
+      "n_evaluable_patients": 3,
+      "mean": 0.7666666666666666,
+      "lo": 0.5,
+      "hi": 1.0
+    },
+    {
+      "population": "LUAD",
+      "budget": 10,
+      "overhead": 2,
+      "method": "CTMC_BRIDGE",
+      "n_future_patients": 5,
+      "n_evaluable_patients": 3,
+      "mean": 0.7666666666666666,
+      "lo": 0.5,
+      "hi": 1.0
+    },
+    {
+      "population": "LUAD",
+      "budget": 10,
+      "overhead": 2,
+      "method": "DIRECT_RIDGE",
+      "n_future_patients": 5,
+      "n_evaluable_patients": 3,
+      "mean": 0.7666666666666666,
+      "lo": 0.5,
+      "hi": 1.0
+    },
+    {
+      "population": "LUAD",
+      "budget": 10,
+      "overhead": 2,
+      "method": "EMPIRICAL_BRIDGE",
+      "n_future_patients": 5,
+      "n_evaluable_patients": 3,
+      "mean": 0.7666666666666666,
+      "lo": 0.5,
+      "hi": 1.0
+    },
+    {
+      "population": "LUAD",
+      "budget": 10,
+      "overhead": 2,
+      "method": "RANDOM",
+      "n_future_patients": 5,
+      "n_evaluable_patients": 3,
+      "mean": 0.4666666666666666,
+      "lo": 0.20000000000000004,
+      "hi": 0.6
+    }
+  ],
+  "diagnostic_superiority_claim": false,
+  "sample_size_interpretation": "Small biological bridge subset; no upgrade to a large external validation."
+}

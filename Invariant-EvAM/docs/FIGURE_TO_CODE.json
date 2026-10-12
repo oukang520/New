@@ -1,0 +1,1792 @@
+{
+  "scope": "Current59final_figures only; experiment/summary/plotrolesseparate; exact9G2checked againstsource andcurrentformaldata; unresolvedrowslabelledgroup_candidates",
+  "source_project_modified": false,
+  "panel_n": 59,
+  "exact_n": 59,
+  "panels": [
+    {
+      "group": "g1",
+      "panel": "G1A",
+      "analysis_entrypoints": [
+        "paper_experiments_v1/g1/src/g1_pipeline.py"
+      ],
+      "summary_entrypoints": [
+        "paper_experiments_v1/g1/src/prepare_style_v3_data.py"
+      ],
+      "plotting_entrypoints": [
+        "paper_experiments_v1/g1/src/g1_plot.py"
+      ],
+      "formal_plot_data": "paper_experiments_v1/g1/final_results/plot_data/G1A.tsv",
+      "resolution": "exact",
+      "group_entrypoints": [
+        "paper_experiments_v1/g1/src/g1_pipeline.py",
+        "paper_experiments_v1/g1/src/g1_v1_1.py",
+        "paper_experiments_v1/reviewer_audit/redesign_r2/run_g1_finite.py",
+        "paper_experiments_v1/closure_r8/src/run_g1.py"
+      ],
+      "notes": "g1_pipeline.run_alias -> G1_counterexamples.jsonl -> prepare_style_v3_data.py lines 11-16 -> G1A/data_target_endpoint.tsv. Fixed endpoint original/alias coordinates; no new run."
+    },
+    {
+      "group": "g1",
+      "panel": "G1B",
+      "analysis_entrypoints": [
+        "paper_experiments_v1/closure_r8/src/run_g1.py"
+      ],
+      "summary_entrypoints": [
+        "paper_experiments_v1/closure_r8/src/summarize.py"
+      ],
+      "plotting_entrypoints": [
+        "paper_experiments_v1/closure_r8/publication/plot.py"
+      ],
+      "formal_plot_data": "paper_experiments_v1/g1/final_results/plot_data/G1B.tsv",
+      "resolution": "exact",
+      "group_entrypoints": [
+        "paper_experiments_v1/g1/src/g1_pipeline.py",
+        "paper_experiments_v1/g1/src/g1_v1_1.py",
+        "paper_experiments_v1/reviewer_audit/redesign_r2/run_g1_finite.py",
+        "paper_experiments_v1/closure_r8/src/run_g1.py"
+      ],
+      "notes": "CurrentR8complexitygeometry targetinformation, notoldG1Balone."
+    },
+    {
+      "group": "g1",
+      "panel": "G1C",
+      "analysis_entrypoints": [
+        "paper_experiments_v1/g1/src/g1_pipeline.py"
+      ],
+      "summary_entrypoints": [
+        "paper_experiments_v1/g1/src/prepare_figures.py"
+      ],
+      "plotting_entrypoints": [
+        "paper_experiments_v1/g1/src/g1_plot.py"
+      ],
+      "formal_plot_data": "paper_experiments_v1/g1/final_results/plot_data/G1C.tsv",
+      "resolution": "exact",
+      "group_entrypoints": [
+        "paper_experiments_v1/g1/src/g1_pipeline.py",
+        "paper_experiments_v1/g1/src/g1_v1_1.py",
+        "paper_experiments_v1/reviewer_audit/redesign_r2/run_g1_finite.py",
+        "paper_experiments_v1/closure_r8/src/run_g1.py"
+      ],
+      "notes": "g1_pipeline.run_population -> G1_population_geometry.tsv -> prepare_figures.py lines 81-91 group model/design for target rescue -> G1C/data.tsv."
+    },
+    {
+      "group": "g1",
+      "panel": "G1D",
+      "analysis_entrypoints": [
+        "paper_experiments_v1/g1/src/g1_pipeline.py"
+      ],
+      "summary_entrypoints": [
+        "paper_experiments_v1/g1/src/prepare_style_v3_data.py"
+      ],
+      "plotting_entrypoints": [
+        "paper_experiments_v1/g1/src/g1_plot.py"
+      ],
+      "formal_plot_data": "paper_experiments_v1/g1/final_results/plot_data/G1D.tsv",
+      "resolution": "exact",
+      "group_entrypoints": [
+        "paper_experiments_v1/g1/src/g1_pipeline.py",
+        "paper_experiments_v1/g1/src/g1_v1_1.py",
+        "paper_experiments_v1/reviewer_audit/redesign_r2/run_g1_finite.py",
+        "paper_experiments_v1/closure_r8/src/run_g1.py"
+      ],
+      "notes": "g1_pipeline.run_population -> G1_population_geometry.tsv -> prepare_style_v3_data.py lines 6-10, 96 design-level groups of 60 draws -> G1D/data_by_design.tsv. Original aggregate prepare_figures.py G1D is not the current design-level input."
+    },
+    {
+      "group": "g1",
+      "panel": "G1E",
+      "analysis_entrypoints": [
+        "paper_experiments_v1/g1/src/g1_pipeline.py"
+      ],
+      "summary_entrypoints": [
+        "paper_experiments_v1/g1/src/prepare_figures.py"
+      ],
+      "plotting_entrypoints": [
+        "paper_experiments_v1/g1/src/g1_plot.py"
+      ],
+      "formal_plot_data": "paper_experiments_v1/g1/final_results/plot_data/G1E.tsv",
+      "resolution": "exact",
+      "group_entrypoints": [
+        "paper_experiments_v1/g1/src/g1_pipeline.py",
+        "paper_experiments_v1/g1/src/g1_v1_1.py",
+        "paper_experiments_v1/reviewer_audit/redesign_r2/run_g1_finite.py",
+        "paper_experiments_v1/closure_r8/src/run_g1.py"
+      ],
+      "notes": "g1_pipeline.run_population -> G1_source_information_cap.tsv -> prepare_figures.py lines 104-112 model-level ranks/nullities -> G1E/data.tsv."
+    },
+    {
+      "group": "g1",
+      "panel": "G1_R2_recovery_frequent",
+      "analysis_entrypoints": [
+        "paper_experiments_v1/reviewer_audit/redesign_r2/run_g1_finite.py"
+      ],
+      "summary_entrypoints": [
+        "paper_experiments_v1/reviewer_audit/redesign_r2/run_g1_finite.py"
+      ],
+      "plotting_entrypoints": [
+        "paper_experiments_v1/reviewer_audit/redesign_r2/plot_r2.py"
+      ],
+      "formal_plot_data": "paper_experiments_v1/g1/final_results/plot_data/G1_R2_recovery_frequent.tsv",
+      "resolution": "exact",
+      "group_entrypoints": [
+        "paper_experiments_v1/g1/src/g1_pipeline.py",
+        "paper_experiments_v1/g1/src/g1_v1_1.py",
+        "paper_experiments_v1/reviewer_audit/redesign_r2/run_g1_finite.py",
+        "paper_experiments_v1/closure_r8/src/run_g1.py"
+      ],
+      "notes": "Frozenfinite-dataG1recovery;currentR2plotreadsG1_R2_finite_raw.tsv."
+    },
+    {
+      "group": "g1",
+      "panel": "G1_R2_recovery_ordinary",
+      "analysis_entrypoints": [
+        "paper_experiments_v1/reviewer_audit/redesign_r2/run_g1_finite.py"
+      ],
+      "summary_entrypoints": [
+        "paper_experiments_v1/reviewer_audit/redesign_r2/run_g1_finite.py"
+      ],
+      "plotting_entrypoints": [
+        "paper_experiments_v1/reviewer_audit/redesign_r2/plot_r2.py"
+      ],
+      "formal_plot_data": "paper_experiments_v1/g1/final_results/plot_data/G1_R2_recovery_ordinary.tsv",
+      "resolution": "exact",
+      "group_entrypoints": [
+        "paper_experiments_v1/g1/src/g1_pipeline.py",
+        "paper_experiments_v1/g1/src/g1_v1_1.py",
+        "paper_experiments_v1/reviewer_audit/redesign_r2/run_g1_finite.py",
+        "paper_experiments_v1/closure_r8/src/run_g1.py"
+      ],
+      "notes": "Frozenfinite-dataG1recovery;currentR2plotreadsG1_R2_finite_raw.tsv."
+    },
+    {
+      "group": "g1",
+      "panel": "G1_R2_recovery_rare",
+      "analysis_entrypoints": [
+        "paper_experiments_v1/reviewer_audit/redesign_r2/run_g1_finite.py"
+      ],
+      "summary_entrypoints": [
+        "paper_experiments_v1/reviewer_audit/redesign_r2/run_g1_finite.py"
+      ],
+      "plotting_entrypoints": [
+        "paper_experiments_v1/reviewer_audit/redesign_r2/plot_r2.py"
+      ],
+      "formal_plot_data": "paper_experiments_v1/g1/final_results/plot_data/G1_R2_recovery_rare.tsv",
+      "resolution": "exact",
+      "group_entrypoints": [
+        "paper_experiments_v1/g1/src/g1_pipeline.py",
+        "paper_experiments_v1/g1/src/g1_v1_1.py",
+        "paper_experiments_v1/reviewer_audit/redesign_r2/run_g1_finite.py",
+        "paper_experiments_v1/closure_r8/src/run_g1.py"
+      ],
+      "notes": "Frozenfinite-dataG1recovery;currentR2plotreadsG1_R2_finite_raw.tsv."
+    },
+    {
+      "group": "g2",
+      "panel": "G2_01",
+      "analysis_entrypoints": [
+        "paper_experiments_v1/g2/src/g2_run.py"
+      ],
+      "summary_entrypoints": [
+        "paper_experiments_v1/g2/src/g2_summarize.py",
+        "paper_experiments_v1/g2/src/g2_derive.py"
+      ],
+      "plotting_entrypoints": [
+        "paper_experiments_v1/g2/figure_revision_v2/redraw.py"
+      ],
+      "formal_plot_data": "paper_experiments_v1/g2/final_results/plot_data/G2_01.tsv",
+      "resolution": "exact",
+      "group_entrypoints": [
+        "paper_experiments_v1/g2/src/g2_run.py",
+        "paper_experiments_v1/g2/src/g2_certified_sign.py",
+        "paper_experiments_v1/g2/src/g2_omhn.py",
+        "paper_experiments_v1/reviewer_audit/redesign_r2/run_simulations.py",
+        "paper_experiments_v1/closure_r8/src/run_g2.py",
+        "paper_experiments_v1/closure_r8/src/refine_profile_v2.py",
+        "paper_experiments_v1/closure_r8/src/g2_fresh_confirmation.py"
+      ],
+      "notes": "Original6000-replicate core; call-rate/conditional-error bubble matrix fromG2_core_summary.tsv."
+    },
+    {
+      "group": "g2",
+      "panel": "G2_02",
+      "analysis_entrypoints": [
+        "paper_experiments_v1/closure_r8/src/run_g2.py",
+        "paper_experiments_v1/closure_r8/src/refine_profile_v2.py",
+        "paper_experiments_v1/closure_r8/src/g2_fresh_confirmation.py"
+      ],
+      "summary_entrypoints": [
+        "paper_experiments_v1/closure_r8/src/summarize.py"
+      ],
+      "plotting_entrypoints": [
+        "paper_experiments_v1/closure_r8/publication/plot.py",
+        "paper_experiments_v1/figure_delivery/bar_bracket_audit_20260929/render_g2.py"
+      ],
+      "formal_plot_data": "paper_experiments_v1/g2/final_results/plot_data/G2_02.tsv",
+      "resolution": "exact",
+      "group_entrypoints": [
+        "paper_experiments_v1/g2/src/g2_run.py",
+        "paper_experiments_v1/g2/src/g2_certified_sign.py",
+        "paper_experiments_v1/g2/src/g2_omhn.py",
+        "paper_experiments_v1/reviewer_audit/redesign_r2/run_simulations.py",
+        "paper_experiments_v1/closure_r8/src/run_g2.py",
+        "paper_experiments_v1/closure_r8/src/refine_profile_v2.py",
+        "paper_experiments_v1/closure_r8/src/g2_fresh_confirmation.py"
+      ],
+      "notes": "CurrentR8 only: evaluation_all_methods.tsv combinesoriginalR8 andrefinedV2; fresh_confirmation/results.tsv keptseparate; right-side marksWilsonCIs."
+    },
+    {
+      "group": "g2",
+      "panel": "G2_03",
+      "analysis_entrypoints": [
+        "paper_experiments_v1/g2/src/g2_run.py"
+      ],
+      "summary_entrypoints": [
+        "paper_experiments_v1/g2/src/g2_summarize.py",
+        "paper_experiments_v1/g2/src/g2_derive.py"
+      ],
+      "plotting_entrypoints": [
+        "paper_experiments_v1/g2/figure_revision_v3/redraw.py",
+        "paper_experiments_v1/figure_delivery/reference_revision_20260925/redraw.py"
+      ],
+      "formal_plot_data": "paper_experiments_v1/g2/final_results/plot_data/G2_03.tsv",
+      "resolution": "exact",
+      "group_entrypoints": [
+        "paper_experiments_v1/g2/src/g2_run.py",
+        "paper_experiments_v1/g2/src/g2_certified_sign.py",
+        "paper_experiments_v1/g2/src/g2_omhn.py",
+        "paper_experiments_v1/reviewer_audit/redesign_r2/run_simulations.py",
+        "paper_experiments_v1/closure_r8/src/run_g2.py",
+        "paper_experiments_v1/closure_r8/src/refine_profile_v2.py",
+        "paper_experiments_v1/closure_r8/src/g2_fresh_confirmation.py"
+      ],
+      "notes": "G2_paired_comparisons.tsv; x=MvsB5 correct-callgain,y=MvsB4; same500replicates/cell."
+    },
+    {
+      "group": "g2",
+      "panel": "G2_04",
+      "analysis_entrypoints": [
+        "paper_experiments_v1/g2/src/g2_omhn.py"
+      ],
+      "summary_entrypoints": [
+        "paper_experiments_v1/g2/src/g2_plot.py"
+      ],
+      "plotting_entrypoints": [
+        "paper_experiments_v1/g2/figure_revision_v3/redraw.py"
+      ],
+      "formal_plot_data": "paper_experiments_v1/g2/final_results/plot_data/G2_04.tsv",
+      "resolution": "exact",
+      "group_entrypoints": [
+        "paper_experiments_v1/g2/src/g2_run.py",
+        "paper_experiments_v1/g2/src/g2_certified_sign.py",
+        "paper_experiments_v1/g2/src/g2_omhn.py",
+        "paper_experiments_v1/reviewer_audit/redesign_r2/run_simulations.py",
+        "paper_experiments_v1/closure_r8/src/run_g2.py",
+        "paper_experiments_v1/closure_r8/src/refine_profile_v2.py",
+        "paper_experiments_v1/closure_r8/src/g2_fresh_confirmation.py"
+      ],
+      "notes": "g2_plot.py:matched() generatesB6_matched_summary.tsv fromfourB6_matched_cell*.tsv; g2_b6_pairs isparallel ancillarypairedmetrics, notsummarywriter."
+    },
+    {
+      "group": "g2",
+      "panel": "G2_05",
+      "analysis_entrypoints": [
+        "paper_experiments_v1/g2/src/g2_run.py"
+      ],
+      "summary_entrypoints": [
+        "paper_experiments_v1/g2/src/g2_summarize.py",
+        "paper_experiments_v1/g2/src/g2_derive.py"
+      ],
+      "plotting_entrypoints": [
+        "paper_experiments_v1/g2/figure_revision_v2/redraw.py"
+      ],
+      "formal_plot_data": "paper_experiments_v1/g2/final_results/plot_data/G2_05.tsv",
+      "resolution": "exact",
+      "group_entrypoints": [
+        "paper_experiments_v1/g2/src/g2_run.py",
+        "paper_experiments_v1/g2/src/g2_certified_sign.py",
+        "paper_experiments_v1/g2/src/g2_omhn.py",
+        "paper_experiments_v1/reviewer_audit/redesign_r2/run_simulations.py",
+        "paper_experiments_v1/closure_r8/src/run_g2.py",
+        "paper_experiments_v1/closure_r8/src/refine_profile_v2.py",
+        "paper_experiments_v1/closure_r8/src/g2_fresh_confirmation.py"
+      ],
+      "notes": "Correct-callrate pooledfixedequalweight mixture of4effects fromG2_core_summary.tsv;2000replicates/design."
+    },
+    {
+      "group": "g2",
+      "panel": "G2_06",
+      "analysis_entrypoints": [
+        "paper_experiments_v1/g2/src/g2_run.py"
+      ],
+      "summary_entrypoints": [
+        "paper_experiments_v1/g2/src/g2_summarize.py",
+        "paper_experiments_v1/g2/src/g2_derive.py"
+      ],
+      "plotting_entrypoints": [
+        "paper_experiments_v1/g2/figure_revision_v2/redraw.py"
+      ],
+      "formal_plot_data": "paper_experiments_v1/g2/final_results/plot_data/G2_06.tsv",
+      "resolution": "exact",
+      "group_entrypoints": [
+        "paper_experiments_v1/g2/src/g2_run.py",
+        "paper_experiments_v1/g2/src/g2_certified_sign.py",
+        "paper_experiments_v1/g2/src/g2_omhn.py",
+        "paper_experiments_v1/reviewer_audit/redesign_r2/run_simulations.py",
+        "paper_experiments_v1/closure_r8/src/run_g2.py",
+        "paper_experiments_v1/closure_r8/src/refine_profile_v2.py",
+        "paper_experiments_v1/closure_r8/src/g2_fresh_confirmation.py"
+      ],
+      "notes": "g2_run rawrisk; normalize_batch propagatesfailure; g2_summarize generatesG2_risk_answerability.tsv across5frozenconfidencelevels."
+    },
+    {
+      "group": "g2",
+      "panel": "G2_07",
+      "analysis_entrypoints": [
+        "paper_experiments_v1/g2/src/g2_omhn.py"
+      ],
+      "summary_entrypoints": [],
+      "plotting_entrypoints": [
+        "paper_experiments_v1/g2/figure_revision_v2/redraw.py"
+      ],
+      "formal_plot_data": "paper_experiments_v1/g2/final_results/plot_data/G2_07.tsv",
+      "resolution": "exact",
+      "group_entrypoints": [
+        "paper_experiments_v1/g2/src/g2_run.py",
+        "paper_experiments_v1/g2/src/g2_certified_sign.py",
+        "paper_experiments_v1/g2/src/g2_omhn.py",
+        "paper_experiments_v1/reviewer_audit/redesign_r2/run_simulations.py",
+        "paper_experiments_v1/closure_r8/src/run_g2.py",
+        "paper_experiments_v1/closure_r8/src/refine_profile_v2.py",
+        "paper_experiments_v1/closure_r8/src/g2_fresh_confirmation.py"
+      ],
+      "notes": "All800paired pointestimates; renderer directlyconcatsfourB6_matched_cell*.tsv andpivotsbycell_id,replicate_id,truth. g2_b6_pairs.py notdirectscatterdependency."
+    },
+    {
+      "group": "g2",
+      "panel": "G2_R2_sign_strong",
+      "analysis_entrypoints": [
+        "paper_experiments_v1/reviewer_audit/redesign_r2/run_simulations.py"
+      ],
+      "summary_entrypoints": [
+        "paper_experiments_v1/reviewer_audit/redesign_r2/run_simulations.py"
+      ],
+      "plotting_entrypoints": [
+        "paper_experiments_v1/reviewer_audit/redesign_r2/plot_r2.py"
+      ],
+      "formal_plot_data": "paper_experiments_v1/g2/final_results/plot_data/G2_R2_sign_strong.tsv",
+      "resolution": "exact",
+      "group_entrypoints": [
+        "paper_experiments_v1/g2/src/g2_run.py",
+        "paper_experiments_v1/g2/src/g2_certified_sign.py",
+        "paper_experiments_v1/g2/src/g2_omhn.py",
+        "paper_experiments_v1/reviewer_audit/redesign_r2/run_simulations.py",
+        "paper_experiments_v1/closure_r8/src/run_g2.py",
+        "paper_experiments_v1/closure_r8/src/refine_profile_v2.py",
+        "paper_experiments_v1/closure_r8/src/g2_fresh_confirmation.py"
+      ],
+      "notes": "run_simulations.py:g2()andmetrics() produceG2_R2_raw/G2_R2_summary; endpointstrongsigncorrectness, notR8magnitude."
+    },
+    {
+      "group": "g2",
+      "panel": "G2_R2_sign_weak",
+      "analysis_entrypoints": [
+        "paper_experiments_v1/reviewer_audit/redesign_r2/run_simulations.py"
+      ],
+      "summary_entrypoints": [
+        "paper_experiments_v1/reviewer_audit/redesign_r2/run_simulations.py"
+      ],
+      "plotting_entrypoints": [
+        "paper_experiments_v1/reviewer_audit/redesign_r2/plot_r2.py"
+      ],
+      "formal_plot_data": "paper_experiments_v1/g2/final_results/plot_data/G2_R2_sign_weak.tsv",
+      "resolution": "exact",
+      "group_entrypoints": [
+        "paper_experiments_v1/g2/src/g2_run.py",
+        "paper_experiments_v1/g2/src/g2_certified_sign.py",
+        "paper_experiments_v1/g2/src/g2_omhn.py",
+        "paper_experiments_v1/reviewer_audit/redesign_r2/run_simulations.py",
+        "paper_experiments_v1/closure_r8/src/run_g2.py",
+        "paper_experiments_v1/closure_r8/src/refine_profile_v2.py",
+        "paper_experiments_v1/closure_r8/src/g2_fresh_confirmation.py"
+      ],
+      "notes": "SameR2g2()+metrics() pipeline, weak-observationstratum; separatefromR8intervals."
+    },
+    {
+      "group": "g3",
+      "panel": "G3_01",
+      "analysis_entrypoints": [
+        "paper_experiments_v1/g3/src/g3_run.py",
+        "paper_experiments_v1/g3/src/g3_local_alignment_revision.py"
+      ],
+      "summary_entrypoints": [
+        "paper_experiments_v1/g3/src/g3_summarize.py"
+      ],
+      "plotting_entrypoints": [
+        "paper_experiments_v1/g3/src/g3_plot_full_library.py"
+      ],
+      "formal_plot_data": "paper_experiments_v1/g3/final_results/plot_data/G3_01.tsv",
+      "resolution": "exact",
+      "group_entrypoints": [
+        "paper_experiments_v1/g3/src/g3_run.py",
+        "paper_experiments_v1/g3/src/g3_population.py",
+        "paper_experiments_v1/g3/src/g3_sensitivity_audit.py",
+        "paper_experiments_v1/reviewer_audit/redesign_r2/run_simulations.py",
+        "paper_experiments_v1/reviewer_audit/redesign_r3/g3_joint.py",
+        "paper_experiments_v1/reviewer_audit/redesign_r3/g3_reference_anchor.py"
+      ],
+      "notes": "Six crossed mechanisms, cells 0-5; current cell04 input replaced by alignment_revision runs. g3_summarize.py line 13 explicitly excludes core cell04 and adds alignment_revision; summary Wilson noncoverage is rendered by g3_plot_full_library.py lines 55-70."
+    },
+    {
+      "group": "g3",
+      "panel": "G3_05",
+      "analysis_entrypoints": [
+        "paper_experiments_v1/g3/src/g3_run.py",
+        "paper_experiments_v1/g3/src/g3_sensitivity_audit.py"
+      ],
+      "summary_entrypoints": [
+        "paper_experiments_v1/g3/src/g3_sensitivity_audit.py"
+      ],
+      "plotting_entrypoints": [
+        "paper_experiments_v1/g3/src/g3_plot_g305_integrated.py"
+      ],
+      "formal_plot_data": "paper_experiments_v1/g3/final_results/plot_data/G3_05.tsv",
+      "resolution": "exact",
+      "group_entrypoints": [
+        "paper_experiments_v1/g3/src/g3_run.py",
+        "paper_experiments_v1/g3/src/g3_population.py",
+        "paper_experiments_v1/g3/src/g3_sensitivity_audit.py",
+        "paper_experiments_v1/reviewer_audit/redesign_r2/run_simulations.py",
+        "paper_experiments_v1/reviewer_audit/redesign_r3/g3_joint.py",
+        "paper_experiments_v1/reviewer_audit/redesign_r3/g3_reference_anchor.py"
+      ],
+      "notes": "g3_sensitivity_audit.py reads core cells 3/10, replicate IDs 0-19 and evaluates predeclared epsilon/eta grid -> G3_sensitivity_regions.tsv. Integrated plot derives all trajectories and inset wrong/unknown counts from this table at lines 41-65; it loads G3_summary.tsv but does not use it to calculate this panel."
+    },
+    {
+      "group": "g3",
+      "panel": "G3_06",
+      "analysis_entrypoints": [
+        "paper_experiments_v1/g3/src/g3_run.py"
+      ],
+      "summary_entrypoints": [
+        "paper_experiments_v1/g3/src/g3_summarize.py",
+        "paper_experiments_v1/g3/src/g3_plot_full_library.py"
+      ],
+      "plotting_entrypoints": [
+        "paper_experiments_v1/figure_delivery/selection_cleanup_20260926/redraw_g3.py"
+      ],
+      "formal_plot_data": "paper_experiments_v1/g3/final_results/plot_data/G3_06.tsv",
+      "resolution": "exact",
+      "group_entrypoints": [
+        "paper_experiments_v1/g3/src/g3_run.py",
+        "paper_experiments_v1/g3/src/g3_population.py",
+        "paper_experiments_v1/g3/src/g3_sensitivity_audit.py",
+        "paper_experiments_v1/reviewer_audit/redesign_r2/run_simulations.py",
+        "paper_experiments_v1/reviewer_audit/redesign_r3/g3_joint.py",
+        "paper_experiments_v1/reviewer_audit/redesign_r3/g3_reference_anchor.py"
+      ],
+      "notes": "Core cells 12-15, MISSPECIFIED_SHARED per-replicate population_prediction_KL -> G3_replicate_results.tsv.gz. g3_plot_full_library.py raincloud() lines 141-156 writes G3_06.tsv. selection_cleanup redraw consumes that table, retains time/measurement mechanisms and freezes display points; numerical statistics remain the underlying full-data values."
+    },
+    {
+      "group": "g3",
+      "panel": "G3_07",
+      "analysis_entrypoints": [
+        "paper_experiments_v1/g3/src/g3_run.py"
+      ],
+      "summary_entrypoints": [
+        "paper_experiments_v1/g3/src/g3_summarize.py"
+      ],
+      "plotting_entrypoints": [
+        "paper_experiments_v1/g3/src/g3_plot_full_library.py"
+      ],
+      "formal_plot_data": "paper_experiments_v1/g3/final_results/plot_data/G3_07.tsv",
+      "resolution": "exact",
+      "group_entrypoints": [
+        "paper_experiments_v1/g3/src/g3_run.py",
+        "paper_experiments_v1/g3/src/g3_population.py",
+        "paper_experiments_v1/g3/src/g3_sensitivity_audit.py",
+        "paper_experiments_v1/reviewer_audit/redesign_r2/run_simulations.py",
+        "paper_experiments_v1/reviewer_audit/redesign_r3/g3_joint.py",
+        "paper_experiments_v1/reviewer_audit/redesign_r3/g3_reference_anchor.py"
+      ],
+      "notes": "Core cells 12/15 target interval noncoverage under three distinct forward/nuisance specifications -> G3_summary.tsv -> g3_plot_full_library.py lines 157-167. g3_plot_fidelity.py line 26 explicitly protects this panel unchanged, so it is not its producing plot entrypoint."
+    },
+    {
+      "group": "g3",
+      "panel": "G3_R2_bias_0",
+      "analysis_entrypoints": [
+        "paper_experiments_v1/reviewer_audit/redesign_r2/run_simulations.py"
+      ],
+      "summary_entrypoints": [
+        "paper_experiments_v1/reviewer_audit/redesign_r2/run_simulations.py"
+      ],
+      "plotting_entrypoints": [
+        "paper_experiments_v1/reviewer_audit/redesign_r2/plot_r2.py"
+      ],
+      "formal_plot_data": "paper_experiments_v1/g3/final_results/plot_data/G3_R2_bias_0.tsv",
+      "resolution": "exact",
+      "group_entrypoints": [
+        "paper_experiments_v1/g3/src/g3_run.py",
+        "paper_experiments_v1/g3/src/g3_population.py",
+        "paper_experiments_v1/g3/src/g3_sensitivity_audit.py",
+        "paper_experiments_v1/reviewer_audit/redesign_r2/run_simulations.py",
+        "paper_experiments_v1/reviewer_audit/redesign_r3/g3_joint.py",
+        "paper_experiments_v1/reviewer_audit/redesign_r3/g3_reference_anchor.py"
+      ],
+      "notes": "run_simulations.g3()+metrics(),biasboundgrid;exactmethodscopepreserved."
+    },
+    {
+      "group": "g3",
+      "panel": "G3_R2_bias_0p8",
+      "analysis_entrypoints": [
+        "paper_experiments_v1/reviewer_audit/redesign_r2/run_simulations.py"
+      ],
+      "summary_entrypoints": [
+        "paper_experiments_v1/reviewer_audit/redesign_r2/run_simulations.py"
+      ],
+      "plotting_entrypoints": [
+        "paper_experiments_v1/reviewer_audit/redesign_r2/plot_r2.py"
+      ],
+      "formal_plot_data": "paper_experiments_v1/g3/final_results/plot_data/G3_R2_bias_0p8.tsv",
+      "resolution": "exact",
+      "group_entrypoints": [
+        "paper_experiments_v1/g3/src/g3_run.py",
+        "paper_experiments_v1/g3/src/g3_population.py",
+        "paper_experiments_v1/g3/src/g3_sensitivity_audit.py",
+        "paper_experiments_v1/reviewer_audit/redesign_r2/run_simulations.py",
+        "paper_experiments_v1/reviewer_audit/redesign_r3/g3_joint.py",
+        "paper_experiments_v1/reviewer_audit/redesign_r3/g3_reference_anchor.py"
+      ],
+      "notes": "run_simulations.g3()+metrics(),biasboundgrid;exactmethodscopepreserved."
+    },
+    {
+      "group": "g3",
+      "panel": "G3_R2_bias_neg0p8",
+      "analysis_entrypoints": [
+        "paper_experiments_v1/reviewer_audit/redesign_r2/run_simulations.py"
+      ],
+      "summary_entrypoints": [
+        "paper_experiments_v1/reviewer_audit/redesign_r2/run_simulations.py"
+      ],
+      "plotting_entrypoints": [
+        "paper_experiments_v1/reviewer_audit/redesign_r2/plot_r2.py"
+      ],
+      "formal_plot_data": "paper_experiments_v1/g3/final_results/plot_data/G3_R2_bias_neg0p8.tsv",
+      "resolution": "exact",
+      "group_entrypoints": [
+        "paper_experiments_v1/g3/src/g3_run.py",
+        "paper_experiments_v1/g3/src/g3_population.py",
+        "paper_experiments_v1/g3/src/g3_sensitivity_audit.py",
+        "paper_experiments_v1/reviewer_audit/redesign_r2/run_simulations.py",
+        "paper_experiments_v1/reviewer_audit/redesign_r3/g3_joint.py",
+        "paper_experiments_v1/reviewer_audit/redesign_r3/g3_reference_anchor.py"
+      ],
+      "notes": "run_simulations.g3()+metrics(),biasboundgrid;exactmethodscopepreserved."
+    },
+    {
+      "group": "g3",
+      "panel": "G3_R3_joint_cost1000",
+      "analysis_entrypoints": [
+        "paper_experiments_v1/reviewer_audit/redesign_r3/g3_joint.py"
+      ],
+      "summary_entrypoints": [
+        "paper_experiments_v1/reviewer_audit/redesign_r3/g3_joint.py"
+      ],
+      "plotting_entrypoints": [
+        "paper_experiments_v1/reviewer_audit/redesign_r3/plot_r3.py"
+      ],
+      "formal_plot_data": "paper_experiments_v1/g3/final_results/plot_data/G3_R3_joint_cost1000.tsv",
+      "resolution": "exact",
+      "group_entrypoints": [
+        "paper_experiments_v1/g3/src/g3_run.py",
+        "paper_experiments_v1/g3/src/g3_population.py",
+        "paper_experiments_v1/g3/src/g3_sensitivity_audit.py",
+        "paper_experiments_v1/reviewer_audit/redesign_r2/run_simulations.py",
+        "paper_experiments_v1/reviewer_audit/redesign_r3/g3_joint.py",
+        "paper_experiments_v1/reviewer_audit/redesign_r3/g3_reference_anchor.py"
+      ],
+      "notes": "Development/evaluationjointcalibration;nohistoricalG4R3replacementassumption."
+    },
+    {
+      "group": "g3",
+      "panel": "G3_R3_joint_cost4000",
+      "analysis_entrypoints": [
+        "paper_experiments_v1/reviewer_audit/redesign_r3/g3_joint.py"
+      ],
+      "summary_entrypoints": [
+        "paper_experiments_v1/reviewer_audit/redesign_r3/g3_joint.py"
+      ],
+      "plotting_entrypoints": [
+        "paper_experiments_v1/reviewer_audit/redesign_r3/plot_r3.py"
+      ],
+      "formal_plot_data": "paper_experiments_v1/g3/final_results/plot_data/G3_R3_joint_cost4000.tsv",
+      "resolution": "exact",
+      "group_entrypoints": [
+        "paper_experiments_v1/g3/src/g3_run.py",
+        "paper_experiments_v1/g3/src/g3_population.py",
+        "paper_experiments_v1/g3/src/g3_sensitivity_audit.py",
+        "paper_experiments_v1/reviewer_audit/redesign_r2/run_simulations.py",
+        "paper_experiments_v1/reviewer_audit/redesign_r3/g3_joint.py",
+        "paper_experiments_v1/reviewer_audit/redesign_r3/g3_reference_anchor.py"
+      ],
+      "notes": "Development/evaluationjointcalibration;nohistoricalG4R3replacementassumption."
+    },
+    {
+      "group": "g3",
+      "panel": "G3_R3_reference_anchor",
+      "analysis_entrypoints": [
+        "paper_experiments_v1/reviewer_audit/redesign_r3/g3_reference_anchor.py"
+      ],
+      "summary_entrypoints": [
+        "paper_experiments_v1/reviewer_audit/redesign_r3/g3_reference_anchor.py"
+      ],
+      "plotting_entrypoints": [
+        "paper_experiments_v1/reviewer_audit/redesign_r3/plot_r3.py"
+      ],
+      "formal_plot_data": "paper_experiments_v1/g3/final_results/plot_data/G3_R3_reference_anchor.tsv",
+      "resolution": "exact",
+      "group_entrypoints": [
+        "paper_experiments_v1/g3/src/g3_run.py",
+        "paper_experiments_v1/g3/src/g3_population.py",
+        "paper_experiments_v1/g3/src/g3_sensitivity_audit.py",
+        "paper_experiments_v1/reviewer_audit/redesign_r2/run_simulations.py",
+        "paper_experiments_v1/reviewer_audit/redesign_r3/g3_joint.py",
+        "paper_experiments_v1/reviewer_audit/redesign_r3/g3_reference_anchor.py"
+      ],
+      "notes": "RegisteredG3referenceanchor versusviolatedanchorconditions."
+    },
+    {
+      "group": "g4",
+      "panel": "G4_01",
+      "analysis_entrypoints": [
+        "paper_experiments_v1/g4/src/g4_data_audit.py"
+      ],
+      "summary_entrypoints": [
+        "paper_experiments_v1/g4/src/g4_data_audit.py"
+      ],
+      "plotting_entrypoints": [
+        "paper_experiments_v1/g4/src/g4_plot.py"
+      ],
+      "formal_plot_data": "paper_experiments_v1/g4/final_results/plot_data/G4_01.tsv",
+      "resolution": "exact",
+      "group_entrypoints": [
+        "paper_experiments_v1/g4/src/g4_pipeline.py",
+        "paper_experiments_v1/reviewer_audit/redesign_r2/g4_joint_record_audit.py",
+        "paper_experiments_v1/g4/revision_r4/src/bridge.py",
+        "paper_experiments_v1/closure_r5/src/g4_nested.py",
+        "paper_experiments_v1/closure_r5/src/external_validation.py",
+        "paper_experiments_v1/closure_r6/src/g4_attribution.py",
+        "paper_experiments_v1/cohort_expansion_20261009/src/evaluate_transport.py",
+        "paper_experiments_v1/biological_closure_20261009/src/score_metastatic.py"
+      ],
+      "notes": "Protocol patient-flow schematic; g4_data_audit.py lines 19-26 build actual filtered patient/sample denominators and line 53 writes G4_patient_flow.tsv. g4_plot.py lines 32 onward renders that table. This panel is a data audit rather than an inference-performance experiment."
+    },
+    {
+      "group": "g4",
+      "panel": "G4_07",
+      "analysis_entrypoints": [
+        "paper_experiments_v1/g4/src/g4_auxiliary.py"
+      ],
+      "summary_entrypoints": [
+        "paper_experiments_v1/g4/src/g4_summarize.py"
+      ],
+      "plotting_entrypoints": [
+        "paper_experiments_v1/g4/src/g4_plot.py"
+      ],
+      "formal_plot_data": "paper_experiments_v1/g4/final_results/plot_data/G4_07.tsv",
+      "resolution": "exact",
+      "group_entrypoints": [
+        "paper_experiments_v1/g4/src/g4_pipeline.py",
+        "paper_experiments_v1/reviewer_audit/redesign_r2/g4_joint_record_audit.py",
+        "paper_experiments_v1/g4/revision_r4/src/bridge.py",
+        "paper_experiments_v1/closure_r5/src/g4_nested.py",
+        "paper_experiments_v1/closure_r5/src/external_validation.py",
+        "paper_experiments_v1/closure_r6/src/g4_attribution.py",
+        "paper_experiments_v1/cohort_expansion_20261009/src/evaluate_transport.py",
+        "paper_experiments_v1/biological_closure_20261009/src/score_metastatic.py"
+      ],
+      "notes": "Model-anchored source bootstrap auxiliary runs -> g4_summarize.py lines 43-49 G4_model_anchored_auxiliary.tsv -> g4_plot.py auxiliary_coverage region. Biological truth is model anchored, not observed patient theta."
+    },
+    {
+      "group": "g4",
+      "panel": "G4_R2_joint_audit_COAD",
+      "analysis_entrypoints": [
+        "paper_experiments_v1/reviewer_audit/redesign_r2/g4_joint_record_audit.py"
+      ],
+      "summary_entrypoints": [
+        "paper_experiments_v1/reviewer_audit/redesign_r2/g4_joint_record_audit.py"
+      ],
+      "plotting_entrypoints": [
+        "paper_experiments_v1/reviewer_audit/redesign_r2/plot_r2.py"
+      ],
+      "formal_plot_data": "paper_experiments_v1/g4/final_results/plot_data/G4_R2_joint_audit_COAD.tsv",
+      "resolution": "exact",
+      "group_entrypoints": [
+        "paper_experiments_v1/g4/src/g4_pipeline.py",
+        "paper_experiments_v1/reviewer_audit/redesign_r2/g4_joint_record_audit.py",
+        "paper_experiments_v1/g4/revision_r4/src/bridge.py",
+        "paper_experiments_v1/closure_r5/src/g4_nested.py",
+        "paper_experiments_v1/closure_r5/src/external_validation.py",
+        "paper_experiments_v1/closure_r6/src/g4_attribution.py",
+        "paper_experiments_v1/cohort_expansion_20261009/src/evaluate_transport.py",
+        "paper_experiments_v1/biological_closure_20261009/src/score_metastatic.py"
+      ],
+      "notes": "Finitecohortreportedjointfrequencyaudit, notnaturaltheta truth."
+    },
+    {
+      "group": "g4",
+      "panel": "G4_R2_joint_audit_LUAD",
+      "analysis_entrypoints": [
+        "paper_experiments_v1/reviewer_audit/redesign_r2/g4_joint_record_audit.py"
+      ],
+      "summary_entrypoints": [
+        "paper_experiments_v1/reviewer_audit/redesign_r2/g4_joint_record_audit.py"
+      ],
+      "plotting_entrypoints": [
+        "paper_experiments_v1/reviewer_audit/redesign_r2/plot_r2.py"
+      ],
+      "formal_plot_data": "paper_experiments_v1/g4/final_results/plot_data/G4_R2_joint_audit_LUAD.tsv",
+      "resolution": "exact",
+      "group_entrypoints": [
+        "paper_experiments_v1/g4/src/g4_pipeline.py",
+        "paper_experiments_v1/reviewer_audit/redesign_r2/g4_joint_record_audit.py",
+        "paper_experiments_v1/g4/revision_r4/src/bridge.py",
+        "paper_experiments_v1/closure_r5/src/g4_nested.py",
+        "paper_experiments_v1/closure_r5/src/external_validation.py",
+        "paper_experiments_v1/closure_r6/src/g4_attribution.py",
+        "paper_experiments_v1/cohort_expansion_20261009/src/evaluate_transport.py",
+        "paper_experiments_v1/biological_closure_20261009/src/score_metastatic.py"
+      ],
+      "notes": "Finitecohortreportedjointfrequencyaudit, notnaturaltheta truth."
+    },
+    {
+      "group": "g4",
+      "panel": "G4_R4_BC_patient_bootstrap",
+      "analysis_entrypoints": [
+        "paper_experiments_v1/g4/revision_r4/src/bridge.py"
+      ],
+      "summary_entrypoints": [
+        "paper_experiments_v1/g4/revision_r4/src/summarize.py"
+      ],
+      "plotting_entrypoints": [
+        "paper_experiments_v1/g4/revision_r4/src/plot.py"
+      ],
+      "formal_plot_data": "paper_experiments_v1/g4/final_results/plot_data/G4_R4_BC_patient_bootstrap.tsv",
+      "resolution": "exact",
+      "group_entrypoints": [
+        "paper_experiments_v1/g4/src/g4_pipeline.py",
+        "paper_experiments_v1/reviewer_audit/redesign_r2/g4_joint_record_audit.py",
+        "paper_experiments_v1/g4/revision_r4/src/bridge.py",
+        "paper_experiments_v1/closure_r5/src/g4_nested.py",
+        "paper_experiments_v1/closure_r5/src/external_validation.py",
+        "paper_experiments_v1/closure_r6/src/g4_attribution.py",
+        "paper_experiments_v1/cohort_expansion_20261009/src/evaluate_transport.py",
+        "paper_experiments_v1/biological_closure_20261009/src/score_metastatic.py"
+      ],
+      "notes": "FrozenG4R4bridge/sourcecalibrationoutputs;broadercontrolsretained."
+    },
+    {
+      "group": "g4",
+      "panel": "G4_R4_B_gain_COAD",
+      "analysis_entrypoints": [
+        "paper_experiments_v1/g4/revision_r4/src/bridge.py"
+      ],
+      "summary_entrypoints": [
+        "paper_experiments_v1/g4/revision_r4/src/summarize.py"
+      ],
+      "plotting_entrypoints": [
+        "paper_experiments_v1/g4/revision_r4/src/plot.py"
+      ],
+      "formal_plot_data": "paper_experiments_v1/g4/final_results/plot_data/G4_R4_B_gain_COAD.tsv",
+      "resolution": "exact",
+      "group_entrypoints": [
+        "paper_experiments_v1/g4/src/g4_pipeline.py",
+        "paper_experiments_v1/reviewer_audit/redesign_r2/g4_joint_record_audit.py",
+        "paper_experiments_v1/g4/revision_r4/src/bridge.py",
+        "paper_experiments_v1/closure_r5/src/g4_nested.py",
+        "paper_experiments_v1/closure_r5/src/external_validation.py",
+        "paper_experiments_v1/closure_r6/src/g4_attribution.py",
+        "paper_experiments_v1/cohort_expansion_20261009/src/evaluate_transport.py",
+        "paper_experiments_v1/biological_closure_20261009/src/score_metastatic.py"
+      ],
+      "notes": "FrozenG4R4bridge/sourcecalibrationoutputs;broadercontrolsretained."
+    },
+    {
+      "group": "g4",
+      "panel": "G4_R4_B_gain_LUAD",
+      "analysis_entrypoints": [
+        "paper_experiments_v1/g4/revision_r4/src/bridge.py"
+      ],
+      "summary_entrypoints": [
+        "paper_experiments_v1/g4/revision_r4/src/summarize.py"
+      ],
+      "plotting_entrypoints": [
+        "paper_experiments_v1/g4/revision_r4/src/plot.py"
+      ],
+      "formal_plot_data": "paper_experiments_v1/g4/final_results/plot_data/G4_R4_B_gain_LUAD.tsv",
+      "resolution": "exact",
+      "group_entrypoints": [
+        "paper_experiments_v1/g4/src/g4_pipeline.py",
+        "paper_experiments_v1/reviewer_audit/redesign_r2/g4_joint_record_audit.py",
+        "paper_experiments_v1/g4/revision_r4/src/bridge.py",
+        "paper_experiments_v1/closure_r5/src/g4_nested.py",
+        "paper_experiments_v1/closure_r5/src/external_validation.py",
+        "paper_experiments_v1/closure_r6/src/g4_attribution.py",
+        "paper_experiments_v1/cohort_expansion_20261009/src/evaluate_transport.py",
+        "paper_experiments_v1/biological_closure_20261009/src/score_metastatic.py"
+      ],
+      "notes": "FrozenG4R4bridge/sourcecalibrationoutputs;broadercontrolsretained."
+    },
+    {
+      "group": "g4",
+      "panel": "G4_R4_C_calibration_COAD",
+      "analysis_entrypoints": [
+        "paper_experiments_v1/g4/revision_r4/src/bridge.py"
+      ],
+      "summary_entrypoints": [
+        "paper_experiments_v1/g4/revision_r4/src/summarize.py"
+      ],
+      "plotting_entrypoints": [
+        "paper_experiments_v1/g4/revision_r4/src/plot.py"
+      ],
+      "formal_plot_data": "paper_experiments_v1/g4/final_results/plot_data/G4_R4_C_calibration_COAD.tsv",
+      "resolution": "exact",
+      "group_entrypoints": [
+        "paper_experiments_v1/g4/src/g4_pipeline.py",
+        "paper_experiments_v1/reviewer_audit/redesign_r2/g4_joint_record_audit.py",
+        "paper_experiments_v1/g4/revision_r4/src/bridge.py",
+        "paper_experiments_v1/closure_r5/src/g4_nested.py",
+        "paper_experiments_v1/closure_r5/src/external_validation.py",
+        "paper_experiments_v1/closure_r6/src/g4_attribution.py",
+        "paper_experiments_v1/cohort_expansion_20261009/src/evaluate_transport.py",
+        "paper_experiments_v1/biological_closure_20261009/src/score_metastatic.py"
+      ],
+      "notes": "FrozenG4R4bridge/sourcecalibrationoutputs;broadercontrolsretained."
+    },
+    {
+      "group": "g4",
+      "panel": "G4_R4_C_calibration_LUAD",
+      "analysis_entrypoints": [
+        "paper_experiments_v1/g4/revision_r4/src/bridge.py"
+      ],
+      "summary_entrypoints": [
+        "paper_experiments_v1/g4/revision_r4/src/summarize.py"
+      ],
+      "plotting_entrypoints": [
+        "paper_experiments_v1/g4/revision_r4/src/plot.py"
+      ],
+      "formal_plot_data": "paper_experiments_v1/g4/final_results/plot_data/G4_R4_C_calibration_LUAD.tsv",
+      "resolution": "exact",
+      "group_entrypoints": [
+        "paper_experiments_v1/g4/src/g4_pipeline.py",
+        "paper_experiments_v1/reviewer_audit/redesign_r2/g4_joint_record_audit.py",
+        "paper_experiments_v1/g4/revision_r4/src/bridge.py",
+        "paper_experiments_v1/closure_r5/src/g4_nested.py",
+        "paper_experiments_v1/closure_r5/src/external_validation.py",
+        "paper_experiments_v1/closure_r6/src/g4_attribution.py",
+        "paper_experiments_v1/cohort_expansion_20261009/src/evaluate_transport.py",
+        "paper_experiments_v1/biological_closure_20261009/src/score_metastatic.py"
+      ],
+      "notes": "FrozenG4R4bridge/sourcecalibrationoutputs;broadercontrolsretained."
+    },
+    {
+      "group": "g4",
+      "panel": "G4_R4_C_proper_score_controls",
+      "analysis_entrypoints": [
+        "paper_experiments_v1/g4/revision_r4/src/bridge.py"
+      ],
+      "summary_entrypoints": [
+        "paper_experiments_v1/g4/revision_r4/src/summarize.py"
+      ],
+      "plotting_entrypoints": [
+        "paper_experiments_v1/g4/revision_r4/src/plot.py"
+      ],
+      "formal_plot_data": "paper_experiments_v1/g4/final_results/plot_data/G4_R4_C_proper_score_controls.tsv",
+      "resolution": "exact",
+      "group_entrypoints": [
+        "paper_experiments_v1/g4/src/g4_pipeline.py",
+        "paper_experiments_v1/reviewer_audit/redesign_r2/g4_joint_record_audit.py",
+        "paper_experiments_v1/g4/revision_r4/src/bridge.py",
+        "paper_experiments_v1/closure_r5/src/g4_nested.py",
+        "paper_experiments_v1/closure_r5/src/external_validation.py",
+        "paper_experiments_v1/closure_r6/src/g4_attribution.py",
+        "paper_experiments_v1/cohort_expansion_20261009/src/evaluate_transport.py",
+        "paper_experiments_v1/biological_closure_20261009/src/score_metastatic.py"
+      ],
+      "notes": "FrozenG4R4bridge/sourcecalibrationoutputs;broadercontrolsretained."
+    },
+    {
+      "group": "g4",
+      "panel": "G4_R5_external_transfer",
+      "analysis_entrypoints": [
+        "paper_experiments_v1/closure_r5/src/external_validation.py"
+      ],
+      "summary_entrypoints": [
+        "paper_experiments_v1/closure_r5/src/external_validation.py"
+      ],
+      "plotting_entrypoints": [
+        "paper_experiments_v1/closure_r5/src/plot.py"
+      ],
+      "formal_plot_data": "paper_experiments_v1/g4/final_results/plot_data/G4_R5_external_transfer.tsv",
+      "resolution": "exact",
+      "group_entrypoints": [
+        "paper_experiments_v1/g4/src/g4_pipeline.py",
+        "paper_experiments_v1/reviewer_audit/redesign_r2/g4_joint_record_audit.py",
+        "paper_experiments_v1/g4/revision_r4/src/bridge.py",
+        "paper_experiments_v1/closure_r5/src/g4_nested.py",
+        "paper_experiments_v1/closure_r5/src/external_validation.py",
+        "paper_experiments_v1/closure_r6/src/g4_attribution.py",
+        "paper_experiments_v1/cohort_expansion_20261009/src/evaluate_transport.py",
+        "paper_experiments_v1/biological_closure_20261009/src/score_metastatic.py"
+      ],
+      "notes": "FrozenGENIEfitensemble scoring onexternalTCGArecords;conditionalensembleuncertainty."
+    },
+    {
+      "group": "g4",
+      "panel": "G4_R5_nested_patient_means",
+      "analysis_entrypoints": [
+        "paper_experiments_v1/closure_r5/src/g4_nested.py"
+      ],
+      "summary_entrypoints": [
+        "paper_experiments_v1/closure_r5/src/summarize.py"
+      ],
+      "plotting_entrypoints": [
+        "paper_experiments_v1/closure_r5/src/plot.py"
+      ],
+      "formal_plot_data": "paper_experiments_v1/g4/final_results/plot_data/G4_R5_nested_patient_means.tsv",
+      "resolution": "exact",
+      "group_entrypoints": [
+        "paper_experiments_v1/g4/src/g4_pipeline.py",
+        "paper_experiments_v1/reviewer_audit/redesign_r2/g4_joint_record_audit.py",
+        "paper_experiments_v1/g4/revision_r4/src/bridge.py",
+        "paper_experiments_v1/closure_r5/src/g4_nested.py",
+        "paper_experiments_v1/closure_r5/src/external_validation.py",
+        "paper_experiments_v1/closure_r6/src/g4_attribution.py",
+        "paper_experiments_v1/cohort_expansion_20261009/src/evaluate_transport.py",
+        "paper_experiments_v1/biological_closure_20261009/src/score_metastatic.py"
+      ],
+      "notes": "Nestedpatient/mechanismMC;notindependentpatientsperseed."
+    },
+    {
+      "group": "g4",
+      "panel": "G4_finite_calibration_ablation",
+      "analysis_entrypoints": [
+        "paper_experiments_v1/g4/src/g4_pipeline.py"
+      ],
+      "summary_entrypoints": [
+        "paper_experiments_v1/g4/src/g4_summarize.py",
+        "paper_experiments_v1/figure_delivery/repair_coverage.py"
+      ],
+      "plotting_entrypoints": [
+        "paper_experiments_v1/figure_delivery/repair_coverage.py"
+      ],
+      "formal_plot_data": "paper_experiments_v1/g4/final_results/plot_data/G4_finite_calibration_ablation.tsv",
+      "resolution": "exact",
+      "group_entrypoints": [
+        "paper_experiments_v1/g4/src/g4_pipeline.py",
+        "paper_experiments_v1/reviewer_audit/redesign_r2/g4_joint_record_audit.py",
+        "paper_experiments_v1/g4/revision_r4/src/bridge.py",
+        "paper_experiments_v1/closure_r5/src/g4_nested.py",
+        "paper_experiments_v1/closure_r5/src/external_validation.py",
+        "paper_experiments_v1/closure_r6/src/g4_attribution.py",
+        "paper_experiments_v1/cohort_expansion_20261009/src/evaluate_transport.py",
+        "paper_experiments_v1/biological_closure_20261009/src/score_metastatic.py"
+      ],
+      "notes": "g4_pipeline perturbation with M and M_NO_CAL; g4_summarize.py writes G4_all_method_results.tsv. repair_coverage.py lines 28-35 selects perturbation/non-fixedN paired methods and computes source_log_score gain. The repair script is retained for provenance; its other historical publisher routines should not be executed wholesale."
+    },
+    {
+      "group": "g4",
+      "panel": "G4_R6_attribution",
+      "analysis_entrypoints": [
+        "paper_experiments_v1/closure_r6/src/g4_attribution.py"
+      ],
+      "summary_entrypoints": [
+        "paper_experiments_v1/closure_r6/src/g4_attribution.py"
+      ],
+      "plotting_entrypoints": [
+        "paper_experiments_v1/closure_r6/src/plot.py"
+      ],
+      "formal_plot_data": "paper_experiments_v1/g4/final_results/plot_data/G4_R6_attribution.tsv",
+      "resolution": "exact",
+      "group_entrypoints": [
+        "paper_experiments_v1/g4/src/g4_pipeline.py",
+        "paper_experiments_v1/reviewer_audit/redesign_r2/g4_joint_record_audit.py",
+        "paper_experiments_v1/g4/revision_r4/src/bridge.py",
+        "paper_experiments_v1/closure_r5/src/g4_nested.py",
+        "paper_experiments_v1/closure_r5/src/external_validation.py",
+        "paper_experiments_v1/closure_r6/src/g4_attribution.py",
+        "paper_experiments_v1/cohort_expansion_20261009/src/evaluate_transport.py",
+        "paper_experiments_v1/biological_closure_20261009/src/score_metastatic.py"
+      ],
+      "notes": "g4_attribution.one()newdosefits;finish()pairedpatientlossdecomposition andbootstrap."
+    },
+    {
+      "group": "g4",
+      "panel": "G4_E1_multicohort_value",
+      "analysis_entrypoints": [
+        "paper_experiments_v1/cohort_expansion_20261009/src/evaluate_transport.py"
+      ],
+      "summary_entrypoints": [
+        "paper_experiments_v1/cohort_expansion_20261009/src/evaluate_transport.py"
+      ],
+      "plotting_entrypoints": [
+        "paper_experiments_v1/cohort_expansion_20261009/src/plot_publication.py"
+      ],
+      "formal_plot_data": "paper_experiments_v1/g4/final_results/plot_data/G4_E1_multicohort_value.tsv",
+      "resolution": "exact",
+      "group_entrypoints": [
+        "paper_experiments_v1/g4/src/g4_pipeline.py",
+        "paper_experiments_v1/reviewer_audit/redesign_r2/g4_joint_record_audit.py",
+        "paper_experiments_v1/g4/revision_r4/src/bridge.py",
+        "paper_experiments_v1/closure_r5/src/g4_nested.py",
+        "paper_experiments_v1/closure_r5/src/external_validation.py",
+        "paper_experiments_v1/closure_r6/src/g4_attribution.py",
+        "paper_experiments_v1/cohort_expansion_20261009/src/evaluate_transport.py",
+        "paper_experiments_v1/biological_closure_20261009/src/score_metastatic.py"
+      ],
+      "notes": "Pilot-selected9of14cohorts;allconfirmationoutcomesretained;transportmodeandfrozenensemble."
+    },
+    {
+      "group": "g4",
+      "panel": "G4_E1_attribution_LUAD",
+      "analysis_entrypoints": [
+        "paper_experiments_v1/cohort_expansion_20261009/src/evaluate_transport.py"
+      ],
+      "summary_entrypoints": [
+        "paper_experiments_v1/cohort_expansion_20261009/src/evaluate_transport.py"
+      ],
+      "plotting_entrypoints": [
+        "paper_experiments_v1/cohort_expansion_20261009/src/plot_publication.py"
+      ],
+      "formal_plot_data": "paper_experiments_v1/g4/final_results/plot_data/G4_E1_attribution_LUAD.tsv",
+      "resolution": "exact",
+      "group_entrypoints": [
+        "paper_experiments_v1/g4/src/g4_pipeline.py",
+        "paper_experiments_v1/reviewer_audit/redesign_r2/g4_joint_record_audit.py",
+        "paper_experiments_v1/g4/revision_r4/src/bridge.py",
+        "paper_experiments_v1/closure_r5/src/g4_nested.py",
+        "paper_experiments_v1/closure_r5/src/external_validation.py",
+        "paper_experiments_v1/closure_r6/src/g4_attribution.py",
+        "paper_experiments_v1/cohort_expansion_20261009/src/evaluate_transport.py",
+        "paper_experiments_v1/biological_closure_20261009/src/score_metastatic.py"
+      ],
+      "notes": "Pilot-selected9of14cohorts;allconfirmationoutcomesretained;transportmodeandfrozenensemble."
+    },
+    {
+      "group": "g4",
+      "panel": "G4_E1_attribution_COAD",
+      "analysis_entrypoints": [
+        "paper_experiments_v1/cohort_expansion_20261009/src/evaluate_transport.py"
+      ],
+      "summary_entrypoints": [
+        "paper_experiments_v1/cohort_expansion_20261009/src/evaluate_transport.py"
+      ],
+      "plotting_entrypoints": [
+        "paper_experiments_v1/cohort_expansion_20261009/src/plot_publication.py"
+      ],
+      "formal_plot_data": "paper_experiments_v1/g4/final_results/plot_data/G4_E1_attribution_COAD.tsv",
+      "resolution": "exact",
+      "group_entrypoints": [
+        "paper_experiments_v1/g4/src/g4_pipeline.py",
+        "paper_experiments_v1/reviewer_audit/redesign_r2/g4_joint_record_audit.py",
+        "paper_experiments_v1/g4/revision_r4/src/bridge.py",
+        "paper_experiments_v1/closure_r5/src/g4_nested.py",
+        "paper_experiments_v1/closure_r5/src/external_validation.py",
+        "paper_experiments_v1/closure_r6/src/g4_attribution.py",
+        "paper_experiments_v1/cohort_expansion_20261009/src/evaluate_transport.py",
+        "paper_experiments_v1/biological_closure_20261009/src/score_metastatic.py"
+      ],
+      "notes": "Pilot-selected9of14cohorts;allconfirmationoutcomesretained;transportmodeandfrozenensemble."
+    },
+    {
+      "group": "g4",
+      "panel": "G4_BIO_01_later_lineage",
+      "analysis_entrypoints": [
+        "paper_experiments_v1/biological_closure_20261009/src/acquisition.py",
+        "paper_experiments_v1/biological_closure_20261009/src/score_metastatic.py"
+      ],
+      "summary_entrypoints": [
+        "paper_experiments_v1/biological_closure_20261009/src/score_metastatic.py"
+      ],
+      "plotting_entrypoints": [
+        "paper_experiments_v1/biological_closure_20261009/src/plot_biological.py"
+      ],
+      "formal_plot_data": "paper_experiments_v1/g4/final_results/plot_data/G4_BIO_01_later_lineage.tsv",
+      "resolution": "exact",
+      "group_entrypoints": [
+        "paper_experiments_v1/g4/src/g4_pipeline.py",
+        "paper_experiments_v1/reviewer_audit/redesign_r2/g4_joint_record_audit.py",
+        "paper_experiments_v1/g4/revision_r4/src/bridge.py",
+        "paper_experiments_v1/closure_r5/src/g4_nested.py",
+        "paper_experiments_v1/closure_r5/src/external_validation.py",
+        "paper_experiments_v1/closure_r6/src/g4_attribution.py",
+        "paper_experiments_v1/cohort_expansion_20261009/src/evaluate_transport.py",
+        "paper_experiments_v1/biological_closure_20261009/src/score_metastatic.py"
+      ],
+      "notes": "Frozenclassicalacquisition trajectories scoredagainstactualfuturetissue;14futurepatients9evaluable."
+    },
+    {
+      "group": "g5",
+      "panel": "G5_05_design_scenario_0",
+      "analysis_entrypoints": [
+        "paper_experiments_v1/g5/src/g5_design_evaluator.py"
+      ],
+      "summary_entrypoints": [
+        "paper_experiments_v1/g5/src/g5_summarize.py"
+      ],
+      "plotting_entrypoints": [
+        "paper_experiments_v1/g5/src/g5_plot_revision_v2.py"
+      ],
+      "formal_plot_data": "paper_experiments_v1/g5/final_results/plot_data/G5_05_design_scenario_0.tsv",
+      "resolution": "exact",
+      "group_entrypoints": [
+        "paper_experiments_v1/g5/src/g5_natural.py",
+        "paper_experiments_v1/g5/src/g5_design_evaluator.py",
+        "paper_experiments_v1/reviewer_audit/redesign_r2/run_real.py",
+        "paper_experiments_v1/reviewer_audit/redesign_r3/g5_anchor_interval.py",
+        "paper_experiments_v1/reviewer_audit/redesign_r3/g5_natural_transfer.py",
+        "paper_experiments_v1/closure_r6/src/g5_diagnostic_value.py",
+        "paper_experiments_v1/closure_r8/src/run_g5.py",
+        "paper_experiments_v1/biological_closure_20261009/src/acquisition.py",
+        "paper_experiments_v1/biological_closure_20261009/src/run_ctdna.py",
+        "paper_experiments_v1/biological_closure_20261009/src/score_ctdna_future.py"
+      ],
+      "notes": "g5_design_evaluator.py --kind outer, scenario 0, independent known-truth draws -> runs/design_outer. g5_summarize.design(outer) writes G5_design_outer_evaluation.tsv. g5_plot_revision_v2.outer() lines 47-61 filters this scenario and derives score gains and actual endpoint finite/coverage insets; action aliases are explicitly reported."
+    },
+    {
+      "group": "g5",
+      "panel": "G5_05_design_scenario_1",
+      "analysis_entrypoints": [
+        "paper_experiments_v1/g5/src/g5_design_evaluator.py"
+      ],
+      "summary_entrypoints": [
+        "paper_experiments_v1/g5/src/g5_summarize.py"
+      ],
+      "plotting_entrypoints": [
+        "paper_experiments_v1/g5/src/g5_plot_revision_v2.py"
+      ],
+      "formal_plot_data": "paper_experiments_v1/g5/final_results/plot_data/G5_05_design_scenario_1.tsv",
+      "resolution": "exact",
+      "group_entrypoints": [
+        "paper_experiments_v1/g5/src/g5_natural.py",
+        "paper_experiments_v1/g5/src/g5_design_evaluator.py",
+        "paper_experiments_v1/reviewer_audit/redesign_r2/run_real.py",
+        "paper_experiments_v1/reviewer_audit/redesign_r3/g5_anchor_interval.py",
+        "paper_experiments_v1/reviewer_audit/redesign_r3/g5_natural_transfer.py",
+        "paper_experiments_v1/closure_r6/src/g5_diagnostic_value.py",
+        "paper_experiments_v1/closure_r8/src/run_g5.py",
+        "paper_experiments_v1/biological_closure_20261009/src/acquisition.py",
+        "paper_experiments_v1/biological_closure_20261009/src/run_ctdna.py",
+        "paper_experiments_v1/biological_closure_20261009/src/score_ctdna_future.py"
+      ],
+      "notes": "g5_design_evaluator.py --kind outer, scenario 1, independent known-truth draws -> runs/design_outer. g5_summarize.design(outer) writes G5_design_outer_evaluation.tsv. g5_plot_revision_v2.outer() lines 47-61 filters this scenario and derives score gains and actual endpoint finite/coverage insets; action aliases are explicitly reported."
+    },
+    {
+      "group": "g5",
+      "panel": "G5_05_design_scenario_2",
+      "analysis_entrypoints": [
+        "paper_experiments_v1/g5/src/g5_design_evaluator.py"
+      ],
+      "summary_entrypoints": [
+        "paper_experiments_v1/g5/src/g5_summarize.py"
+      ],
+      "plotting_entrypoints": [
+        "paper_experiments_v1/g5/src/g5_plot_revision_v2.py"
+      ],
+      "formal_plot_data": "paper_experiments_v1/g5/final_results/plot_data/G5_05_design_scenario_2.tsv",
+      "resolution": "exact",
+      "group_entrypoints": [
+        "paper_experiments_v1/g5/src/g5_natural.py",
+        "paper_experiments_v1/g5/src/g5_design_evaluator.py",
+        "paper_experiments_v1/reviewer_audit/redesign_r2/run_real.py",
+        "paper_experiments_v1/reviewer_audit/redesign_r3/g5_anchor_interval.py",
+        "paper_experiments_v1/reviewer_audit/redesign_r3/g5_natural_transfer.py",
+        "paper_experiments_v1/closure_r6/src/g5_diagnostic_value.py",
+        "paper_experiments_v1/closure_r8/src/run_g5.py",
+        "paper_experiments_v1/biological_closure_20261009/src/acquisition.py",
+        "paper_experiments_v1/biological_closure_20261009/src/run_ctdna.py",
+        "paper_experiments_v1/biological_closure_20261009/src/score_ctdna_future.py"
+      ],
+      "notes": "g5_design_evaluator.py --kind outer, scenario 2, independent known-truth draws -> runs/design_outer. g5_summarize.design(outer) writes G5_design_outer_evaluation.tsv. g5_plot_revision_v2.outer() lines 47-61 filters this scenario and derives score gains and actual endpoint finite/coverage insets; action aliases are explicitly reported."
+    },
+    {
+      "group": "g5",
+      "panel": "G5_07_direct_uncertainty_cost",
+      "analysis_entrypoints": [
+        "paper_experiments_v1/g5/src/g5_design_evaluator.py"
+      ],
+      "summary_entrypoints": [
+        "paper_experiments_v1/g5/src/g5_summarize.py"
+      ],
+      "plotting_entrypoints": [
+        "paper_experiments_v1/g5/src/g5_plot.py"
+      ],
+      "formal_plot_data": "paper_experiments_v1/g5/final_results/plot_data/G5_07_direct_uncertainty_cost.tsv",
+      "resolution": "exact",
+      "group_entrypoints": [
+        "paper_experiments_v1/g5/src/g5_natural.py",
+        "paper_experiments_v1/g5/src/g5_design_evaluator.py",
+        "paper_experiments_v1/reviewer_audit/redesign_r2/run_real.py",
+        "paper_experiments_v1/reviewer_audit/redesign_r3/g5_anchor_interval.py",
+        "paper_experiments_v1/reviewer_audit/redesign_r3/g5_natural_transfer.py",
+        "paper_experiments_v1/closure_r6/src/g5_diagnostic_value.py",
+        "paper_experiments_v1/closure_r8/src/run_g5.py",
+        "paper_experiments_v1/biological_closure_20261009/src/acquisition.py",
+        "paper_experiments_v1/biological_closure_20261009/src/run_ctdna.py",
+        "paper_experiments_v1/biological_closure_20261009/src/score_ctdna_future.py"
+      ],
+      "notes": "g5_design_evaluator.py --kind direct generates controlled reveals of independently split GENIE LUAD records, actual action costs and interval extent. g5_summarize.design(direct) -> G5_design_direct_evaluation.tsv; g5_plot.direct_outcomes() lines 120-127 derives UNKNOWN/unbounded/finite compositions and mean realized proxy cost. No natural theta truth or coverage is asserted."
+    },
+    {
+      "group": "g5",
+      "panel": "G5_R2_costmatched_COAD",
+      "analysis_entrypoints": [
+        "paper_experiments_v1/reviewer_audit/redesign_r2/run_real.py"
+      ],
+      "summary_entrypoints": [
+        "paper_experiments_v1/reviewer_audit/redesign_r2/summarize_real.py"
+      ],
+      "plotting_entrypoints": [
+        "paper_experiments_v1/reviewer_audit/redesign_r2/plot_r2.py"
+      ],
+      "formal_plot_data": "paper_experiments_v1/g5/final_results/plot_data/G5_R2_costmatched_COAD.tsv",
+      "resolution": "exact",
+      "group_entrypoints": [
+        "paper_experiments_v1/g5/src/g5_natural.py",
+        "paper_experiments_v1/g5/src/g5_design_evaluator.py",
+        "paper_experiments_v1/reviewer_audit/redesign_r2/run_real.py",
+        "paper_experiments_v1/reviewer_audit/redesign_r3/g5_anchor_interval.py",
+        "paper_experiments_v1/reviewer_audit/redesign_r3/g5_natural_transfer.py",
+        "paper_experiments_v1/closure_r6/src/g5_diagnostic_value.py",
+        "paper_experiments_v1/closure_r8/src/run_g5.py",
+        "paper_experiments_v1/biological_closure_20261009/src/acquisition.py",
+        "paper_experiments_v1/biological_closure_20261009/src/run_ctdna.py",
+        "paper_experiments_v1/biological_closure_20261009/src/score_ctdna_future.py"
+      ],
+      "notes": "run_realg5allocationunderactualfeasiblecost;50seedswithinpatientpool."
+    },
+    {
+      "group": "g5",
+      "panel": "G5_R2_costmatched_LUAD",
+      "analysis_entrypoints": [
+        "paper_experiments_v1/reviewer_audit/redesign_r2/run_real.py"
+      ],
+      "summary_entrypoints": [
+        "paper_experiments_v1/reviewer_audit/redesign_r2/summarize_real.py"
+      ],
+      "plotting_entrypoints": [
+        "paper_experiments_v1/reviewer_audit/redesign_r2/plot_r2.py"
+      ],
+      "formal_plot_data": "paper_experiments_v1/g5/final_results/plot_data/G5_R2_costmatched_LUAD.tsv",
+      "resolution": "exact",
+      "group_entrypoints": [
+        "paper_experiments_v1/g5/src/g5_natural.py",
+        "paper_experiments_v1/g5/src/g5_design_evaluator.py",
+        "paper_experiments_v1/reviewer_audit/redesign_r2/run_real.py",
+        "paper_experiments_v1/reviewer_audit/redesign_r3/g5_anchor_interval.py",
+        "paper_experiments_v1/reviewer_audit/redesign_r3/g5_natural_transfer.py",
+        "paper_experiments_v1/closure_r6/src/g5_diagnostic_value.py",
+        "paper_experiments_v1/closure_r8/src/run_g5.py",
+        "paper_experiments_v1/biological_closure_20261009/src/acquisition.py",
+        "paper_experiments_v1/biological_closure_20261009/src/run_ctdna.py",
+        "paper_experiments_v1/biological_closure_20261009/src/score_ctdna_future.py"
+      ],
+      "notes": "run_realg5allocationunderactualfeasiblecost;50seedswithinpatientpool."
+    },
+    {
+      "group": "g5",
+      "panel": "G5_R3_anchor_called",
+      "analysis_entrypoints": [
+        "paper_experiments_v1/reviewer_audit/redesign_r3/g5_anchor_interval.py",
+        "paper_experiments_v1/reviewer_audit/redesign_r3/g5_anchor_baseline.py",
+        "paper_experiments_v1/reviewer_audit/redesign_r3/g5_baseline_classic.py"
+      ],
+      "summary_entrypoints": [
+        "paper_experiments_v1/reviewer_audit/redesign_r3/g5_anchor_interval.py",
+        "paper_experiments_v1/reviewer_audit/redesign_r3/g5_baseline_classic.py"
+      ],
+      "plotting_entrypoints": [
+        "paper_experiments_v1/reviewer_audit/redesign_r3/plot_r3.py"
+      ],
+      "formal_plot_data": "paper_experiments_v1/g5/final_results/plot_data/G5_R3_anchor_called.tsv",
+      "resolution": "exact",
+      "group_entrypoints": [
+        "paper_experiments_v1/g5/src/g5_natural.py",
+        "paper_experiments_v1/g5/src/g5_design_evaluator.py",
+        "paper_experiments_v1/reviewer_audit/redesign_r2/run_real.py",
+        "paper_experiments_v1/reviewer_audit/redesign_r3/g5_anchor_interval.py",
+        "paper_experiments_v1/reviewer_audit/redesign_r3/g5_natural_transfer.py",
+        "paper_experiments_v1/closure_r6/src/g5_diagnostic_value.py",
+        "paper_experiments_v1/closure_r8/src/run_g5.py",
+        "paper_experiments_v1/biological_closure_20261009/src/acquisition.py",
+        "paper_experiments_v1/biological_closure_20261009/src/run_ctdna.py",
+        "paper_experiments_v1/biological_closure_20261009/src/score_ctdna_future.py"
+      ],
+      "notes": "g5_anchor_interval.finish(evaluation) writes anchor_interval_evaluation_raw.tsv. g5_anchor_baseline creates matched baseline raw fit cache; g5_baseline_classic.py lines 10-23 adds classic LR intervals and rewrites anchor_baseline_raw.tsv with COUNT_EXPANSION_CLASSIC/CALIBRATED. plot_r3.py lines 93-102 concatenates those two current tables and calculates called fractions and Wilson caps over 500 draws per scenario."
+    },
+    {
+      "group": "g5",
+      "panel": "G5_R3_anchor_covered",
+      "analysis_entrypoints": [
+        "paper_experiments_v1/reviewer_audit/redesign_r3/g5_anchor_interval.py",
+        "paper_experiments_v1/reviewer_audit/redesign_r3/g5_anchor_baseline.py",
+        "paper_experiments_v1/reviewer_audit/redesign_r3/g5_baseline_classic.py"
+      ],
+      "summary_entrypoints": [
+        "paper_experiments_v1/reviewer_audit/redesign_r3/g5_anchor_interval.py",
+        "paper_experiments_v1/reviewer_audit/redesign_r3/g5_baseline_classic.py"
+      ],
+      "plotting_entrypoints": [
+        "paper_experiments_v1/reviewer_audit/redesign_r3/plot_r3.py"
+      ],
+      "formal_plot_data": "paper_experiments_v1/g5/final_results/plot_data/G5_R3_anchor_covered.tsv",
+      "resolution": "exact",
+      "group_entrypoints": [
+        "paper_experiments_v1/g5/src/g5_natural.py",
+        "paper_experiments_v1/g5/src/g5_design_evaluator.py",
+        "paper_experiments_v1/reviewer_audit/redesign_r2/run_real.py",
+        "paper_experiments_v1/reviewer_audit/redesign_r3/g5_anchor_interval.py",
+        "paper_experiments_v1/reviewer_audit/redesign_r3/g5_natural_transfer.py",
+        "paper_experiments_v1/closure_r6/src/g5_diagnostic_value.py",
+        "paper_experiments_v1/closure_r8/src/run_g5.py",
+        "paper_experiments_v1/biological_closure_20261009/src/acquisition.py",
+        "paper_experiments_v1/biological_closure_20261009/src/run_ctdna.py",
+        "paper_experiments_v1/biological_closure_20261009/src/score_ctdna_future.py"
+      ],
+      "notes": "g5_anchor_interval.finish(evaluation) writes anchor_interval_evaluation_raw.tsv. g5_anchor_baseline creates matched baseline raw fit cache; g5_baseline_classic.py lines 10-23 adds classic LR intervals and rewrites anchor_baseline_raw.tsv with COUNT_EXPANSION_CLASSIC/CALIBRATED. plot_r3.py lines 93-102 concatenates those two current tables and calculates covered fractions and Wilson caps over 500 draws per scenario."
+    },
+    {
+      "group": "g5",
+      "panel": "G5_R3_natural_transfer",
+      "analysis_entrypoints": [
+        "paper_experiments_v1/reviewer_audit/redesign_r3/g5_natural_transfer.py"
+      ],
+      "summary_entrypoints": [
+        "paper_experiments_v1/reviewer_audit/redesign_r3/g5_natural_transfer.py"
+      ],
+      "plotting_entrypoints": [
+        "paper_experiments_v1/reviewer_audit/redesign_r3/plot_r3.py"
+      ],
+      "formal_plot_data": "paper_experiments_v1/g5/final_results/plot_data/G5_R3_natural_transfer.tsv",
+      "resolution": "exact",
+      "group_entrypoints": [
+        "paper_experiments_v1/g5/src/g5_natural.py",
+        "paper_experiments_v1/g5/src/g5_design_evaluator.py",
+        "paper_experiments_v1/reviewer_audit/redesign_r2/run_real.py",
+        "paper_experiments_v1/reviewer_audit/redesign_r3/g5_anchor_interval.py",
+        "paper_experiments_v1/reviewer_audit/redesign_r3/g5_natural_transfer.py",
+        "paper_experiments_v1/closure_r6/src/g5_diagnostic_value.py",
+        "paper_experiments_v1/closure_r8/src/run_g5.py",
+        "paper_experiments_v1/biological_closure_20261009/src/acquisition.py",
+        "paper_experiments_v1/biological_closure_20261009/src/run_ctdna.py",
+        "paper_experiments_v1/biological_closure_20261009/src/score_ctdna_future.py"
+      ],
+      "notes": "Frozenclassicnatural-transfer baseline;notindependentbiologicaledgeconfirmation."
+    },
+    {
+      "group": "g5",
+      "panel": "G5_R6_correct_answers",
+      "analysis_entrypoints": [
+        "paper_experiments_v1/closure_r6/src/g5_diagnostic_value.py"
+      ],
+      "summary_entrypoints": [
+        "paper_experiments_v1/closure_r6/src/summarize_g5.py"
+      ],
+      "plotting_entrypoints": [
+        "paper_experiments_v1/closure_r6/src/plot.py"
+      ],
+      "formal_plot_data": "paper_experiments_v1/g5/final_results/plot_data/G5_R6_correct_answers.tsv",
+      "resolution": "exact",
+      "group_entrypoints": [
+        "paper_experiments_v1/g5/src/g5_natural.py",
+        "paper_experiments_v1/g5/src/g5_design_evaluator.py",
+        "paper_experiments_v1/reviewer_audit/redesign_r2/run_real.py",
+        "paper_experiments_v1/reviewer_audit/redesign_r3/g5_anchor_interval.py",
+        "paper_experiments_v1/reviewer_audit/redesign_r3/g5_natural_transfer.py",
+        "paper_experiments_v1/closure_r6/src/g5_diagnostic_value.py",
+        "paper_experiments_v1/closure_r8/src/run_g5.py",
+        "paper_experiments_v1/biological_closure_20261009/src/acquisition.py",
+        "paper_experiments_v1/biological_closure_20261009/src/run_ctdna.py",
+        "paper_experiments_v1/biological_closure_20261009/src/score_ctdna_future.py"
+      ],
+      "notes": "RetainedD4support;1200datasets including300outsidefamily;600assaycontract."
+    },
+    {
+      "group": "g5",
+      "panel": "G5_R8_diagnostic_actions",
+      "analysis_entrypoints": [
+        "paper_experiments_v1/closure_r8/src/run_g5.py",
+        "paper_experiments_v1/closure_r8/src/g5_matched_size.py"
+      ],
+      "summary_entrypoints": [
+        "paper_experiments_v1/closure_r8/src/summarize.py"
+      ],
+      "plotting_entrypoints": [
+        "paper_experiments_v1/closure_r8/publication/plot.py"
+      ],
+      "formal_plot_data": "paper_experiments_v1/g5/final_results/plot_data/G5_R8_diagnostic_actions.tsv",
+      "resolution": "exact",
+      "group_entrypoints": [
+        "paper_experiments_v1/g5/src/g5_natural.py",
+        "paper_experiments_v1/g5/src/g5_design_evaluator.py",
+        "paper_experiments_v1/reviewer_audit/redesign_r2/run_real.py",
+        "paper_experiments_v1/reviewer_audit/redesign_r3/g5_anchor_interval.py",
+        "paper_experiments_v1/reviewer_audit/redesign_r3/g5_natural_transfer.py",
+        "paper_experiments_v1/closure_r6/src/g5_diagnostic_value.py",
+        "paper_experiments_v1/closure_r8/src/run_g5.py",
+        "paper_experiments_v1/biological_closure_20261009/src/acquisition.py",
+        "paper_experiments_v1/biological_closure_20261009/src/run_ctdna.py",
+        "paper_experiments_v1/biological_closure_20261009/src/score_ctdna_future.py"
+      ],
+      "notes": "CurrentR8mainandmatchedsize;6000costunits,distinctD4contract."
+    },
+    {
+      "group": "g5",
+      "panel": "G5_R8_diagnostic_value",
+      "analysis_entrypoints": [
+        "paper_experiments_v1/closure_r8/src/run_g5.py"
+      ],
+      "summary_entrypoints": [
+        "paper_experiments_v1/closure_r8/src/summarize.py"
+      ],
+      "plotting_entrypoints": [
+        "paper_experiments_v1/closure_r8/publication/plot.py"
+      ],
+      "formal_plot_data": "paper_experiments_v1/g5/final_results/plot_data/G5_R8_diagnostic_value.tsv",
+      "resolution": "exact",
+      "group_entrypoints": [
+        "paper_experiments_v1/g5/src/g5_natural.py",
+        "paper_experiments_v1/g5/src/g5_design_evaluator.py",
+        "paper_experiments_v1/reviewer_audit/redesign_r2/run_real.py",
+        "paper_experiments_v1/reviewer_audit/redesign_r3/g5_anchor_interval.py",
+        "paper_experiments_v1/reviewer_audit/redesign_r3/g5_natural_transfer.py",
+        "paper_experiments_v1/closure_r6/src/g5_diagnostic_value.py",
+        "paper_experiments_v1/closure_r8/src/run_g5.py",
+        "paper_experiments_v1/biological_closure_20261009/src/acquisition.py",
+        "paper_experiments_v1/biological_closure_20261009/src/run_ctdna.py",
+        "paper_experiments_v1/biological_closure_20261009/src/score_ctdna_future.py"
+      ],
+      "notes": "CurrentR8allpolicies;publicationplotcomputespairedgainbootstrap/Holmtestsfromcurrentraw."
+    },
+    {
+      "group": "g5",
+      "panel": "G5_BIO_01_clone_tracking",
+      "analysis_entrypoints": [
+        "paper_experiments_v1/biological_closure_20261009/src/run_ctdna.py"
+      ],
+      "summary_entrypoints": [
+        "paper_experiments_v1/biological_closure_20261009/src/run_ctdna.py"
+      ],
+      "plotting_entrypoints": [
+        "paper_experiments_v1/biological_closure_20261009/src/plot_biological.py"
+      ],
+      "formal_plot_data": "paper_experiments_v1/g5/final_results/plot_data/G5_BIO_01_clone_tracking.tsv",
+      "resolution": "exact",
+      "group_entrypoints": [
+        "paper_experiments_v1/g5/src/g5_natural.py",
+        "paper_experiments_v1/g5/src/g5_design_evaluator.py",
+        "paper_experiments_v1/reviewer_audit/redesign_r2/run_real.py",
+        "paper_experiments_v1/reviewer_audit/redesign_r3/g5_anchor_interval.py",
+        "paper_experiments_v1/reviewer_audit/redesign_r3/g5_natural_transfer.py",
+        "paper_experiments_v1/closure_r6/src/g5_diagnostic_value.py",
+        "paper_experiments_v1/closure_r8/src/run_g5.py",
+        "paper_experiments_v1/biological_closure_20261009/src/acquisition.py",
+        "paper_experiments_v1/biological_closure_20261009/src/run_ctdna.py",
+        "paper_experiments_v1/biological_closure_20261009/src/score_ctdna_future.py"
+      ],
+      "notes": "Surgery-onlypanelchoices;actualUMIcountreplay;71availability-inclusive,14referencepositive,39recurrence."
+    },
+    {
+      "group": "g5",
+      "panel": "G5_BIO_02_future_clone_tracking",
+      "analysis_entrypoints": [
+        "paper_experiments_v1/biological_closure_20261009/src/run_ctdna.py",
+        "paper_experiments_v1/biological_closure_20261009/src/score_ctdna_future.py"
+      ],
+      "summary_entrypoints": [
+        "paper_experiments_v1/biological_closure_20261009/src/score_ctdna_future.py"
+      ],
+      "plotting_entrypoints": [
+        "paper_experiments_v1/biological_closure_20261009/src/plot_biological.py"
+      ],
+      "formal_plot_data": "paper_experiments_v1/g5/final_results/plot_data/G5_BIO_02_future_clone_tracking.tsv",
+      "resolution": "exact",
+      "group_entrypoints": [
+        "paper_experiments_v1/g5/src/g5_natural.py",
+        "paper_experiments_v1/g5/src/g5_design_evaluator.py",
+        "paper_experiments_v1/reviewer_audit/redesign_r2/run_real.py",
+        "paper_experiments_v1/reviewer_audit/redesign_r3/g5_anchor_interval.py",
+        "paper_experiments_v1/reviewer_audit/redesign_r3/g5_natural_transfer.py",
+        "paper_experiments_v1/closure_r6/src/g5_diagnostic_value.py",
+        "paper_experiments_v1/closure_r8/src/run_g5.py",
+        "paper_experiments_v1/biological_closure_20261009/src/acquisition.py",
+        "paper_experiments_v1/biological_closure_20261009/src/run_ctdna.py",
+        "paper_experiments_v1/biological_closure_20261009/src/score_ctdna_future.py"
+      ],
+      "notes": "Secondaryfuturetissue-onlyscorer doesnotchangefrozenpanelchoices;10targetpatients."
+    }
+  ],
+  "required_code_additions_to_initial_selected_files": [
+    "paper_experiments_v1/g1/src/prepare_figures.py",
+    "paper_experiments_v1/g2/src/g2_plot.py"
+  ],
+  "G2_B6_detail": {
+    "experiment": "paper_experiments_v1/g2/src/g2_omhn.py",
+    "G2_04_summary_writer": "paper_experiments_v1/g2/src/g2_plot.py:matched()",
+    "G2_07_direct_pivot_writer": "paper_experiments_v1/g2/figure_revision_v2/redraw.py:138-147",
+    "ancillary_paired_metric_script": "paper_experiments_v1/g2/src/g2_b6_pairs.py",
+    "ancillary_role": "G2_B6_paired_comparisons.tsv forcoverage/correct-call/called/wrongdifferences; notsourceofpointestimates/scatter"
+  },
+  "group_candidates_n": 0,
+  "resolution_scope": "Exact means the static source-to-raw/summary-to-current-panel calculation path was identified. This audit did not rerun experiments or claim independent numerical reproduction of all 59 panels; plot polish/publishing transformations are tracked separately.",
+  "additional_current_panel_inputs": [
+    {
+      "source_path": "paper_experiments_v1/g1/results/G1_population_geometry.tsv",
+      "panels": [
+        "G1C",
+        "G1D"
+      ],
+      "role": "geometry primitive result; current panels use its aggregated figure_data",
+      "exists": true,
+      "package_path_exists": true,
+      "bytes": 4482759,
+      "source_sha256": "29bb8dc65b2b174cfa5fa46435546c7009489cab570fd7a651675ebeed932f8f",
+      "package_selection": "Current retained-experiment input, byte_identical"
+    },
+    {
+      "source_path": "paper_experiments_v1/g1/results/G1_counterexamples.jsonl",
+      "panels": [
+        "G1A"
+      ],
+      "role": "original/alias parameter vectors; current endpoint plotdata already retained",
+      "exists": true,
+      "package_path_exists": true,
+      "bytes": 17801,
+      "source_sha256": "7adbc123477b21e2a387774ba6d7ea19fde171bbf4f3bf17766dc91d7330f7b4",
+      "package_selection": "Current retained-experiment input, byte_identical"
+    },
+    {
+      "source_path": "paper_experiments_v1/g1/results/G1_source_information_cap.tsv",
+      "panels": [
+        "G1E"
+      ],
+      "role": "source rank/nullity primitive result; current aggregate plotdata already retained",
+      "exists": true,
+      "package_path_exists": true,
+      "bytes": 42135,
+      "source_sha256": "5ff13445fd0369798178f8a41a78c061efb4475524deba2d405dabeb7aeaccf0",
+      "package_selection": "Current retained-experiment input, byte_identical"
+    },
+    {
+      "source_path": "paper_experiments_v1/g1/figure_data/G1A/data_target_endpoint.tsv",
+      "panels": [
+        "G1A"
+      ],
+      "role": "actual g1_plot input",
+      "exists": true,
+      "package_path_exists": true,
+      "bytes": 1684,
+      "source_sha256": "6ec5d16134735db6333accd0947bb6146baa8805ef325b46137d4fedbfac977a",
+      "package_selection": "Current retained-experiment input, byte_identical"
+    },
+    {
+      "source_path": "paper_experiments_v1/g1/figure_data/G1C/data.tsv",
+      "panels": [
+        "G1C"
+      ],
+      "role": "actual g1_plot input",
+      "exists": true,
+      "package_path_exists": true,
+      "bytes": 3457,
+      "source_sha256": "68433cf77b930b591ebbb43f357791314892fe8848ee690c45afb43852db3714",
+      "package_selection": "Current retained-experiment input, byte_identical"
+    },
+    {
+      "source_path": "paper_experiments_v1/g1/figure_data/G1D/data_by_design.tsv",
+      "panels": [
+        "G1D"
+      ],
+      "role": "actual g1_plot input",
+      "exists": true,
+      "package_path_exists": true,
+      "bytes": 7050,
+      "source_sha256": "fdd64f2633b98655c1e6c2b6efaec40d9662bb68ca08fdfe191ec169eca61a92",
+      "package_selection": "Current retained-experiment input, byte_identical"
+    },
+    {
+      "source_path": "paper_experiments_v1/g1/figure_data/G1E/data.tsv",
+      "panels": [
+        "G1E"
+      ],
+      "role": "actual g1_plot input",
+      "exists": true,
+      "package_path_exists": true,
+      "bytes": 202,
+      "source_sha256": "d1ca715b3a04712992a0527ddca1c0f6b0c619e6056e8c1c1a56e2d27b7c8fa1",
+      "package_selection": "Current retained-experiment input, byte_identical"
+    },
+    {
+      "source_path": "paper_experiments_v1/g3/results/G3_summary.tsv",
+      "panels": [
+        "G3_01",
+        "G3_07"
+      ],
+      "role": "actual grouped coverage input",
+      "exists": true,
+      "package_path_exists": true,
+      "bytes": 26843,
+      "source_sha256": "a32e71614170e057c8e5588f7ce9cb44b3b85257af76a3434c0bd28ab27ff103",
+      "package_selection": "Current retained-experiment input, byte_identical"
+    },
+    {
+      "source_path": "paper_experiments_v1/g3/results/G3_replicate_results.tsv.gz",
+      "panels": [
+        "G3_06"
+      ],
+      "role": "actual per-replicate predictive KL input",
+      "exists": true,
+      "package_path_exists": true,
+      "bytes": 2408381,
+      "source_sha256": "b0dcec345090735479a715866b820df2a5dda3781da217123ece942ae51cede3",
+      "package_selection": "Current retained-experiment input, byte_identical"
+    },
+    {
+      "source_path": "paper_experiments_v1/g3/results/G3_sensitivity_regions.tsv",
+      "panels": [
+        "G3_05"
+      ],
+      "role": "actual fixed epsilon/eta sensitivity input",
+      "exists": true,
+      "package_path_exists": true,
+      "bytes": 55519,
+      "source_sha256": "e0cd2784c5055b2ce148f72c826c5ab89b03e8f951667acb10aae6264060584c",
+      "package_selection": "Current retained-experiment input, byte_identical"
+    },
+    {
+      "source_path": "paper_experiments_v1/g3/figure_data/G3_06.tsv",
+      "panels": [
+        "G3_06"
+      ],
+      "role": "upstream full-library numeric table required by selection redraw",
+      "exists": true,
+      "package_path_exists": true,
+      "bytes": 657844,
+      "source_sha256": "30187aad0963b0f5c09b115b11be387f4ee02be3c5d3d2ae2fb7e5231de5428f",
+      "package_selection": "Current retained-experiment input, byte_identical"
+    },
+    {
+      "source_path": "paper_experiments_v1/g4/results/G4_patient_flow.tsv",
+      "panels": [
+        "G4_01"
+      ],
+      "role": "actual audited patient-flow input",
+      "exists": true,
+      "package_path_exists": true,
+      "bytes": 578,
+      "source_sha256": "9726775c3a7c8ee714538c67add67a71b26cfdc79f05be412c2f902de58d276a",
+      "package_selection": "Current retained-experiment input, byte_identical"
+    },
+    {
+      "source_path": "paper_experiments_v1/g4/results/G4_model_anchored_auxiliary.tsv",
+      "panels": [
+        "G4_07"
+      ],
+      "role": "actual auxiliary coverage input",
+      "exists": true,
+      "package_path_exists": true,
+      "bytes": 309201,
+      "source_sha256": "0dd9440a409a09d06d3cfb34b7ff9fc730158cde7c41758c27e5cd65d164a29d",
+      "package_selection": "Current retained-experiment input, byte_identical"
+    },
+    {
+      "source_path": "paper_experiments_v1/g4/results/G4_all_method_results.tsv",
+      "panels": [
+        "G4_finite_calibration_ablation"
+      ],
+      "role": "actual M/M_NO_CAL paired finite-calibration input; broader table also contains nonretained panels, do not copy all old result directories",
+      "exists": true,
+      "package_path_exists": false,
+      "bytes": 4562579,
+      "source_sha256": "fa775e3271eac5223f2ac9f1e9e0197cba2df1efe1e93af03028e23a6b09b7bc",
+      "package_selection": "External exact-source dependency: broader original table includes unretained endpoints. Current selected final plot_data preserved."
+    },
+    {
+      "source_path": "paper_experiments_v1/g4/data_private/reference_records/LUAD.json",
+      "panels": [
+        "G4_finite_calibration_ablation",
+        "G4_07",
+        "G5_07_direct_uncertainty_cost"
+      ],
+      "role": "external-derived input to actual real-record inference/reveal rerun; not plot-only dependency",
+      "exists": true,
+      "package_path_exists": true,
+      "bytes": 1236520,
+      "source_sha256": "0a1247c48cd53695fcb6a611482986311ae0675f135384e8c29ffebea8141cbb",
+      "package_selection": "Current retained-experiment input, byte_identical"
+    },
+    {
+      "source_path": "paper_experiments_v1/g4/data_private/reference_records/COAD.json",
+      "panels": [
+        "G4_finite_calibration_ablation",
+        "G4_07"
+      ],
+      "role": "external-derived input to actual real-record inference rerun",
+      "exists": true,
+      "package_path_exists": true,
+      "bytes": 734755,
+      "source_sha256": "91b0019f8c4ee8712bd360336779119c4d70f368cf4a5a06252c7c7ad0e19663",
+      "package_selection": "Current retained-experiment input, byte_identical"
+    },
+    {
+      "source_path": "paper_experiments_v1/g5/results/G5_design_outer_evaluation.tsv",
+      "panels": [
+        "G5_05_design_scenario_0",
+        "G5_05_design_scenario_1",
+        "G5_05_design_scenario_2"
+      ],
+      "role": "actual simulation budget curves and inset count input",
+      "exists": true,
+      "package_path_exists": true,
+      "bytes": 5579468,
+      "source_sha256": "c3843be0e1cdc4c18c06552a5139a3dd8ade86df204922b2fa75b8c70f26f963",
+      "package_selection": "Current retained-experiment input, byte_identical"
+    },
+    {
+      "source_path": "paper_experiments_v1/g5/results/G5_design_direct_evaluation.tsv",
+      "panels": [
+        "G5_07_direct_uncertainty_cost"
+      ],
+      "role": "actual direct-record interval composition/cost input",
+      "exists": true,
+      "package_path_exists": true,
+      "bytes": 464272,
+      "source_sha256": "b52cf93136b94da7c34062aaf4e0a6c4f4868c6189b69c531e1eb05be2948d0c",
+      "package_selection": "Current retained-experiment input, byte_identical"
+    },
+    {
+      "source_path": "paper_experiments_v1/g5/revision_r3/results/anchor_interval_evaluation_raw.tsv",
+      "panels": [
+        "G5_R3_anchor_called",
+        "G5_R3_anchor_covered"
+      ],
+      "role": "actual source-anchor LR/calibrated intervals",
+      "exists": true,
+      "package_path_exists": true,
+      "bytes": 462438,
+      "source_sha256": "419a5c8f62b7ad481ccbfba5a9d4fe34271bb445baf1bfaadb8f725c8ce845cb",
+      "package_selection": "Current retained-experiment input, byte_identical"
+    },
+    {
+      "source_path": "paper_experiments_v1/g5/revision_r3/results/anchor_baseline_raw.tsv",
+      "panels": [
+        "G5_R3_anchor_called",
+        "G5_R3_anchor_covered"
+      ],
+      "role": "actual count-expansion classic/calibrated matched baseline intervals",
+      "exists": true,
+      "package_path_exists": true,
+      "bytes": 394686,
+      "source_sha256": "4d2bbe281bd15ec1f8f1ca3dd0bdcf9b4509501c9998b9c7ae7990a2443ba162",
+      "package_selection": "Current retained-experiment input, byte_identical"
+    }
+  ]
+}

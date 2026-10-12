@@ -1,0 +1,2 @@
+# Preserve exact frozen scientific bytes despite parent repository text rules.
+* -text

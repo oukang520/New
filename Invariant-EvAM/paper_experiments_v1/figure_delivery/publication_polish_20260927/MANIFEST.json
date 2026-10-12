@@ -1,0 +1,2927 @@
+[
+  {
+    "panel": "G1A",
+    "group": "g1",
+    "before": {
+      "svg": "06aae663b1ebcc4b4b1b8dfad51a2ae51b1f24fc6d5adcca8d28e9d225b527a0",
+      "pdf": "adff41bb6ab4b592fbb2a466866238a68a2c991a27a30a30707233a958526a4f"
+    },
+    "after": {
+      "svg": "211cd2b803e8be00b66e5dc299dfae92029c973c98eafe2ba14d151b2cab13ca",
+      "pdf": "d5d88ee1788370b33cdb0db767a0c0daa429464a1c6f21e37b53c8be35f79167"
+    },
+    "removed_or_shortened": [
+      {
+        "original": "a",
+        "replacement": "",
+        "pdf_matches": 1
+      }
+    ],
+    "old_size_pt": [
+      252.28346252441406,
+      294.80316162109375
+    ],
+    "crop_pt": [
+      19.5,
+      4.5,
+      250.0,
+      278.0
+    ],
+    "new_size_pt": [
+      230.5,
+      273.5
+    ],
+    "area_reduction": 0.15236800641983217,
+    "font": "Arial",
+    "dpi": 600,
+    "scientific_marks_unchanged": true
+  },
+  {
+    "panel": "G1_R2_recovery_ordinary",
+    "group": "g1",
+    "before": {
+      "svg": "9eb6d4309b53a1660631ee9238d0f822b6e03c5c66902d3c8a576a04cafa2ebd",
+      "pdf": "dfc78406e0659bf5e3a2313601263e241107666bc001285a3f4a40d50dd769cb"
+    },
+    "after": {
+      "pdf": "4220675dcb2abd317525a16082e205933537863f3082bf2578fea6347d4bf542",
+      "svg": "f245ef8196c3e25834d7c83d79312f47f62dd72ddcf9bf9a84192dbe0a667272"
+    },
+    "removed_or_shortened": [
+      {
+        "original": "G1 | Fixed-cost recovery · ordinary events",
+        "replacement": "Ordinary events",
+        "pdf_matches": 1
+      },
+      {
+        "original": "Four independent parameter draws; 50 datasets per draw and design.",
+        "replacement": "",
+        "pdf_matches": 1
+      },
+      {
+        "original": "Open points: draw means. Bars: mean; whiskers: minimum–maximum across draws.",
+        "replacement": "",
+        "pdf_matches": 1
+      },
+      {
+        "original": "All outcomes retained, including numerical failures and boundary fits.",
+        "replacement": "",
+        "pdf_matches": 1
+      },
+      {
+        "original": "vs heterogeneous; 4 parameter draws; Holm | ns >= .05; * < .05; ** < .01; *** < .001",
+        "replacement": "",
+        "pdf_matches": 1
+      }
+    ],
+    "old_size_pt": [
+      425.19683837890625,
+      329.6377868652344
+    ],
+    "crop_pt": [
+      25.5,
+      3.0,
+      415.0,
+      276.5
+    ],
+    "new_size_pt": [
+      389.5,
+      244.0
+    ],
+    "area_reduction": 0.3219366482898043,
+    "font": "Arial",
+    "dpi": 600,
+    "scientific_marks_unchanged": true,
+    "header_removed_bands_pt": [
+      [
+        17.0,
+        32.5
+      ],
+      [
+        51.0,
+        65.0
+      ]
+    ]
+  },
+  {
+    "panel": "G4_R6_attribution",
+    "group": "g4",
+    "before": {
+      "svg": "29c4b5a1971fd40081271706488f4dc36528977b85a8416e223c0d5db2d7c3e9",
+      "pdf": "7f4b825183abe0c6d4eefcdbef6852e5e593f19a428a2e9addd79183750db038"
+    },
+    "after": {
+      "svg": "bd1588303df20ba8e3772d679986ae5a0bf137c8808a61aafd2adf51ef46b3eb",
+      "pdf": "e9c947000d97e09a6a7c027368e06334699e2b41e99a1020f406165c55a855aa"
+    },
+    "removed_or_shortened": [
+      {
+        "original": "Total = gain after deassociation + pairing-dependent contribution (identical draws).",
+        "replacement": "",
+        "pdf_matches": 1
+      },
+      {
+        "original": "Bars: equal-design means; intervals: paired patient bootstrap; dots: all three design means.",
+        "replacement": "",
+        "pdf_matches": 1
+      },
+      {
+        "original": "Elbow labels: gain vs 0, 20-test Holm family. GENIE 449 / 287; TCGA 566 / 534 patients.",
+        "replacement": "",
+        "pdf_matches": 1
+      }
+    ],
+    "old_size_pt": [
+      521.5748291015625,
+      337.3228454589844
+    ],
+    "crop_pt": [
+      19.5,
+      23.0,
+      512.5,
+      279.5
+    ],
+    "new_size_pt": [
+      493.0,
+      256.5
+    ],
+    "area_reduction": 0.28125984464611886,
+    "font": "Arial",
+    "dpi": 600,
+    "scientific_marks_unchanged": true
+  },
+  {
+    "panel": "G5_R6_diagnostic_actions",
+    "group": "g5",
+    "before": {
+      "svg": "fa2403563957e66f087b8c8104179037cc6551417aeaee9e7c49cfdd29bf5d05",
+      "pdf": "4b8801dedef56f2adc1a32d387abe3759b6eedc364e584e8b266dd8465a55272"
+    },
+    "after": {
+      "pdf": "83fc71ae645d2f58a124604aa517b3cf4f1b89a9d5aac84a52b6a3a49b114e6c",
+      "svg": "41338fa49a0a6088bd41b347842c45bcf76fc50f525ad75cfdd11c70afd5f98a"
+    },
+    "removed_or_shortened": [
+      {
+        "original": "150 independent datasets per row; 600 added assays; theta[4] is unchanged throughout.",
+        "replacement": "",
+        "pdf_matches": 1
+      },
+      {
+        "original": "Coverage whiskers: Wilson intervals. Outside-family controls retained; unknown includes invalid answers.",
+        "replacement": "",
+        "pdf_matches": 1
+      }
+    ],
+    "old_size_pt": [
+      487.5590515136719,
+      340.157470703125
+    ],
+    "crop_pt": [
+      69.0,
+      11.5,
+      474.5,
+      301.0
+    ],
+    "new_size_pt": [
+      405.5,
+      278.5
+    ],
+    "area_reduction": 0.31906003987921294,
+    "font": "Arial",
+    "dpi": 600,
+    "scientific_marks_unchanged": true,
+    "header_removed_bands_pt": [
+      [
+        15.0,
+        26.0
+      ]
+    ]
+  },
+  {
+    "panel": "G5_R6_diagnostic_value",
+    "group": "g5",
+    "before": {
+      "svg": "9c713521b8b76b99a9c825848e7a8f982204fcbd70d77906b97049ba21a6863c",
+      "pdf": "c61cc52170a61eabc7319c6fafce862acb0542b5601d742462c7071f28fd1838"
+    },
+    "after": {
+      "svg": "e08594dc1113af9c5428406826c5586041fbeb69a32ed09356851d246eadb581",
+      "pdf": "2796e3a261ff7a7d22b77332cbb7d7b6476f52f7d793b36f1f72f7f11494a4e0"
+    },
+    "removed_or_shortened": [
+      {
+        "original": "Diagnostic acquisition relative to each comparator",
+        "replacement": "",
+        "pdf_matches": 1
+      },
+      {
+        "original": "Positive = lower error; 900 paired datasets. Dots: all six predeclared condition means.",
+        "replacement": "",
+        "pdf_matches": 1
+      },
+      {
+        "original": "Whiskers: stratified paired 95% bootstrap intervals; Centered labels: paired sign-flip tests against zero, Holm-adjusted.",
+        "replacement": "",
+        "pdf_matches": 1
+      },
+      {
+        "original": "C-opt equals diagnostic. Expansion control: correct-answer figure and full result table.",
+        "replacement": "",
+        "pdf_matches": 1
+      }
+    ],
+    "old_size_pt": [
+      501.7322692871094,
+      337.3228454589844
+    ],
+    "crop_pt": [
+      19.5,
+      44.0,
+      493.5,
+      283.0
+    ],
+    "new_size_pt": [
+      474.0,
+      239.0
+    ],
+    "area_reduction": 0.3306420073047952,
+    "font": "Arial",
+    "dpi": 600,
+    "scientific_marks_unchanged": true,
+    "annotation_revision": "Centered stars/ns vs zero; no elbow leaders; frozen tests unchanged."
+  },
+  {
+    "panel": "G1B",
+    "group": "g1",
+    "before": {
+      "svg": "4bf794735a7148962ea3bbd08b041c786eb4028afa0d41210adf20b326ed3b1f",
+      "pdf": "f04bb9e9d59a98f2b6a94d7c0cf0e435327789907943bb2f1ed70c66d27378a3"
+    },
+    "after": {
+      "svg": "1e9a37665e908f49d3497287774423aa849c9fcd0fbaee09e3bdc061e93139a3",
+      "pdf": "f5b10ff93a040b5c2b072c43fb6a860234bfeb47f67090e95455fb9db8c9882b"
+    },
+    "removed_or_shortened": [
+      {
+        "original": "b",
+        "replacement": "",
+        "pdf_matches": 1
+      }
+    ],
+    "old_size_pt": [
+      252.28346252441406,
+      189.9212646484375
+    ],
+    "crop_pt": [
+      13.0,
+      2.0,
+      246.0,
+      180.5
+    ],
+    "new_size_pt": [
+      233.0,
+      178.5
+    ],
+    "area_reduction": 0.13197593628275683,
+    "font": "Arial",
+    "dpi": 600,
+    "scientific_marks_unchanged": true
+  },
+  {
+    "panel": "G1C",
+    "group": "g1",
+    "before": {
+      "svg": "74d1f039d4de2ebd9ef1ec7217c842e07dec2682d6a2c4488b4fbbcb959dba6b",
+      "pdf": "bcca895d1d97ff182a97b3a7ea88c3b083bb3b30e4c6c5a3b0f664b2d42b9fde"
+    },
+    "after": {
+      "svg": "27d8d3cb32a61af4be559ca93fd6325392883a0df92e4fbb65e820713b78acd3",
+      "pdf": "2e5977bf4e0b5a367619ee21ac963ac036d7b8f4b2bca8e748bcfabe8d7f5792"
+    },
+    "removed_or_shortened": [
+      {
+        "original": "c",
+        "replacement": "",
+        "pdf_matches": 1
+      }
+    ],
+    "old_size_pt": [
+      252.28346252441406,
+      320.3149719238281
+    ],
+    "crop_pt": [
+      50.5,
+      1.0,
+      248.0,
+      297.0
+    ],
+    "new_size_pt": [
+      197.5,
+      296.0
+    ],
+    "area_reduction": 0.27657620514586334,
+    "font": "Arial",
+    "dpi": 600,
+    "scientific_marks_unchanged": true
+  },
+  {
+    "panel": "G1D",
+    "group": "g1",
+    "before": {
+      "svg": "8e0869c93caf90586270526e039c4723e7cb5447c9eef91ad96928843e1122fc",
+      "pdf": "cc18c394e269682742d37d1c33c7e2fbcc01a2840dfa336e0889ac01c0f893a2"
+    },
+    "after": {
+      "svg": "9a62800180efc1c87995aefb5ce64f2be39765f0da689663a93d45300bfc5d3b",
+      "pdf": "37341aa8ddd080f52f5b35e5f55caf6a326570a9b1fe0ed80b77c9fe31744fe8"
+    },
+    "removed_or_shortened": [
+      {
+        "original": "d",
+        "replacement": "",
+        "pdf_matches": 1
+      }
+    ],
+    "old_size_pt": [
+      252.28346252441406,
+      337.3228454589844
+    ],
+    "crop_pt": [
+      41.0,
+      12.5,
+      232.5,
+      307.5
+    ],
+    "new_size_pt": [
+      191.5,
+      295.0
+    ],
+    "area_reduction": 0.3361709462522092,
+    "font": "Arial",
+    "dpi": 600,
+    "scientific_marks_unchanged": true
+  },
+  {
+    "panel": "G1E",
+    "group": "g1",
+    "before": {
+      "svg": "66431e6250470635af5e76bcac6d6775c1fe9941f0fdde53904e94f7fc4d927e",
+      "pdf": "3e0faf876ff3b6a6d5dd8d93ee87690992c09a601e01c282682f8d2df01fc697"
+    },
+    "after": {
+      "svg": "3a550aeccdffe7b434429f60aba0220474496b3993a7d7ce80ca3aa21c702594",
+      "pdf": "5ec5561cd33a3318e73f2826bac678ca6678b17ca7e149b24de5e6a1fabe79c4"
+    },
+    "removed_or_shortened": [
+      {
+        "original": "e",
+        "replacement": "",
+        "pdf_matches": 1
+      }
+    ],
+    "old_size_pt": [
+      252.28346252441406,
+      164.40945434570312
+    ],
+    "crop_pt": [
+      52.0,
+      3.0,
+      244.5,
+      143.0
+    ],
+    "new_size_pt": [
+      192.5,
+      140.0
+    ],
+    "area_reduction": 0.3502546222946634,
+    "font": "Arial",
+    "dpi": 600,
+    "scientific_marks_unchanged": true
+  },
+  {
+    "panel": "G1_R2_recovery_frequent",
+    "group": "g1",
+    "before": {
+      "svg": "d0de644f272757e0988dbc9dfee84f295e8759d6df9d970fcffa00f50fabd3cf",
+      "pdf": "edc8b7bdcde18d1c47c6c10957165fa11d71d800b8c14ca5f81ed3d820d6f2b0"
+    },
+    "after": {
+      "pdf": "76bcd1891f2f956b4f09212d6b63b787ea4c4d8d49abbd6ecb93ed04a33a718b",
+      "svg": "3c06419fb2b3be8be4e10efab985f6fd6f39b42d7294658face43f0381db975b"
+    },
+    "removed_or_shortened": [
+      {
+        "original": "G1 | Fixed-cost recovery · frequent events",
+        "replacement": "Frequent events",
+        "pdf_matches": 1
+      },
+      {
+        "original": "Four independent parameter draws; 50 datasets per draw and design.",
+        "replacement": "",
+        "pdf_matches": 1
+      },
+      {
+        "original": "Open points: draw means. Bars: mean; whiskers: minimum–maximum across draws.",
+        "replacement": "",
+        "pdf_matches": 1
+      },
+      {
+        "original": "All outcomes retained, including numerical failures and boundary fits.",
+        "replacement": "",
+        "pdf_matches": 1
+      },
+      {
+        "original": "vs heterogeneous; 4 parameter draws; Holm | ns >= .05; * < .05; ** < .01; *** < .001",
+        "replacement": "",
+        "pdf_matches": 1
+      }
+    ],
+    "old_size_pt": [
+      425.19683837890625,
+      329.6377868652344
+    ],
+    "crop_pt": [
+      25.5,
+      3.0,
+      415.0,
+      276.5
+    ],
+    "new_size_pt": [
+      389.5,
+      244.0
+    ],
+    "area_reduction": 0.3219366482898043,
+    "font": "Arial",
+    "dpi": 600,
+    "scientific_marks_unchanged": true,
+    "header_removed_bands_pt": [
+      [
+        17.0,
+        32.5
+      ],
+      [
+        51.0,
+        65.0
+      ]
+    ]
+  },
+  {
+    "panel": "G1_R2_recovery_rare",
+    "group": "g1",
+    "before": {
+      "svg": "86baf219d2944eb2d5ea83a752130f7c8d71fc6f0b3eef24839002d158508e04",
+      "pdf": "e7d470ddf6d133f1220570f206bb5a64d1cb64a768e04a0d547ddf1eea2e438d"
+    },
+    "after": {
+      "pdf": "661d0d900e7bf59b6aa29ae895ae0523537c8259f726cbe73308cc95239501a4",
+      "svg": "ab689a8a52275caed2178c468fedd69a5bbda49c959ebf010ac3ab5c24a6a807"
+    },
+    "removed_or_shortened": [
+      {
+        "original": "G1 | Fixed-cost recovery · rare events",
+        "replacement": "Rare events",
+        "pdf_matches": 1
+      },
+      {
+        "original": "Four independent parameter draws; 50 datasets per draw and design.",
+        "replacement": "",
+        "pdf_matches": 1
+      },
+      {
+        "original": "Open points: draw means. Bars: mean; whiskers: minimum–maximum across draws.",
+        "replacement": "",
+        "pdf_matches": 1
+      },
+      {
+        "original": "All outcomes retained, including numerical failures and boundary fits.",
+        "replacement": "",
+        "pdf_matches": 1
+      },
+      {
+        "original": "vs heterogeneous; 4 parameter draws; Holm | ns >= .05; * < .05; ** < .01; *** < .001",
+        "replacement": "",
+        "pdf_matches": 1
+      }
+    ],
+    "old_size_pt": [
+      425.19683837890625,
+      329.6377868652344
+    ],
+    "crop_pt": [
+      31.5,
+      3.0,
+      415.0,
+      276.5
+    ],
+    "new_size_pt": [
+      383.5,
+      242.5
+    ],
+    "area_reduction": 0.33648599370926824,
+    "font": "Arial",
+    "dpi": 600,
+    "scientific_marks_unchanged": true,
+    "header_removed_bands_pt": [
+      [
+        15.5,
+        32.5
+      ],
+      [
+        51.0,
+        65.0
+      ]
+    ]
+  },
+  {
+    "panel": "G2_01",
+    "group": "g2",
+    "before": {
+      "svg": "1718df76e2ae94fb82cfacdfeabc0f69247e7377470c798b0970f58bade29778",
+      "pdf": "91de08d982c00308beef256dbab6a908de1f6a5144a690f643cefb21d291ead4"
+    },
+    "after": {
+      "pdf": "75874c6f42dcd5b47565a982d28d3c4efed72ba5068002c05248921368b3577b",
+      "svg": "73a23e96045133e00ff264667c7ef249b3ef4ce1416aa52fc7c207954ab12590"
+    },
+    "removed_or_shortened": [
+      {
+        "original": "500 replicates per cell; all 12 conditions retained.",
+        "replacement": "",
+        "pdf_matches": 1
+      },
+      {
+        "original": "Answerability and conditional error",
+        "replacement": "",
+        "pdf_matches": 1
+      }
+    ],
+    "old_size_pt": [
+      425.19683837890625,
+      439.3700866699219
+    ],
+    "crop_pt": [
+      69.5,
+      4.5,
+      379.5,
+      409.5
+    ],
+    "new_size_pt": [
+      310.0,
+      379.0
+    ],
+    "area_reduction": 0.3711017425507791,
+    "font": "Arial",
+    "dpi": 600,
+    "scientific_marks_unchanged": true,
+    "header_removed_bands_pt": [
+      [
+        17.5,
+        29.0
+      ]
+    ]
+  },
+  {
+    "panel": "G2_02",
+    "group": "g2",
+    "before": {
+      "svg": "29f829373566c266f4d5556335dbf806d19d412a1c1fe6afdd9167dcabe0c85b",
+      "pdf": "14f872f83853057e08846c61d8e344e721f119e8297ffb56b894fcc9344c30e2"
+    },
+    "after": {
+      "svg": "f0bee57f16c7b396321034d37daef5946b661d63d05f3e27ddf1c8751a4faee9",
+      "pdf": "d3f0d2be9b7c4087a8fde049b57e359a06fda9a3dcb2652ebb2bed02ede78c69"
+    },
+    "removed_or_shortened": [
+      {
+        "original": "True interaction shown below each group; 500 planned replicates per condition. Dashed line: nominal 5% noncoverage.",
+        "replacement": "",
+        "pdf_matches": 1
+      },
+      {
+        "original": "Whiskers: Wilson 95% Monte Carlo intervals. Separate-panel failures: B1 32, B2 0, B3 15, B4 70, B5 2, M 65.",
+        "replacement": "",
+        "pdf_matches": 1
+      },
+      {
+        "original": "coverage vs 95%; Holm (72 tests) | ns >= .05; * < .05; ** < .01; *** < .001",
+        "replacement": "",
+        "pdf_matches": 1
+      }
+    ],
+    "old_size_pt": [
+      651.968505859375,
+      311.81103515625
+    ],
+    "crop_pt": [
+      22.0,
+      35.5,
+      649.0,
+      262.0
+    ],
+    "new_size_pt": [
+      627.0,
+      226.5
+    ],
+    "area_reduction": 0.3014175852682256,
+    "font": "Arial",
+    "dpi": 600,
+    "scientific_marks_unchanged": true
+  },
+  {
+    "panel": "G2_03",
+    "group": "g2",
+    "before": {
+      "svg": "a6782ac854f8fe110d632ebd280345c27e10c93e8553301a8628f13052113e77",
+      "pdf": "5375743190453abc79dbe9abec8f94b414afcadbd166388716fcc3ac0624fcb9"
+    },
+    "after": {
+      "svg": "ff28b8c53587b56fccca199250530069e80ab328b2098f839ac5662194f673f8",
+      "pdf": "bb14a1a6571c988ca6fd5ac491bb38e39c26da8d76a5bd821a64e788b562de7e"
+    },
+    "removed_or_shortened": [
+      {
+        "original": "12 conditions; 500 paired datasets per condition; labels: true interaction.",
+        "replacement": "",
+        "pdf_matches": 1
+      },
+      {
+        "original": "Crossbars: paired 95% Monte Carlo intervals. All six zero gains retained.",
+        "replacement": "",
+        "pdf_matches": 1
+      },
+      {
+        "original": "Top: condition counts and descriptive KDE; no additional replicate pooling.",
+        "replacement": "",
+        "pdf_matches": 1
+      },
+      {
+        "original": "Linear axes retain zero / negative gains; faint diagonal denotes equal gains.",
+        "replacement": "",
+        "pdf_matches": 1
+      }
+    ],
+    "old_size_pt": [
+      391.18109130859375,
+      430.86614990234375
+    ],
+    "crop_pt": [
+      29.5,
+      6.5,
+      357.5,
+      370.5
+    ],
+    "new_size_pt": [
+      328.0,
+      364.0
+    ],
+    "area_reduction": 0.2916384208719157,
+    "font": "Arial",
+    "dpi": 600,
+    "scientific_marks_unchanged": true
+  },
+  {
+    "panel": "G2_04",
+    "group": "g2",
+    "before": {
+      "svg": "0e76c2fd42f0b60864b8c906cf6154efb4a65f1e8a9f597c56428b9197372171",
+      "pdf": "c31147e40e19ddcd1c6e9f74a4b0462849335ff5c465a64a94043158bad5f497"
+    },
+    "after": {
+      "pdf": "c763571388e04c97e887ab658d5cd9cccda87ef4f319ce27cc5c67a04fdd57c8",
+      "svg": "6c0b1c07f7c53b02c703a6f68eaeae402114d76197e6c93e06e4a8a5743a7b1b"
+    },
+    "removed_or_shortened": [
+      {
+        "original": "True interaction below each group; 200 paired replicates per effect; no numerical failures.",
+        "replacement": "",
+        "pdf_matches": 1
+      },
+      {
+        "original": "Whiskers: Wilson 95% Monte Carlo intervals. Point estimates agree; interval procedures differ.",
+        "replacement": "",
+        "pdf_matches": 1
+      },
+      {
+        "original": "vs official within effect/endpoint; Holm | ns >= .05; * < .05; ** < .01; *** < .001",
+        "replacement": "",
+        "pdf_matches": 1
+      }
+    ],
+    "old_size_pt": [
+      481.8897705078125,
+      342.3149719238281
+    ],
+    "crop_pt": [
+      25.0,
+      32.0,
+      476.5,
+      290.0
+    ],
+    "new_size_pt": [
+      451.5,
+      249.0
+    ],
+    "area_reduction": 0.31847231868230386,
+    "font": "Arial",
+    "dpi": 600,
+    "scientific_marks_unchanged": true,
+    "header_removed_bands_pt": [
+      [
+        16.5,
+        25.5
+      ]
+    ]
+  },
+  {
+    "panel": "G2_05",
+    "group": "g2",
+    "before": {
+      "svg": "6dfdf463224e8e2197588238e912c6c30c14c01b7d85bfa2ff1e0919d53e9dc0",
+      "pdf": "26a47e2f4561c514a29ee3ebd1af6eb23fa278da3778d6e633c4e8413287534b"
+    },
+    "after": {
+      "pdf": "e58489f0e3cffd7d8a2f66323132ec5d033f96598ed2fd9d37c6e699e4045632",
+      "svg": "da342caba49d3d5e0c275ac70e2b0d023f495d5742ff5b42ede92f99951802c2"
+    },
+    "removed_or_shortened": [
+      {
+        "original": "Fixed equal mixture of all four effects; 2,000 replicates per bar.",
+        "replacement": "",
+        "pdf_matches": 1
+      },
+      {
+        "original": "Whiskers: Wilson 95% Monte Carlo intervals. Failures remain in denominator.",
+        "replacement": "",
+        "pdf_matches": 1
+      },
+      {
+        "original": "vs M within design; Holm | ns >= .05; * < .05; ** < .01; *** < .001",
+        "replacement": "",
+        "pdf_matches": 1
+      }
+    ],
+    "old_size_pt": [
+      374.1732177734375,
+      338.1417236328125
+    ],
+    "crop_pt": [
+      27.0,
+      31.5,
+      366.0,
+      287.5
+    ],
+    "new_size_pt": [
+      339.0,
+      247.5
+    ],
+    "area_reduction": 0.3368627245193486,
+    "font": "Arial",
+    "dpi": 600,
+    "scientific_marks_unchanged": true,
+    "header_removed_bands_pt": [
+      [
+        15.0,
+        23.5
+      ]
+    ]
+  },
+  {
+    "panel": "G2_06",
+    "group": "g2",
+    "before": {
+      "svg": "7923017187fe38bc01b3d731fadd4966d0515a52527810b79391235797746c47",
+      "pdf": "6ac1b191cdb21edf67321c2af513e614732635bea78b39cfb553161dd87c95ba"
+    },
+    "after": {
+      "pdf": "5f93dec0d7a118d6d8688e9092c10094f5817c3b87fb1a3d5b91021e91d57314",
+      "svg": "a07904aa5dd94d982ac93c156b0feb3d9c49eddb51b7a2a13148f33b9b9e6e4b"
+    },
+    "removed_or_shortened": [
+      {
+        "original": "All five frozen confidence levels; Wilson 95% Monte Carlo intervals.",
+        "replacement": "",
+        "pdf_matches": 1
+      },
+      {
+        "original": "Separate panels: zero calls at every level; conditional error undefined.",
+        "replacement": "",
+        "pdf_matches": 1
+      }
+    ],
+    "old_size_pt": [
+      388.3464660644531,
+      317.4803161621094
+    ],
+    "crop_pt": [
+      29.0,
+      34.0,
+      379.5,
+      279.5
+    ],
+    "new_size_pt": [
+      350.5,
+      236.0
+    ],
+    "area_reduction": 0.3290906201547429,
+    "font": "Arial",
+    "dpi": 600,
+    "scientific_marks_unchanged": true,
+    "header_removed_bands_pt": [
+      [
+        25.5,
+        35.0
+      ]
+    ]
+  },
+  {
+    "panel": "G2_07",
+    "group": "g2",
+    "before": {
+      "svg": "69d5165f5eb66713dc25d7709a7c447631c9414055dd2763dfdd2f37c05c0446",
+      "pdf": "37df6661bfaef107bb3c07f7251139f16877daa5290a7c227e2c7a20f41ae5ce"
+    },
+    "after": {
+      "pdf": "7db5b37b103316a143e66a3e148eab7aa76eaa592e85c5f30bdbf62f1598c891",
+      "svg": "12c9a1f8235a14934187e925579a03d64f24050a53d5e53e1878692e8ec051b7"
+    },
+    "removed_or_shortened": [
+      {
+        "original": "Black diamonds / crossbars: means / ±1 SD.",
+        "replacement": "",
+        "pdf_matches": 1
+      },
+      {
+        "original": "Maximum absolute difference = 1.33e−9.",
+        "replacement": "",
+        "pdf_matches": 1
+      },
+      {
+        "original": "All 800 paired estimates; no subsampling or jitter.",
+        "replacement": "",
+        "pdf_matches": 1
+      }
+    ],
+    "old_size_pt": [
+      340.157470703125,
+      334.4881896972656
+    ],
+    "crop_pt": [
+      48.0,
+      33.5,
+      309.0,
+      305.5
+    ],
+    "new_size_pt": [
+      254.0,
+      252.5
+    ],
+    "area_reduction": 0.43631783039480665,
+    "font": "Arial",
+    "dpi": 600,
+    "scientific_marks_unchanged": true
+  },
+  {
+    "panel": "G2_R2_sign_strong",
+    "group": "g2",
+    "before": {
+      "svg": "d7233f34a9a94d9451cc30b6ebdd1b691edb76ccb7ace3bd8da9167d337b3a9b",
+      "pdf": "0a33e0a150efe62d88110f33cbf80764580d331942f1380d4cc1daa84b3c66b4"
+    },
+    "after": {
+      "pdf": "2fd562b24efbcabda1c891fb17e534ed5bc40cf264afbe872704e081abca3495",
+      "svg": "628f5e23d95c10babd11963ba2bc339b5fdf693e872a46a095f4e1c16ff3a090"
+    },
+    "removed_or_shortened": [
+      {
+        "original": "G2 | Exact sign inference · strong observation",
+        "replacement": "Strong observation",
+        "pdf_matches": 1
+      },
+      {
+        "original": "500 paired datasets per effect; Wilson intervals. No raw 0/1 dot cloud.",
+        "replacement": "",
+        "pdf_matches": 1
+      },
+      {
+        "original": "Classical exact testing is a component; no new-test or finite-magnitude claim.",
+        "replacement": "",
+        "pdf_matches": 1
+      },
+      {
+        "original": "vs stratified exact within effect; Holm | ns >= .05; * < .05; ** < .01; *** < .001",
+        "replacement": "",
+        "pdf_matches": 1
+      },
+      {
+        "original": "Stratified exact: null wrong calls 13/500 (2.6%).",
+        "replacement": "",
+        "pdf_matches": 1
+      }
+    ],
+    "old_size_pt": [
+      439.3700866699219,
+      359.4803161621094
+    ],
+    "crop_pt": [
+      25.5,
+      0.5,
+      428.5,
+      342.0
+    ],
+    "new_size_pt": [
+      403.0,
+      276.5
+    ],
+    "area_reduction": 0.2945039590070879,
+    "font": "Arial",
+    "dpi": 600,
+    "scientific_marks_unchanged": true,
+    "header_removed_bands_pt": [
+      [
+        17.0,
+        37.5
+      ],
+      [
+        56.0,
+        72.5
+      ]
+    ]
+  },
+  {
+    "panel": "G2_R2_sign_weak",
+    "group": "g2",
+    "before": {
+      "svg": "807aa8c379ffa0408a06fe492a359205e1e4341fd2c4c54e7f2f4c7bb5a00cf8",
+      "pdf": "0782c210137d5f3f55a95eb66758084b33b9ece2068e4d8d819262a208b31cbd"
+    },
+    "after": {
+      "pdf": "a0a710ea254fdef5c016a328c52a4369f6739293cd52c135a082bd0effea8abf",
+      "svg": "4fcab0263308611b06b0deadb58aa1c1234ec51b09fc8ed119379f4f762da63d"
+    },
+    "removed_or_shortened": [
+      {
+        "original": "G2 | Exact sign inference · weak observation",
+        "replacement": "Weak observation",
+        "pdf_matches": 1
+      },
+      {
+        "original": "500 paired datasets per effect; Wilson intervals. No raw 0/1 dot cloud.",
+        "replacement": "",
+        "pdf_matches": 1
+      },
+      {
+        "original": "Classical exact testing is a component; no new-test or finite-magnitude claim.",
+        "replacement": "",
+        "pdf_matches": 1
+      },
+      {
+        "original": "vs stratified exact within effect; Holm | ns >= .05; * < .05; ** < .01; *** < .001",
+        "replacement": "",
+        "pdf_matches": 1
+      },
+      {
+        "original": "Stratified exact: null wrong calls 26/500 (5.2%).",
+        "replacement": "",
+        "pdf_matches": 1
+      }
+    ],
+    "old_size_pt": [
+      439.3700866699219,
+      359.4803161621094
+    ],
+    "crop_pt": [
+      25.5,
+      0.5,
+      428.5,
+      342.0
+    ],
+    "new_size_pt": [
+      403.0,
+      275.0
+    ],
+    "area_reduction": 0.29833124313544,
+    "font": "Arial",
+    "dpi": 600,
+    "scientific_marks_unchanged": true,
+    "header_removed_bands_pt": [
+      [
+        15.5,
+        37.5
+      ],
+      [
+        56.0,
+        72.5
+      ]
+    ]
+  },
+  {
+    "panel": "G3_01",
+    "group": "g3",
+    "before": {
+      "svg": "8d9e6c680bb6c74ead885fad5e06d604e578cf7ef570498fb85a08f6949e3941",
+      "pdf": "ec812037d5696263348b0e7a2dbfc79638557d2d65be806fcdc8b120b89140c8"
+    },
+    "after": {
+      "pdf": "523adec7669f090dabad86a9aae711925d4e820019e685de19b38a2ce5f3e84a",
+      "svg": "1898c4f6dc03c155ea5c0baab02517d218be120f53c1b49dff736205ba25e992"
+    },
+    "removed_or_shortened": [],
+    "old_size_pt": [
+      510.2362060546875,
+      297.6377868652344
+    ],
+    "crop_pt": [
+      39.5,
+      24.0,
+      504.0,
+      264.5
+    ],
+    "new_size_pt": [
+      464.5,
+      233.5
+    ],
+    "area_reduction": 0.28581082385623324,
+    "font": "Arial",
+    "dpi": 600,
+    "scientific_marks_unchanged": true,
+    "header_removed_bands_pt": [
+      [
+        16.0,
+        23.0
+      ]
+    ]
+  },
+  {
+    "panel": "G3_05",
+    "group": "g3",
+    "before": {
+      "svg": "2b1055b57d5f3fab8f7edaedcc201542837acb6cae0d7f5923db45269a8b3e8c",
+      "pdf": "a297ca7e6ff04b0830131a9455e39c790ec3a8f0e9805fbebb8fcbf34425ec42"
+    },
+    "after": {
+      "pdf": "fd26f35affb1a2035159719b85b27626c4cbedcec0a7a5d205f812fa0a3f6706",
+      "svg": "ffb95c72201a9f0bce05055b205f22b954060d010275f437390ad535d09ac84f"
+    },
+    "removed_or_shortened": [],
+    "old_size_pt": [
+      328.81890869140625,
+      345.8267822265625
+    ],
+    "crop_pt": [
+      25.0,
+      4.5,
+      319.0,
+      322.5
+    ],
+    "new_size_pt": [
+      294.0,
+      305.5
+    ],
+    "area_reduction": 0.21015270056729918,
+    "font": "Arial",
+    "dpi": 600,
+    "scientific_marks_unchanged": true,
+    "header_removed_bands_pt": [
+      [
+        21.0,
+        33.5
+      ]
+    ]
+  },
+  {
+    "panel": "G3_06",
+    "group": "g3",
+    "before": {
+      "svg": "4d011d8af7dbbf8d0ff87801e9f3809054b65a3e8782788a6a575353c7ae3891",
+      "pdf": "4598930e6195935c6b3a6e519b26f381ffc3d1dee06b1ba8cc331cdf1fdaa412"
+    },
+    "after": {
+      "svg": "e33471ff54c4dc47371ead7b0e7bae387a81130c0d652f4f4fc8cf70cf7f4e52",
+      "pdf": "8d7fa566d7ad24962200d64ab28c9d1deaa331a95a75e6efaf319205c37b53e6"
+    },
+    "removed_or_shortened": [
+      {
+        "original": "200 datasets per row; retained time / measurement endpoints; no within-group filtering.",
+        "replacement": "",
+        "pdf_matches": 1
+      },
+      {
+        "original": "Common bandwidth within each block; reflected KDE; density is not uncertainty.",
+        "replacement": "",
+        "pdf_matches": 1
+      }
+    ],
+    "old_size_pt": [
+      385.5118103027344,
+      396.85040283203125
+    ],
+    "crop_pt": [
+      32.0,
+      16.5,
+      372.5,
+      353.5
+    ],
+    "new_size_pt": [
+      340.5,
+      337.0
+    ],
+    "area_reduction": 0.24996331740853717,
+    "font": "Arial",
+    "dpi": 600,
+    "scientific_marks_unchanged": true
+  },
+  {
+    "panel": "G3_07",
+    "group": "g3",
+    "before": {
+      "svg": "267710a422f3094988a319aaf7639e6303efc5d8f8a0efcf233b2a361c4983c0",
+      "pdf": "3e650016bb95db77bba55ef94461fe70372a510a20b91b859b79fd3b813e6c26"
+    },
+    "after": {
+      "svg": "284ec60c7cf1c9ce15628a629956c0e622597e9d7dace16e391087f90f569644",
+      "pdf": "aeac8dc754398488d4da9124f84c7ac7b3b52ccd5085a8da8a930b2f8127d84e"
+    },
+    "removed_or_shortened": [],
+    "old_size_pt": [
+      340.157470703125,
+      311.81103515625
+    ],
+    "crop_pt": [
+      15.5,
+      10.0,
+      338.5,
+      267.5
+    ],
+    "new_size_pt": [
+      323.0,
+      257.5
+    ],
+    "area_reduction": 0.2158335433130777,
+    "font": "Arial",
+    "dpi": 600,
+    "scientific_marks_unchanged": true
+  },
+  {
+    "panel": "G3_R2_bias_0",
+    "group": "g3",
+    "before": {
+      "svg": "9863269cf8715c5440e8a89bd79810081ab3e5b31dd15969f3dbebb86661b189",
+      "pdf": "77163bef2e53a0445e98650496d69f5e8cd5befb80456065865e0081904de760"
+    },
+    "after": {
+      "pdf": "ca954d1e4fde51faad7cc6c350462150140aba8cdc5609ec0dbb75a6b7391382",
+      "svg": "79ea5fbaf4334473413ba5a2408085abc6cbf375d271d1290a89ea86939e9d65"
+    },
+    "removed_or_shortened": [
+      {
+        "original": "G3 | Declared selection-bias bound · effect +0",
+        "replacement": "True effect = +0",
+        "pdf_matches": 1
+      },
+      {
+        "original": "500 datasets per point; Wilson intervals. Insets show the cost in correct answers.",
+        "replacement": "",
+        "pdf_matches": 1
+      },
+      {
+        "original": "Guarantee applies only when the allowed bound contains the true bias.",
+        "replacement": "",
+        "pdf_matches": 1
+      },
+      {
+        "original": "No calibration in this panel; log-OR bias is not a generator-coefficient bound.",
+        "replacement": "",
+        "pdf_matches": 1
+      }
+    ],
+    "old_size_pt": [
+      425.19683837890625,
+      354.3307189941406
+    ],
+    "crop_pt": [
+      23.5,
+      2.0,
+      410.5,
+      303.5
+    ],
+    "new_size_pt": [
+      387.0,
+      278.5
+    ],
+    "area_reduction": 0.2846191136098273,
+    "font": "Arial",
+    "dpi": 600,
+    "scientific_marks_unchanged": true,
+    "header_removed_bands_pt": [
+      [
+        15.5,
+        29.5
+      ],
+      [
+        48.0,
+        57.0
+      ]
+    ]
+  },
+  {
+    "panel": "G3_R2_bias_0p8",
+    "group": "g3",
+    "before": {
+      "svg": "aa72ff0897e9014d4cfc13a30ba63c20d82e67850780590bc2869498b698d231",
+      "pdf": "f908efd6de40ba50d0d1f80b3ca5d69fad6c945bc810bd2518c3b66bb5552b7d"
+    },
+    "after": {
+      "pdf": "44b35ee7326e0136619ec79debf5fab1b01fd410f48e731c3ea6b8b03fafb63d",
+      "svg": "7161d93a5c83be4d91b342182ce172e0b2c12be22e4833d7b3de236161fd63e0"
+    },
+    "removed_or_shortened": [
+      {
+        "original": "G3 | Declared selection-bias bound · effect +0.8",
+        "replacement": "True effect = +0.8",
+        "pdf_matches": 1
+      },
+      {
+        "original": "500 datasets per point; Wilson intervals. Insets show the cost in correct answers.",
+        "replacement": "",
+        "pdf_matches": 1
+      },
+      {
+        "original": "Guarantee applies only when the allowed bound contains the true bias.",
+        "replacement": "",
+        "pdf_matches": 1
+      },
+      {
+        "original": "No calibration in this panel; log-OR bias is not a generator-coefficient bound.",
+        "replacement": "",
+        "pdf_matches": 1
+      }
+    ],
+    "old_size_pt": [
+      425.19683837890625,
+      354.3307189941406
+    ],
+    "crop_pt": [
+      23.5,
+      2.0,
+      410.5,
+      303.5
+    ],
+    "new_size_pt": [
+      387.0,
+      278.5
+    ],
+    "area_reduction": 0.2846191136098273,
+    "font": "Arial",
+    "dpi": 600,
+    "scientific_marks_unchanged": true,
+    "header_removed_bands_pt": [
+      [
+        15.5,
+        29.5
+      ],
+      [
+        48.0,
+        57.0
+      ]
+    ]
+  },
+  {
+    "panel": "G3_R2_bias_neg0p8",
+    "group": "g3",
+    "before": {
+      "svg": "30aa5b28fea9308711fafb982a0962cfc50c0a6fa69b322b7b90b7c216f571f6",
+      "pdf": "22a2ab903a2843c6ffd6fe1b27ae3b85a2798d2c6c8bd4bf2946bcc64c39d11c"
+    },
+    "after": {
+      "pdf": "1dc24d5472743b89f3d0c279e0bc1aa5848e8e23651ba1c5308dfb90143b7241",
+      "svg": "f2898b20e21196df09f15780a6bdb6240d0fe468308b8afe684eaf53d1d2f98d"
+    },
+    "removed_or_shortened": [
+      {
+        "original": "G3 | Declared selection-bias bound · effect -0.8",
+        "replacement": "True effect = -0.8",
+        "pdf_matches": 1
+      },
+      {
+        "original": "500 datasets per point; Wilson intervals. Insets show the cost in correct answers.",
+        "replacement": "",
+        "pdf_matches": 1
+      },
+      {
+        "original": "Guarantee applies only when the allowed bound contains the true bias.",
+        "replacement": "",
+        "pdf_matches": 1
+      },
+      {
+        "original": "No calibration in this panel; log-OR bias is not a generator-coefficient bound.",
+        "replacement": "",
+        "pdf_matches": 1
+      }
+    ],
+    "old_size_pt": [
+      425.19683837890625,
+      354.3307189941406
+    ],
+    "crop_pt": [
+      23.5,
+      2.0,
+      410.5,
+      303.5
+    ],
+    "new_size_pt": [
+      387.0,
+      278.5
+    ],
+    "area_reduction": 0.2846191136098273,
+    "font": "Arial",
+    "dpi": 600,
+    "scientific_marks_unchanged": true,
+    "header_removed_bands_pt": [
+      [
+        15.5,
+        29.5
+      ],
+      [
+        48.0,
+        57.0
+      ]
+    ]
+  },
+  {
+    "panel": "G3_R3_joint_cost1000",
+    "group": "g3",
+    "before": {
+      "svg": "97efe8a9be1906479685ce06e02f82c2c9c2d6506b201550677741b7a67479fe",
+      "pdf": "614890ab923f05e209036d0fc08c53f24cf365940d299462156408e76e1d13b7"
+    },
+    "after": {
+      "pdf": "04a408ade8c4a98f6b8aa7378dbe32553ebdcca2f4da6042f6e087e01d8274b5",
+      "svg": "55216ad5836e62ddea1c5a57c2d785c7e39c856c3b0d71345ba7bef13c763138"
+    },
+    "removed_or_shortened": [
+      {
+        "original": "G3 | Two-phase calibration · total cost 1,000",
+        "replacement": "Total cost = 1,000",
+        "pdf_matches": 1
+      },
+      {
+        "original": "Main: equal-weight mean of 6 nonzero-effect cells; 500 datasets per cell.",
+        "replacement": "",
+        "pdf_matches": 1
+      },
+      {
+        "original": "Caps: 1.96 Monte Carlo SE. Insets: all 9 effect/bias cells at 50% allocation.",
+        "replacement": "",
+        "pdf_matches": 1
+      },
+      {
+        "original": "Magnitude intervals concern source log-OR; they are not generator intervals.",
+        "replacement": "",
+        "pdf_matches": 1
+      }
+    ],
+    "old_size_pt": [
+      425.19683837890625,
+      354.3307189941406
+    ],
+    "crop_pt": [
+      32.0,
+      2.0,
+      415.0,
+      296.5
+    ],
+    "new_size_pt": [
+      383.0,
+      262.5
+    ],
+    "area_reduction": 0.3326875160354985,
+    "font": "Arial",
+    "dpi": 600,
+    "scientific_marks_unchanged": true,
+    "header_removed_bands_pt": [
+      [
+        16.5,
+        35.0
+      ],
+      [
+        52.5,
+        66.0
+      ]
+    ]
+  },
+  {
+    "panel": "G3_R3_joint_cost4000",
+    "group": "g3",
+    "before": {
+      "svg": "486b9aaf87517232b76aa29f2815a4f0827e3a2e70c984c70581e919dc5ab659",
+      "pdf": "74cfdcfc619d14409d25687724cd8e7aebca60c9c76c6b328140d2471813e5a3"
+    },
+    "after": {
+      "pdf": "1138cbd2250bb01344e5711c5f71a074563517884750245c2be7d3d2e90e875d",
+      "svg": "ed46e027cf98e78ba5a8007a5cb29b170dbb2ee390600ee2b5d1f6c5cee2e4e0"
+    },
+    "removed_or_shortened": [
+      {
+        "original": "G3 | Two-phase calibration · total cost 4,000",
+        "replacement": "Total cost = 4,000",
+        "pdf_matches": 1
+      },
+      {
+        "original": "Main: equal-weight mean of 6 nonzero-effect cells; 500 datasets per cell.",
+        "replacement": "",
+        "pdf_matches": 1
+      },
+      {
+        "original": "Caps: 1.96 Monte Carlo SE. Insets: all 9 effect/bias cells at 50% allocation.",
+        "replacement": "",
+        "pdf_matches": 1
+      },
+      {
+        "original": "Magnitude intervals concern source log-OR; they are not generator intervals.",
+        "replacement": "",
+        "pdf_matches": 1
+      }
+    ],
+    "old_size_pt": [
+      425.19683837890625,
+      354.3307189941406
+    ],
+    "crop_pt": [
+      32.0,
+      2.0,
+      415.0,
+      296.5
+    ],
+    "new_size_pt": [
+      383.0,
+      262.5
+    ],
+    "area_reduction": 0.3326875160354985,
+    "font": "Arial",
+    "dpi": 600,
+    "scientific_marks_unchanged": true,
+    "header_removed_bands_pt": [
+      [
+        16.5,
+        35.0
+      ],
+      [
+        52.5,
+        66.0
+      ]
+    ]
+  },
+  {
+    "panel": "G3_R3_reference_anchor",
+    "group": "g3",
+    "before": {
+      "svg": "a4c9101efd4eca611e5fd2843946b54b8f400950b8bca5269d615d11dc9116a8",
+      "pdf": "7c92229b3f639d2aee3cee3f7eb748524da937b9ec5e999957ea0b9a5e6534fd"
+    },
+    "after": {
+      "pdf": "deeb2fae268cd64c1bc97c9b49f93f5eaf37282215072c39e586eacffd0bfea1",
+      "svg": "b1010c04d7d29d1097243d64ff3dc895146a5578915257f35cc45c149c8d6b47"
+    },
+    "removed_or_shortened": [
+      {
+        "original": "G3 | Reference-target calibration",
+        "replacement": "",
+        "pdf_matches": 1
+      },
+      {
+        "original": "500 new datasets per scenario; Wilson intervals; actual cost 4,000 in every arm.",
+        "replacement": "",
+        "pdf_matches": 1
+      },
+      {
+        "original": "Original reference interaction target; biology bound 0.5, pair-selection bound 1.",
+        "replacement": "",
+        "pdf_matches": 1
+      },
+      {
+        "original": "No-anchor unresolved sets remain visible; coverage and failures in source tables.",
+        "replacement": "",
+        "pdf_matches": 1
+      },
+      {
+        "original": "vs reference X within scenario; Holm | ns >= .05; * < .05; ** < .01; *** < .001",
+        "replacement": "",
+        "pdf_matches": 1
+      }
+    ],
+    "old_size_pt": [
+      425.19683837890625,
+      338.1417236328125
+    ],
+    "crop_pt": [
+      32.0,
+      29.0,
+      417.0,
+      280.5
+    ],
+    "new_size_pt": [
+      385.0,
+      231.0
+    ],
+    "area_reduction": 0.38143702555362324,
+    "font": "Arial",
+    "dpi": 600,
+    "scientific_marks_unchanged": true,
+    "header_removed_bands_pt": [
+      [
+        20.5,
+        41.0
+      ]
+    ]
+  },
+  {
+    "panel": "G4_01",
+    "group": "g4",
+    "before": {
+      "svg": "1095740895426640a335d457171e2df44e7f33ec6c2b507479abcd249c155418",
+      "pdf": "27ea0d43198295d42c467c033354dc5c343d67b992833d941dbfd639f6c28235"
+    },
+    "after": {
+      "pdf": "9e3a6e67bfe702664f9fc676429463ff8d8c30ca01725c72fb10e70440724f2e",
+      "svg": "88089d4b4c1e69b6c0ac018d4cabdd41daaa90e4011d247eb032f5ee0b782616"
+    },
+    "removed_or_shortened": [
+      {
+        "original": "Direct-record | patient flow and information boundary",
+        "replacement": "",
+        "pdf_matches": 1
+      }
+    ],
+    "old_size_pt": [
+      481.8897705078125,
+      297.6377868652344
+    ],
+    "crop_pt": [
+      8.5,
+      31.5,
+      466.5,
+      296.0
+    ],
+    "new_size_pt": [
+      458.0,
+      257.0
+    ],
+    "area_reduction": 0.1793408284321274,
+    "font": "Arial",
+    "dpi": 600,
+    "scientific_marks_unchanged": true,
+    "header_removed_bands_pt": [
+      [
+        17.0,
+        24.5
+      ]
+    ]
+  },
+  {
+    "panel": "G4_07",
+    "group": "g4",
+    "before": {
+      "svg": "e05afc192da09bfd4c9435b003a7dc6f45c2b65d8b8dcd29f0ef85adc4322a68",
+      "pdf": "0331030fa83d846ee6435570bc1aa15c6f13639ed45fb05079fd20e47e418765"
+    },
+    "after": {
+      "pdf": "140355ff2b2fa39f314c9e0ab3d903b6ce7e381ce3f182cd3365fda71cb4ac5e",
+      "svg": "61c8f2659cde67827e6572d34367a3ff207c17c80f4fa9e87fb59226c641c343"
+    },
+    "removed_or_shortened": [
+      {
+        "original": "Model-anchored | source-bootstrap profile noncoverage",
+        "replacement": "",
+        "pdf_matches": 1
+      },
+      {
+        "original": "10 source fits × 10 replicates; dots = source-fit noncoverage; bars = mean ± SD; dashed = 5%.",
+        "replacement": "",
+        "pdf_matches": 1
+      },
+      {
+        "original": "vs K0 within source bound; 10 source fits; Holm | ns >= .05; * < .05; ** < .01; *** < .001",
+        "replacement": "",
+        "pdf_matches": 1
+      }
+    ],
+    "old_size_pt": [
+      396.85040283203125,
+      299.7952880859375
+    ],
+    "crop_pt": [
+      14.5,
+      29.0,
+      391.5,
+      276.5
+    ],
+    "new_size_pt": [
+      377.0,
+      239.5
+    ],
+    "area_reduction": 0.24108132508214963,
+    "font": "Arial",
+    "dpi": 600,
+    "scientific_marks_unchanged": true,
+    "header_removed_bands_pt": [
+      [
+        21.0,
+        29.0
+      ]
+    ]
+  },
+  {
+    "panel": "G4_R2_joint_audit_COAD",
+    "group": "g4",
+    "before": {
+      "svg": "2f65adc47e9f140ed18945bcd532eac4085d092b8c3a7b79ea9feffde432fa69",
+      "pdf": "8e4220a84cc2d5e95cec1d9a1bd223d7e23b0e377b699fd7f7e2007316632000"
+    },
+    "after": {
+      "pdf": "a7a743ff8c3a6b31f218fb4b259b46f300884c122bf1c429ed2a10f48d23e81f",
+      "svg": "c456a977e66cc8d38f002fd1fad1a099ac6edd3ef733ee0cdec5561b38ce2067"
+    },
+    "removed_or_shortened": [
+      {
+        "original": "G4 | Joint information at equal assay cost · COAD",
+        "replacement": "COAD",
+        "pdf_matches": 1
+      },
+      {
+        "original": "500 random audits per cost; mean width ± 1.96 MCSE; inset Wilson intervals.",
+        "replacement": "",
+        "pdf_matches": 1
+      },
+      {
+        "original": "Target: finite-cohort reported joint frequency, not a natural evolution parameter.",
+        "replacement": "",
+        "pdf_matches": 1
+      },
+      {
+        "original": "* Independence is an assumption ablation. More unpaired patients do not reveal linkage.",
+        "replacement": "",
+        "pdf_matches": 1
+      }
+    ],
+    "old_size_pt": [
+      425.19683837890625,
+      354.3307189941406
+    ],
+    "crop_pt": [
+      25.5,
+      2.0,
+      411.0,
+      302.0
+    ],
+    "new_size_pt": [
+      385.5,
+      277.5
+    ],
+    "area_reduction": 0.28995064416056193,
+    "font": "Arial",
+    "dpi": 600,
+    "scientific_marks_unchanged": true,
+    "header_removed_bands_pt": [
+      [
+        15.5,
+        29.5
+      ],
+      [
+        48.5,
+        57.0
+      ]
+    ]
+  },
+  {
+    "panel": "G4_R2_joint_audit_LUAD",
+    "group": "g4",
+    "before": {
+      "svg": "35c91571c3396c5b9031d597e3c16b0127058af56ffed4715449e225f0b0028c",
+      "pdf": "ed1af4a4c69904ff7189ce0039379f22704dc414d1b326b8fc09a8586e0b3595"
+    },
+    "after": {
+      "pdf": "224c19d334833966eb58675e764681e6937eddd4b37f2d74024318d54fa3dcbe",
+      "svg": "aaea1fcbfa007324bf39b644c33f39f481a2d9f5a0fae07133ded38ed00b91dd"
+    },
+    "removed_or_shortened": [
+      {
+        "original": "G4 | Joint information at equal assay cost · LUAD",
+        "replacement": "LUAD",
+        "pdf_matches": 1
+      },
+      {
+        "original": "500 random audits per cost; mean width ± 1.96 MCSE; inset Wilson intervals.",
+        "replacement": "",
+        "pdf_matches": 1
+      },
+      {
+        "original": "Target: finite-cohort reported joint frequency, not a natural evolution parameter.",
+        "replacement": "",
+        "pdf_matches": 1
+      },
+      {
+        "original": "* Independence is an assumption ablation. More unpaired patients do not reveal linkage.",
+        "replacement": "",
+        "pdf_matches": 1
+      }
+    ],
+    "old_size_pt": [
+      425.19683837890625,
+      354.3307189941406
+    ],
+    "crop_pt": [
+      21.5,
+      2.0,
+      411.0,
+      302.0
+    ],
+    "new_size_pt": [
+      389.5,
+      277.5
+    ],
+    "area_reduction": 0.28258307626598933,
+    "font": "Arial",
+    "dpi": 600,
+    "scientific_marks_unchanged": true,
+    "header_removed_bands_pt": [
+      [
+        15.5,
+        29.5
+      ],
+      [
+        48.5,
+        57.0
+      ]
+    ]
+  },
+  {
+    "panel": "G4_R4_BC_patient_bootstrap",
+    "group": "g4",
+    "before": {
+      "svg": "01834c8328da1f99210dd0aa5a227a6d92df0b29e64afe508d8a5d3fcd5147a4",
+      "pdf": "662a190ae593c4948da0b38c73e7af8194ae0fd20d9a0642a94b048274238f23"
+    },
+    "after": {
+      "svg": "f3e30a9e5d165e755de9b4192b374e5812b405e31c67d63729af11c098f90b23",
+      "pdf": "569da0e8e75bed611c689003904c52352ebde668f44e50ca4c17866aedbac415"
+    },
+    "removed_or_shortened": [
+      {
+        "original": "G4B–C | Patient-resampling uncertainty",
+        "replacement": "",
+        "pdf_matches": 1
+      },
+      {
+        "original": "200 role-wise patient bootstraps per cell; complete three-design blocks shown.",
+        "replacement": "",
+        "pdf_matches": 1
+      },
+      {
+        "original": "Every fit is rerun; dots: fixed every-tenth replicate; box/density: all valid blocks.",
+        "replacement": "",
+        "pdf_matches": 1
+      },
+      {
+        "original": "Distributions combine patient resampling and one fresh perturbation per bootstrap.",
+        "replacement": "",
+        "pdf_matches": 1
+      }
+    ],
+    "old_size_pt": [
+      447.8740234375,
+      317.4803161621094
+    ],
+    "crop_pt": [
+      24.0,
+      41.0,
+      412.0,
+      268.5
+    ],
+    "new_size_pt": [
+      388.0,
+      227.5
+    ],
+    "area_reduction": 0.3792160953542866,
+    "font": "Arial",
+    "dpi": 600,
+    "scientific_marks_unchanged": true
+  },
+  {
+    "panel": "G4_R4_B_gain_COAD",
+    "group": "g4",
+    "before": {
+      "svg": "9c7546df9ad650252b9d8758e9056815286ed80e010bc9786b565268f6b714ec",
+      "pdf": "e7f29f0974abf55539a2b70233c4b86960222e3e8d83b82b156d9b3beaffb8d6"
+    },
+    "after": {
+      "pdf": "63924dfd9d87866408495cb2a12f38e6574c232d5d0599823649e0e083cd3762",
+      "svg": "7c60d3822702cdfe549214c2dfa591faa112022b6c76450dab693751ab343451"
+    },
+    "removed_or_shortened": [
+      {
+        "original": "G4B | Equal-cost bridge measurements · COAD",
+        "replacement": "COAD",
+        "pdf_matches": 1
+      },
+      {
+        "original": "Both arms: 638 gene assays; bridge n=80 versus routine expansion n=106.",
+        "replacement": "",
+        "pdf_matches": 1
+      },
+      {
+        "original": "Completed paired seeds: 39/41/50 of 50/50/50. Caps: 1.96 seed-MCSE.",
+        "replacement": "",
+        "pdf_matches": 1
+      },
+      {
+        "original": "Open points: fixed batches of 10 seeds; all completed seeds contribute.",
+        "replacement": "",
+        "pdf_matches": 1
+      },
+      {
+        "original": "paired gain vs 0; conditional seed test; Holm | ns >= .05; * < .05; ** < .01; *** < .001",
+        "replacement": "",
+        "pdf_matches": 1
+      }
+    ],
+    "old_size_pt": [
+      447.8740234375,
+      317.4803161621094
+    ],
+    "crop_pt": [
+      24.0,
+      2.0,
+      443.0,
+      264.5
+    ],
+    "new_size_pt": [
+      419.0,
+      228.5
+    ],
+    "area_reduction": 0.3266706445379226,
+    "font": "Arial",
+    "dpi": 600,
+    "scientific_marks_unchanged": true,
+    "header_removed_bands_pt": [
+      [
+        15.5,
+        27.5
+      ],
+      [
+        45.5,
+        67.5
+      ]
+    ]
+  },
+  {
+    "panel": "G4_R4_B_gain_LUAD",
+    "group": "g4",
+    "before": {
+      "svg": "561d9dc7992f2234e511c5b3eb3f0b2215fd389de1fc8ce0177f52c92ad96628",
+      "pdf": "8abb9eb4b1f6033a744dbd67ff1028e5140b01949693486740477d6ff0ab627a"
+    },
+    "after": {
+      "pdf": "22124d49b95303a30fafe22f8f460b512c1c6463f2e88619c19f1e551b09acaf",
+      "svg": "6c50bebc01ed8ff1003bd8d8a162b08d35cf338e0dbc13f9790ff899fad974e1"
+    },
+    "removed_or_shortened": [
+      {
+        "original": "G4B | Equal-cost bridge measurements · LUAD",
+        "replacement": "LUAD",
+        "pdf_matches": 1
+      },
+      {
+        "original": "Both arms: 638 gene assays; bridge n=80 versus routine expansion n=106.",
+        "replacement": "",
+        "pdf_matches": 1
+      },
+      {
+        "original": "Completed paired seeds: 50/50/50 of 50/50/50. Caps: 1.96 seed-MCSE.",
+        "replacement": "",
+        "pdf_matches": 1
+      },
+      {
+        "original": "Open points: fixed batches of 10 seeds; all completed seeds contribute.",
+        "replacement": "",
+        "pdf_matches": 1
+      },
+      {
+        "original": "paired gain vs 0; conditional seed test; Holm | ns >= .05; * < .05; ** < .01; *** < .001",
+        "replacement": "",
+        "pdf_matches": 1
+      }
+    ],
+    "old_size_pt": [
+      447.8740234375,
+      317.4803161621094
+    ],
+    "crop_pt": [
+      24.0,
+      2.0,
+      443.0,
+      264.5
+    ],
+    "new_size_pt": [
+      419.0,
+      229.0
+    ],
+    "area_reduction": 0.32519727614522664,
+    "font": "Arial",
+    "dpi": 600,
+    "scientific_marks_unchanged": true,
+    "header_removed_bands_pt": [
+      [
+        15.5,
+        27.5
+      ],
+      [
+        45.5,
+        67.0
+      ]
+    ]
+  },
+  {
+    "panel": "G4_R4_C_calibration_COAD",
+    "group": "g4",
+    "before": {
+      "svg": "adfdf5254a3827dab44f4bd43c717563debc553cf339c0948830496d9efc667f",
+      "pdf": "d67a104dfb7a25e1a97ab1a366e188341c5eee50e9ab6fce50f29c3c67f6f2ad"
+    },
+    "after": {
+      "pdf": "3d2eda69b5001ad4064dd16dcf18bed0b7b7b4ed275c0fe57566feddb0f3c393",
+      "svg": "38f299eb65f0655840a70ba5ca613c49568105486cb9a2fc91e46a9e10f17144"
+    },
+    "removed_or_shortened": [
+      {
+        "original": "G4C | Hidden-event probability calibration · COAD",
+        "replacement": "COAD",
+        "pdf_matches": 1
+      },
+      {
+        "original": "Five probability bins; paired seeds 39/41/50; caps: 1.96 seed-MCSE.",
+        "replacement": "",
+        "pdf_matches": 1
+      },
+      {
+        "original": "Base cost 560; each audit method pays 78 extra assays (total 638).",
+        "replacement": "",
+        "pdf_matches": 1
+      },
+      {
+        "original": "Marginal-only can lower ECE while worsening proper scores; see score-control figure.",
+        "replacement": "",
+        "pdf_matches": 1
+      },
+      {
+        "original": "vs base CTMC; conditional seed test; Holm | ns >= .05; * < .05; ** < .01; *** < .001",
+        "replacement": "",
+        "pdf_matches": 1
+      }
+    ],
+    "old_size_pt": [
+      447.8740234375,
+      359.4803161621094
+    ],
+    "crop_pt": [
+      29.0,
+      2.0,
+      443.0,
+      306.5
+    ],
+    "new_size_pt": [
+      414.0,
+      270.5
+    ],
+    "area_reduction": 0.30443676069684145,
+    "font": "Arial",
+    "dpi": 600,
+    "scientific_marks_unchanged": true,
+    "header_removed_bands_pt": [
+      [
+        15.5,
+        27.5
+      ],
+      [
+        46.0,
+        68.0
+      ]
+    ]
+  },
+  {
+    "panel": "G4_R4_C_calibration_LUAD",
+    "group": "g4",
+    "before": {
+      "svg": "b421ea93e554128c6a061880fce11d3d925ca6097d15671ef7048f85df6dbe30",
+      "pdf": "e36056c199f610339910b2e58ed8c0a1ac4800373ab69e12723acd4edc7f9c22"
+    },
+    "after": {
+      "pdf": "5d3c149b0bfaf9e7754b1593dc2bad5372602db815e72cec220b5498fdece854",
+      "svg": "fd38abd5de3926582bfe9c0e98fb35affc12bbe3389d9a10d577f7cb1a2245e5"
+    },
+    "removed_or_shortened": [
+      {
+        "original": "G4C | Hidden-event probability calibration · LUAD",
+        "replacement": "LUAD",
+        "pdf_matches": 1
+      },
+      {
+        "original": "Five probability bins; paired seeds 50/50/50; caps: 1.96 seed-MCSE.",
+        "replacement": "",
+        "pdf_matches": 1
+      },
+      {
+        "original": "Base cost 560; each audit method pays 78 extra assays (total 638).",
+        "replacement": "",
+        "pdf_matches": 1
+      },
+      {
+        "original": "Marginal-only can lower ECE while worsening proper scores; see score-control figure.",
+        "replacement": "",
+        "pdf_matches": 1
+      },
+      {
+        "original": "vs base CTMC; conditional seed test; Holm | ns >= .05; * < .05; ** < .01; *** < .001",
+        "replacement": "",
+        "pdf_matches": 1
+      }
+    ],
+    "old_size_pt": [
+      447.8740234375,
+      359.4803161621094
+    ],
+    "crop_pt": [
+      29.0,
+      2.0,
+      443.0,
+      306.5
+    ],
+    "new_size_pt": [
+      414.0,
+      270.5
+    ],
+    "area_reduction": 0.30443676069684145,
+    "font": "Arial",
+    "dpi": 600,
+    "scientific_marks_unchanged": true,
+    "header_removed_bands_pt": [
+      [
+        15.5,
+        27.5
+      ],
+      [
+        46.0,
+        68.0
+      ]
+    ]
+  },
+  {
+    "panel": "G4_R4_C_proper_score_controls",
+    "group": "g4",
+    "before": {
+      "svg": "db20a041bc22f07ce2033202d533c7f2a9a51add139fe86e4c72671d735a71f8",
+      "pdf": "e7019893dcf7890652ab91da2e50cdc40997f702d4fbc9f65ff5ed6c51858ab7"
+    },
+    "after": {
+      "pdf": "78efccca8220f86dbd8dbfa2d7da51f1e989296fcb6dde068424ce16798ed449",
+      "svg": "6201aac2dfa40479bff4a319422a80bcddd3b81bdd79c979c2adbb6fa26edae6"
+    },
+    "removed_or_shortened": [
+      {
+        "original": "G4C | Proper-score controls across all three designs",
+        "replacement": "",
+        "pdf_matches": 1
+      },
+      {
+        "original": "Positive values mean better predictions; zero is the base CTMC (cost 560).",
+        "replacement": "",
+        "pdf_matches": 1
+      },
+      {
+        "original": "Every candidate costs 638. Caps: seed-MCSE; open points: fixed batches of 10.",
+        "replacement": "",
+        "pdf_matches": 1
+      },
+      {
+        "original": "Equal mean of all three designs; incomplete paired-seed blocks are reported in ledger.",
+        "replacement": "",
+        "pdf_matches": 1
+      },
+      {
+        "original": "paired gain vs 0; complete seed blocks; Holm | ns >= .05; * < .05; ** < .01; *** < .001",
+        "replacement": "",
+        "pdf_matches": 1
+      }
+    ],
+    "old_size_pt": [
+      447.8740234375,
+      317.4803161621094
+    ],
+    "crop_pt": [
+      24.0,
+      26.5,
+      443.0,
+      263.0
+    ],
+    "new_size_pt": [
+      419.0,
+      215.0
+    ],
+    "area_reduction": 0.366451591140715,
+    "font": "Arial",
+    "dpi": 600,
+    "scientific_marks_unchanged": true,
+    "header_removed_bands_pt": [
+      [
+        21.5,
+        43.0
+      ]
+    ]
+  },
+  {
+    "panel": "G4_R5_external_transfer",
+    "group": "g4",
+    "before": {
+      "svg": "a8518baf1b30b0c6d5f45b00c07519ad6f08f89321bcecfcadf9eeadffeff00e",
+      "pdf": "999716f592caed57e61a0d3f8f86095d75ef0579c3d38f1a6f41f77d7d796155"
+    },
+    "after": {
+      "pdf": "2ec243bb1c3cacef292ab03ac05bee0e4efda90d4f058c55cbf72472c23dc2d4",
+      "svg": "6efd02bc5a79db655f56b048538fb1e18c34eab07ef490e97fe7e74de625f552"
+    },
+    "removed_or_shortened": [
+      {
+        "original": "G4 | Frozen GENIE models on external TCGA records",
+        "replacement": "",
+        "pdf_matches": 1
+      },
+      {
+        "original": "Positive = candidate improves on named comparator; four retained B / baseline comparisons.",
+        "replacement": "",
+        "pdf_matches": 1
+      },
+      {
+        "original": "Caps: 95% paired patient/seed bootstrap; points: 5 fixed draws of 2,000.",
+        "replacement": "",
+        "pdf_matches": 1
+      },
+      {
+        "original": "GENIE fits frozen; no TCGA tuning. Recorded variants, not verified callable wild type.",
+        "replacement": "",
+        "pdf_matches": 1
+      }
+    ],
+    "old_size_pt": [
+      476.220458984375,
+      334.4881896972656
+    ],
+    "crop_pt": [
+      30.5,
+      34.0,
+      468.5,
+      277.5
+    ],
+    "new_size_pt": [
+      438.0,
+      222.5
+    ],
+    "area_reduction": 0.38819180702676137,
+    "font": "Arial",
+    "dpi": 600,
+    "scientific_marks_unchanged": true,
+    "header_removed_bands_pt": [
+      [
+        21.5,
+        42.5
+      ]
+    ]
+  },
+  {
+    "panel": "G4_R5_nested_patient_means",
+    "group": "g4",
+    "before": {
+      "svg": "40c40672b14bfa495fa66bfca1ba3c5e261bf74c0d874f1ed54d4e98ab3e8348",
+      "pdf": "4a3dd7eb73ace1ed4ac344745692d44c07530971286b0fb65bec6af445acc60e"
+    },
+    "after": {
+      "svg": "9dc89b18fa50108e88df433fbb0f0aed992235193ca0cf50dba0d99a4aaf77fa",
+      "pdf": "3e3f99ea272e4b801a4cbc16fa5077680b15af1f6f5fbda2998e394e4fba3a74"
+    },
+    "removed_or_shortened": [
+      {
+        "original": "G4 | Patient uncertainty of repeated-experiment means",
+        "replacement": "",
+        "pdf_matches": 1
+      },
+      {
+        "original": "B: bridge vs more. 50 patient resamples × 8 seeds × 3 designs.",
+        "replacement": "",
+        "pdf_matches": 1
+      },
+      {
+        "original": "Each value averages feasible seeds, then gives designs equal weight.",
+        "replacement": "",
+        "pdf_matches": 1
+      },
+      {
+        "original": "Box/density: all valid outer blocks; dots: every fifth block. Capacity failures reported.",
+        "replacement": "",
+        "pdf_matches": 1
+      }
+    ],
+    "old_size_pt": [
+      453.5433044433594,
+      328.81890869140625
+    ],
+    "crop_pt": [
+      31.5,
+      46.0,
+      414.0,
+      272.0
+    ],
+    "new_size_pt": [
+      382.5,
+      226.0
+    ],
+    "area_reduction": 0.42035200889347313,
+    "font": "Arial",
+    "dpi": 600,
+    "scientific_marks_unchanged": true
+  },
+  {
+    "panel": "G4_finite_calibration_ablation",
+    "group": "g4",
+    "before": {
+      "svg": "ab5139da4edc460a16d871a1cfd04c73f1fc72d75267f57970c84eaf9581da42",
+      "pdf": "bf2f8cc7a5ca32ff5f5c7064eb06f7328cdb5ac7a66a3d388234e57f97908a6a"
+    },
+    "after": {
+      "pdf": "fdebf5e6685f2060f2d1fc35053bb7ffb622c9389aae3c17d88f08ecea608e29",
+      "svg": "e48e4240933004dead1994c67a69370881b41f3e043b44b32b148c00c9c88263"
+    },
+    "removed_or_shortened": [
+      {
+        "original": "G4 | Value of finite source calibration",
+        "replacement": "",
+        "pdf_matches": 1
+      },
+      {
+        "original": "50 paired perturbations per cell; caps: 1.96 seed-MCSE; dots: fixed batches of 10.",
+        "replacement": "",
+        "pdf_matches": 1
+      },
+      {
+        "original": "The same selected records; XS adds 80 source records (320 gene assays).",
+        "replacement": "",
+        "pdf_matches": 1
+      },
+      {
+        "original": "Additional-information ablation, not equal-cost algorithm superiority.",
+        "replacement": "",
+        "pdf_matches": 1
+      },
+      {
+        "original": "paired gain vs 0; conditional seed test; Holm | ns >= .05; * < .05; ** < .01; *** < .001",
+        "replacement": "",
+        "pdf_matches": 1
+      }
+    ],
+    "old_size_pt": [
+      425.19683837890625,
+      306.1417236328125
+    ],
+    "crop_pt": [
+      25.5,
+      29.5,
+      419.0,
+      248.5
+    ],
+    "new_size_pt": [
+      393.5,
+      207.0
+    ],
+    "area_reduction": 0.3742475876643284,
+    "font": "Arial",
+    "dpi": 600,
+    "scientific_marks_unchanged": true,
+    "header_removed_bands_pt": [
+      [
+        23.0,
+        35.0
+      ]
+    ]
+  },
+  {
+    "panel": "G5_05_design_scenario_0",
+    "group": "g5",
+    "before": {
+      "svg": "16333f558e9e9fec79219fdd34f587597a5442d6cb4122a6f35b84ca2f96ce85",
+      "pdf": "731064cd53bb3fba1d233991d34f9bff3088b2f84561a05aec59eeb29d8321af"
+    },
+    "after": {
+      "pdf": "a838034aff7aa84b90218f15f96e1dd6b53f5426414a6911ad4b1ba66bc9af40",
+      "svg": "35b534e0e8246d14229ccd6cf2eab2cdb52bb20b99e361032cd60adf8a2281b5"
+    },
+    "removed_or_shortened": [
+      {
+        "original": "Independent simulation | Correct selection family",
+        "replacement": "Correct selection family",
+        "pdf_matches": 1
+      },
+      {
+        "original": "Four-alias coverage at 50%: 95.5%; wrong / called: 2 / 34.",
+        "replacement": "",
+        "pdf_matches": 1
+      },
+      {
+        "original": "200 datasets per point; mean ± 1.96 MCSE. Insets: Wilson intervals.",
+        "replacement": "",
+        "pdf_matches": 1
+      },
+      {
+        "original": "0% is the exact no-acquisition contrast. Dashed boundary: remeasurement capacity.",
+        "replacement": "",
+        "pdf_matches": 1
+      },
+      {
+        "original": "Four aliases have identical actions; no extra replicates. All outcome counts in source tables.",
+        "replacement": "",
+        "pdf_matches": 1
+      }
+    ],
+    "old_size_pt": [
+      419.5275573730469,
+      357.16534423828125
+    ],
+    "crop_pt": [
+      25.0,
+      2.5,
+      408.0,
+      306.0
+    ],
+    "new_size_pt": [
+      383.0,
+      278.5
+    ],
+    "area_reduction": 0.28814069318513713,
+    "font": "Arial",
+    "dpi": 600,
+    "scientific_marks_unchanged": true,
+    "header_removed_bands_pt": [
+      [
+        17.0,
+        27.0
+      ],
+      [
+        40.0,
+        55.0
+      ]
+    ]
+  },
+  {
+    "panel": "G5_05_design_scenario_1",
+    "group": "g5",
+    "before": {
+      "svg": "4d5e45d0fadb5b1ae758e01c628ff7c23ebf01b04832c35cdb2aa03bef5821c9",
+      "pdf": "811282f1823f592afa1d3aa2b62d4d1bd6978b457664d0148cded4bb3052fa57"
+    },
+    "after": {
+      "pdf": "baa52c036f8c08d29cad3999a5f87d03c18006e2823588b8e08f5b39815b2217",
+      "svg": "5f74dd8210436d796957ecbdfb3d81dfcc2a74f483556f9518e9b77e1e687e42"
+    },
+    "removed_or_shortened": [
+      {
+        "original": "Independent simulation | Common omitted pair selection",
+        "replacement": "Common omitted pair selection",
+        "pdf_matches": 1
+      },
+      {
+        "original": "Four-alias coverage at 50%: 78.0%; wrong / called: 16 / 66.",
+        "replacement": "",
+        "pdf_matches": 1
+      },
+      {
+        "original": "200 datasets per point; mean ± 1.96 MCSE. Insets: Wilson intervals.",
+        "replacement": "",
+        "pdf_matches": 1
+      },
+      {
+        "original": "0% is the exact no-acquisition contrast. Dashed boundary: remeasurement capacity.",
+        "replacement": "",
+        "pdf_matches": 1
+      },
+      {
+        "original": "Four aliases have identical actions; no extra replicates. All outcome counts in source tables.",
+        "replacement": "",
+        "pdf_matches": 1
+      }
+    ],
+    "old_size_pt": [
+      419.5275573730469,
+      357.16534423828125
+    ],
+    "crop_pt": [
+      25.0,
+      2.5,
+      408.0,
+      306.0
+    ],
+    "new_size_pt": [
+      383.0,
+      278.5
+    ],
+    "area_reduction": 0.28814069318513713,
+    "font": "Arial",
+    "dpi": 600,
+    "scientific_marks_unchanged": true,
+    "header_removed_bands_pt": [
+      [
+        17.0,
+        27.0
+      ],
+      [
+        40.0,
+        55.0
+      ]
+    ]
+  },
+  {
+    "panel": "G5_05_design_scenario_2",
+    "group": "g5",
+    "before": {
+      "svg": "23d622570a5b05890cbee13f5aab0e320468fd3784c2475664526a3462fd34e3",
+      "pdf": "5cb5d354b75d389206c36221ae2b5a915aca999cab3732a1a237b86c82a6aa91"
+    },
+    "after": {
+      "pdf": "79c2b3348edbbe3c425d60d3220c7223e353f4bfd0c398c24e75d1070b08572d",
+      "svg": "021acea8f595a7548f0773dfa9951d480b8c68783d2495310c88f84cb394868a"
+    },
+    "removed_or_shortened": [
+      {
+        "original": "Independent simulation | Biology shift (+0.2)",
+        "replacement": "Biology shift (+0.2)",
+        "pdf_matches": 1
+      },
+      {
+        "original": "Four-alias coverage at 50%: 95.5%; wrong / called: 3 / 30.",
+        "replacement": "",
+        "pdf_matches": 1
+      },
+      {
+        "original": "200 datasets per point; mean ± 1.96 MCSE. Insets: Wilson intervals.",
+        "replacement": "",
+        "pdf_matches": 1
+      },
+      {
+        "original": "0% is the exact no-acquisition contrast. Dashed boundary: remeasurement capacity.",
+        "replacement": "",
+        "pdf_matches": 1
+      },
+      {
+        "original": "Four aliases have identical actions; no extra replicates. All outcome counts in source tables.",
+        "replacement": "",
+        "pdf_matches": 1
+      }
+    ],
+    "old_size_pt": [
+      419.5275573730469,
+      357.16534423828125
+    ],
+    "crop_pt": [
+      25.0,
+      2.5,
+      405.0,
+      306.0
+    ],
+    "new_size_pt": [
+      380.0,
+      278.5
+    ],
+    "area_reduction": 0.2937166146484389,
+    "font": "Arial",
+    "dpi": 600,
+    "scientific_marks_unchanged": true,
+    "header_removed_bands_pt": [
+      [
+        17.0,
+        27.0
+      ],
+      [
+        40.0,
+        55.0
+      ]
+    ]
+  },
+  {
+    "panel": "G5_07_direct_uncertainty_cost",
+    "group": "g5",
+    "before": {
+      "svg": "deab95335bb9cc956e27e8cb7a017a1001b481eef3b10b898906b81f0aa419a1",
+      "pdf": "cc44260f63af96a587ff591d33f7de0895a9e45be7f91f82882b785fb4947790"
+    },
+    "after": {
+      "svg": "b79b6ac55d2859ba89772361e36c2b7d854fbc09ae8ccd064a82982c7731f62b",
+      "pdf": "db49255e2bbe9bfa84b710c4cf27b97f81914558f18fe73a7e71866142f09b12"
+    },
+    "removed_or_shortened": [
+      {
+        "original": "Direct records | honest answers, interval limits and acquisition cost",
+        "replacement": "",
+        "pdf_matches": 1
+      },
+      {
+        "original": "All six strategies × three budget caps; no natural parameter truth is assumed.",
+        "replacement": "",
+        "pdf_matches": 1
+      },
+      {
+        "original": "Repeated allocations of one held-out patient pool; signs are model-conditional, not validated biology.",
+        "replacement": "",
+        "pdf_matches": 1
+      },
+      {
+        "original": "Unknown and unbounded answers remain visible; remeasurement does not create new patients.",
+        "replacement": "",
+        "pdf_matches": 1
+      }
+    ],
+    "old_size_pt": [
+      453.5433044433594,
+      374.1732177734375
+    ],
+    "crop_pt": [
+      44.0,
+      45.5,
+      430.0,
+      334.0
+    ],
+    "new_size_pt": [
+      386.0,
+      288.5
+    ],
+    "area_reduction": 0.3437917842262561,
+    "font": "Arial",
+    "dpi": 600,
+    "scientific_marks_unchanged": true
+  },
+  {
+    "panel": "G5_R2_costmatched_COAD",
+    "group": "g5",
+    "before": {
+      "svg": "97f2b8c938ba4a39a9301b72de9e69c01f4e14d60ae136e1a4e4a8b4b01b7b7f",
+      "pdf": "ceffced0936ceb86639f36d4ddef5ad467c51807f5521f023e01af8d5c6c813f"
+    },
+    "after": {
+      "pdf": "bd300f6f9e41bdbcb2f35f4f2a30984cf578072acf03808f8183ab281d348c51",
+      "svg": "078a164132719dcb72a68f07060daad5eb429f75b4248e9bc061481b85bec0ad"
+    },
+    "removed_or_shortened": [
+      {
+        "original": "G5 | Equal actual acquisition cost · COAD",
+        "replacement": "COAD",
+        "pdf_matches": 1
+      },
+      {
+        "original": "50 allocation seeds; mean ± 1.96 seed-MCSE, conditional on the same patient pool.",
+        "replacement": "",
+        "pdf_matches": 1
+      },
+      {
+        "original": "Each replicate uses a common feasible actual cost, chosen before reveal.",
+        "replacement": "",
+        "pdf_matches": 1
+      },
+      {
+        "original": "Four action-equivalent strategies shown once; no independent algorithm advantage.",
+        "replacement": "",
+        "pdf_matches": 1
+      }
+    ],
+    "old_size_pt": [
+      425.19683837890625,
+      354.3307189941406
+    ],
+    "crop_pt": [
+      21.5,
+      2.0,
+      410.5,
+      303.5
+    ],
+    "new_size_pt": [
+      389.0,
+      279.0
+    ],
+    "area_reduction": 0.279631071021745,
+    "font": "Arial",
+    "dpi": 600,
+    "scientific_marks_unchanged": true,
+    "header_removed_bands_pt": [
+      [
+        15.5,
+        29.5
+      ],
+      [
+        48.5,
+        57.0
+      ]
+    ]
+  },
+  {
+    "panel": "G5_R2_costmatched_LUAD",
+    "group": "g5",
+    "before": {
+      "svg": "fd2c76f2fb0c68b7e0d84ecf28eabcf38f8fbd25da825b3b8aa692d5be2e40db",
+      "pdf": "fcdf61e67480bc6ed778740a952ced6f4296836b8f757782dbb89deea9229311"
+    },
+    "after": {
+      "pdf": "1a204538501982709292b63a000afdb4d9589b0ce069c90c7a412f61e1b60799",
+      "svg": "9faa9c6983025eeb31b875b56b8ba5c4224d6748e231ba687b59dd13e8c46f96"
+    },
+    "removed_or_shortened": [
+      {
+        "original": "G5 | Equal actual acquisition cost · LUAD",
+        "replacement": "LUAD",
+        "pdf_matches": 1
+      },
+      {
+        "original": "50 allocation seeds; mean ± 1.96 seed-MCSE, conditional on the same patient pool.",
+        "replacement": "",
+        "pdf_matches": 1
+      },
+      {
+        "original": "Each replicate uses a common feasible actual cost, chosen before reveal.",
+        "replacement": "",
+        "pdf_matches": 1
+      },
+      {
+        "original": "Four action-equivalent strategies shown once; no independent algorithm advantage.",
+        "replacement": "",
+        "pdf_matches": 1
+      }
+    ],
+    "old_size_pt": [
+      425.19683837890625,
+      354.3307189941406
+    ],
+    "crop_pt": [
+      25.5,
+      2.0,
+      410.5,
+      303.5
+    ],
+    "new_size_pt": [
+      385.0,
+      279.0
+    ],
+    "area_reduction": 0.28703846360763974,
+    "font": "Arial",
+    "dpi": 600,
+    "scientific_marks_unchanged": true,
+    "header_removed_bands_pt": [
+      [
+        15.5,
+        29.5
+      ],
+      [
+        48.5,
+        57.0
+      ]
+    ]
+  },
+  {
+    "panel": "G5_R3_anchor_called",
+    "group": "g5",
+    "before": {
+      "svg": "e63ce2d892b6bab90a054d75e7be61cb995558690c8e250423a8e36087455c3a",
+      "pdf": "a2cab61d6a09abbdc50e02ba178110555e7e26884a9d2e80e7b69568ef0ec0f0"
+    },
+    "after": {
+      "pdf": "d146978cb421b44ba442428015f9254819432c15bdb7f39820686dd6ac511379",
+      "svg": "ed0bd3f16f3c410bda41b4085264dacd17b08d9f6e5a44b39c41346729703d6d"
+    },
+    "removed_or_shortened": [
+      {
+        "original": "G5 | Source anchoring at equal acquisition cost",
+        "replacement": "",
+        "pdf_matches": 1
+      },
+      {
+        "original": "500 new draws per scenario; matched added cost 1,500; Wilson intervals.",
+        "replacement": "",
+        "pdf_matches": 1
+      },
+      {
+        "original": "350 source records versus 350 selected records; same 100 completed baseline records.",
+        "replacement": "",
+        "pdf_matches": 1
+      },
+      {
+        "original": "Expanded nuisance family; original cost-74 results remain separately reported.",
+        "replacement": "",
+        "pdf_matches": 1
+      },
+      {
+        "original": "vs more selected patients within scenario; Holm | ns >= .05; * < .05; ** < .01; *** < .001",
+        "replacement": "",
+        "pdf_matches": 1
+      }
+    ],
+    "old_size_pt": [
+      425.19683837890625,
+      338.1417236328125
+    ],
+    "crop_pt": [
+      32.0,
+      29.0,
+      417.0,
+      280.5
+    ],
+    "new_size_pt": [
+      385.0,
+      231.0
+    ],
+    "area_reduction": 0.38143702555362324,
+    "font": "Arial",
+    "dpi": 600,
+    "scientific_marks_unchanged": true,
+    "header_removed_bands_pt": [
+      [
+        20.5,
+        41.0
+      ]
+    ]
+  },
+  {
+    "panel": "G5_R3_anchor_covered",
+    "group": "g5",
+    "before": {
+      "svg": "e72ae73b243d5991fd9bd6cf56b24902efec71c1a4082b800f82b8f676e58e36",
+      "pdf": "b3af3cd55599193be959d7cd71fb3943d6389771212542b95daab77c78ef4e70"
+    },
+    "after": {
+      "pdf": "641e9fe8d7a1d13112afcfcf7eea38daccc99899900eacee9f4baa0d05a02c69",
+      "svg": "7f1479dde60f79c7bbc635419a3d73e0e4f574a34fb8ea1516217a4ceb05e50d"
+    },
+    "removed_or_shortened": [
+      {
+        "original": "G5 | Source anchoring at equal acquisition cost",
+        "replacement": "",
+        "pdf_matches": 1
+      },
+      {
+        "original": "500 new draws per scenario; matched added cost 1,500; Wilson intervals.",
+        "replacement": "",
+        "pdf_matches": 1
+      },
+      {
+        "original": "350 source records versus 350 selected records; same 100 completed baseline records.",
+        "replacement": "",
+        "pdf_matches": 1
+      },
+      {
+        "original": "Expanded nuisance family; original cost-74 results remain separately reported.",
+        "replacement": "",
+        "pdf_matches": 1
+      },
+      {
+        "original": "vs more selected patients within scenario; Holm | ns >= .05; * < .05; ** < .01; *** < .001",
+        "replacement": "",
+        "pdf_matches": 1
+      }
+    ],
+    "old_size_pt": [
+      425.19683837890625,
+      338.1417236328125
+    ],
+    "crop_pt": [
+      28.0,
+      29.0,
+      417.0,
+      280.5
+    ],
+    "new_size_pt": [
+      389.0,
+      231.0
+    ],
+    "area_reduction": 0.3750103972476869,
+    "font": "Arial",
+    "dpi": 600,
+    "scientific_marks_unchanged": true,
+    "header_removed_bands_pt": [
+      [
+        20.5,
+        41.0
+      ]
+    ]
+  },
+  {
+    "panel": "G5_R3_natural_transfer",
+    "group": "g5",
+    "before": {
+      "svg": "f946d6a7a6d8923e6cc80bff212891cf9f7d07cb5f734fd3935ec99d2228ccea",
+      "pdf": "f20d51b4241fc9bbdb920375364e6413a365be0fab6ac078cf92b19f4830cc65"
+    },
+    "after": {
+      "pdf": "d5663923a285165936103cc4ff609d6926e8068c9784e6ebbe99a28c06b9694d",
+      "svg": "43b1720647e2f512470290e671ebae5bbf3048c4bd8c768a7ad992da6c71c7cc"
+    },
+    "removed_or_shortened": [
+      {
+        "original": "G5 | Natural-panel predictive transfer",
+        "replacement": "",
+        "pdf_matches": 1
+      },
+      {
+        "original": "Paired patient-score differences; caps: 1.96 patient SE, conditional on fitted models.",
+        "replacement": "",
+        "pdf_matches": 1
+      },
+      {
+        "original": "Transfer prior strength selected using training panels only. CTMC predictions are legacy.",
+        "replacement": "",
+        "pdf_matches": 1
+      },
+      {
+        "original": "Same previously explored evaluation records; not an external replication.",
+        "replacement": "",
+        "pdf_matches": 1
+      },
+      {
+        "original": "paired gain vs 0; conditional patient test; Holm | ns >= .05; * < .05; ** < .01; *** < .001",
+        "replacement": "",
+        "pdf_matches": 1
+      }
+    ],
+    "old_size_pt": [
+      453.5433044433594,
+      311.81103515625
+    ],
+    "crop_pt": [
+      36.0,
+      29.5,
+      444.5,
+      252.5
+    ],
+    "new_size_pt": [
+      408.5,
+      209.5
+    ],
+    "area_reduction": 0.3948460850980612,
+    "font": "Arial",
+    "dpi": 600,
+    "scientific_marks_unchanged": true,
+    "header_removed_bands_pt": [
+      [
+        20.5,
+        34.0
+      ]
+    ]
+  },
+  {
+    "panel": "G5_R6_correct_answers",
+    "group": "g5",
+    "before": {
+      "svg": "d5eaf211f3b8aa957426d7392e6025a25a47eb9f4af4dfc49c9806f45edcf240",
+      "pdf": "35160e20fc3ef2ffb06de66b96fca8626352a774fe41c319a4891f19fc9f25a8"
+    },
+    "after": {
+      "svg": "70c3a8fb468fdf6c4fd2c2530765e3454ca0968e443d86ca07baebe0dea4dbfd",
+      "pdf": "f312b4ad853cb2835f4b74554f1ba21ff7c545a0b3007db63a165b53a930f139"
+    },
+    "removed_or_shortened": [
+      {
+        "original": "150 independent datasets / condition; dots: three fixed, disjoint blocks of 50 datasets.",
+        "replacement": "",
+        "pdf_matches": 1
+      },
+      {
+        "original": "Bars: correct-answer rates; whiskers: Wilson 95% intervals; brackets: paired McNemar, 40-test Holm.",
+        "replacement": "",
+        "pdf_matches": 1
+      },
+      {
+        "original": "Grey: outside the fitted selection family. Reliability, wrong answers and unknowns shown in companion figure.",
+        "replacement": "",
+        "pdf_matches": 1
+      }
+    ],
+    "old_size_pt": [
+      552.7559204101562,
+      365.6692810058594
+    ],
+    "crop_pt": [
+      18.5,
+      21.5,
+      545.5,
+      293.5
+    ],
+    "new_size_pt": [
+      527.0,
+      272.0
+    ],
+    "area_reduction": 0.29081810705255906,
+    "font": "Arial",
+    "dpi": 600,
+    "scientific_marks_unchanged": true
+  }
+]

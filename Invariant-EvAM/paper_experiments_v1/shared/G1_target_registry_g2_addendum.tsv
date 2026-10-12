@@ -1,0 +1,2 @@
+target_id	model_id	vector	primary	reason
+D3_SPARSE5__interaction_mean_0_and_1	D3_SPARSE5	[0, 0, 0, 0.5, 0.5]	False	G2 requires two secondary contrasts; additive G1 registry extension, frozen before G2 outcomes

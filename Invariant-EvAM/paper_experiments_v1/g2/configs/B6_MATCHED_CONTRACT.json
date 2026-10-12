@@ -1,0 +1,27 @@
+{
+  "version": "1.0",
+  "endpoint": "clinical_observation_event",
+  "observation_hazard": "exp(x dot omega)",
+  "omega_known": [
+    0.4,
+    -0.3,
+    0.2
+  ],
+  "knowledge": "K0_KNOWN_OBSERVATION_RATE",
+  "topology": "D3_SPARSE5",
+  "n": 1000,
+  "effects": [
+    -0.8,
+    0,
+    0.15,
+    0.8
+  ],
+  "replicates": 200,
+  "seed_purpose": 206,
+  "methods": "official oMHN likelihood restricted to contract sparse topology vs exact absorption likelihood + M profile layer",
+  "parameter_bounds": [
+    -3,
+    3
+  ],
+  "interpretation": "equivalence and calibration in matched subexperiment, no fixed-time performance comparison"
+}

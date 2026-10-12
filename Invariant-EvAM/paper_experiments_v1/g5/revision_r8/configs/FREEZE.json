@@ -1,0 +1,27 @@
+{
+  "seed": 202609288,
+  "code": {
+    "run_g5.py": "fd1d8e4f51516a81e40f6a2867b1612b398a2d7c62d6503bdad4ab677e84bfc4",
+    "exact_target.py": "08882ae098da483f9109b49d94176eb933850efbad4fd18da59da5cca43aa9d0",
+    "acquisition.py": "94fd88fdf985597f30831c956fab6e53b6faca0446506722e49f50eef291d253"
+  },
+  "cases": [
+    "SAMPLE_LIMITED",
+    "JOINT_VIEW_MISSING",
+    "ASCERTAINMENT_MARGIN",
+    "RARE_STRATA"
+  ],
+  "budget": 6000,
+  "evaluation_per_case": 60,
+  "rule": "classical target c-opt at pilot-only fit, lexicographic estimability then variance",
+  "inference": "conditional CP polytope; confirmation independent of pilot including retained base records",
+  "costs": {
+    "new_selected_full": 2,
+    "random_source_full_including_recruitment": 6,
+    "reference_single_bit": 1,
+    "reveal_missing_bit": 1
+  },
+  "width_metric": "intersection with [-4,4] used only as bounded scoring window; actual intervals remain unbounded where appropriate",
+  "primary": "gap-dependent action switching, narrower independent target intervals with valid coverage; no novel-algorithm superiority requirement",
+  "scope": "closed sparse parent-child subsystem, declared sampling families, artificial cost menu"
+}

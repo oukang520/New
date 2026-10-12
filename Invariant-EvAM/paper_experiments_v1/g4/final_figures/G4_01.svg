@@ -1,0 +1,175 @@
+<?xml version='1.0' encoding='utf-8'?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:ns2="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:xlink="http://www.w3.org/1999/xlink" width="458.000000pt" height="257.000000pt" viewBox="8.500000 31.500000 458.000000 257.000000" version="1.1" data-publication-polish="20260927" data-export-dpi="600" data-header-compacted="20260927"><defs><g id="publication_compact_source"><metadata>
+  <rdf:RDF>
+   <ns2:Work>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+    <dc:date>2026-09-24T01:05:10.248411</dc:date>
+    <dc:format>image/svg+xml</dc:format>
+    <dc:creator>
+     <ns2:Agent>
+      <dc:title>Matplotlib v3.9.4, https://matplotlib.org/</dc:title>
+     </ns2:Agent>
+    </dc:creator>
+   </ns2:Work>
+  </rdf:RDF>
+ </metadata>
+ <defs>
+  <style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</style>
+ </defs>
+ <g id="figure_1">
+  <g id="patch_1">
+   <path d="M 0 297.637795  L 481.889764 297.637795  L 481.889764 0  L 0 0  z " style="fill: #ffffff" />
+  </g>
+  <g id="axes_1">
+   <g id="patch_2">
+    <path d="M 56.593134 102.06  L 148.653354 102.06  Q 151.429039 102.06 151.429039 99.321732  L 151.429039 62.355118  Q 151.429039 59.61685 148.653354 59.61685  L 56.593134 59.61685  Q 53.817449 59.61685 53.817449 62.355118  L 53.817449 99.321732  Q 53.817449 102.06 56.593134 102.06  z " clip-path="url(#p413755cbd2)" style="fill: #ffffff; stroke: #0072b2; stroke-linejoin: miter" />
+   </g>
+   <g id="patch_3">
+    <path d="M 159.29348 102.06  L 251.353701 102.06  Q 254.129386 102.06 254.129386 99.321732  L 254.129386 62.355118  Q 254.129386 59.61685 251.353701 59.61685  L 159.29348 59.61685  Q 156.517795 59.61685 156.517795 62.355118  L 156.517795 99.321732  Q 156.517795 102.06 159.29348 102.06  z " clip-path="url(#p413755cbd2)" style="fill: #ffffff; stroke: #0072b2; stroke-linejoin: miter" />
+   </g>
+   <g id="patch_4">
+    <path d="M 261.993827 102.06  L 354.054047 102.06  Q 356.829732 102.06 356.829732 99.321732  L 356.829732 62.355118  Q 356.829732 59.61685 354.054047 59.61685  L 261.993827 59.61685  Q 259.218142 59.61685 259.218142 62.355118  L 259.218142 99.321732  Q 259.218142 102.06 261.993827 102.06  z " clip-path="url(#p413755cbd2)" style="fill: #ffffff; stroke: #0072b2; stroke-linejoin: miter" />
+   </g>
+   <g id="patch_5">
+    <path d="M 364.694173 102.06  L 456.754394 102.06  Q 459.530079 102.06 459.530079 99.321732  L 459.530079 62.355118  Q 459.530079 59.61685 456.754394 59.61685  L 364.694173 59.61685  Q 361.918488 59.61685 361.918488 62.355118  L 361.918488 99.321732  Q 361.918488 102.06 364.694173 102.06  z " clip-path="url(#p413755cbd2)" style="fill: #ffffff; stroke: #0072b2; stroke-linejoin: miter" />
+   </g>
+   <g id="patch_6">
+    <path d="M 56.593134 156.825354  L 148.653354 156.825354  Q 151.429039 156.825354 151.429039 154.087087  L 151.429039 117.120472  Q 151.429039 114.382205 148.653354 114.382205  L 56.593134 114.382205  Q 53.817449 114.382205 53.817449 117.120472  L 53.817449 154.087087  Q 53.817449 156.825354 56.593134 156.825354  z " clip-path="url(#p413755cbd2)" style="fill: #ffffff; stroke: #009e73; stroke-linejoin: miter" />
+   </g>
+   <g id="patch_7">
+    <path d="M 159.29348 156.825354  L 251.353701 156.825354  Q 254.129386 156.825354 254.129386 154.087087  L 254.129386 117.120472  Q 254.129386 114.382205 251.353701 114.382205  L 159.29348 114.382205  Q 156.517795 114.382205 156.517795 117.120472  L 156.517795 154.087087  Q 156.517795 156.825354 159.29348 156.825354  z " clip-path="url(#p413755cbd2)" style="fill: #ffffff; stroke: #009e73; stroke-linejoin: miter" />
+   </g>
+   <g id="patch_8">
+    <path d="M 261.993827 156.825354  L 354.054047 156.825354  Q 356.829732 156.825354 356.829732 154.087087  L 356.829732 117.120472  Q 356.829732 114.382205 354.054047 114.382205  L 261.993827 114.382205  Q 259.218142 114.382205 259.218142 117.120472  L 259.218142 154.087087  Q 259.218142 156.825354 261.993827 156.825354  z " clip-path="url(#p413755cbd2)" style="fill: #ffffff; stroke: #009e73; stroke-linejoin: miter" />
+   </g>
+   <g id="patch_9">
+    <path d="M 364.694173 156.825354  L 456.754394 156.825354  Q 459.530079 156.825354 459.530079 154.087087  L 459.530079 117.120472  Q 459.530079 114.382205 456.754394 114.382205  L 364.694173 114.382205  Q 361.918488 114.382205 361.918488 117.120472  L 361.918488 154.087087  Q 361.918488 156.825354 364.694173 156.825354  z " clip-path="url(#p413755cbd2)" style="fill: #ffffff; stroke: #009e73; stroke-linejoin: miter" />
+   </g>
+   <g id="patch_10">
+    <path d="M 21.897071 232.127717  L 133.849701 232.127717  Q 136.625386 232.127717 136.625386 229.389449  L 136.625386 193.335591  Q 136.625386 190.597323 133.849701 190.597323  L 21.897071 190.597323  Q 19.121386 190.597323 19.121386 193.335591  L 19.121386 229.389449  Q 19.121386 232.127717 21.897071 232.127717  z " clip-path="url(#p413755cbd2)" style="fill: #ffffff; stroke: #0072b2; stroke-linejoin: miter" />
+   </g>
+   <g id="patch_11">
+    <path d="M 162.994394 232.127717  L 265.69474 232.127717  Q 268.470425 232.127717 268.470425 229.389449  L 268.470425 193.335591  Q 268.470425 190.597323 265.69474 190.597323  L 162.994394 190.597323  Q 160.218709 190.597323 160.218709 193.335591  L 160.218709 229.389449  Q 160.218709 232.127717 162.994394 232.127717  z " clip-path="url(#p413755cbd2)" style="fill: #ffffff; stroke: #009e73; stroke-linejoin: miter" />
+   </g>
+   <g id="patch_12">
+    <path d="M 294.839433 232.127717  L 454.441323 232.127717  Q 457.217008 232.127717 457.217008 229.389449  L 457.217008 193.335591  Q 457.217008 190.597323 454.441323 190.597323  L 294.839433 190.597323  Q 292.063748 190.597323 292.063748 193.335591  L 292.063748 229.389449  Q 292.063748 232.127717 294.839433 232.127717  z " clip-path="url(#p413755cbd2)" style="fill: #ffffff; stroke: #0072b2; stroke-linejoin: miter" />
+   </g>
+   <g id="patch_13">
+    <path d="M 21.897071 289.174961  L 207.867969 289.174961  Q 210.643654 289.174961 210.643654 286.436693  L 210.643654 252.208346  Q 210.643654 249.470079 207.867969 249.470079  L 21.897071 249.470079  Q 19.121386 249.470079 19.121386 252.208346  L 19.121386 286.436693  Q 19.121386 289.174961 21.897071 289.174961  z " clip-path="url(#p413755cbd2)" style="fill: #ffffff; stroke: #d55e00; stroke-linejoin: miter" />
+   </g>
+   <g id="patch_14">
+    <path d="M 237.012661 289.174961  L 454.441323 289.174961  Q 457.217008 289.174961 457.217008 286.436693  L 457.217008 252.208346  Q 457.217008 249.470079 454.441323 249.470079  L 237.012661 249.470079  Q 234.236976 249.470079 234.236976 252.208346  L 234.236976 286.436693  Q 234.236976 289.174961 237.012661 289.174961  z " clip-path="url(#p413755cbd2)" style="fill: #ffffff; stroke: #d55e00; stroke-linejoin: miter" />
+   </g>
+   <g id="line2d_1">
+    <path d="M 77.642079 189.456378  L 77.642079 175.308661  L 372.789921 175.308661  " clip-path="url(#p413755cbd2)" style="fill: none; stroke: #555555; stroke-width: 0.8; stroke-linecap: square" />
+   </g>
+   <g id="line2d_2">
+    <path d="M 319.589291 232.355906  L 319.589291 241.483465  L 116.039055 241.483465  " clip-path="url(#p413755cbd2)" style="fill: none; stroke: #555555; stroke-width: 0.8; stroke-linecap: square" />
+   </g>
+   <g id="text_1">
+    <text style="fill: #0072b2; font: 700 9px 'Arial'; text-anchor: start" x="14.263937" y="80.838425" transform="rotate(-0 14.263937 80.838425)">LUAD</text>
+   </g>
+   <g id="text_2">
+    <text style="font: 7.5px 'Arial'" transform="translate(75.323244 78.123777)">Clinical manifest</text>
+    <text style="font: 7.5px 'Arial'" transform="translate(76.979689 87.430808)">22,777 patients</text>
+   </g>
+   <g id="text_3">
+    <text style="font: 7.5px 'Arial'" transform="translate(192.40777 78.079831)">Primary</text>
+    <text style="font: 7.5px 'Arial'" transform="translate(179.680036 87.474753)">12,310 patients</text>
+   </g>
+   <g id="text_4">
+    <text style="font: 7.5px 'Arial'" transform="translate(273.177062 78.16948)">IMPACT468 + dedup</text>
+    <text style="font: 7.5px 'Arial'" transform="translate(284.465734 87.476511)">2,242 patients</text>
+   </g>
+   <g id="text_5">
+    <text style="font: 7.5px 'Arial'" transform="translate(375.640104 78.139919)">Train 1,345 · Cal 448</text>
+    <text style="font: 7.5px 'Arial'" transform="translate(385.915104 87.414665)">Evaluation 449</text>
+   </g>
+   <g id="patch_15">
+    <path d="M 152.734885 80.838425  Q 153.7404 80.838425 153.851487 80.838425  " style="fill: none; stroke: #555555; stroke-width: 0.8; stroke-linecap: round" />
+    <path d="M 150.651487 79.238425  L 153.851487 80.838425  L 150.651487 82.438425  z " style="fill: #555555; stroke: #555555; stroke-width: 0.8; stroke-linecap: round" />
+   </g>
+   <g id="patch_16">
+    <path d="M 255.435232 80.838425  Q 256.440746 80.838425 256.551833 80.838425  " style="fill: none; stroke: #555555; stroke-width: 0.8; stroke-linecap: round" />
+    <path d="M 253.351833 79.238425  L 256.551833 80.838425  L 253.351833 82.438425  z " style="fill: #555555; stroke: #555555; stroke-width: 0.8; stroke-linecap: round" />
+   </g>
+   <g id="patch_17">
+    <path d="M 358.135578 80.838425  Q 359.141093 80.838425 359.25218 80.838425  " style="fill: none; stroke: #555555; stroke-width: 0.8; stroke-linecap: round" />
+    <path d="M 356.05218 79.238425  L 359.25218 80.838425  L 356.05218 82.438425  z " style="fill: #555555; stroke: #555555; stroke-width: 0.8; stroke-linecap: round" />
+   </g>
+   <g id="text_6">
+    <text style="fill: #009e73; font: 700 9px 'Arial'; text-anchor: start" x="14.263937" y="135.60378" transform="rotate(-0 14.263937 135.60378)">COAD</text>
+   </g>
+   <g id="text_7">
+    <text style="font: 7.5px 'Arial'" transform="translate(75.323244 132.889131)">Clinical manifest</text>
+    <text style="font: 7.5px 'Arial'" transform="translate(76.979689 142.196162)">12,141 patients</text>
+   </g>
+   <g id="text_8">
+    <text style="font: 7.5px 'Arial'" transform="translate(192.40777 132.845186)">Primary</text>
+    <text style="font: 7.5px 'Arial'" transform="translate(181.765387 142.240108)">7,633 patients</text>
+   </g>
+   <g id="text_9">
+    <text style="font: 7.5px 'Arial'" transform="translate(273.177062 132.934834)">IMPACT468 + dedup</text>
+    <text style="font: 7.5px 'Arial'" transform="translate(284.465734 142.241865)">1,429 patients</text>
+   </g>
+   <g id="text_10">
+    <text style="font: 7.5px 'Arial'" transform="translate(378.767252 132.905274)">Train 857 · Cal 285</text>
+    <text style="font: 7.5px 'Arial'" transform="translate(385.915104 142.18002)">Evaluation 287</text>
+   </g>
+   <g id="patch_18">
+    <path d="M 152.734885 135.60378  Q 153.7404 135.60378 153.851487 135.60378  " style="fill: none; stroke: #555555; stroke-width: 0.8; stroke-linecap: round" />
+    <path d="M 150.651487 134.00378  L 153.851487 135.60378  L 150.651487 137.20378  z " style="fill: #555555; stroke: #555555; stroke-width: 0.8; stroke-linecap: round" />
+   </g>
+   <g id="patch_19">
+    <path d="M 255.435232 135.60378  Q 256.440746 135.60378 256.551833 135.60378  " style="fill: none; stroke: #555555; stroke-width: 0.8; stroke-linecap: round" />
+    <path d="M 253.351833 134.00378  L 256.551833 135.60378  L 253.351833 137.20378  z " style="fill: #555555; stroke: #555555; stroke-width: 0.8; stroke-linecap: round" />
+   </g>
+   <g id="patch_20">
+    <path d="M 358.135578 135.60378  Q 359.141093 135.60378 359.25218 135.60378  " style="fill: none; stroke: #555555; stroke-width: 0.8; stroke-linecap: round" />
+    <path d="M 356.05218 134.00378  L 359.25218 135.60378  L 356.05218 137.20378  z " style="fill: #555555; stroke: #555555; stroke-width: 0.8; stroke-linecap: round" />
+   </g>
+   <g id="text_11">
+    <text style="font: 8px 'Arial'; text-anchor: start" x="15.189165" y="43.415433" transform="rotate(-0 15.189165 43.415433)">One sample per patient; keep patients with no variant rows (LUAD 77; COAD 10).</text>
+   </g>
+   <g id="text_12">
+    <text style="font: 7.5px 'Arial'" transform="translate(26.11987 208.664014)">Train: environment → selection</text>
+    <text style="font: 7.5px 'Arial'" transform="translate(25.976316 217.93876)">→ three-event observed record</text>
+   </g>
+   <g id="text_13">
+    <text style="font: 7.5px 'Arial'" transform="translate(179.846911 208.664014)">Calibration: 80 X + S</text>
+    <text style="font: 7.5px 'Arial'" transform="translate(162.655504 217.93876)">Same information for baselines</text>
+   </g>
+   <g id="text_14">
+    <text style="font: 7.5px 'Arial'" transform="translate(314.406003 208.620069)">Estimator sees observed inputs only</text>
+    <text style="font: 7.5px 'Arial'" transform="translate(310.862253 217.982705)">Frozen methods → held-out prediction</text>
+   </g>
+   <g id="patch_21">
+    <path d="M 372.789921 177.308546  Q 372.789921 182.381512 372.789921 186.56005  " style="fill: none; stroke: #555555; stroke-width: 0.8; stroke-linecap: round" />
+    <path d="M 374.389921 183.36005  L 372.789921 186.56005  L 371.189921 183.36005  z " style="fill: #555555; stroke: #555555; stroke-width: 0.8; stroke-linecap: round" />
+   </g>
+   <g id="patch_22">
+    <path d="M 272.089511 211.36252  Q 280.499131 211.36252 288.014323 211.36252  " style="fill: none; stroke: #555555; stroke-width: 0.8; stroke-linecap: round" />
+    <path d="M 284.814323 209.76252  L 288.014323 211.36252  L 284.814323 212.96252  z " style="fill: #555555; stroke: #555555; stroke-width: 0.8; stroke-linecap: round" />
+   </g>
+   <g id="text_15">
+    <text style="font: 7.5px 'Arial'" transform="translate(34.226465 266.653574)">Private evaluator: full reference → proper scores</text>
+    <text style="font: 7.5px 'Arial'" transform="translate(34.42041 275.960606)">Hidden X and selection truth never passed to K1</text>
+   </g>
+   <g id="text_16">
+    <text style="font: 7.5px 'Arial'" transform="translate(247.341641 266.515557)">Proxy reference negatives, not callable biological negatives</text>
+    <text style="font: 7.5px 'Arial'" transform="translate(257.768398 276.010733)">GENIE18 previously explored; no external replication</text>
+   </g>
+   <g id="patch_23">
+    <path d="M 116.039055 243.483238  Q 116.039055 244.677067 116.039055 244.976468  " style="fill: none; stroke: #555555; stroke-width: 0.8; stroke-linecap: round" />
+    <path d="M 117.639055 241.776468  L 116.039055 244.976468  L 114.439055 241.776468  z " style="fill: #555555; stroke: #555555; stroke-width: 0.8; stroke-linecap: round" />
+   </g>
+  </g>
+  <g id="text_17">
+   </g>
+ </g>
+ <defs>
+  <clipPath id="p413755cbd2">
+   <rect x="9.637795" y="17.858268" width="462.614173" height="273.826772" />
+  </clipPath>
+ </defs>
+</g><clipPath id="publication_slice_0"><rect x="8.5" y="31.5" width="458.0" height="17.0" /></clipPath><clipPath id="publication_slice_1"><rect x="8.5" y="48.5" width="458.0" height="240.0" /></clipPath></defs><g clip-path="url(#publication_slice_0)"><use xlink:href="#publication_compact_source" transform="translate(0 0)" /></g><g clip-path="url(#publication_slice_1)"><use xlink:href="#publication_compact_source" transform="translate(0 -7.5)" /></g></svg>

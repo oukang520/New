@@ -1,0 +1,117 @@
+{
+  "model_sha256": "4e9f25c36de3b642769db9b6018a0e8c3077dcd6cef6af3afeae565cfa2c31e8",
+  "frozen_before_confirmation": true,
+  "source_hashes_verified": true,
+  "populations": {
+    "LUAD": {
+      "independent_development_patients": 79,
+      "optimizer_success": true,
+      "optimizer_attempts": [
+        {
+          "success": true,
+          "message": "CONVERGENCE: REL_REDUCTION_OF_F_<=_FACTR*EPSMCH",
+          "nll": 204.74885999377628,
+          "nit": 38
+        },
+        {
+          "success": true,
+          "message": "CONVERGENCE: REL_REDUCTION_OF_F_<=_FACTR*EPSMCH",
+          "nll": 204.74886008046138,
+          "nit": 34
+        }
+      ],
+      "active_bound_indices": [],
+      "bound": 3.0,
+      "geometry": {
+        "rank": 10,
+        "dim": 10,
+        "null_leakage": 0.0,
+        "target_variance": 1.9378830389247208,
+        "target_information": 0.5160270150023466,
+        "sigma_min_per_sample": 0.06479742717509959,
+        "theta_rank": 10,
+        "tolerance": {
+          "1e-06": {
+            "rank": 10,
+            "leak": 0.0
+          },
+          "1e-07": {
+            "rank": 10,
+            "leak": 0.0
+          },
+          "1e-08": {
+            "rank": 10,
+            "leak": 0.0
+          },
+          "1e-09": {
+            "rank": 10,
+            "leak": 0.0
+          },
+          "1e-10": {
+            "rank": 10,
+            "leak": 0.0
+          }
+        },
+        "tolerance_stable": true
+      },
+      "geometry_counts": "UNSMOOTHED_DEVELOPMENT_REFERENCE_COUNTS; EXPECTED_INFORMATION_AT_REGULARIZED_PREDICTIVE_FIT",
+      "interpretation": "STATE_PREDICTION_SURROGATE_ONLY; NO_THETA_SIGN_OR_CLONE_HAZARD_INTERPRETATION"
+    },
+    "ALL_NSCLC": {
+      "independent_development_patients": 166,
+      "optimizer_success": true,
+      "optimizer_attempts": [
+        {
+          "success": true,
+          "message": "CONVERGENCE: REL_REDUCTION_OF_F_<=_FACTR*EPSMCH",
+          "nll": 343.78598375562785,
+          "nit": 33
+        },
+        {
+          "success": true,
+          "message": "CONVERGENCE: REL_REDUCTION_OF_F_<=_FACTR*EPSMCH",
+          "nll": 343.78598370796203,
+          "nit": 38
+        }
+      ],
+      "active_bound_indices": [
+        4
+      ],
+      "bound": 3.0,
+      "geometry": {
+        "rank": 10,
+        "dim": 10,
+        "null_leakage": 0.0,
+        "target_variance": 13.713199189680404,
+        "target_information": 0.07292244400216473,
+        "sigma_min_per_sample": 0.020876148410150657,
+        "theta_rank": 10,
+        "tolerance": {
+          "1e-06": {
+            "rank": 10,
+            "leak": 0.0
+          },
+          "1e-07": {
+            "rank": 10,
+            "leak": 0.0
+          },
+          "1e-08": {
+            "rank": 10,
+            "leak": 0.0
+          },
+          "1e-09": {
+            "rank": 10,
+            "leak": 0.0
+          },
+          "1e-10": {
+            "rank": 10,
+            "leak": 0.0
+          }
+        },
+        "tolerance_stable": true
+      },
+      "geometry_counts": "UNSMOOTHED_DEVELOPMENT_REFERENCE_COUNTS; EXPECTED_INFORMATION_AT_REGULARIZED_PREDICTIVE_FIT",
+      "interpretation": "STATE_PREDICTION_SURROGATE_ONLY; NO_THETA_SIGN_OR_CLONE_HAZARD_INTERPRETATION"
+    }
+  }
+}

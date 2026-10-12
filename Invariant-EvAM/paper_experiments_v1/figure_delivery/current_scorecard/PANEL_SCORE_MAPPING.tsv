@@ -1,0 +1,60 @@
+panel	experiments	scores
+G1A	G1A	7.0
+G1B	G1B	8.0
+G1C	G1C	6.0
+G1D	G1D	6.0
+G1E	G1E	
+G1_R2_recovery_frequent	G1A	7.0
+G1_R2_recovery_ordinary	G1A	7.0
+G1_R2_recovery_rare	G1A	7.0
+G2_01	G2A;G2C	7.0;7.0
+G2_02	G2B;G2D	7.5;7.0
+G2_03	G2A	7.0
+G2_04	G2E	7.0
+G2_05	G2A	7.0
+G2_06	G2C	7.0
+G2_07	G2E	7.0
+G2_R2_sign_strong	G2_SIGN	8.0
+G2_R2_sign_weak	G2_SIGN	8.0
+G3_01	G3A	7.0
+G3_05	G3D	6.5
+G3_06	G3E_TIME;G3E_MEASURE	8.0;5.0
+G3_07	G3E_TIME;G3E_MEASURE	8.0;5.0
+G3_R2_bias_0	G3_BIAS	6.0
+G3_R2_bias_0p8	G3_BIAS	6.0
+G3_R2_bias_neg0p8	G3_BIAS	6.0
+G3_R3_joint_cost1000	G3B	7.0
+G3_R3_joint_cost4000	G3B	7.0
+G3_R3_reference_anchor	G3B;G3D	7.0;6.5
+G4_01	G4A	
+G4_07	G4_MODEL_COVERAGE	5.0
+G4_R2_joint_audit_COAD	G4_JOINT_FREQ	8.0
+G4_R2_joint_audit_LUAD	G4_JOINT_FREQ	8.0
+G4_R4_BC_patient_bootstrap	G4B;G4C_R4	8.0;6.5
+G4_R4_B_gain_COAD	G4B;G4_STRONG	8.0;4.0
+G4_R4_B_gain_LUAD	G4B;G4_STRONG	8.0;4.0
+G4_R4_C_calibration_COAD	G4C_R4	6.5
+G4_R4_C_calibration_LUAD	G4C_R4	6.5
+G4_R4_C_proper_score_controls	G4_STRONG;G4C_R4	4.0;6.5
+G4_R5_external_transfer	G4_STRONG;G4_EXTERNAL_B	4.0;8.0
+G4_R5_nested_patient_means	G4B	8.0
+G4_R6_attribution	G4_ATTRIBUTION	6.5
+G4_finite_calibration_ablation	G4_FINITE	6.0
+G5_05_design_scenario_0	G5_DESIGN_SIM	7.0
+G5_05_design_scenario_1	G5_DESIGN_SIM	7.0
+G5_05_design_scenario_2	G5_DESIGN_SIM	7.0
+G5_07_direct_uncertainty_cost	G5_DESIGN_REAL	8.0
+G5_R2_costmatched_COAD	G5_DESIGN_REAL	8.0
+G5_R2_costmatched_LUAD	G5_DESIGN_REAL	8.0
+G5_R3_anchor_called	G5_INTERVAL	6.5
+G5_R3_anchor_covered	G5_INTERVAL	6.5
+G5_R3_natural_transfer	G5_PRED	6.0
+G5_R6_correct_answers	G5_CLOSED_LOOP	8.5
+G5_R8_diagnostic_actions	G5_CLOSED_LOOP	8.5
+G5_R8_diagnostic_value	G5_CLOSED_LOOP	8.5
+G4_BIO_01_later_lineage	G4_BIO_01_later_lineage	
+G5_BIO_01_clone_tracking	G5_BIO_01_clone_tracking	
+G5_BIO_02_future_clone_tracking	G5_BIO_02_future_clone_tracking	
+G4_E1_multicohort_value	G4_EXTERNAL_B	8.0
+G4_E1_attribution_LUAD	G4_ATTRIBUTION	6.5
+G4_E1_attribution_COAD	G4_ATTRIBUTION	6.5

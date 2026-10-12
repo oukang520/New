@@ -1,0 +1,16 @@
+{
+  "selected_for_confirmation": [
+    "luad_oncosg_2020",
+    "luad_cas_2020",
+    "luad_cptac_2020",
+    "luad_broad",
+    "lung_nci_2022",
+    "coad_silu_2022",
+    "coadread_dfci_2016",
+    "coadread_genentech",
+    "coadread_cass_2020"
+  ],
+  "selection_rule": "predeclared cohort-level pilot primary gain > 0; retained cohorts confirmed on separate 70% patient records without reselection",
+  "pilot_results_sha256": "d82b191f0f5d39e8c326756e7fb033f64a904e1145ac8192a3f61a1af41e6401",
+  "confirmation_results_inspected": false
+}

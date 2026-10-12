@@ -1,0 +1,171 @@
+{
+  "protocol_version": "1.0",
+  "model": "D3_SPARSE5",
+  "parameter_count": 5,
+  "time": 1.0,
+  "primary_index": 3,
+  "secondary_targets": {
+    "interaction_difference": [
+      0,
+      0,
+      0,
+      1,
+      -1
+    ],
+    "interaction_mean": [
+      0,
+      0,
+      0,
+      0.5,
+      0.5
+    ]
+  },
+  "operators": {
+    "strong": [
+      {
+        "operator_id": "D3_SPARSE5__full__F0",
+        "d": 3,
+        "panel_mask": [
+          1,
+          1,
+          1
+        ],
+        "panel_width": 3,
+        "feature": {
+          "kind": "terms",
+          "terms": [
+            [
+              0
+            ]
+          ],
+          "label": "single_0"
+        },
+        "selection_stage": "before_measurement",
+        "measurement_missing_rule": "marginalize_not_zero_fill"
+      },
+      {
+        "operator_id": "D3_SPARSE5__full__F1",
+        "d": 3,
+        "panel_mask": [
+          1,
+          1,
+          1
+        ],
+        "panel_width": 3,
+        "feature": {
+          "kind": "terms",
+          "terms": [
+            [
+              1
+            ]
+          ],
+          "label": "single_1"
+        },
+        "selection_stage": "before_measurement",
+        "measurement_missing_rule": "marginalize_not_zero_fill"
+      }
+    ],
+    "weak": [
+      {
+        "operator_id": "D3_SPARSE5__full__F0",
+        "d": 3,
+        "panel_mask": [
+          1,
+          1,
+          1
+        ],
+        "panel_width": 3,
+        "feature": {
+          "kind": "terms",
+          "terms": [
+            [
+              0
+            ]
+          ],
+          "label": "single_0"
+        },
+        "selection_stage": "before_measurement",
+        "measurement_missing_rule": "marginalize_not_zero_fill"
+      },
+      {
+        "operator_id": "D3_SPARSE5__full__F0",
+        "d": 3,
+        "panel_mask": [
+          1,
+          1,
+          1
+        ],
+        "panel_width": 3,
+        "feature": {
+          "kind": "terms",
+          "terms": [
+            [
+              0
+            ]
+          ],
+          "label": "single_0"
+        },
+        "selection_stage": "before_measurement",
+        "measurement_missing_rule": "marginalize_not_zero_fill"
+      }
+    ],
+    "nonidentifying": [
+      {
+        "operator_id": "D3_SPARSE5__PURE_SOURCE_ONLY__NO_SELECTION",
+        "d": 3,
+        "panel_mask": [
+          1,
+          0,
+          0
+        ],
+        "panel_width": 1,
+        "feature": {
+          "kind": "none",
+          "terms": [],
+          "label": "none"
+        },
+        "selection_stage": "none",
+        "measurement_missing_rule": "marginalize_not_zero_fill"
+      },
+      {
+        "operator_id": "D3_SPARSE5__PURE_TARGET_ONLY__NO_SELECTION",
+        "d": 3,
+        "panel_mask": [
+          0,
+          1,
+          0
+        ],
+        "panel_width": 1,
+        "feature": {
+          "kind": "none",
+          "terms": [],
+          "label": "none"
+        },
+        "selection_stage": "none",
+        "measurement_missing_rule": "marginalize_not_zero_fill"
+      }
+    ]
+  },
+  "knowledge": "K1_STRUCTURED",
+  "bounds": [
+    3.0,
+    4.5,
+    6.0
+  ],
+  "confidence": 0.95,
+  "profile_grid_points": 25,
+  "profile_starts": 3,
+  "maxiter": 400,
+  "hierarchical_lambda": 1.0,
+  "methods": [
+    "B1",
+    "B2",
+    "B3",
+    "B4",
+    "B5",
+    "M"
+  ],
+  "cutoff_policy": "chi_square_regular_candidate_empirically_evaluated; weak and singular LOCAL_PROFILE_EXPLORATORY; no automatic chi_square_validity_claim",
+  "B4": "nonparametric biased-distribution fit followed by KL projection; uncertainty joint set projection from nonparametric LR region, chi2 df conservative dimension upper bound 9, exploratory",
+  "reference": "Bonferroni exact observable probability intervals; certified outer projection R with numerical feasible witnesses only; vacuous reference disclosed"
+}

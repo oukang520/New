@@ -1,0 +1,11 @@
+{
+  "status": "FROZEN_BEFORE_CORE_EVALUATION",
+  "purpose": "source versions at first formal run",
+  "files": {
+    "paper_experiments_v1/g2/src/ctmc_fast.dylib": "addcfb3e5ef057d08f19e9383d0597eb797f8fbb41729cd18fcf41ab066c13e3",
+    "paper_experiments_v1/g2/src/ctmc_fast.c": "7fe3321be82a296ce4847d8c537e1f1f12700ecbae88ccc7256fcd980e0d8762",
+    "paper_experiments_v1/g2/src/g2_freeze.py": "f1ffa7e3d90a8d9d14346c121264de53dfc25bd367b110d6d1c500eaaf66df4e",
+    "paper_experiments_v1/g2/src/g2_engine.py": "38e3969b1e898d1c940af4a45615fb8e609d411f030bf0a52b59beb48cabed85",
+    "paper_experiments_v1/g2/src/g2_run.py": "2bd54ae16655f6321688da5d8efe4d25b7338ed30c33ac49d8151ee104c2a842"
+  }
+}

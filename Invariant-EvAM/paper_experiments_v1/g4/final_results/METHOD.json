@@ -1,0 +1,57 @@
+{
+  "stage": "FROZEN_BEFORE_NEW_INTERVENTION_EVALUATION",
+  "seed": 2026092764,
+  "question": "Decompose fixed-cost bridge benefit into hidden-margin information and within-patient association; distinguish information acquisition from optimizer effects",
+  "cancers": [
+    "LUAD",
+    "COAD"
+  ],
+  "designs": [
+    "REDUNDANT",
+    "HETEROGENEOUS",
+    "CROSSVIEW_FAILURE"
+  ],
+  "replicates": 50,
+  "association_doses": [
+    0,
+    0.5,
+    1
+  ],
+  "intervention": "For each actual bridge contingency table, replace it by dose*original+(1-dose)*product of observed triple and hidden-bit empirical margins. Both margins, patient mass, source calibration and cost unchanged. Fractional tables represent averaged controlled label permutation, not additional patients.",
+  "fixed_model": "Original CTMC joint estimator, no new tuning; aligned dose1 is existing frozen R4 fit; pooled and two-step retained",
+  "primary": "TCGA paired hidden log score, equal design weighting; GENIE conditional integrated score secondary. Existing patients already explored, this is new intervention analysis, not new independent cohort confirmation.",
+  "contrasts": {
+    "total": "MORE-ALIGNED",
+    "margin": "MORE-DEASSOCIATED",
+    "pairing": "DEASSOCIATED-ALIGNED",
+    "optimizer": "TWO_STEP-ALIGNED",
+    "model": "POOLED-ALIGNED"
+  },
+  "uncertainty": "2000 paired TCGA patient+fit-seed bootstrap, shared patient draws across designs. Each decomposition uses identical draws. No patient count inflation by seeds.",
+  "score8": "Both cancers total and margin contributions positive with interval excluding zero; exact additive decomposition and marginal preservation; disclose all pairing and strong-baseline outcomes",
+  "score8plus": "Additionally positive pairing contribution intervals in both cancers and coherent dose trend; no need to beat two-step, since optimizer attribution is tested rather than presumed",
+  "no_success_guarantee": true,
+  "cohort_expansion_20261009": {
+    "protocol": "../../cohort_expansion_20261009/configs/PROTOCOL.json",
+    "adoption_freeze": "../../cohort_expansion_20261009/configs/ADOPTION_FREEZE.json",
+    "confirmation_patients": 1383,
+    "new_adopted_cohorts": 9,
+    "frozen_fit_hashes": "../../cohort_expansion_20261009/configs/PROTOCOL.json#model_hashes",
+    "bootstrap": "patients and original fitted draw ensemble, paired across contrasts",
+    "primary_family_size": 9,
+    "secondary_inference": "intervals; no additional star family"
+  },
+  "biological_closure_20261009": {
+    "protocol_path": "experiment_data/BIO/configs/PROTOCOL.json",
+    "protocol_sha256": "93bbb65ae6a09dfdd242b33d3b0fab07124c196f25804aa247c768f38fc1bbca",
+    "ctDNA_assay_sha256": "ee3f7e77b8ea3db96ab238f6c0422a1d3e7240b9dd84b964f2a3ea56b1927ce5",
+    "source_status": "previously explored TRACERx family; newly frozen endpoints and runs; overlapping patients",
+    "independent_evaluation": "hash patient development/confirmation split; no method/action selection on confirmation",
+    "inference_scope": "later-tissue multimarker support and processed UMI count replay; no natural theta truth or clinical intervention",
+    "full_report": "../../biological_closure_20261009/REPORT_CN.md",
+    "plotting_code": "biological_closure_20261009/src/plot_biological.py",
+    "code_sha256": "e4148c6bca335bb3ea9af5cac4109e778f9c895c84d82e0f2b8c9a52e50257a3",
+    "acquisition": "BEST_FIXED RANDOM CTMC_BRIDGE EMPIRICAL_BRIDGE DIRECT_RIDGE; all frozen comparisons retained",
+    "ctDNA": "CLONAL_ONLY BRANCH_DIVERSE RANDOM_MARKERS INFORMATION_ADAPTIVE; wholePSP extra-information reference"
+  }
+}

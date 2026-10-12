@@ -1,0 +1,147 @@
+{
+  "protocol_version": "BIOLOGICAL_BRIDGE_V1",
+  "status": "FROZEN_BEFORE_NEW_OUTCOME_FITTING",
+  "master_seed": 20261009,
+  "source_status": "PREVIOUSLY_EXPLORED_TRACERX_INPUT_NEW_ENDPOINT_NEW_RUN",
+  "original_estimand_unchanged": true,
+  "new_targets": {
+    "B1": "Recovery of author-reconstructed nontrunk clusters supported by at least three branch-owned measured variants; metastatic/relapse identity is scorer-only when mapping exists.",
+    "B2": "Patient-averaged target recovery under frozen hypothetical acquisition costs; action utility is an explicitly new patient-level bridge.",
+    "B3": "Surgical-only marker selection followed by count-level replay on actual postoperative plasma; not FASTQ reprocessing or evidence of treatment benefit."
+  },
+  "scope": "New biological predictions and acquisition validation; CTMC parameters are not tree ancestry, clone fitness or recurrence hazard truth.",
+  "native_source": "/Users/oukang/Desktop/投稿资料/IQE/iqe_project/data/metadata/tracerx_native_20260922T132136",
+  "source_hashes": {
+    "field_missingness.tsv.gz": "ee803529ca146a544bdf01d7678f3ecc2e074c2d5047df1a0bf52716e8ef24a3",
+    "mutations.tsv.gz": "85e388d295b89f3997df5600b14aec3b083bba532e504403ff31ec8971725b33",
+    "tree_edges.tsv.gz": "52e08bfb4a7e7fe5c1f3d96e18dcd073577848fa3038f242e130565503aa00b9",
+    "tree_mutation_clusters.tsv.gz": "ffda9350c6afd442248c3caba58e63d90d3550ffd999c475a9b932c245a08074",
+    "region_mutations.tsv.gz": "5b642732102f0016a2b5e5e8b8d7e9235eb180866871cf7cfbb435c4ccb5fe16",
+    "tree_inventory.tsv.gz": "dd0de591e6543eab39ee1ee87bf65b3652f4792d3f0f49ac9b676465f1a44c78",
+    "patients.tsv.gz": "fed7967d42ebe1836aabd349cb866f6f3fbac78772546aa6678957ec161b23ca",
+    "tumours.tsv.gz": "245725bfd01fd8597161fc50e2eda49ec588a4e40ce2322fdd34534cc8d9deb3"
+  },
+  "split_rule": "sha256(Invariant-EvAM-bio-v1|patient_id) first16hex / 2^64 <0.6 development else confirmation",
+  "split_hash": "7342aa0dc54aea63614003d1ccace2f5c1e9842a79e0506f8e6293b8be803f22",
+  "same_family_overlap": "TRACERx tissues, metastases and plasma share patients; count one family and split all modalities by patient.",
+  "primary_population": "LUAD patients with at least three surgical primary regions, no exclusion by hidden drivers, branch abundance, recurrence or model success.",
+  "secondary_population": "All NSCLC histologies under the same prespecified eligibility and patient deduplication.",
+  "tumour_selection": "Most available surgical primary regions per patient; tie lexicographic tumour_id. Histology derives from selected tumour.",
+  "reference_rules": {
+    "minimum_branch_owned_markers": 3,
+    "minimum_locus_depth": 20,
+    "minimum_alt_reads": 3,
+    "tree": "author Corrected_tree",
+    "trunk_excluded_from_branch_target": true,
+    "missing": "Not recorded/not callable is not biological absence; known-variant negatives at registered depth are reference detection only."
+  },
+  "core_events": [
+    "TP53",
+    "KRAS",
+    "STK11",
+    "KEAP1"
+  ],
+  "core_state": "Recorded nonsynonymous SNV/indel union across primary regions; a surrogate reference state, not naturally observed generator truth.",
+  "narrow_observation": "Actual recorded variants in the four gene mask; no imputation of unmeasured genes.",
+  "full_observation": "Actual WES variant records in the revealed primary region; does not reveal hidden regions or their clusters.",
+  "acquisition": {
+    "narrow_cost": 2,
+    "full_cost": 8,
+    "new_region_overheads": [
+      0,
+      2,
+      4
+    ],
+    "incremental_budgets": [
+      10,
+      14,
+      20
+    ],
+    "primary_budget": 10,
+    "primary_overhead": 2,
+    "cost_status": "Frozen hypothetical cost units, not measured monetary costs or actual prospectively acquired sequencing.",
+    "region_order": "Patient-keyed frozen random order, never chosen using hidden genotype or sequencing-derived QC.",
+    "initial_region_repeats": 5,
+    "repeat_unit": "Average perturbations within patient; not five independent patients.",
+    "methods": [
+      "BEST_FIXED",
+      "RANDOM",
+      "CTMC_BRIDGE",
+      "EMPIRICAL_BRIDGE",
+      "DIRECT_RIDGE"
+    ],
+    "fit_sources": "Only development full records for prior/operator/utility fit; confirmation actions frozen before revealing their outcomes.",
+    "primary_endpoint": "Additional nontrunk reference branches recovered divided by all eligible supported nontrunk reference branches; zero eligible branches contribute zero recovery, capacity counts also reported.",
+    "secondary_endpoints": [
+      "hidden candidate driver recovery",
+      "all branch recovery",
+      "metastatic branch recovery when actual mapping exists",
+      "cost and unspent budget",
+      "four-gene hidden-state proper score"
+    ],
+    "classical_baselines": "All feasible fixed plans, development-best fixed plan, empirical-prior bridge, direct regularized utility fit, random feasible plan.",
+    "CTMC_scope": "Independent development reference-state snapshot fit and regional detection kernel inform patient predictions; branch utility requires a separate learned map. No clinical/ancestry interpretation of theta."
+  },
+  "ctdna": {
+    "marker_budgets": [
+      20,
+      50,
+      100
+    ],
+    "primary_marker_budget": 50,
+    "policies": [
+      "CLONAL_ONLY",
+      "BRANCH_DIVERSE",
+      "RANDOM_MARKERS"
+    ],
+    "selection_information": "Only surgical primary tissue markers and original primary-only reconstructed clusters. No future plasma counts, clone_present flags, recurrence sites or outcomes.",
+    "replay": "Actual mutation-level UMI alt/total depth and frozen pipeline error annotations; record-count algorithm replay, not original published MRD replication.",
+    "normal_calibration": "Normal controls are separate; assay rule frozen in a supplemental protocol before any patient outcome replay.",
+    "primary_endpoint": "Detection of independently supported postoperative nontrunk clones at fixed marker budget and registered error control, with patient denominators.",
+    "secondary_endpoints": [
+      "sample-level MRD detection",
+      "first postoperative detection before recurrence",
+      "false-positive rate in held-out normal controls",
+      "marker capacity and assay failures"
+    ],
+    "incomplete_rule": "If actual counts, normal error controls, primary-only marker mapping or timelines cannot be verified, do not substitute invented measurements."
+  },
+  "inference": {
+    "independent_unit": "patient",
+    "bootstrap_replicates": 2000,
+    "paired_comparison": true,
+    "primary_comparisons": "Three acquisition methods vs development-best fixed under primary budget/overhead, two-sided patient paired test; Holm family size3. Plasma families frozen separately before replay.",
+    "zero_denominator": "Retain patients and explicitly identify denominator-free reference cases; never select by a positive outcome.",
+    "interpretation": "Confidence intervals conditional on the frozen development fits. No population-natural theta coverage claims."
+  },
+  "adoption": "Publish a new main figure only for a supported, explicitly scoped new endpoint; compare against strong controls. Unsupported new claims remain described in the research report and do not overwrite older valid results.",
+  "plots": {
+    "format": [
+      "pdf",
+      "svg"
+    ],
+    "dpi": 600,
+    "font": "Arial",
+    "palette": [
+      "#0072B2",
+      "#56B4E9",
+      "#009E73",
+      "#E69F00",
+      "#D55E00",
+      "#CC79A7"
+    ],
+    "references": [
+      "R04",
+      "R21",
+      "R28",
+      "R29"
+    ],
+    "review": "Actual screenshots and actual exports reviewed, no automated user-approval flags.",
+    "formal_locations": [
+      "g4/final_figures",
+      "g5/final_figures"
+    ],
+    "failed_figures": "No failed exploratory render in formal release."
+  },
+  "wetlab": "Optional isogenic perturbation is not executable in this computational environment. No wet-lab result will be claimed."
+}

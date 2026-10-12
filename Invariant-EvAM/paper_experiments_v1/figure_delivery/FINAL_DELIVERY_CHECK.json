@@ -1,0 +1,54 @@
+{
+  "total_panels": 59,
+  "total_files": 118,
+  "groups": [
+    {
+      "group": "g1",
+      "panels": 8,
+      "all_manifest_hashes_match": true
+    },
+    {
+      "group": "g2",
+      "panels": 9,
+      "all_manifest_hashes_match": true
+    },
+    {
+      "group": "g3",
+      "panels": 10,
+      "all_manifest_hashes_match": true
+    },
+    {
+      "group": "g4",
+      "panels": 18,
+      "all_manifest_hashes_match": true
+    },
+    {
+      "group": "g5",
+      "panels": 14,
+      "all_manifest_hashes_match": true
+    }
+  ],
+  "replaced_panels": 4,
+  "untouched_panels": 49,
+  "untouched_files_identical": 98,
+  "clean_release": true,
+  "new_pdf_fonts": "ArialMT only",
+  "new_figures_vector": true,
+  "statistical_counts": "PASS",
+  "frozen_research_results": "unchanged; publication uses copies of current results",
+  "G1B_score": 8,
+  "G2B_score": 7.5,
+  "G2D_score": 7,
+  "G5_score": 8.5,
+  "G4_attribution_score": 6.5,
+  "all_requested_scores_above8": false,
+  "latest_annotation_review": "figure_delivery/significance_connector_review_20261009/CHECK.json",
+  "latest_real_cohort_expansion": "cohort_expansion_20261009/DELIVERY_CHECK.json",
+  "all_current_manifest_hashes_match": true,
+  "latest_biological_closure": "biological_closure_20261009/DELIVERY_CHECK.json",
+  "biological_closure_new_panels": 3,
+  "biological_closure_preserved_panels": 56,
+  "biological_closure_preserved_files_identical": 112,
+  "new_panels_scored": false,
+  "latest_scope_note": "R8 score describes its original closed-model experiment; no upgrade from new real diagnostic experiment"
+}

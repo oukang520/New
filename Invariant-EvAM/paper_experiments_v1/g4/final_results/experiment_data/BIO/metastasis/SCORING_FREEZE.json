@@ -1,0 +1,8 @@
+{
+  "status": "FROZEN_SECONDARY_SCORING_RULE_BEFORE_METASTATIC_OUTCOMES",
+  "acquisition_actions_sha256": "e554e166a07699aa3e34345b88dc6483273da87840e522e8b8d7309a70ecd84f",
+  "reference_sha256": "781d9f836a140c6014e74d0f3379e9579dd9a9a917bfec368a1ad18e8aae2e04",
+  "rule": "Primary-only nontrunk author cluster has >=3 shared own variants supported in one actual metachronous metastatic region; LN/synchronous not counted as later progression.",
+  "population": "All acquisition confirmation patients with actual metachronous sampled tissue; no exclusion by seedingClones=True or performance. Reference-free patients retained with undefined ratio.",
+  "analysis": "Prespecified secondary biological endpoint, patient average over frozen five initial-region rotations; no confirm action changed."
+}

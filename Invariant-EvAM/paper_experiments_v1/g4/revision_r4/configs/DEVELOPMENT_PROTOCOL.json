@@ -1,0 +1,27 @@
+{
+  "version": "R4",
+  "seed": 2026092604,
+  "reason": "User requested further G4B and G4C experiments; reopens closed project for bounded paid-bridge audit",
+  "primary": "Within each original design: 78 missing-gene assays vs 26 new three-gene selected records. Each total638 assays; different patient N explicit.",
+  "base": "80 selected partial patients +80 source XS calibration patients=560 assays",
+  "comparators": [
+    "CTMC",
+    "POOLED",
+    "HIERARCHICAL",
+    "UNPROJECTED_FUSION",
+    "direct audit conditional and marginal estimators"
+  ],
+  "calibration": "Randomly audit39/40 initial selected patients per environment; no estimated source-to-selected weights",
+  "development": "10 seeds/cell with full train; hash half originalcal for calibration input and otherhalf development scoring",
+  "evaluation": "50 seeds per cancer/design; fixed originalevaluation patients, PREVIOUSLY_EXPLORED",
+  "bootstrap": "200 per cancer/design, patient-role resampling followed by full refitting; repeated slots are bootstrap draws not new patients",
+  "core_claim_limit": "New paid bridge information design; does not relabel original heterogeneous vs redundant source-score claim or show natural theta recovery",
+  "failure_policy": "All seeds,originaldesigns,patients retained, capacity failures reported",
+  "code_sha256": "1a5d7518feb9d59bcb099cb38ff12504ebf0dc3103171b60351a64e4ef5b6920",
+  "source_hashes": {
+    "LUAD": "0a1247c48cd53695fcb6a611482986311ae0675f135384e8c29ffebea8141cbb",
+    "COAD": "91b0019f8c4ee8712bd360336779119c4d70f368cf4a5a06252c7c7ad0e19663"
+  },
+  "gradient_max_error": 6.028753163356271e-09,
+  "development_amendment": "v1 train20% held out caused capacity failures; v2 retains alltrain and hash-splits calibration role for source fit vs development scoring. Originalevaluation role remains unscored for decisions. v1 complete logs/results archived, no seed or patient chosen by outcome."
+}

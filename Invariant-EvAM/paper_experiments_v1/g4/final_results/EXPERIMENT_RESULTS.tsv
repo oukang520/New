@@ -1,0 +1,11 @@
+experiment_id	experiment	score_10	expected	actual	panels	scope
+G4A	真实患者数据资格审计		建立真实记录分母与观察资格	完成数据审计；本身不是创新性能实验	G4_01	限定终点；共享数据不计独立重复
+G4B	同成本互补记录优于扩样	8.0	付费bridge相对普通扩样在两癌种产生稳定平均收益	R4六格方向正；R5患者层均值区间两癌种下限均正；容量失败仍计入台账	G4_R4_B_gain_LUAD G4_R4_B_gain_COAD G4_R4_BC_patient_bootstrap G4_R5_nested_patient_means	R4单扰动分布与R5内层均值区间不混用；非原mask-only实验成功
+G4_FINITE	有限来源校准信息消融	6.0	校准资料改善不完整观察下的推断	增加80条来源记录可改善source log score，但多付320次测量	G4_finite_calibration_ablation	额外信息的价值，不是固定成本算法优势
+G4_STRONG	相对强基线与配对控制的优势	4.0	优于pooled、two-step并通过打乱配对控制	外部优于pooled；与two-step近乎持平，shuffle控制方向不稳定	G4_R4_B_gain_LUAD G4_R4_B_gain_COAD G4_R4_C_proper_score_controls G4_R5_external_transfer	与G4B共用数据；局部强基线收益不等于算法独有优势
+G4C_R4	R4内部概率校准	6.5	内部独立评价同时改善校准误差与proper score	R4 log score/Brier六格改善，ECE五格改善；不确定性范围跨零	G4_R4_C_calibration_LUAD G4_R4_C_calibration_COAD G4_R4_C_proper_score_controls G4_R4_BC_patient_bootstrap	仅R4内部条件终点；R5泛化校准已退役，其未支持结果仍限制外推
+G4_MODEL_COVERAGE	模型锚定的参数覆盖	5.0	来源模型扰动下有稳定的参数区间覆盖	模型内条件支持；不是直接患者真值覆盖，边界/未知仍在	G4_07	限定终点；共享数据不计独立重复
+G4_EXTERNAL_B	互补收益的外部迁移	8.0	冻结模型在两个独立外部队列重复相对扩样收益	TCGA两队列log-score增益约0.00781/0.00799，区间均高于零；新9队列1383确认患者9/9方向正，7/9区间高于零	G4_R5_external_transfer G4_E1_multicohort_value	新队列仅探索患者选择，确认患者不重筛；总补测价值不等于普遍正向配对机制
+G4_JOINT_FREQ	同患者联合测量价值	8.0	固定成本下缩短记录联合频率区间且维持覆盖	两癌种、三档成本支持区间缩短及设计覆盖	G4_R2_joint_audit_LUAD G4_R2_joint_audit_COAD	有限队列记录频率，不是天然theta或独有优化器效果
+G4_ATTRIBUTION	补测收益的受控归因	6.5	同成本总收益由可分离的信息成分支持；配对贡献在内部与外部一致为正，拟合方式贡献可区分	两癌种总收益正；去关联收益并非两外部队列区间均正。肺腺癌外部配对贡献为负；two-step差异接近零。不支持普遍正向配对机制。	G4_R6_attribution G4_E1_attribution_LUAD G4_E1_attribution_COAD	新去关联干预，复用既有患者与冻结输入；原强基线优势4分不升级。本条6.5仅代表部分预期达到，不因负结果解释清楚而加分。
+G4_BIO_LATER	真实后期支系支持的补测预算验证		补充实际区域/测量可恢复后期组织支持的支系	9名可评价患者，预算10/14/20恢复54.44/54.44/77.78%；非同成本策略优势	G4_BIO_01_later_lineage	14名未来组织中9可评价；作者支系参照，不是天然theta真值

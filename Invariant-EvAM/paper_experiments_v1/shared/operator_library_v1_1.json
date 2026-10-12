@@ -1,0 +1,155 @@
+{
+  "protocol_version": "1.1",
+  "status": "FROZEN",
+  "reason": "pure assay cross-view control excludes all selection features",
+  "operators": {
+    "D3_SPARSE5__PURE_SOURCE_ONLY__NO_SELECTION": {
+      "operator_id": "D3_SPARSE5__PURE_SOURCE_ONLY__NO_SELECTION",
+      "d": 3,
+      "panel_mask": [
+        1,
+        0,
+        0
+      ],
+      "panel_width": 1,
+      "feature": {
+        "kind": "none",
+        "terms": [],
+        "label": "none"
+      },
+      "phi_true": [],
+      "selection_stage": "none",
+      "measurement_missing_rule": "marginalize_not_zero_fill"
+    },
+    "D3_SPARSE5__PURE_TARGET_ONLY__NO_SELECTION": {
+      "operator_id": "D3_SPARSE5__PURE_TARGET_ONLY__NO_SELECTION",
+      "d": 3,
+      "panel_mask": [
+        0,
+        1,
+        0
+      ],
+      "panel_width": 1,
+      "feature": {
+        "kind": "none",
+        "terms": [],
+        "label": "none"
+      },
+      "phi_true": [],
+      "selection_stage": "none",
+      "measurement_missing_rule": "marginalize_not_zero_fill"
+    },
+    "D3_FULL9__PURE_SOURCE_ONLY__NO_SELECTION": {
+      "operator_id": "D3_FULL9__PURE_SOURCE_ONLY__NO_SELECTION",
+      "d": 3,
+      "panel_mask": [
+        1,
+        0,
+        0
+      ],
+      "panel_width": 1,
+      "feature": {
+        "kind": "none",
+        "terms": [],
+        "label": "none"
+      },
+      "phi_true": [],
+      "selection_stage": "none",
+      "measurement_missing_rule": "marginalize_not_zero_fill"
+    },
+    "D3_FULL9__PURE_TARGET_ONLY__NO_SELECTION": {
+      "operator_id": "D3_FULL9__PURE_TARGET_ONLY__NO_SELECTION",
+      "d": 3,
+      "panel_mask": [
+        0,
+        1,
+        0
+      ],
+      "panel_width": 1,
+      "feature": {
+        "kind": "none",
+        "terms": [],
+        "label": "none"
+      },
+      "phi_true": [],
+      "selection_stage": "none",
+      "measurement_missing_rule": "marginalize_not_zero_fill"
+    },
+    "D4_SPARSE10__PURE_SOURCE_ONLY__NO_SELECTION": {
+      "operator_id": "D4_SPARSE10__PURE_SOURCE_ONLY__NO_SELECTION",
+      "d": 4,
+      "panel_mask": [
+        1,
+        0,
+        0,
+        0
+      ],
+      "panel_width": 1,
+      "feature": {
+        "kind": "none",
+        "terms": [],
+        "label": "none"
+      },
+      "phi_true": [],
+      "selection_stage": "none",
+      "measurement_missing_rule": "marginalize_not_zero_fill"
+    },
+    "D4_SPARSE10__PURE_TARGET_ONLY__NO_SELECTION": {
+      "operator_id": "D4_SPARSE10__PURE_TARGET_ONLY__NO_SELECTION",
+      "d": 4,
+      "panel_mask": [
+        0,
+        1,
+        0,
+        0
+      ],
+      "panel_width": 1,
+      "feature": {
+        "kind": "none",
+        "terms": [],
+        "label": "none"
+      },
+      "phi_true": [],
+      "selection_stage": "none",
+      "measurement_missing_rule": "marginalize_not_zero_fill"
+    },
+    "D4_FULL16__PURE_SOURCE_ONLY__NO_SELECTION": {
+      "operator_id": "D4_FULL16__PURE_SOURCE_ONLY__NO_SELECTION",
+      "d": 4,
+      "panel_mask": [
+        1,
+        0,
+        0,
+        0
+      ],
+      "panel_width": 1,
+      "feature": {
+        "kind": "none",
+        "terms": [],
+        "label": "none"
+      },
+      "phi_true": [],
+      "selection_stage": "none",
+      "measurement_missing_rule": "marginalize_not_zero_fill"
+    },
+    "D4_FULL16__PURE_TARGET_ONLY__NO_SELECTION": {
+      "operator_id": "D4_FULL16__PURE_TARGET_ONLY__NO_SELECTION",
+      "d": 4,
+      "panel_mask": [
+        0,
+        1,
+        0,
+        0
+      ],
+      "panel_width": 1,
+      "feature": {
+        "kind": "none",
+        "terms": [],
+        "label": "none"
+      },
+      "phi_true": [],
+      "selection_stage": "none",
+      "measurement_missing_rule": "marginalize_not_zero_fill"
+    }
+  }
+}

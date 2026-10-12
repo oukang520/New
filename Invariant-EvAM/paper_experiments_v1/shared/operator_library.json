@@ -1,0 +1,2162 @@
+{
+  "protocol_version": "1.0",
+  "status": "FROZEN",
+  "operators": {
+    "D3_SPARSE5__full__F0": {
+      "operator_id": "D3_SPARSE5__full__F0",
+      "d": 3,
+      "panel_mask": [
+        1,
+        1,
+        1
+      ],
+      "panel_width": 3,
+      "feature": {
+        "kind": "terms",
+        "terms": [
+          [
+            0
+          ]
+        ],
+        "label": "single_0"
+      },
+      "phi_true": [
+        0.5
+      ],
+      "selection_stage": "before_measurement",
+      "measurement_missing_rule": "marginalize_not_zero_fill"
+    },
+    "D3_SPARSE5__full__F1": {
+      "operator_id": "D3_SPARSE5__full__F1",
+      "d": 3,
+      "panel_mask": [
+        1,
+        1,
+        1
+      ],
+      "panel_width": 3,
+      "feature": {
+        "kind": "terms",
+        "terms": [
+          [
+            1
+          ]
+        ],
+        "label": "single_1"
+      },
+      "phi_true": [
+        1.0
+      ],
+      "selection_stage": "before_measurement",
+      "measurement_missing_rule": "marginalize_not_zero_fill"
+    },
+    "D3_SPARSE5__full__F2": {
+      "operator_id": "D3_SPARSE5__full__F2",
+      "d": 3,
+      "panel_mask": [
+        1,
+        1,
+        1
+      ],
+      "panel_width": 3,
+      "feature": {
+        "kind": "burden",
+        "terms": [],
+        "label": "burden"
+      },
+      "phi_true": [
+        0.5
+      ],
+      "selection_stage": "before_measurement",
+      "measurement_missing_rule": "marginalize_not_zero_fill"
+    },
+    "D3_SPARSE5__full__F3": {
+      "operator_id": "D3_SPARSE5__full__F3",
+      "d": 3,
+      "panel_mask": [
+        1,
+        1,
+        1
+      ],
+      "panel_width": 3,
+      "feature": {
+        "kind": "terms",
+        "terms": [
+          [
+            0
+          ],
+          [
+            2
+          ]
+        ],
+        "label": "pair_vector"
+      },
+      "phi_true": [
+        0.5,
+        -0.5
+      ],
+      "selection_stage": "before_measurement",
+      "measurement_missing_rule": "marginalize_not_zero_fill"
+    },
+    "D3_SPARSE5__full__F4": {
+      "operator_id": "D3_SPARSE5__full__F4",
+      "d": 3,
+      "panel_mask": [
+        1,
+        1,
+        1
+      ],
+      "panel_width": 3,
+      "feature": {
+        "kind": "terms",
+        "terms": [
+          [
+            0,
+            1
+          ]
+        ],
+        "label": "cooccur_01"
+      },
+      "phi_true": [
+        1.0
+      ],
+      "selection_stage": "before_measurement",
+      "measurement_missing_rule": "marginalize_not_zero_fill"
+    },
+    "D3_SPARSE5__full__F5": {
+      "operator_id": "D3_SPARSE5__full__F5",
+      "d": 3,
+      "panel_mask": [
+        1,
+        1,
+        1
+      ],
+      "panel_width": 3,
+      "feature": {
+        "kind": "terms",
+        "terms": [
+          [
+            2
+          ]
+        ],
+        "label": "single_2"
+      },
+      "phi_true": [
+        1.5
+      ],
+      "selection_stage": "before_measurement",
+      "measurement_missing_rule": "marginalize_not_zero_fill"
+    },
+    "D3_SPARSE5__drop_last__F0": {
+      "operator_id": "D3_SPARSE5__drop_last__F0",
+      "d": 3,
+      "panel_mask": [
+        1,
+        1,
+        0
+      ],
+      "panel_width": 2,
+      "feature": {
+        "kind": "terms",
+        "terms": [
+          [
+            0
+          ]
+        ],
+        "label": "single_0"
+      },
+      "phi_true": [
+        0.5
+      ],
+      "selection_stage": "before_measurement",
+      "measurement_missing_rule": "marginalize_not_zero_fill"
+    },
+    "D3_SPARSE5__drop_source__F1": {
+      "operator_id": "D3_SPARSE5__drop_source__F1",
+      "d": 3,
+      "panel_mask": [
+        0,
+        1,
+        1
+      ],
+      "panel_width": 2,
+      "feature": {
+        "kind": "terms",
+        "terms": [
+          [
+            1
+          ]
+        ],
+        "label": "single_1"
+      },
+      "phi_true": [
+        1.0
+      ],
+      "selection_stage": "before_measurement",
+      "measurement_missing_rule": "marginalize_not_zero_fill"
+    },
+    "D3_SPARSE5__drop_target__F2": {
+      "operator_id": "D3_SPARSE5__drop_target__F2",
+      "d": 3,
+      "panel_mask": [
+        1,
+        0,
+        1
+      ],
+      "panel_width": 2,
+      "feature": {
+        "kind": "burden",
+        "terms": [],
+        "label": "burden"
+      },
+      "phi_true": [
+        0.5
+      ],
+      "selection_stage": "before_measurement",
+      "measurement_missing_rule": "marginalize_not_zero_fill"
+    },
+    "D3_SPARSE5__drop_last__F3": {
+      "operator_id": "D3_SPARSE5__drop_last__F3",
+      "d": 3,
+      "panel_mask": [
+        1,
+        1,
+        0
+      ],
+      "panel_width": 2,
+      "feature": {
+        "kind": "terms",
+        "terms": [
+          [
+            0
+          ],
+          [
+            2
+          ]
+        ],
+        "label": "pair_vector"
+      },
+      "phi_true": [
+        0.5,
+        -0.5
+      ],
+      "selection_stage": "before_measurement",
+      "measurement_missing_rule": "marginalize_not_zero_fill"
+    },
+    "D3_SPARSE5__drop_source__F3": {
+      "operator_id": "D3_SPARSE5__drop_source__F3",
+      "d": 3,
+      "panel_mask": [
+        0,
+        1,
+        1
+      ],
+      "panel_width": 2,
+      "feature": {
+        "kind": "terms",
+        "terms": [
+          [
+            0
+          ],
+          [
+            2
+          ]
+        ],
+        "label": "pair_vector"
+      },
+      "phi_true": [
+        0.5,
+        -0.5
+      ],
+      "selection_stage": "before_measurement",
+      "measurement_missing_rule": "marginalize_not_zero_fill"
+    },
+    "D3_SPARSE5__pair01__F4": {
+      "operator_id": "D3_SPARSE5__pair01__F4",
+      "d": 3,
+      "panel_mask": [
+        1,
+        1,
+        0
+      ],
+      "panel_width": 2,
+      "feature": {
+        "kind": "terms",
+        "terms": [
+          [
+            0,
+            1
+          ]
+        ],
+        "label": "cooccur_01"
+      },
+      "phi_true": [
+        1.0
+      ],
+      "selection_stage": "before_measurement",
+      "measurement_missing_rule": "marginalize_not_zero_fill"
+    },
+    "D3_SPARSE5__drop_source__F4": {
+      "operator_id": "D3_SPARSE5__drop_source__F4",
+      "d": 3,
+      "panel_mask": [
+        0,
+        1,
+        1
+      ],
+      "panel_width": 2,
+      "feature": {
+        "kind": "terms",
+        "terms": [
+          [
+            0,
+            1
+          ]
+        ],
+        "label": "cooccur_01"
+      },
+      "phi_true": [
+        1.0
+      ],
+      "selection_stage": "before_measurement",
+      "measurement_missing_rule": "marginalize_not_zero_fill"
+    },
+    "D3_SPARSE5__source_side__F5": {
+      "operator_id": "D3_SPARSE5__source_side__F5",
+      "d": 3,
+      "panel_mask": [
+        1,
+        0,
+        1
+      ],
+      "panel_width": 2,
+      "feature": {
+        "kind": "terms",
+        "terms": [
+          [
+            2
+          ]
+        ],
+        "label": "single_2"
+      },
+      "phi_true": [
+        1.5
+      ],
+      "selection_stage": "before_measurement",
+      "measurement_missing_rule": "marginalize_not_zero_fill"
+    },
+    "D3_SPARSE5__target_side__F5": {
+      "operator_id": "D3_SPARSE5__target_side__F5",
+      "d": 3,
+      "panel_mask": [
+        0,
+        1,
+        1
+      ],
+      "panel_width": 2,
+      "feature": {
+        "kind": "terms",
+        "terms": [
+          [
+            2
+          ]
+        ],
+        "label": "single_2"
+      },
+      "phi_true": [
+        1.5
+      ],
+      "selection_stage": "before_measurement",
+      "measurement_missing_rule": "marginalize_not_zero_fill"
+    },
+    "D3_SPARSE5__drop_last__F1": {
+      "operator_id": "D3_SPARSE5__drop_last__F1",
+      "d": 3,
+      "panel_mask": [
+        1,
+        1,
+        0
+      ],
+      "panel_width": 2,
+      "feature": {
+        "kind": "terms",
+        "terms": [
+          [
+            1
+          ]
+        ],
+        "label": "single_1"
+      },
+      "phi_true": [
+        1.0
+      ],
+      "selection_stage": "before_measurement",
+      "measurement_missing_rule": "marginalize_not_zero_fill"
+    },
+    "D3_SPARSE5__drop_last__F2": {
+      "operator_id": "D3_SPARSE5__drop_last__F2",
+      "d": 3,
+      "panel_mask": [
+        1,
+        1,
+        0
+      ],
+      "panel_width": 2,
+      "feature": {
+        "kind": "burden",
+        "terms": [],
+        "label": "burden"
+      },
+      "phi_true": [
+        0.5
+      ],
+      "selection_stage": "before_measurement",
+      "measurement_missing_rule": "marginalize_not_zero_fill"
+    },
+    "D3_SPARSE5__drop_target__F5": {
+      "operator_id": "D3_SPARSE5__drop_target__F5",
+      "d": 3,
+      "panel_mask": [
+        1,
+        0,
+        1
+      ],
+      "panel_width": 2,
+      "feature": {
+        "kind": "terms",
+        "terms": [
+          [
+            2
+          ]
+        ],
+        "label": "single_2"
+      },
+      "phi_true": [
+        1.5
+      ],
+      "selection_stage": "before_measurement",
+      "measurement_missing_rule": "marginalize_not_zero_fill"
+    },
+    "D3_SPARSE5__source_side__F0": {
+      "operator_id": "D3_SPARSE5__source_side__F0",
+      "d": 3,
+      "panel_mask": [
+        1,
+        0,
+        1
+      ],
+      "panel_width": 2,
+      "feature": {
+        "kind": "terms",
+        "terms": [
+          [
+            0
+          ]
+        ],
+        "label": "single_0"
+      },
+      "phi_true": [
+        0.5
+      ],
+      "selection_stage": "before_measurement",
+      "measurement_missing_rule": "marginalize_not_zero_fill"
+    },
+    "D3_SPARSE5__target_side__F1": {
+      "operator_id": "D3_SPARSE5__target_side__F1",
+      "d": 3,
+      "panel_mask": [
+        0,
+        1,
+        1
+      ],
+      "panel_width": 2,
+      "feature": {
+        "kind": "terms",
+        "terms": [
+          [
+            1
+          ]
+        ],
+        "label": "single_1"
+      },
+      "phi_true": [
+        1.0
+      ],
+      "selection_stage": "before_measurement",
+      "measurement_missing_rule": "marginalize_not_zero_fill"
+    },
+    "D3_SPARSE5__source_side__F2": {
+      "operator_id": "D3_SPARSE5__source_side__F2",
+      "d": 3,
+      "panel_mask": [
+        1,
+        0,
+        1
+      ],
+      "panel_width": 2,
+      "feature": {
+        "kind": "burden",
+        "terms": [],
+        "label": "burden"
+      },
+      "phi_true": [
+        0.5
+      ],
+      "selection_stage": "before_measurement",
+      "measurement_missing_rule": "marginalize_not_zero_fill"
+    },
+    "D3_SPARSE5__target_side__F4": {
+      "operator_id": "D3_SPARSE5__target_side__F4",
+      "d": 3,
+      "panel_mask": [
+        0,
+        1,
+        1
+      ],
+      "panel_width": 2,
+      "feature": {
+        "kind": "terms",
+        "terms": [
+          [
+            0,
+            1
+          ]
+        ],
+        "label": "cooccur_01"
+      },
+      "phi_true": [
+        1.0
+      ],
+      "selection_stage": "before_measurement",
+      "measurement_missing_rule": "marginalize_not_zero_fill"
+    },
+    "D3_FULL9__full__F0": {
+      "operator_id": "D3_FULL9__full__F0",
+      "d": 3,
+      "panel_mask": [
+        1,
+        1,
+        1
+      ],
+      "panel_width": 3,
+      "feature": {
+        "kind": "terms",
+        "terms": [
+          [
+            0
+          ]
+        ],
+        "label": "single_0"
+      },
+      "phi_true": [
+        0.5
+      ],
+      "selection_stage": "before_measurement",
+      "measurement_missing_rule": "marginalize_not_zero_fill"
+    },
+    "D3_FULL9__full__F1": {
+      "operator_id": "D3_FULL9__full__F1",
+      "d": 3,
+      "panel_mask": [
+        1,
+        1,
+        1
+      ],
+      "panel_width": 3,
+      "feature": {
+        "kind": "terms",
+        "terms": [
+          [
+            1
+          ]
+        ],
+        "label": "single_1"
+      },
+      "phi_true": [
+        1.0
+      ],
+      "selection_stage": "before_measurement",
+      "measurement_missing_rule": "marginalize_not_zero_fill"
+    },
+    "D3_FULL9__full__F2": {
+      "operator_id": "D3_FULL9__full__F2",
+      "d": 3,
+      "panel_mask": [
+        1,
+        1,
+        1
+      ],
+      "panel_width": 3,
+      "feature": {
+        "kind": "burden",
+        "terms": [],
+        "label": "burden"
+      },
+      "phi_true": [
+        0.5
+      ],
+      "selection_stage": "before_measurement",
+      "measurement_missing_rule": "marginalize_not_zero_fill"
+    },
+    "D3_FULL9__full__F3": {
+      "operator_id": "D3_FULL9__full__F3",
+      "d": 3,
+      "panel_mask": [
+        1,
+        1,
+        1
+      ],
+      "panel_width": 3,
+      "feature": {
+        "kind": "terms",
+        "terms": [
+          [
+            0
+          ],
+          [
+            2
+          ]
+        ],
+        "label": "pair_vector"
+      },
+      "phi_true": [
+        0.5,
+        -0.5
+      ],
+      "selection_stage": "before_measurement",
+      "measurement_missing_rule": "marginalize_not_zero_fill"
+    },
+    "D3_FULL9__full__F4": {
+      "operator_id": "D3_FULL9__full__F4",
+      "d": 3,
+      "panel_mask": [
+        1,
+        1,
+        1
+      ],
+      "panel_width": 3,
+      "feature": {
+        "kind": "terms",
+        "terms": [
+          [
+            0,
+            1
+          ]
+        ],
+        "label": "cooccur_01"
+      },
+      "phi_true": [
+        1.0
+      ],
+      "selection_stage": "before_measurement",
+      "measurement_missing_rule": "marginalize_not_zero_fill"
+    },
+    "D3_FULL9__full__F5": {
+      "operator_id": "D3_FULL9__full__F5",
+      "d": 3,
+      "panel_mask": [
+        1,
+        1,
+        1
+      ],
+      "panel_width": 3,
+      "feature": {
+        "kind": "terms",
+        "terms": [
+          [
+            2
+          ]
+        ],
+        "label": "single_2"
+      },
+      "phi_true": [
+        1.5
+      ],
+      "selection_stage": "before_measurement",
+      "measurement_missing_rule": "marginalize_not_zero_fill"
+    },
+    "D3_FULL9__drop_last__F0": {
+      "operator_id": "D3_FULL9__drop_last__F0",
+      "d": 3,
+      "panel_mask": [
+        1,
+        1,
+        0
+      ],
+      "panel_width": 2,
+      "feature": {
+        "kind": "terms",
+        "terms": [
+          [
+            0
+          ]
+        ],
+        "label": "single_0"
+      },
+      "phi_true": [
+        0.5
+      ],
+      "selection_stage": "before_measurement",
+      "measurement_missing_rule": "marginalize_not_zero_fill"
+    },
+    "D3_FULL9__drop_source__F1": {
+      "operator_id": "D3_FULL9__drop_source__F1",
+      "d": 3,
+      "panel_mask": [
+        0,
+        1,
+        1
+      ],
+      "panel_width": 2,
+      "feature": {
+        "kind": "terms",
+        "terms": [
+          [
+            1
+          ]
+        ],
+        "label": "single_1"
+      },
+      "phi_true": [
+        1.0
+      ],
+      "selection_stage": "before_measurement",
+      "measurement_missing_rule": "marginalize_not_zero_fill"
+    },
+    "D3_FULL9__drop_target__F2": {
+      "operator_id": "D3_FULL9__drop_target__F2",
+      "d": 3,
+      "panel_mask": [
+        1,
+        0,
+        1
+      ],
+      "panel_width": 2,
+      "feature": {
+        "kind": "burden",
+        "terms": [],
+        "label": "burden"
+      },
+      "phi_true": [
+        0.5
+      ],
+      "selection_stage": "before_measurement",
+      "measurement_missing_rule": "marginalize_not_zero_fill"
+    },
+    "D3_FULL9__drop_last__F3": {
+      "operator_id": "D3_FULL9__drop_last__F3",
+      "d": 3,
+      "panel_mask": [
+        1,
+        1,
+        0
+      ],
+      "panel_width": 2,
+      "feature": {
+        "kind": "terms",
+        "terms": [
+          [
+            0
+          ],
+          [
+            2
+          ]
+        ],
+        "label": "pair_vector"
+      },
+      "phi_true": [
+        0.5,
+        -0.5
+      ],
+      "selection_stage": "before_measurement",
+      "measurement_missing_rule": "marginalize_not_zero_fill"
+    },
+    "D3_FULL9__drop_source__F3": {
+      "operator_id": "D3_FULL9__drop_source__F3",
+      "d": 3,
+      "panel_mask": [
+        0,
+        1,
+        1
+      ],
+      "panel_width": 2,
+      "feature": {
+        "kind": "terms",
+        "terms": [
+          [
+            0
+          ],
+          [
+            2
+          ]
+        ],
+        "label": "pair_vector"
+      },
+      "phi_true": [
+        0.5,
+        -0.5
+      ],
+      "selection_stage": "before_measurement",
+      "measurement_missing_rule": "marginalize_not_zero_fill"
+    },
+    "D3_FULL9__pair01__F4": {
+      "operator_id": "D3_FULL9__pair01__F4",
+      "d": 3,
+      "panel_mask": [
+        1,
+        1,
+        0
+      ],
+      "panel_width": 2,
+      "feature": {
+        "kind": "terms",
+        "terms": [
+          [
+            0,
+            1
+          ]
+        ],
+        "label": "cooccur_01"
+      },
+      "phi_true": [
+        1.0
+      ],
+      "selection_stage": "before_measurement",
+      "measurement_missing_rule": "marginalize_not_zero_fill"
+    },
+    "D3_FULL9__drop_source__F4": {
+      "operator_id": "D3_FULL9__drop_source__F4",
+      "d": 3,
+      "panel_mask": [
+        0,
+        1,
+        1
+      ],
+      "panel_width": 2,
+      "feature": {
+        "kind": "terms",
+        "terms": [
+          [
+            0,
+            1
+          ]
+        ],
+        "label": "cooccur_01"
+      },
+      "phi_true": [
+        1.0
+      ],
+      "selection_stage": "before_measurement",
+      "measurement_missing_rule": "marginalize_not_zero_fill"
+    },
+    "D3_FULL9__source_side__F5": {
+      "operator_id": "D3_FULL9__source_side__F5",
+      "d": 3,
+      "panel_mask": [
+        1,
+        0,
+        1
+      ],
+      "panel_width": 2,
+      "feature": {
+        "kind": "terms",
+        "terms": [
+          [
+            2
+          ]
+        ],
+        "label": "single_2"
+      },
+      "phi_true": [
+        1.5
+      ],
+      "selection_stage": "before_measurement",
+      "measurement_missing_rule": "marginalize_not_zero_fill"
+    },
+    "D3_FULL9__target_side__F5": {
+      "operator_id": "D3_FULL9__target_side__F5",
+      "d": 3,
+      "panel_mask": [
+        0,
+        1,
+        1
+      ],
+      "panel_width": 2,
+      "feature": {
+        "kind": "terms",
+        "terms": [
+          [
+            2
+          ]
+        ],
+        "label": "single_2"
+      },
+      "phi_true": [
+        1.5
+      ],
+      "selection_stage": "before_measurement",
+      "measurement_missing_rule": "marginalize_not_zero_fill"
+    },
+    "D3_FULL9__drop_last__F1": {
+      "operator_id": "D3_FULL9__drop_last__F1",
+      "d": 3,
+      "panel_mask": [
+        1,
+        1,
+        0
+      ],
+      "panel_width": 2,
+      "feature": {
+        "kind": "terms",
+        "terms": [
+          [
+            1
+          ]
+        ],
+        "label": "single_1"
+      },
+      "phi_true": [
+        1.0
+      ],
+      "selection_stage": "before_measurement",
+      "measurement_missing_rule": "marginalize_not_zero_fill"
+    },
+    "D3_FULL9__drop_last__F2": {
+      "operator_id": "D3_FULL9__drop_last__F2",
+      "d": 3,
+      "panel_mask": [
+        1,
+        1,
+        0
+      ],
+      "panel_width": 2,
+      "feature": {
+        "kind": "burden",
+        "terms": [],
+        "label": "burden"
+      },
+      "phi_true": [
+        0.5
+      ],
+      "selection_stage": "before_measurement",
+      "measurement_missing_rule": "marginalize_not_zero_fill"
+    },
+    "D3_FULL9__drop_target__F5": {
+      "operator_id": "D3_FULL9__drop_target__F5",
+      "d": 3,
+      "panel_mask": [
+        1,
+        0,
+        1
+      ],
+      "panel_width": 2,
+      "feature": {
+        "kind": "terms",
+        "terms": [
+          [
+            2
+          ]
+        ],
+        "label": "single_2"
+      },
+      "phi_true": [
+        1.5
+      ],
+      "selection_stage": "before_measurement",
+      "measurement_missing_rule": "marginalize_not_zero_fill"
+    },
+    "D3_FULL9__source_side__F0": {
+      "operator_id": "D3_FULL9__source_side__F0",
+      "d": 3,
+      "panel_mask": [
+        1,
+        0,
+        1
+      ],
+      "panel_width": 2,
+      "feature": {
+        "kind": "terms",
+        "terms": [
+          [
+            0
+          ]
+        ],
+        "label": "single_0"
+      },
+      "phi_true": [
+        0.5
+      ],
+      "selection_stage": "before_measurement",
+      "measurement_missing_rule": "marginalize_not_zero_fill"
+    },
+    "D3_FULL9__target_side__F1": {
+      "operator_id": "D3_FULL9__target_side__F1",
+      "d": 3,
+      "panel_mask": [
+        0,
+        1,
+        1
+      ],
+      "panel_width": 2,
+      "feature": {
+        "kind": "terms",
+        "terms": [
+          [
+            1
+          ]
+        ],
+        "label": "single_1"
+      },
+      "phi_true": [
+        1.0
+      ],
+      "selection_stage": "before_measurement",
+      "measurement_missing_rule": "marginalize_not_zero_fill"
+    },
+    "D3_FULL9__source_side__F2": {
+      "operator_id": "D3_FULL9__source_side__F2",
+      "d": 3,
+      "panel_mask": [
+        1,
+        0,
+        1
+      ],
+      "panel_width": 2,
+      "feature": {
+        "kind": "burden",
+        "terms": [],
+        "label": "burden"
+      },
+      "phi_true": [
+        0.5
+      ],
+      "selection_stage": "before_measurement",
+      "measurement_missing_rule": "marginalize_not_zero_fill"
+    },
+    "D3_FULL9__target_side__F4": {
+      "operator_id": "D3_FULL9__target_side__F4",
+      "d": 3,
+      "panel_mask": [
+        0,
+        1,
+        1
+      ],
+      "panel_width": 2,
+      "feature": {
+        "kind": "terms",
+        "terms": [
+          [
+            0,
+            1
+          ]
+        ],
+        "label": "cooccur_01"
+      },
+      "phi_true": [
+        1.0
+      ],
+      "selection_stage": "before_measurement",
+      "measurement_missing_rule": "marginalize_not_zero_fill"
+    },
+    "D4_SPARSE10__full__F0": {
+      "operator_id": "D4_SPARSE10__full__F0",
+      "d": 4,
+      "panel_mask": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "panel_width": 4,
+      "feature": {
+        "kind": "terms",
+        "terms": [
+          [
+            0
+          ]
+        ],
+        "label": "single_0"
+      },
+      "phi_true": [
+        0.5
+      ],
+      "selection_stage": "before_measurement",
+      "measurement_missing_rule": "marginalize_not_zero_fill"
+    },
+    "D4_SPARSE10__full__F1": {
+      "operator_id": "D4_SPARSE10__full__F1",
+      "d": 4,
+      "panel_mask": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "panel_width": 4,
+      "feature": {
+        "kind": "terms",
+        "terms": [
+          [
+            1
+          ]
+        ],
+        "label": "single_1"
+      },
+      "phi_true": [
+        1.0
+      ],
+      "selection_stage": "before_measurement",
+      "measurement_missing_rule": "marginalize_not_zero_fill"
+    },
+    "D4_SPARSE10__full__F2": {
+      "operator_id": "D4_SPARSE10__full__F2",
+      "d": 4,
+      "panel_mask": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "panel_width": 4,
+      "feature": {
+        "kind": "burden",
+        "terms": [],
+        "label": "burden"
+      },
+      "phi_true": [
+        0.5
+      ],
+      "selection_stage": "before_measurement",
+      "measurement_missing_rule": "marginalize_not_zero_fill"
+    },
+    "D4_SPARSE10__full__F3": {
+      "operator_id": "D4_SPARSE10__full__F3",
+      "d": 4,
+      "panel_mask": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "panel_width": 4,
+      "feature": {
+        "kind": "terms",
+        "terms": [
+          [
+            0
+          ],
+          [
+            3
+          ]
+        ],
+        "label": "pair_vector"
+      },
+      "phi_true": [
+        0.5,
+        -0.5
+      ],
+      "selection_stage": "before_measurement",
+      "measurement_missing_rule": "marginalize_not_zero_fill"
+    },
+    "D4_SPARSE10__full__F4": {
+      "operator_id": "D4_SPARSE10__full__F4",
+      "d": 4,
+      "panel_mask": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "panel_width": 4,
+      "feature": {
+        "kind": "terms",
+        "terms": [
+          [
+            0,
+            1
+          ]
+        ],
+        "label": "cooccur_01"
+      },
+      "phi_true": [
+        1.0
+      ],
+      "selection_stage": "before_measurement",
+      "measurement_missing_rule": "marginalize_not_zero_fill"
+    },
+    "D4_SPARSE10__full__F5": {
+      "operator_id": "D4_SPARSE10__full__F5",
+      "d": 4,
+      "panel_mask": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "panel_width": 4,
+      "feature": {
+        "kind": "terms",
+        "terms": [
+          [
+            3
+          ]
+        ],
+        "label": "single_3"
+      },
+      "phi_true": [
+        1.5
+      ],
+      "selection_stage": "before_measurement",
+      "measurement_missing_rule": "marginalize_not_zero_fill"
+    },
+    "D4_SPARSE10__drop_last__F0": {
+      "operator_id": "D4_SPARSE10__drop_last__F0",
+      "d": 4,
+      "panel_mask": [
+        1,
+        1,
+        1,
+        0
+      ],
+      "panel_width": 3,
+      "feature": {
+        "kind": "terms",
+        "terms": [
+          [
+            0
+          ]
+        ],
+        "label": "single_0"
+      },
+      "phi_true": [
+        0.5
+      ],
+      "selection_stage": "before_measurement",
+      "measurement_missing_rule": "marginalize_not_zero_fill"
+    },
+    "D4_SPARSE10__drop_source__F1": {
+      "operator_id": "D4_SPARSE10__drop_source__F1",
+      "d": 4,
+      "panel_mask": [
+        0,
+        1,
+        1,
+        1
+      ],
+      "panel_width": 3,
+      "feature": {
+        "kind": "terms",
+        "terms": [
+          [
+            1
+          ]
+        ],
+        "label": "single_1"
+      },
+      "phi_true": [
+        1.0
+      ],
+      "selection_stage": "before_measurement",
+      "measurement_missing_rule": "marginalize_not_zero_fill"
+    },
+    "D4_SPARSE10__drop_target__F2": {
+      "operator_id": "D4_SPARSE10__drop_target__F2",
+      "d": 4,
+      "panel_mask": [
+        1,
+        0,
+        1,
+        1
+      ],
+      "panel_width": 3,
+      "feature": {
+        "kind": "burden",
+        "terms": [],
+        "label": "burden"
+      },
+      "phi_true": [
+        0.5
+      ],
+      "selection_stage": "before_measurement",
+      "measurement_missing_rule": "marginalize_not_zero_fill"
+    },
+    "D4_SPARSE10__drop_last__F3": {
+      "operator_id": "D4_SPARSE10__drop_last__F3",
+      "d": 4,
+      "panel_mask": [
+        1,
+        1,
+        1,
+        0
+      ],
+      "panel_width": 3,
+      "feature": {
+        "kind": "terms",
+        "terms": [
+          [
+            0
+          ],
+          [
+            3
+          ]
+        ],
+        "label": "pair_vector"
+      },
+      "phi_true": [
+        0.5,
+        -0.5
+      ],
+      "selection_stage": "before_measurement",
+      "measurement_missing_rule": "marginalize_not_zero_fill"
+    },
+    "D4_SPARSE10__drop_source__F3": {
+      "operator_id": "D4_SPARSE10__drop_source__F3",
+      "d": 4,
+      "panel_mask": [
+        0,
+        1,
+        1,
+        1
+      ],
+      "panel_width": 3,
+      "feature": {
+        "kind": "terms",
+        "terms": [
+          [
+            0
+          ],
+          [
+            3
+          ]
+        ],
+        "label": "pair_vector"
+      },
+      "phi_true": [
+        0.5,
+        -0.5
+      ],
+      "selection_stage": "before_measurement",
+      "measurement_missing_rule": "marginalize_not_zero_fill"
+    },
+    "D4_SPARSE10__pair01__F4": {
+      "operator_id": "D4_SPARSE10__pair01__F4",
+      "d": 4,
+      "panel_mask": [
+        1,
+        1,
+        0,
+        0
+      ],
+      "panel_width": 2,
+      "feature": {
+        "kind": "terms",
+        "terms": [
+          [
+            0,
+            1
+          ]
+        ],
+        "label": "cooccur_01"
+      },
+      "phi_true": [
+        1.0
+      ],
+      "selection_stage": "before_measurement",
+      "measurement_missing_rule": "marginalize_not_zero_fill"
+    },
+    "D4_SPARSE10__drop_source__F4": {
+      "operator_id": "D4_SPARSE10__drop_source__F4",
+      "d": 4,
+      "panel_mask": [
+        0,
+        1,
+        1,
+        1
+      ],
+      "panel_width": 3,
+      "feature": {
+        "kind": "terms",
+        "terms": [
+          [
+            0,
+            1
+          ]
+        ],
+        "label": "cooccur_01"
+      },
+      "phi_true": [
+        1.0
+      ],
+      "selection_stage": "before_measurement",
+      "measurement_missing_rule": "marginalize_not_zero_fill"
+    },
+    "D4_SPARSE10__source_side__F5": {
+      "operator_id": "D4_SPARSE10__source_side__F5",
+      "d": 4,
+      "panel_mask": [
+        1,
+        0,
+        1,
+        1
+      ],
+      "panel_width": 3,
+      "feature": {
+        "kind": "terms",
+        "terms": [
+          [
+            3
+          ]
+        ],
+        "label": "single_3"
+      },
+      "phi_true": [
+        1.5
+      ],
+      "selection_stage": "before_measurement",
+      "measurement_missing_rule": "marginalize_not_zero_fill"
+    },
+    "D4_SPARSE10__target_side__F5": {
+      "operator_id": "D4_SPARSE10__target_side__F5",
+      "d": 4,
+      "panel_mask": [
+        0,
+        1,
+        1,
+        1
+      ],
+      "panel_width": 3,
+      "feature": {
+        "kind": "terms",
+        "terms": [
+          [
+            3
+          ]
+        ],
+        "label": "single_3"
+      },
+      "phi_true": [
+        1.5
+      ],
+      "selection_stage": "before_measurement",
+      "measurement_missing_rule": "marginalize_not_zero_fill"
+    },
+    "D4_SPARSE10__drop_last__F1": {
+      "operator_id": "D4_SPARSE10__drop_last__F1",
+      "d": 4,
+      "panel_mask": [
+        1,
+        1,
+        1,
+        0
+      ],
+      "panel_width": 3,
+      "feature": {
+        "kind": "terms",
+        "terms": [
+          [
+            1
+          ]
+        ],
+        "label": "single_1"
+      },
+      "phi_true": [
+        1.0
+      ],
+      "selection_stage": "before_measurement",
+      "measurement_missing_rule": "marginalize_not_zero_fill"
+    },
+    "D4_SPARSE10__drop_last__F2": {
+      "operator_id": "D4_SPARSE10__drop_last__F2",
+      "d": 4,
+      "panel_mask": [
+        1,
+        1,
+        1,
+        0
+      ],
+      "panel_width": 3,
+      "feature": {
+        "kind": "burden",
+        "terms": [],
+        "label": "burden"
+      },
+      "phi_true": [
+        0.5
+      ],
+      "selection_stage": "before_measurement",
+      "measurement_missing_rule": "marginalize_not_zero_fill"
+    },
+    "D4_SPARSE10__drop_target__F5": {
+      "operator_id": "D4_SPARSE10__drop_target__F5",
+      "d": 4,
+      "panel_mask": [
+        1,
+        0,
+        1,
+        1
+      ],
+      "panel_width": 3,
+      "feature": {
+        "kind": "terms",
+        "terms": [
+          [
+            3
+          ]
+        ],
+        "label": "single_3"
+      },
+      "phi_true": [
+        1.5
+      ],
+      "selection_stage": "before_measurement",
+      "measurement_missing_rule": "marginalize_not_zero_fill"
+    },
+    "D4_SPARSE10__source_side__F0": {
+      "operator_id": "D4_SPARSE10__source_side__F0",
+      "d": 4,
+      "panel_mask": [
+        1,
+        0,
+        1,
+        1
+      ],
+      "panel_width": 3,
+      "feature": {
+        "kind": "terms",
+        "terms": [
+          [
+            0
+          ]
+        ],
+        "label": "single_0"
+      },
+      "phi_true": [
+        0.5
+      ],
+      "selection_stage": "before_measurement",
+      "measurement_missing_rule": "marginalize_not_zero_fill"
+    },
+    "D4_SPARSE10__target_side__F1": {
+      "operator_id": "D4_SPARSE10__target_side__F1",
+      "d": 4,
+      "panel_mask": [
+        0,
+        1,
+        1,
+        1
+      ],
+      "panel_width": 3,
+      "feature": {
+        "kind": "terms",
+        "terms": [
+          [
+            1
+          ]
+        ],
+        "label": "single_1"
+      },
+      "phi_true": [
+        1.0
+      ],
+      "selection_stage": "before_measurement",
+      "measurement_missing_rule": "marginalize_not_zero_fill"
+    },
+    "D4_SPARSE10__source_side__F2": {
+      "operator_id": "D4_SPARSE10__source_side__F2",
+      "d": 4,
+      "panel_mask": [
+        1,
+        0,
+        1,
+        1
+      ],
+      "panel_width": 3,
+      "feature": {
+        "kind": "burden",
+        "terms": [],
+        "label": "burden"
+      },
+      "phi_true": [
+        0.5
+      ],
+      "selection_stage": "before_measurement",
+      "measurement_missing_rule": "marginalize_not_zero_fill"
+    },
+    "D4_SPARSE10__target_side__F4": {
+      "operator_id": "D4_SPARSE10__target_side__F4",
+      "d": 4,
+      "panel_mask": [
+        0,
+        1,
+        1,
+        1
+      ],
+      "panel_width": 3,
+      "feature": {
+        "kind": "terms",
+        "terms": [
+          [
+            0,
+            1
+          ]
+        ],
+        "label": "cooccur_01"
+      },
+      "phi_true": [
+        1.0
+      ],
+      "selection_stage": "before_measurement",
+      "measurement_missing_rule": "marginalize_not_zero_fill"
+    },
+    "D4_FULL16__full__F0": {
+      "operator_id": "D4_FULL16__full__F0",
+      "d": 4,
+      "panel_mask": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "panel_width": 4,
+      "feature": {
+        "kind": "terms",
+        "terms": [
+          [
+            0
+          ]
+        ],
+        "label": "single_0"
+      },
+      "phi_true": [
+        0.5
+      ],
+      "selection_stage": "before_measurement",
+      "measurement_missing_rule": "marginalize_not_zero_fill"
+    },
+    "D4_FULL16__full__F1": {
+      "operator_id": "D4_FULL16__full__F1",
+      "d": 4,
+      "panel_mask": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "panel_width": 4,
+      "feature": {
+        "kind": "terms",
+        "terms": [
+          [
+            1
+          ]
+        ],
+        "label": "single_1"
+      },
+      "phi_true": [
+        1.0
+      ],
+      "selection_stage": "before_measurement",
+      "measurement_missing_rule": "marginalize_not_zero_fill"
+    },
+    "D4_FULL16__full__F2": {
+      "operator_id": "D4_FULL16__full__F2",
+      "d": 4,
+      "panel_mask": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "panel_width": 4,
+      "feature": {
+        "kind": "burden",
+        "terms": [],
+        "label": "burden"
+      },
+      "phi_true": [
+        0.5
+      ],
+      "selection_stage": "before_measurement",
+      "measurement_missing_rule": "marginalize_not_zero_fill"
+    },
+    "D4_FULL16__full__F3": {
+      "operator_id": "D4_FULL16__full__F3",
+      "d": 4,
+      "panel_mask": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "panel_width": 4,
+      "feature": {
+        "kind": "terms",
+        "terms": [
+          [
+            0
+          ],
+          [
+            3
+          ]
+        ],
+        "label": "pair_vector"
+      },
+      "phi_true": [
+        0.5,
+        -0.5
+      ],
+      "selection_stage": "before_measurement",
+      "measurement_missing_rule": "marginalize_not_zero_fill"
+    },
+    "D4_FULL16__full__F4": {
+      "operator_id": "D4_FULL16__full__F4",
+      "d": 4,
+      "panel_mask": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "panel_width": 4,
+      "feature": {
+        "kind": "terms",
+        "terms": [
+          [
+            0,
+            1
+          ]
+        ],
+        "label": "cooccur_01"
+      },
+      "phi_true": [
+        1.0
+      ],
+      "selection_stage": "before_measurement",
+      "measurement_missing_rule": "marginalize_not_zero_fill"
+    },
+    "D4_FULL16__full__F5": {
+      "operator_id": "D4_FULL16__full__F5",
+      "d": 4,
+      "panel_mask": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "panel_width": 4,
+      "feature": {
+        "kind": "terms",
+        "terms": [
+          [
+            3
+          ]
+        ],
+        "label": "single_3"
+      },
+      "phi_true": [
+        1.5
+      ],
+      "selection_stage": "before_measurement",
+      "measurement_missing_rule": "marginalize_not_zero_fill"
+    },
+    "D4_FULL16__drop_last__F0": {
+      "operator_id": "D4_FULL16__drop_last__F0",
+      "d": 4,
+      "panel_mask": [
+        1,
+        1,
+        1,
+        0
+      ],
+      "panel_width": 3,
+      "feature": {
+        "kind": "terms",
+        "terms": [
+          [
+            0
+          ]
+        ],
+        "label": "single_0"
+      },
+      "phi_true": [
+        0.5
+      ],
+      "selection_stage": "before_measurement",
+      "measurement_missing_rule": "marginalize_not_zero_fill"
+    },
+    "D4_FULL16__drop_source__F1": {
+      "operator_id": "D4_FULL16__drop_source__F1",
+      "d": 4,
+      "panel_mask": [
+        0,
+        1,
+        1,
+        1
+      ],
+      "panel_width": 3,
+      "feature": {
+        "kind": "terms",
+        "terms": [
+          [
+            1
+          ]
+        ],
+        "label": "single_1"
+      },
+      "phi_true": [
+        1.0
+      ],
+      "selection_stage": "before_measurement",
+      "measurement_missing_rule": "marginalize_not_zero_fill"
+    },
+    "D4_FULL16__drop_target__F2": {
+      "operator_id": "D4_FULL16__drop_target__F2",
+      "d": 4,
+      "panel_mask": [
+        1,
+        0,
+        1,
+        1
+      ],
+      "panel_width": 3,
+      "feature": {
+        "kind": "burden",
+        "terms": [],
+        "label": "burden"
+      },
+      "phi_true": [
+        0.5
+      ],
+      "selection_stage": "before_measurement",
+      "measurement_missing_rule": "marginalize_not_zero_fill"
+    },
+    "D4_FULL16__drop_last__F3": {
+      "operator_id": "D4_FULL16__drop_last__F3",
+      "d": 4,
+      "panel_mask": [
+        1,
+        1,
+        1,
+        0
+      ],
+      "panel_width": 3,
+      "feature": {
+        "kind": "terms",
+        "terms": [
+          [
+            0
+          ],
+          [
+            3
+          ]
+        ],
+        "label": "pair_vector"
+      },
+      "phi_true": [
+        0.5,
+        -0.5
+      ],
+      "selection_stage": "before_measurement",
+      "measurement_missing_rule": "marginalize_not_zero_fill"
+    },
+    "D4_FULL16__drop_source__F3": {
+      "operator_id": "D4_FULL16__drop_source__F3",
+      "d": 4,
+      "panel_mask": [
+        0,
+        1,
+        1,
+        1
+      ],
+      "panel_width": 3,
+      "feature": {
+        "kind": "terms",
+        "terms": [
+          [
+            0
+          ],
+          [
+            3
+          ]
+        ],
+        "label": "pair_vector"
+      },
+      "phi_true": [
+        0.5,
+        -0.5
+      ],
+      "selection_stage": "before_measurement",
+      "measurement_missing_rule": "marginalize_not_zero_fill"
+    },
+    "D4_FULL16__pair01__F4": {
+      "operator_id": "D4_FULL16__pair01__F4",
+      "d": 4,
+      "panel_mask": [
+        1,
+        1,
+        0,
+        0
+      ],
+      "panel_width": 2,
+      "feature": {
+        "kind": "terms",
+        "terms": [
+          [
+            0,
+            1
+          ]
+        ],
+        "label": "cooccur_01"
+      },
+      "phi_true": [
+        1.0
+      ],
+      "selection_stage": "before_measurement",
+      "measurement_missing_rule": "marginalize_not_zero_fill"
+    },
+    "D4_FULL16__drop_source__F4": {
+      "operator_id": "D4_FULL16__drop_source__F4",
+      "d": 4,
+      "panel_mask": [
+        0,
+        1,
+        1,
+        1
+      ],
+      "panel_width": 3,
+      "feature": {
+        "kind": "terms",
+        "terms": [
+          [
+            0,
+            1
+          ]
+        ],
+        "label": "cooccur_01"
+      },
+      "phi_true": [
+        1.0
+      ],
+      "selection_stage": "before_measurement",
+      "measurement_missing_rule": "marginalize_not_zero_fill"
+    },
+    "D4_FULL16__source_side__F5": {
+      "operator_id": "D4_FULL16__source_side__F5",
+      "d": 4,
+      "panel_mask": [
+        1,
+        0,
+        1,
+        1
+      ],
+      "panel_width": 3,
+      "feature": {
+        "kind": "terms",
+        "terms": [
+          [
+            3
+          ]
+        ],
+        "label": "single_3"
+      },
+      "phi_true": [
+        1.5
+      ],
+      "selection_stage": "before_measurement",
+      "measurement_missing_rule": "marginalize_not_zero_fill"
+    },
+    "D4_FULL16__target_side__F5": {
+      "operator_id": "D4_FULL16__target_side__F5",
+      "d": 4,
+      "panel_mask": [
+        0,
+        1,
+        1,
+        1
+      ],
+      "panel_width": 3,
+      "feature": {
+        "kind": "terms",
+        "terms": [
+          [
+            3
+          ]
+        ],
+        "label": "single_3"
+      },
+      "phi_true": [
+        1.5
+      ],
+      "selection_stage": "before_measurement",
+      "measurement_missing_rule": "marginalize_not_zero_fill"
+    },
+    "D4_FULL16__drop_last__F1": {
+      "operator_id": "D4_FULL16__drop_last__F1",
+      "d": 4,
+      "panel_mask": [
+        1,
+        1,
+        1,
+        0
+      ],
+      "panel_width": 3,
+      "feature": {
+        "kind": "terms",
+        "terms": [
+          [
+            1
+          ]
+        ],
+        "label": "single_1"
+      },
+      "phi_true": [
+        1.0
+      ],
+      "selection_stage": "before_measurement",
+      "measurement_missing_rule": "marginalize_not_zero_fill"
+    },
+    "D4_FULL16__drop_last__F2": {
+      "operator_id": "D4_FULL16__drop_last__F2",
+      "d": 4,
+      "panel_mask": [
+        1,
+        1,
+        1,
+        0
+      ],
+      "panel_width": 3,
+      "feature": {
+        "kind": "burden",
+        "terms": [],
+        "label": "burden"
+      },
+      "phi_true": [
+        0.5
+      ],
+      "selection_stage": "before_measurement",
+      "measurement_missing_rule": "marginalize_not_zero_fill"
+    },
+    "D4_FULL16__drop_target__F5": {
+      "operator_id": "D4_FULL16__drop_target__F5",
+      "d": 4,
+      "panel_mask": [
+        1,
+        0,
+        1,
+        1
+      ],
+      "panel_width": 3,
+      "feature": {
+        "kind": "terms",
+        "terms": [
+          [
+            3
+          ]
+        ],
+        "label": "single_3"
+      },
+      "phi_true": [
+        1.5
+      ],
+      "selection_stage": "before_measurement",
+      "measurement_missing_rule": "marginalize_not_zero_fill"
+    },
+    "D4_FULL16__source_side__F0": {
+      "operator_id": "D4_FULL16__source_side__F0",
+      "d": 4,
+      "panel_mask": [
+        1,
+        0,
+        1,
+        1
+      ],
+      "panel_width": 3,
+      "feature": {
+        "kind": "terms",
+        "terms": [
+          [
+            0
+          ]
+        ],
+        "label": "single_0"
+      },
+      "phi_true": [
+        0.5
+      ],
+      "selection_stage": "before_measurement",
+      "measurement_missing_rule": "marginalize_not_zero_fill"
+    },
+    "D4_FULL16__target_side__F1": {
+      "operator_id": "D4_FULL16__target_side__F1",
+      "d": 4,
+      "panel_mask": [
+        0,
+        1,
+        1,
+        1
+      ],
+      "panel_width": 3,
+      "feature": {
+        "kind": "terms",
+        "terms": [
+          [
+            1
+          ]
+        ],
+        "label": "single_1"
+      },
+      "phi_true": [
+        1.0
+      ],
+      "selection_stage": "before_measurement",
+      "measurement_missing_rule": "marginalize_not_zero_fill"
+    },
+    "D4_FULL16__source_side__F2": {
+      "operator_id": "D4_FULL16__source_side__F2",
+      "d": 4,
+      "panel_mask": [
+        1,
+        0,
+        1,
+        1
+      ],
+      "panel_width": 3,
+      "feature": {
+        "kind": "burden",
+        "terms": [],
+        "label": "burden"
+      },
+      "phi_true": [
+        0.5
+      ],
+      "selection_stage": "before_measurement",
+      "measurement_missing_rule": "marginalize_not_zero_fill"
+    },
+    "D4_FULL16__target_side__F4": {
+      "operator_id": "D4_FULL16__target_side__F4",
+      "d": 4,
+      "panel_mask": [
+        0,
+        1,
+        1,
+        1
+      ],
+      "panel_width": 3,
+      "feature": {
+        "kind": "terms",
+        "terms": [
+          [
+            0,
+            1
+          ]
+        ],
+        "label": "cooccur_01"
+      },
+      "phi_true": [
+        1.0
+      ],
+      "selection_stage": "before_measurement",
+      "measurement_missing_rule": "marginalize_not_zero_fill"
+    }
+  }
+}

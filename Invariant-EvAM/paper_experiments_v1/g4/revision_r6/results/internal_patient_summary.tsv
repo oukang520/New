@@ -1,0 +1,11 @@
+cancer	cohort	contrast	gain	lo	hi	n_patients	scope
+LUAD	GENIE held evaluation patients	total	0.010239361967172149	0.006767293105923746	0.01397427779736363	449	Scorer integrates registered perturbation over held patient records; fits and patients previously explored
+LUAD	GENIE held evaluation patients	deassociated_gain	0.003651576705496004	-0.004162122286864476	0.01169883126528591	449	Scorer integrates registered perturbation over held patient records; fits and patients previously explored
+LUAD	GENIE held evaluation patients	pairing	0.006587785261676142	-9.071065388293539e-05	0.013417784171659309	449	Scorer integrates registered perturbation over held patient records; fits and patients previously explored
+LUAD	GENIE held evaluation patients	optimizer	0.00011341625819883548	-0.00027282755073109285	0.0005126407185551061	449	Scorer integrates registered perturbation over held patient records; fits and patients previously explored
+LUAD	GENIE held evaluation patients	model	0.00045251649933905955	-0.0027288966906551717	0.0037694312672329274	449	Scorer integrates registered perturbation over held patient records; fits and patients previously explored
+COAD	GENIE held evaluation patients	total	0.01585119681614859	0.010375642299527083	0.021823549652872015	287	Scorer integrates registered perturbation over held patient records; fits and patients previously explored
+COAD	GENIE held evaluation patients	deassociated_gain	0.012993392016988814	0.003975626457621298	0.02187402519345751	287	Scorer integrates registered perturbation over held patient records; fits and patients previously explored
+COAD	GENIE held evaluation patients	pairing	0.0028578047991597738	-0.003506386844160458	0.009726039651873677	287	Scorer integrates registered perturbation over held patient records; fits and patients previously explored
+COAD	GENIE held evaluation patients	optimizer	0.00021780399382945377	-0.00010291934360879336	0.0005375787435487804	287	Scorer integrates registered perturbation over held patient records; fits and patients previously explored
+COAD	GENIE held evaluation patients	model	0.002994591748086035	-0.00027683909856462865	0.006199560778771542	287	Scorer integrates registered perturbation over held patient records; fits and patients previously explored

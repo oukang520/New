@@ -1,0 +1,3 @@
+cancer	external_minus_internal_pairing	lo	hi	n_genie	n_tcga	scope
+LUAD	-0.0177333133503409	-0.028559472177745685	-0.006685569165505725	449	566	Shared fitted-model seed resampling; independent patient resampling. Interaction in predictive contribution, not proof of a unique biological cause.
+COAD	6.213087216559981e-05	-0.008994496796694286	0.009096488512301763	287	534	Shared fitted-model seed resampling; independent patient resampling. Interaction in predictive contribution, not proof of a unique biological cause.

@@ -1,0 +1,31 @@
+protocol_version	target_id	model_id	target_type	vector	primary	interpretation
+1.0	D3_SPARSE5__interaction_0_to_1	D3_SPARSE5	interaction_coordinate	[0.0, 0.0, 0.0, 1.0, 0.0]	True	conditional acquisition log-hazard; not causality or ancestry
+1.0	D3_SPARSE5__interaction_1_to_2	D3_SPARSE5	interaction_coordinate	[0.0, 0.0, 0.0, 0.0, 1.0]	False	conditional acquisition log-hazard; not causality or ancestry
+1.0	D3_SPARSE5__interaction_contrast_0_minus_1	D3_SPARSE5	interaction_contrast	[0.0, 0.0, 0.0, 1.0, -1.0]	False	difference of two conditional acquisition log-hazards
+1.0	D3_FULL9__interaction_1_to_0	D3_FULL9	interaction_coordinate	[0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 0.0]	False	conditional acquisition log-hazard; not causality or ancestry
+1.0	D3_FULL9__interaction_2_to_0	D3_FULL9	interaction_coordinate	[0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0]	False	conditional acquisition log-hazard; not causality or ancestry
+1.0	D3_FULL9__interaction_0_to_1	D3_FULL9	interaction_coordinate	[0.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0]	True	conditional acquisition log-hazard; not causality or ancestry
+1.0	D3_FULL9__interaction_2_to_1	D3_FULL9	interaction_coordinate	[0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0]	False	conditional acquisition log-hazard; not causality or ancestry
+1.0	D3_FULL9__interaction_0_to_2	D3_FULL9	interaction_coordinate	[0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0]	False	conditional acquisition log-hazard; not causality or ancestry
+1.0	D3_FULL9__interaction_1_to_2	D3_FULL9	interaction_coordinate	[0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 1.0]	False	conditional acquisition log-hazard; not causality or ancestry
+1.0	D3_FULL9__interaction_contrast_0_minus_1	D3_FULL9	interaction_contrast	[0.0, 0.0, 0.0, 1.0, -1.0, 0.0, 0.0, 0.0, 0.0]	False	difference of two conditional acquisition log-hazards
+1.0	D4_SPARSE10__interaction_0_to_1	D4_SPARSE10	interaction_coordinate	[0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 0.0]	True	conditional acquisition log-hazard; not causality or ancestry
+1.0	D4_SPARSE10__interaction_1_to_2	D4_SPARSE10	interaction_coordinate	[0.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0]	False	conditional acquisition log-hazard; not causality or ancestry
+1.0	D4_SPARSE10__interaction_2_to_3	D4_SPARSE10	interaction_coordinate	[0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0]	False	conditional acquisition log-hazard; not causality or ancestry
+1.0	D4_SPARSE10__interaction_0_to_3	D4_SPARSE10	interaction_coordinate	[0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0]	False	conditional acquisition log-hazard; not causality or ancestry
+1.0	D4_SPARSE10__interaction_0_to_2	D4_SPARSE10	interaction_coordinate	[0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0]	False	conditional acquisition log-hazard; not causality or ancestry
+1.0	D4_SPARSE10__interaction_1_to_3	D4_SPARSE10	interaction_coordinate	[0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 1.0]	False	conditional acquisition log-hazard; not causality or ancestry
+1.0	D4_SPARSE10__interaction_contrast_0_minus_1	D4_SPARSE10	interaction_contrast	[0.0, 0.0, 0.0, 0.0, 1.0, -1.0, 0.0, 0.0, 0.0, 0.0]	False	difference of two conditional acquisition log-hazards
+1.0	D4_FULL16__interaction_1_to_0	D4_FULL16	interaction_coordinate	[0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]	False	conditional acquisition log-hazard; not causality or ancestry
+1.0	D4_FULL16__interaction_2_to_0	D4_FULL16	interaction_coordinate	[0.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]	False	conditional acquisition log-hazard; not causality or ancestry
+1.0	D4_FULL16__interaction_3_to_0	D4_FULL16	interaction_coordinate	[0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]	False	conditional acquisition log-hazard; not causality or ancestry
+1.0	D4_FULL16__interaction_0_to_1	D4_FULL16	interaction_coordinate	[0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]	True	conditional acquisition log-hazard; not causality or ancestry
+1.0	D4_FULL16__interaction_2_to_1	D4_FULL16	interaction_coordinate	[0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]	False	conditional acquisition log-hazard; not causality or ancestry
+1.0	D4_FULL16__interaction_3_to_1	D4_FULL16	interaction_coordinate	[0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]	False	conditional acquisition log-hazard; not causality or ancestry
+1.0	D4_FULL16__interaction_0_to_2	D4_FULL16	interaction_coordinate	[0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 0.0]	False	conditional acquisition log-hazard; not causality or ancestry
+1.0	D4_FULL16__interaction_1_to_2	D4_FULL16	interaction_coordinate	[0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0]	False	conditional acquisition log-hazard; not causality or ancestry
+1.0	D4_FULL16__interaction_3_to_2	D4_FULL16	interaction_coordinate	[0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0]	False	conditional acquisition log-hazard; not causality or ancestry
+1.0	D4_FULL16__interaction_0_to_3	D4_FULL16	interaction_coordinate	[0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0]	False	conditional acquisition log-hazard; not causality or ancestry
+1.0	D4_FULL16__interaction_1_to_3	D4_FULL16	interaction_coordinate	[0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0]	False	conditional acquisition log-hazard; not causality or ancestry
+1.0	D4_FULL16__interaction_2_to_3	D4_FULL16	interaction_coordinate	[0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 1.0]	False	conditional acquisition log-hazard; not causality or ancestry
+1.0	D4_FULL16__interaction_contrast_0_minus_1	D4_FULL16	interaction_contrast	[0.0, 0.0, 0.0, 0.0, 1.0, -1.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]	False	difference of two conditional acquisition log-hazards

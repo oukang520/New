@@ -1,0 +1,17 @@
+cell_id	group	kind	d	replicates	n_budget	target_definition	reference_environment	primary_index	artificial_stress
+0	G3A	same_same	3	200	1000	REFERENCE_TARGET	0	3	True
+1	G3A	same_different	3	200	1000	REFERENCE_TARGET	0	3	True
+2	G3A	different_same	3	200	1000	REFERENCE_TARGET	0	3	True
+3	G3A	different_different	3	200	1000	REFERENCE_TARGET	0	3	True
+4	G3A	local_aligned	4	200	1000	REFERENCE_TARGET	0	4	True
+5	G3A	outside_nuisance	4	200	1000	REFERENCE_TARGET	0	4	True
+6	G3B	calibration	3	500	1000	REFERENCE_TARGET	0	3	True
+7	G3B	calibration	4	500	1000	REFERENCE_TARGET	0	4	True
+8	G3C	common_zero	3	500	1000	REFERENCE_TARGET	0	3	True
+9	G3C	common_mild	3	500	1000	REFERENCE_TARGET	0	3	True
+10	G3C	common_moderate	3	500	1000	REFERENCE_TARGET	0	3	True
+11	G3C	common_exact	3	500	1000	REFERENCE_TARGET	0	3	True
+12	G3D	time	3	200	1000	REFERENCE_TARGET	0	3	True
+13	G3D	higher_order	4	200	1000	REFERENCE_TARGET	0	4	True
+14	G3D	mixture	4	200	1000	REFERENCE_TARGET	0	4	True
+15	G3D	measurement	3	200	1000	REFERENCE_TARGET	0	3	True

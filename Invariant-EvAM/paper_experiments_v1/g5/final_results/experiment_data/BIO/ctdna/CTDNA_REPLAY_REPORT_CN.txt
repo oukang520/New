@@ -1,0 +1,47 @@
+TRACERx公开ctDNA标记预算回放：本次真实执行报告
+
+科学目标
+在同一患者既有手术组织资料、原患者特异性测序标记库与固定标记预算下，检验组织克隆信息能否改善术后非主干克隆追踪，并同时检查整体MRD、正常来源阳性、真实复发前检出。该实验是公开处理后UMI计数和原标记Poisson P值的回放，不是FASTQ重跑，不是重新测序不同面板，不证明自然演化theta、治疗效果或机制因果。
+
+输入及独立验证
+来源：Nature 2023，https://www.nature.com/articles/s41586-023-05776-4 。公开Supplementary Tables1–21中的Table17有201910条标记级记录、197患者、1069个SNP匹配血浆样本；本轮采用days_post_surgery>0的872个术后样本。用手术SU_T*组织原始变异/参考读数决定marker选择，不读取术后血浆P/QC/读数或未来复发身份作选择。病例SHA固定split：123development、74confirmation；confirmation中52有术后样本。179人有原生primary-only树、9人为原生421以外作者primary proxy、9人缺树且维持UNKNOWN。确认分支评价71人=67native+4proxy；3名unknown仍保留MRD和容量记录。缺术后/whole分支阳性者保留已冻结零分母旗标，不能当作真正生物阴性。
+冻结：configs/CTDNA_ASSAY_FREEZE.json，SHA256 ee3f7e77b8ea3db96ab238f6c0422a1d3e7240b9dd84b964f2a3ea56b1927ce5 。K20/50/100，K50为主，CLONAL_ONLY、BRANCH_DIVERSE、RANDOM_MARKERS、INFORMATION_ADAPTIVE四固定策略；WHOLE_PSP是额外信息参照。正常来源按患者或GIAB源分组独立拆分：11development、10confirmation；重复控制实例不作为独立患者。development normal拟合median depth6019、error2.42381e-5；不调整固定alpha0.01/K。
+
+实际主要结果（confirmation，K50，intrinsicQC）
+共有14/71按合同可评分患者有wholePSP检测的非主干分支。71分支合同记录中51有术后血浆、20无；57个零whole分母包括37有样本未检出分支和20无样本。主均值按已冻结availability-inclusive score计算，无样本零值不是测得生物阴性。14个wholepositive患者中描述性recall为diverse0.839286、adaptive0.458333、random0.267857、clonal0；不以这一参照条件子集替代主统计。患者reference recall均值：CLONAL_ONLY0，BRANCH_DIVERSE0.165493，RANDOM0.052817，INFORMATION_ADAPTIVE0.090376。全部recall落在[0,1]，始终按selected∩whole/reference计算；仅selected检出而whole未检出的分支另列discordant，未冒充参照真阳性。
+adaptive−clonal=+0.090376，患者bootstrap2000的95%CI[0.034038,0.158480]，两侧配对signflip p0.0078125，Holm3 p0.0234375。
+adaptive−diverse=−0.075117，CI[−0.147887,−0.004695]，p0.046875，Holm3 p0.09375。
+adaptive−random=+0.037559，CI[−0.028169,0.107981]，p0.335938，Holm3 p0.335938。
+因此支持非主干标记可恢复clonal-only未覆盖的分支；不支持adaptive比固定多样化强基线可靠更好。不应把clonal-only对branch终点零覆盖的预期结果当成完整创新验证。
+
+整体MRD与复发端点
+74确认患者是availability总体，其中52实际有术后血浆、22缺术后样本。实际测得样本可得者中K50 adaptive/diverse/random各28/52术后曾MRD阳性，clonal26/52，wholePSP28/52；对应保留缺失记录的availability总体为28/74与26/74，不能称74均已检测。整体MRD未体现adaptive超过diverse/random。
+仅Table8明确Intrathoracic/Extrathoracic/Intra&Extra事件的39名患者有真正复发日期，其中31有术后样本、8缺术后样本。复发前检出：adaptive23/39，diverse23/39，clonal22/39，random20/39。已检出者lead中位数分别95、78、86.5、86.5天；未检出者保留，不用只对阳性者的lead中位数宣称全面临床优势。
+确认预登记LUAD≥3primaryregions子群24人，其中5个wholebranch阳性；recall adaptive0.173611、diverse0.138889、random0.041667、clonal0。adaptive−diverseCI跨0，p0.75；属于描述性子群，不替代主family。
+K20描述性adaptive优于clonal和random、与diverse差异不明确；K100adaptive仍低于diverse且与random差异不明确。完整两预算和FULL_QC敏感性均已保留，不以择优预算替代K50主检验。
+
+正常来源与生物混杂
+确认10来源、28控制实例。K50 source平均panel阳性率：clonal0，adaptive/diverse0.088889，random0.10；development11来源均0。这些阳性全部来自CRUK0498：9个buffycoat/germlineblood/normaltissue实例中，adaptive/diverse8阳性、random9阳性；另9确认来源均0。
+原公开SupplementaryNote p5以及ExtendedDataFig5已指出CRUK0498非恶性淋巴细胞体细胞突变被误选作肿瘤标记，组织有淋巴细胞聚集；PBMC和正常肺有对应突变，GIAB无，患者7/8术后血浆阳性而无临床复发。这是已知真实生物混杂/临床假阳性，不能把其删除，也不能将源内重复实例夸作多个独立病例。本文原全panelTable19亦将这些实例检为阳性。冻结回放未利用该病例未来结果排除marker。
+该结果说明分支覆盖增益不能自动转化为可靠临床MRD；来源鉴别与matchednormal可为后续研究问题，但此轮不能事后修改策略后声称本轮确认成功。
+
+容量与实现范围
+K50确认CLONAL_ONLY10/74容量不足，其他三策略0；名义预算相同，实际clonal可用标记不足已保留，不能声称每名患者实际marker完全相等。所有marker选择仅使用手术资料，valid surgery=至少一个SU_T*区域alt≥3且depth≥20；均值VAF来自有depth≥20的SU_T*区域。共37806独特marker，36627validsurgery。adaptive主干和eligible非主干unitweight1，normaldevelopment背景固定，Poissonbinomial支持≥2marker，用groupknapsack。原完整PSP测得的background/QC仍沿用，适用范围是counts-level conditional replay，不是可部署小panel的独立测序误差重建。
+完整197人、4728患者策略场景行、各sample/clone/control及selectionfreeze全部已写出。未知树9人branch score为NA，不冒充零真值；所有分支评分保持独立患者单位。不是新患者独立于原TRACERx组织队列的另一个临床队列。
+
+交付
+PATIENT_RECALL.tsv：所有患者每K/策略/QC结果。
+SAMPLE_DETECTIONS.tsv.gz：每血浆样本检测。
+CLONE_DETECTIONS.tsv.gz：每分支检测，标明whole参照确认/discordant。
+NORMAL_CONTROL_RECORDS.tsv及NORMAL_CONTROL_SOURCE_SUMMARY.tsv/NORMAL_FPR_SUMMARY.tsv：原控制实例及独立来源聚合。
+POPULATION_SUMMARY.tsv/PAIRED_COMPARISONS.tsv：全部预登记范围、预算、QC和统计。
+SURGERY_ONLY_MARKER_LIBRARY.tsv.gz/MARKER_SELECTION_FREEZE.tsv.gz：实际marker来源及仅手术排序选择。
+NORMAL_DEVELOPMENT_PARAMETERS.json/REPLAY_SELECTION_RECEIPT.json/EXECUTION_RECEIPT.json：冻结和代码/输入/输出哈希。
+本子任务未改任何g1–g5正式结果或final_figures。
+
+追加描述性：独立未来转移组织的真实lineage/author-seeding核对
+根据根代理已审计的native_cluster_future_marker_support，以原生primary-only marker坐标映射未来corrected tree；仅metachronousMet组织，非trunk，native eligible reference≥3，并要求同未来组织区域至少3 shared own positive markers（depth20、alt3）支持。血浆检测仍为原冻结至少2 positive markers。作者seeding支持另外标记。该scorer在主assay执行后、比较未来target策略结果前独立冻结，不修改marker或主检验family，仅描述性。
+确认74availability中12有配对未来组织，10人有合格nontrunk目标，共20targets，3targets少于2个可用PSP marker；这些目标没有被剔除，均保留分母与容量标签。无未来配对或无合格target的患者NA保留，不能视作生物阴性。10个目标患者全部有术后血浆且明确复发日。
+K50患者futuretargetrecall均值：diverse0.633333、wholePSP0.633333、adaptive0.233333、random0.2、clonal0。diverse与whole在这10患者逐患者recall完全相同，原完整PSP各实际容量需读SURGERY_ONLY_MARKER_LIBRARY，不能只标固定200。未来组织author-seeding target有8患者：diverse/whole均0.604167、adaptive0.1875、random0.041667、clonal0。真实复发之前futuretargetrecall：diverse/whole0.333333、adaptive/random0.066667、clonal0；不能把术后任意时刻检测全当复发前预测。
+这一结果支持经典多样化marker策略以50名义budget保留更多最终转移组织验证的lineage信息，且在有限样本下匹配fullPSP回放的目标覆盖。它不支持adaptive优于经典diverse，不是治疗获益、不证明自然theta或机制因果；仅10目标患者，不能外推临床部署。FULL_QC敏感性对应结果已全部写出。
+独立未来score文件：FUTURE_TISSUE_TARGET_SUPPORT.tsv、FUTURE_TISSUE_TARGETS.tsv、FUTURE_TISSUE_PATIENT_SCORES.tsv、FUTURE_TISSUE_SUMMARY.tsv、FUTURE_TISSUE_SCORER_RECEIPT.json；未来scorer freeze configs/CTDNA_FUTURE_SCORER_FREEZE.json，SHA256 875562e92ce73855502b191c38997cefd4813cbc439b689280fddbafc9426af8。

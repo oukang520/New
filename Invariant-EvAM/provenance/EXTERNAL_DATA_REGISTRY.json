@@ -1,0 +1,378 @@
+{
+  "external_dependencies": [
+    {
+      "id": "tracerx421_primary",
+      "required_for": "BIO native audit and full acquisition rerun",
+      "download_url": "https://zenodo.org/api/records/7822002/files/figurecode.zip/content",
+      "source_page": "https://zenodo.org/records/7822002",
+      "archive": "figurecode.zip",
+      "size_bytes": 178354403,
+      "sha256": "dc060458d0fb477f4f7c96acbc30b76c2785b926cf72eab0daa56a4c04253d5e",
+      "md5": "99003fc5e2c4d2c83232efd44d2fe51f",
+      "terms_recorded": "academic non-commercial use only (official record notes)",
+      "portable_location": "external_data/tracerx421/",
+      "derived_files": [
+        "field_missingness.tsv.gz",
+        "mutations.tsv.gz",
+        "tree_edges.tsv.gz",
+        "tree_mutation_clusters.tsv.gz",
+        "region_mutations.tsv.gz",
+        "tree_inventory.tsv.gz",
+        "patients.tsv.gz",
+        "tumours.tsv.gz"
+      ]
+    },
+    {
+      "id": "tracerx_metastasis",
+      "required_for": "Future-tissue scorer and G4_BIO/G5_BIO_02 rerun",
+      "download_url": "https://zenodo.org/api/records/7649257/files/metsFigures.zip/content",
+      "source_page": "https://zenodo.org/records/7649257",
+      "archive": "metsFigures.zip",
+      "size_bytes": 312573110,
+      "sha256": "bacb4f310fbffb1caaf6bb63525a7343c2450c4bb6bb2c77712aca0dbd03c058",
+      "md5": "53faa841e32b5f7816b0e9fc4b2bd48f",
+      "terms_recorded": "academic non-commercial use only (official record notes)",
+      "portable_location": "external_data/tracerx_metastasis/"
+    },
+    {
+      "id": "tracerx_ctdna",
+      "required_for": "marker-level count replay",
+      "source_page": "https://www.nature.com/articles/s41586-023-05776-4",
+      "portable_location": "external_data/tracerx_ctdna/",
+      "files": [
+        {
+          "source_url": "https://www.nature.com/articles/s41586-023-05776-4",
+          "size_bytes": 699081,
+          "sha256": "93b11d74eaeb145427405f1e705eab533dd50d15629bdb8e343a66c07757ff03",
+          "content_type": "text/html; charset=utf-8"
+        },
+        {
+          "source_url": "https://media.springernature.com/original/springer-static/esm/art%3A10.1038%2Fs41586-023-05776-4/MediaObjects/41586_2023_5776_MOESM4_ESM.xlsx",
+          "size_bytes": 48335320,
+          "sha256": "ae36a332bfca17164c57ef45a36a8cf1107614c15862181b83c639c0f4b48154",
+          "content_type": "application/octet-stream"
+        },
+        {
+          "source_url": "https://media.springernature.com/original/springer-static/esm/art%3A10.1038%2Fs41586-023-05776-4/MediaObjects/41586_2023_5776_MOESM5_ESM.docx",
+          "size_bytes": 16544,
+          "sha256": "4ba91ccfd45f5b8e1bcf947e08bc4e8f73e376ab586cb24daa5320913087622e",
+          "content_type": "application/octet-stream"
+        },
+        {
+          "source_url": "https://media.springernature.com/original/springer-static/esm/art%3A10.1038%2Fs41586-023-05776-4/MediaObjects/41586_2023_5776_MOESM1_ESM.pdf",
+          "size_bytes": 646167,
+          "sha256": "5dde4c466f67da77742325b7671633d5d888386cd15e65d35a937151c25c8933",
+          "content_type": "application/pdf"
+        }
+      ],
+      "scope": "Public processed UMI count/P-value tables; no FASTQ, no EGA controlled-access reads downloaded"
+    },
+    {
+      "id": "genie18",
+      "required_for": "Original G4/G5 real-record experiments/frozen fit retraining",
+      "source_page": "https://www.aacr.org/professionals/research/aacr-project-genie/access-project-genie-data/",
+      "version": "18.0-public",
+      "portable_location": "external_data/genie18/",
+      "files": [
+        {
+          "basename": "data_clinical_patient.txt",
+          "size_bytes": 20077302,
+          "sha256": "7ff5d3ba943035a738d883cc1daa8557088d5debe1f4e3b3512b28b720af8904"
+        },
+        {
+          "basename": "data_clinical_sample.txt",
+          "size_bytes": 37343800,
+          "sha256": "2d59c34eb7ffd89465558f5682067948d3949b1d0f74a069f4fc4d0e04a86cd0"
+        },
+        {
+          "basename": "data_gene_matrix.txt",
+          "size_bytes": 13216493,
+          "sha256": "567cf00cc29985e163cf928743cb856a76eccdfb720764a79c26c62a8cde9e78"
+        },
+        {
+          "basename": "assay_information.txt",
+          "size_bytes": 29000,
+          "sha256": "bc992cfacd463dbb739969079430c5f49ca1806e6d35435f37dcd189c3ca289f"
+        },
+        {
+          "basename": "genomic_information.txt",
+          "size_bytes": 57658647,
+          "sha256": "4f9d609b355a0287fc230aae344c46f69e083513a2ad8feba041e3f08fc28354"
+        },
+        {
+          "basename": "manifest.csv",
+          "size_bytes": 4949,
+          "sha256": "f4c89e9e81dd912ec044dce8b084042d277c384330781d62a7496638e69fa8dc"
+        },
+        {
+          "basename": "meta_study.txt",
+          "size_bytes": 172,
+          "sha256": "6489dfa2efcc39a0ee601d434682a8512911e4a2b7a99416e60c501e4ddb5a7e"
+        },
+        {
+          "basename": "meta_mutations_extended.txt",
+          "size_bytes": 291,
+          "sha256": "a1866a86a91a17a72d39cda9dd15f03d1da8d7f2b32a9134c62f6ce209e161bc"
+        },
+        {
+          "basename": "data_mutations_extended.txt",
+          "size_bytes": 877861971,
+          "sha256": "f85c1ab8ce4b1ca45edc820052ace4ee5889e94a9cad7212dcbcaa9defdb657a"
+        }
+      ],
+      "terms_recorded": "Use source access/data-use terms; this audit does not invent redistribution permission"
+    },
+    {
+      "id": "cbio_external_confirmation",
+      "required_for": "E1 external validation rerun",
+      "source_page": "https://github.com/cBioPortal/datahub",
+      "selected_studies": [
+        "luad_oncosg_2020",
+        "luad_cas_2020",
+        "luad_cptac_2020",
+        "luad_broad",
+        "lung_nci_2022",
+        "coad_silu_2022",
+        "coadread_dfci_2016",
+        "coadread_genentech",
+        "coadread_cass_2020"
+      ],
+      "portable_location": "external_data/cbioportal/",
+      "raw_include_in_git": false,
+      "version_rule": "Honor cohort_expansion source receipts/input hashes; current default branch/API response may differ from frozen release"
+    },
+    {
+      "id": "tcga_original_external_reference",
+      "required_for": "Original G4 R5 external transfer/R6 attribution rerun",
+      "studies": [
+        "luad_tcga_pan_can_atlas_2018",
+        "coadread_tcga_pan_can_atlas_2018"
+      ],
+      "source_page": "https://github.com/cBioPortal/datahub",
+      "portable_location": "external_data/tcga_reference/",
+      "files": [
+        {
+          "path": "paper_experiments_v1/g4/revision_r5/data_external/luad_tcga_pan_can_atlas_2018/data_clinical_sample.txt",
+          "source_url": "https://media.githubusercontent.com/media/cBioPortal/datahub/master/public/luad_tcga_pan_can_atlas_2018/data_clinical_sample.txt",
+          "size_bytes": 111469,
+          "sha256": "b443896a6aed8256f3aa1b5e2f41e700392c76461be10936d2c344988bc5d84e",
+          "exists": true
+        },
+        {
+          "path": "paper_experiments_v1/g4/revision_r5/data_external/luad_tcga_pan_can_atlas_2018/data_clinical_patient.txt",
+          "source_url": "https://media.githubusercontent.com/media/cBioPortal/datahub/master/public/luad_tcga_pan_can_atlas_2018/data_clinical_patient.txt",
+          "size_bytes": 158342,
+          "sha256": "2c347251474ec48a365e9b9dcd3b86a7106a6bbf69469ec4b740ba4d92695df7",
+          "exists": true
+        },
+        {
+          "path": "paper_experiments_v1/g4/revision_r5/data_external/luad_tcga_pan_can_atlas_2018/data_gene_panel_matrix.txt",
+          "source_url": "https://media.githubusercontent.com/media/cBioPortal/datahub/master/public/luad_tcga_pan_can_atlas_2018/data_gene_panel_matrix.txt",
+          "size_bytes": 15784,
+          "sha256": "2a6a51ac6326109f118b2e935fd9ef7b61b1cbffef7d049d41af29762b6c5947",
+          "exists": true
+        },
+        {
+          "path": "paper_experiments_v1/g4/revision_r5/data_external/luad_tcga_pan_can_atlas_2018/case_lists/cases_sequenced.txt",
+          "source_url": "https://raw.githubusercontent.com/cBioPortal/datahub/master/public/luad_tcga_pan_can_atlas_2018/case_lists/cases_sequenced.txt",
+          "size_bytes": 9331,
+          "sha256": "0a804793afbbf753b4ade84f86884430692e62dd41951b093ca585c59252d263",
+          "exists": true
+        },
+        {
+          "path": "paper_experiments_v1/g4/revision_r5/data_external/luad_tcga_pan_can_atlas_2018/meta_study.txt",
+          "source_url": "https://raw.githubusercontent.com/cBioPortal/datahub/master/public/luad_tcga_pan_can_atlas_2018/meta_study.txt",
+          "size_bytes": 595,
+          "sha256": "d135d2b57f40ad154db71d6f49ba0f4a184dbdf489dc2a674bc2c5e7a84582e5",
+          "exists": true
+        },
+        {
+          "path": "paper_experiments_v1/g4/revision_r5/data_external/luad_tcga_pan_can_atlas_2018/meta_mutations.txt",
+          "source_url": "https://raw.githubusercontent.com/cBioPortal/datahub/master/public/luad_tcga_pan_can_atlas_2018/meta_mutations.txt",
+          "size_bytes": 324,
+          "sha256": "b7bab96a0c692f421f3d0cc60c01aa1e824c5a947c0b8db941641f8087a4172e",
+          "exists": true
+        },
+        {
+          "path": "paper_experiments_v1/g4/revision_r5/data_external/luad_tcga_pan_can_atlas_2018/README.md",
+          "source_url": "https://raw.githubusercontent.com/cBioPortal/datahub/master/public/luad_tcga_pan_can_atlas_2018/README.md",
+          "size_bytes": 1541,
+          "sha256": "7969716b3516ab0d994efa9dee8d19cba42efe1e48ab476a3aba9062d54b56e6",
+          "exists": true
+        },
+        {
+          "path": "paper_experiments_v1/g4/revision_r5/data_external/coadread_tcga_pan_can_atlas_2018/data_clinical_sample.txt",
+          "source_url": "https://media.githubusercontent.com/media/cBioPortal/datahub/master/public/coadread_tcga_pan_can_atlas_2018/data_clinical_sample.txt",
+          "size_bytes": 105858,
+          "sha256": "b9cbcc7cbc7471b44a3767aac48d4d0625001e3c07f8776c50f77364341f7817",
+          "exists": true
+        },
+        {
+          "path": "paper_experiments_v1/g4/revision_r5/data_external/coadread_tcga_pan_can_atlas_2018/data_clinical_patient.txt",
+          "source_url": "https://media.githubusercontent.com/media/cBioPortal/datahub/master/public/coadread_tcga_pan_can_atlas_2018/data_clinical_patient.txt",
+          "size_bytes": 175194,
+          "sha256": "3c5738f41b9047313af8f809c244bc66419991379b0c1978816dfc56c184c313",
+          "exists": true
+        },
+        {
+          "path": "paper_experiments_v1/g4/revision_r5/data_external/coadread_tcga_pan_can_atlas_2018/data_gene_panel_matrix.txt",
+          "source_url": "https://media.githubusercontent.com/media/cBioPortal/datahub/master/public/coadread_tcga_pan_can_atlas_2018/data_gene_panel_matrix.txt",
+          "size_bytes": 16557,
+          "sha256": "db92c2192a0039f464564c46e3fd6efd25101388f61ad1ec3a8ff30ad1171dbe",
+          "exists": true
+        },
+        {
+          "path": "paper_experiments_v1/g4/revision_r5/data_external/coadread_tcga_pan_can_atlas_2018/case_lists/cases_sequenced.txt",
+          "source_url": "https://raw.githubusercontent.com/cBioPortal/datahub/master/public/coadread_tcga_pan_can_atlas_2018/case_lists/cases_sequenced.txt",
+          "size_bytes": 8827,
+          "sha256": "03e55fba68c9aac8ce44f6c2f1e0f981cdb8130d5713b899c25aefa844f0da99",
+          "exists": true
+        },
+        {
+          "path": "paper_experiments_v1/g4/revision_r5/data_external/coadread_tcga_pan_can_atlas_2018/meta_study.txt",
+          "source_url": "https://raw.githubusercontent.com/cBioPortal/datahub/master/public/coadread_tcga_pan_can_atlas_2018/meta_study.txt",
+          "size_bytes": 615,
+          "sha256": "9d6f7afac2d71dbcbbd7968988d51c93b3bbbab648724bffa102dbbb1d062ea3",
+          "exists": true
+        },
+        {
+          "path": "paper_experiments_v1/g4/revision_r5/data_external/coadread_tcga_pan_can_atlas_2018/meta_mutations.txt",
+          "source_url": "https://raw.githubusercontent.com/cBioPortal/datahub/master/public/coadread_tcga_pan_can_atlas_2018/meta_mutations.txt",
+          "size_bytes": 334,
+          "sha256": "4ae52e38dab1e64756633d6505eaa0ffc44863f76e2dbf17459da778771079d5",
+          "exists": true
+        },
+        {
+          "path": "paper_experiments_v1/g4/revision_r5/data_external/coadread_tcga_pan_can_atlas_2018/README.md",
+          "source_url": "https://raw.githubusercontent.com/cBioPortal/datahub/master/public/coadread_tcga_pan_can_atlas_2018/README.md",
+          "size_bytes": 1541,
+          "sha256": "7969716b3516ab0d994efa9dee8d19cba42efe1e48ab476a3aba9062d54b56e6",
+          "exists": true
+        },
+        {
+          "path": "paper_experiments_v1/g4/revision_r5/data_external/luad_tcga_pan_can_atlas_2018/target_mutations_api.json",
+          "source_url": "https://www.cbioportal.org/api/molecular-profiles/luad_tcga_pan_can_atlas_2018_mutations/mutations/fetch?projection=DETAILED",
+          "request_body": {
+            "sampleListId": "luad_tcga_pan_can_atlas_2018_sequenced",
+            "entrezGeneIds": [
+              7157,
+              3845,
+              6794,
+              9817
+            ]
+          },
+          "size_bytes": 571733,
+          "sha256": "91c560afe3fc14386a8f2fbdb87f7663fd433407530ecd3a8c15c959dc600737",
+          "exists": true,
+          "method": "POST"
+        },
+        {
+          "path": "paper_experiments_v1/g4/revision_r5/data_external/coadread_tcga_pan_can_atlas_2018/target_mutations_api.json",
+          "source_url": "https://www.cbioportal.org/api/molecular-profiles/coadread_tcga_pan_can_atlas_2018_mutations/mutations/fetch?projection=DETAILED",
+          "request_body": {
+            "sampleListId": "coadread_tcga_pan_can_atlas_2018_sequenced",
+            "entrezGeneIds": [
+              324,
+              7157,
+              3845,
+              5290
+            ]
+          },
+          "size_bytes": 1193545,
+          "sha256": "b5f23dacc921659241399df8ac352cfe1b84af0c7edb217465ca66ea17105d77",
+          "exists": true,
+          "method": "POST"
+        }
+      ],
+      "raw_include_in_git": false,
+      "identity_rule": "Use original DOWNLOAD_RECEIPTS/API_RECEIPTS hashes; data_mutations.txt fetch404 was replaced by successful targeted mutation API POST, not a fabricated MAF."
+    }
+  ],
+  "reference_images": [
+    {
+      "reference_id": "R29",
+      "basename": "fb5b46eb9066195f9667702674a8791b.png",
+      "sha256": "a64bfcb22a6c82f09f51378407a97a9751499211f71717e1e61d611e04f50ea0",
+      "include_in_git": false,
+      "role": "Optional private reference-library style audit only; not data or scientific endpoint; original URL not supplied"
+    },
+    {
+      "reference_id": "R04",
+      "basename": "14ac6b8bd93184b6034ef103c4d80d13.jpg",
+      "sha256": "c75a6f35c0d4769407448bb8923b04f04bb6ab4b46740287ca4c555325fa13ae",
+      "include_in_git": false,
+      "role": "Optional private reference-library style audit only; not data or scientific endpoint; original URL not supplied"
+    },
+    {
+      "reference_id": "R21",
+      "basename": "b7f665c0644dd5d35226c0b3e29df4f0.jpg",
+      "sha256": "2186c0385fb37302318aabd95cdce5e86944283c72b82a80a096a33b3d7e2c48",
+      "include_in_git": false,
+      "role": "Optional private reference-library style audit only; not data or scientific endpoint; original URL not supplied"
+    },
+    {
+      "basename": "0a20f3a1a3899805f1516b4ead2df34e.jpg",
+      "sha256": "8a0f9ab078d43712601430841fe21b9f8ca4e7d483319ad96006c4f7f1dca441",
+      "include_in_git": false,
+      "role": "Optional original local style-reference screenshot",
+      "metadata_reference": "paper_experiments_v1/g1/configs/FINAL_FIGURES_MANIFEST.json",
+      "original_url_not_supplied": true
+    },
+    {
+      "basename": "795d2d8254fe6d5dec3ed2447a55c0db.jpg",
+      "sha256": "18d0f33cb5937e4c2a2c2e89c2e4fede9a2ab09067bb4e10cdc65160bd8e1622",
+      "include_in_git": false,
+      "role": "Optional original local style-reference screenshot",
+      "metadata_reference": "paper_experiments_v1/g2/configs/FINAL_FIGURES_MANIFEST.json",
+      "original_url_not_supplied": true
+    },
+    {
+      "basename": "e8ef4c02b84393cf67c59f091dda8bcf.jpg",
+      "sha256": "01d82a3e0eea84ff89e794dc2ad86b14e31aa2be3fc21607a687142353350fec",
+      "include_in_git": false,
+      "role": "Optional original local style-reference screenshot",
+      "metadata_reference": "paper_experiments_v1/g2/configs/FINAL_FIGURES_MANIFEST.json",
+      "original_url_not_supplied": true
+    },
+    {
+      "basename": "429ed4ee923911f11f8fc8e638f72793.jpg",
+      "sha256": "21d8bb735a25ee60761664985b849144d889265d3d187fc0d83cbfed4cad04dc",
+      "include_in_git": false,
+      "role": "Optional original local style-reference screenshot",
+      "metadata_reference": "paper_experiments_v1/g3/configs/FINAL_FIGURES_MANIFEST.json",
+      "original_url_not_supplied": true
+    },
+    {
+      "basename": "e0a7b911652e549fb2c695e7662d33d0.jpg",
+      "sha256": "392d91bb4262e58c5096ba1bc2e3bd31cc6f18d8d22831c75d5f6a30a06f2fbd",
+      "include_in_git": false,
+      "role": "Optional original local style-reference screenshot",
+      "metadata_reference": "paper_experiments_v1/g4/configs/FIGURE_MANIFEST.json",
+      "original_url_not_supplied": true
+    },
+    {
+      "basename": "c99254c49741ae2c2f0d9e56787752f4.jpg",
+      "sha256": "50596b66f32a11d5cfcfc2da372d6b28b9fb249778d11c11e79d77b6a7d4be98",
+      "include_in_git": false,
+      "role": "Optional original local style-reference screenshot",
+      "metadata_reference": "paper_experiments_v1/g4/configs/FIGURE_MANIFEST.json",
+      "original_url_not_supplied": true
+    }
+  ],
+  "raw_data_included": false,
+  "data_rights": "Data retain their source terms; packaging does not grant extra rights.",
+  "omitted_broad_runtime_tables": [
+    {
+      "source_path": "paper_experiments_v1/g4/results/G4_all_method_results.tsv",
+      "panels": [
+        "G4_finite_calibration_ablation"
+      ],
+      "role": "actual M/M_NO_CAL paired finite-calibration input; broader table also contains nonretained panels, do not copy all old result directories",
+      "exists": true,
+      "package_path_exists": false,
+      "bytes": 4562579,
+      "source_sha256": "fa775e3271eac5223f2ac9f1e9e0197cba2df1efe1e93af03028e23a6b09b7bc",
+      "package_selection": "External exact-source dependency: broader original table includes unretained endpoints. Current selected final plot_data preserved."
+    }
+  ]
+}

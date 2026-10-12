@@ -1,0 +1,537 @@
+{
+  "group": "g5",
+  "panels": [
+    {
+      "panel": "G5_05_design_scenario_0",
+      "pdf": "../final_figures/G5_05_design_scenario_0.pdf",
+      "svg": "../final_figures/G5_05_design_scenario_0.svg",
+      "plot_data": "plot_data/G5_05_design_scenario_0.tsv",
+      "data_sha256": "20d446edbc60743762dc3bd5d8c401ecf7e1d830d7d28109ef108cad0229a6b9",
+      "pdf_sha256": "a838034aff7aa84b90218f15f96e1dd6b53f5426414a6911ad4b1ba66bc9af40",
+      "svg_sha256": "35b534e0e8246d14229ccd6cf2eab2cdb52bb20b99e361032cd60adf8a2281b5",
+      "font": "Arial",
+      "dpi": 600,
+      "size_mm": [
+        135.114,
+        98.249
+      ],
+      "figure_legend": "FIGURE_LEGENDS_CN.md#g5_05_design_scenario_0"
+    },
+    {
+      "panel": "G5_05_design_scenario_1",
+      "pdf": "../final_figures/G5_05_design_scenario_1.pdf",
+      "svg": "../final_figures/G5_05_design_scenario_1.svg",
+      "plot_data": "plot_data/G5_05_design_scenario_1.tsv",
+      "data_sha256": "984ac4d5b23916e64f41d95a538b45b8696629fda0dc29d8fa0a7ea72010efd8",
+      "pdf_sha256": "baa52c036f8c08d29cad3999a5f87d03c18006e2823588b8e08f5b39815b2217",
+      "svg_sha256": "5f74dd8210436d796957ecbdfb3d81dfcc2a74f483556f9518e9b77e1e687e42",
+      "font": "Arial",
+      "dpi": 600,
+      "size_mm": [
+        135.114,
+        98.249
+      ],
+      "figure_legend": "FIGURE_LEGENDS_CN.md#g5_05_design_scenario_1"
+    },
+    {
+      "panel": "G5_05_design_scenario_2",
+      "pdf": "../final_figures/G5_05_design_scenario_2.pdf",
+      "svg": "../final_figures/G5_05_design_scenario_2.svg",
+      "plot_data": "plot_data/G5_05_design_scenario_2.tsv",
+      "data_sha256": "64882c6f5cc47aa6a4a50c8cc69b5969f309de6ae4367ac63c81fefe8181cc67",
+      "pdf_sha256": "79c2b3348edbbe3c425d60d3220c7223e353f4bfd0c398c24e75d1070b08572d",
+      "svg_sha256": "021acea8f595a7548f0773dfa9951d480b8c68783d2495310c88f84cb394868a",
+      "font": "Arial",
+      "dpi": 600,
+      "size_mm": [
+        134.056,
+        98.249
+      ],
+      "figure_legend": "FIGURE_LEGENDS_CN.md#g5_05_design_scenario_2"
+    },
+    {
+      "panel": "G5_07_direct_uncertainty_cost",
+      "pdf": "../final_figures/G5_07_direct_uncertainty_cost.pdf",
+      "svg": "../final_figures/G5_07_direct_uncertainty_cost.svg",
+      "plot_data": "plot_data/G5_07_direct_uncertainty_cost.tsv",
+      "data_sha256": "d6abda4718ed7715bf841891b83792c8db280dd2eba40dd6ae717a8afd1000a8",
+      "pdf_sha256": "db49255e2bbe9bfa84b710c4cf27b97f81914558f18fe73a7e71866142f09b12",
+      "svg_sha256": "b79b6ac55d2859ba89772361e36c2b7d854fbc09ae8ccd064a82982c7731f62b",
+      "font": "Arial",
+      "dpi": 600,
+      "size_mm": [
+        136.172,
+        101.776
+      ],
+      "figure_legend": "FIGURE_LEGENDS_CN.md#g5_07_direct_uncertainty_cost"
+    },
+    {
+      "panel": "G5_R2_costmatched_COAD",
+      "pdf": "../final_figures/G5_R2_costmatched_COAD.pdf",
+      "svg": "../final_figures/G5_R2_costmatched_COAD.svg",
+      "plot_data": "plot_data/G5_R2_costmatched_COAD.tsv",
+      "data_sha256": "2961587fad4133f9a126f6ebab287f2bc2c6648ebd988cab610157d2ec0b8074",
+      "pdf_sha256": "bd300f6f9e41bdbcb2f35f4f2a30984cf578072acf03808f8183ab281d348c51",
+      "svg_sha256": "078a164132719dcb72a68f07060daad5eb429f75b4248e9bc061481b85bec0ad",
+      "font": "Arial",
+      "dpi": 600,
+      "size_mm": [
+        137.231,
+        98.425
+      ],
+      "figure_legend": "FIGURE_LEGENDS_CN.md#g5_r2_costmatched_coad"
+    },
+    {
+      "panel": "G5_R2_costmatched_LUAD",
+      "pdf": "../final_figures/G5_R2_costmatched_LUAD.pdf",
+      "svg": "../final_figures/G5_R2_costmatched_LUAD.svg",
+      "plot_data": "plot_data/G5_R2_costmatched_LUAD.tsv",
+      "data_sha256": "893b1f96f85d42cf7291ca18574f69e9dc9f5073d1e0170b0a92ea5415f6ddcb",
+      "pdf_sha256": "1a204538501982709292b63a000afdb4d9589b0ce069c90c7a412f61e1b60799",
+      "svg_sha256": "9faa9c6983025eeb31b875b56b8ba5c4224d6748e231ba687b59dd13e8c46f96",
+      "font": "Arial",
+      "dpi": 600,
+      "size_mm": [
+        135.819,
+        98.425
+      ],
+      "figure_legend": "FIGURE_LEGENDS_CN.md#g5_r2_costmatched_luad"
+    },
+    {
+      "panel": "G5_R3_anchor_called",
+      "pdf": "../final_figures/G5_R3_anchor_called.pdf",
+      "svg": "../final_figures/G5_R3_anchor_called.svg",
+      "plot_data": "plot_data/G5_R3_anchor_called.tsv",
+      "data_sha256": "30f13fc14706ce64a6f2f332d5f1e53417e4c03af8bd369d2e06f33945b8a89d",
+      "pdf_sha256": "d146978cb421b44ba442428015f9254819432c15bdb7f39820686dd6ac511379",
+      "svg_sha256": "ed0bd3f16f3c410bda41b4085264dacd17b08d9f6e5a44b39c41346729703d6d",
+      "font": "Arial",
+      "dpi": 600,
+      "size_mm": [
+        135.819,
+        81.492
+      ],
+      "figure_legend": "FIGURE_LEGENDS_CN.md#g5_r3_anchor_called"
+    },
+    {
+      "panel": "G5_R3_anchor_covered",
+      "pdf": "../final_figures/G5_R3_anchor_covered.pdf",
+      "svg": "../final_figures/G5_R3_anchor_covered.svg",
+      "plot_data": "plot_data/G5_R3_anchor_covered.tsv",
+      "data_sha256": "30f13fc14706ce64a6f2f332d5f1e53417e4c03af8bd369d2e06f33945b8a89d",
+      "pdf_sha256": "641e9fe8d7a1d13112afcfcf7eea38daccc99899900eacee9f4baa0d05a02c69",
+      "svg_sha256": "7f1479dde60f79c7bbc635419a3d73e0e4f574a34fb8ea1516217a4ceb05e50d",
+      "font": "Arial",
+      "dpi": 600,
+      "size_mm": [
+        137.231,
+        81.492
+      ],
+      "figure_legend": "FIGURE_LEGENDS_CN.md#g5_r3_anchor_covered"
+    },
+    {
+      "panel": "G5_R3_natural_transfer",
+      "pdf": "../final_figures/G5_R3_natural_transfer.pdf",
+      "svg": "../final_figures/G5_R3_natural_transfer.svg",
+      "plot_data": "plot_data/G5_R3_natural_transfer.tsv",
+      "data_sha256": "3093c8fe8c72d3db2ac69a64055e51b0dc0701285f39af935b1477fb3585c8b0",
+      "pdf_sha256": "f109c74017737898f581045582ee24e57552c8df361d6b9802140d0f0e8c78f4",
+      "svg_sha256": "a8b93c52b3739d68e1abc98fa26bdb03fc026d71337dd1ecaa7955c10da9c98e",
+      "font": "Arial",
+      "dpi": 600,
+      "size_mm": [
+        144.10972222222222,
+        73.90694444444445
+      ],
+      "figure_legend": "FIGURE_LEGENDS_CN.md#g5_r3_natural_transfer",
+      "annotation_review": "figure_delivery/significance_connector_review_20261009"
+    },
+    {
+      "panel": "G5_R6_correct_answers",
+      "pdf": "../final_figures/G5_R6_correct_answers.pdf",
+      "svg": "../final_figures/G5_R6_correct_answers.svg",
+      "plot_data": "plot_data/G5_R6_correct_answers.tsv",
+      "data_sha256": "72a93a5dd245eed8515b3bd5cfb72bdceea063f59c1da5e7d944acaa5dea1c79",
+      "pdf_sha256": "f312b4ad853cb2835f4b74554f1ba21ff7c545a0b3007db63a165b53a930f139",
+      "svg_sha256": "70c3a8fb468fdf6c4fd2c2530765e3454ca0968e443d86ca07baebe0dea4dbfd",
+      "supplementary_plot_data": [
+        {
+          "path": "plot_data/G5_R6_correct_answers_points.tsv",
+          "sha256": "4d3755917ec7c5a233d42df195a3a10275a3bfeb450c3325739e451160c6f77f"
+        }
+      ],
+      "font": "Arial",
+      "dpi": 600,
+      "size_mm": [
+        185.914,
+        95.956
+      ],
+      "figure_legend": "FIGURE_LEGENDS_CN.md#g5_r6_correct_answers"
+    },
+    {
+      "panel": "G5_R8_diagnostic_actions",
+      "pdf": "../final_figures/G5_R8_diagnostic_actions.pdf",
+      "svg": "../final_figures/G5_R8_diagnostic_actions.svg",
+      "plot_data": "plot_data/G5_R8_diagnostic_actions.tsv",
+      "data_sha256": "d2668e1012d8f2fe5c632ddc58423d843f5af3c055bdca036734897e54d9de1f",
+      "pdf_sha256": "ec2f6a3b24caefad504cc65de3880f8ddcde0cddb3d804861e52f686c7085cd2",
+      "svg_sha256": "6719a4b76d14fc010bdf8ad1be77578bedaa377371cc9df1a364416591abb1e2",
+      "font": "Arial",
+      "dpi": 600,
+      "size_mm": [
+        166.40739220513237,
+        74.91024237738715
+      ],
+      "figure_legend": "FIGURE_LEGENDS_CN.md#g5_r8_diagnostic_actions",
+      "supplementary_plot_data": [
+        {
+          "path": "plot_data/G5_R8_diagnostic_actions_raw.tsv",
+          "sha256": "946b4ef8952615829a675bf04937a7e71db4883473f9278b7f99ef807f488ca2"
+        }
+      ]
+    },
+    {
+      "panel": "G5_R8_diagnostic_value",
+      "pdf": "../final_figures/G5_R8_diagnostic_value.pdf",
+      "svg": "../final_figures/G5_R8_diagnostic_value.svg",
+      "plot_data": "plot_data/G5_R8_diagnostic_value.tsv",
+      "data_sha256": "83361b8f12e1ced05b22aab209363e7e3988dbc7bce164dea0fba43cd0d7c15e",
+      "pdf_sha256": "bbc7f6840430ea3a78417e1fae42866164c73856e2d3647ee362cdeeb649c989",
+      "svg_sha256": "e0fa7192a085e9802ba6d413e58bf3bb13833293ff8aab4c1f154fc6bedce61c",
+      "font": "Arial",
+      "dpi": 600,
+      "size_mm": [
+        152.69765625,
+        94.78856175740559
+      ],
+      "figure_legend": "FIGURE_LEGENDS_CN.md#g5_r8_diagnostic_value",
+      "supplementary_plot_data": [
+        {
+          "path": "plot_data/G5_R8_diagnostic_value_points.tsv",
+          "sha256": "5893dce13a64a0ea555b3dfc701e419db0d6af7233f669b9930f2fc7064dfa5f"
+        }
+      ]
+    },
+    {
+      "panel": "G5_BIO_01_clone_tracking",
+      "pdf": "../final_figures/G5_BIO_01_clone_tracking.pdf",
+      "svg": "../final_figures/G5_BIO_01_clone_tracking.svg",
+      "plot_data": "plot_data/G5_BIO_01_clone_tracking.tsv",
+      "data_sha256": "e8f8f409a4910d854e00a9b2aa1d1101493c92e7b70abde4feb5db6a7b585d79",
+      "pdf_sha256": "f554388d32f30d7be40170bb2823e7aae7e533b98a1806256d83bde50102a8b9",
+      "svg_sha256": "9d992865a5b8c04a3916e40529791a606441a8d4adcdc468bfda312a11b05350",
+      "font": "Arial",
+      "dpi": 600,
+      "size_mm": [
+        118.13822222222223,
+        101.30498958333334
+      ],
+      "figure_legend": "FIGURE_LEGENDS_CN.md#g5_bio_01_clone_tracking"
+    },
+    {
+      "panel": "G5_BIO_02_future_clone_tracking",
+      "pdf": "../final_figures/G5_BIO_02_future_clone_tracking.pdf",
+      "svg": "../final_figures/G5_BIO_02_future_clone_tracking.svg",
+      "plot_data": "plot_data/G5_BIO_02_future_clone_tracking.tsv",
+      "data_sha256": "192b516a46b93fa5edee5bdd0cfac286ef5ad8e13e91749f6cb96e8fb9e6e44c",
+      "pdf_sha256": "c73f5264d527c2e84150b7fe89c38a912ec13f101661d93ee5c4b94fd67c1b77",
+      "svg_sha256": "e339d64923927d18c26e96c1e5ef4dcfb35f46a1c46aa8a299fb7ef17eb91917",
+      "font": "Arial",
+      "dpi": 600,
+      "size_mm": [
+        109.41887847222225,
+        67.11442
+      ],
+      "figure_legend": "FIGURE_LEGENDS_CN.md#g5_bio_02_future_clone_tracking"
+    }
+  ],
+  "experiment_data": [
+    {
+      "path": "experiment_data/R8_all_policies.tsv",
+      "sha256": "7d6e53752fb76f185dff38cd905cc0be2d80bf24a5fdaafd1c1b1b3e892318b5"
+    },
+    {
+      "path": "experiment_data/R8_matched_size.tsv",
+      "sha256": "69603069abdd1588e7d8ba16ac7761ae0c1f2e1117ace24e38f55c54d56bb03f"
+    },
+    {
+      "path": "experiment_data/R8_paired_width.tsv",
+      "sha256": "b636fc5f5a8983ba022a161239886d1c2cb0a05b46982135d7d84083e5b46d12"
+    },
+    {
+      "path": "experiment_data/R8_significance.tsv",
+      "sha256": "2d4b9fbf96ad79bc32440a6992c039bac324a628d3b55406b92df9e1fc4a8e45"
+    },
+    {
+      "path": "experiment_data/SCORE.json",
+      "sha256": "193bd18320a368c614af678f947aaceec0db8dd72d0747809675a859f09807c5"
+    },
+    {
+      "path": "experiment_data/action_raw.tsv",
+      "sha256": "d614ab232818d77ca193f563569f9862aec249ef3e2b13f6c6ccd05c184e01b3"
+    },
+    {
+      "path": "experiment_data/figure_tests.tsv",
+      "sha256": "9acf982f097635ca6532c27670cb935b2ea6d94c272c4425fcc55f4d8fca1402"
+    },
+    {
+      "path": "experiment_data/paired_summary.tsv",
+      "sha256": "7cd50626f1d658784b75360937ea85533b1d96ece2c389b6b014159b00622a44"
+    },
+    {
+      "path": "experiment_data/policy_raw.tsv",
+      "sha256": "0711dfc201fdaf1db13ddc292ed5c7ad19b4a25570348010db086f6dd1959c23"
+    },
+    {
+      "path": "experiment_data/policy_summary.tsv",
+      "sha256": "8a44ccb7d08e2e61987f231d90b9e6c6bb20cb3fa2ae847ef802a4222674a4a1"
+    },
+    {
+      "path": "experiment_data/BIO/acquisition/ACTION_FREEZE.json",
+      "sha256": "6c7fbfa265533d90ffd4e9b31005661c3b5190517b7b04f8ca1ff869f89af5ff"
+    },
+    {
+      "path": "experiment_data/BIO/acquisition/ACTUAL_COMMANDS.txt",
+      "sha256": "e29f6d1fec19deb58a118d1154d97123a110aad0d596222b1f3119a2195bfddb"
+    },
+    {
+      "path": "experiment_data/BIO/acquisition/ASSESSMENT.json",
+      "sha256": "e57f21f1fdb040825d7c81b77ac8074608677ad6b8452f4e88303bd1c67a3f3a"
+    },
+    {
+      "path": "experiment_data/BIO/acquisition/EXECUTION_MANIFEST.json",
+      "sha256": "b7ece48a4cd46eaf93dbd4a069daccf66e7086add7b6b30ab8843d767188516d"
+    },
+    {
+      "path": "experiment_data/BIO/acquisition/FROZEN_MODELS.json",
+      "sha256": "4e9f25c36de3b642769db9b6018a0e8c3077dcd6cef6af3afeae565cfa2c31e8"
+    },
+    {
+      "path": "experiment_data/BIO/acquisition/IMPLEMENTATION_FREEZE.json",
+      "sha256": "d1d03a49d42c752d60282a8d7f4db3c43f69b6e4e09657cf1c93fcb19f07c6cc"
+    },
+    {
+      "path": "experiment_data/BIO/acquisition/METHOD_SUMMARY.tsv",
+      "sha256": "d35db4b4337455cc987ae5a21310a77a6c837a6d25243dc940b7eeb69684ba0d"
+    },
+    {
+      "path": "experiment_data/BIO/acquisition/MODEL_FREEZE.json",
+      "sha256": "b9548389be60ecb5ac7cb13074ceaacc3dff2262165184dae042b9bbfe3e3c0a"
+    },
+    {
+      "path": "experiment_data/BIO/acquisition/PAIRED_CONTRASTS.tsv",
+      "sha256": "40cd1d1d6d6cf4b333b186e01f0cb1bd406c673c7692b9c79f4978c4c0ad98e0"
+    },
+    {
+      "path": "experiment_data/BIO/acquisition/PRIMARY_ACTION_COUNTS.tsv",
+      "sha256": "e773c2824495747ebd6f90d707c19259525e0e17583d55dbb7fec078206028b9"
+    },
+    {
+      "path": "experiment_data/BIO/acquisition/PRIMARY_OVERVIEW.tsv",
+      "sha256": "39f02dd544a993638855669582f2d75b97e2635f7d652b3a9a6c2fb6c3aad861"
+    },
+    {
+      "path": "experiment_data/BIO/acquisition/PRIMARY_PAIRED_SUMMARY.tsv",
+      "sha256": "ef5f91fff490118c566d001eb757c361fbaac2afb9f061efb61993f32ea95fd6"
+    },
+    {
+      "path": "experiment_data/BIO/acquisition/PRIOR_FIT_DIAGNOSTICS.json",
+      "sha256": "292ed94fd6ea89383e3e54e2949441149061610fe6d98c1afdf473e6c3813cf1"
+    },
+    {
+      "path": "experiment_data/BIO/acquisition/VALIDATION.json",
+      "sha256": "fd1edbe634ba54270f13dffb4a888e1a8ff1cc47f606d6c4b51b57024e9b8cfc"
+    },
+    {
+      "path": "experiment_data/BIO/acquisition/confirmation_actions_frozen.tsv",
+      "sha256": "e554e166a07699aa3e34345b88dc6483273da87840e522e8b8d7309a70ecd84f"
+    },
+    {
+      "path": "experiment_data/BIO/acquisition/confirmation_all_fixed_plans.tsv.gz",
+      "sha256": "7142c85eaeeb47643bc874450693c8c6ed680c7b50e0517a42ffc2cdc1a01d5b"
+    },
+    {
+      "path": "experiment_data/BIO/acquisition/confirmation_patient_summary.tsv",
+      "sha256": "0e656c05e27acf0415874f5f084b2a0c098359d4ed9f84fa505e75306f366648"
+    },
+    {
+      "path": "experiment_data/BIO/acquisition/confirmation_raw.tsv.gz",
+      "sha256": "25455f9dd6cc34ff0815fab6adda273fb56792dd1b81b00dca720b24916e1ba5"
+    },
+    {
+      "path": "experiment_data/BIO/acquisition/development_actions.tsv",
+      "sha256": "694f2456697d942f5b62c9a5363662caf8d597e15be06757096646876d2eea75"
+    },
+    {
+      "path": "experiment_data/BIO/acquisition/development_all_fixed_plans.tsv.gz",
+      "sha256": "521e48709969cd1e89b7462da8116df599ebc7788494266960b1ae9c42f30297"
+    },
+    {
+      "path": "experiment_data/BIO/acquisition/development_patient_summary.tsv",
+      "sha256": "559d3b828fba9ee7fc583bd28c6cd847fad68add27b7d19ffce9ca0251fc0cab"
+    },
+    {
+      "path": "experiment_data/BIO/acquisition/development_raw.tsv.gz",
+      "sha256": "e8fd38e7c917c88fb57504c1c9127569413fa4d2d597b333da2b317820af5bef"
+    },
+    {
+      "path": "experiment_data/BIO/configs/CTDNA_ASSAY_FREEZE.json",
+      "sha256": "ee3f7e77b8ea3db96ab238f6c0422a1d3e7240b9dd84b964f2a3ea56b1927ce5"
+    },
+    {
+      "path": "experiment_data/BIO/configs/CTDNA_FUTURE_SCORER_FREEZE.json",
+      "sha256": "875562e92ce73855502b191c38997cefd4813cbc439b689280fddbafc9426af8"
+    },
+    {
+      "path": "experiment_data/BIO/configs/CTDNA_PATIENT_SPLIT.tsv",
+      "sha256": "63c268cb4afdace7b830d270542b8c265506e47b19123ab14a7c1cf27626e424"
+    },
+    {
+      "path": "experiment_data/BIO/configs/CTDNA_SPLIT_EXTENSION.json",
+      "sha256": "49e435a83ad8d481d84b368ae419779e7d7f0a133ea8892cf1bfa861422044b2"
+    },
+    {
+      "path": "experiment_data/BIO/configs/DERIVED_INPUT_FREEZE.json",
+      "sha256": "65071af7b8e2f30020f6ca2920f8fd9f7c408daf85859aa79671f25a8647b0d6"
+    },
+    {
+      "path": "experiment_data/BIO/configs/PATIENT_SPLIT.tsv",
+      "sha256": "7342aa0dc54aea63614003d1ccace2f5c1e9842a79e0506f8e6293b8be803f22"
+    },
+    {
+      "path": "experiment_data/BIO/configs/PROTOCOL.json",
+      "sha256": "93bbb65ae6a09dfdd242b33d3b0fab07124c196f25804aa247c768f38fc1bbca"
+    },
+    {
+      "path": "experiment_data/BIO/configs/PROTOCOL_FREEZE.json",
+      "sha256": "19e0b91eba7f7b168632ecd2333a723b39d716986e22eeb884ddea1879b2a000"
+    },
+    {
+      "path": "experiment_data/BIO/configs/SOFTWARE_FREEZE.txt",
+      "sha256": "7c64ca6d211522868b3d57b8e4ef23edb015aa226af057ea247acc13be9d23fe"
+    },
+    {
+      "path": "experiment_data/BIO/ctdna/CLONE_DETECTIONS.tsv.gz",
+      "sha256": "c4e59250371d141c022f13feef7e300ac9fd8b4226448e6ae675981ae73ea585"
+    },
+    {
+      "path": "experiment_data/BIO/ctdna/COMMANDS_EXECUTED.txt",
+      "sha256": "b17e327feb4a5afbf9f7f46b4490ebfbee476ea88265cb228cf25c437df8addd"
+    },
+    {
+      "path": "experiment_data/BIO/ctdna/CTDNA_REPLAY_REPORT_CN.txt",
+      "sha256": "e5f42fb902ea7dbe3ecbd12f09fba0a037dfaf3aca0454f26f696b442a039f21"
+    },
+    {
+      "path": "experiment_data/BIO/ctdna/EXECUTION_RECEIPT.json",
+      "sha256": "f442439795b4a2a9d708becbc6c2c0f92d07045968e588450140c75486dc6c92"
+    },
+    {
+      "path": "experiment_data/BIO/ctdna/FUTURE_TISSUE_PATIENT_SCORES.tsv",
+      "sha256": "ee3f694ece8e29739feb7da30930da8ccfc88b5114aa78bdc920428c0a4d6839"
+    },
+    {
+      "path": "experiment_data/BIO/ctdna/FUTURE_TISSUE_SCORER_RECEIPT.json",
+      "sha256": "eee1ce1fe4279da48a2b6222e76aed088c6e9a75315c67724c22333c7f0e096c"
+    },
+    {
+      "path": "experiment_data/BIO/ctdna/FUTURE_TISSUE_SUMMARY.tsv",
+      "sha256": "8d431cc2b103d4c71fdc3703d0d2ae86cfe859665194b749f277eb549cedd775"
+    },
+    {
+      "path": "experiment_data/BIO/ctdna/FUTURE_TISSUE_TARGETS.tsv",
+      "sha256": "c40c415f66b79c4599a9f4d4b8a235d5ccb992c483eb63cca5eb038b794fc7eb"
+    },
+    {
+      "path": "experiment_data/BIO/ctdna/FUTURE_TISSUE_TARGET_SUPPORT.tsv",
+      "sha256": "833948c49b442008d27ff7a77b096c377f58d499db8a502975f273aa5466112e"
+    },
+    {
+      "path": "experiment_data/BIO/ctdna/MARKER_SELECTION_FREEZE.tsv.gz",
+      "sha256": "439cebfde51afde345d859f372adbf2904ec5cb8d508ae912258665e9a79021a"
+    },
+    {
+      "path": "experiment_data/BIO/ctdna/NORMAL_CONTROL_RECORDS.tsv",
+      "sha256": "2359597a6a23dee523f251e8f026af5463c6bf8c56f12f697feaa6015f31ce0a"
+    },
+    {
+      "path": "experiment_data/BIO/ctdna/NORMAL_CONTROL_SOURCE_SUMMARY.tsv",
+      "sha256": "846a21a691a4b076cae8744a041b8bee6fadf9a5aac2a2bbc2678ede6a38f93f"
+    },
+    {
+      "path": "experiment_data/BIO/ctdna/NORMAL_DEVELOPMENT_PARAMETERS.json",
+      "sha256": "e9252c1c359c6e8edaa1944c99fcc81ccdcd7675e2ddd359435ad07ea7e4c794"
+    },
+    {
+      "path": "experiment_data/BIO/ctdna/NORMAL_FPR_SUMMARY.tsv",
+      "sha256": "3a63ff1b2f84f095536b8b2ec8417d7028a915f47678632f55caf5d37cdf6a8e"
+    },
+    {
+      "path": "experiment_data/BIO/ctdna/PAIRED_COMPARISONS.tsv",
+      "sha256": "6a9d7c14fd6ead372e97df73fba290a3364e9970bf529293ae95b36e752d05a0"
+    },
+    {
+      "path": "experiment_data/BIO/ctdna/PATIENT_RECALL.tsv",
+      "sha256": "81fb70dbf5b7fed46813be0991171ebdb8cd0b4b982343b0742f02b4320df77a"
+    },
+    {
+      "path": "experiment_data/BIO/ctdna/POPULATION_SUMMARY.tsv",
+      "sha256": "f1b28fc11e9417b1e07579ad3bbb92762b40b3bdb9dfd5f992e6691f525d540e"
+    },
+    {
+      "path": "experiment_data/BIO/ctdna/QA_CHECKS.json",
+      "sha256": "e69f6a1707030ef5edd61a5809b67711ee7b11688d7423b227d3f4212ad05bc8"
+    },
+    {
+      "path": "experiment_data/BIO/ctdna/REPLAY_SELECTION_RECEIPT.json",
+      "sha256": "35fbe3102643a24ab723456e35756c2dddc57d00966f1cf759b429a8ff52316b"
+    },
+    {
+      "path": "experiment_data/BIO/ctdna/SAMPLE_DETECTIONS.tsv.gz",
+      "sha256": "d1667673d014e0a3c57a7a48147d44f482738799f917f7550ea2b601ba4c0419"
+    },
+    {
+      "path": "experiment_data/BIO/ctdna/SCHEMAS.json",
+      "sha256": "e6f013e5d9906bec275f2d82afaf7e35fead37703fce65671029eaef1e9db597"
+    },
+    {
+      "path": "experiment_data/BIO/ctdna/SURGERY_ONLY_MARKER_LIBRARY.tsv.gz",
+      "sha256": "b9940150863a43526aeb1bebb64fbff4de68bf3ce140a119586b5ff06a7e4b1e"
+    },
+    {
+      "path": "plot_data/G5_BIO_02_future_clone_tracking_POINT_DISPLAY.json",
+      "sha256": "ff7b32627cafa3133e57a547321fe1132a17a8b974cc56005ad5926b3a1b94bf"
+    }
+  ],
+  "method": {
+    "path": "METHOD.json",
+    "sha256": "173394a07b756fe3bf852db396663d7fe0ee1ca1bbeffaedc73721f504f857e7"
+  },
+  "figure_legends": {
+    "path": "FIGURE_LEGENDS_CN.md",
+    "sha256": "58d3f09e6bf11a017ffc571f8b1574f22be3e9c2536ab7654d729fbfb4665fdb"
+  },
+  "figure_style": {
+    "font": "Arial",
+    "dpi": 600,
+    "format": [
+      "PDF",
+      "SVG"
+    ],
+    "vector": true
+  },
+  "current_documents": [
+    {
+      "path": "REPORT_CN.md",
+      "sha256": "d12abf60ac81578a5e8d675a25c8fc253386865df52138a6a2f2eaeaa4ba5385"
+    },
+    {
+      "path": "EXPERIMENT_RESULTS.tsv",
+      "sha256": "b9a8618415266f3752cdcb9c870f8270dcbe757262acf63a8a6b2a9f7392ad6a"
+    },
+    {
+      "path": "BIOLOGICAL_VALIDATION_CN.md",
+      "sha256": "dd5e35c94b79786c282b1feacb5c75dd623b0d550973be47d6a65ef60f7c733d"
+    }
+  ]
+}

@@ -1,0 +1,7 @@
+comparator	mean_width_reduction	ci_low	ci_high	unit
+NO_ACTION	3.789290563734714	3.545656603698807	4.0272900892714585	replicate block across four prespecified scenarios; exploratory percentile interval
+MORE_SAME	2.855288498855849	2.631008413631484	3.0648142728002483	replicate block across four prespecified scenarios; exploratory percentile interval
+REFERENCE_MARGIN	1.7979007753946772	1.5975257817907074	1.9863430106545947	replicate block across four prespecified scenarios; exploratory percentile interval
+NEW_SOURCE	1.2926633215358705	1.1282125209105438	1.456631816652186	replicate block across four prespecified scenarios; exploratory percentile interval
+RANDOM_FEASIBLE_EXPECTATION	1.6083575564578225	1.4910493624948051	1.7206129300761468	replicate block across four prespecified scenarios; exploratory percentile interval
+DEVELOPMENT_BEST_FIXED	1.2926633215358705	1.129480075232064	1.4623880104259526	replicate block across four prespecified scenarios; exploratory percentile interval

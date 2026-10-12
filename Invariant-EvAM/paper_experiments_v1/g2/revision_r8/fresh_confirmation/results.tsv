@@ -1,0 +1,401 @@
+design	truth	replicate	method	lo	hi	status	finite	subdivisions	covered	correct	wrong	n	valid	called	width	evaluations	scope
+strong	0.0	24	EXACT_CONDITIONAL_OUTER	-0.37213849550556827	0.29573294194899197	COMPLETE	True	96.0	True	False	False						
+strong	0.0	24	CLASSIC_PROFILE_REFINED_V2	-0.12345648069699373	0.10012711396198147		True		True	False	False	16000.0	True	False	0.2235835946589752	25.0	continuous root within fixed [-3,3] search; boundary extends to infinity; local profile, not global certification
+strong	0.8	23	EXACT_CONDITIONAL_OUTER	0.5674607931836436	0.9747394875611353	COMPLETE	True	96.0	True	True	False						
+strong	0.8	23	CLASSIC_PROFILE_REFINED_V2	0.6911828261548678	0.8559141256735087		True		True	True	False	16000.0	True	True	0.16473129951864085	27.0	continuous root within fixed [-3,3] search; boundary extends to infinity; local profile, not global certification
+strong	0.15	23	EXACT_CONDITIONAL_OUTER	-0.09197730660744126	0.40284954374529247	COMPLETE	True	96.0	True	False	False						
+strong	0.15	23	CLASSIC_PROFILE_REFINED_V2	0.06837430250791715	0.2760606353322195		True		True	True	False	16000.0	True	True	0.20768633282430232	25.0	continuous root within fixed [-3,3] search; boundary extends to infinity; local profile, not global certification
+weak	0.15	18	EXACT_CONDITIONAL_OUTER	-inf	inf	COMPLETE	False	96.0	True	False	False						
+weak	0.15	18	CLASSIC_PROFILE_REFINED_V2	0.10914914288157945	0.34846868528301583		True		True	True	False	16000.0	True	True	0.23931954240143638	26.0	continuous root within fixed [-3,3] search; boundary extends to infinity; local profile, not global certification
+weak	-0.8	20	EXACT_CONDITIONAL_OUTER	-inf	inf	COMPLETE	False	96.0	True	False	False						
+weak	-0.8	20	CLASSIC_PROFILE_REFINED_V2	-1.280164829007228	-0.5711731791850478		True		True	True	False	16000.0	True	True	0.7089916498221802	24.0	continuous root within fixed [-3,3] search; boundary extends to infinity; local profile, not global certification
+strong	0.15	19	EXACT_CONDITIONAL_OUTER	-0.19318012032505652	0.29516423739799197	COMPLETE	True	96.0	True	False	False						
+strong	0.15	19	CLASSIC_PROFILE_REFINED_V2	-0.05285254533389036	0.16592462781722214		True		True	False	False	16000.0	True	False	0.2187771731511125	25.0	continuous root within fixed [-3,3] search; boundary extends to infinity; local profile, not global certification
+weak	0.15	22	EXACT_CONDITIONAL_OUTER	-inf	inf	COMPLETE	False	96.0	True	False	False						
+weak	0.15	22	CLASSIC_PROFILE_REFINED_V2	0.05660832696715629	0.2927460476596983		True		True	True	False	16000.0	True	True	0.23613772069254202	31.0	continuous root within fixed [-3,3] search; boundary extends to infinity; local profile, not global certification
+strong	0.8	19	EXACT_CONDITIONAL_OUTER	0.5905437432396995	1.0388808782604775	COMPLETE	True	96.0	True	True	False						
+strong	0.8	19	CLASSIC_PROFILE_REFINED_V2	0.7396175474588816	0.9012578030910339		True		True	True	False	16000.0	True	True	0.16164025563215223	27.0	continuous root within fixed [-3,3] search; boundary extends to infinity; local profile, not global certification
+weak	0.8	12	EXACT_CONDITIONAL_OUTER	-inf	inf	COMPLETE	False	96.0	True	False	False						
+weak	0.8	12	CLASSIC_PROFILE_REFINED_V2	0.6306677818454115	0.9220982152348632		True		True	True	False	16000.0	True	True	0.29143043338945174	30.0	continuous root within fixed [-3,3] search; boundary extends to infinity; local profile, not global certification
+strong	0.0	8	EXACT_CONDITIONAL_OUTER	-0.30192833976121236	0.28504055944954787	COMPLETE	True	96.0	True	False	False						
+strong	0.0	8	CLASSIC_PROFILE_REFINED_V2	-0.10241117700947487	0.12109542891246114		True		True	False	False	16000.0	True	False	0.223506605921936	25.0	continuous root within fixed [-3,3] search; boundary extends to infinity; local profile, not global certification
+weak	0.8	4	EXACT_CONDITIONAL_OUTER	-inf	inf	COMPLETE	False	96.0	True	False	False						
+weak	0.8	4	CLASSIC_PROFILE_REFINED_V2	0.5977129682040755	0.8738904874313097		True		True	True	False	16000.0	True	True	0.2761775192272342	25.0	continuous root within fixed [-3,3] search; boundary extends to infinity; local profile, not global certification
+strong	-0.8	21	EXACT_CONDITIONAL_OUTER	-1.4656810924899286	-0.2935328304341704	COMPLETE	True	96.0	True	True	False						
+strong	-0.8	21	CLASSIC_PROFILE_REFINED_V2	-0.9408668275305334	-0.5812532393698544		True		True	True	False	16000.0	True	True	0.359613588160679	24.0	continuous root within fixed [-3,3] search; boundary extends to infinity; local profile, not global certification
+weak	0.8	24	EXACT_CONDITIONAL_OUTER	-inf	inf	COMPLETE	False	96.0	True	False	False						
+weak	0.8	24	CLASSIC_PROFILE_REFINED_V2	0.6760621169045542	0.9721194217444357		False		False	False	False	16000.0	False	False	0.29605730483988146	31.0	continuous root within fixed [-3,3] search; boundary extends to infinity; local profile, not global certification
+weak	0.15	14	EXACT_CONDITIONAL_OUTER	-inf	inf	COMPLETE	False	96.0	True	False	False						
+weak	0.15	14	CLASSIC_PROFILE_REFINED_V2	0.06680151969115215	0.303692666288687		True		True	True	False	16000.0	True	True	0.23689114659753485	26.0	continuous root within fixed [-3,3] search; boundary extends to infinity; local profile, not global certification
+strong	-0.8	1	EXACT_CONDITIONAL_OUTER	-1.5576213144801447	-0.3070333437828768	COMPLETE	True	96.0	True	True	False						
+strong	-0.8	1	CLASSIC_PROFILE_REFINED_V2	-0.9939100862697883	-0.6206809707011371		True		True	True	False	16000.0	True	True	0.3732291155686511	24.0	continuous root within fixed [-3,3] search; boundary extends to infinity; local profile, not global certification
+weak	0.15	2	EXACT_CONDITIONAL_OUTER	-inf	inf	COMPLETE	False	96.0	True	False	False						
+weak	0.15	2	CLASSIC_PROFILE_REFINED_V2	-0.003856759135052618	0.2216136034852575		True		True	False	False	16000.0	True	False	0.22547036262031012	25.0	continuous root within fixed [-3,3] search; boundary extends to infinity; local profile, not global certification
+strong	-0.8	17	EXACT_CONDITIONAL_OUTER	-1.5017215733767608	-0.5076341988121932	COMPLETE	True	96.0	True	True	False						
+strong	-0.8	17	CLASSIC_PROFILE_REFINED_V2	-1.1293043190415244	-0.7285284479438184		True		True	True	False	16000.0	True	True	0.40077587109770596	23.0	continuous root within fixed [-3,3] search; boundary extends to infinity; local profile, not global certification
+weak	-0.8	0	EXACT_CONDITIONAL_OUTER	-inf	inf	COMPLETE	False	96.0	True	False	False						
+weak	-0.8	0	CLASSIC_PROFILE_REFINED_V2	-1.1419547634804685	-0.5140691231181476		True		True	True	False	16000.0	True	True	0.627885640362321	23.0	continuous root within fixed [-3,3] search; boundary extends to infinity; local profile, not global certification
+strong	0.15	15	EXACT_CONDITIONAL_OUTER	-0.21763046012451687	0.40482682762904976	COMPLETE	True	96.0	True	False	False						
+strong	0.15	15	CLASSIC_PROFILE_REFINED_V2	0.011114973962925856	0.2218420019314886		True		True	True	False	16000.0	True	True	0.21072702796856274	25.0	continuous root within fixed [-3,3] search; boundary extends to infinity; local profile, not global certification
+weak	0.0	7	EXACT_CONDITIONAL_OUTER	-inf	inf	COMPLETE	False	96.0	True	False	False						
+weak	0.0	7	CLASSIC_PROFILE_REFINED_V2	-0.1832358534668282	0.06329710777663884		True		True	False	False	16000.0	True	False	0.24653296124346702	25.0	continuous root within fixed [-3,3] search; boundary extends to infinity; local profile, not global certification
+strong	0.8	15	EXACT_CONDITIONAL_OUTER	0.6533980618370082	1.0046193221931188	COMPLETE	True	96.0	True	True	False						
+strong	0.8	15	CLASSIC_PROFILE_REFINED_V2	0.7542543200476464	0.9156529693661789		True		True	True	False	16000.0	True	True	0.16139864931853254	27.0	continuous root within fixed [-3,3] search; boundary extends to infinity; local profile, not global certification
+strong	0.0	12	EXACT_CONDITIONAL_OUTER	-0.3190676474782992	0.3458685360435944	COMPLETE	True	96.0	True	False	False						
+strong	0.0	12	CLASSIC_PROFILE_REFINED_V2	-0.06321143981963512	0.1575072980585391		True		True	False	False	16000.0	True	False	0.22071873787817423	25.0	continuous root within fixed [-3,3] search; boundary extends to infinity; local profile, not global certification
+strong	0.8	3	EXACT_CONDITIONAL_OUTER	0.6281791156583253	0.8960044061437662	COMPLETE	True	96.0	True	True	False						
+strong	0.8	3	CLASSIC_PROFILE_REFINED_V2	0.6797142133600534	0.8444075166041644		True		True	True	False	16000.0	True	True	0.1646933032441109	27.0	continuous root within fixed [-3,3] search; boundary extends to infinity; local profile, not global certification
+strong	0.0	4	EXACT_CONDITIONAL_OUTER	-0.3735561917841932	0.28483783101959376	COMPLETE	True	96.0	True	False	False						
+strong	0.0	4	CLASSIC_PROFILE_REFINED_V2	-0.12390238672904204	0.10199988391877902		True		True	False	False	16000.0	True	False	0.22590227064782106	25.0	continuous root within fixed [-3,3] search; boundary extends to infinity; local profile, not global certification
+weak	0.8	8	EXACT_CONDITIONAL_OUTER	-inf	inf	COMPLETE	False	96.0	True	False	False						
+weak	0.8	8	CLASSIC_PROFILE_REFINED_V2	0.6011224157170499	0.8904337292953048		True		True	True	False	16000.0	True	True	0.2893113135782549	31.0	continuous root within fixed [-3,3] search; boundary extends to infinity; local profile, not global certification
+weak	-0.8	16	EXACT_CONDITIONAL_OUTER	-inf	inf	COMPLETE	False	96.0	True	False	False						
+weak	-0.8	16	CLASSIC_PROFILE_REFINED_V2	-1.1417910661840662	-0.5067162270358349		True		True	True	False	16000.0	True	True	0.6350748391482314	24.0	continuous root within fixed [-3,3] search; boundary extends to infinity; local profile, not global certification
+weak	0.0	11	EXACT_CONDITIONAL_OUTER	-inf	inf	COMPLETE	False	96.0	True	False	False						
+weak	0.0	11	CLASSIC_PROFILE_REFINED_V2	-0.14229469216230928	0.10430050723532694		True		True	False	False	16000.0	True	False	0.24659519939763622	25.0	continuous root within fixed [-3,3] search; boundary extends to infinity; local profile, not global certification
+strong	0.15	3	EXACT_CONDITIONAL_OUTER	-0.20978190474135064	0.36705033762183387	COMPLETE	True	96.0	True	False	False						
+strong	0.15	3	CLASSIC_PROFILE_REFINED_V2	-0.01409151413125462	0.20003746211256715		True		True	False	False	16000.0	True	False	0.21412897624382177	25.0	continuous root within fixed [-3,3] search; boundary extends to infinity; local profile, not global certification
+weak	0.0	10	EXACT_CONDITIONAL_OUTER	-inf	inf	COMPLETE	False	96.0	True	False	False						
+weak	0.0	10	CLASSIC_PROFILE_REFINED_V2	-0.010510969372416792	0.2193275283831287		True		True	False	False	16000.0	True	False	0.2298384977555455	26.0	continuous root within fixed [-3,3] search; boundary extends to infinity; local profile, not global certification
+strong	0.15	2	EXACT_CONDITIONAL_OUTER	-0.05382472940878588	0.49906445294020474	COMPLETE	True	96.0	True	False	False						
+strong	0.15	2	CLASSIC_PROFILE_REFINED_V2	0.1386870132388676	0.34071078525297227		True		True	True	False	16000.0	True	True	0.20202377201410468	25.0	continuous root within fixed [-3,3] search; boundary extends to infinity; local profile, not global certification
+weak	-0.8	17	EXACT_CONDITIONAL_OUTER	-inf	inf	COMPLETE	False	96.0	True	False	False						
+weak	-0.8	17	CLASSIC_PROFILE_REFINED_V2	-1.211223358775527	-0.5441764251276573		True		True	True	False	16000.0	True	True	0.6670469336478697	23.0	continuous root within fixed [-3,3] search; boundary extends to infinity; local profile, not global certification
+strong	0.8	2	EXACT_CONDITIONAL_OUTER	0.5587295663540598	1.0029691648377546	COMPLETE	True	96.0	True	True	False						
+strong	0.8	2	CLASSIC_PROFILE_REFINED_V2	0.7054490017780589	0.8690501811753193		True		True	True	False	16000.0	True	True	0.16360117939726038	27.0	continuous root within fixed [-3,3] search; boundary extends to infinity; local profile, not global certification
+strong	0.0	5	EXACT_CONDITIONAL_OUTER	-0.3372286030786848	0.3043050301456871	COMPLETE	True	96.0	True	False	False						
+strong	0.0	5	CLASSIC_PROFILE_REFINED_V2	-0.09932871745715298	0.12322552153560258		True		True	False	False	16000.0	True	False	0.22255423899275556	25.0	continuous root within fixed [-3,3] search; boundary extends to infinity; local profile, not global certification
+weak	0.8	9	EXACT_CONDITIONAL_OUTER	-inf	inf	COMPLETE	False	96.0	True	False	False						
+weak	0.8	9	CLASSIC_PROFILE_REFINED_V2	0.663476916187137	0.9534502532448403		True		True	True	False	16000.0	True	True	0.28997333705770334	28.0	continuous root within fixed [-3,3] search; boundary extends to infinity; local profile, not global certification
+strong	0.8	14	EXACT_CONDITIONAL_OUTER	0.537241822371544	0.970704835414119	COMPLETE	True	96.0	True	True	False						
+strong	0.8	14	CLASSIC_PROFILE_REFINED_V2	0.6732102753305118	0.8369635547381604		True		True	True	False	16000.0	True	True	0.1637532794076486	27.0	continuous root within fixed [-3,3] search; boundary extends to infinity; local profile, not global certification
+strong	0.0	13	EXACT_CONDITIONAL_OUTER	-0.3458420869319916	0.30026882659788445	COMPLETE	True	96.0	True	False	False						
+strong	0.0	13	CLASSIC_PROFILE_REFINED_V2	-0.10471996236422701	0.11935796833918129		True		True	False	False	16000.0	True	False	0.2240779307034083	25.0	continuous root within fixed [-3,3] search; boundary extends to infinity; local profile, not global certification
+strong	0.15	14	EXACT_CONDITIONAL_OUTER	-0.13170928997610426	0.4691511935673041	COMPLETE	True	96.0	True	False	False						
+strong	0.15	14	CLASSIC_PROFILE_REFINED_V2	0.0876040445225232	0.2960685213572134		True		True	True	False	16000.0	True	True	0.20846447683469022	25.0	continuous root within fixed [-3,3] search; boundary extends to infinity; local profile, not global certification
+weak	0.0	6	EXACT_CONDITIONAL_OUTER	-inf	inf	COMPLETE	False	96.0	True	False	False						
+weak	0.0	6	CLASSIC_PROFILE_REFINED_V2	-0.05383512349574909	0.1818513618121226		True		True	False	False	16000.0	True	False	0.2356864853078717	25.0	continuous root within fixed [-3,3] search; boundary extends to infinity; local profile, not global certification
+weak	-0.8	1	EXACT_CONDITIONAL_OUTER	-inf	inf	COMPLETE	False	96.0	True	False	False						
+weak	-0.8	1	CLASSIC_PROFILE_REFINED_V2	-0.96822364250958	-0.4195450243241439		True		True	True	False	16000.0	True	True	0.5486786181854362	24.0	continuous root within fixed [-3,3] search; boundary extends to infinity; local profile, not global certification
+strong	-0.8	16	EXACT_CONDITIONAL_OUTER	-1.553037520355087	-0.33049427362500444	COMPLETE	True	96.0	True	True	False						
+strong	-0.8	16	CLASSIC_PROFILE_REFINED_V2	-1.004731251436051	-0.6320748455077155		True		True	True	False	16000.0	True	True	0.3726564059283354	24.0	continuous root within fixed [-3,3] search; boundary extends to infinity; local profile, not global certification
+weak	0.15	3	EXACT_CONDITIONAL_OUTER	-inf	inf	COMPLETE	False	96.0	True	False	False						
+weak	0.15	3	CLASSIC_PROFILE_REFINED_V2	-0.06824744498883532	0.16563275883669026		True		True	False	False	16000.0	True	False	0.2338802038255256	25.0	continuous root within fixed [-3,3] search; boundary extends to infinity; local profile, not global certification
+strong	-0.8	0	EXACT_CONDITIONAL_OUTER	-1.6499723619753177	-0.374371250190944	COMPLETE	True	96.0	True	True	False						
+strong	-0.8	0	CLASSIC_PROFILE_REFINED_V2	-1.0703729536672861	-0.6852731478626706		True		True	True	False	16000.0	True	True	0.38509980580461556	23.0	continuous root within fixed [-3,3] search; boundary extends to infinity; local profile, not global certification
+weak	0.15	15	EXACT_CONDITIONAL_OUTER	-inf	inf	COMPLETE	False	96.0	True	False	False						
+weak	0.15	15	CLASSIC_PROFILE_REFINED_V2	0.009368052457695144	0.23575302743562282		True		True	True	False	16000.0	True	True	0.22638497497792767	25.0	continuous root within fixed [-3,3] search; boundary extends to infinity; local profile, not global certification
+strong	-0.8	20	EXACT_CONDITIONAL_OUTER	-1.8505457891135004	-0.41824337138887896	COMPLETE	True	96.0	True	True	False						
+strong	-0.8	20	CLASSIC_PROFILE_REFINED_V2	-1.1610514034357895	-0.7483224441711657		True		True	True	False	16000.0	True	True	0.41272895926462383	23.0	continuous root within fixed [-3,3] search; boundary extends to infinity; local profile, not global certification
+strong	0.0	9	EXACT_CONDITIONAL_OUTER	-0.4192722475433301	0.24460880742332866	COMPLETE	True	96.0	True	False	False						
+strong	0.0	9	CLASSIC_PROFILE_REFINED_V2	-0.1694128147575199	0.05972959703223562		True		True	False	False	16000.0	True	False	0.22914241178975553	25.0	continuous root within fixed [-3,3] search; boundary extends to infinity; local profile, not global certification
+weak	0.8	5	EXACT_CONDITIONAL_OUTER	-inf	inf	COMPLETE	False	96.0	True	False	False						
+weak	0.8	5	CLASSIC_PROFILE_REFINED_V2	0.5734245611686675	0.8590479711694644		False		False	False	False	16000.0	False	False	0.28562341000079694	31.0	continuous root within fixed [-3,3] search; boundary extends to infinity; local profile, not global certification
+strong	0.8	18	EXACT_CONDITIONAL_OUTER	0.5888926615415911	1.034369823563574	COMPLETE	True	96.0	True	True	False						
+strong	0.8	18	CLASSIC_PROFILE_REFINED_V2	0.7365959162941631	0.8988610520083966		True		True	True	False	16000.0	True	True	0.1622651357142335	27.0	continuous root within fixed [-3,3] search; boundary extends to infinity; local profile, not global certification
+weak	0.8	13	EXACT_CONDITIONAL_OUTER	-inf	inf	COMPLETE	False	96.0	True	False	False						
+weak	0.8	13	CLASSIC_PROFILE_REFINED_V2	0.5964250354700152	0.8819066679637547		True		True	True	False	16000.0	True	True	0.2854816324937395	29.0	continuous root within fixed [-3,3] search; boundary extends to infinity; local profile, not global certification
+weak	0.15	23	EXACT_CONDITIONAL_OUTER	-inf	inf	COMPLETE	False	96.0	True	False	False						
+weak	0.15	23	CLASSIC_PROFILE_REFINED_V2	0.03961941760067238	0.2658774923012757		True		True	True	False	16000.0	True	True	0.22625807470060333	26.0	continuous root within fixed [-3,3] search; boundary extends to infinity; local profile, not global certification
+strong	0.15	18	EXACT_CONDITIONAL_OUTER	-0.019262395001607126	0.26066202921022696	COMPLETE	True	96.0	True	False	False						
+strong	0.15	18	CLASSIC_PROFILE_REFINED_V2	0.02766482422176918	0.23773750305210364		True		True	True	False	16000.0	True	True	0.21007267883033445	25.0	continuous root within fixed [-3,3] search; boundary extends to infinity; local profile, not global certification
+weak	-0.8	21	EXACT_CONDITIONAL_OUTER	-inf	inf	COMPLETE	False	96.0	True	False	False						
+weak	-0.8	21	CLASSIC_PROFILE_REFINED_V2	-1.1094875964628585	-0.49574821764791144		True		True	True	False	16000.0	True	True	0.6137393788149471	23.0	continuous root within fixed [-3,3] search; boundary extends to infinity; local profile, not global certification
+weak	0.15	19	EXACT_CONDITIONAL_OUTER	-inf	inf	COMPLETE	False	96.0	True	False	False						
+weak	0.15	19	CLASSIC_PROFILE_REFINED_V2	0.03785220506669781	0.263095521512789		True		True	True	False	16000.0	True	True	0.22524331644609116	26.0	continuous root within fixed [-3,3] search; boundary extends to infinity; local profile, not global certification
+strong	0.15	22	EXACT_CONDITIONAL_OUTER	-0.17917243342471928	0.4123753817108638	COMPLETE	True	96.0	True	False	False						
+strong	0.15	22	CLASSIC_PROFILE_REFINED_V2	0.03008876109183162	0.23912662028037351		True		True	True	False	16000.0	True	True	0.2090378591885419	25.0	continuous root within fixed [-3,3] search; boundary extends to infinity; local profile, not global certification
+strong	0.8	22	EXACT_CONDITIONAL_OUTER	0.5963906581626429	1.030842183647903	COMPLETE	True	96.0	True	True	False						
+strong	0.8	22	CLASSIC_PROFILE_REFINED_V2	0.7347156556319561	0.8979027344666283		True		True	True	False	16000.0	True	True	0.1631870788346722	27.0	continuous root within fixed [-3,3] search; boundary extends to infinity; local profile, not global certification
+weak	0.8	22	EXACT_CONDITIONAL_OUTER	-inf	inf	COMPLETE	False	96.0	True	False	False						
+weak	0.8	22	CLASSIC_PROFILE_REFINED_V2	0.6558995492915216	0.9496415672314847		True		True	True	False	16000.0	True	True	0.29374201793996313	31.0	continuous root within fixed [-3,3] search; boundary extends to infinity; local profile, not global certification
+weak	0.15	12	EXACT_CONDITIONAL_OUTER	-inf	inf	COMPLETE	False	96.0	True	False	False						
+weak	0.15	12	CLASSIC_PROFILE_REFINED_V2	-0.08842929464512625	0.14868515502249055		True		False	False	False	16000.0	True	False	0.2371144496676168	25.0	continuous root within fixed [-3,3] search; boundary extends to infinity; local profile, not global certification
+strong	-0.8	7	EXACT_CONDITIONAL_OUTER	-1.4095483151475274	-0.3873879928074441	COMPLETE	True	96.0	True	True	False						
+strong	-0.8	7	CLASSIC_PROFILE_REFINED_V2	-0.9937734354099821	-0.6227388046063481		True		True	True	False	16000.0	True	True	0.37103463080363397	24.0	continuous root within fixed [-3,3] search; boundary extends to infinity; local profile, not global certification
+weak	0.15	4	EXACT_CONDITIONAL_OUTER	-inf	inf	COMPLETE	False	96.0	True	False	False						
+weak	0.15	4	CLASSIC_PROFILE_REFINED_V2	0.05518048359421892	0.2891468322613018		False		False	False	False	16000.0	False	False	0.23396634866708285	26.0	continuous root within fixed [-3,3] search; boundary extends to infinity; local profile, not global certification
+strong	-0.8	11	EXACT_CONDITIONAL_OUTER	-1.5880901930789715	-0.4935629320140676	COMPLETE	True	96.0	True	True	False						
+strong	-0.8	11	CLASSIC_PROFILE_REFINED_V2	-1.1484402658286532	-0.7451189807737456		True		True	True	False	16000.0	True	True	0.4033212850549076	23.0	continuous root within fixed [-3,3] search; boundary extends to infinity; local profile, not global certification
+weak	-0.8	6	EXACT_CONDITIONAL_OUTER	-inf	inf	COMPLETE	False	96.0	True	False	False						
+weak	-0.8	6	CLASSIC_PROFILE_REFINED_V2	-1.6176531073316753	-0.7060565917526203		True		True	True	False	16000.0	True	True	0.9115965155790551	24.0	continuous root within fixed [-3,3] search; boundary extends to infinity; local profile, not global certification
+weak	0.0	1	EXACT_CONDITIONAL_OUTER	-inf	inf	COMPLETE	False	96.0	True	False	False						
+weak	0.0	1	CLASSIC_PROFILE_REFINED_V2	-0.09546642103735682	0.1454513806720389		True		True	False	False	16000.0	True	False	0.2409178017093957	25.0	continuous root within fixed [-3,3] search; boundary extends to infinity; local profile, not global certification
+strong	0.15	13	EXACT_CONDITIONAL_OUTER	-0.259678058032036	0.3271317671878824	COMPLETE	True	96.0	True	False	False						
+strong	0.15	13	CLASSIC_PROFILE_REFINED_V2	-0.056599341592507756	0.16148570127151207		True		True	False	False	16000.0	True	False	0.21808504286401983	25.0	continuous root within fixed [-3,3] search; boundary extends to infinity; local profile, not global certification
+strong	0.8	13	EXACT_CONDITIONAL_OUTER	0.4979973156927776	0.9318054909124673	COMPLETE	True	96.0	True	True	False						
+strong	0.8	13	CLASSIC_PROFILE_REFINED_V2	0.6344003727126177	0.8012695090958759		True		True	True	False	16000.0	True	True	0.16686913638325818	26.0	continuous root within fixed [-3,3] search; boundary extends to infinity; local profile, not global certification
+weak	0.8	18	EXACT_CONDITIONAL_OUTER	-inf	inf	COMPLETE	False	96.0	True	False	False						
+weak	0.8	18	CLASSIC_PROFILE_REFINED_V2	0.6733371423746896	0.9649007594079619		True		True	True	False	16000.0	True	True	0.2915636170332724	25.0	continuous root within fixed [-3,3] search; boundary extends to infinity; local profile, not global certification
+strong	0.0	14	EXACT_CONDITIONAL_OUTER	-0.296128238166515	0.35516197418207623	COMPLETE	True	96.0	True	False	False						
+strong	0.0	14	CLASSIC_PROFILE_REFINED_V2	-0.05719544054048433	0.1645990416239037		True		True	False	False	16000.0	True	False	0.22179448216438805	25.0	continuous root within fixed [-3,3] search; boundary extends to infinity; local profile, not global certification
+strong	0.8	5	EXACT_CONDITIONAL_OUTER	0.599688901594846	1.0446289613075903	COMPLETE	True	96.0	True	True	False						
+strong	0.8	5	CLASSIC_PROFILE_REFINED_V2	0.7449992700619379	0.9080681014325562		True		True	True	False	16000.0	True	True	0.16306883137061834	27.0	continuous root within fixed [-3,3] search; boundary extends to infinity; local profile, not global certification
+strong	0.0	2	EXACT_CONDITIONAL_OUTER	-0.3158649279226029	0.27441914440338894	COMPLETE	True	96.0	True	False	False						
+strong	0.0	2	CLASSIC_PROFILE_REFINED_V2	-0.11228359456906488	0.11445516987102111		True		True	False	False	16000.0	True	False	0.226738764440086	25.0	continuous root within fixed [-3,3] search; boundary extends to infinity; local profile, not global certification
+weak	-0.8	10	EXACT_CONDITIONAL_OUTER	-inf	inf	COMPLETE	False	96.0	True	False	False						
+weak	-0.8	10	CLASSIC_PROFILE_REFINED_V2	-1.1205780930439788	-0.4943339471889014		False		False	False	False	16000.0	False	False	0.6262441458550774	27.0	continuous root within fixed [-3,3] search; boundary extends to infinity; local profile, not global certification
+strong	0.15	5	EXACT_CONDITIONAL_OUTER	-0.04689015267613455	0.4977960244454803	COMPLETE	True	96.0	True	False	False						
+strong	0.15	5	CLASSIC_PROFILE_REFINED_V2	0.14150812948915303	0.3451165518073037		True		True	True	False	16000.0	True	True	0.20360842231815068	25.0	continuous root within fixed [-3,3] search; boundary extends to infinity; local profile, not global certification
+weak	0.0	17	EXACT_CONDITIONAL_OUTER	-inf	inf	COMPLETE	False	96.0	True	False	False						
+weak	0.0	17	CLASSIC_PROFILE_REFINED_V2	-0.12218090159841599	0.12369005480802556		True		True	False	False	16000.0	True	False	0.24587095640644155	25.0	continuous root within fixed [-3,3] search; boundary extends to infinity; local profile, not global certification
+strong	0.0	22	EXACT_CONDITIONAL_OUTER	-0.38752573251495986	0.26142974257735907	COMPLETE	True	96.0	True	False	False						
+strong	0.0	22	CLASSIC_PROFILE_REFINED_V2	-0.15114151138042878	0.08031434800837406		True		True	False	False	16000.0	True	False	0.23145585938880284	25.0	continuous root within fixed [-3,3] search; boundary extends to infinity; local profile, not global certification
+weak	0.0	21	EXACT_CONDITIONAL_OUTER	-inf	inf	COMPLETE	False	96.0	True	False	False						
+weak	0.0	21	CLASSIC_PROFILE_REFINED_V2	-0.11603324296377966	0.12525636896596617		True		True	False	False	16000.0	True	False	0.24128961192974585	25.0	continuous root within fixed [-3,3] search; boundary extends to infinity; local profile, not global certification
+weak	0.15	8	EXACT_CONDITIONAL_OUTER	-inf	inf	COMPLETE	False	96.0	True	False	False						
+weak	0.15	8	CLASSIC_PROFILE_REFINED_V2	0.01968681860619841	0.2460951309266219		True		True	True	False	16000.0	True	True	0.2264083123204235	25.0	continuous root within fixed [-3,3] search; boundary extends to infinity; local profile, not global certification
+weak	0.15	24	EXACT_CONDITIONAL_OUTER	-inf	inf	COMPLETE	False	96.0	True	False	False						
+weak	0.15	24	CLASSIC_PROFILE_REFINED_V2	0.059708355797153376	0.29524447587361025		True		True	True	False	16000.0	True	True	0.23553612007645686	26.0	continuous root within fixed [-3,3] search; boundary extends to infinity; local profile, not global certification
+weak	0.8	14	EXACT_CONDITIONAL_OUTER	-inf	inf	COMPLETE	False	96.0	True	False	False						
+weak	0.8	14	CLASSIC_PROFILE_REFINED_V2	0.5488008855894311	0.8277315099254473		True		True	True	False	16000.0	True	True	0.27893062433601623	30.0	continuous root within fixed [-3,3] search; boundary extends to infinity; local profile, not global certification
+strong	0.0	18	EXACT_CONDITIONAL_OUTER	-0.3815318746806563	0.280127902779788	COMPLETE	True	96.0	True	False	False						
+strong	0.0	18	CLASSIC_PROFILE_REFINED_V2	-0.13090991603137384	0.09565956914094469		True		True	False	False	16000.0	True	False	0.2265694851723185	25.0	continuous root within fixed [-3,3] search; boundary extends to infinity; local profile, not global certification
+strong	0.8	9	EXACT_CONDITIONAL_OUTER	0.5875700792910993	1.0037427188029378	COMPLETE	True	96.0	True	True	False						
+strong	0.8	9	CLASSIC_PROFILE_REFINED_V2	0.7265987079260189	0.8878189179888508		True		True	True	False	16000.0	True	True	0.16122021006283194	27.0	continuous root within fixed [-3,3] search; boundary extends to infinity; local profile, not global certification
+weak	0.8	2	EXACT_CONDITIONAL_OUTER	-inf	inf	COMPLETE	False	96.0	True	False	False						
+weak	0.8	2	CLASSIC_PROFILE_REFINED_V2	0.5958899511326526	0.8788263468997242		False		False	False	False	16000.0	False	False	0.2829363957670715	25.0	continuous root within fixed [-3,3] search; boundary extends to infinity; local profile, not global certification
+strong	0.15	9	EXACT_CONDITIONAL_OUTER	-0.1356815141259578	0.4426953931913363	COMPLETE	True	96.0	True	False	False						
+strong	0.15	9	CLASSIC_PROFILE_REFINED_V2	0.07022638507232681	0.275609703888525		True		True	True	False	16000.0	True	True	0.2053833188161982	25.0	continuous root within fixed [-3,3] search; boundary extends to infinity; local profile, not global certification
+strong	0.15	8	EXACT_CONDITIONAL_OUTER	-0.20047783304287392	0.41136326742555807	COMPLETE	True	96.0	True	False	False						
+strong	0.15	8	CLASSIC_PROFILE_REFINED_V2	0.0262906009159961	0.23498690510681794		True		True	True	False	16000.0	True	True	0.20869630419082183	25.0	continuous root within fixed [-3,3] search; boundary extends to infinity; local profile, not global certification
+strong	0.8	8	EXACT_CONDITIONAL_OUTER	0.5567559247684796	0.9260052709759733	COMPLETE	True	96.0	True	True	False						
+strong	0.8	8	CLASSIC_PROFILE_REFINED_V2	0.6644594072435833	0.8288926814118124		True		True	True	False	16000.0	True	True	0.16443327416822906	27.0	continuous root within fixed [-3,3] search; boundary extends to infinity; local profile, not global certification
+weak	0.8	3	EXACT_CONDITIONAL_OUTER	-inf	inf	COMPLETE	False	96.0	True	False	False						
+weak	0.8	3	CLASSIC_PROFILE_REFINED_V2	0.5530797807248544	0.8367271836052516		True		True	True	False	16000.0	True	True	0.28364740288039714	29.0	continuous root within fixed [-3,3] search; boundary extends to infinity; local profile, not global certification
+weak	0.8	15	EXACT_CONDITIONAL_OUTER	-inf	inf	COMPLETE	False	96.0	True	False	False						
+weak	0.8	15	CLASSIC_PROFILE_REFINED_V2	0.5898515413076	0.8658714527698974		True		True	True	False	16000.0	True	True	0.27601991146229743	25.0	continuous root within fixed [-3,3] search; boundary extends to infinity; local profile, not global certification
+strong	0.0	19	EXACT_CONDITIONAL_OUTER	-0.33104908291540486	0.28863611094597075	COMPLETE	True	96.0	True	False	False						
+strong	0.0	19	CLASSIC_PROFILE_REFINED_V2	-0.10789979097780153	0.11609320001360007		True		True	False	False	16000.0	True	False	0.2239929909914016	25.0	continuous root within fixed [-3,3] search; boundary extends to infinity; local profile, not global certification
+weak	0.15	9	EXACT_CONDITIONAL_OUTER	-inf	inf	COMPLETE	False	96.0	True	False	False						
+weak	0.15	9	CLASSIC_PROFILE_REFINED_V2	-0.024750053367532745	0.20476744692686727		True		True	False	False	16000.0	True	False	0.22951750029440002	25.0	continuous root within fixed [-3,3] search; boundary extends to infinity; local profile, not global certification
+weak	0.0	20	EXACT_CONDITIONAL_OUTER	-inf	inf	COMPLETE	False	96.0	True	False	False						
+weak	0.0	20	CLASSIC_PROFILE_REFINED_V2	-0.11658320077774008	0.12624130528662658		True		True	False	False	16000.0	True	False	0.24282450606436667	25.0	continuous root within fixed [-3,3] search; boundary extends to infinity; local profile, not global certification
+strong	0.15	24	EXACT_CONDITIONAL_OUTER	-0.12430278740925166	0.395302641901074	COMPLETE	True	96.0	True	False	False						
+strong	0.15	24	CLASSIC_PROFILE_REFINED_V2	0.049713807056330696	0.2566163330582187		True		True	True	False	16000.0	True	True	0.206902526001888	25.0	continuous root within fixed [-3,3] search; boundary extends to infinity; local profile, not global certification
+strong	0.0	23	EXACT_CONDITIONAL_OUTER	-0.3073270573026995	0.29271905827312544	COMPLETE	True	96.0	True	False	False						
+strong	0.0	23	CLASSIC_PROFILE_REFINED_V2	-0.09739674203448749	0.12455533180680806		True		True	False	False	16000.0	True	False	0.22195207384129556	25.0	continuous root within fixed [-3,3] search; boundary extends to infinity; local profile, not global certification
+strong	0.8	24	EXACT_CONDITIONAL_OUTER	0.5146638137970898	0.9603500349665068	COMPLETE	True	96.0	True	True	False						
+strong	0.8	24	CLASSIC_PROFILE_REFINED_V2	0.6580130591146973	0.8218476087681472		True		True	True	False	16000.0	True	True	0.1638345496534499	27.0	continuous root within fixed [-3,3] search; boundary extends to infinity; local profile, not global certification
+strong	0.15	4	EXACT_CONDITIONAL_OUTER	-0.20779248636447398	0.4167029651766539	COMPLETE	True	96.0	True	False	False						
+strong	0.15	4	CLASSIC_PROFILE_REFINED_V2	0.016765406024287253	0.2285926306739422		True		True	True	False	16000.0	True	True	0.21182722464965495	25.0	continuous root within fixed [-3,3] search; boundary extends to infinity; local profile, not global certification
+weak	0.0	16	EXACT_CONDITIONAL_OUTER	-inf	inf	COMPLETE	False	96.0	True	False	False						
+weak	0.0	16	CLASSIC_PROFILE_REFINED_V2	-0.09881149532500348	0.14427548456201839		True		True	False	False	16000.0	True	False	0.24308697988702188	25.0	continuous root within fixed [-3,3] search; boundary extends to infinity; local profile, not global certification
+weak	-0.8	11	EXACT_CONDITIONAL_OUTER	-inf	inf	COMPLETE	False	96.0	True	False	False						
+weak	-0.8	11	CLASSIC_PROFILE_REFINED_V2	-1.3005667164279953	-0.5769759061013392		True		True	True	False	16000.0	True	True	0.7235908103266561	24.0	continuous root within fixed [-3,3] search; boundary extends to infinity; local profile, not global certification
+strong	0.8	4	EXACT_CONDITIONAL_OUTER	0.6003398843459956	1.0430130956725223	COMPLETE	True	96.0	True	True	False						
+strong	0.8	4	CLASSIC_PROFILE_REFINED_V2	0.7464395599208536	0.9076179195702251		True		True	True	False	16000.0	True	True	0.16117835964937144	27.0	continuous root within fixed [-3,3] search; boundary extends to infinity; local profile, not global certification
+strong	0.0	3	EXACT_CONDITIONAL_OUTER	-0.27839861926851106	0.30020371268581525	COMPLETE	True	96.0	True	False	False						
+strong	0.0	3	CLASSIC_PROFILE_REFINED_V2	-0.08411229460684684	0.13667950514096466		True		True	False	False	16000.0	True	False	0.2207917997478115	25.0	continuous root within fixed [-3,3] search; boundary extends to infinity; local profile, not global certification
+strong	0.8	12	EXACT_CONDITIONAL_OUTER	0.5431846654624559	0.9908012883637551	COMPLETE	True	96.0	True	True	False						
+strong	0.8	12	CLASSIC_PROFILE_REFINED_V2	0.6887359997548358	0.8529696705671823		True		True	True	False	16000.0	True	True	0.16423367081234652	27.0	continuous root within fixed [-3,3] search; boundary extends to infinity; local profile, not global certification
+weak	0.8	19	EXACT_CONDITIONAL_OUTER	-inf	inf	COMPLETE	False	96.0	True	False	False						
+weak	0.8	19	CLASSIC_PROFILE_REFINED_V2	0.6220156300609647	0.9111685390719296		False		False	False	False	16000.0	False	False	0.2891529090109649	30.0	continuous root within fixed [-3,3] search; boundary extends to infinity; local profile, not global certification
+strong	0.0	15	EXACT_CONDITIONAL_OUTER	-0.22942324837722083	0.3655254753922481	COMPLETE	True	96.0	True	False	False						
+strong	0.0	15	CLASSIC_PROFILE_REFINED_V2	-0.02063714518456198	0.1949609844325218		True		True	False	False	16000.0	True	False	0.21559812961708377	25.0	continuous root within fixed [-3,3] search; boundary extends to infinity; local profile, not global certification
+weak	0.0	0	EXACT_CONDITIONAL_OUTER	-inf	inf	COMPLETE	False	96.0	True	False	False						
+weak	0.0	0	CLASSIC_PROFILE_REFINED_V2	-0.22092305658027675	0.029640800041796898		True		True	False	False	16000.0	True	False	0.25056385662207364	25.0	continuous root within fixed [-3,3] search; boundary extends to infinity; local profile, not global certification
+strong	0.15	12	EXACT_CONDITIONAL_OUTER	-0.22583896949325977	0.3587925076267778	COMPLETE	True	96.0	True	False	False						
+strong	0.15	12	CLASSIC_PROFILE_REFINED_V2	-0.019436794196683982	0.19411647433562143		True		True	False	False	16000.0	True	False	0.2135532685323054	25.0	continuous root within fixed [-3,3] search; boundary extends to infinity; local profile, not global certification
+weak	-0.8	7	EXACT_CONDITIONAL_OUTER	-inf	inf	COMPLETE	False	96.0	True	False	False						
+weak	-0.8	7	CLASSIC_PROFILE_REFINED_V2	-1.0989577856455446	-0.4891967581529034		True		True	True	False	16000.0	True	True	0.6097610274926412	23.0	continuous root within fixed [-3,3] search; boundary extends to infinity; local profile, not global certification
+strong	-0.8	10	EXACT_CONDITIONAL_OUTER	-1.7839740466327918	-0.41455529880610165	COMPLETE	True	96.0	True	True	False						
+strong	-0.8	10	CLASSIC_PROFILE_REFINED_V2	-1.1391715423340698	-0.7344107469938317		True		True	True	False	16000.0	True	True	0.4047607953402381	23.0	continuous root within fixed [-3,3] search; boundary extends to infinity; local profile, not global certification
+weak	0.15	5	EXACT_CONDITIONAL_OUTER	-inf	inf	COMPLETE	False	96.0	True	False	False						
+weak	0.15	5	CLASSIC_PROFILE_REFINED_V2	0.05312701817168672	0.28609071957727084		True		True	True	False	16000.0	True	True	0.23296370140558412	30.0	continuous root within fixed [-3,3] search; boundary extends to infinity; local profile, not global certification
+strong	-0.8	6	EXACT_CONDITIONAL_OUTER	-1.7783480275656598	-0.39829441582514524	COMPLETE	True	96.0	True	True	False						
+strong	-0.8	6	CLASSIC_PROFILE_REFINED_V2	-1.1340689723870683	-0.7307603487648731		True		True	True	False	16000.0	True	True	0.4033086236221952	23.0	continuous root within fixed [-3,3] search; boundary extends to infinity; local profile, not global certification
+weak	0.15	13	EXACT_CONDITIONAL_OUTER	-inf	inf	COMPLETE	False	96.0	True	False	False						
+weak	0.15	13	CLASSIC_PROFILE_REFINED_V2	0.12792590874444268	0.37089020284173946		True		True	True	False	16000.0	True	True	0.24296429409729678	26.0	continuous root within fixed [-3,3] search; boundary extends to infinity; local profile, not global certification
+weak	0.8	23	EXACT_CONDITIONAL_OUTER	-inf	inf	COMPLETE	False	96.0	True	False	False						
+weak	0.8	23	CLASSIC_PROFILE_REFINED_V2	0.6189950513653928	0.9105779918681034		False		False	False	False	16000.0	False	False	0.2915829405027106	27.0	continuous root within fixed [-3,3] search; boundary extends to infinity; local profile, not global certification
+weak	0.0	15	EXACT_CONDITIONAL_OUTER	-inf	inf	COMPLETE	False	96.0	True	False	False						
+weak	0.0	15	CLASSIC_PROFILE_REFINED_V2	-0.030939958587735232	0.20237700637745104		True		True	False	False	16000.0	True	False	0.23331696496518628	25.0	continuous root within fixed [-3,3] search; boundary extends to infinity; local profile, not global certification
+strong	0.15	7	EXACT_CONDITIONAL_OUTER	-0.20516777453468166	0.33277215858262943	COMPLETE	True	96.0	True	False	False						
+strong	0.15	7	CLASSIC_PROFILE_REFINED_V2	-0.0331854352711256	0.18356957113669575		True		True	False	False	16000.0	True	False	0.21675500640782136	25.0	continuous root within fixed [-3,3] search; boundary extends to infinity; local profile, not global certification
+weak	-0.8	12	EXACT_CONDITIONAL_OUTER	-inf	inf	COMPLETE	False	96.0	True	False	False						
+weak	-0.8	12	CLASSIC_PROFILE_REFINED_V2	-1.252858961961899	-0.5576831777037207		True		True	True	False	16000.0	True	True	0.6951757842581784	24.0	continuous root within fixed [-3,3] search; boundary extends to infinity; local profile, not global certification
+strong	0.0	0	EXACT_CONDITIONAL_OUTER	-0.323987314722574	0.3238849783159608	COMPLETE	True	96.0	True	False	False						
+strong	0.0	0	CLASSIC_PROFILE_REFINED_V2	-0.08050249683848225	0.14189432580798822		True		True	False	False	16000.0	True	False	0.22239682264647048	25.0	continuous root within fixed [-3,3] search; boundary extends to infinity; local profile, not global certification
+strong	0.8	7	EXACT_CONDITIONAL_OUTER	0.5681422430322302	0.9956305512633287	COMPLETE	True	96.0	True	True	False						
+strong	0.8	7	CLASSIC_PROFILE_REFINED_V2	0.7074656850652568	0.8697365449126531		True		True	True	False	16000.0	True	True	0.1622708598473963	27.0	continuous root within fixed [-3,3] search; boundary extends to infinity; local profile, not global certification
+strong	0.0	16	EXACT_CONDITIONAL_OUTER	-0.33352285651301167	0.31233850937446483	COMPLETE	True	96.0	True	False	False						
+strong	0.0	16	CLASSIC_PROFILE_REFINED_V2	-0.09229610041423705	0.13053961483774906		True		True	False	False	16000.0	True	False	0.22283571525198612	25.0	continuous root within fixed [-3,3] search; boundary extends to infinity; local profile, not global certification
+strong	0.8	11	EXACT_CONDITIONAL_OUTER	0.6867427010407613	1.065764833761548	COMPLETE	True	96.0	True	True	False						
+strong	0.8	11	CLASSIC_PROFILE_REFINED_V2	0.7995697299059541	0.961044020553649		True		True	True	False	16000.0	True	True	0.16147429064769492	27.0	continuous root within fixed [-3,3] search; boundary extends to infinity; local profile, not global certification
+strong	0.15	11	EXACT_CONDITIONAL_OUTER	-0.13519830458731974	0.3917810623787205	COMPLETE	True	96.0	True	False	False						
+strong	0.15	11	CLASSIC_PROFILE_REFINED_V2	0.03671646004425053	0.2467429474573423		True		True	True	False	16000.0	True	True	0.21002648741309177	25.0	continuous root within fixed [-3,3] search; boundary extends to infinity; local profile, not global certification
+weak	0.0	3	EXACT_CONDITIONAL_OUTER	-inf	inf	COMPLETE	False	96.0	True	False	False						
+weak	0.0	3	CLASSIC_PROFILE_REFINED_V2	-0.12593749057043255	0.1147511971934125		True		True	False	False	16000.0	True	False	0.24068868776384506	25.0	continuous root within fixed [-3,3] search; boundary extends to infinity; local profile, not global certification
+weak	-0.8	4	EXACT_CONDITIONAL_OUTER	-inf	inf	COMPLETE	False	96.0	True	False	False						
+weak	-0.8	4	CLASSIC_PROFILE_REFINED_V2	-1.3754561007550195	-0.6123276912195135		True		True	True	False	16000.0	True	True	0.763128409535506	24.0	continuous root within fixed [-3,3] search; boundary extends to infinity; local profile, not global certification
+strong	-0.8	13	EXACT_CONDITIONAL_OUTER	-1.475589044364585	-0.3376298037307319	COMPLETE	True	96.0	True	True	False						
+strong	-0.8	13	CLASSIC_PROFILE_REFINED_V2	-0.9913475665555497	-0.6238649311180041		True		True	True	False	16000.0	True	True	0.36748263543754556	24.0	continuous root within fixed [-3,3] search; boundary extends to infinity; local profile, not global certification
+weak	0.15	6	EXACT_CONDITIONAL_OUTER	-inf	inf	COMPLETE	False	96.0	True	False	False						
+weak	0.15	6	CLASSIC_PROFILE_REFINED_V2	0.047511050572663055	0.2784014390061825		True		True	True	False	16000.0	True	True	0.23089038843351947	25.0	continuous root within fixed [-3,3] search; boundary extends to infinity; local profile, not global certification
+strong	-0.8	5	EXACT_CONDITIONAL_OUTER	-1.8165711798770756	-0.40626544730647307	COMPLETE	True	96.0	True	True	False						
+strong	-0.8	5	CLASSIC_PROFILE_REFINED_V2	-1.1320397422624635	-0.7288108499371619		True		True	True	False	16000.0	True	True	0.40322889232530157	23.0	continuous root within fixed [-3,3] search; boundary extends to infinity; local profile, not global certification
+weak	0.15	10	EXACT_CONDITIONAL_OUTER	-inf	inf	COMPLETE	False	96.0	True	False	False						
+weak	0.15	10	CLASSIC_PROFILE_REFINED_V2	0.05306557960282466	0.28780027965186894		True		True	True	False	16000.0	True	True	0.2347347000490443	26.0	continuous root within fixed [-3,3] search; boundary extends to infinity; local profile, not global certification
+weak	0.8	20	EXACT_CONDITIONAL_OUTER	-inf	inf	COMPLETE	False	96.0	True	False	False						
+weak	0.8	20	CLASSIC_PROFILE_REFINED_V2	0.5930736154353184	0.8806906073273553		True		True	True	False	16000.0	True	True	0.2876169918920368	27.0	continuous root within fixed [-3,3] search; boundary extends to infinity; local profile, not global certification
+weak	0.0	19	EXACT_CONDITIONAL_OUTER	-inf	inf	COMPLETE	False	96.0	True	False	False						
+weak	0.0	19	CLASSIC_PROFILE_REFINED_V2	-0.10635528462257852	0.13594793635388228		True		True	False	False	16000.0	True	False	0.2423032209764608	25.0	continuous root within fixed [-3,3] search; boundary extends to infinity; local profile, not global certification
+weak	0.8	0	EXACT_CONDITIONAL_OUTER	-inf	inf	COMPLETE	False	96.0	True	False	False						
+weak	0.8	0	CLASSIC_PROFILE_REFINED_V2	0.620680130594451	0.909902796807599		True		True	True	False	16000.0	True	True	0.28922266621314796	30.0	continuous root within fixed [-3,3] search; boundary extends to infinity; local profile, not global certification
+weak	0.8	16	EXACT_CONDITIONAL_OUTER	-inf	inf	COMPLETE	False	96.0	True	False	False						
+weak	0.8	16	CLASSIC_PROFILE_REFINED_V2	0.6110704744709008	0.8915433283701042		True		True	True	False	16000.0	True	True	0.2804728538992034	28.0	continuous root within fixed [-3,3] search; boundary extends to infinity; local profile, not global certification
+weak	-0.8	8	EXACT_CONDITIONAL_OUTER	-inf	inf	COMPLETE	False	96.0	True	False	False						
+weak	-0.8	8	CLASSIC_PROFILE_REFINED_V2	-1.116098416357994	-0.49618196391081953		True		True	True	False	16000.0	True	True	0.6199164524471743	23.0	continuous root within fixed [-3,3] search; boundary extends to infinity; local profile, not global certification
+weak	-0.8	24	EXACT_CONDITIONAL_OUTER	-inf	inf	COMPLETE	False	96.0	True	False	False						
+weak	-0.8	24	CLASSIC_PROFILE_REFINED_V2	-1.4501328005826675	-0.6466453210140237		True		True	True	False	16000.0	True	True	0.8034874795686437	24.0	continuous root within fixed [-3,3] search; boundary extends to infinity; local profile, not global certification
+weak	0.0	23	EXACT_CONDITIONAL_OUTER	-inf	inf	COMPLETE	False	96.0	True	False	False						
+weak	0.0	23	CLASSIC_PROFILE_REFINED_V2	-0.15382730630060262	0.09116960460855998		True		True	False	False	16000.0	True	False	0.2449969109091626	25.0	continuous root within fixed [-3,3] search; boundary extends to infinity; local profile, not global certification
+strong	-0.8	9	EXACT_CONDITIONAL_OUTER	-1.6935386046726124	-0.38069528095325483	COMPLETE	True	96.0	True	True	False						
+strong	-0.8	9	CLASSIC_PROFILE_REFINED_V2	-1.0889372333935867	-0.694040717567701		True		True	True	False	16000.0	True	True	0.3948965158258857	23.0	continuous root within fixed [-3,3] search; boundary extends to infinity; local profile, not global certification
+strong	0.0	20	EXACT_CONDITIONAL_OUTER	-0.39425991106757624	0.24591686222584963	COMPLETE	True	96.0	True	False	False						
+strong	0.0	20	CLASSIC_PROFILE_REFINED_V2	-0.1585816204450625	0.0701248558771442		True		True	False	False	16000.0	True	False	0.2287064763222067	25.0	continuous root within fixed [-3,3] search; boundary extends to infinity; local profile, not global certification
+strong	0.0	21	EXACT_CONDITIONAL_OUTER	-0.3613312095135616	0.32281495207364175	COMPLETE	True	96.0	True	False	False						
+strong	0.0	21	CLASSIC_PROFILE_REFINED_V2	-0.105612677897741	0.1213067654438075		True		True	False	False	16000.0	True	False	0.2269194433415485	25.0	continuous root within fixed [-3,3] search; boundary extends to infinity; local profile, not global certification
+strong	-0.8	8	EXACT_CONDITIONAL_OUTER	-1.8330739619512226	-0.5056687203183604	COMPLETE	True	96.0	True	True	False						
+strong	-0.8	8	CLASSIC_PROFILE_REFINED_V2	-1.204132808990993	-0.7887407630529606		True		True	True	False	16000.0	True	True	0.4153920459380325	23.0	continuous root within fixed [-3,3] search; boundary extends to infinity; local profile, not global certification
+weak	0.0	22	EXACT_CONDITIONAL_OUTER	-inf	inf	COMPLETE	False	96.0	True	False	False						
+weak	0.0	22	CLASSIC_PROFILE_REFINED_V2	-0.09083999073807249	0.1496016759523589		True		True	False	False	16000.0	True	False	0.24044166669043138	25.0	continuous root within fixed [-3,3] search; boundary extends to infinity; local profile, not global certification
+weak	-0.8	9	EXACT_CONDITIONAL_OUTER	-inf	inf	COMPLETE	False	96.0	True	False	False						
+weak	-0.8	9	CLASSIC_PROFILE_REFINED_V2	-0.7671760917004393	-0.3107321457096181		True		False	True	False	16000.0	True	True	0.4564439459908212	27.0	continuous root within fixed [-3,3] search; boundary extends to infinity; local profile, not global certification
+weak	0.8	17	EXACT_CONDITIONAL_OUTER	-inf	inf	COMPLETE	False	96.0	True	False	False						
+weak	0.8	17	CLASSIC_PROFILE_REFINED_V2	0.6796073547060492	0.9751759842888268		False		False	False	False	16000.0	False	False	0.29556862958277763	31.0	continuous root within fixed [-3,3] search; boundary extends to infinity; local profile, not global certification
+weak	0.8	1	EXACT_CONDITIONAL_OUTER	-inf	inf	COMPLETE	False	96.0	True	False	False						
+weak	0.8	1	CLASSIC_PROFILE_REFINED_V2	0.6664933309953981	0.961389607001026		True		True	True	False	16000.0	True	True	0.29489627600562796	30.0	continuous root within fixed [-3,3] search; boundary extends to infinity; local profile, not global certification
+weak	0.0	18	EXACT_CONDITIONAL_OUTER	-inf	inf	COMPLETE	False	96.0	True	False	False						
+weak	0.0	18	CLASSIC_PROFILE_REFINED_V2	-0.04208659208768488	0.18998773664598356		True		True	False	False	16000.0	True	False	0.23207432873366846	25.0	continuous root within fixed [-3,3] search; boundary extends to infinity; local profile, not global certification
+strong	-0.8	24	EXACT_CONDITIONAL_OUTER	-1.7149128382540204	-0.42780902625638745	COMPLETE	True	96.0	True	True	False						
+strong	-0.8	24	CLASSIC_PROFILE_REFINED_V2	-1.1405355216758606	-0.7360836186552068		True		True	True	False	16000.0	True	True	0.4044519030206538	23.0	continuous root within fixed [-3,3] search; boundary extends to infinity; local profile, not global certification
+weak	0.8	21	EXACT_CONDITIONAL_OUTER	-inf	inf	COMPLETE	False	96.0	True	False	False						
+weak	0.8	21	CLASSIC_PROFILE_REFINED_V2	0.6881266511804542	0.9800165003223594		True		True	True	False	16000.0	True	True	0.2918898491419052	29.0	continuous root within fixed [-3,3] search; boundary extends to infinity; local profile, not global certification
+weak	0.15	11	EXACT_CONDITIONAL_OUTER	-inf	inf	COMPLETE	False	96.0	True	False	False						
+weak	0.15	11	CLASSIC_PROFILE_REFINED_V2	0.0579809914150867	0.2967171448344017		True		True	True	False	16000.0	True	True	0.238736153419315	26.0	continuous root within fixed [-3,3] search; boundary extends to infinity; local profile, not global certification
+strong	-0.8	4	EXACT_CONDITIONAL_OUTER	-1.5971139741709062	-0.31671433173619096	COMPLETE	True	96.0	True	True	False						
+strong	-0.8	4	CLASSIC_PROFILE_REFINED_V2	-1.0240493190886952	-0.6441215841550274		True		True	True	False	16000.0	True	True	0.3799277349336678	24.0	continuous root within fixed [-3,3] search; boundary extends to infinity; local profile, not global certification
+weak	0.15	7	EXACT_CONDITIONAL_OUTER	-inf	inf	COMPLETE	False	96.0	True	False	False						
+weak	0.15	7	CLASSIC_PROFILE_REFINED_V2	0.06912189987750597	0.3059271084903049		True		True	True	False	16000.0	True	True	0.23680520861279894	27.0	continuous root within fixed [-3,3] search; boundary extends to infinity; local profile, not global certification
+strong	-0.8	12	EXACT_CONDITIONAL_OUTER	-1.5473482531100378	-0.31674643057797697	COMPLETE	True	96.0	True	True	False						
+strong	-0.8	12	CLASSIC_PROFILE_REFINED_V2	-0.9869544924150497	-0.6198984469888311		True		True	True	False	16000.0	True	True	0.3670560454262186	24.0	continuous root within fixed [-3,3] search; boundary extends to infinity; local profile, not global certification
+weak	-0.8	5	EXACT_CONDITIONAL_OUTER	-inf	inf	COMPLETE	False	96.0	True	False	False						
+weak	-0.8	5	CLASSIC_PROFILE_REFINED_V2	-0.9922622525370612	-0.4333328271285852		True		True	True	False	16000.0	True	True	0.558929425408476	24.0	continuous root within fixed [-3,3] search; boundary extends to infinity; local profile, not global certification
+strong	0.15	10	EXACT_CONDITIONAL_OUTER	-0.08761443386718973	0.505573442091697	COMPLETE	True	96.0	True	False	False						
+strong	0.15	10	CLASSIC_PROFILE_REFINED_V2	0.1225828051132394	0.324888869042687		True		True	True	False	16000.0	True	True	0.2023060639294476	25.0	continuous root within fixed [-3,3] search; boundary extends to infinity; local profile, not global certification
+weak	0.0	2	EXACT_CONDITIONAL_OUTER	-inf	inf	COMPLETE	False	96.0	True	False	False						
+weak	0.0	2	CLASSIC_PROFILE_REFINED_V2	-0.17672241857224522	0.07377907348963744		True		True	False	False	16000.0	True	False	0.25050149206188266	25.0	continuous root within fixed [-3,3] search; boundary extends to infinity; local profile, not global certification
+strong	0.0	17	EXACT_CONDITIONAL_OUTER	-0.20911696652385525	0.3808510811477353	COMPLETE	True	96.0	True	False	False						
+strong	0.0	17	CLASSIC_PROFILE_REFINED_V2	-0.005648557722958694	0.20990657544615457		True		True	False	False	16000.0	True	False	0.21555513316911326	25.0	continuous root within fixed [-3,3] search; boundary extends to infinity; local profile, not global certification
+strong	0.8	10	EXACT_CONDITIONAL_OUTER	0.6104528369212793	1.0196721079335824	COMPLETE	True	96.0	True	True	False						
+strong	0.8	10	CLASSIC_PROFILE_REFINED_V2	0.7328850423414842	0.895147015140212		True		True	True	False	16000.0	True	True	0.16226197279872778	27.0	continuous root within fixed [-3,3] search; boundary extends to infinity; local profile, not global certification
+strong	0.0	1	EXACT_CONDITIONAL_OUTER	-0.37417259503277717	0.2009788261162646	COMPLETE	True	96.0	True	False	False						
+strong	0.0	1	CLASSIC_PROFILE_REFINED_V2	-0.1881222311035831	0.042006080873639814		True		True	False	False	16000.0	True	False	0.2301283119772229	25.0	continuous root within fixed [-3,3] search; boundary extends to infinity; local profile, not global certification
+strong	0.8	6	EXACT_CONDITIONAL_OUTER	0.5892608219984841	0.97031112983039	COMPLETE	True	96.0	True	True	False						
+strong	0.8	6	CLASSIC_PROFILE_REFINED_V2	0.7029567563727624	0.8659062764318418		True		True	True	False	16000.0	True	True	0.16294952005907937	27.0	continuous root within fixed [-3,3] search; boundary extends to infinity; local profile, not global certification
+weak	-0.8	13	EXACT_CONDITIONAL_OUTER	-inf	inf	COMPLETE	False	96.0	True	False	False						
+weak	-0.8	13	CLASSIC_PROFILE_REFINED_V2	-1.03008813591212	-0.4687237400947083		True		True	True	False	16000.0	True	True	0.5613643958174116	26.0	continuous root within fixed [-3,3] search; boundary extends to infinity; local profile, not global certification
+weak	0.0	14	EXACT_CONDITIONAL_OUTER	-inf	inf	COMPLETE	False	96.0	True	False	False						
+weak	0.0	14	CLASSIC_PROFILE_REFINED_V2	-0.20023547299348296	0.049118678640160014		True		True	False	False	16000.0	True	False	0.24935415163364297	25.0	continuous root within fixed [-3,3] search; boundary extends to infinity; local profile, not global certification
+strong	0.15	6	EXACT_CONDITIONAL_OUTER	-0.2127429683983285	0.36897091191827075	COMPLETE	True	96.0	True	False	False						
+strong	0.15	6	CLASSIC_PROFILE_REFINED_V2	-0.012839728943036413	0.19932080757057083		True		True	False	False	16000.0	True	False	0.21216053651360725	25.0	continuous root within fixed [-3,3] search; boundary extends to infinity; local profile, not global certification
+weak	-0.8	18	EXACT_CONDITIONAL_OUTER	-inf	inf	COMPLETE	False	96.0	True	False	False						
+weak	-0.8	18	CLASSIC_PROFILE_REFINED_V2	-1.0723977922728787	-0.4745176523258016		True		True	True	False	16000.0	True	True	0.597880139947077	26.0	continuous root within fixed [-3,3] search; boundary extends to infinity; local profile, not global certification
+strong	-0.8	23	EXACT_CONDITIONAL_OUTER	-1.3396131580552695	-0.20332743075726634	COMPLETE	True	96.0	True	True	False						
+strong	-0.8	23	CLASSIC_PROFILE_REFINED_V2	-0.8417457849453128	-0.5000943081303184		True		True	True	False	16000.0	True	True	0.3416514768149944	24.0	continuous root within fixed [-3,3] search; boundary extends to infinity; local profile, not global certification
+weak	0.8	6	EXACT_CONDITIONAL_OUTER	-inf	inf	COMPLETE	False	96.0	True	False	False						
+weak	0.8	6	CLASSIC_PROFILE_REFINED_V2	0.624377670952816	0.9074464143313811		True		True	True	False	16000.0	True	True	0.283068743378565	30.0	continuous root within fixed [-3,3] search; boundary extends to infinity; local profile, not global certification
+weak	0.8	10	EXACT_CONDITIONAL_OUTER	-inf	inf	COMPLETE	False	96.0	True	False	False						
+weak	0.8	10	CLASSIC_PROFILE_REFINED_V2	0.6624675315884366	0.9583050806383602		True		True	True	False	16000.0	True	True	0.29583754904992354	27.0	continuous root within fixed [-3,3] search; boundary extends to infinity; local profile, not global certification
+weak	0.15	20	EXACT_CONDITIONAL_OUTER	-inf	inf	COMPLETE	False	96.0	True	False	False						
+weak	0.15	20	CLASSIC_PROFILE_REFINED_V2	0.07651028608852907	0.31479809604965026		True		True	True	False	16000.0	True	True	0.2382878099611212	26.0	continuous root within fixed [-3,3] search; boundary extends to infinity; local profile, not global certification
+weak	0.0	9	EXACT_CONDITIONAL_OUTER	-inf	inf	COMPLETE	False	96.0	True	False	False						
+weak	0.0	9	CLASSIC_PROFILE_REFINED_V2	-0.1417873405435911	0.10414627425635502		True		True	False	False	16000.0	True	False	0.24593361479994613	25.0	continuous root within fixed [-3,3] search; boundary extends to infinity; local profile, not global certification
+weak	-0.8	22	EXACT_CONDITIONAL_OUTER	-inf	inf	COMPLETE	False	96.0	True	False	False						
+weak	-0.8	22	CLASSIC_PROFILE_REFINED_V2	-1.397335553874786	-0.6444420200969987		True		True	True	False	16000.0	True	True	0.7528935337777873	28.0	continuous root within fixed [-3,3] search; boundary extends to infinity; local profile, not global certification
+strong	-0.8	19	EXACT_CONDITIONAL_OUTER	-1.429918715218253	-0.28029685534858934	COMPLETE	True	96.0	True	True	False						
+strong	-0.8	19	CLASSIC_PROFILE_REFINED_V2	-0.9153326935631625	-0.5594665432112929		True		True	True	False	16000.0	True	True	0.35586615035186964	24.0	continuous root within fixed [-3,3] search; boundary extends to infinity; local profile, not global certification
+strong	0.15	21	EXACT_CONDITIONAL_OUTER	-0.14132885701895417	0.4269094489090048	COMPLETE	True	96.0	True	False	False						
+strong	0.15	21	CLASSIC_PROFILE_REFINED_V2	0.05082425511260204	0.2571726154400128		True		True	True	False	16000.0	True	True	0.20634836032741077	25.0	continuous root within fixed [-3,3] search; boundary extends to infinity; local profile, not global certification
+strong	0.8	21	EXACT_CONDITIONAL_OUTER	0.5992811497960072	0.9830498676664179	COMPLETE	True	96.0	True	True	False						
+strong	0.8	21	CLASSIC_PROFILE_REFINED_V2	0.7151386024427115	0.8800093894005979		True		True	True	False	16000.0	True	True	0.16487078695788637	27.0	continuous root within fixed [-3,3] search; boundary extends to infinity; local profile, not global certification
+strong	0.15	1	EXACT_CONDITIONAL_OUTER	-0.16661419489925006	0.4409155451176316	COMPLETE	True	96.0	True	False	False						
+strong	0.15	1	CLASSIC_PROFILE_REFINED_V2	0.05346447780691981	0.26104630472578033		True		True	True	False	16000.0	True	True	0.2075818269188605	25.0	continuous root within fixed [-3,3] search; boundary extends to infinity; local profile, not global certification
+weak	0.0	13	EXACT_CONDITIONAL_OUTER	-inf	inf	COMPLETE	False	96.0	True	False	False						
+weak	0.0	13	CLASSIC_PROFILE_REFINED_V2	-0.13932963665687648	0.1053599588711897		True		True	False	False	16000.0	True	False	0.24468959552806618	25.0	continuous root within fixed [-3,3] search; boundary extends to infinity; local profile, not global certification
+weak	-0.8	14	EXACT_CONDITIONAL_OUTER	-inf	inf	COMPLETE	False	96.0	True	False	False						
+weak	-0.8	14	CLASSIC_PROFILE_REFINED_V2	-1.2306321873839972	-0.5477910368997223		True		True	True	False	16000.0	True	True	0.6828411504842749	25.0	continuous root within fixed [-3,3] search; boundary extends to infinity; local profile, not global certification
+strong	0.0	6	EXACT_CONDITIONAL_OUTER	-0.3254804079890699	0.264659464457955	COMPLETE	True	96.0	True	False	False						
+strong	0.0	6	CLASSIC_PROFILE_REFINED_V2	-0.12465563583806288	0.10224537852645507		True		True	False	False	16000.0	True	False	0.22690101436451796	25.0	continuous root within fixed [-3,3] search; boundary extends to infinity; local profile, not global certification
+strong	0.8	1	EXACT_CONDITIONAL_OUTER	0.6237050063404911	1.0648932999222658	COMPLETE	True	96.0	True	True	False						
+strong	0.8	1	CLASSIC_PROFILE_REFINED_V2	0.7684177982585604	0.9286452672100464		True		True	True	False	16000.0	True	True	0.16022746895148599	27.0	continuous root within fixed [-3,3] search; boundary extends to infinity; local profile, not global certification
+strong	0.0	10	EXACT_CONDITIONAL_OUTER	-0.27507586954584823	0.25360220464991035	COMPLETE	True	96.0	True	False	False						
+strong	0.0	10	CLASSIC_PROFILE_REFINED_V2	-0.11187623356306005	0.11288788022414632		True		True	False	False	16000.0	True	False	0.22476411378720637	25.0	continuous root within fixed [-3,3] search; boundary extends to infinity; local profile, not global certification
+strong	0.8	17	EXACT_CONDITIONAL_OUTER	0.601034279755241	1.0539677290718654	COMPLETE	True	96.0	True	True	False						
+strong	0.8	17	CLASSIC_PROFILE_REFINED_V2	0.7508890182966834	0.9139074350472557		True		True	True	False	16000.0	True	True	0.16301841675057227	27.0	continuous root within fixed [-3,3] search; boundary extends to infinity; local profile, not global certification
+weak	0.0	5	EXACT_CONDITIONAL_OUTER	-inf	inf	COMPLETE	False	96.0	True	False	False						
+weak	0.0	5	CLASSIC_PROFILE_REFINED_V2	-0.12477670034064217	0.12050361565308293		True		True	False	False	16000.0	True	False	0.2452803159937251	25.0	continuous root within fixed [-3,3] search; boundary extends to infinity; local profile, not global certification
+strong	0.15	17	EXACT_CONDITIONAL_OUTER	-0.2761497762433792	0.3610926202229714	COMPLETE	True	96.0	True	False	False						
+strong	0.15	17	CLASSIC_PROFILE_REFINED_V2	-0.034904396604419755	0.18148507063921013		True		True	False	False	16000.0	True	False	0.2163894672436299	25.0	continuous root within fixed [-3,3] search; boundary extends to infinity; local profile, not global certification
+weak	-0.8	2	EXACT_CONDITIONAL_OUTER	-inf	inf	COMPLETE	False	96.0	True	False	False						
+weak	-0.8	2	CLASSIC_PROFILE_REFINED_V2	-0.9837681909169596	-0.42687341299493065		True		True	True	False	16000.0	True	True	0.5568947779220289	24.0	continuous root within fixed [-3,3] search; boundary extends to infinity; local profile, not global certification
+strong	-0.8	15	EXACT_CONDITIONAL_OUTER	-1.7122326694880157	-0.38093496962844803	COMPLETE	True	96.0	True	True	False						
+strong	-0.8	15	CLASSIC_PROFILE_REFINED_V2	-1.1062076341829399	-0.7140735261519048		True		True	True	False	16000.0	True	True	0.3921341080310351	23.0	continuous root within fixed [-3,3] search; boundary extends to infinity; local profile, not global certification
+weak	0.15	0	EXACT_CONDITIONAL_OUTER	-inf	inf	COMPLETE	False	96.0	True	False	False						
+weak	0.15	0	CLASSIC_PROFILE_REFINED_V2	-0.025432393430027168	0.20121879842776727		True		True	False	False	16000.0	True	False	0.22665119185779445	25.0	continuous root within fixed [-3,3] search; boundary extends to infinity; local profile, not global certification
+strong	-0.8	3	EXACT_CONDITIONAL_OUTER	-1.5473815556452997	-0.3115403102639371	COMPLETE	True	96.0	True	True	False						
+strong	-0.8	3	CLASSIC_PROFILE_REFINED_V2	-0.9882775293488886	-0.6196665837212644		True		True	True	False	16000.0	True	True	0.3686109456276242	24.0	continuous root within fixed [-3,3] search; boundary extends to infinity; local profile, not global certification
+weak	0.15	16	EXACT_CONDITIONAL_OUTER	-inf	inf	COMPLETE	False	96.0	True	False	False						
+weak	0.15	16	CLASSIC_PROFILE_REFINED_V2	0.007040514832634413	0.2324065895870675		True		True	True	False	16000.0	True	True	0.2253660747544331	25.0	continuous root within fixed [-3,3] search; boundary extends to infinity; local profile, not global certification
+weak	0.15	17	EXACT_CONDITIONAL_OUTER	-inf	inf	COMPLETE	False	96.0	True	False	False						
+weak	0.15	17	CLASSIC_PROFILE_REFINED_V2	0.05501893717833011	0.28866470682519174		True		True	True	False	16000.0	True	True	0.23364576964686162	29.0	continuous root within fixed [-3,3] search; boundary extends to infinity; local profile, not global certification
+strong	-0.8	2	EXACT_CONDITIONAL_OUTER	-1.5300512770793635	-0.326853641393477	COMPLETE	True	96.0	True	True	False						
+strong	-0.8	2	CLASSIC_PROFILE_REFINED_V2	-0.9871051244229337	-0.6203433056654354		True		True	True	False	16000.0	True	True	0.36676181875749836	24.0	continuous root within fixed [-3,3] search; boundary extends to infinity; local profile, not global certification
+weak	0.15	1	EXACT_CONDITIONAL_OUTER	-inf	inf	COMPLETE	False	96.0	True	False	False						
+weak	0.15	1	CLASSIC_PROFILE_REFINED_V2	0.03217469516130447	0.26241636398731627		True		True	True	False	16000.0	True	True	0.2302416688260118	29.0	continuous root within fixed [-3,3] search; boundary extends to infinity; local profile, not global certification
+strong	-0.8	14	EXACT_CONDITIONAL_OUTER	-1.5739226167098317	-0.35839191100746015	COMPLETE	True	96.0	True	True	False						
+strong	-0.8	14	CLASSIC_PROFILE_REFINED_V2	-1.0130618275320311	-0.6417459379953866		True		True	True	False	16000.0	True	True	0.3713158895366445	24.0	continuous root within fixed [-3,3] search; boundary extends to infinity; local profile, not global certification
+weak	-0.8	3	EXACT_CONDITIONAL_OUTER	-inf	inf	COMPLETE	False	96.0	True	False	False						
+weak	-0.8	3	CLASSIC_PROFILE_REFINED_V2	-1.225176713945198	-0.5477802909968534		True		True	True	False	16000.0	True	True	0.6773964229483445	23.0	continuous root within fixed [-3,3] search; boundary extends to infinity; local profile, not global certification
+weak	0.0	4	EXACT_CONDITIONAL_OUTER	-inf	inf	COMPLETE	False	96.0	True	False	False						
+weak	0.0	4	CLASSIC_PROFILE_REFINED_V2	-0.0510342287260735	0.18391318679168697		True		True	False	False	16000.0	True	False	0.23494741551776047	25.0	continuous root within fixed [-3,3] search; boundary extends to infinity; local profile, not global certification
+strong	0.15	16	EXACT_CONDITIONAL_OUTER	-0.10862070213883927	0.44838919201225536	COMPLETE	True	96.0	True	False	False						
+strong	0.15	16	CLASSIC_PROFILE_REFINED_V2	0.08239338376672696	0.2887620870430304		True		True	True	False	16000.0	True	True	0.20636870327630347	25.0	continuous root within fixed [-3,3] search; boundary extends to infinity; local profile, not global certification
+strong	0.0	11	EXACT_CONDITIONAL_OUTER	-0.3871005219750591	0.2700400217137025	COMPLETE	True	96.0	True	False	False						
+strong	0.0	11	CLASSIC_PROFILE_REFINED_V2	-0.14333428668414122	0.08254630758892158		True		True	False	False	16000.0	True	False	0.22588059427306278	25.0	continuous root within fixed [-3,3] search; boundary extends to infinity; local profile, not global certification
+strong	0.8	16	EXACT_CONDITIONAL_OUTER	0.6311713683222983	1.0714337394258433	COMPLETE	True	96.0	True	True	False						
+strong	0.8	16	CLASSIC_PROFILE_REFINED_V2	0.7737667908516744	0.9351366845943891		True		True	True	False	16000.0	True	True	0.1613698937427147	27.0	continuous root within fixed [-3,3] search; boundary extends to infinity; local profile, not global certification
+strong	0.0	7	EXACT_CONDITIONAL_OUTER	-0.4701928422591397	0.22726640901122208	COMPLETE	True	96.0	True	False	False						
+strong	0.0	7	CLASSIC_PROFILE_REFINED_V2	-0.211036867721907	0.024770813505644432		True		True	False	False	16000.0	True	False	0.2358076812275514	25.0	continuous root within fixed [-3,3] search; boundary extends to infinity; local profile, not global certification
+strong	0.8	0	EXACT_CONDITIONAL_OUTER	0.580603843364254	1.0306161720442293	COMPLETE	True	96.0	True	True	False						
+strong	0.8	0	CLASSIC_PROFILE_REFINED_V2	0.7278273913759276	0.8909684750621598		True		True	True	False	16000.0	True	True	0.16314108368623226	27.0	continuous root within fixed [-3,3] search; boundary extends to infinity; local profile, not global certification
+weak	-0.8	15	EXACT_CONDITIONAL_OUTER	-inf	inf	COMPLETE	False	96.0	True	False	False						
+weak	-0.8	15	CLASSIC_PROFILE_REFINED_V2	-0.9886425364688044	-0.4296919848146469		True		True	True	False	16000.0	True	True	0.5589505516541575	23.0	continuous root within fixed [-3,3] search; boundary extends to infinity; local profile, not global certification
+strong	0.15	0	EXACT_CONDITIONAL_OUTER	-0.10527206507229574	0.27806391968211497	COMPLETE	True	96.0	True	False	False						
+strong	0.15	0	CLASSIC_PROFILE_REFINED_V2	-0.01712770924009703	0.1961875660401355		True		True	False	False	16000.0	True	False	0.21331527528023253	25.0	continuous root within fixed [-3,3] search; boundary extends to infinity; local profile, not global certification
+weak	0.0	12	EXACT_CONDITIONAL_OUTER	-inf	inf	COMPLETE	False	96.0	True	False	False						
+weak	0.0	12	CLASSIC_PROFILE_REFINED_V2	-0.17452958584222364	0.07578454392087428		True		True	False	False	16000.0	True	False	0.2503141297630979	25.0	continuous root within fixed [-3,3] search; boundary extends to infinity; local profile, not global certification
+strong	0.8	20	EXACT_CONDITIONAL_OUTER	0.6528114727363269	1.0837604332041169	COMPLETE	True	96.0	True	True	False						
+strong	0.8	20	CLASSIC_PROFILE_REFINED_V2	0.7912004693876835	0.9517664873234217		True		True	True	False	16000.0	True	True	0.16056601793573821	27.0	continuous root within fixed [-3,3] search; boundary extends to infinity; local profile, not global certification
+strong	0.15	20	EXACT_CONDITIONAL_OUTER	-0.1357207284234667	0.33270775331137026	COMPLETE	True	96.0	True	False	False						
+strong	0.15	20	CLASSIC_PROFILE_REFINED_V2	0.0065369685639602385	0.21818125877201766		True		True	True	False	16000.0	True	True	0.21164429020805742	25.0	continuous root within fixed [-3,3] search; boundary extends to infinity; local profile, not global certification
+weak	0.0	24	EXACT_CONDITIONAL_OUTER	-inf	inf	COMPLETE	False	96.0	True	False	False						
+weak	0.0	24	CLASSIC_PROFILE_REFINED_V2	-0.05306810201515168	0.18059702793964189		True		True	False	False	16000.0	True	False	0.23366512995479355	25.0	continuous root within fixed [-3,3] search; boundary extends to infinity; local profile, not global certification
+strong	-0.8	18	EXACT_CONDITIONAL_OUTER	-1.4066233668243415	-0.31294524529197826	COMPLETE	True	96.0	True	True	False						
+strong	-0.8	18	CLASSIC_PROFILE_REFINED_V2	-0.9413607488386149	-0.5843623051825286		True		True	True	False	16000.0	True	True	0.35699844365608624	24.0	continuous root within fixed [-3,3] search; boundary extends to infinity; local profile, not global certification
+weak	-0.8	23	EXACT_CONDITIONAL_OUTER	-inf	inf	COMPLETE	False	96.0	True	False	False						
+weak	-0.8	23	CLASSIC_PROFILE_REFINED_V2	-1.2653681998975839	-0.567996536491163		False		False	False	False	16000.0	False	False	0.6973716634064209	27.0	continuous root within fixed [-3,3] search; boundary extends to infinity; local profile, not global certification
+weak	0.0	8	EXACT_CONDITIONAL_OUTER	-inf	inf	COMPLETE	False	96.0	True	False	False						
+weak	0.0	8	CLASSIC_PROFILE_REFINED_V2	-0.17824206382962493	0.0698923945418		True		True	False	False	16000.0	True	False	0.24813445837142495	25.0	continuous root within fixed [-3,3] search; boundary extends to infinity; local profile, not global certification
+weak	0.15	21	EXACT_CONDITIONAL_OUTER	-inf	inf	COMPLETE	False	96.0	True	False	False						
+weak	0.15	21	CLASSIC_PROFILE_REFINED_V2	0.07398717366285179	0.30531856122686646		True		True	True	False	16000.0	True	True	0.23133138756401467	31.0	continuous root within fixed [-3,3] search; boundary extends to infinity; local profile, not global certification
+weak	0.8	11	EXACT_CONDITIONAL_OUTER	-inf	inf	COMPLETE	False	96.0	True	False	False						
+weak	0.8	11	CLASSIC_PROFILE_REFINED_V2	0.5792187391869785	0.8647713833324924		False		False	False	False	16000.0	False	False	0.28555264414551385	31.0	continuous root within fixed [-3,3] search; boundary extends to infinity; local profile, not global certification
+weak	0.8	7	EXACT_CONDITIONAL_OUTER	-inf	inf	COMPLETE	False	96.0	True	False	False						
+weak	0.8	7	CLASSIC_PROFILE_REFINED_V2	0.6330450593303698	0.9210407731800588		True		True	True	False	16000.0	True	True	0.28799571384968903	31.0	continuous root within fixed [-3,3] search; boundary extends to infinity; local profile, not global certification
+strong	-0.8	22	EXACT_CONDITIONAL_OUTER	-1.2108309802436161	-0.19085953702504074	COMPLETE	True	96.0	True	True	False						
+strong	-0.8	22	CLASSIC_PROFILE_REFINED_V2	-0.8005586388695096	-0.4658493043773075		True		True	True	False	16000.0	True	True	0.33470933449220214	24.0	continuous root within fixed [-3,3] search; boundary extends to infinity; local profile, not global certification
+weak	-0.8	19	EXACT_CONDITIONAL_OUTER	-inf	inf	COMPLETE	False	96.0	True	False	False						
+weak	-0.8	19	CLASSIC_PROFILE_REFINED_V2	-0.9769441783675414	-0.4247073394867739		True		True	True	False	16000.0	True	True	0.5522368388807675	26.0	continuous root within fixed [-3,3] search; boundary extends to infinity; local profile, not global certification

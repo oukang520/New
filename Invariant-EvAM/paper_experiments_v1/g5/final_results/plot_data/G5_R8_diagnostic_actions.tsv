@@ -1,0 +1,7 @@
+stage	case	n	MORE_SAME	JOINT_REVEAL	NEW_ENV	NEW_SOURCE	REFERENCE_MARGIN	correct	wrong	unknown	finite	covered
+primary	0	60	60	0	0	0	0	28	0	32	47	60
+primary	1	60	0	60	0	0	0	21	0	39	40	60
+primary	2	60	0	0	60	0	0	33	0	27	56	60
+primary	3	60	0	0	0	49	11	29	0	31	58	60
+matched	0	30	30	0	0	0	0	20	0	10	30	30
+matched	3	30	0	0	0	22	8	15	0	15	30	30

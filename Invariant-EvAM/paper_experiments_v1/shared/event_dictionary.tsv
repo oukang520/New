@@ -1,0 +1,15 @@
+protocol_version	model_id	event_index	simulation_label	LUAD_mapping_if_applicable	COAD_mapping_if_applicable	ordering_role
+1.0	D3_SPARSE5	0	event_0	NA	NA	binary_event_coordinate_not_discovered_temporal_order
+1.0	D3_SPARSE5	1	event_1	NA	NA	binary_event_coordinate_not_discovered_temporal_order
+1.0	D3_SPARSE5	2	event_2	NA	NA	binary_event_coordinate_not_discovered_temporal_order
+1.0	D3_FULL9	0	event_0	NA	NA	binary_event_coordinate_not_discovered_temporal_order
+1.0	D3_FULL9	1	event_1	NA	NA	binary_event_coordinate_not_discovered_temporal_order
+1.0	D3_FULL9	2	event_2	NA	NA	binary_event_coordinate_not_discovered_temporal_order
+1.0	D4_SPARSE10	0	event_0	TP53	APC	binary_event_coordinate_not_discovered_temporal_order
+1.0	D4_SPARSE10	1	event_1	KRAS	TP53	binary_event_coordinate_not_discovered_temporal_order
+1.0	D4_SPARSE10	2	event_2	STK11	KRAS	binary_event_coordinate_not_discovered_temporal_order
+1.0	D4_SPARSE10	3	event_3	KEAP1	PIK3CA	binary_event_coordinate_not_discovered_temporal_order
+1.0	D4_FULL16	0	event_0	TP53	APC	binary_event_coordinate_not_discovered_temporal_order
+1.0	D4_FULL16	1	event_1	KRAS	TP53	binary_event_coordinate_not_discovered_temporal_order
+1.0	D4_FULL16	2	event_2	STK11	KRAS	binary_event_coordinate_not_discovered_temporal_order
+1.0	D4_FULL16	3	event_3	KEAP1	PIK3CA	binary_event_coordinate_not_discovered_temporal_order

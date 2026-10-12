@@ -1,0 +1,9 @@
+experiment_id	experiment	score_10	expected	actual	panels	scope
+G5_PRED	天然留出预测	6.0	迁移优于简单模型且稳定超过强基线	超过部分简单共享模型，但强基线优势不稳定	G5_R3_natural_transfer	复用旧CTMC预测及既有评价患者；重分析，不是新独立确认
+G5_DESIGN_SIM	模拟获取收益	7.0	补充观测提高目标信息与未来预测并保持可靠	有预测收益，但策略别名存在；遗漏偏差下原预算覆盖约78%	G5_05_design_scenario_0 G5_05_design_scenario_1 G5_05_design_scenario_2	限定终点；共享数据不计独立重复
+G5_DESIGN_REAL	真实记录同成本获取收益	8.0	同成本补测优于只增加记录	两癌种、三成本的配对预测收益均正；天然参数未知保留	G5_R2_costmatched_LUAD G5_R2_costmatched_COAD G5_07_direct_uncertainty_cost	限定终点；共享数据不计独立重复
+G5_INTERVAL	源锚定后的可靠区间	6.5	提高覆盖，同时获得足够实用回答	成本1500下覆盖改善，但仍有宽区间和大量拒答；不能修复旧低预算结果	G5_R3_anchor_called G5_R3_anchor_covered	限定终点；共享数据不计独立重复
+G5_CLOSED_LOOP	诊断指导同目标信息获取	8.5	不同信息缺口引发有用的采集行动切换，并在同成本独立确认中改善目标答案	主要240次：有限区间83.75%、正确方向46.25%，最佳固定行动66.25%/24.58%；60次同样本量检查支持行动差异；并非每情景最优	G5_R8_diagnostic_actions G5_R8_diagnostic_value G5_R6_correct_answers	R8闭合子系统、6000成本单位、独立先导/确认；D4的1200例含300族外作为不同合同补充；不直接合并正确率，经典c-opt是工具
+G5_BIO_ACQUISITION	真实多区域同预算诊断采集		冻结诊断优于强固定方案	LUAD57确认患者主比较增益0.003245，区间跨零，Holm=1；未支持诊断优势		完整当前结果保留；不造成功展示图，不回填原R8结果
+G5_BIO_CTDNA	手术信息到术后血浆支系追踪		分支信息帮助追踪且信息自适应优于强多样性方案	71分支得分Diverse0.16549、Adaptive0.09038、Random0.05282、Clonal0；未支持Adaptive优于Diverse	G5_BIO_01_clone_tracking	51实测+20合同零值；14 whole参照阳性；已处理UMI回放，不是独立小面板新测序
+G5_BIO_FUTURE	后期组织支持支系的术后追踪		术时选择的标记保留真实后期谱系追踪信息	10患者20目标；Diverse K50恢复11/20、复发前6/20，逐患者与完整170–200标记参照一致	G5_BIO_02_future_clone_tracking	次级描述性桥接；患者均值63.33/33.33%与目标比例分开；无临床/真实成本优势声明

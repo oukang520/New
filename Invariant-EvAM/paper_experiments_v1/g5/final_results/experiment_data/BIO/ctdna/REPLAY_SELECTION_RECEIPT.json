@@ -1,0 +1,6 @@
+{
+  "assay_freeze_sha256": "ee3f7e77b8ea3db96ab238f6c0422a1d3e7240b9dd84b964f2a3ea56b1927ce5",
+  "marker_selection_sha256": "439cebfde51afde345d859f372adbf2904ec5cb8d508ae912258665e9a79021a",
+  "normal_parameters_sha256": "e9252c1c359c6e8edaa1944c99fcc81ccdcd7675e2ddd359435ad07ea7e4c794",
+  "status": "MARKER_SELECTION_AND_NORMAL_FIT_COMPLETED_BEFORE_PATIENT_REPLAY"
+}

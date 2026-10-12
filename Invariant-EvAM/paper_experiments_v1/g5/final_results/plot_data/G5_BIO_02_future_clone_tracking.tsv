@@ -1,0 +1,111 @@
+component	endpoint	method	nominal_K	extra_information_reference	patient_id	n	display_n	value	lo	hi	x	displayed	target_n
+mean_ci	future_target_recall	CLONAL_ONLY	50	False		10	6	0.0	0.0	0.0	-0.33	False	20
+patient	future_target_recall	CLONAL_ONLY	50	False	CRUK0074	10	6	0.0			-0.364	True	1
+patient	future_target_recall	CLONAL_ONLY	50	False	CRUK0286	10	6	0.0			-0.35040000000000004	True	1
+patient	future_target_recall	CLONAL_ONLY	50	False	CRUK0299	10	6	0.0			-0.3368	True	1
+patient	future_target_recall	CLONAL_ONLY	50	False	CRUK0344	10	6	0.0				False	1
+patient	future_target_recall	CLONAL_ONLY	50	False	CRUK0361	10	6	0.0				False	6
+patient	future_target_recall	CLONAL_ONLY	50	False	CRUK0484	10	6	0.0				False	3
+patient	future_target_recall	CLONAL_ONLY	50	False	CRUK0552	10	6	0.0			-0.32320000000000004	True	1
+patient	future_target_recall	CLONAL_ONLY	50	False	CRUK0557	10	6	0.0				False	3
+patient	future_target_recall	CLONAL_ONLY	50	False	CRUK0730	10	6	0.0			-0.3096	True	2
+patient	future_target_recall	CLONAL_ONLY	50	False	CRUK0769	10	6	0.0			-0.29600000000000004	True	1
+mean_ci	future_target_recall	BRANCH_DIVERSE	50	False		10	6	0.6333333333333333	0.3666666666666667	0.8666666666666666	-0.165	False	20
+patient	future_target_recall	BRANCH_DIVERSE	50	False	CRUK0074	10	6	1.0			-0.199	True	1
+patient	future_target_recall	BRANCH_DIVERSE	50	False	CRUK0286	10	6	1.0			-0.1854	True	1
+patient	future_target_recall	BRANCH_DIVERSE	50	False	CRUK0299	10	6	1.0			-0.1718	True	1
+patient	future_target_recall	BRANCH_DIVERSE	50	False	CRUK0344	10	6	0.0				False	1
+patient	future_target_recall	BRANCH_DIVERSE	50	False	CRUK0361	10	6	0.3333333333333333				False	6
+patient	future_target_recall	BRANCH_DIVERSE	50	False	CRUK0484	10	6	0.6666666666666666				False	3
+patient	future_target_recall	BRANCH_DIVERSE	50	False	CRUK0552	10	6	1.0			-0.1582	True	1
+patient	future_target_recall	BRANCH_DIVERSE	50	False	CRUK0557	10	6	0.3333333333333333				False	3
+patient	future_target_recall	BRANCH_DIVERSE	50	False	CRUK0730	10	6	1.0			-0.1446	True	2
+patient	future_target_recall	BRANCH_DIVERSE	50	False	CRUK0769	10	6	0.0			-0.131	True	1
+mean_ci	future_target_recall	RANDOM_MARKERS	50	False		10	6	0.2	0.03333333333333333	0.41666666666666663	0.0	False	20
+patient	future_target_recall	RANDOM_MARKERS	50	False	CRUK0074	10	6	0.0			-0.034	True	1
+patient	future_target_recall	RANDOM_MARKERS	50	False	CRUK0286	10	6	0.0			-0.0204	True	1
+patient	future_target_recall	RANDOM_MARKERS	50	False	CRUK0299	10	6	1.0			-0.0068000000000000005	True	1
+patient	future_target_recall	RANDOM_MARKERS	50	False	CRUK0344	10	6	0.0				False	1
+patient	future_target_recall	RANDOM_MARKERS	50	False	CRUK0361	10	6	0.1666666666666666				False	6
+patient	future_target_recall	RANDOM_MARKERS	50	False	CRUK0484	10	6	0.0				False	3
+patient	future_target_recall	RANDOM_MARKERS	50	False	CRUK0552	10	6	0.0			0.0068000000000000005	True	1
+patient	future_target_recall	RANDOM_MARKERS	50	False	CRUK0557	10	6	0.3333333333333333				False	3
+patient	future_target_recall	RANDOM_MARKERS	50	False	CRUK0730	10	6	0.5			0.0204	True	2
+patient	future_target_recall	RANDOM_MARKERS	50	False	CRUK0769	10	6	0.0			0.034	True	1
+mean_ci	future_target_recall	INFORMATION_ADAPTIVE	50	False		10	6	0.2333333333333333	0.049999999999999975	0.4670833333333311	0.165	False	20
+patient	future_target_recall	INFORMATION_ADAPTIVE	50	False	CRUK0074	10	6	0.0			0.131	True	1
+patient	future_target_recall	INFORMATION_ADAPTIVE	50	False	CRUK0286	10	6	0.0			0.1446	True	1
+patient	future_target_recall	INFORMATION_ADAPTIVE	50	False	CRUK0299	10	6	0.0			0.1582	True	1
+patient	future_target_recall	INFORMATION_ADAPTIVE	50	False	CRUK0344	10	6	0.0				False	1
+patient	future_target_recall	INFORMATION_ADAPTIVE	50	False	CRUK0361	10	6	0.1666666666666666				False	6
+patient	future_target_recall	INFORMATION_ADAPTIVE	50	False	CRUK0484	10	6	0.6666666666666666				False	3
+patient	future_target_recall	INFORMATION_ADAPTIVE	50	False	CRUK0552	10	6	1.0			0.1718	True	1
+patient	future_target_recall	INFORMATION_ADAPTIVE	50	False	CRUK0557	10	6	0.0				False	3
+patient	future_target_recall	INFORMATION_ADAPTIVE	50	False	CRUK0730	10	6	0.5			0.1854	True	2
+patient	future_target_recall	INFORMATION_ADAPTIVE	50	False	CRUK0769	10	6	0.0			0.199	True	1
+mean_ci	future_target_recall	WHOLE_PSP_REFERENCE	0	True		10	6	0.6333333333333333	0.36666666666666664	0.8666666666666666	0.33	False	20
+patient	future_target_recall	WHOLE_PSP_REFERENCE	0	True	CRUK0074	10	6	1.0			0.29600000000000004	True	1
+patient	future_target_recall	WHOLE_PSP_REFERENCE	0	True	CRUK0286	10	6	1.0			0.3096	True	1
+patient	future_target_recall	WHOLE_PSP_REFERENCE	0	True	CRUK0299	10	6	1.0			0.32320000000000004	True	1
+patient	future_target_recall	WHOLE_PSP_REFERENCE	0	True	CRUK0344	10	6	0.0				False	1
+patient	future_target_recall	WHOLE_PSP_REFERENCE	0	True	CRUK0361	10	6	0.3333333333333333				False	6
+patient	future_target_recall	WHOLE_PSP_REFERENCE	0	True	CRUK0484	10	6	0.6666666666666666				False	3
+patient	future_target_recall	WHOLE_PSP_REFERENCE	0	True	CRUK0552	10	6	1.0			0.3368	True	1
+patient	future_target_recall	WHOLE_PSP_REFERENCE	0	True	CRUK0557	10	6	0.3333333333333333				False	3
+patient	future_target_recall	WHOLE_PSP_REFERENCE	0	True	CRUK0730	10	6	1.0			0.35040000000000004	True	2
+patient	future_target_recall	WHOLE_PSP_REFERENCE	0	True	CRUK0769	10	6	0.0			0.364	True	1
+mean_ci	future_target_recall_before_recurrence	CLONAL_ONLY	50	False		10	6	0.0	0.0	0.0	0.77	False	20
+patient	future_target_recall_before_recurrence	CLONAL_ONLY	50	False	CRUK0074	10	6	0.0			0.736	True	1
+patient	future_target_recall_before_recurrence	CLONAL_ONLY	50	False	CRUK0286	10	6	0.0			0.7496	True	1
+patient	future_target_recall_before_recurrence	CLONAL_ONLY	50	False	CRUK0299	10	6	0.0			0.7632	True	1
+patient	future_target_recall_before_recurrence	CLONAL_ONLY	50	False	CRUK0344	10	6	0.0				False	1
+patient	future_target_recall_before_recurrence	CLONAL_ONLY	50	False	CRUK0361	10	6	0.0				False	6
+patient	future_target_recall_before_recurrence	CLONAL_ONLY	50	False	CRUK0484	10	6	0.0				False	3
+patient	future_target_recall_before_recurrence	CLONAL_ONLY	50	False	CRUK0552	10	6	0.0			0.7768	True	1
+patient	future_target_recall_before_recurrence	CLONAL_ONLY	50	False	CRUK0557	10	6	0.0				False	3
+patient	future_target_recall_before_recurrence	CLONAL_ONLY	50	False	CRUK0730	10	6	0.0			0.7904	True	2
+patient	future_target_recall_before_recurrence	CLONAL_ONLY	50	False	CRUK0769	10	6	0.0			0.804	True	1
+mean_ci	future_target_recall_before_recurrence	BRANCH_DIVERSE	50	False		10	6	0.33333333333333337	0.06666666666666667	0.6333333333333333	0.935	False	20
+patient	future_target_recall_before_recurrence	BRANCH_DIVERSE	50	False	CRUK0074	10	6	1.0			0.901	True	1
+patient	future_target_recall_before_recurrence	BRANCH_DIVERSE	50	False	CRUK0286	10	6	1.0			0.9146000000000001	True	1
+patient	future_target_recall_before_recurrence	BRANCH_DIVERSE	50	False	CRUK0299	10	6	0.0			0.9282	True	1
+patient	future_target_recall_before_recurrence	BRANCH_DIVERSE	50	False	CRUK0344	10	6	0.0				False	1
+patient	future_target_recall_before_recurrence	BRANCH_DIVERSE	50	False	CRUK0361	10	6	0.3333333333333333				False	6
+patient	future_target_recall_before_recurrence	BRANCH_DIVERSE	50	False	CRUK0484	10	6	0.0				False	3
+patient	future_target_recall_before_recurrence	BRANCH_DIVERSE	50	False	CRUK0552	10	6	0.0			0.9418000000000001	True	1
+patient	future_target_recall_before_recurrence	BRANCH_DIVERSE	50	False	CRUK0557	10	6	0.0				False	3
+patient	future_target_recall_before_recurrence	BRANCH_DIVERSE	50	False	CRUK0730	10	6	1.0			0.9554	True	2
+patient	future_target_recall_before_recurrence	BRANCH_DIVERSE	50	False	CRUK0769	10	6	0.0			0.9690000000000001	True	1
+mean_ci	future_target_recall_before_recurrence	RANDOM_MARKERS	50	False		10	6	0.06666666666666667	0.0	0.16708333333333106	1.1	False	20
+patient	future_target_recall_before_recurrence	RANDOM_MARKERS	50	False	CRUK0074	10	6	0.0			1.066	True	1
+patient	future_target_recall_before_recurrence	RANDOM_MARKERS	50	False	CRUK0286	10	6	0.0			1.0796000000000001	True	1
+patient	future_target_recall_before_recurrence	RANDOM_MARKERS	50	False	CRUK0299	10	6	0.0			1.0932000000000002	True	1
+patient	future_target_recall_before_recurrence	RANDOM_MARKERS	50	False	CRUK0344	10	6	0.0				False	1
+patient	future_target_recall_before_recurrence	RANDOM_MARKERS	50	False	CRUK0361	10	6	0.1666666666666666				False	6
+patient	future_target_recall_before_recurrence	RANDOM_MARKERS	50	False	CRUK0484	10	6	0.0				False	3
+patient	future_target_recall_before_recurrence	RANDOM_MARKERS	50	False	CRUK0552	10	6	0.0			1.1068	True	1
+patient	future_target_recall_before_recurrence	RANDOM_MARKERS	50	False	CRUK0557	10	6	0.0				False	3
+patient	future_target_recall_before_recurrence	RANDOM_MARKERS	50	False	CRUK0730	10	6	0.5			1.1204	True	2
+patient	future_target_recall_before_recurrence	RANDOM_MARKERS	50	False	CRUK0769	10	6	0.0			1.1340000000000001	True	1
+mean_ci	future_target_recall_before_recurrence	INFORMATION_ADAPTIVE	50	False		10	6	0.06666666666666667	0.0	0.16666666666666666	1.2650000000000001	False	20
+patient	future_target_recall_before_recurrence	INFORMATION_ADAPTIVE	50	False	CRUK0074	10	6	0.0			1.231	True	1
+patient	future_target_recall_before_recurrence	INFORMATION_ADAPTIVE	50	False	CRUK0286	10	6	0.0			1.2446000000000002	True	1
+patient	future_target_recall_before_recurrence	INFORMATION_ADAPTIVE	50	False	CRUK0299	10	6	0.0			1.2582000000000002	True	1
+patient	future_target_recall_before_recurrence	INFORMATION_ADAPTIVE	50	False	CRUK0344	10	6	0.0				False	1
+patient	future_target_recall_before_recurrence	INFORMATION_ADAPTIVE	50	False	CRUK0361	10	6	0.1666666666666666				False	6
+patient	future_target_recall_before_recurrence	INFORMATION_ADAPTIVE	50	False	CRUK0484	10	6	0.0				False	3
+patient	future_target_recall_before_recurrence	INFORMATION_ADAPTIVE	50	False	CRUK0552	10	6	0.0			1.2718	True	1
+patient	future_target_recall_before_recurrence	INFORMATION_ADAPTIVE	50	False	CRUK0557	10	6	0.0				False	3
+patient	future_target_recall_before_recurrence	INFORMATION_ADAPTIVE	50	False	CRUK0730	10	6	0.5			1.2854	True	2
+patient	future_target_recall_before_recurrence	INFORMATION_ADAPTIVE	50	False	CRUK0769	10	6	0.0			1.2990000000000002	True	1
+mean_ci	future_target_recall_before_recurrence	WHOLE_PSP_REFERENCE	0	True		10	6	0.33333333333333337	0.1	0.6	1.4300000000000002	False	20
+patient	future_target_recall_before_recurrence	WHOLE_PSP_REFERENCE	0	True	CRUK0074	10	6	1.0			1.3960000000000001	True	1
+patient	future_target_recall_before_recurrence	WHOLE_PSP_REFERENCE	0	True	CRUK0286	10	6	1.0			1.4096000000000002	True	1
+patient	future_target_recall_before_recurrence	WHOLE_PSP_REFERENCE	0	True	CRUK0299	10	6	0.0			1.4232000000000002	True	1
+patient	future_target_recall_before_recurrence	WHOLE_PSP_REFERENCE	0	True	CRUK0344	10	6	0.0				False	1
+patient	future_target_recall_before_recurrence	WHOLE_PSP_REFERENCE	0	True	CRUK0361	10	6	0.3333333333333333				False	6
+patient	future_target_recall_before_recurrence	WHOLE_PSP_REFERENCE	0	True	CRUK0484	10	6	0.0				False	3
+patient	future_target_recall_before_recurrence	WHOLE_PSP_REFERENCE	0	True	CRUK0552	10	6	0.0			1.4368	True	1
+patient	future_target_recall_before_recurrence	WHOLE_PSP_REFERENCE	0	True	CRUK0557	10	6	0.0				False	3
+patient	future_target_recall_before_recurrence	WHOLE_PSP_REFERENCE	0	True	CRUK0730	10	6	1.0			1.4504000000000001	True	2
+patient	future_target_recall_before_recurrence	WHOLE_PSP_REFERENCE	0	True	CRUK0769	10	6	0.0			1.4640000000000002	True	1

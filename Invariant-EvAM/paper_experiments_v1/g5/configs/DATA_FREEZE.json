@@ -1,0 +1,35 @@
+{
+  "source": "GENIE18.0-public",
+  "source_status": "PREVIOUSLY_EXPLORED",
+  "genome": "GRCh37",
+  "modules": [
+    "TP53",
+    "KRAS",
+    "STK11",
+    "KEAP1"
+  ],
+  "panels": [
+    "MSK-IMPACT468",
+    "MSK-IMPACT410",
+    "MSK-IMPACT505"
+  ],
+  "measurement": "Panel-only proxy negatives; four-target A identical; not sample callability",
+  "dedup": "Prefer468 to preserve frozen G4 patient roles, then410 then505, then sample lexical order; no genotype dependence",
+  "g4_data_freeze_sha256": "f60fb7518f55ebdf8286a735adaa0989aa587a14a784e90b4f3e034af682f3f0",
+  "private_sha256": "2c9453acf4d565cbe4f3741f72d57ebdb4c1b6914f662462d07db9934314a9fa",
+  "historical_lexical_dedup_n": 4920,
+  "historical_lexical_anyrow_n": 4737,
+  "current_n": 4920,
+  "current_no_mutation_rows": 180,
+  "g4_reference_roles_preserved": true,
+  "natural_reference_training": "Only G4 train1345; calibration/evaluation remain reserved for controlled design; no natural reference holdout target recentering",
+  "clinical_fields_available": [
+    "SEX",
+    "PRIMARY_RACE",
+    "ETHNICITY",
+    "AGE_AT_SEQ_REPORT"
+  ],
+  "sampling_time_missing": true,
+  "no_reweighting": "Descriptive measured composition only; no fabricated adjustment",
+  "dependency_hashes": 8426
+}

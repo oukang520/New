@@ -1,0 +1,9 @@
+cancer	comparison	reference	candidate	n_patients	gain	lo	hi	scope
+LUAD	B	MORE_CTMC	BRIDGE_CTMC	566	0.0078053739486954	0.0004701922602968	0.0154176806978472	conditional frozen GENIE ensemble; TCGA patients and mechanism seeds resampled; equal design mean
+LUAD	JOINT_VS_TWO_STEP	BRIDGE_TWO_STEP	BRIDGE_CTMC	566	-5.016359301793465e-05	-0.0006540041179251	0.0006068008131629	conditional frozen GENIE ensemble; TCGA patients and mechanism seeds resampled; equal design mean
+LUAD	JOINT_VS_SHUFFLE	SHUFFLED_CTMC	BRIDGE_CTMC	566	-0.0071921613600677	-0.0167219440875427	0.001869897893645	conditional frozen GENIE ensemble; TCGA patients and mechanism seeds resampled; equal design mean
+LUAD	JOINT_VS_POOLED	BRIDGE_POOLED	BRIDGE_CTMC	566	0.0133069046716877	0.0081711648439906	0.018528380618656	conditional frozen GENIE ensemble; TCGA patients and mechanism seeds resampled; equal design mean
+COAD	B	MORE_CTMC	BRIDGE_CTMC	534	0.0079911573922341	0.0004851615582113	0.0155685805847972	conditional frozen GENIE ensemble; TCGA patients and mechanism seeds resampled; equal design mean
+COAD	JOINT_VS_TWO_STEP	BRIDGE_TWO_STEP	BRIDGE_CTMC	534	4.297565674026165e-05	-0.0003687683346787	0.0004596438280721	conditional frozen GENIE ensemble; TCGA patients and mechanism seeds resampled; equal design mean
+COAD	JOINT_VS_SHUFFLE	SHUFFLED_CTMC	BRIDGE_CTMC	534	0.0050595184976688	-0.0019889047869278	0.011599803538082	conditional frozen GENIE ensemble; TCGA patients and mechanism seeds resampled; equal design mean
+COAD	JOINT_VS_POOLED	BRIDGE_POOLED	BRIDGE_CTMC	534	0.0056104810516816	0.0018536982212789	0.0097049708412429	conditional frozen GENIE ensemble; TCGA patients and mechanism seeds resampled; equal design mean

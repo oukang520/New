@@ -1,0 +1,6 @@
+{
+  "protocol_sha256": "93bbb65ae6a09dfdd242b33d3b0fab07124c196f25804aa247c768f38fc1bbca",
+  "split_sha256": "7342aa0dc54aea63614003d1ccace2f5c1e9842a79e0506f8e6293b8be803f22",
+  "python": "3.9.6 (default, May  7 2023, 23:32:45) \n[Clang 14.0.3 (clang-1403.0.22.14.1)]",
+  "platform": "macOS-13.7.8-x86_64-i386-64bit"
+}

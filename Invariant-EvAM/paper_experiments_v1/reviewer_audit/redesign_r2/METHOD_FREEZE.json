@@ -1,0 +1,9 @@
+{
+  "time": "2026-09-24T17:06:13.112234",
+  "source_hashes": {
+    "test_exact.py": "dfec1941d147711b7915dfbbc67edda1ac11b564f85fd9695f71e09580adbe72",
+    "run_simulations.py": "953c670735363e8c9321e66f5b988f850bc6a59307eed420ead917695c6ff142",
+    "run_real.py": "5086ba0ba9f6e9698c977c7355d548d14c059ebe16c499872020fe6822b31a01"
+  },
+  "note": "Fixed implementation. G4 timing probe is prespecified replicate0, retained; no outcome-based tuning."
+}

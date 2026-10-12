@@ -1,0 +1,12 @@
+{
+ "base_contract_unchanged":true,
+ "core_execution":"COMPLETE_6000_REPLICATES_12_CELLS",
+ "main_M_interval_status":"LOCAL_PROFILE_EXPLORATORY_WITH_CONDITION_SPECIFIC_EMPIRICAL_RESULTS",
+ "main_M_universal_95percent_coverage_claim_allowed":false,
+ "known_undercoverage":"strong effect+0.15 coverage0.930, Wilson95% [0.9042,0.9492]",
+ "global_finite_magnitude_projection":"NOT_CERTIFIED",
+ "sign_outer_addendum":{"method":"CERTIFIED_SIGN_OUTER_ADDENDUM","contract":"../g2/configs/CERTIFIED_SIGN_ADDENDUM.json","proof":"../g2/reports/G2_CERTIFIED_SIGN_OUTER_PROOF_CN.md","independent_purpose":208,"n_replicates":6000,"covered":6000,"called":79,"wrong":0,"claim":"Model-conditional sign-set coverage guarantee, not finite magnitude bounds nor conditional false-sign risk bound","forbidden_transfer":"B6 clinical endpoint, changed topology, arbitrary state selection, unknown biology"},
+ "secondary_targets":"WALD_EXPLORATORY_NO_TARGET_SPECIFIC_ORACLE_GEOMETRY_OR_SIMULTANEOUS_COVERAGE_CLAIM",
+ "G3_sentinel":"NOT_AVAILABLE_NOT_RUN",
+ "extensions":"N400_N4000_D4_NOT_RUN"
+}

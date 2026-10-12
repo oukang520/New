@@ -1,0 +1,60 @@
+group	panel	status	reason
+g1	G1A	不适用主柱图补标	配对连接、散点、曲线、审计流程或已有数值诊断；不机械添加星号
+g1	G1B	不机械添加星号	状态组成或信息几何；区间与分母明确，不套用其他端点检验
+g1	G1C	不适用	结构、几何或综合判定，不是独立样本性能均值比较
+g1	G1D	不适用	结构、几何或综合判定，不是独立样本性能均值比较
+g1	G1E	不适用	结构、几何或综合判定，不是独立样本性能均值比较
+g1	G1_R2_recovery_frequent	新增配对/基准检验	vs heterogeneous; 4 parameter draws; Holm
+g1	G1_R2_recovery_ordinary	新增配对/基准检验	vs heterogeneous; 4 parameter draws; Holm
+g1	G1_R2_recovery_rare	新增配对/基准检验	vs heterogeneous; 4 parameter draws; Holm
+g2	G2_01	不适用主柱图补标	配对连接、散点、曲线、审计流程或已有数值诊断；不机械添加星号
+g2	G2_02	不机械添加星号	两列状态组成；右侧Wilson 95% CI，零点与下限重合；端帽与点均完整，无星号检验
+g2	G2_03	不适用主柱图补标	配对连接、散点、曲线、审计流程或已有数值诊断；不机械添加星号
+g2	G2_04	新增配对/基准检验	vs official within effect/endpoint; Holm
+g2	G2_05	新增配对/基准检验	vs M within design; Holm
+g2	G2_06	不适用主柱图补标	配对连接、散点、曲线、审计流程或已有数值诊断；不机械添加星号
+g2	G2_07	不适用主柱图补标	配对连接、散点、曲线、审计流程或已有数值诊断；不机械添加星号
+g2	G2_R2_sign_strong	新增配对/基准检验	vs stratified exact within effect; Holm
+g2	G2_R2_sign_weak	新增配对/基准检验	vs stratified exact within effect; Holm
+g3	G3_01	保留已有有效检验	原18比较Holm族；只标原声明比较，不扩为所有两两比较
+g3	G3_05	不适用主柱图补标	配对连接、散点、曲线、审计流程或已有数值诊断；不机械添加星号
+g3	G3_06	不添加	分布或bootstrap重采样图，不把重采样次数当独立患者样本做均值检验
+g3	G3_07	保留已有有效检验	原18比较Holm族；只标原声明比较，不扩为所有两两比较
+g3	G3_R2_bias_0	不添加	主图为预算/边界轨迹；内嵌柱仅汇总相应覆盖、作答或成本，未定义额外独立主要比较
+g3	G3_R2_bias_0p8	不添加	主图为预算/边界轨迹；内嵌柱仅汇总相应覆盖、作答或成本，未定义额外独立主要比较
+g3	G3_R2_bias_neg0p8	不添加	主图为预算/边界轨迹；内嵌柱仅汇总相应覆盖、作答或成本，未定义额外独立主要比较
+g3	G3_R3_joint_cost1000	不添加	主图为预算/边界轨迹；内嵌柱仅汇总相应覆盖、作答或成本，未定义额外独立主要比较
+g3	G3_R3_joint_cost4000	不添加	主图为预算/边界轨迹；内嵌柱仅汇总相应覆盖、作答或成本，未定义额外独立主要比较
+g3	G3_R3_reference_anchor	新增配对/基准检验	vs reference X within scenario; Holm
+g4	G4_01	不适用主柱图补标	配对连接、散点、曲线、审计流程或已有数值诊断；不机械添加星号
+g4	G4_07	新增配对/基准检验	vs K0 within source bound; 10 source fits; Holm
+g4	G4_R2_joint_audit_COAD	不添加	主图为预算/边界轨迹；内嵌柱仅汇总相应覆盖、作答或成本，未定义额外独立主要比较
+g4	G4_R2_joint_audit_LUAD	不添加	主图为预算/边界轨迹；内嵌柱仅汇总相应覆盖、作答或成本，未定义额外独立主要比较
+g4	G4_R4_BC_patient_bootstrap	不添加	分布或bootstrap重采样图，不把重采样次数当独立患者样本做均值检验
+g4	G4_R4_B_gain_COAD	新增配对/基准检验	paired gain vs 0; conditional seed test; Holm；直引线及居中星号/ns，2026-10-09审查
+g4	G4_R4_B_gain_LUAD	新增配对/基准检验	paired gain vs 0; conditional seed test; Holm；直引线及居中星号/ns，2026-10-09审查
+g4	G4_R4_C_calibration_COAD	新增配对/基准检验	vs base CTMC; conditional seed test; Holm
+g4	G4_R4_C_calibration_LUAD	新增配对/基准检验	vs base CTMC; conditional seed test; Holm
+g4	G4_R4_C_proper_score_controls	新增配对/基准检验	paired gain vs 0; complete seed blocks; Holm；直引线及居中星号/ns，2026-10-09审查
+g4	G4_R5_external_transfer	区间/分布推断	患者层bootstrap区间，不把重采样次数当独立患者标星
+g4	G4_R5_nested_patient_means	区间/分布推断	患者层bootstrap区间，不把重采样次数当独立患者标星
+g4	G4_R6_attribution	保留原生有效检验	20项原生Holm检验；单柱归因增益vs零，直引线不是两柱比较；直引线及居中星号/ns，2026-10-09审查
+g4	G4_finite_calibration_ablation	新增配对/基准检验	paired gain vs 0; conditional seed test; Holm；直引线及居中星号/ns，2026-10-09审查
+g5	G5_05_design_scenario_0	不添加	主图为预算/边界轨迹；内嵌柱仅汇总相应覆盖、作答或成本，未定义额外独立主要比较
+g5	G5_05_design_scenario_1	不添加	主图为预算/边界轨迹；内嵌柱仅汇总相应覆盖、作答或成本，未定义额外独立主要比较
+g5	G5_05_design_scenario_2	不添加	主图为预算/边界轨迹；内嵌柱仅汇总相应覆盖、作答或成本，未定义额外独立主要比较
+g5	G5_07_direct_uncertainty_cost	不添加	分母/状态组成/结构性未知展示，未定义独立的两组均值检验
+g5	G5_R2_costmatched_COAD	不添加	主图为预算/边界轨迹；内嵌柱仅汇总相应覆盖、作答或成本，未定义额外独立主要比较
+g5	G5_R2_costmatched_LUAD	不添加	主图为预算/边界轨迹；内嵌柱仅汇总相应覆盖、作答或成本，未定义额外独立主要比较
+g5	G5_R3_anchor_called	新增配对/基准检验	vs more selected patients within scenario; Holm
+g5	G5_R3_anchor_covered	新增配对/基准检验	vs more selected patients within scenario; Holm
+g5	G5_R3_natural_transfer	新增配对/基准检验	paired gain vs 0; conditional patient test; Holm；直引线及居中星号/ns，2026-10-09审查
+g5	G5_R6_correct_answers	保留原生有效检验	40项原生配对McNemar检验；括号连接诊断策略与实际比较策略
+g5	G5_R8_diagnostic_actions	不机械添加星号	状态组成或信息几何；区间与分母明确，不套用其他端点检验
+g5	G5_R8_diagnostic_value	原生配对括号	8项配对检验Holm，完整比较括号
+g4	G4_E1_multicohort_value	原生患者配对标注	新9患者队列，9项Holm主族；直引线vs零
+g4	G4_E1_attribution_LUAD	次级成分区间	保留区间及全部成分，不增加未定义的星号族
+g4	G4_E1_attribution_COAD	次级成分区间	保留区间及全部成分，不增加未定义的星号族
+g4	G4_BIO_01_later_lineage	描述性均值与患者区间	No significance annotation; no newly registered paired budget test
+g5	G5_BIO_01_clone_tracking	描述性均值与患者区间	2000patientbootstrap95%intervals; no star/ns annotations
+g5	G5_BIO_02_future_clone_tracking	描述性均值与患者区间	Secondary descriptive endpoint;2000patientbootstrap95%intervals; no star/ns annotations or newly invented P-values

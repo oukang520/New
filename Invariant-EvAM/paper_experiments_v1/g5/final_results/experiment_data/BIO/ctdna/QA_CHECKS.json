@@ -1,0 +1,15 @@
+{
+  "all197_patients": true,
+  "all_24_patient_rows": true,
+  "unknown_tree_always_NA": true,
+  "recall_bounded": true,
+  "no_branch_recall_num_greater_denom": true,
+  "selected_only_not_counted_truth": true,
+  "primary_n74_availability": true,
+  "primary_n71_branch_scores": true,
+  "postoperative_n52": true,
+  "future_scorer_all197_retained": true,
+  "future_scorer_all26_per_patient": true,
+  "future_recall_bounded": true,
+  "diverse_whole_equal_each10_future_target_patient": true
+}

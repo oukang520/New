@@ -1,0 +1,144 @@
+{
+  "protocol_version": "1.0",
+  "status": "SCHEMA_AND_CHECKSUM_REGISTRY",
+  "source_initial_state": "all_zero",
+  "assets": {
+    "MODEL_CONTRACT.json": {
+      "sha256": "dbd05a53d4839458753d46cee5d2d59d95d0083bcdfc7d63286f4dd708ed59c0",
+      "bytes": 2016,
+      "schema": {
+        "format": "JSON",
+        "root_type": "dict",
+        "root_keys": [
+          "protocol_version",
+          "status",
+          "frozen_at",
+          "time_contract",
+          "models",
+          "state_order",
+          "generator_convention",
+          "evidence_label"
+        ]
+      }
+    },
+    "event_dictionary.tsv": {
+      "sha256": "b33eeb03ccafb84ee054b3eca07e166c0f800b8c226abc5b440d5c7693e719af",
+      "bytes": 1345,
+      "schema": {
+        "format": "TSV",
+        "columns": {
+          "protocol_version": "float64",
+          "model_id": "object",
+          "event_index": "int64",
+          "simulation_label": "object",
+          "LUAD_mapping_if_applicable": "object",
+          "COAD_mapping_if_applicable": "object",
+          "ordering_role": "object"
+        }
+      }
+    },
+    "parameter_dictionary.tsv": {
+      "sha256": "55ad007b246d56e66cb57af2406aeade0e3196217a7f067456edd3b6fd6c739a",
+      "bytes": 3883,
+      "schema": {
+        "format": "TSV",
+        "columns": {
+          "protocol_version": "float64",
+          "model_id": "object",
+          "parameter_index": "int64",
+          "parameter_name": "object",
+          "parameter_type": "object",
+          "direction_convention": "object",
+          "topology_assumed": "bool",
+          "source_event": "float64",
+          "target_event": "int64"
+        }
+      }
+    },
+    "target_registry.tsv": {
+      "sha256": "931fabccb56ef15cb5d8ee4c7a3fa564ea644b4d8f677cbd6d860a9d30bda3cc",
+      "bytes": 5966,
+      "schema": {
+        "format": "TSV",
+        "columns": {
+          "protocol_version": "float64",
+          "target_id": "object",
+          "model_id": "object",
+          "target_type": "object",
+          "vector": "object",
+          "primary": "bool",
+          "interpretation": "object"
+        }
+      }
+    },
+    "parameter_library.tsv": {
+      "sha256": "ade544532b904f52e60a2b3028cea0c767947723d28ba696ed125b07dd7d7db6",
+      "bytes": 65267,
+      "schema": {
+        "format": "TSV",
+        "columns": {
+          "protocol_version": "float64",
+          "model_id": "object",
+          "purpose": "object",
+          "draw_id": "int64",
+          "theta_json": "object",
+          "theta_sha256": "object",
+          "screened_on_performance": "bool"
+        }
+      }
+    },
+    "operator_library.json": {
+      "sha256": "72d0cec3d9f01378d48b4d623de11e973fde1041ad0ba96f11cbb762825dc01a",
+      "bytes": 43855,
+      "schema": {
+        "format": "JSON",
+        "root_type": "dict",
+        "root_keys": [
+          "protocol_version",
+          "status",
+          "operators"
+        ]
+      }
+    },
+    "design_registry.tsv": {
+      "sha256": "8cd7361a2fa2fa8ff7486c254ce51f0e47f4b76044b3b30b7b8b9c9ffefad5f3",
+      "bytes": 16327,
+      "schema": {
+        "format": "TSV",
+        "columns": {
+          "protocol_version": "float64",
+          "design_id": "object",
+          "model_id": "object",
+          "family": "object",
+          "operator_ids": "object",
+          "nuisance_groups": "object",
+          "predeclared_failure": "bool",
+          "target_joint_observed": "bool",
+          "panel_jaccard": "float64",
+          "measurement_cost_per_pair": "int64",
+          "eligibility": "object",
+          "confirmation_truth_used_in_selection": "bool"
+        }
+      }
+    },
+    "numerical_precision_contract.json": {
+      "sha256": "87a5bede542b45466aef9e633fab7003196386e5b55613355dfb82ec55a547ac",
+      "bytes": 387,
+      "schema": {
+        "format": "JSON",
+        "root_type": "dict",
+        "root_keys": [
+          "protocol_version",
+          "status",
+          "dtype",
+          "rank_rtol",
+          "rank_rtol_sensitivity",
+          "probability_floor",
+          "finite_difference_steps",
+          "rank_interpretation",
+          "zero_count_rule"
+        ]
+      }
+    }
+  }
+}

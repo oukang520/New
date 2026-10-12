@@ -1,0 +1,68 @@
+{
+  "version": "G4_v1.0",
+  "status": "DESIGN_FROZEN_BEFORE_DEVELOPMENT",
+  "master_seed": 20260923,
+  "purpose": {
+    "development": 1,
+    "perturbation": 2,
+    "bootstrap": 3,
+    "auxiliary": 4
+  },
+  "designs": [
+    "REDUNDANT",
+    "HETEROGENEOUS",
+    "CROSSVIEW_FAILURE"
+  ],
+  "calibration_per_environment": 40,
+  "perturbation_replicates": 50,
+  "bootstrap_replicates": 200,
+  "bootstrap_primary_design": "HETEROGENEOUS",
+  "fixed_enrolled_n_per_environment": 40,
+  "auxiliary_source_draws": 10,
+  "auxiliary_replicates_per_draw": 10,
+  "theta_bounds": [
+    -3,
+    3
+  ],
+  "expanded_source_bounds": [
+    -6,
+    6
+  ],
+  "phi_bounds": [
+    -1,
+    1
+  ],
+  "penalty_lambda": 1.0,
+  "fit_starts": 2,
+  "methods": [
+    "M",
+    "B1",
+    "B2",
+    "B3",
+    "B4",
+    "B5",
+    "K0",
+    "M_NO_CAL",
+    "FULL_RECORD_REFERENCE"
+  ],
+  "primary_comparators": [
+    "B3",
+    "B4"
+  ],
+  "primary_metrics": [
+    "hidden_brier",
+    "hidden_log_score",
+    "source_log_score",
+    "source_tv"
+  ],
+  "selection_model": "Independent Bernoulli exp(alpha+F phi), then deterministic 3-of-4 mask",
+  "budget": "Same train candidate pool; cap 3*N_train + 4*80 gene assays plus 80 selection indicators; actual cost reported; equal cap is not equal actual spending",
+  "reference": "Proxy reference records; no sample callability; PREVIOUSLY_EXPLORED; no natural theta truth",
+  "fixed_n": "Uniform downsample to 40 enrolled records per environment; inadequate enrollment = capacity failure, no replacement",
+  "bootstrap": "Resample patients within frozen roles, replay random assignment/selection/calibration/fit; repeated identities retain identical perturbations with multiplicity weights; 200 paired independent bootstrap runs, not 50x200",
+  "profile": "G3 local constrained LR, exploratory not formal coverage; bound hit extends to infinity",
+  "primary_seed_summary": "50 perturbations are mechanism stability, not independent cohorts",
+  "auxiliary": "10 train+cal patient bootstrap source fits per cancer; fit both bounds 3 and 6, 10 model replicates per source under bounds3; evidence separate",
+  "data_freeze_sha256": "f60fb7518f55ebdf8286a735adaa0989aa587a14a784e90b4f3e034af682f3f0",
+  "operator_library_sha256": "72d0cec3d9f01378d48b4d623de11e973fde1041ad0ba96f11cbb762825dc01a"
+}

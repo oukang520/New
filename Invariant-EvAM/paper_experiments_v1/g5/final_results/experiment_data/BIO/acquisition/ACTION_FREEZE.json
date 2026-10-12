@@ -1,0 +1,23 @@
+{
+  "status": "ACTIONS_WRITTEN_BEFORE_OPENING_SCORER",
+  "actions_sha256": "e554e166a07699aa3e34345b88dc6483273da87840e522e8b8d7309a70ecd84f",
+  "model_sha256": "4e9f25c36de3b642769db9b6018a0e8c3077dcd6cef6af3afeae565cfa2c31e8",
+  "protocol_sha256": "93bbb65ae6a09dfdd242b33d3b0fab07124c196f25804aa247c768f38fc1bbca",
+  "split_sha256": "7342aa0dc54aea63614003d1ccace2f5c1e9842a79e0506f8e6293b8be803f22",
+  "code_sha256": "6a243d444f34fe4cafd63b60cf6911d22aa9039f47398145cf4d470fb8f514ec",
+  "rows": 36675,
+  "selection_interface_fields": [
+    "patient_id",
+    "tumour_id",
+    "histology",
+    "repeat",
+    "initial_region",
+    "region_order",
+    "core_state",
+    "positive_core_counts",
+    "mean_vaf",
+    "max_vaf"
+  ],
+  "scorer_fields_exposed_to_policy": [],
+  "future_fields_exposed_to_policy": []
+}

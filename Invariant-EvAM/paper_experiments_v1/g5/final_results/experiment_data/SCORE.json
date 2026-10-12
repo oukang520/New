@@ -1,0 +1,32 @@
+{
+  "score": 8.5,
+  "gates": {
+    "action_switches": true,
+    "pooled_coverage": true,
+    "minimum_cell_coverage": true,
+    "wrong": true,
+    "failures": true,
+    "mse_fixed": true,
+    "mse_random": true,
+    "mse_shuffled": true,
+    "correct_fixed": true,
+    "correct_random": true
+  },
+  "strong_gates": {
+    "correct_fixed": true,
+    "correct_shuffled": true,
+    "all_fixed_mse": true,
+    "all_controls_present": true
+  },
+  "correct": 0.38999999999999996,
+  "coverage": 0.9588888888888888,
+  "wrong": 0.008888888888888889,
+  "finite": 0.7466666666666667,
+  "actions": {
+    "COMPLETE_A": 0.5,
+    "COMPLETE_B": 0.5
+  },
+  "largest_panel_agreement": 1.0,
+  "copt_is_same_module": true,
+  "interpretation": "Diagnostic framework value under varying public observation structure; no claim of a novel c-opt criterion or superiority over count/cost heuristic if identical"
+}

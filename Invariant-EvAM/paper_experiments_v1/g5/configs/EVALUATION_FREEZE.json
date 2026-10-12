@@ -1,0 +1,23 @@
+{
+  "status": "FROZEN_BEFORE_EVALUATION",
+  "time": "2026-09-24T13:19:11.612393",
+  "files": {
+    "paper_experiments_v1/g5/src/g5_audit.py": "fe074d0e44eed43b6827af5a8c6c833931f44a3cbeda550508da43286a31bf0b",
+    "paper_experiments_v1/g5/src/g5_natural.py": "e159a7fe248ae2b10a000f8084f7490a15a0d52c7861e1f510fd575dbe5f01f9",
+    "paper_experiments_v1/g5/src/g5_design_strategy.py": "be068e005f61b0dcf42ce1f59ba610ea08807378ee81ceb0495b0f0fae4ae4dd",
+    "paper_experiments_v1/g5/src/ctmc_g5.dylib": "634bcbcb5fa994128c21bcdf00a6da6bc09597ae0d967a9594409c096c834afa",
+    "paper_experiments_v1/g5/src/g5_model.py": "45bc41c46a5b96cb5d2892fa584ff68cf9874b05b6d45b2635033b2ba191eb61",
+    "paper_experiments_v1/g5/src/g5_design_evaluator.py": "edbbf9133dc4f820493fd0b63e97df226dfa001c6a22502f5cc1dbef29c6044c",
+    "paper_experiments_v1/g5/src/g5_protocol.py": "06501ebe7548412ef811d75c73194d3d95f8b2fac79ba7ae966fabfc653828fe",
+    "paper_experiments_v1/g5/src/ctmc_g5.c": "1ad351e075413397db58d5add9a31c79f683d3cd2d71f511252ed71bc79b821a",
+    "paper_experiments_v1/g5/configs/target_registry.tsv": "716a78852ab86f906aa2043adb1fbe39bf71ac10e8672995b399457765b53061",
+    "paper_experiments_v1/g5/configs/DATA_FREEZE.json": "89a9a204faedb2878e5817e2e5e5a9c8374b9d9bdbdd5b18d808533a559f410d",
+    "paper_experiments_v1/g5/configs/PROTOCOL.json": "4e6deb8e9541742c39c76f56c65bbb8dab612beafd41d9db8da9348690fe4adb",
+    "paper_experiments_v1/g5/tests/test_g5.py": "42afdcd6fb4f914b64b3df77011b5f33054019573c6bfa5f4e3c78dc081eaa8c"
+  },
+  "tests_passed": 14,
+  "development_purpose": 600,
+  "development_replicates": 2,
+  "evaluation_scores_seen": 0,
+  "natural_interaction_results_seen": 0
+}

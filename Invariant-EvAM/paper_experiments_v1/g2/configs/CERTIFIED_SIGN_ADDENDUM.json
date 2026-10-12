@@ -1,0 +1,18 @@
+{
+ "version":"1.0",
+ "timing":"Post-core supplementary implementation; frozen before independent purpose208 data",
+ "method_id":"CERTIFIED_SIGN_OUTER_ADDENDUM",
+ "scope":"D3_SPARSE5 fixed-time CTMC, no parents of event0, only event0 parent of event1, event2 has no upstream influence; full joint assay of events0/1; selection tilt depends only on event0 OR only on event1 per environment",
+ "proof":"Sign of target interaction equals sign of latent odds ratio minus1; row/column multiplicative selection preserves odds ratio",
+ "confidence":0.95,
+ "probability_intervals":"Clopper-Pearson for four collapsed event0/1 categories in each of2 environments; Bonferroni alpha/8",
+ "outer_projection":"Intersection of R, (0,infinity), (-infinity,0) implied by rigorous odds-ratio envelopes; retain strict/open zero boundary; contradictory sign certificates give empty set",
+ "primary_replicates_per_cell":500,
+ "cells":12,
+ "n":1000,
+ "seed_master":20260923,
+ "group_id":2,
+ "rng_purpose":208,
+ "not_applicable":"Clinical-observation B6, arbitrary state-dependent selection, changed topology/biology/time, separate marginal assays",
+ "information_limit":"Certifies a sign-only outer set, not finite magnitude endpoints and not conditional wrong-sign risk<=alpha"
+}

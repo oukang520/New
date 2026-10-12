@@ -1,0 +1,27 @@
+{
+  "expected": {
+    "natural_main": 9,
+    "sensitivity": 9,
+    "heldout": 14,
+    "bootstrap": 800,
+    "compatibility": 800,
+    "partitions": 100,
+    "design_outer": 600,
+    "design_direct": 50
+  },
+  "actual": {
+    "natural_main": 9,
+    "sensitivity": 9,
+    "heldout": 14,
+    "bootstrap": 800,
+    "compatibility": 800,
+    "partitions": 100,
+    "design_outer": 600,
+    "design_direct": 50
+  },
+  "all_attempted": true,
+  "outer_method_rows": 10800,
+  "direct_method_rows": 900,
+  "all_target_rows": 75,
+  "failure_rows": 7
+}

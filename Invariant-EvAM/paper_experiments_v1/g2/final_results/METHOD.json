@@ -1,0 +1,61 @@
+{
+  "primary": {
+    "seed": 202609288,
+    "code": {
+      "run_g2.py": "9339ba97973a28ae570328f4539cc11f1c80edefb114e65e2c9e473e8002fb42",
+      "exact_target.py": "08882ae098da483f9109b49d94176eb933850efbad4fd18da59da5cca43aa9d0"
+    },
+    "designs": [
+      "strong",
+      "weak",
+      "nonidentifying"
+    ],
+    "n": [
+      1000,
+      4000,
+      16000
+    ],
+    "effects": [
+      -0.8,
+      0,
+      0.15,
+      0.8
+    ],
+    "evaluation_per_cell": 50,
+    "confidence": 0.95,
+    "subdivisions": 96,
+    "scope": "original sparse D3 topology and public selection families; closed A-B subsystem, global probability-set projection with floating-point geometry checks",
+    "primary": "coverage + finite fraction + correct/wrong answers; separate structural refusal and numerical failures; no requirement to beat classical profile in interval length"
+  },
+  "analysis_code": "../../closure_r8/src/run_g2.py",
+  "plotting_code": "../../closure_r8/publication/plot.py",
+  "reproduction": "../../closure_r8/reports/REPRODUCE_COMMANDS.md",
+  "classic_solver": {
+    "code": "32532383fdf5357f22f32196709d9f77a51f676d2df000e880836420381612a2",
+    "reason": "technical repair: retain continuous LR roots; use symmetric fixed interaction starts and refit unconstrained maximum when constrained fit improves it; retain v1 outputs separately",
+    "root_tolerance": 0.0001,
+    "optimizer_maxiter": 1000,
+    "starts": 5,
+    "repair_passes": 4,
+    "rule": "all evaluation records, no selective reruns, same cutoff and parameter bounds",
+    "scope": "technical comparator check, no changes to exact method"
+  },
+  "fresh_confirmation": {
+    "code": "a5672f234cd29717b2e5ecbccb422cfc09f072598764320db6b7c7b2727f3113",
+    "solver_code": "32532383fdf5357f22f32196709d9f77a51f676d2df000e880836420381612a2",
+    "designs": [
+      "strong",
+      "weak"
+    ],
+    "n": 16000,
+    "effects": [
+      -0.8,
+      0,
+      0.15,
+      0.8
+    ],
+    "replicates_per_cell": 25,
+    "seed_namespace": 3,
+    "reason": "fresh confirmation after fixed numerical repair; preserve original 1800 evaluation records"
+  }
+}

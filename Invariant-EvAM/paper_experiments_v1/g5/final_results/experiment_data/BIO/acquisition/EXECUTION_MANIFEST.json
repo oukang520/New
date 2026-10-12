@@ -1,0 +1,59 @@
+{
+  "status": "COMPLETE",
+  "planned_cost_cells": 9,
+  "planned_methods": [
+    "BEST_FIXED",
+    "RANDOM",
+    "CTMC_BRIDGE",
+    "EMPIRICAL_BRIDGE",
+    "DIRECT_RIDGE"
+  ],
+  "planned_perturbations_per_patient": 5,
+  "independent_confirmation_patients": {
+    "ALL_NSCLC": 106,
+    "LUAD": 57
+  },
+  "confirmation_rows": 36675,
+  "fixed_plan_rows": 91280,
+  "patients_retained_including_zero_branch_denominators": true,
+  "post_confirmation_selection": false,
+  "policy_fit_or_parameter_change_in_confirmation": false,
+  "source_files": {
+    "/Users/oukang/Desktop/投稿资料/fangxiang2/Invariant-EvAM/paper_experiments_v1/biological_closure_20261009/data/native_audit/patient_primary_tumour.tsv": {
+      "sha256": "c81d1dfe73a76674282e9c80f2e5ac309760bf2c651ef73f8f1aa058a61718aa",
+      "bytes": 39764
+    },
+    "/Users/oukang/Desktop/投稿资料/fangxiang2/Invariant-EvAM/paper_experiments_v1/biological_closure_20261009/data/native_audit/regions.tsv": {
+      "sha256": "254ae2fba78490adfac4a067ce6c6941bb9f6afe4972a3d8a78f41032eecfe17",
+      "bytes": 90857
+    },
+    "/Users/oukang/Desktop/投稿资料/fangxiang2/Invariant-EvAM/paper_experiments_v1/biological_closure_20261009/data/native_audit/region_variants.tsv.gz": {
+      "sha256": "df00526d71aa9e883148ffe31a6ce09c8e62f9b6776069ed98024035c903a2f2",
+      "bytes": 42324376
+    },
+    "/Users/oukang/Desktop/投稿资料/fangxiang2/Invariant-EvAM/paper_experiments_v1/biological_closure_20261009/data/native_audit/branch_reference.tsv": {
+      "sha256": "28c1abad7dee6c026dbdff79726850cf6d50bf51598e710889a2b3038a5a1c49",
+      "bytes": 238270
+    },
+    "/Users/oukang/Desktop/投稿资料/fangxiang2/Invariant-EvAM/paper_experiments_v1/biological_closure_20261009/data/native_audit/branch_owned_markers.tsv.gz": {
+      "sha256": "c534db4eba2dfc9a54868e2e6adc5861f674825a272a16a6236797b7de49012d",
+      "bytes": 4600077
+    },
+    "/Users/oukang/Desktop/投稿资料/fangxiang2/Invariant-EvAM/paper_experiments_v1/biological_closure_20261009/data/native_audit/cluster_region_support.tsv.gz": {
+      "sha256": "245676123e133a901669dd21fa7ac6165d560ed9ed947ce21bd7c9c1099f880f",
+      "bytes": 118627
+    },
+    "/Users/oukang/Desktop/投稿资料/fangxiang2/Invariant-EvAM/paper_experiments_v1/biological_closure_20261009/configs/PROTOCOL.json": {
+      "sha256": "93bbb65ae6a09dfdd242b33d3b0fab07124c196f25804aa247c768f38fc1bbca",
+      "bytes": 7969
+    },
+    "/Users/oukang/Desktop/投稿资料/fangxiang2/Invariant-EvAM/paper_experiments_v1/biological_closure_20261009/configs/PATIENT_SPLIT.tsv": {
+      "sha256": "7342aa0dc54aea63614003d1ccace2f5c1e9842a79e0506f8e6293b8be803f22",
+      "bytes": 9026
+    },
+    "/Users/oukang/Desktop/投稿资料/fangxiang2/Invariant-EvAM/paper_experiments_v1/biological_closure_20261009/src/acquisition.py": {
+      "sha256": "6a243d444f34fe4cafd63b60cf6911d22aa9039f47398145cf4d470fb8f514ec",
+      "bytes": 37808
+    }
+  }
+}

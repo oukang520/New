@@ -1,0 +1,14 @@
+{
+  "primary_runs": 300,
+  "primary_expected": 300,
+  "fixed_n_runs": 300,
+  "fixed_n_expected": 300,
+  "bootstrap_runs": 800,
+  "bootstrap_expected": 800,
+  "auxiliary_source_draws": 20,
+  "auxiliary_expected": 20,
+  "auxiliary_method_evaluations": 1600,
+  "failures": 0,
+  "capacity_failures": 0,
+  "run_status": "COMPLETE"
+}

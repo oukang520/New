@@ -1,0 +1,350 @@
+{
+  "G1_R2_recovery_rare": {
+    "labels": [
+      0,
+      "ref",
+      1,
+      2,
+      "ref",
+      3
+    ],
+    "key": "vs heterogeneous; 4 parameter draws; Holm"
+  },
+  "G1_R2_recovery_ordinary": {
+    "labels": [
+      4,
+      "ref",
+      5,
+      6,
+      "ref",
+      7
+    ],
+    "key": "vs heterogeneous; 4 parameter draws; Holm"
+  },
+  "G1_R2_recovery_frequent": {
+    "labels": [
+      8,
+      "ref",
+      9,
+      10,
+      "ref",
+      11
+    ],
+    "key": "vs heterogeneous; 4 parameter draws; Holm"
+  },
+  "G2_02": {
+    "labels": [
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      21,
+      22,
+      23,
+      24,
+      25,
+      26,
+      27,
+      28,
+      29,
+      30,
+      31,
+      32,
+      33,
+      34,
+      35,
+      36,
+      37,
+      38,
+      39,
+      40,
+      41,
+      42,
+      43,
+      44,
+      45,
+      46,
+      47,
+      48,
+      49,
+      50,
+      51,
+      52,
+      53,
+      54,
+      55,
+      56,
+      57,
+      58,
+      59,
+      60,
+      61,
+      62,
+      63,
+      64,
+      65,
+      66,
+      67,
+      68,
+      69,
+      70,
+      71,
+      72,
+      73,
+      74,
+      75,
+      76,
+      77,
+      78,
+      79,
+      80,
+      81,
+      82,
+      83
+    ],
+    "key": "coverage vs 95%; Holm (72 tests)"
+  },
+  "G2_04": {
+    "labels": [
+      "ref",
+      "ref",
+      "ref",
+      "ref",
+      "ref",
+      "ref",
+      "ref",
+      "ref",
+      84,
+      85,
+      86,
+      87,
+      88,
+      89,
+      90,
+      91
+    ],
+    "key": "vs official within effect/endpoint; Holm"
+  },
+  "G2_05": {
+    "labels": [
+      92,
+      93,
+      94,
+      95,
+      96,
+      97,
+      "ref",
+      "ref",
+      "ref"
+    ],
+    "key": "vs M within design; Holm"
+  },
+  "G2_R2_sign_strong": {
+    "labels": [
+      98,
+      99,
+      "ref",
+      100,
+      101,
+      102,
+      "ref",
+      103,
+      104,
+      105,
+      "ref",
+      106,
+      107,
+      108,
+      "ref",
+      109
+    ],
+    "key": "vs stratified exact within effect; Holm"
+  },
+  "G2_R2_sign_weak": {
+    "labels": [
+      110,
+      111,
+      "ref",
+      112,
+      113,
+      114,
+      "ref",
+      115,
+      116,
+      117,
+      "ref",
+      118,
+      119,
+      120,
+      "ref",
+      121
+    ],
+    "key": "vs stratified exact within effect; Holm"
+  },
+  "G3_R3_reference_anchor": {
+    "labels": [
+      122,
+      123,
+      "ref",
+      124,
+      125,
+      "ref"
+    ],
+    "key": "vs reference X within scenario; Holm"
+  },
+  "G4_R4_B_gain_LUAD": {
+    "labels": [
+      126,
+      127,
+      128,
+      129,
+      130,
+      131,
+      132,
+      133,
+      134,
+      135,
+      136,
+      137
+    ],
+    "key": "paired gain vs 0; conditional seed test; Holm"
+  },
+  "G4_R4_C_calibration_LUAD": {
+    "labels": [
+      "ref",
+      138,
+      139,
+      140,
+      "ref",
+      141,
+      142,
+      143,
+      "ref",
+      144,
+      145,
+      146
+    ],
+    "key": "vs base CTMC; conditional seed test; Holm"
+  },
+  "G4_R4_B_gain_COAD": {
+    "labels": [
+      147,
+      148,
+      149,
+      150,
+      151,
+      152,
+      153,
+      154,
+      155,
+      156,
+      157,
+      158
+    ],
+    "key": "paired gain vs 0; conditional seed test; Holm"
+  },
+  "G4_R4_C_calibration_COAD": {
+    "labels": [
+      "ref",
+      159,
+      160,
+      161,
+      "ref",
+      162,
+      163,
+      164,
+      "ref",
+      165,
+      166,
+      167
+    ],
+    "key": "vs base CTMC; conditional seed test; Holm"
+  },
+  "G4_R4_C_proper_score_controls": {
+    "labels": [
+      168,
+      169,
+      170,
+      171,
+      172,
+      173,
+      174,
+      175,
+      176,
+      177
+    ],
+    "key": "paired gain vs 0; complete seed blocks; Holm"
+  },
+  "G4_finite_calibration_ablation": {
+    "labels": [
+      178,
+      179,
+      180,
+      181,
+      182,
+      183
+    ],
+    "key": "paired gain vs 0; conditional seed test; Holm"
+  },
+  "G4_07": {
+    "labels": [
+      184,
+      "ref",
+      185,
+      "ref",
+      186,
+      "ref",
+      187,
+      "ref"
+    ],
+    "key": "vs K0 within source bound; 10 source fits; Holm"
+  },
+  "G5_R3_anchor_called": {
+    "labels": [
+      "ref",
+      188,
+      189,
+      "ref",
+      190,
+      191,
+      "ref",
+      192,
+      193
+    ],
+    "key": "vs more selected patients within scenario; Holm"
+  },
+  "G5_R3_anchor_covered": {
+    "labels": [
+      "ref",
+      194,
+      195,
+      "ref",
+      196,
+      197,
+      "ref",
+      198,
+      199
+    ],
+    "key": "vs more selected patients within scenario; Holm"
+  },
+  "G5_R3_natural_transfer": {
+    "labels": [
+      200,
+      201,
+      202,
+      203,
+      204,
+      205,
+      206,
+      207,
+      208,
+      209
+    ],
+    "key": "paired gain vs 0; conditional patient test; Holm"
+  }
+}

@@ -1,0 +1,84 @@
+{
+  "version": "CTDNA_ASSAY_V1",
+  "status": "FROZEN_BEFORE_PATIENT_REPLAY_OR_OUTCOME_SCORING",
+  "created_utc": "2026-10-09T14:29:54.636934+00:00",
+  "source_hashes": {
+    "configs/CTDNA_PATIENT_SPLIT.tsv": "63c268cb4afdace7b830d270542b8c265506e47b19123ab14a7c1cf27626e424",
+    "configs/PROTOCOL.json": "93bbb65ae6a09dfdd242b33d3b0fab07124c196f25804aa247c768f38fc1bbca",
+    "data/ctdna/processed/Table_17_patient_mutation_data.tsv.gz": "5f1e729bb73197311f318a59114de76a8a454199eba8048544b55f0e9833f8d0",
+    "data/ctdna/processed/Table_20_PBMC_variant_data.tsv.gz": "7616ef35cdf6a37770bec88b7822954e14486a0faa3e8730ea14fb73f5d9dca0",
+    "data/ctdna/processed/Table_8_patient_data.tsv.gz": "a65b65243298f22ba7057dd2a0cb57444d42c7761afcd3a3ed42b4e2d297fd0f",
+    "data/ctdna/processed/Table_13_sample_ctDNA.tsv.gz": "8bcecd9afb444efcf96c5c6f043ee3b6967a0f51c15b492ec0e3e9b81e1074a4",
+    "data/native_audit/branch_owned_markers.tsv.gz": "c534db4eba2dfc9a54868e2e6adc5861f674825a272a16a6236797b7de49012d",
+    "data/native_audit/branch_reference.tsv": "28c1abad7dee6c026dbdff79726850cf6d50bf51598e710889a2b3038a5a1c49",
+    "data/native_audit/patient_primary_tumour.tsv": "c81d1dfe73a76674282e9c80f2e5ac309760bf2c651ef73f8f1aa058a61718aa"
+  },
+  "patient_split": "configs/CTDNA_PATIENT_SPLIT.tsv; no outcome stratification",
+  "patients": "All197 retained in capacity/availability. Native-confirmed primary-only branches179 patients; nine outside-native patients use author-primary-proxy separately; nine native patients without any author tree remain UNKNOWN_TREE, never invented negative truth.",
+  "populations": [
+    "ALL197_CT_DNA",
+    "LUAD_PRIMARY_REGIONS_GE3",
+    "AUTHOR_PRIMARY_PROXY_OUTSIDE_NATIVE"
+  ],
+  "marker_budgets": [
+    20,
+    50,
+    100
+  ],
+  "primary_marker_budget": 50,
+  "master_seed": 20261009,
+  "policies": [
+    "CLONAL_ONLY",
+    "BRANCH_DIVERSE",
+    "RANDOM_MARKERS",
+    "INFORMATION_ADAPTIVE",
+    "WHOLE_PSP_REFERENCE"
+  ],
+  "available_marker_library": "Actually observed PSP coordinate universe; marker choices use only Table17 surgical var_ref_counts, clonal annotation and native primary-only branch mapping. Neither future plasma p/count/QC nor ECLIPSE clone outputs nor recurrence identity ranks any marker.",
+  "selection_covariates": "Mean raw tissue VAF across SU_T* primary regions, alt/(alt+ref) from var_ref_counts. SU_LN* omitted from rank. Tie by coordinate key lexicographic. No PhyloCCF/mean_tumour_ccf.",
+  "branch_labels": "Native branch-owned variant_key joins exact tumour:chromosome:position:ref:alt. Require native reference_markers>=3 and eligible_multimarker_reference; trunk excluded from branch target. For outside-native nine ONLY, Table17 is_tree_clone+PyCloneCluster_SC+PyCloneClonal_SC defines separate proxy and requires >=3 surgical-supported PSP markers. No proxy for native patients whose author tree absent.",
+  "clonal_policy": "Choose highest raw surgical VAF among author clonal C markers. Keep and record capacity<budget; never pad with nonclonal markers.",
+  "branch_diverse_policy": "Half nominal budget clonal/trunk, half eligible nontrunk round-robin by primary-only clone; allocate two markers per clone first when available, then rounds. Fill unused quota from remaining valid surgical markers by raw VAF to use available budget. If whole valid library smaller than budget retain capacity shortage.",
+  "random_policy": "One patient-keyed permutation sha256(Invariant-EvAM-ctdna-random-v1|patient_id) first16hex XOR master_seed; K20/50/100 nested prefixes; only valid surgical library.",
+  "information_adaptive": {
+    "objective": "Maximize expected number of at-least-two-marker-supported native/proxy known clones at nominal K; no outcome weights. Trunk and each eligible nontrunk unit weight1.",
+    "solver": "Group knapsack dynamic programming over marker counts0..K. Within group rank highest surgical raw VAF; calculate exact Poisson-binomial P(>=2 positive markers). Additional ungrouped markers may complete spare budget by VAF with zero clone utility.",
+    "ctdna_fraction_grid": [
+      0.0001,
+      0.0005,
+      0.001
+    ],
+    "grid_weight": "equal1/3 frozen sensitivity assumptions; not fitted to plasma outcomes",
+    "expected_marker_alt_fraction": "ctdna_fraction * min(1,2*mean_surgery_VAF)",
+    "depth_background_fit": "Only development normal source groups, intrinsically passing marker rows: global median ddp and global median of max(d_group_error_rate,tnc_error_rate_ci_upper_bound,mnp_error_rate); error floor1e-9. No confirmation case or postoperative depth in any weight.",
+    "positive_count_threshold": "smallest integer h>=2 whose Poisson(error*depth) upper tail <=0.01/K; expected marker support=Poisson(error*depth+signal*depth) upper tail at h; all values frozen by formula before cases scored."
+  },
+  "normal_split": "Source group=PublicationID for PBMC/normal tissues, GIAB pooled across all panels. sha256(Invariant-EvAM-bio-assay-v1|source_group) first16hex/2^64<0.6 development else confirmation. All repeated controls and technical panel instances of source group stay together. Controls separate from clinical split.",
+  "assay": {
+    "positive_marker": "Source variant_poisson_test <=0.01/nominal_K and dao>=2 and ddp>0; WHOLE uses actual PSP library size. No threshold tuning from outcomes. Normal source P uses same criterion.",
+    "intrinsic_QC": "Pass iff failed.filters empty or solely dao_imbalance; all other named source filters fail. Source d_group/background and intrinsic QC are retained measured annotations from original complete library.",
+    "full_QC_sensitivity": "Repeat entire fixed selected-marker assay with dao_imbalance also excluded; no marker rerank or recalibration.",
+    "panel_MRD": "At least2 distinct positive selected markers",
+    "clone_support": "At least2 distinct positive markers owned by same eligible branch; branch prior>=3 measured surgical markers",
+    "postoperative": "days_post_surgery>0; marker cases are SNP-matched1069 source samples; all197 remain availability table",
+    "reference": "All actually observed PSP markers,72-201 targets, at alpha0.01/M. An extra-information algorithm reference, not biological truth or official ECLIPSE reproduction."
+  },
+  "primary_endpoint": "For each patient union of eligible nontrunk clones detected across available postoperative samples by each policy, recall relative to whole-PSP detected branches. Native/proxy-known patients with zero whole-reference detected branches contribute0 with zero-denominator flag; native absent-tree patients UNKNOWN and excluded only from branch score while kept in capacity/MRD. Average within patient, no independent sample replicates.",
+  "secondary_endpoints": [
+    "Sample-level recall averaged within patient",
+    "Panel MRD",
+    "Held-out normal false positives averaged by normal source",
+    "True recurrence lead time",
+    "Capacity/missing mapping",
+    "Native/proxy scopes separately"
+  ],
+  "recurrence_endpoint": "Only Event_status exactly Intrathoracic/Extrathoracic/Intra & Extra; Table8 Time_DFS_from_surgery is then explicitly recurrence date. Do not use composite date for Death/Second primary/Unresected disease/No event. Lead=recurrence_date-first_detect_day restricted0<day<=recurrence_date; not detected retained as no-detection, never delete. Relapse genotype identity is scorer-only, never marker choice.",
+  "inference": {
+    "paired_unit": "patient",
+    "bootstrap_replicates": 2000,
+    "seed": 20261009,
+    "primary_family": "Confirmation ALL197 available branch scores: INFORMATION_ADAPTIVE minus CLONAL_ONLY,BRANCH_DIVERSE,RANDOM_MARKERS at K50; paired sign-flip tests two-sided, Holm family3; never treat plasma samples/markers as patients. Other budgets/subgroups descriptive."
+  },
+  "scope": "Counts-level retrospective assay replay, conditional on original PSP library/QC/background and frozen normal fit; not raw FASTQ reprocessing, actual acquisition cost, natural evolutionary theta identification, mechanism causality or treatment benefit.",
+  "outputs": "results/ctdna only; no formal release mutation"
+}

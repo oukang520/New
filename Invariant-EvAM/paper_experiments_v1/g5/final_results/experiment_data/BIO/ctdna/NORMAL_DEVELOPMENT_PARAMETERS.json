@@ -1,0 +1,35 @@
+{
+  "normal_development_source_groups": [
+    "CRUK0085",
+    "CRUK0088",
+    "CRUK0240",
+    "CRUK0253",
+    "CRUK0270",
+    "CRUK0296",
+    "CRUK0381",
+    "CRUK0388",
+    "CRUK0392",
+    "CRUK0484",
+    "GIAB"
+  ],
+  "normal_confirmation_source_groups": [
+    "CRUK0039",
+    "CRUK0050",
+    "CRUK0090",
+    "CRUK0241",
+    "CRUK0269",
+    "CRUK0284",
+    "CRUK0352",
+    "CRUK0396",
+    "CRUK0498",
+    "CRUK0589"
+  ],
+  "depth": 6019.0,
+  "error_rate": 2.42381e-05,
+  "ctdna_fraction_grid": [
+    0.0001,
+    0.0005,
+    0.001
+  ],
+  "parameters_use": "development normal depth/background only; marker P thresholds fixed0.01/K, not clinical-calibrated"
+}

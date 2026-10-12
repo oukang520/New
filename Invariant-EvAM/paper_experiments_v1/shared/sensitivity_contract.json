@@ -1,0 +1,30 @@
+{
+  "protocol": "G3_1.0",
+  "target_definition": "REFERENCE_TARGET",
+  "reference_environment": 0,
+  "reference_deviation": 0,
+  "target_by_model": {
+    "D3_SPARSE5": 3,
+    "D4_SPARSE10": 4
+  },
+  "source_attribution_allowed": false,
+  "parameter_scale": {
+    "epsilon_units": "log acquisition rate",
+    "eta_units": "effective log acquisition rate error",
+    "bound": "norm(a,1)*(epsilon+eta)",
+    "scope": "ONLY_EXPLICIT_ADDITIVE_PARAMETER_ERROR_CONTRACT"
+  },
+  "forward_scale": {
+    "epsilon_units": "log acquisition rate deviation",
+    "eta_units": "coefficient of declared selection feature",
+    "rule": "Joint constrained likelihood projection; NEVER add epsilon and eta across different units",
+    "implementation": "paper_experiments_v1/g3/src/g3_api.py",
+    "global_projection_certified": false,
+    "finite_sample_coverage_guaranteed": false,
+    "interval_type": "SENSITIVITY_ENVELOPE_LOCAL_NUMERICAL"
+  },
+  "evaluation_registry": "paper_experiments_v1/g3/configs/G3_PROTOCOL.json",
+  "results": "paper_experiments_v1/g3/results/G3_sensitivity_regions.tsv",
+  "precision": "20-prespecified-replicate diagnostic grid; core 200/500 replicate arms evaluated separately",
+  "failure_policy": "Numerical failures are distinct from UNKNOWN; bound contact extends the relevant endpoint to infinity"
+}

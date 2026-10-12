@@ -1,0 +1,20 @@
+{
+  "status": "FROZEN_BEFORE_FIRST_EVALUATION_SCORE",
+  "time": "2026-09-24T00:41:51.813755",
+  "files": {
+    "paper_experiments_v1/g4/src/g4_data_audit.py": "8ee236a441ad2859962263489aa83a994b6de6ea74333806ad6cbddfc5c109f8",
+    "paper_experiments_v1/g4/src/g4_estimator.py": "1dfc20e113aefd9ac2e633bcedfb3e500bd467b0d5f23ce0d9ee5a42b4eb53e1",
+    "paper_experiments_v1/g4/src/g4_auxiliary.py": "63621b0f8c6c6442dbb4b0ae7816cae6c0a0bc11d06be9659e96bc53d8b2a80c",
+    "paper_experiments_v1/g4/src/g4_pipeline.py": "8f8cd4f9738bad8882877be474419bdcd4a4c532948a5a0d81c5bc33370d22bb",
+    "paper_experiments_v1/g4/src/g4_freeze.py": "7a5fd60a311236ba558869fd37ec827916fa69bda80aeac29e503c0f8782eadb",
+    "paper_experiments_v1/g4/configs/DATA_FREEZE.json": "f60fb7518f55ebdf8286a735adaa0989aa587a14a784e90b4f3e034af682f3f0",
+    "paper_experiments_v1/g4/configs/eligibility_v1.json": "a2e5386adbbfe6d74e19f175ec8968972648fff1d9f28418a1739974942c7180",
+    "paper_experiments_v1/g4/configs/METHOD_EXTENSION_BEFORE_EVALUATION.json": "2b1d8cceeefee74f2a79bd6f9eea4c3afffc9522d93b4156c9229dfe5f799a5d",
+    "paper_experiments_v1/g4/configs/PROTOCOL.json": "4135ac83de91fe1c557fb50912d87fba8912b4cabfba3434977c0caacb53b484",
+    "paper_experiments_v1/g4/tests/test_g4.py": "5bf45e7357195dd1ce97c68286fcd0711033434510aa3959f6399b3fdcd0b3fc",
+    "paper_experiments_v1/g4/data_public/contracts/designs.json": "6fb930316d5a2a49c862e46e0255fc7adfccc5f7659c8d3abd59808457a01b77"
+  },
+  "development_runs": 6,
+  "implementation_tests": 11,
+  "evaluation_scores_seen": 0
+}

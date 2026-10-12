@@ -1,0 +1,17 @@
+{
+  "gradient_joint": 1.0240171377517981e-08,
+  "gradient_fusion": 1.3611785476541627e-08,
+  "gradient_hierarchical": 1.0240171377517981e-08,
+  "budget_counts": "PASS",
+  "LUAD_patients": {
+    "train": 1345,
+    "calibration": 448,
+    "evaluation": 449
+  },
+  "COAD_patients": {
+    "train": 857,
+    "calibration": 285,
+    "evaluation": 287
+  },
+  "input_schema": "Observed partial count bins, paid bridge full count bins, paid XS count bins only; no private evaluation or generator selection weights in estimate()/adjust() arguments"
+}

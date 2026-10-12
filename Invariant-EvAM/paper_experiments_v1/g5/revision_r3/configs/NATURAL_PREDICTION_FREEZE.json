@@ -1,0 +1,936 @@
+{
+  "predictions": [
+    {
+      "heldout": "MSK-IMPACT410",
+      "method": "TRANSFER_SHRINKAGE",
+      "probability": [
+        0.341458232881006,
+        0.0068416663385721084,
+        0.017191728744713627,
+        0.021782325537636194,
+        0.16287798410522478,
+        0.012409388378907798,
+        0.033581458038580855,
+        0.0272799972593452,
+        0.23354392742991517,
+        0.02145048132749956,
+        0.017331829381967003,
+        0.011030368602731348,
+        0.07759964657824646,
+        0.005794490772532299,
+        0.007173510548708747,
+        0.0026529640744128685
+      ],
+      "kappa": 1024,
+      "training_n": 3338,
+      "calibration_n": 137,
+      "validation_losses": {
+        "0": 39.27983539178067,
+        "4": 39.22732518140742,
+        "16": 39.10055817052785,
+        "64": 38.82966467398966,
+        "256": 38.60064245230987,
+        "1024": 38.57472172113621
+      },
+      "folds": [
+        {
+          "rep": 0,
+          "training_panel": "MSK-IMPACT468",
+          "n_calibration": 137,
+          "n_validation": 1208
+        },
+        {
+          "rep": 0,
+          "training_panel": "MSK-IMPACT505",
+          "n_calibration": 137,
+          "n_validation": 1856
+        },
+        {
+          "rep": 1,
+          "training_panel": "MSK-IMPACT468",
+          "n_calibration": 137,
+          "n_validation": 1208
+        },
+        {
+          "rep": 1,
+          "training_panel": "MSK-IMPACT505",
+          "n_calibration": 137,
+          "n_validation": 1856
+        },
+        {
+          "rep": 2,
+          "training_panel": "MSK-IMPACT468",
+          "n_calibration": 137,
+          "n_validation": 1208
+        },
+        {
+          "rep": 2,
+          "training_panel": "MSK-IMPACT505",
+          "n_calibration": 137,
+          "n_validation": 1856
+        },
+        {
+          "rep": 3,
+          "training_panel": "MSK-IMPACT468",
+          "n_calibration": 137,
+          "n_validation": 1208
+        },
+        {
+          "rep": 3,
+          "training_panel": "MSK-IMPACT505",
+          "n_calibration": 137,
+          "n_validation": 1856
+        },
+        {
+          "rep": 4,
+          "training_panel": "MSK-IMPACT468",
+          "n_calibration": 137,
+          "n_validation": 1208
+        },
+        {
+          "rep": 4,
+          "training_panel": "MSK-IMPACT505",
+          "n_calibration": 137,
+          "n_validation": 1856
+        },
+        {
+          "rep": 5,
+          "training_panel": "MSK-IMPACT468",
+          "n_calibration": 137,
+          "n_validation": 1208
+        },
+        {
+          "rep": 5,
+          "training_panel": "MSK-IMPACT505",
+          "n_calibration": 137,
+          "n_validation": 1856
+        },
+        {
+          "rep": 6,
+          "training_panel": "MSK-IMPACT468",
+          "n_calibration": 137,
+          "n_validation": 1208
+        },
+        {
+          "rep": 6,
+          "training_panel": "MSK-IMPACT505",
+          "n_calibration": 137,
+          "n_validation": 1856
+        },
+        {
+          "rep": 7,
+          "training_panel": "MSK-IMPACT468",
+          "n_calibration": 137,
+          "n_validation": 1208
+        },
+        {
+          "rep": 7,
+          "training_panel": "MSK-IMPACT505",
+          "n_calibration": 137,
+          "n_validation": 1856
+        },
+        {
+          "rep": 8,
+          "training_panel": "MSK-IMPACT468",
+          "n_calibration": 137,
+          "n_validation": 1208
+        },
+        {
+          "rep": 8,
+          "training_panel": "MSK-IMPACT505",
+          "n_calibration": 137,
+          "n_validation": 1856
+        },
+        {
+          "rep": 9,
+          "training_panel": "MSK-IMPACT468",
+          "n_calibration": 137,
+          "n_validation": 1208
+        },
+        {
+          "rep": 9,
+          "training_panel": "MSK-IMPACT505",
+          "n_calibration": 137,
+          "n_validation": 1856
+        }
+      ]
+    },
+    {
+      "heldout": "MSK-IMPACT410",
+      "method": "TARGET_ONLY_DIRICHLET",
+      "probability": [
+        0.2655172413793103,
+        0.0034482758620689655,
+        0.017241379310344827,
+        0.03103448275862069,
+        0.2103448275862069,
+        0.010344827586206896,
+        0.05862068965517241,
+        0.03103448275862069,
+        0.18275862068965518,
+        0.02413793103448276,
+        0.03103448275862069,
+        0.0034482758620689655,
+        0.11379310344827587,
+        0.0034482758620689655,
+        0.010344827586206896,
+        0.0034482758620689655
+      ],
+      "kappa": 0,
+      "training_n": 3338,
+      "calibration_n": 137,
+      "validation_losses": {
+        "0": 39.27983539178067,
+        "4": 39.22732518140742,
+        "16": 39.10055817052785,
+        "64": 38.82966467398966,
+        "256": 38.60064245230987,
+        "1024": 38.57472172113621
+      },
+      "folds": [
+        {
+          "rep": 0,
+          "training_panel": "MSK-IMPACT468",
+          "n_calibration": 137,
+          "n_validation": 1208
+        },
+        {
+          "rep": 0,
+          "training_panel": "MSK-IMPACT505",
+          "n_calibration": 137,
+          "n_validation": 1856
+        },
+        {
+          "rep": 1,
+          "training_panel": "MSK-IMPACT468",
+          "n_calibration": 137,
+          "n_validation": 1208
+        },
+        {
+          "rep": 1,
+          "training_panel": "MSK-IMPACT505",
+          "n_calibration": 137,
+          "n_validation": 1856
+        },
+        {
+          "rep": 2,
+          "training_panel": "MSK-IMPACT468",
+          "n_calibration": 137,
+          "n_validation": 1208
+        },
+        {
+          "rep": 2,
+          "training_panel": "MSK-IMPACT505",
+          "n_calibration": 137,
+          "n_validation": 1856
+        },
+        {
+          "rep": 3,
+          "training_panel": "MSK-IMPACT468",
+          "n_calibration": 137,
+          "n_validation": 1208
+        },
+        {
+          "rep": 3,
+          "training_panel": "MSK-IMPACT505",
+          "n_calibration": 137,
+          "n_validation": 1856
+        },
+        {
+          "rep": 4,
+          "training_panel": "MSK-IMPACT468",
+          "n_calibration": 137,
+          "n_validation": 1208
+        },
+        {
+          "rep": 4,
+          "training_panel": "MSK-IMPACT505",
+          "n_calibration": 137,
+          "n_validation": 1856
+        },
+        {
+          "rep": 5,
+          "training_panel": "MSK-IMPACT468",
+          "n_calibration": 137,
+          "n_validation": 1208
+        },
+        {
+          "rep": 5,
+          "training_panel": "MSK-IMPACT505",
+          "n_calibration": 137,
+          "n_validation": 1856
+        },
+        {
+          "rep": 6,
+          "training_panel": "MSK-IMPACT468",
+          "n_calibration": 137,
+          "n_validation": 1208
+        },
+        {
+          "rep": 6,
+          "training_panel": "MSK-IMPACT505",
+          "n_calibration": 137,
+          "n_validation": 1856
+        },
+        {
+          "rep": 7,
+          "training_panel": "MSK-IMPACT468",
+          "n_calibration": 137,
+          "n_validation": 1208
+        },
+        {
+          "rep": 7,
+          "training_panel": "MSK-IMPACT505",
+          "n_calibration": 137,
+          "n_validation": 1856
+        },
+        {
+          "rep": 8,
+          "training_panel": "MSK-IMPACT468",
+          "n_calibration": 137,
+          "n_validation": 1208
+        },
+        {
+          "rep": 8,
+          "training_panel": "MSK-IMPACT505",
+          "n_calibration": 137,
+          "n_validation": 1856
+        },
+        {
+          "rep": 9,
+          "training_panel": "MSK-IMPACT468",
+          "n_calibration": 137,
+          "n_validation": 1208
+        },
+        {
+          "rep": 9,
+          "training_panel": "MSK-IMPACT505",
+          "n_calibration": 137,
+          "n_validation": 1856
+        }
+      ]
+    },
+    {
+      "heldout": "MSK-IMPACT410",
+      "method": "POOLED_TRAINING",
+      "probability": [
+        0.3522115959354453,
+        0.007322175732217573,
+        0.017184698147041242,
+        0.020472205618649132,
+        0.15615660490137478,
+        0.012701733413030485,
+        0.030035863717872088,
+        0.026748356246264197,
+        0.24073520621637776,
+        0.02106993424985057,
+        0.01539151225343694,
+        0.01210400478182905,
+        0.07247459653317394,
+        0.006126718469814704,
+        0.006724447101016139,
+        0.002540346682606097
+      ],
+      "kappa": 0,
+      "training_n": 3338,
+      "calibration_n": 137,
+      "validation_losses": {
+        "0": 39.27983539178067,
+        "4": 39.22732518140742,
+        "16": 39.10055817052785,
+        "64": 38.82966467398966,
+        "256": 38.60064245230987,
+        "1024": 38.57472172113621
+      },
+      "folds": [
+        {
+          "rep": 0,
+          "training_panel": "MSK-IMPACT468",
+          "n_calibration": 137,
+          "n_validation": 1208
+        },
+        {
+          "rep": 0,
+          "training_panel": "MSK-IMPACT505",
+          "n_calibration": 137,
+          "n_validation": 1856
+        },
+        {
+          "rep": 1,
+          "training_panel": "MSK-IMPACT468",
+          "n_calibration": 137,
+          "n_validation": 1208
+        },
+        {
+          "rep": 1,
+          "training_panel": "MSK-IMPACT505",
+          "n_calibration": 137,
+          "n_validation": 1856
+        },
+        {
+          "rep": 2,
+          "training_panel": "MSK-IMPACT468",
+          "n_calibration": 137,
+          "n_validation": 1208
+        },
+        {
+          "rep": 2,
+          "training_panel": "MSK-IMPACT505",
+          "n_calibration": 137,
+          "n_validation": 1856
+        },
+        {
+          "rep": 3,
+          "training_panel": "MSK-IMPACT468",
+          "n_calibration": 137,
+          "n_validation": 1208
+        },
+        {
+          "rep": 3,
+          "training_panel": "MSK-IMPACT505",
+          "n_calibration": 137,
+          "n_validation": 1856
+        },
+        {
+          "rep": 4,
+          "training_panel": "MSK-IMPACT468",
+          "n_calibration": 137,
+          "n_validation": 1208
+        },
+        {
+          "rep": 4,
+          "training_panel": "MSK-IMPACT505",
+          "n_calibration": 137,
+          "n_validation": 1856
+        },
+        {
+          "rep": 5,
+          "training_panel": "MSK-IMPACT468",
+          "n_calibration": 137,
+          "n_validation": 1208
+        },
+        {
+          "rep": 5,
+          "training_panel": "MSK-IMPACT505",
+          "n_calibration": 137,
+          "n_validation": 1856
+        },
+        {
+          "rep": 6,
+          "training_panel": "MSK-IMPACT468",
+          "n_calibration": 137,
+          "n_validation": 1208
+        },
+        {
+          "rep": 6,
+          "training_panel": "MSK-IMPACT505",
+          "n_calibration": 137,
+          "n_validation": 1856
+        },
+        {
+          "rep": 7,
+          "training_panel": "MSK-IMPACT468",
+          "n_calibration": 137,
+          "n_validation": 1208
+        },
+        {
+          "rep": 7,
+          "training_panel": "MSK-IMPACT505",
+          "n_calibration": 137,
+          "n_validation": 1856
+        },
+        {
+          "rep": 8,
+          "training_panel": "MSK-IMPACT468",
+          "n_calibration": 137,
+          "n_validation": 1208
+        },
+        {
+          "rep": 8,
+          "training_panel": "MSK-IMPACT505",
+          "n_calibration": 137,
+          "n_validation": 1856
+        },
+        {
+          "rep": 9,
+          "training_panel": "MSK-IMPACT468",
+          "n_calibration": 137,
+          "n_validation": 1208
+        },
+        {
+          "rep": 9,
+          "training_panel": "MSK-IMPACT505",
+          "n_calibration": 137,
+          "n_validation": 1856
+        }
+      ]
+    },
+    {
+      "heldout": "MSK-IMPACT505",
+      "method": "TRANSFER_SHRINKAGE",
+      "probability": [
+        0.32329137986645345,
+        0.005089660094566866,
+        0.018420980393502474,
+        0.022275712511237535,
+        0.1552718625829519,
+        0.01351558157250012,
+        0.0363166274353713,
+        0.031407797305736465,
+        0.24052341181879947,
+        0.023681176527103904,
+        0.01806961438953588,
+        0.01421488227180082,
+        0.08230782956003761,
+        0.006133464180569185,
+        0.006495124110433237,
+        0.0029848953793997954
+      ],
+      "kappa": 1024,
+      "training_n": 2030,
+      "calibration_n": 398,
+      "validation_losses": {
+        "0": 40.32434482354664,
+        "4": 40.315113342714334,
+        "16": 40.289796529184464,
+        "64": 40.21396403643026,
+        "256": 40.083275966165594,
+        "1024": 40.00973197688891
+      },
+      "folds": [
+        {
+          "rep": 0,
+          "training_panel": "MSK-IMPACT468",
+          "n_calibration": 398,
+          "n_validation": 947
+        },
+        {
+          "rep": 0,
+          "training_panel": "MSK-IMPACT410",
+          "n_calibration": 342,
+          "n_validation": 343
+        },
+        {
+          "rep": 1,
+          "training_panel": "MSK-IMPACT468",
+          "n_calibration": 398,
+          "n_validation": 947
+        },
+        {
+          "rep": 1,
+          "training_panel": "MSK-IMPACT410",
+          "n_calibration": 342,
+          "n_validation": 343
+        },
+        {
+          "rep": 2,
+          "training_panel": "MSK-IMPACT468",
+          "n_calibration": 398,
+          "n_validation": 947
+        },
+        {
+          "rep": 2,
+          "training_panel": "MSK-IMPACT410",
+          "n_calibration": 342,
+          "n_validation": 343
+        },
+        {
+          "rep": 3,
+          "training_panel": "MSK-IMPACT468",
+          "n_calibration": 398,
+          "n_validation": 947
+        },
+        {
+          "rep": 3,
+          "training_panel": "MSK-IMPACT410",
+          "n_calibration": 342,
+          "n_validation": 343
+        },
+        {
+          "rep": 4,
+          "training_panel": "MSK-IMPACT468",
+          "n_calibration": 398,
+          "n_validation": 947
+        },
+        {
+          "rep": 4,
+          "training_panel": "MSK-IMPACT410",
+          "n_calibration": 342,
+          "n_validation": 343
+        },
+        {
+          "rep": 5,
+          "training_panel": "MSK-IMPACT468",
+          "n_calibration": 398,
+          "n_validation": 947
+        },
+        {
+          "rep": 5,
+          "training_panel": "MSK-IMPACT410",
+          "n_calibration": 342,
+          "n_validation": 343
+        },
+        {
+          "rep": 6,
+          "training_panel": "MSK-IMPACT468",
+          "n_calibration": 398,
+          "n_validation": 947
+        },
+        {
+          "rep": 6,
+          "training_panel": "MSK-IMPACT410",
+          "n_calibration": 342,
+          "n_validation": 343
+        },
+        {
+          "rep": 7,
+          "training_panel": "MSK-IMPACT468",
+          "n_calibration": 398,
+          "n_validation": 947
+        },
+        {
+          "rep": 7,
+          "training_panel": "MSK-IMPACT410",
+          "n_calibration": 342,
+          "n_validation": 343
+        },
+        {
+          "rep": 8,
+          "training_panel": "MSK-IMPACT468",
+          "n_calibration": 398,
+          "n_validation": 947
+        },
+        {
+          "rep": 8,
+          "training_panel": "MSK-IMPACT410",
+          "n_calibration": 342,
+          "n_validation": 343
+        },
+        {
+          "rep": 9,
+          "training_panel": "MSK-IMPACT468",
+          "n_calibration": 398,
+          "n_validation": 947
+        },
+        {
+          "rep": 9,
+          "training_panel": "MSK-IMPACT410",
+          "n_calibration": 342,
+          "n_validation": 343
+        }
+      ]
+    },
+    {
+      "heldout": "MSK-IMPACT505",
+      "method": "TARGET_ONLY_DIRICHLET",
+      "probability": [
+        0.35344827586206895,
+        0.003694581280788177,
+        0.01847290640394089,
+        0.02586206896551724,
+        0.14901477832512317,
+        0.008620689655172414,
+        0.03571428571428571,
+        0.02832512315270936,
+        0.24261083743842365,
+        0.02586206896551724,
+        0.01847290640394089,
+        0.011083743842364532,
+        0.06280788177339902,
+        0.011083743842364532,
+        0.003694581280788177,
+        0.0012315270935960591
+      ],
+      "kappa": 0,
+      "training_n": 2030,
+      "calibration_n": 398,
+      "validation_losses": {
+        "0": 40.32434482354664,
+        "4": 40.315113342714334,
+        "16": 40.289796529184464,
+        "64": 40.21396403643026,
+        "256": 40.083275966165594,
+        "1024": 40.00973197688891
+      },
+      "folds": [
+        {
+          "rep": 0,
+          "training_panel": "MSK-IMPACT468",
+          "n_calibration": 398,
+          "n_validation": 947
+        },
+        {
+          "rep": 0,
+          "training_panel": "MSK-IMPACT410",
+          "n_calibration": 342,
+          "n_validation": 343
+        },
+        {
+          "rep": 1,
+          "training_panel": "MSK-IMPACT468",
+          "n_calibration": 398,
+          "n_validation": 947
+        },
+        {
+          "rep": 1,
+          "training_panel": "MSK-IMPACT410",
+          "n_calibration": 342,
+          "n_validation": 343
+        },
+        {
+          "rep": 2,
+          "training_panel": "MSK-IMPACT468",
+          "n_calibration": 398,
+          "n_validation": 947
+        },
+        {
+          "rep": 2,
+          "training_panel": "MSK-IMPACT410",
+          "n_calibration": 342,
+          "n_validation": 343
+        },
+        {
+          "rep": 3,
+          "training_panel": "MSK-IMPACT468",
+          "n_calibration": 398,
+          "n_validation": 947
+        },
+        {
+          "rep": 3,
+          "training_panel": "MSK-IMPACT410",
+          "n_calibration": 342,
+          "n_validation": 343
+        },
+        {
+          "rep": 4,
+          "training_panel": "MSK-IMPACT468",
+          "n_calibration": 398,
+          "n_validation": 947
+        },
+        {
+          "rep": 4,
+          "training_panel": "MSK-IMPACT410",
+          "n_calibration": 342,
+          "n_validation": 343
+        },
+        {
+          "rep": 5,
+          "training_panel": "MSK-IMPACT468",
+          "n_calibration": 398,
+          "n_validation": 947
+        },
+        {
+          "rep": 5,
+          "training_panel": "MSK-IMPACT410",
+          "n_calibration": 342,
+          "n_validation": 343
+        },
+        {
+          "rep": 6,
+          "training_panel": "MSK-IMPACT468",
+          "n_calibration": 398,
+          "n_validation": 947
+        },
+        {
+          "rep": 6,
+          "training_panel": "MSK-IMPACT410",
+          "n_calibration": 342,
+          "n_validation": 343
+        },
+        {
+          "rep": 7,
+          "training_panel": "MSK-IMPACT468",
+          "n_calibration": 398,
+          "n_validation": 947
+        },
+        {
+          "rep": 7,
+          "training_panel": "MSK-IMPACT410",
+          "n_calibration": 342,
+          "n_validation": 343
+        },
+        {
+          "rep": 8,
+          "training_panel": "MSK-IMPACT468",
+          "n_calibration": 398,
+          "n_validation": 947
+        },
+        {
+          "rep": 8,
+          "training_panel": "MSK-IMPACT410",
+          "n_calibration": 342,
+          "n_validation": 343
+        },
+        {
+          "rep": 9,
+          "training_panel": "MSK-IMPACT468",
+          "n_calibration": 398,
+          "n_validation": 947
+        },
+        {
+          "rep": 9,
+          "training_panel": "MSK-IMPACT410",
+          "n_calibration": 342,
+          "n_validation": 343
+        }
+      ]
+    },
+    {
+      "heldout": "MSK-IMPACT505",
+      "method": "POOLED_TRAINING",
+      "probability": [
+        0.31133464180569187,
+        0.005642787046123651,
+        0.018400392541707555,
+        0.02085377821393523,
+        0.15775269872423944,
+        0.015456329735034347,
+        0.036555446516192344,
+        0.03263002944062807,
+        0.23969578017664378,
+        0.02281648675171737,
+        0.017909715407262022,
+        0.015456329735034347,
+        0.09003925417075564,
+        0.004170755642787046,
+        0.00760549558390579,
+        0.0036800785083415115
+      ],
+      "kappa": 0,
+      "training_n": 2030,
+      "calibration_n": 398,
+      "validation_losses": {
+        "0": 40.32434482354664,
+        "4": 40.315113342714334,
+        "16": 40.289796529184464,
+        "64": 40.21396403643026,
+        "256": 40.083275966165594,
+        "1024": 40.00973197688891
+      },
+      "folds": [
+        {
+          "rep": 0,
+          "training_panel": "MSK-IMPACT468",
+          "n_calibration": 398,
+          "n_validation": 947
+        },
+        {
+          "rep": 0,
+          "training_panel": "MSK-IMPACT410",
+          "n_calibration": 342,
+          "n_validation": 343
+        },
+        {
+          "rep": 1,
+          "training_panel": "MSK-IMPACT468",
+          "n_calibration": 398,
+          "n_validation": 947
+        },
+        {
+          "rep": 1,
+          "training_panel": "MSK-IMPACT410",
+          "n_calibration": 342,
+          "n_validation": 343
+        },
+        {
+          "rep": 2,
+          "training_panel": "MSK-IMPACT468",
+          "n_calibration": 398,
+          "n_validation": 947
+        },
+        {
+          "rep": 2,
+          "training_panel": "MSK-IMPACT410",
+          "n_calibration": 342,
+          "n_validation": 343
+        },
+        {
+          "rep": 3,
+          "training_panel": "MSK-IMPACT468",
+          "n_calibration": 398,
+          "n_validation": 947
+        },
+        {
+          "rep": 3,
+          "training_panel": "MSK-IMPACT410",
+          "n_calibration": 342,
+          "n_validation": 343
+        },
+        {
+          "rep": 4,
+          "training_panel": "MSK-IMPACT468",
+          "n_calibration": 398,
+          "n_validation": 947
+        },
+        {
+          "rep": 4,
+          "training_panel": "MSK-IMPACT410",
+          "n_calibration": 342,
+          "n_validation": 343
+        },
+        {
+          "rep": 5,
+          "training_panel": "MSK-IMPACT468",
+          "n_calibration": 398,
+          "n_validation": 947
+        },
+        {
+          "rep": 5,
+          "training_panel": "MSK-IMPACT410",
+          "n_calibration": 342,
+          "n_validation": 343
+        },
+        {
+          "rep": 6,
+          "training_panel": "MSK-IMPACT468",
+          "n_calibration": 398,
+          "n_validation": 947
+        },
+        {
+          "rep": 6,
+          "training_panel": "MSK-IMPACT410",
+          "n_calibration": 342,
+          "n_validation": 343
+        },
+        {
+          "rep": 7,
+          "training_panel": "MSK-IMPACT468",
+          "n_calibration": 398,
+          "n_validation": 947
+        },
+        {
+          "rep": 7,
+          "training_panel": "MSK-IMPACT410",
+          "n_calibration": 342,
+          "n_validation": 343
+        },
+        {
+          "rep": 8,
+          "training_panel": "MSK-IMPACT468",
+          "n_calibration": 398,
+          "n_validation": 947
+        },
+        {
+          "rep": 8,
+          "training_panel": "MSK-IMPACT410",
+          "n_calibration": 342,
+          "n_validation": 343
+        },
+        {
+          "rep": 9,
+          "training_panel": "MSK-IMPACT468",
+          "n_calibration": 398,
+          "n_validation": 947
+        },
+        {
+          "rep": 9,
+          "training_panel": "MSK-IMPACT410",
+          "n_calibration": 342,
+          "n_validation": 343
+        }
+      ]
+    }
+  ],
+  "code_sha256": "a6385f0a7c4dbc9a081077359417a0a2fe36bbccce8c42c601407fc67abfc150",
+  "scope": "PREVIOUSLY_EXPLORED_INTERNAL_LEAVE_PANEL_OUT"
+}
